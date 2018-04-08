@@ -1,0 +1,79 @@
+// Made in Heaven - Item Pack
+//
+// WeiDU installer
+
+BACKUP ~mih_ip/backup~
+
+AUTHOR ~angel@pearlgates.net~
+VERSION 1
+
+MODDER
+ASK_EVERY_COMPONENT
+NO_IF_EVAL_BUG
+AUTO_EVAL_STRINGS
+
+ALWAYS
+  // Do the following only once per install
+  ACTION_IF NOT VARIABLE_IS_SET done_init
+  BEGIN
+    OUTER_SET done_init = 1
+
+    ACTION_IF GAME_IS "bg1 totsc"
+    BEGIN
+      FAIL ~This mod no longer supports vanilla BG1/TotSC~
+    END
+
+    ACTION_IF GAME_IS "tutu tutu_totsc"
+    BEGIN
+      PRINT ~Tutu installation detected.~
+      INCLUDE ~%MOD_FOLDER%/lib/g3_tutu_cpmvars.tpa~
+    END
+
+    ACTION_IF GAME_IS "bgt"
+    BEGIN
+      PRINT ~BGT installation detected.~
+      INCLUDE ~%MOD_FOLDER%/lib/g3_bgt_cpmvars.tpa~
+    END
+
+    ACTION_IF GAME_IS "bgee eet"
+    BEGIN
+      PRINT ~BGEE installation detected.~
+      INCLUDE ~%MOD_FOLDER%/lib/g3_bgee_cpmvars.tpa~
+    END
+
+    INCLUDE ~%MOD_FOLDER%/lib/mh_functions.tph~
+  END	// done_init block
+END	// ALWAYS block
+
+
+LANGUAGE ~English~
+         ~english~
+	 ~%MOD_FOLDER%/tra/english/setup-mih_ip.tra~
+
+
+// Item Pack
+
+BEGIN ~MiH Item Pack~
+
+LAUNCH_ACTION_FUNCTION mh_run_task
+  STR_VAR
+  task		= "install_items"
+END
+
+ACTION_IF GAME_INCLUDES "bg1"
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task	= "place_items_in_bg1"
+  END
+END
+
+ACTION_IF GAME_INCLUDES "sod"
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task	= "place_items_in_sod"
+  END
+END
+
+

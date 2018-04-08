@@ -1,0 +1,188 @@
+COPY_LARGE "%MOD_FOLDER%/bams" "override"
+
+
+// Procedurally generate some effects
+
+OUTER_FOR (SET i = 1; i <= 3; ++i)
+BEGIN
+  // Extra slashing damage
+  CREATE EFF "mh#slsh%i%"
+    WRITE_LONG	0x0010 12	// HP: Damage
+    WRITE_LONG	0x001c i
+    WRITE_LONG	0x0020 16777216	// Slashing
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+
+  // Extra piercing damage
+  CREATE EFF "mh#prce%i%"
+    WRITE_LONG	0x0010 12	// HP: Damage
+    WRITE_LONG	0x001c i
+    WRITE_LONG	0x0020 1048576	// Piercing
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+
+  // Extra crushing damage
+  CREATE EFF "mh#crsh%i%"
+    WRITE_LONG	0x0010 12	// HP: Damage
+    WRITE_LONG	0x001c i
+    WRITE_LONG	0x0020 0	// Crushing
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+END
+  
+
+// mh#amul1 - Amulet against Undead
+
+COPY "%MOD_FOLDER%/items/mh#amul1.itm" "override"
+  SAY NAME2 @0
+  SAY IDENTIFIED_DESC @1
+
+
+// mh#amul2 - Necklace of Prayer Beads
+
+COPY "%MOD_FOLDER%/items/mh#amul2.itm" "override"
+  SAY NAME2 @2
+  SAY IDENTIFIED_DESC @3
+
+
+// mh#amul3 - Gem of Insight
+
+COPY "%MOD_FOLDER%/items/mh#amul3.itm" "override"
+  SAY NAME2 @4
+  SAY IDENTIFIED_DESC @5
+
+
+// mh#amul4 - Gem of Seeing
+
+COPY "%MOD_FOLDER%/items/mh#amul4.itm" "override"
+  SAY NAME2 @6
+  SAY IDENTIFIED_DESC @7
+
+
+// mh#belt1 - Girdle of Dwarvenkind
+
+COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
+  SAY NAME2 @8
+  SAY IDENTIFIED_DESC @9
+
+
+// mh#boot1 - Boots of the Master Ninja
+
+COPY "%MOD_FOLDER%/items/mh#boot1.itm" "override"
+  SAY NAME2 @10
+  SAY IDENTIFIED_DESC @11
+
+
+// mh#brac1 - Gauntlets of the Dwarven King
+
+COPY "%MOD_FOLDER%/items/mh#brac1.itm" "override"
+  SAY NAME2 @12
+  SAY IDENTIFIED_DESC @13
+
+
+// mh#btax1 - Foesplitter +1
+
+COPY "%MOD_FOLDER%/items/mh#btax1.itm" "override"
+  SAY NAME2 @14
+  SAY IDENTIFIED_DESC @15
+
+
+// mh#clck1 - Mutamin's Cloak
+
+COPY "%MOD_FOLDER%/items/mh#clck1.itm" "override"
+  SAY NAME2 @16
+  SAY IDENTIFIED_DESC @17
+
+
+// mh#clck2 - Battlecloak of Vycaena
+
+COPY "%MOD_FOLDER%/items/mh#clck2.itm" "override"
+  SAY NAME2 @18
+  SAY IDENTIFIED_DESC @19
+
+
+APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
+
+
+// mh#hamm1 - Final Strike +3
+
+COPY "%MOD_FOLDER%/items/mh#hamm1.itm" "override"
+  SAY NAME2 @20
+  SAY IDENTIFIED_DESC @21
+
+
+// mh#helm1 - Helm of Valor
+
+COPY "%MOD_FOLDER%/items/mh#helm1.itm" "override"
+  SAY NAME2 @22
+  SAY IDENTIFIED_DESC @23
+
+
+// mh#misc1 - Meteoric Iron
+
+COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
+  SAY NAME1 @24
+  SAY UNIDENTIFIED_DESC @25
+
+
+// mh#ring3 - Ring of the Lich +3
+
+COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
+  SAY NAME2 @26
+  SAY IDENTIFIED_DESC @27
+
+
+APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
+
+
+// mh#ring2 - Ring of Warmth
+
+COPY "%MOD_FOLDER%/items/mh#ring2.itm" "override"
+  SAY NAME2 @28
+  SAY IDENTIFIED_DESC @29
+
+
+// mh#ring3 - Ring of the Neophyte
+
+COPY "%MOD_FOLDER%/items/mh#ring3.itm" "override"
+  SAY NAME2 @30
+  SAY IDENTIFIED_DESC @31
+
+
+// mh#ring4 - Ring of Shocking Grasp
+
+COPY "%MOD_FOLDER%/items/mh#ring4.itm" "override"
+  SAY NAME2 @32
+  SAY IDENTIFIED_DESC @33
+
+
+// mh#shld1 - Meteoric Shield +2
+
+COPY "%MOD_FOLDER%/items/mh#shld1.itm" "override"
+  SAY NAME2 @34
+  SAY IDENTIFIED_DESC @35
+
+
+// mh#swrd1 - Terminus Est +2
+
+COPY "%MOD_FOLDER%/items/mh#swrd1.itm" "override"
+  SAY NAME2 @36
+  SAY IDENTIFIED_DESC @37
+
+
+// mh#swrd2 - Smythe's Slicer +1
+
+CREATE EFF "mh#spdht"
+  WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+  WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "spider")
+  WRITE_LONG	0x0020 4
+  WRITE_SHORT	0x0024 1
+  WRITE_LONG	0x002c 100
+  WRITE_LONG	0x0060 2
+
+
+COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
+  SAY NAME2 @38
+  SAY IDENTIFIED_DESC @39
+
+
