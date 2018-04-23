@@ -1,0 +1,136 @@
+// Brokk's Forge
+
+COPY "%MOD_FOLDER%/stores/mh#brokk.sto" "override"
+  SAY NAME1 "Brokk's Forge"
+
+
+// Song of the Morning
+
+COPY_EXISTING "%tutu_var%tem3402.sto" "override"
+  // Amulet against Undead
+  ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
+
+
+// The Lady's Hall
+
+COPY_EXISTING "%tutu_var%tem0132.sto" "override"
+  // Necklace of Prayer Beads
+  ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
+
+
+// High Hedge
+
+COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
+  // Gem of Insight
+  ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
+
+  // Cloak of the Shield (from Durlag's Tower)
+  ADD_STORE_ITEM "%tutu_var%clck20" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
+
+
+// Black Lily
+
+COPY_EXISTING "%tutu_scripts%toblack.sto" "override"
+  // Boots of the Master Ninja
+  ADD_STORE_ITEM "mh#boot1" BEFORE "%tutu_var%clck01" #0 #0 #0 "identified" #1
+
+
+// Carnival Store
+
+COPY_EXISTING "%tutu_var%sto4906.sto" "override"
+  // Ring of Shocking Grasp
+  ADD_STORE_ITEM "mh#ring4" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
+
+  // Ring of the Neophyte
+  ADD_STORE_ITEM "mh#ring3" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
+
+  // Ring of Warmth
+  ADD_STORE_ITEM "mh#ring2" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
+
+
+// Mutamin
+
+COPY_EXISTING "%tutu_var%mutami.cre" "override"
+  // Mutamin's Cloak
+  ADD_CRE_ITEM "mh#clck1" #0 #0 #0 "none" "cloak"
+
+
+// Bassilius
+
+COPY_EXISTING "%tutu_var%bassil.cre" "override"
+  // The Kneecapper (from Hurgan Stoneblade)
+  REPLACE_CRE_ITEM "%tutu_var%hamm04" #0 #0 #0 "none" "weapon1" EQUIP
+
+
+// Taugosz Khosann
+
+COPY_EXISTING "%tutu_var%taugos.cre" "override"
+  // Aishideena (from Bassilius)
+  REPLACE_CRE_ITEM "%tutu_var%hamm03" #0 #0 #0 "none" "weapon1" EQUIP
+
+
+// Candlekeep Catacombs L1
+
+COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
+  // Ring of the Lich +3
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 4
+    STR_VAR
+    item_to_add		= "mh#ring1"
+  END
+
+
+// Hurgan Stoneblade
+
+COPY_EXISTING "%tutu_var%hurgan.cre" "override"
+  // Final Strike +3
+  REPLACE_CRE_ITEM "mh#hamm1" #0 #0 #0 "none" "qitem3"
+  
+COPY_EXISTING "%tutu_var%hurgan.dlg" "override"
+  // Final Strike +3
+  DECOMPILE_AND_PATCH
+  BEGIN
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "%tutu_var%hamm04" "mh#hamm1"
+  END
+
+
+// Durlag's Tower D4
+
+COPY_EXISTING "%DurlagsTower_D4%.are" "override"
+  // Foesplitter +1
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 7
+    STR_VAR
+    item_to_add		= "mh#btax1"
+  END
+
+  // Battlecloak of Vycaena
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    STR_VAR
+    old_item		= "%tutu_var%clck20"
+    new_item		= "mh#clck2"
+  END
+
+  // Terminus Est +2
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 34
+    STR_VAR
+    item_to_add		= "mh#swrd1"
+  END
+
+
+// Balduran's Ship D2
+COPY_EXISTING "%IsleofBalduranNShip_D2%.are" "override"
+  // Meteoric Iron
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 3
+    STR_VAR
+    item_to_add		= "mh#misc1"
+  END
+
+
+

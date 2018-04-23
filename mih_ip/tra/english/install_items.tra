@@ -37,7 +37,7 @@ Abilities: Casts True Seeing once per day.
 
 Weight: 3~
 @8    = ~Girdle of Dwarvenkind~
-@9    = ~Dwarven priests of Moradin sometimes fashion these belts to bestow upon a non-dwarf who has done the clan a great service.  In addition to making the wearer an honorary clansmember, the girdle has a number of beneficial effects.
+@9    = ~Dwarven priests of Moradin sometimes fashion these belts to bestow upon a non-dwarf who has done the clan a great service.  In addition to making the wearer an honorary clans-member, the girdle has a number of beneficial effects.
 
 STATISTICS:
 
@@ -105,6 +105,7 @@ Weight: 3~
 STATISTICS:
 
 Armor Class: +1 bonus
+
 THAC0: +3 bonus
 Damage: 1d4 +4
 Damage Type: Crushing
@@ -126,9 +127,9 @@ Special: Protects against critical hits.~
 
 Weight: 150~
 @26   = ~Ring of the Lich +3~
-@27   = ~This magical ring was created centuries ago by Anthares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Anthares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
+@27   = ~This magical ring was created centuries ago by Anthares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Antares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
 
-Many years later on a moonless night Anthares, now calling himself the Ebon Hand, rose from the waves and stalked the land, attacking lone travelers and small settlements as he searched for a way to raise his fallen enclave.  This continued for a few years until his reign of terror was ended by a group of adventurers from the Dales.  This ring was pilfered off of his withered corpse.
+Many years later on a moonless night Antares, now calling himself the Ebon Hand, rose from the waves and stalked the land, attacking lone travelers and small settlements as he searched for a way to raise his fallen enclave.  This continued for a few years until his reign of terror was ended by a group of adventurers from the Dales.  This ring was pilfered off of his withered corpse.
 
 STATISTICS:
 
@@ -189,3 +190,157 @@ Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: 1-handed
 Requires: 10 Strength~
+@40   = ~Necklace of Adaptation~
+@41   = ~This magical necklace protects the wearer from all kinds of harmful gasses, like the arcane spells Stinking Cloud and Cloud Kill, and even the foul breath of a green dragon.
+
+There is no known history, and the near mint condition of the item suggests it was crafted quite recently, perhaps by Thalantyr of Beregost.
+
+STATISTICS:
+
+Special: Wearer is protected from all harmful gasses and vapors.
+Weight: 2~
+@42   = ~Winter Wolf Hide +1~
+@43   = ~This hide armor was sewn together from the hides of several winter wolves.  Some of the latent magic of these majestic wolves remains, granting superior protection as well as insulation from cold.  The armor remains uncomfortable to wear and appalling to look at though, and it will not fetch a high price in shops.
+
+STATISTICS:
+
+Armor Class: 5
+Cold Resistance: +50%
+Move Silently: -20
+Lock Picking: -10
+Find/Remove Traps: -10
+Pick Pockets: -10
+Weight: 20
+Requires: 6 Strength~
+@44   = ~Eversing +2~
+@45   = ~This beautiful, elven-crafted splint mail is a pure work of art.  Each metal strip has been individually silvered, polished and engraved with a single elven rune.  Although it is many centuries old, there is not a single scratch or speck of rust to be found, its beauty remains untarnished.
+
+Not much is known about the history of this armor.  It is known that it is a relic from the ancient Crown Wars, but elven sages invariably clam up when pressed for details and others find their knowledge coming short.  Possibly it was crafted by house Vishaan, a name forever associated with the blackest pages of elven history.
+
+STATISTICS:
+
+Armor Class: 2
+Magic Resistance: +5%
+Special: Wearer is immune to petrification.
+Weight: 8
+Requires: 8 Strength
+Not Usable By:
+ Bard
+ Druid
+ Mage
+ Thief~
+@46   = ~Sunite Sash~
+@47   = ~This beautiful scarlet sash has been woven from fine red thread and delicate gold wire.  Priests of Sune sometimes create these enchanted sashes as a gift to a loved one.
+
+STATISTICS:
+
+Armor Class: +2 bonus
+Charisma: +2 bonus
+
+Weight: 2~
+@48   = ~Boots of Striding and Springing~
+@49   = ~The wearer of these enchanted boots becomes exceptionally light on %PRO_HISHER% feet and can easily make spectacular leaps in all directions.  In addition to an improved movement rate, this makes %PRO_HIMHER% harder to hit in combat.
+
+STATISTICS:
+
+Armor Class: +1 bonus
+Movement Rate: +2 bonus
+
+Weight: 4~
+@50   = ~Vambraces of Evil's Warding~
+@51   = ~Legend has it that these bracers were forged on mount Celestia itself and given to the first champion of good, aeons ago.  Whether that is true remains to be seen, but the glowing blue celestial runes do suggest a divine origin of some sort.  Countless of mortal champions have worn these bracers in the everlasting battle against evil.
+
+STATISTICS:
+
+Wearer has permanent protection from evil.
+
+Weight: 2~
+@52   = ~Catclaw +3~
+@53   = ~This dagger was once the property of a rogue known only as 'The Gray Mouser'.  Details about this legendary rogue are vague at best.  Some sources claim he came from a city named Lankhmar, but no city by that name exists in Faerun.
+
+Something in the enchantment of this dagger hints it may originate from another world where the rules of magic differ slightly from those of Faerun.  Such things are not unheard of in the Forgotten Realms.
+
+STATISTICS:
+
+Backstab: +1
+Stealth: +15%
+
+THAC0: +3 bonus
+Damage: 1d4 +3
+Damage Type: Piercing
+Weight: 0
+Speed Factor: 0 
+Proficiency Type: Dagger
+Type:  1-handed
+Require: 3 Strength~
+@54   = ~Pale Blue Ioun Stone~
+@55   = ~The beautiful azure blue of this ioun stone resembles the sky on a warm summer day.
+
+STATISTICS:
+
+Strength: +1 bonus
+Weight: 2~
+@56   = ~This ioun stone is so clear and transparent it becomes almost invisible.  Such ioun stones can supposedly absorb and nullify magical energy.
+
+STATISTICS:
+
+Magic Resistance: +5%
+Weight: 2~
+@57   = ~Bow of Eletha~
+@58   = ~This bow once belonged to the green elf Eletha, a legendary archer and hero.  How it came to leave elven lands is unknown, but the elves would certainly like it returned, and would no doubt take a dim view of anyone found using it for evil purposes.
+
+STATISTICS:
+
+This bow has double the normal range.  Three times a day, it can fire a Magic Missile as a 10th level wizard.
+
+THAC0: +3 bonus
+Weight: 3
+Speed Factor: 5
+Proficiency Type: Long Bow
+Type: 2-handed
+Requires: 6 Strength~
+@59   = ~Oil of Acid Resistance~
+@60   = ~This ethereal oil, when applied to the skin and exposed equipment, bestows virtual immunity to all forms of acid, including ankheg spittle and the corrosive breath of black dragons.  All damage by acid is reduced by 90%.  The effect lasts for 10 turns or until dispelled.~
+@61   = ~Ankheg Shield +1~
+@62   = ~The dwarven smith Brokk created this shield for <CHARNAME> from the carapace of an ankheg.  Such material has several advantages over using steel, it cannot rust and weighs much less.  Druids can also use it without restriction.  The only drawback is in the inherent danger of procuring the base material.
+
+STATISTICS:
+
+Armor Class Bonus: 2
+Weight: 3
+Requires: 12 Strength~
+@63   = ~Shield of the Phoenix +2~
+@64   = ~The Order of the Phoenix was a paladin order several hundred years ago.  The cause of the order's disappearance is unclear, some claim they fell to an orc horde, others say a clash of faith ripped them apart, and yet others whisper it was the work of dark forces.  Perhaps all of these are to blame to some degree.  Fact is that the order disappeared almost overnight, and only their iconic shields, occasionally found in an orc lair or dragon hoard, remain.
+
+STATISTICS:
+
+Fire Resistance: +30%
+
+Armor Class Bonus: 3, 5 vs. Undead
+Weight: 5
+Requires: 12 Strength~
+@65   = ~Staff of Rumathil~
+@66   = ~This ancient staff of elven make is a boon to both wizards and clerics.  The exact origin is a mystery even to the elves themselves, but it is said to have been crafted in the secret elven nation of Evermeet.  How exactly it made its way to the mainland is not known either.
+
+STATISTICS:
+
+This staff makes both wizards and priests cast spells as if they were actually one level higher.  It does not grant extra spell slots, but will affect damage, duration, and so on of known spells.
+
+THAC0: +2 bonus
+Damage: 1d6 +2
+Damage Type: Crushing
+Weight: 3
+Speed Factor: 2
+Proficiency Type: Staff
+Type: 2-handed
+Requires: 5 Strength~
+@67   = ~Wand of Illusions~
+@68   = ~This wand is a powerful defensive tool, it can make a wizard invisible, or create illusionary copies of <PRO_HIMHER>.
+
+STATISTICS:
+
+Ability 1:
+Effect: Invisibility (self only)
+
+Ability 2:
+Effect: Mirror Image~

@@ -1,0 +1,55 @@
+mh#amul1 Amulet against Undead			DMG (2E)
+mh#amul2 Necklace of Prayer Beads		DMG (2E)
+mh#amul3 Gem of Insight				DMG (2E)
+mh#amul4 Gem of Seeing				DMG (2E)
+mh#amul5 Necklace of Adaption			DMG (2E)
+
+mh#armr1 Winter Wolf Hide +1
+mh#armr2 Eversing +2				Castlevania AoS
+
+mh#belt1 Girdle of Dwarvenkind			DMG (2E)
+mh#belt2 Sunite Sash				Magic of Faerun (3E)
+
+mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
+mh#boot2 Boots of Striding and Springing	DMG (2E)
+
+mh#brac1 Vambraces of Evil's Warding		Warriors of Heaven (2E)
+mh#brac2 Gauntlets of the Dwarven King
+
+mh#btax1 Foesplitter +1				Races of Faerun (3E)
+
+mh#clck1 Mutamin's Cloak
+mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
+
+mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
+
+mh#hamm1 Final Strike +3
+
+mh#helm1 Helm of Valor				Elves of Evermeet (2E)
+
+mh#ioun1 Pale Blue Ioun Stone			DMG (2E)
+mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
+
+mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
+
+mh#misc1 Meteoric Iron
+
+mh#potn1 Oil of Acid Resistance			DMG (2E)
+
+mh#ring1 Ring of the Lich +3			DMG (2E)
+mh#ring2 Ring of Warmth				DMG (2E)
+mh#ring3 Ring of the Neophyte			DMG (2E)
+mh#ring4 Ring of Shocking Grasp			DMG (2E)
+
+mh#shld1 Meteoric Shield +2
+mh#shld2 Ankheg Shield +1
+mh#shld3 Shield of the Phoenix +2
+
+mh#staf1 Staff of Rumathil			Elves of Evermeet (2E)
+
+mh#swrd1 Terminus Est +2			Castlevania SotN
+mh#swrd2 Smythe's Slicer +1
+
+mh#wand1 Wand of Illusions			DMG (2E)
+
+

@@ -59,11 +59,59 @@ COPY "%MOD_FOLDER%/items/mh#amul4.itm" "override"
   SAY IDENTIFIED_DESC @7
 
 
+// mh#amul5 - Necklace of Adaptation
+
+COPY "%MOD_FOLDER%/items/mh#amul5.itm" "override"
+  SAY NAME2 @40
+  SAY IDENTIFIED_DESC @41
+
+  PATCH_FOR_EACH gas IN "CLOUD" "CLOUDKIL" "CLOUDPC" "GOLCLOUD" "DRAGGREE"
+  BEGIN
+    PATCH_IF IDS_OF_SYMBOL ("projectl" "%gas%") >= 0
+    BEGIN
+      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+        INT_VAR
+	opcode		= 83	// Protection: From Projectile
+	target		= 1	// Self
+	timing		= 2	// While worn
+	parameter2	= IDS_OF_SYMBOL ("projectl" "%gas%")
+      END
+    END
+  END
+
+
+// mh#armr1 - Winter Wolf Hide +1
+
+COPY "%MOD_FOLDER%/items/mh#armr1.itm" "override"
+  SAY NAME2 @42
+  SAY IDENTIFIED_DESC @43
+
+
+APPEND "itemexcl.2da" "mh#armr1 1" UNLESS "mh#armr1"
+
+
+// mh#armr2 - Eversing +2
+
+COPY "%MOD_FOLDER%/items/mh#armr2.itm" "override"
+  SAY NAME2 @44
+  SAY IDENTIFIED_DESC @45
+
+
+APPEND "itemexcl.2da" "mh#armr2 1" UNLESS "mh#armr2"
+
+
 // mh#belt1 - Girdle of Dwarvenkind
 
 COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
   SAY NAME2 @8
   SAY IDENTIFIED_DESC @9
+
+
+// mh#belt2 - Sunite Sash
+
+COPY "%MOD_FOLDER%/items/mh#belt2.itm" "override"
+  SAY NAME2 @46
+  SAY IDENTIFIED_DESC @47
 
 
 // mh#boot1 - Boots of the Master Ninja
@@ -73,9 +121,23 @@ COPY "%MOD_FOLDER%/items/mh#boot1.itm" "override"
   SAY IDENTIFIED_DESC @11
 
 
-// mh#brac1 - Gauntlets of the Dwarven King
+// mh#boot2 - Boots of Striding and Springing
+
+COPY "%MOD_FOLDER%/items/mh#boot1.itm" "override"
+  SAY NAME2 @48
+  SAY IDENTIFIED_DESC @49
+
+
+// mh#brac1 - Vambraces of Evil's Warding
 
 COPY "%MOD_FOLDER%/items/mh#brac1.itm" "override"
+  SAY NAME2 @50
+  SAY IDENTIFIED_DESC @51
+
+
+// mh#brac2 - Gauntlets of the Dwarven King
+
+COPY "%MOD_FOLDER%/items/mh#brac2.itm" "override"
   SAY NAME2 @12
   SAY IDENTIFIED_DESC @13
 
@@ -104,6 +166,13 @@ COPY "%MOD_FOLDER%/items/mh#clck2.itm" "override"
 APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
 
 
+// mh#dagg1 - Catclaw +3
+
+COPY "%MOD_FOLDER%/items/mh#dagg1.itm" "override"
+  SAY NAME2 @52
+  SAY IDENTIFIED_DESC @53
+
+
 // mh#hamm1 - Final Strike +3
 
 COPY "%MOD_FOLDER%/items/mh#hamm1.itm" "override"
@@ -118,6 +187,26 @@ COPY "%MOD_FOLDER%/items/mh#helm1.itm" "override"
   SAY IDENTIFIED_DESC @23
 
 
+// mh#ioun1 - Pale Blue Ioun Stone
+
+COPY "%MOD_FOLDER%/items/mh#ioun1.itm" "override"
+  SAY NAME2 @54
+  SAY IDENTIFIED_DESC @55
+
+
+// mh#ioun2 - Crystal Clear Ioun Stone
+
+COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
+  SAY NAME2 @56
+
+
+// mh#lbow1 - Bow of Eletha
+
+COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
+  SAY NAME2 @57
+  SAY IDENTIFIED_DESC @58
+
+
 // mh#misc1 - Meteoric Iron
 
 COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
@@ -125,7 +214,7 @@ COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
   SAY UNIDENTIFIED_DESC @25
 
 
-// mh#ring3 - Ring of the Lich +3
+// mh#ring1 - Ring of the Lich +3
 
 COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
   SAY NAME2 @26
@@ -133,6 +222,13 @@ COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
 
 
 APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
+
+
+// mh#potn1 - Oil of Acid Resistance
+
+COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
+  SAY NAME2 @59
+  SAY IDENTIFIED_DESC @60
 
 
 // mh#ring2 - Ring of Warmth
@@ -163,6 +259,27 @@ COPY "%MOD_FOLDER%/items/mh#shld1.itm" "override"
   SAY IDENTIFIED_DESC @35
 
 
+// mh#shld2 - Ankheg Shield +1
+
+COPY "%MOD_FOLDER%/items/mh#shld2.itm" "override"
+  SAY NAME2 @61
+  SAY IDENTIFIED_DESC @62
+
+
+// mh#shld3 - Shield of the Phoenix +2
+
+COPY "%MOD_FOLDER%/items/mh#shld3.itm" "override"
+  SAY NAME2 @63
+  SAY IDENTIFIED_DESC @64
+
+
+// mh#staf1 - Staff of Rumathil
+
+COPY "%MOD_FOLDER%/items/mh#staf1.itm" "override"
+  SAY NAME2 @65
+  SAY IDENTIFIED_DESC @66
+
+
 // mh#swrd1 - Terminus Est +2
 
 COPY "%MOD_FOLDER%/items/mh#swrd1.itm" "override"
@@ -184,5 +301,12 @@ CREATE EFF "mh#spdht"
 COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
   SAY NAME2 @38
   SAY IDENTIFIED_DESC @39
+
+
+// mh#wand1 - Wand of Illusions
+
+COPY "%MOD_FOLDER%/items/mh#wand1.itm" "override"
+  SAY NAME2 @67
+  SAY IDENTIFIED_DESC @68
 
 
