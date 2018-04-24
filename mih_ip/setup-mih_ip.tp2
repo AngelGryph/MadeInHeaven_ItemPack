@@ -42,6 +42,8 @@ ALWAYS
     END
 
     INCLUDE ~%MOD_FOLDER%/lib/mh_functions.tph~
+
+    LAUNCH_ACTION_MACRO mh_process_ini_file
   END	// done_init block
 END	// ALWAYS block
 
@@ -60,7 +62,7 @@ LAUNCH_ACTION_FUNCTION mh_run_task
   task		= "install_items"
 END
 
-ACTION_IF GAME_INCLUDES "bg1"
+ACTION_IF GAME_INCLUDES "bg1" AND $ini_hash("place_items_in_bg1")
 BEGIN
   LAUNCH_ACTION_FUNCTION mh_run_task
     STR_VAR
@@ -68,7 +70,7 @@ BEGIN
   END
 END
 
-ACTION_IF GAME_INCLUDES "sod"
+ACTION_IF GAME_INCLUDES "sod" AND $ini_hash("place_items_in_sod")
 BEGIN
   LAUNCH_ACTION_FUNCTION mh_run_task
     STR_VAR

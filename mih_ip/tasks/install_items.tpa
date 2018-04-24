@@ -87,7 +87,10 @@ COPY "%MOD_FOLDER%/items/mh#armr1.itm" "override"
   SAY IDENTIFIED_DESC @43
 
 
-APPEND "itemexcl.2da" "mh#armr1 1" UNLESS "mh#armr1"
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT1
+BEGIN
+  APPEND "itemexcl.2da" "mh#armr1 1" UNLESS "mh#armr1"
+END
 
 
 // mh#armr2 - Eversing +2
@@ -97,7 +100,10 @@ COPY "%MOD_FOLDER%/items/mh#armr2.itm" "override"
   SAY IDENTIFIED_DESC @45
 
 
-APPEND "itemexcl.2da" "mh#armr2 1" UNLESS "mh#armr2"
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT1
+BEGIN
+  APPEND "itemexcl.2da" "mh#armr2 1" UNLESS "mh#armr2"
+END
 
 
 // mh#belt1 - Girdle of Dwarvenkind
@@ -163,7 +169,10 @@ COPY "%MOD_FOLDER%/items/mh#clck2.itm" "override"
   SAY IDENTIFIED_DESC @19
 
 
-APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
+BEGIN
+  APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
+END
 
 
 // mh#dagg1 - Catclaw +3
@@ -221,7 +230,10 @@ COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
   SAY IDENTIFIED_DESC @27
 
 
-APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
+BEGIN
+  APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
+END
 
 
 // mh#potn1 - Oil of Acid Resistance
