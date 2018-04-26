@@ -1,0 +1,20 @@
+mh#belt2 Sunite Sash				Ziatar (battle)
+
+mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
+
+mh#brac2 Gauntlets of the Dwarven King		Morentherene's Lair (nest)
+
+mh#dagg1 Catclaw +3				Nazramu (shop)
+
+mh#ioun1 Pale Blue Ioun Stone			Kazzrem (shop)
+mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
+
+mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
+
+mh#shld3 Shield of the Phoenix +2		Temple of Cyric (chest)
+
+mh#staf1 Staff of Rumathil			Korlasz (battle)
+
+mh#wand1 Wand of Illusions			Lich Outpost (table)
+
+

@@ -1,0 +1,73 @@
+// Korlasz
+
+COPY_EXISTING "bdshkorl.cre" "override"
+  REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+
+
+// Kazzrem the Calishite
+
+COPY_EXISTING "bdkazzre.sto" "override"
+  ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1
+
+
+// Nazramu's Store
+
+COPY_EXISTING "bdnazram.sto" "override"
+  ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
+
+
+// Lich Outpost
+
+COPY_EXISTING "bd1200.are" "override"
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 1
+    charges1			= 12
+    charges2			= 12
+    STR_VAR
+    item_to_add			= "mh#wand1"
+  END
+
+
+// Morentherene's Lair
+
+COPY_EXISTING "bd7210.are" "override"
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 1
+    STR_VAR
+    item_to_add			= "mh#brac2"
+  END
+
+
+// Temple of Cyric
+
+COPY_EXISTING "bd7230.are" "override"
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 11
+    STR_VAR
+    item_to_add			= "mh#shld3"
+  END
+
+
+// Ziatar
+
+COPY_EXISTING "bdziatar.cre" "override"
+  ADD_CRE_ITEM "mh#belt" #0 #0 #0 "none" "belt"
+
+
+// Vampire Hideout
+
+COPY_EXISTING "bd7410.are" "override"
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 1
+    charges2			= 3
+    STR_VAR
+    item_to_add			= "mh#lbow1"
+  END
+
+
