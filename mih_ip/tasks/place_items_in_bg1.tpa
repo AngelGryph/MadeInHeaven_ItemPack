@@ -4,6 +4,34 @@ COPY "%MOD_FOLDER%/stores/mh#brokk.sto" "override"
   SAY NAME1 "Brokk's Forge"
 
 
+ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#brokk.tra"
+
+COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/mh#brokk.d"
+
+LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  STR_VAR
+  dialog	= "mh#brokk"
+END
+
+
+COPY "%MOD_FOLDER%/actors/mh#brokk.cre" "override"
+  SAY NAME1 "Brokk"
+  SAY NAME2 "Brokk"
+
+
+COPY_EXISTING "%FriendlyArmInn_House%.are" "override"
+  LAUNCH_PATCH_MACRO mh_remove_all_area_actors
+
+  LAUNCH_PATCH_FUNCTION mh_add_area_actor
+    INT_VAR
+    x_position		= 450
+    y_position		= 300
+    orientation		= 10
+    STR_VAR
+    cre_resref		= "mh#brokk"
+  END
+
+
 // Song of the Morning
 
 COPY_EXISTING "%tutu_var%tem3402.sto" "override"

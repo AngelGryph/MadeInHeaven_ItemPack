@@ -2,15 +2,16 @@
 //
 // WeiDU installer
 
-BACKUP ~mih_ip/backup~
+BACKUP "mih_ip/backup"
 
-AUTHOR ~angel@pearlgates.net~
+AUTHOR "angel@pearlgates.net"
 VERSION 1
 
 MODDER missing_eval none
 ASK_EVERY_COMPONENT
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
+AUTO_TRA "mih_ip/tra/%s"
 
 ALWAYS
   // Do the following only once per install
@@ -25,10 +26,10 @@ ALWAYS
     END
 
     // Load compatibility variables for various implementations of BG1.
-    INCLUDE ~%MOD_FOLDER%/lib/g3_tutu_cpmvars.tpa~
-    INCLUDE ~%MOD_FOLDER%/lib/g3_bgt_cpmvars.tpa~
-    INCLUDE ~%MOD_FOLDER%/lib/g3_bgee_cpmvars.tpa~
-    INCLUDE ~%MOD_FOLDER%/lib/g3_eet_cpmvars.tpa~
+    INCLUDE "%MOD_FOLDER%/lib/g3_tutu_cpmvars.tpa"
+    INCLUDE "%MOD_FOLDER%/lib/g3_bgt_cpmvars.tpa"
+    INCLUDE "%MOD_FOLDER%/lib/g3_bgee_cpmvars.tpa"
+    INCLUDE "%MOD_FOLDER%/lib/g3_eet_cpmvars.tpa"
 
     // BG(2)EE compat: handle charsets
     ACTION_DEFINE_ARRAY mh#reload BEGIN "setup-%MOD_FOLDER%" END

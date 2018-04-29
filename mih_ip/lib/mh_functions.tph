@@ -1,3 +1,6 @@
+// Made in Heaven function library
+
+
 DEFINE_ACTION_FUNCTION mh_run_task
   STR_VAR
   task		= "???"
@@ -41,6 +44,87 @@ BEGIN
         TO_LOWER key
         SPRINT $ini_hash(~%key%~) ~%value%~
       END
+  END
+END
+
+
+DEFINE_PATCH_MACRO mh_remove_all_area_actors
+BEGIN
+  FOR (i = SHORT_AT 0x0058; i > 0; --i)
+  BEGIN
+    LAUNCH_PATCH_FUNCTION fj_are_structure
+      INT_VAR
+      fj_delete_mode            = i - 1
+      STR_VAR
+      fj_structure_type         = "actor"
+    END
+  END
+END
+
+
+DEFINE_PATCH_FUNCTION mh_add_area_actor
+BEGIN
+  PATCH_IF FILE_EXISTS_IN_GAME "%cre_resref%.cre"
+  BEGIN
+    INNER_PATCH_FILE "%cre_resref%.cre"
+    BEGIN
+      READ_STRREF 0x0008 cre_name
+    END
+  END
+  ELSE
+  BEGIN
+    PATCH_FAIL "Adding non-existent actor %cre_resref% to area!"
+  END
+
+  LAUNCH_PATCH_FUNCTION fj_are_structure
+    INT_VAR
+    fj_loc_x                    = x_position
+    fj_loc_y                    = y_position
+    fj_dest_x                   = x_position
+    fj_dest_y                   = y_position
+    fj_orientation              = orientation
+    STR_VAR
+    fj_structure_type           = "actor"
+    fj_name                     = "%cre_name%"
+    fj_cre_resref               = "%cre_resref%"
+  END
+END
+
+
+DEFINE_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  STR_VAR
+  dialog    = "dummy"
+BEGIN
+  ACTION_IF GAME_IS "bgt" AND FILE_EXISTS_IN_GAME "aram00.bcs"
+  BEGIN
+    COPY_EXISTING - "%dialog%.dlg" "%MOD_FOLDER%/work"
+      GET_OFFSET_ARRAY trans_array 0x0014 4 0x0010 4 0 0 0x0020
+      PHP_EACH trans_array AS int => trans_offset
+      BEGIN
+        PATCH_IF (LONG_AT (trans_offset) & BIT4)
+    BEGIN
+      READ_SLONG (trans_offset + 0x0008) strref
+      PATCH_IF strref > 0
+      BEGIN
+        DEFINE_ASSOCIATIVE_ARRAY journal_entries
+        BEGIN
+          "%strref%" => "1"
+        END
+      END
+    END
+      END
+
+    COPY_EXISTING "aram00.bcs" "override"
+    DECOMPILE_AND_PATCH
+    BEGIN
+      PHP_EACH journal_entries AS strref => int
+      BEGIN
+        REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH
+	 ~SetGlobal("A6StartARAM00","ARAM00",10)~
+	 ~SetGlobal("A6StartARAM00","ARAM00",10)
+	  EraseJournalEntry(%strref%)~
+      END
+    END
   END
 END
 
