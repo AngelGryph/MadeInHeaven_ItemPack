@@ -1,0 +1,51 @@
+// Potions of Extra Healing in BG1
+
+
+// Distribute potions of extra healing to major temples and some shops.
+
+ACTION_IF $ini_hash("extra_healing_shops")
+BEGIN
+  COPY_EXISTING "tem0002.sto"	"override"
+                "tem0131.sto"	"override"
+                "tem0132.sto"	"override"
+                "tem3402.sto"	"override"
+                "tem4003.sto"	"override"
+	        "stoblack.sto"	"override"
+	        "ulgoth.sto"	"override"
+	        "erdane.sto"	"override"
+    ADD_STORE_ITEM "potn52" AFTER "potn08" #1 #0 #0 "IDENTIFIED" (RANDOM (2 5))
+
+    BUT_ONLY_IF_IT_CHANGES	// Other mods may already have done this.
+END
+
+
+// Replace large stacks of healing potions in Durlag's Tower with
+// equivalent stacks of potions of extra healing.
+
+ACTION_IF $ini_hash("extra_healing_durlag")
+BEGIN
+  COPY_EXISTING "%DurlagsTower_D1%.are" "override"
+                "%DurlagsTower_D2%.are" "override"
+                "%DurlagsTower_D3%.are" "override"
+                "%DurlagsTower_D4%.are" "override"
+    GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
+    PHP_EACH cont_array AS int => cont_offset
+    BEGIN
+      GET_OFFSET_ARRAY2 itm_array cont_offset ARE_V10_ITEMS
+      PHP_EACH itm_array AS int => itm_offset
+      BEGIN
+        READ_ASCII (itm_offset + 0x0000) itm_resref
+        READ_SHORT (itm_offset + 0x000a) amount
+
+        PATCH_IF "%itm_resref%" STRING_EQUAL_CASE "potn08" AND amount > 2
+        BEGIN
+          WRITE_ASCII (itm_offset + 0x0000) "potn52"
+	  WRITE_SHORT (itm_offset + 0x000a) (amount + 1) / 3
+        END
+      END
+    END
+
+    BUT_ONLY_IF_IT_CHANGES	// Other mods may already have done this.
+END
+
+

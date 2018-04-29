@@ -1,0 +1,20 @@
+// Elixir of Health tweak
+
+COPY_EXISTING "potn17.itm" "override"
+  LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+    INT_VAR
+    match_opcode	= 11	// Cure: Poison
+    opcode		= 75	// Cure: Blindness
+    STR_VAR
+    insert		= "below"
+  END
+
+  LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+    INT_VAR
+    match_opcode	= 79	// Cure: Disease
+    opcode		= 81	// Cure: Deafness
+    STR_VAR
+    insert		= "below"
+  END
+
+

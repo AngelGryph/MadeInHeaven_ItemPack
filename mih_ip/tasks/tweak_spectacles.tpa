@@ -1,0 +1,9 @@
+// Tweak Spectacles of Spectacle
+
+COPY_EXISTING "bdmisc01.itm" "override"
+  LAUNCH_PATCH_FUNCTION ALTER_ITEM_HEADER
+    INT_VAR
+    charges		= 9
+  END
+
+

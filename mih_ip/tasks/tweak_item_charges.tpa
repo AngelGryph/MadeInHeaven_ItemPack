@@ -1,0 +1,136 @@
+// Tweak Item Charges
+
+
+// Patch item definitions
+
+COPY_EXISTING_REGEXP ".+\.itm" "override"
+  GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
+  PHP_EACH ab_array AS int => ab_offset
+  BEGIN
+    PATCH_IF SHORT_AT (ab_offset + 0x0022) > charge_cap
+    BEGIN
+      WRITE_SHORT (ab_offset + 0x0022) charge_cap
+    END
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
+// Patch items held by creatures
+
+COPY_EXISTING_REGEXP ".+\.cre" "override"
+  GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+  PHP_EACH itm_array AS int => itm_offset
+  BEGIN
+    READ_ASCII (itm_offset + 0x0000) itm_resref
+
+    PATCH_IF FILE_EXISTS_IN_GAME "%itm_resref%.itm"
+    BEGIN
+      INNER_PATCH_FILE "%itm_resref%.itm"
+      BEGIN
+        READ_SHORT 0x0038 stack_max ELSE 2
+      END
+
+      PATCH_IF (stack_max < 2)
+      BEGIN
+	PATCH_IF SHORT_AT (itm_offset + 0x000a) > charge_cap
+	BEGIN
+	  WRITE_SHORT (itm_offset + 0x000a) charge_cap
+	END
+
+	PATCH_IF SHORT_AT (itm_offset + 0x000c) > charge_cap
+	BEGIN
+	  WRITE_SHORT (itm_offset + 0x000c) charge_cap
+	END
+
+	PATCH_IF SHORT_AT (itm_offset + 0x000e) > charge_cap
+	BEGIN
+	  WRITE_SHORT (itm_offset + 0x000e) charge_cap
+	END
+      END
+    END
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
+// Patch items sold in stores
+
+COPY_EXISTING_REGEXP ".+\.sto" "override"
+  GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+  PHP_EACH itm_array AS int => itm_offset
+  BEGIN
+    READ_ASCII (itm_offset + 0x000) itm_resref
+
+    PATCH_IF FILE_EXISTS_IN_GAME "%itm_resref%.itm"
+    BEGIN
+      INNER_PATCH_FILE "%itm_resref%.itm"
+      BEGIN
+        READ_SHORT 0x0038 stack_max ELSE 0
+      END
+
+      PATCH_IF (stack_max < 2)
+      BEGIN
+	PATCH_IF SHORT_AT (itm_offset + 0x000a) > charge_cap
+	BEGIN
+	  WRITE_SHORT (itm_offset + 0x000a) charge_cap
+	END
+
+	PATCH_IF SHORT_AT (itm_offset + 0x000c) > charge_cap
+	BEGIN
+	  WRITE_SHORT (itm_offset + 0x000c) charge_cap
+	END
+
+	PATCH_IF SHORT_AT (itm_offset + 0x000e) > charge_cap
+	BEGIN
+	  WRITE_SHORT (itm_offset + 0x000e) charge_cap
+	END
+      END
+    END
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
+// Patch items in area containers
+
+COPY_EXISTING_REGEXP ".+\.are" "override"
+  GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
+  PHP_EACH cont_array AS int => cont_offset
+  BEGIN
+    GET_OFFSET_ARRAY2 itm_array cont_offset ARE_V10_ITEMS
+    PHP_EACH itm_array AS int => itm_offset
+    BEGIN
+      READ_ASCII (itm_offset + 0x0000) itm_resref
+
+      PATCH_IF FILE_EXISTS_IN_GAME "%itm_resref%.itm"
+      BEGIN
+        INNER_PATCH_FILE "%itm_resref%.itm"
+        BEGIN
+          READ_SHORT 0x0038 stack_max ELSE 0
+        END
+
+        PATCH_IF (stack_max < 2)
+        BEGIN
+	  PATCH_IF SHORT_AT (itm_offset + 0x000a) > charge_cap
+	  BEGIN
+	    WRITE_SHORT (itm_offset + 0x000a) charge_cap
+	  END
+
+	  PATCH_IF SHORT_AT (itm_offset + 0x000c) > charge_cap
+	  BEGIN
+	    WRITE_SHORT (itm_offset + 0x000c) charge_cap
+	  END
+
+	  PATCH_IF SHORT_AT (itm_offset + 0x000e) > charge_cap
+	  BEGIN
+	    WRITE_SHORT (itm_offset + 0x000e) charge_cap
+	  END
+        END
+      END
+    END
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
