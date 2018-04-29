@@ -4,11 +4,25 @@ COPY_EXISTING "bdshkorl.cre" "override"
   REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
 
 
+// Sorcerous Sundries
+
+COPY_EXISTING "bdsorcsc.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #5
+
+
 // Kazzrem the Calishite
 
 COPY_EXISTING "bdkazzre.sto" "override"
   ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1
   ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1
+
+
+// Bellowgulp & the Concocter
+
+COPY_EXISTING "bdbellow.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn22" #1 #0 #0 "identified" #15
 
 
 // Nazramu's Store

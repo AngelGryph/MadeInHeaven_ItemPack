@@ -32,6 +32,24 @@ COPY_EXISTING "%FriendlyArmInn_House%.are" "override"
   END
 
 
+// Carnival Stores
+
+COPY_EXISTING "%tutu_var%sto4905.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
+
+
+COPY_EXISTING "%tutu_var%sto4906.sto" "override"
+  // Ring of Shocking Grasp
+  ADD_STORE_ITEM "mh#ring4" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
+
+  // Ring of the Neophyte
+  ADD_STORE_ITEM "mh#ring3" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
+
+  // Ring of Warmth
+  ADD_STORE_ITEM "mh#ring2" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
+
+
 // Song of the Morning
 
 COPY_EXISTING "%tutu_var%tem3402.sto" "override"
@@ -49,6 +67,9 @@ COPY_EXISTING "%tutu_var%tem0132.sto" "override"
 // High Hedge
 
 COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
+
   // Gem of Insight
   ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
 
@@ -56,24 +77,18 @@ COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
   ADD_STORE_ITEM "%tutu_var%clck20" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
 
 
+// Sorcerous Sundries
+
+COPY_EXISTING "sto0703.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
+
+
 // Black Lily
 
 COPY_EXISTING "%tutu_scripts%toblack.sto" "override"
   // Boots of the Master Ninja
   ADD_STORE_ITEM "mh#boot1" BEFORE "%tutu_var%clck01" #0 #0 #0 "identified" #1
-
-
-// Carnival Store
-
-COPY_EXISTING "%tutu_var%sto4906.sto" "override"
-  // Ring of Shocking Grasp
-  ADD_STORE_ITEM "mh#ring4" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
-
-  // Ring of the Neophyte
-  ADD_STORE_ITEM "mh#ring3" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
-
-  // Ring of Warmth
-  ADD_STORE_ITEM "mh#ring2" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
 
 
 // Mutamin
