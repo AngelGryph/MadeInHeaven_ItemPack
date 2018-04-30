@@ -9,20 +9,25 @@ BEGIN
   BEGIN
     PRINT ~Running task %task%...~
 
+    ACTION_IF NOT FILE_EXISTS "%MOD_FOLDER%/tasks/%task%.tpa"
+    BEGIN
+      FAIL ~Command file "%task%.tpa" not found!~
+    END
+
     COPY "%MOD_FOLDER%/dummy.mih" "override/%task%.mih"
 
     ACTION_IF FILE_EXISTS "%MOD_FOLDER%/tra/%LANGUAGE%/%task%.tra"
     BEGIN
-      LOAD_TRA "%MOD_FOLDER%/tra/%LANGUAGE%/%task%.tra"
-    END
+      WITH_TRA "%MOD_FOLDER%/tra/%LANGUAGE%/%task%.tra"
+      BEGIN
+        PRINT "Using tra file %MOD_FOLDER%/tra/%LANGUAGE%/%task%.tra..."
 
-    ACTION_IF FILE_EXISTS "%MOD_FOLDER%/tasks/%task%.tpa"
-    BEGIN
-      REINCLUDE "%MOD_FOLDER%/tasks/%task%.tpa"
+        INCLUDE "%MOD_FOLDER%/tasks/%task%.tpa"
+      END
     END
     ELSE
     BEGIN
-      FAIL ~Command file "%task%.tpa" not found!~
+      INCLUDE "%MOD_FOLDER%/tasks/%task%.tpa"
     END
   END
   ELSE
@@ -124,6 +129,64 @@ BEGIN
 	 ~SetGlobal("A6StartARAM00","ARAM00",10)
 	  EraseJournalEntry(%strref%)~
       END
+    END
+  END
+END
+
+
+DEFINE_PATCH_FUNCTION mh_prevent_spell_effect_stacking
+  INT_VAR
+  match_opcode        = 142
+BEGIN
+  PATCH_IF ENGINE_IS "iwd1 how totlm"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+      INT_VAR
+      match_opcode
+      multi_match	= 1
+      silent		= 1	// Don't care about warnings
+      opcode		= 254	// Remove effects by resource
+      timing		= 0	// Duration
+      duration		= 0
+      parameter1	= 0
+      parameter2	= 0
+      STR_VAR
+      insert		= "first"
+      resource		= "%SOURCE_RES%"
+    END
+  END
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+      INT_VAR
+      match_opcode
+      multi_match	= 1
+      silent		= 1	// Don't care about warnings
+      opcode		= 321	// Remove effects by resource
+      timing		= 0	// Duration
+      duration		= 0
+      parameter1	= 0
+      parameter2	= 0
+      STR_VAR
+      insert		= "first"
+      resource		= "%SOURCE_RES%"
+    END
+  END
+
+  PATCH_IF ENGINE_IS "bg2 tob"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+      INT_VAR
+      match_opcode
+      multi_match	= 1
+      silent		= 1	// Don't care about warnings
+      opcode		= 206	// Spell Effect: Immunity Spell
+      parameter1	= RESOLVE_STR_REF ("Multiple castings of this spell have no effect.")
+      parameter2	= 0	// Default (IWD1)
+      STR_VAR
+      insert		= "last"
+      resource		= "%SOURCE_RES%"
     END
   END
 END

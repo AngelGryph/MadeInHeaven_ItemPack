@@ -1,0 +1,11 @@
+// Move thieving stuff from Taerom to Black Lily
+
+COPY_EXISTING "taerum.sto" "override"
+  REMOVE_STORE_ITEM "leat08" "misc75"
+
+
+COPY_EXISTING "stoblack.sto" "override"
+  ADD_STORE_ITEM "leat08" AFTER "leat05" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "misc75" AFTER "dagg01" #0 #0 #0 "identified" #1
+
+

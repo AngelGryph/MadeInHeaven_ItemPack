@@ -1,0 +1,21 @@
+@0    = ~When wholly consumed, this potion restores 2d4 +2 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 2d4 +2 Hit Points.
+
+Weight: 1~
+@1    = ~When wholly consumed, this potion restores 3d8 +3 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 3d8 +3 Hit Points.
+
+Weight: 1~
+@2    = ~When wholly consumed, this potion restores 10d4 +20 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 10d4 +20 Hit Points.
+
+Weight: 1~

@@ -1,0 +1,44 @@
+// PnP Healing Potions
+
+COPY_EXISTING "potn08.itm" "override"
+  LAUNCH_PATCH_FUNCTION ALTER_EFFECT
+    INT_VAR
+    match_opcode	= 17	// HP: Current HP Modifier
+    parameter1		= 2
+    dicenumber		= 2
+    dicesize		= 4
+  END
+
+  SAY IDENTIFIED_DESC @0
+
+
+COPY_EXISTING "potn52.itm" "override"
+              "extheal.itm" "override"
+  LAUNCH_PATCH_FUNCTION ALTER_EFFECT
+    INT_VAR
+    match_opcode	= 17	// HP: Current HP Modifier
+    parameter1		= 3
+    dicenumber		= 3
+    dicesize		= 8
+  END
+
+  SAY IDENTIFIED_DESC @1
+
+  IF_EXISTS	// Item differs between IWD1 and BG2/EE
+
+
+COPY_EXISTING "potn55.itm" "override"
+              "spirit.itm" "override"
+  LAUNCH_PATCH_FUNCTION ALTER_EFFECT
+    INT_VAR
+    match_opcode	= 17	// HP: Current HP Modifier
+    parameter1		= 20
+    dicenumber		= 10
+    dicesize		= 4
+  END
+
+  SAY IDENTIFIED_DESC @2
+
+  IF_EXISTS	// Item differs between IWD1 and BG2/EE
+
+
