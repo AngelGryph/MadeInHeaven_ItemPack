@@ -32,22 +32,43 @@ COPY_EXISTING "%FriendlyArmInn_House%.are" "override"
   END
 
 
-// Carnival Stores
+// Phrenda's Scrolls
+
+COPY "%MOD_FOLDER%/stores/mh#phend.sto" "override"
+  SAY NAME1 "Phendra's Scrolls"
+
+
+ADD_JOURNAL @15 @17 @20 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#phend.tra"
+
+COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/mh#phend.d"
+
+LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  STR_VAR
+  dialog	= "mh#phend"
+END
+
+
+COPY "%MOD_FOLDER%/actors/mh#phend.cre" "override"
+  SAY NAME1 "Phendra"
+  SAY NAME2 "Phendra"
+
+
+COPY_EXISTING "%NashkelCarnival_ArmorTent%.are" "override"
+  LAUNCH_PATCH_FUNCTION mh_add_area_actor
+    INT_VAR
+    x_position		= 285
+    y_position		= 435
+    orientation		= 13
+    STR_VAR
+    cre_resref		= "mh#phend"
+  END
+
+
+// Carnival potion store
 
 COPY_EXISTING "%tutu_var%sto4905.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
-
-
-COPY_EXISTING "%tutu_var%sto4906.sto" "override"
-  // Ring of Shocking Grasp
-  ADD_STORE_ITEM "mh#ring4" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
-
-  // Ring of the Neophyte
-  ADD_STORE_ITEM "mh#ring3" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
-
-  // Ring of Warmth
-  ADD_STORE_ITEM "mh#ring2" AFTER "%tutu_var%ring21" #0 #0 #0 "identified" #1
 
 
 // Song of the Morning

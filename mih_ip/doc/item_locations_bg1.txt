@@ -4,7 +4,7 @@ mh#amul3 Gem of Insight				High Hedge (shop)
 *mh#amul4 Gem of Seeing				Gullykin (event)
 mh#amul5 Necklace of Adaption			High Hedge (shop)
 
-*mh#armr1 Winter Wolf Hide +1			Nashkel Carnival (event)
+mh#armr1 Winter Wolf Hide +1			Phendra's Scrolls (event)
 mh#armr2 Eversing +2				Brokk's Forge (shop)
 
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
@@ -24,12 +24,12 @@ mh#helm1 Helm of Valor				Brokk's Forge (shop)
 
 mh#misc1 Meteoric Iron				Balduran's Ship (chest)
 
-*mh#potn1 Oil of Acid Resistance		High Hedge (shop)
+mh#potn1 Oil of Acid Resistance		High Hedge (shop)
 
 mh#ring1 Ring of the Lich +3			Candlekeep Catacombs (chest)
-mh#ring2 Ring of Warmth				Nashkel Carnival (shop)
-mh#ring3 Ring of the Neophyte			Nashkel Carnival (shop)
-mh#ring4 Ring of Shocking Grasp			Nashkel Carnival (shop)
+mh#ring2 Ring of Warmth				Phendra's Scrolls (shop)
+mh#ring3 Ring of the Neophyte			Phendra's Scrolls (shop)
+mh#ring4 Ring of Shocking Grasp			Phendra's Scrolls (shop)
 
 mh#shld1 Meteoric Shield +2			Brokk's Forge (event)
 mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
