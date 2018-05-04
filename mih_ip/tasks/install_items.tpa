@@ -99,6 +99,11 @@ COPY "%MOD_FOLDER%/items/mh#armr2.itm" "override"
   SAY NAME2 @44
   SAY IDENTIFIED_DESC @45
 
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_petrification_arrays"
+  END
+
 
 ACTION_IF $ini_hash("update_itemexcl_2da") & BIT1
 BEGIN
@@ -160,6 +165,11 @@ COPY "%MOD_FOLDER%/items/mh#btax1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#clck1.itm" "override"
   SAY NAME2 @16
   SAY IDENTIFIED_DESC @17
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_petrification_arrays"
+  END
 
 
 // mh#clck2 - Battlecloak of Vycaena

@@ -39,6 +39,7 @@ ALWAYS
       INT_VAR
       infer_charset	= 1
       STR_VAR
+      default_language	= "english"
       tra_path		= "%MOD_FOLDER%/tra"
       iconv_path	= "%MOD_FOLDER/bin/win32/iconv"
       noconvert_array	= "mh#noconvert"
@@ -47,6 +48,7 @@ ALWAYS
 
     // Load macro/function libraries
     INCLUDE ~%MOD_FOLDER%/lib/mh_functions.tph~
+    INCLUDE ~%MOD_FOLDER%/lib/cd_effect_batches.tph~
 
     // Read the .ini file for this mod
     LAUNCH_ACTION_MACRO mh_process_ini_file
@@ -56,7 +58,7 @@ END	// ALWAYS block
 
 LANGUAGE ~English~
          ~english~
-	 ~%MOD_FOLDER%/tra/english/setup-mih_ip.tra~
+	 ~%MOD_FOLDER%/tra/english/setup-%MOD_FOLDER%.tra~
 
 
 // Item Pack
