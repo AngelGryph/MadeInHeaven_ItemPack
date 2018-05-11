@@ -152,6 +152,17 @@ LAUNCH_ACTION_FUNCTION mh_run_task
 END
 
 
+// Relative Stat Bonuses from Equipped Items
+
+BEGIN ~Relative Stat Bonuses from Equipped Items~
+GROUP ~Optional Item Tweaks~
+
+LAUNCH_ACTION_FUNCTION mh_run_task
+  STR_VAR
+  task			= "tweak_stat_items"
+END
+
+
 // Cap Item Charges
 
 BEGIN ~Cap Item Charges~
