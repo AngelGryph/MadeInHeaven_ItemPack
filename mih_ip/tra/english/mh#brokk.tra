@@ -12,20 +12,20 @@ A dwarf I met at the Friendly Arm Inn seems to be in some sort of trouble due to
 @9    = ~It warms me old dwarven heart ta hear the mine be running again.  Now maybe I can finally start me forge back up.  But, until them pesky bandits be dealt with, I can still nae get sum good ore in.~
 @10   = ~Fear not, I will deal with those bandits.~
 @11   = ~Yeah, looks like it's up to me again.  Oh well.~
-@12   = ~Heh, rushing headlong into danger, aye?  I like yer attitude, m'<BOYGIRL>.  Ye be reminding me of meself when I were younger.~
-@13   = ~Ye'd be helping a lot of good folk if ye take them out, m'<BOYGIRL>.~
+@12   = ~Heh, rushing headlong into danger, aye?  I like yer attitude, m'<GIRLBOY>.  Ye be reminding me of meself when I were younger.~
+@13   = ~Ye'd be helping a lot of good folk if ye take them out, m'<GIRLBOY>.~
 @14   = ~Here, let old Brokk give ye a hand.  Take these with ye, they will keep ye safe.  Now, go give them bandits what they deserve!~
 @15   = ~Come see me if ye be needing any weapons or armor, I'll give y'all a good deal!~
 @16   = ~Brokk's Forge
 
 My cleansing of the Nashkel mines has given the old dwarven smith Brokk some hope.  He has reopened his store, but until the bandits are dealt with he still can't get any good ore.  He gave me a pair of bracers with strange runes on them, saying they would keep me safe.  I wonder what they'll do?~
-@17   = ~<CHARNAME>!  Ye did it, m'<BOYGIRL>!  Them bandits be running like ye set their asses on fire!~
+@17   = ~<CHARNAME>!  Ye did it, m'<GIRLBOY>!  Them bandits be running like ye set their asses on fire!~
 @18   = ~Ye be making quite the name fer yerself with all this hero's business.  This dwarf will ferever be in yer debt!~
 @19   = ~Here, take this with ye, and wear it with pride, hero!~
 @20   = ~Brokk's Forge
 
 My actions at the bandit camp have not gone unnoticed, and some are starting to call me a hero.  The dwarven smith Brokk was very grateful for saving his business and gave me a strange belt, telling me to wear it with pride.~
-@21   = ~Mm, ye got sumthin' very interesting there, <BOYGIRL>.  Meteoric iron, if I be nae mistaken?~
+@21   = ~Mm, ye got sumthin' very interesting there, <GIRLBOY>.  Meteoric iron, if I be nae mistaken?~
 @22   = ~If ye be interested, I can forge ye a mighty fine shield from that.  I'll give ye a special price, only 3000 gold, but I'll be needin' a star sapphire as well.~
 @23   = ~An excellent idea!  I got all of that right here, so let's do it!~
 @24   = ~Sorry, I cannot afford that right now.  Maybe later.~
@@ -33,15 +33,15 @@ My actions at the bandit camp have not gone unnoticed, and some are starting to 
 @26   = ~Brokk's Meteoric Shield
 
 The smith Brokk offered to make a shield from the meteoric iron I found in Balduran's ship for 3000 gold and a star sapphire.  I should go see him when I have the funds and the gem.~
-@27   = ~Ye won't regret this, m'<BOYGIRL>.  Well, I be havin' no other open jobs fer now, so I kin get t' it right away.  Come back tomorrow, yeah?~
+@27   = ~Ye won't regret this, m'<GIRLBOY>.  Well, I be havin' no other open jobs fer now, so I kin get t' it right away.  Come back tomorrow, yeah?~
 @28   = ~Brokk's Meteoric Shield
 
 The dwarf Brokk is forging a shield from the meteoric iron I found.  It should be ready within a day.~
-@29   = ~Ah, <CHARNAME>!  Yer shield be done, m'<BOYGIRL>.  Ain't she a beauty?  Here ye go!~
+@29   = ~Ah, <CHARNAME>!  Yer shield be done, m'<GIRLBOY>.  Ain't she a beauty?  Here ye go!~
 @30   = ~Brokk's Meteoric Shield
 
 The dwarven smith Brokk crafted a fine new shield from the meteoric iron I found in the wreck of Balduran's ship.  I guess that whole journey was not so invain after all, at least for me.~
-@31   = ~Mm?  That be sum armor y'got yerself there, m'<BOYGIRL>.  Ankheg, if I be nae mistaken?  Must be Taerom's work, yes?~
+@31   = ~Mm?  That be sum armor y'got yerself there, m'<GIRLBOY>.  Ankheg, if I be nae mistaken?  Must be Taerom's work, yes?~
 @32   = ~Y'know, this be givin' me an idea.  Y'think ye could fetch me another of them ankheg shells?  Then fer, let's say 2000 gold I could make ye a matchin' shield.~
 @33   = ~Sure, I got another shell right here in fact, and the gold.  Let's do this!~
 @34   = ~Not right now I'm afraid.  Maybe later.~
@@ -65,7 +65,7 @@ As promised, Brokk created a matching shield for my ankheg plate.  I cannot help
 @46   = ~Do you do any custom work, Brokk?~
 @47   = ~I have a question.  You seem to be neither a priest nor wizard, yet you craft weapons that are inherently magical.  How is that possible?~
 @48   = ~Ye'll find no finer than these anywhere on the Sword Coast!~
-@49   = ~Take care, m'<BOYGIRL>.~
+@49   = ~Take care, m'<GIRLBOY>.~
 @50   = ~Aye, sometimes I do, if the job be interesting enough.  Ye be an adventurer, aye?  Why don't ye stop by now and then and show this old dwarf any strange stuff ye found?  Who knows, I might be able ta make ye somethin' nice.~
 @51   = ~Sure, I will do that.  See you later, Brokk!~
 @52   = ~Prying int' me secrets, are ye?  Har har, d'nae be givin' me that look, it be fine.~

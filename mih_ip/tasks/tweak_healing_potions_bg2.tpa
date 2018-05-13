@@ -1,6 +1,7 @@
 // BG2 Healing Potions
 
 COPY_EXISTING "potn08.itm" "override"
+              "ipotn08.itm" "override"
   LAUNCH_PATCH_FUNCTION ALTER_EFFECT
     INT_VAR
     match_opcode	= 17	// HP: Current HP Modifier
@@ -14,7 +15,15 @@ COPY_EXISTING "potn08.itm" "override"
   BUT_ONLY_IF_IT_CHANGES	// Might already be this way.
 
 
+COPY_EXISTING "potn25.itm" "override"
+  // Fake healing potion, update description only.
+  SAY IDENTIFIED_DESC @3
+
+  BUT_ONLY_IF_IT_CHANGES	// Might already be this way.
+
+
 COPY_EXISTING "potn52.itm" "override"
+              "ttpot.itm" "override"
               "extheal.itm" "override"
   LAUNCH_PATCH_FUNCTION ALTER_EFFECT
     INT_VAR

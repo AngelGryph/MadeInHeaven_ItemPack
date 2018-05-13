@@ -21,6 +21,8 @@ mh#btax1 Foesplitter +1				Races of Faerun (3E)
 mh#clck1 Mutamin's Cloak
 mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
 
+mh#comp1 Meteoric Iron
+
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 
 mh#hamm1 Final Strike +3
@@ -31,8 +33,6 @@ mh#ioun1 Pale Blue Ioun Stone			DMG (2E)
 mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
 
 mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
-
-mh#misc1 Meteoric Iron
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 

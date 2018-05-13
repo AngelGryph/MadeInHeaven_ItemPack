@@ -239,7 +239,7 @@ Charisma: +2 bonus
 
 Weight: 2~
 @48   = ~Boots of Striding and Springing~
-@49   = ~The wearer of these enchanted boots becomes exceptionally light on %PRO_HISHER% feet and can easily make spectacular leaps in all directions.  In addition to an improved movement rate, this makes %PRO_HIMHER% harder to hit in combat.
+@49   = ~The wearer of these enchanted boots becomes exceptionally light on <PRO_HISHER> feet and can easily make spectacular leaps in all directions.  In addition to an improved movement rate, this makes <PRO_HIMHER> harder to hit in combat.
 
 STATISTICS:
 

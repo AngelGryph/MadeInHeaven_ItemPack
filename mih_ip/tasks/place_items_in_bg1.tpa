@@ -32,6 +32,10 @@ COPY_EXISTING "%FriendlyArmInn_House%.are" "override"
   END
 
 
+COPY_EXISTING "%FriendlyArmInn%.are" "override"
+  ADD_MAP_NOTE #1425 #2590 "gray" "Brokk's Forge"
+
+
 // Phrenda's Scrolls
 
 COPY "%MOD_FOLDER%/stores/mh#phend.sto" "override"
@@ -62,6 +66,21 @@ COPY_EXISTING "%NashkelCarnival_ArmorTent%.are" "override"
     STR_VAR
     cre_resref		= "mh#phend"
   END
+
+
+// The Gem of Seeing quest
+
+COMPILE "%MOD_FOLDER%/dialog/mh#hlftr.d"
+
+
+COPY_EXISTING "halftr.cre" "override/mh#hlftr.cre"
+  REMOVE_CRE_ITEM "misc19"
+
+  WRITE_ASCII SCRIPT_OVERRIDE	"mh#hlftr" #8
+  WRITE_ASCII DIALOG		"mh#hlftr" #8
+
+
+EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%MOD_FOLDER%/scripts/gemquest_gullykin.baf" USING "%MOD_FOLDER%/dummy.tra"
 
 
 // Carnival potion store
@@ -193,7 +212,7 @@ COPY_EXISTING "%IsleofBalduranNShip_D2%.are" "override"
     INT_VAR
     container_to_add_to	= 3
     STR_VAR
-    item_to_add		= "mh#misc1"
+    item_to_add		= "mh#comp1"
   END
 
 

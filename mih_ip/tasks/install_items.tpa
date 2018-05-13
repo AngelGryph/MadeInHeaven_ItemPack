@@ -134,7 +134,7 @@ COPY "%MOD_FOLDER%/items/mh#boot1.itm" "override"
 
 // mh#boot2 - Boots of Striding and Springing
 
-COPY "%MOD_FOLDER%/items/mh#boot1.itm" "override"
+COPY "%MOD_FOLDER%/items/mh#boot2.itm" "override"
   SAY NAME2 @48
   SAY IDENTIFIED_DESC @49
 
@@ -185,6 +185,13 @@ BEGIN
 END
 
 
+// mh#comp1 - Meteoric Iron
+
+COPY "%MOD_FOLDER%/items/mh#comp1.itm" "override"
+  SAY NAME1 @24
+  SAY UNIDENTIFIED_DESC @25
+
+
 // mh#dagg1 - Catclaw +3
 
 COPY "%MOD_FOLDER%/items/mh#dagg1.itm" "override"
@@ -224,13 +231,6 @@ COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
   SAY NAME2 @57
   SAY IDENTIFIED_DESC @58
-
-
-// mh#misc1 - Meteoric Iron
-
-COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
-  SAY NAME1 @24
-  SAY UNIDENTIFIED_DESC @25
 
 
 // mh#ring1 - Ring of the Lich +3

@@ -97,7 +97,7 @@ BEGIN default
   IF ~NumItemsPartyGT("misc01", 4)
       Global("mh#PhendraHide", "GLOBAL", 1)~
     REPLY @22
-    GOTO hide2
+    GOTO hide3
   IF ~Global("mh#PhendraHide", "GLOBAL", 2)
       GlobalTimerNotExpired("mh#PhendraHideCraft", "GLOBAL")~
     REPLY @23

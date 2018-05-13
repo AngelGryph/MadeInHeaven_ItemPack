@@ -18,11 +18,11 @@ mh#btax1 Foesplitter +1				Durlag's Tower D4 (chest)
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Battlecloak of Vycaena			Durlag's Tower D4 (chest)
 
+mh#comp1 Meteoric Iron				Balduran's Ship (chest)
+
 mh#hamm1 Final Strike +3			Ulgoth's Beard (event)
 
 mh#helm1 Helm of Valor				Brokk's Forge (shop)
-
-mh#misc1 Meteoric Iron				Balduran's Ship (chest)
 
 mh#potn1 Oil of Acid Resistance		High Hedge (shop)
 

@@ -19,3 +19,12 @@ STATISTICS:
 Special: Restores 27 Hit Points.
 
 Weight: 1~
+@3    = ~When wholly consumed, this oddly murky potion appears to restore 9 Hit Points to the person. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 9 Hit Points.
+
+Weight: 1~
+
+

@@ -92,7 +92,7 @@ BEGIN girdle1
     EXIT
 END
 
-IF ~PartyHasItem("mh#misc1")
+IF ~PartyHasItem("mh#comp1")
     Global("mh#BrokkMeteor", "GLOBAL", 0)~
 BEGIN meteor1
   SAY @21
@@ -119,8 +119,8 @@ IF ~~
 BEGIN meteor3
   SAY @27
   IF ~~
-    DO ~TakePartyItem("mh#misc1")
-        DestroyItem("mh#misc1")
+    DO ~TakePartyItem("mh#comp1")
+        DestroyItem("mh#comp1")
         TakePartyItem("misc41")
         DestroyItem("misc41")
 	TakePartyGold(3000)
@@ -196,7 +196,7 @@ IF ~True()~
 BEGIN default
   SAY @41
   IF ~Global("mh#BrokkMeteor", "GLOBAL", 1)
-      PartyHasItem("mh#misc1")
+      PartyHasItem("mh#comp1")
       PartyHasItem("misc41")
       PartyGoldGT(2999)~
     REPLY @42
