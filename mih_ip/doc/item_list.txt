@@ -5,7 +5,8 @@ mh#amul4 Gem of Seeing				DMG (2E)
 mh#amul5 Necklace of Adaption			DMG (2E)
 
 mh#armr1 Winter Wolf Hide +1
-mh#armr2 Eversing +2				Castlevania AoS
+mh#armr2 Eversing +2				Castlevania Aria of Sorrow
+mh#armr3 White Skin of Umpluutu			Arms & Equipment Guide (2E)
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2E)
 mh#belt2 Sunite Sash				Magic of Faerun (3E)
@@ -13,15 +14,23 @@ mh#belt2 Sunite Sash				Magic of Faerun (3E)
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
 mh#boot2 Boots of Striding and Springing	DMG (2E)
 
+mh#blun1 Shining Star +1
+
 mh#brac1 Vambraces of Evil's Warding		Warriors of Heaven (2E)
 mh#brac2 Gauntlets of the Dwarven King
+mh#brac3 Bracers of Winter's Chill
+mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3E)
+mh#btax2 Mithral Battle Axe +3
 
 mh#clck1 Mutamin's Cloak
 mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
+mh#clck3 Cloak of Arachnida			DMG (2E)
 
 mh#comp1 Meteoric Iron
+mh#comp2 Mithral Ore
+mh#comp3 Lux Veritatis
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 
@@ -40,6 +49,7 @@ mh#ring1 Ring of the Lich +3			DMG (2E)
 mh#ring2 Ring of Warmth				DMG (2E)
 mh#ring3 Ring of the Neophyte			DMG (2E)
 mh#ring4 Ring of Shocking Grasp			DMG (2E)
+mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
 
 mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1
@@ -47,8 +57,10 @@ mh#shld3 Shield of the Phoenix +2
 
 mh#staf1 Staff of Rumathil			Elves of Evermeet (2E)
 
-mh#swrd1 Terminus Est +2			Castlevania SotN
+mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
 mh#swrd2 Smythe's Slicer +1
+mh#swrd3 Mithral Long Sword +3
+mh#swrd4 Mithral Scimitar +3
 
 mh#wand1 Wand of Illusions			DMG (2E)
 

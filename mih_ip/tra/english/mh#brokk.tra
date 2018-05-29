@@ -8,7 +8,7 @@
 A dwarf I met at the Friendly Arm Inn seems to be in some sort of trouble due to the current bandit plague and the mine down south shutting down.  If I want to help him, maybe I should go south and see what the trouble is.~
 @6    = ~If yer bored or sumthin', go kick sum bandit arses, or go south and tell them to start that blasted mine back up.  Now leave me be!~
 @7    = ~I already told ye, I got nuthin' t' sell!  Now be off with ye!~
-@8    = ~Ah, ye be <CHARNAME>, be ye not?  Me name's Brokk, and I be runnin' this forge and weapon shop.  I recognize ye from the stories folks have been telling.  Cleansed them mines down south pretty good, aye?~
+@8    = ~Ah, ye be <GABBER>, be ye not?  Me name's Brokk, and I be runnin' this forge and weapon shop.  I recognize ye from the stories folks have been telling.  Cleansed them mines down south pretty good, aye?~
 @9    = ~It warms me old dwarven heart ta hear the mine be running again.  Now maybe I can finally start me forge back up.  But, until them pesky bandits be dealt with, I can still nae get sum good ore in.~
 @10   = ~Fear not, I will deal with those bandits.~
 @11   = ~Yeah, looks like it's up to me again.  Oh well.~
@@ -19,7 +19,7 @@ A dwarf I met at the Friendly Arm Inn seems to be in some sort of trouble due to
 @16   = ~Brokk's Forge
 
 My cleansing of the Nashkel mines has given the old dwarven smith Brokk some hope.  He has reopened his store, but until the bandits are dealt with he still can't get any good ore.  He gave me a pair of bracers with strange runes on them, saying they would keep me safe.  I wonder what they'll do?~
-@17   = ~<CHARNAME>!  Ye did it, m'<GIRLBOY>!  Them bandits be running like ye set their asses on fire!~
+@17   = ~<GABBER>!  Ye did it, m'<GIRLBOY>!  Them bandits be running like ye set their asses on fire!~
 @18   = ~Ye be making quite the name fer yerself with all this hero's business.  This dwarf will ferever be in yer debt!~
 @19   = ~Here, take this with ye, and wear it with pride, hero!~
 @20   = ~Brokk's Forge
@@ -37,7 +37,7 @@ The smith Brokk offered to make a shield from the meteoric iron I found in Baldu
 @28   = ~Brokk's Meteoric Shield
 
 The dwarf Brokk is forging a shield from the meteoric iron I found.  It should be ready within a day.~
-@29   = ~Ah, <CHARNAME>!  Yer shield be done, m'<GIRLBOY>.  Ain't she a beauty?  Here ye go!~
+@29   = ~Ah, <GABBER>!  Yer shield be done, m'<GIRLBOY>.  Ain't she a beauty?  Here ye go!~
 @30   = ~Brokk's Meteoric Shield
 
 The dwarven smith Brokk crafted a fine new shield from the meteoric iron I found in the wreck of Balduran's ship.  I guess that whole journey was not so invain after all, at least for me.~
@@ -45,19 +45,19 @@ The dwarven smith Brokk crafted a fine new shield from the meteoric iron I found
 @32   = ~Y'know, this be givin' me an idea.  Y'think ye could fetch me another of them ankheg shells?  Then fer, let's say 2000 gold I could make ye a matchin' shield.~
 @33   = ~Sure, I got another shell right here in fact, and the gold.  Let's do this!~
 @34   = ~Not right now I'm afraid.  Maybe later.~
-@35   = ~If ye get yerself another shell and the gold, come see me!  Good hunting, <CHARNAME>!~
+@35   = ~If ye get yerself another shell and the gold, come see me!  Good hunting, <GABBER>!~
 @36   = ~Brokk's Ankheg Shield
 
 Impressed by Taerom's ankheg armor, the dwarf Brokk has offered me to make a matching shield if I can get him another ankheg shell and 2000 gold.~
-@37   = ~Making armor outta ankhegs, why dinnae I think of that meself.  Alright, <CHARNAME>, I be workin' on this right away.  Come see me tomorrow, aye?~
+@37   = ~Making armor outta ankhegs, why dinnae I think of that meself.  Alright, <GABBER>, I be workin' on this right away.  Come see me tomorrow, aye?~
 @38   = ~Brokk's Ankheg Shield
 
 Inspired by Taerom's ankheg plate, the dwarf Brokk is crafting a matching shield from another ankheg shell I obtained.  It should be ready in a day.~
-@39   = ~Good timing, <CHARNAME>, I be just done with yer new shield!  Some fine work, if I do say so meself.~
+@39   = ~Good timing, <GABBER>, I be just done with yer new shield!  Some fine work, if I do say so meself.~
 @40   = ~Brokk's Ankheg Shield
 
 As promised, Brokk created a matching shield for my ankheg plate.  I cannot help but feel the dwarf was trying to prove himself no less than Taerom though...~
-@41   = ~Ah, <CHARNAME>!  Welcome back t' me forge.  What can this old dwarf do fer ye today?~
+@41   = ~Ah, <GABBER>!  Welcome back t' me forge.  What can this old dwarf do fer ye today?~
 @42   = ~Here's 3000 gold and a star sapphire, can you forge me that meteoric iron shield now?~
 @43   = ~I have another ankheg shell and 2000 gold, can you make me a shield?~
 @44   = ~Could you show me what you have for sale?~
@@ -71,3 +71,22 @@ As promised, Brokk created a matching shield for my ankheg plate.  I cannot help
 @52   = ~Prying int' me secrets, are ye?  Har har, d'nae be givin' me that look, it be fine.~
 @53   = ~It be the blessing of Moradin, me lad.  Sum dwarves, like meself, be born with the gift t' craft items beyond the normal.  I cannae explain it more than that.~
 @54   = ~Fair enough, I suppose magic is by its nature not always easily explained.  Be well, Brokk.~
+@55   = ~Oh, what have ye got there, m'<GIRLBOY>?  Be that...?  Aye, it be mithral ore!  Haven't seen that stuff fer well over a century!~
+@56   = ~This will make a great weapon fer ye, but it'll nae be cheap.  Much as I like ye, I need ta ask ye fer 10,000 gold fer this one.~
+@57   = ~10,000 gold for a mithral weapon?  Deal!~
+@58   = ~Whoa!  Sorry, that's a bit too much for us.~
+@59   = ~Sorry ta hear that, but I cannae do it fer less.  Come back when ye change yer mind.~
+@60   = ~Brokk's Mithral Weapon
+
+The dwarf Brokk can forge the mithral ore I found in Durlag's Tower into a powerful new weapon, but he charges 10,000 gold for it!~
+@61   = ~Well, there be only enough fer one single-handed edged weapon.  So, what kinda weapon would ye like?~
+@62   = ~A stout dwarven battle axe!~
+@63   = ~A sturdy broad sword suited for a hero!~
+@64   = ~A razor-sharp curved blade!~
+@65   = ~An excellent choice!  Fer this one, I be needin' da help of all of ye, so ye gotta stick with me fer a day.  Let's get forging!~
+@66   = ~And she be done!  Ain't she a beauty?  Use her well, <GABBER>!~
+@67   = ~Now, let's all be gettin' sum rest, aye?  I already talked ta Bentley, yer rooms be ready fer ya.~
+@68   = ~Brokk's Mithral Weapon
+
+The dwarven smith Brokk forged a grand new weapon for me out of the mithral ore I found in Durlag's Tower.~
+@69   = ~Here is the mithral ore and 10,000 gold, can you forge me a weapon now?~

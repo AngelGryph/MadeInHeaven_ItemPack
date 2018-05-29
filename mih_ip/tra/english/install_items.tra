@@ -344,3 +344,134 @@ Effect: Invisibility (self only)
 
 Ability 2:
 Effect: Mirror Image~
+@69   = ~White Hide of Umpluutu +2~
+@70   = ~Umpluutu was the name given to an unually large and strong polar bear that plagued the barbarian tribe of the Elk in the frozen tundras of the Spine of the World.  When the barbarians finally felled the great beast, the tribe's shaman created this hide armor from its skin.  How it came to leave the frozen north is not exactly known.
+
+Even though Thieves can wear this armor, it has a negative effect on their abilities.
+  
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -10% 
+- Move Silently: -20%
+
+- Cold Resistance: +50%
+- Polymorph into a polar bear 1/day
+
+Armor Class: 4 (6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25~
+@71   = ~Radiant Star +1~
+@72   = ~Morning Star +1, +4 vs. Lycanthropes, Undead and Demons: 'Radiant Star'
+
+This radiant golden mace was created by a joined effort between the temples of Lathander and Selune, and is blessed by both deities.  Made from alchemically treated gold, it is heavier and slower to swing than a standard mace, but it deals extra damage to many things that go bump in the night.  It can also damage some enemies with unusual defenses, like the loup garou and certain demonic beings.
+
+STATISTICS:
+
+Equipped abilities:
+- Always considered a +4 weapon for purposes of what it can hit
+- Counts as both a silver- and a cold iron weapon
+
+THAC0: +1, +4 vs. lycanthropes, undead & demons
+Damage: 2d4+1, +4 vs. lycanthropes, undead & demons
+Damage Type: Crushing
+Speed Factor: 8
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@73   = ~Bracers of Winter's Chill~
+@74   = ~These magical bracers were originally created by the clergy of Auril, the Frost Maiden.  However, one of the priestesses had a crisis of faith and fled with the item.  Aurelite assassins hounded her steps every way and eventually cornered her in Waterdeep.  Fortunately for her, a group of adventurers intervened, saving her life.  She joined the group and they had several adventures together.  Eventually the group disappeared into the Underdark and was never seen again.
+
+<CHARNAME> recovered the bracers from the depths of Durlag's Tower, suggesting that the group fell victim to the same mind flayers that orchestrated the attack which wiped out Durlag's clan.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +30%
+- Cold Resistance: +30%
+- Cast Ice Storm and Cone of Cold once a day each
+
+Weight: 2~
+@75   = ~Bracers of the Wind~
+@76   = ~The highwayman Starkas boasted that his sword was fast as lightning, and his victims were often cut to pieces before they could even draw.  However, one day Starkas made a fatal mistake when he tried to rob a lone knight who turned out to be a paladin of Tyr.  Although he struck as quickly as ever, Storkas' blade failed to penetrate the paladin's armor, and he was eventually struck down himself.
+
+It turned out that Starkas' quickness with the blade came from an enchantment on his bracers, but it came at the price of a loss of accuracy.  The choice is obvious, strike quickly or strike true?
+
+STATISTICS:
+
+Equipped abilities:
+- 3 attacks per round with any weapon
+- THAC0 lowered by 3
+
+Weight: 2~
+@77   = ~Mithral Battle Axe +3~
+@78   = ~This battle axe was forged for <CHARNAME> by the dwarven smith Brokk.  Crafted from mithral it is light and easy to handle, and retains a sharp and deadly edge.  Truly a weapon worthy of the Hero of the Sword Coast!
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 2
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 2~
+@79   = ~Cloak of Arachnida~
+@80   = ~Cloaks of this kind are a boon both to those who ally themselves with giant spiders like some druids or the fearsome drow, and those who would fight against them, like most adventurers.
+
+STATISTICS:
+
+Equipped abilities:
+- move freely through all kinds of webs
+- +5 on saving throws versus death
+- cast Web twice per day (at 10th level)
+
+Weight: 3~
+@81   = ~Mithral Ore~
+@82   = ~These are lumps of mithral ore.  Mithral is a metal as hard as steel but with half the weight.  Elves use it to fashion the fabled elven chain, while dwarves forge it into weapons that become the stuff of myth and legend.  Only an elven or dwarven smith knows how to properly smelt the ore and fashion it into anything useful.~
+@83   = ~Lux Veritatis~
+@84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.~
+@85   = ~Ring of Protection from Silence~
+@86   = ~This ring was created more than two centuries ago by an unnamed student of the enchanter Myrl, who lived on the southern shore of the Vilhon Reach.  Sages claim Myrl and his students created hundreds of enchanted items, which ended up in treasure hordes all across Faerun.  Among these items were a number of unusual rings, including this one.  Myrl himself is believed to have perished in the conflagration that destroyed his wizard school after a heated spell battle among the students, but his legacy still survives.
+
+STATISTICS:
+
+Equipped abilities:
+- Wearer is immune to magical silence~
+@87   = ~Mithral Long Sword +3~
+@88   = ~This long sword was forged for <CHARNAME> by the dwarven smith Brokk.  Crafted from mithral it is light and easy to handle, and retains a sharp and deadly edge.  Truly a weapon worthy of the Hero of the Sword Coast!
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 1~
+@89   = ~Mithral Scimitar +3~
+@90   = ~This scimitar was forged for <CHARNAME> by the dwarven smith Brokk.  Crafted from mithral it is light and easy to handle, and retains a sharp and deadly edge.  Truly a weapon worthy of the Hero of the Sword Coast!
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 1~

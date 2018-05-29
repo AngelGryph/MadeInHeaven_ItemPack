@@ -1,0 +1,51 @@
+@0    = ~Hello, can I help y-  AAAIEE, it's YOU!~
+@1    = ~That Gem of Seeing you sold me does not work.  I'm afraid I will have to ask a refund.~
+@2    = ~You're the scum that sold me that fake Gem of Seeing!  Die!~
+@3    = ~I...  I cannot.  Please, listen!~
+@4    = ~Very well, but you'd better make this good!~
+@5    = ~No!  My gold, or I will take it out of your hide!~
+@6    = ~No wait, please!  I- I can compensate you, just listen!~
+@7    = ~Alright, you've got one minute!  Make your words count!~
+@8    = ~I'm through talking, now die!~
+@9    = ~H-Help!~
+@10   = ~The Gem of Seeing
+
+I killed the scum halfling who sold me a fake Gem of Seeing.  He did however have an interesting book in his meagre possessions.  Perhaps there is after all a way to obtain a real one?~
+@11   = ~I... I was trying to make a real Gem of Seeing, using this book I inherited from my late grandfather.  But I botched the process and ended up with a cursed gem that gave me bad luck!~
+@12   = ~By the time I figured the curse out, my business was in shambles and I was deep in debt with the Merchant's league.  I had to get rid of the gem to break the curse, and I needed the gold to pay my debts!~
+@13   = ~Y-you don't have to worry, it's just an ordinary bauble now.  Obviously, I'm not cut out for item crafting.  I will give you the book, if you take it to a competent wizard with a proper laboratory they can make the gem for you!~
+@14   = ~Mm, fair enough.  I will take the book and we'll call it even.~
+@15   = ~An interesting offer, but where will I find such a wizard?~
+@16   = ~Bah, you're just trying to weasel out.  Now die!~
+@17   = ~M-Master Thalantyr lives just west of Beregost.  And old Halbazzer runs the Sorcerous Sundries in Baldur's Gate.  Either one of those could help you, I think!~
+@18   = ~H-here is the book.  I'm so very sorry!~
+@19   = ~The Gem of Seeing
+
+The halfling trader who sold me a fake Gem of Seeing gave me a book describing the process to create a real one.  Apparently he attemped it himself and ended up with a cursed gem that brought him bad luck until he sold it.  If I want one, I should ask either Thalantyr in Beregost or Halbazzer in Baldur's Gate to help me out, although likely they will not do it for free.~
+@20   = ~Sorry to bother you again, but I have this book you might want to take a look at.~
+@21   = ~Show me that...  Ah, "Lux Veritatis", most interesting.  Mm, this is an outdated technique...~
+@22   = ~You did well to bring this here.  The procedure is outdated and lacks certain key elements.  Had you tried this yourself you'd probably have made nothing but a spectacular crater.  But I think I can fill in the gaps...~
+@23   = ~If you have a diamond and, say, 5,000 gold, I can attempt to make you a Gem of Seeing.~
+@24   = ~Fair enough, I have all that right here.~
+@25   = ~I'm afraid I don't have that right now.~
+@26   = ~If you don't have the goods, then don't bother me.  Take your book and go!~
+@27   = ~The Gem of Seeing
+
+Thalantyr could make the Gem of Seeing for me, but I need to obtain 5,000 gold and find a diamond first.~
+@28   = ~Very well, could you come back in...  Oh, forget it, let's just get this over with right now.  Don't need you walking in and out of my place any more than you already do, just to ask if it's done yet!~
+@29   = ~The Gem of Seeing
+
+Using the arcane book I obtained and a diamond I found, Thalantyr was able to create a real Gem of Seeing for me.~
+@30   = ~Oh, you found some magic from the olden days?  Let me see that...  Mm-mm... aha...~
+@31   = ~You did well to bring that here instead of experimenting with it yourself.  This was written in the olden days, and the rules of magic are no longer the same.  You could have turned yourself into a chicken or worse.~
+@32   = ~I think I can help you, but you will need a diamond and 5,000 gold, no less.  Take it or leave it.~
+@33   = ~I'll take it.~
+@34   = ~I'll leave it.~
+@35   = ~Well, if you're not going to pay I have nothing else to say.  Next!~
+@36   = ~The Gem of Seeing
+
+Halbazzer Drin of the Sorcerous Sundries can help me make a gem of seeing, but not for less than a diamond and 5,000 gold.~
+@37   = ~Wonderful.  As it happens, I have a Gem of Seeing of my own here.  I'll give it to you now that I have the means to create another.  Good day.~
+@38   = ~The Gem of Seeing
+
+Halbazzer Drin of the Sorcerous Sundries gave me a Gem of Seeing in exchange for the means of creating another.  Fair enough, I guess.~

@@ -111,6 +111,33 @@ BEGIN
 END
 
 
+// mh#armr3 - White Hide of Umpluutu
+
+COPY "%MOD_FOLDER%/items/mh#pbpaw.itm" "override"
+
+COPY "%MOD_FOLDER%/items/mh#armr3.itm" "override"
+  SAY NAME2 @69
+  SAY IDENTIFIED_DESC @70
+
+
+COPY_EXISTING "spin122.spl" "override"
+              "spin123.spl" "override"
+              "spin124.spl" "override"
+              "spinhum.spl" "override"
+              "spwi490.spl" "override"
+              "spwi491.spl" "override"
+  LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+    INT_VAR
+    match_opcode	= 172	// Spell: Remove Spell
+    multi_match		= 1
+    opcode		= 112	// Item: Remove Item
+    STR_VAR
+    resource		= "mh#pbpaw"
+  END
+
+  IF_EXISTS	// Not all of these are in BGEE
+
+
 // mh#belt1 - Girdle of Dwarvenkind
 
 COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
@@ -123,6 +150,13 @@ COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#belt2.itm" "override"
   SAY NAME2 @46
   SAY IDENTIFIED_DESC @47
+
+
+// mh#blun1 - Radiant Star +1
+
+COPY "%MOD_FOLDER%/items/mh#blun1.itm" "override"
+  SAY NAME2 @71
+  SAY IDENTIFIED_DESC @72
 
 
 // mh#boot1 - Boots of the Master Ninja
@@ -153,11 +187,32 @@ COPY "%MOD_FOLDER%/items/mh#brac2.itm" "override"
   SAY IDENTIFIED_DESC @13
 
 
+// mh#brac3 - Bracers of Winter's Chill
+
+COPY "%MOD_FOLDER%/items/mh#brac3.itm" "override"
+  SAY NAME2 @73
+  SAY IDENTIFIED_DESC @74
+
+
+// mh#brac4 - Bracers of Lightning Speed
+
+COPY "%MOD_FOLDER%/items/mh#brac4.itm" "override"
+  SAY NAME2 @75
+  SAY IDENTIFIED_DESC @76
+
+
 // mh#btax1 - Foesplitter +1
 
 COPY "%MOD_FOLDER%/items/mh#btax1.itm" "override"
   SAY NAME2 @14
   SAY IDENTIFIED_DESC @15
+
+
+// mh#btax2 - Mithral Battle Axe +3
+
+COPY "%MOD_FOLDER%/items/mh#btax2.itm" "override"
+  SAY NAME2 @77
+  SAY IDENTIFIED_DESC @78
 
 
 // mh#clck1 - Mutamin's Cloak
@@ -184,12 +239,37 @@ BEGIN
   APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
 END
 
+// mh#clck3 - Cloak of Arachnida
+
+COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
+  SAY NAME2 @79
+  SAY IDENTIFIED_DESC @80
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_web_arrays"
+  END
+
 
 // mh#comp1 - Meteoric Iron
 
 COPY "%MOD_FOLDER%/items/mh#comp1.itm" "override"
-  SAY NAME1 @24
-  SAY UNIDENTIFIED_DESC @25
+  SAY NAME2 @24
+  SAY IDENTIFIED_DESC @25
+
+
+// mh#comp2 - Mithral Ore
+
+COPY "%MOD_FOLDER%/items/mh#comp2.itm" "override"
+  SAY NAME2 @81
+  SAY IDENTIFIED_DESC @82
+
+
+// mh#comp3 - Lux Veritatis
+
+COPY "%MOD_FOLDER%/items/mh#comp3.itm" "override"
+  SAY NAME2 @83
+  SAY IDENTIFIED_DESC @84
 
 
 // mh#dagg1 - Catclaw +3
@@ -274,6 +354,13 @@ COPY "%MOD_FOLDER%/items/mh#ring4.itm" "override"
   SAY IDENTIFIED_DESC @33
 
 
+// mh#ring5 - Ring of Protection from Silence
+
+COPY "%MOD_FOLDER%/items/mh#ring5.itm" "override"
+  SAY NAME2 @85
+  SAY IDENTIFIED_DESC @86
+
+
 // mh#shld1 - Meteoric Shield +2
 
 COPY "%MOD_FOLDER%/items/mh#shld1.itm" "override"
@@ -323,6 +410,20 @@ CREATE EFF "mh#spdht"
 COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
   SAY NAME2 @38
   SAY IDENTIFIED_DESC @39
+
+
+// mh#swrd3 - Mithral Long Sword +3
+
+COPY "%MOD_FOLDER%/items/mh#swrd3.itm" "override"
+  SAY NAME2 @87
+  SAY IDENTIFIED_DESC @88
+
+
+// mh#swrd4 - Mithral Scimitar +3
+
+COPY "%MOD_FOLDER%/items/mh#swrd4.itm" "override"
+  SAY NAME2 @89
+  SAY IDENTIFIED_DESC @90
 
 
 // mh#wand1 - Wand of Illusions

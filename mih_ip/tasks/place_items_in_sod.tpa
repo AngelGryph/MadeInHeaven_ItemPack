@@ -32,6 +32,12 @@ COPY_EXISTING "bdnazram.sto" "override"
   ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
 
 
+// Waizahb's Store
+
+COPY_EXISTING "bdwaizah.sto" "override"
+  ADD_STORE_ITEM "mh#armr3" AFTER "bdleat03" #1 #0 #0 "identified" #1
+
+
 // Lich Outpost
 
 COPY_EXISTING "bd1200.are" "override"
@@ -45,6 +51,18 @@ COPY_EXISTING "bd1200.are" "override"
   END
 
 
+// Underground River
+
+
+COPY_EXISTING "bd5100.are" "override"
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 4
+    STR_VAR
+    item_to_add			= "mh#brac2"
+  END
+
+
 // Morentherene's Lair
 
 COPY_EXISTING "bd7210.are" "override"
@@ -52,7 +70,7 @@ COPY_EXISTING "bd7210.are" "override"
     INT_VAR
     container_to_add_to		= 1
     STR_VAR
-    item_to_add			= "mh#brac2"
+    item_to_add			= "mh#brac4"
   END
 
 

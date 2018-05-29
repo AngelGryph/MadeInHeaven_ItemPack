@@ -1,8 +1,11 @@
+mh#armr3 White Skin of Umpluutu +3		Waizahb (shop)
+
 mh#belt2 Sunite Sash				Ziatar (battle)
 
 mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
 
-mh#brac2 Gauntlets of the Dwarven King		Morentherene's Lair (nest)
+mh#brac2 Gauntlets of the Dwarven King		Underground River (cache)
+mh#brac4 Bracers of the Wind			Morentherene's Lair (nest)
 
 mh#dagg1 Catclaw +3				Nazramu (shop)
 

@@ -1,7 +1,7 @@
 mh#amul1 Amulet against Undead			Song of the Morning (shop)
 mh#amul2 Necklace of Prayer Beads		The Lady's Hall (shop)
 mh#amul3 Gem of Insight				High Hedge (shop)
-*mh#amul4 Gem of Seeing				Gullykin (event)
+-mh#amul4 Gem of Seeing				Gullykin (event)
 mh#amul5 Necklace of Adaption			High Hedge (shop)
 
 mh#armr1 Winter Wolf Hide +1			Phendra's Scrolls (event)
@@ -9,32 +9,42 @@ mh#armr2 Eversing +2				Brokk's Forge (shop)
 
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
 
+mh#blun1 Shining Star +1			Brokk's Forge (shop)
+
 mh#boot1 Boots of the Master Ninja		Black Lily (shop)
 
 mh#brac1 Vambraces of Evil's Warding		Brokk's Forge (event)
+mh#brac3 Bracers of Winter's Chill		Durlag Tower (mushrooms)
 
-mh#btax1 Foesplitter +1				Durlag's Tower D4 (chest)
+mh#btax1 Foesplitter +1				Durlag's Tower D4 (chest2
+mh#btax2 Mithral Battle Axe +3			Brokk's Forge (event)
 
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Battlecloak of Vycaena			Durlag's Tower D4 (chest)
+mh#clck3 Cloak of Arachnida			High Hedge (shop)
 
 mh#comp1 Meteoric Iron				Balduran's Ship (chest)
+mh#comp2 Mithral Ore				Durlag's Tower D4 (sack)
+mh#comp3 Lux Veritatis				Gullykin (event)
 
 mh#hamm1 Final Strike +3			Ulgoth's Beard (event)
 
 mh#helm1 Helm of Valor				Brokk's Forge (shop)
 
-mh#potn1 Oil of Acid Resistance		High Hedge (shop)
+mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 
 mh#ring1 Ring of the Lich +3			Candlekeep Catacombs (chest)
 mh#ring2 Ring of Warmth				Phendra's Scrolls (shop)
 mh#ring3 Ring of the Neophyte			Phendra's Scrolls (shop)
 mh#ring4 Ring of Shocking Grasp			Phendra's Scrolls (shop)
+mh#ring5 Ring of Protection from Silence	Durlag's Tower D1 (chest)
 
 mh#shld1 Meteoric Shield +2			Brokk's Forge (event)
 mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
 
 mh#swrd1 Terminus Est +2			Durlag's Tower D4 (chest)
 mh#swrd2 Smythe's Slicer +1			Brokk's Forge (shop)
+mh#swrd3 Mithral Long Sword +3			Brokk's Forge (event)
+mh#swrd4 Mithral Scimitar +3			Brokk's Forge (event)
 
 

@@ -4,7 +4,7 @@ COPY "%MOD_FOLDER%/stores/mh#brokk.sto" "override"
   SAY NAME1 "Brokk's Forge"
 
 
-ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#brokk.tra"
+ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @68 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#brokk.tra"
 
 COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/mh#brokk.d"
 
@@ -68,13 +68,25 @@ COPY_EXISTING "%NashkelCarnival_ArmorTent%.are" "override"
   END
 
 
-// The Gem of Seeing quest
+// The Gem of Seeing
+
+ADD_JOURNAL @10 @19 @27 @29 @36 @38 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#hlftr.tra"
 
 COMPILE "%MOD_FOLDER%/dialog/mh#hlftr.d"
 
+LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  STR_VAR
+  dialog	= "mh#phend"
+END
+
+LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  STR_VAR
+  dialog	= "thalan"
+END
+
 
 COPY_EXISTING "halftr.cre" "override/mh#hlftr.cre"
-  REMOVE_CRE_ITEM "misc19"
+  REPLACE_CRE_ITEM "mh#comp3" #0 #0 #0 "none" "qitem1"
 
   WRITE_ASCII SCRIPT_OVERRIDE	"mh#hlftr" #8
   WRITE_ASCII DIALOG		"mh#hlftr" #8
@@ -112,6 +124,12 @@ COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
 
   // Gem of Insight
   ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
+
+  // Necklace of Adaption
+  ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
+
+  // Cloak of Arachnida
+  ADD_STORE_ITEM "mh#clck3" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
 
   // Cloak of the Shield (from Durlag's Tower)
   ADD_STORE_ITEM "%tutu_var%clck20" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
@@ -178,9 +196,28 @@ COPY_EXISTING "%tutu_var%hurgan.dlg" "override"
   END
 
 
+// Durlag's Tower D1
+
+COPY_EXISTING "%DurlagsTower_D1%.are" "override"
+  // Ring of Protection from Silence
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 2
+    STR_VAR
+    item_to_add		= "mh#ring5"
+  END
+
+
 // Durlag's Tower D4
 
 COPY_EXISTING "%DurlagsTower_D4%.are" "override"
+  // Bracers of Winter's Chill
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    STR_VAR
+    old_item		= "%tutu_var%brac01"
+    new_item		= "mh#brac3"
+  END
+
   // Foesplitter +1
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
@@ -196,10 +233,18 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
     new_item		= "mh#clck2"
   END
 
+  // Mithral Ore
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 6
+    STR_VAR
+    item_to_add		= "mh#comp2"
+  END
+
   // Terminus Est +2
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
-    container_to_add_to	= 34
+    container_to_add_to	= 33
     STR_VAR
     item_to_add		= "mh#swrd1"
   END
@@ -214,6 +259,5 @@ COPY_EXISTING "%IsleofBalduranNShip_D2%.are" "override"
     STR_VAR
     item_to_add		= "mh#comp1"
   END
-
 
 
