@@ -7,3 +7,7 @@ COPY_EXISTING "bdmisc01.itm" "override"
   END
 
 
+COPY_EXISTING "bdzaviak.cre" "override"
+  REPLACE_CRE_ITEM "bdmisc01" ($ini_hash("spectacle_charges")) #0 #0 "none" "helmet"
+
+
