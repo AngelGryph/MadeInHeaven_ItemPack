@@ -25,6 +25,12 @@ ALWAYS
       FAIL ~This mod no longer supports vanilla BG1/TotSC~
     END
 
+    // Hack for recompiling SoD file bdbaldur.bcs without warnings
+    ACTION_IF GAME_INCLUDES "sod" AND NOT FILE_EXISTS_IN_GAME "d_sdd117.bcs"
+    BEGIN
+      COPY "%MOD_FOLDER%/dummy.bcs" "override/d_sdd117.bcs"
+    END
+
     // Load compatibility variables for various implementations of BG1.
     INCLUDE "%MOD_FOLDER%/lib/g3_tutu_cpmvars.tpa"
     INCLUDE "%MOD_FOLDER%/lib/g3_bgt_cpmvars.tpa"

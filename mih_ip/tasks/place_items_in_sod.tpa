@@ -103,7 +103,7 @@ COPY_EXISTING "bd7230.are" "override"
 
 COPY_EXISTING "bdziatar.cre" "override"
   // Sunite Sash
-  ADD_CRE_ITEM "mh#belt" #0 #0 #0 "none" "belt"
+  ADD_CRE_ITEM "mh#belt2" #0 #0 #0 "none" "belt"
 
 
 // Vampire Hideout
