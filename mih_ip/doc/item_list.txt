@@ -51,6 +51,11 @@ mh#ring3 Ring of the Neophyte			DMG (2E)
 mh#ring4 Ring of Shocking Grasp			DMG (2E)
 mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
 
+mh#robe1 Robe of the Elements
+mh#robe2 Robe of the Necromancer
+mh#robe3 Robe of the Pure Heart
+mh#robe4 Shadow Dancer's Robe
+
 mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1
 mh#shld3 Shield of the Phoenix +2

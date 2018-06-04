@@ -135,6 +135,12 @@ COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
   ADD_STORE_ITEM "%tutu_var%clck20" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
 
 
+// Temple of Yondalla
+
+COPY_EXISTING "tem4003.sto" "override"
+  ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1
+
+
 // Sorcerous Sundries
 
 COPY_EXISTING "sto0703.sto" "override"
@@ -247,6 +253,18 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
     container_to_add_to	= 33
     STR_VAR
     item_to_add		= "mh#swrd1"
+  END
+
+
+// Dradeel's Hut
+
+COPY_EXISTING "%IsleofBalduranNDradeelsHouse%.are" "override"
+  // Robe of the Elements
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 1
+    STR_VAR
+    item_to_add		= "mh#robe1"
   END
 
 

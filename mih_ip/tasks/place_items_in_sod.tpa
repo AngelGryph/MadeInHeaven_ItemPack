@@ -1,6 +1,7 @@
 // Korlasz
 
 COPY_EXISTING "bdshkorl.cre" "override"
+  // Staff of Rumathil
   REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
 
 
@@ -14,7 +15,9 @@ COPY_EXISTING "bdsorcsc.sto" "override"
 // Kazzrem the Calishite
 
 COPY_EXISTING "bdkazzre.sto" "override"
+  // Boots of Striding and Springing
   ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1
+  // Pale Blue Ioun Stone
   ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1
 
 
@@ -28,19 +31,27 @@ COPY_EXISTING "bdbellow.sto" "override"
 // Nazramu's Store
 
 COPY_EXISTING "bdnazram.sto" "override"
+  // Catclaw +3
   ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1
+  // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
+  // Shadow Dancer's Robe
+  ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1
 
 
 // Waizahb's Store
 
 COPY_EXISTING "bdwaizah.sto" "override"
+  // White Hide of Umpluutu +2
   ADD_STORE_ITEM "mh#armr3" AFTER "bdleat03" #1 #0 #0 "identified" #1
+  // Robe of the Necromancer
+  ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1
 
 
 // Lich Outpost
 
 COPY_EXISTING "bd1200.are" "override"
+  // Wand of Illusions
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to		= 1
@@ -55,6 +66,7 @@ COPY_EXISTING "bd1200.are" "override"
 
 
 COPY_EXISTING "bd5100.are" "override"
+  // Gauntlets of the Dwarven King
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to		= 4
@@ -66,6 +78,7 @@ COPY_EXISTING "bd5100.are" "override"
 // Morentherene's Lair
 
 COPY_EXISTING "bd7210.are" "override"
+  // Bracers of the Wind
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to		= 1
@@ -77,6 +90,7 @@ COPY_EXISTING "bd7210.are" "override"
 // Temple of Cyric
 
 COPY_EXISTING "bd7230.are" "override"
+  // Shield of the Phoenix +2
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to		= 11
@@ -88,12 +102,14 @@ COPY_EXISTING "bd7230.are" "override"
 // Ziatar
 
 COPY_EXISTING "bdziatar.cre" "override"
+  // Sunite Sash
   ADD_CRE_ITEM "mh#belt" #0 #0 #0 "none" "belt"
 
 
 // Vampire Hideout
 
 COPY_EXISTING "bd7410.are" "override"
+  // Bow of Elathil +2
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to		= 1

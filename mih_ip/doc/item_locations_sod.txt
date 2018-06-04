@@ -14,6 +14,9 @@ mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
 
 mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 
+mh#robe2 Robe of the Necromancer		Waizahb (shop)
+mh#robe4 Shadow Dancer's Robe			Nazramu (shop)
+
 mh#shld3 Shield of the Phoenix +2		Temple of Cyric (chest)
 
 mh#staf1 Staff of Rumathil			Korlasz (battle)
