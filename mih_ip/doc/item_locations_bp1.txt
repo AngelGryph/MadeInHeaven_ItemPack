@@ -1,0 +1,43 @@
+mh#amul1 Amulet against Undead			Xithiss (shop)
+mh#amul2 Necklace of Prayer Beads		Xithiss (shop)
+mh#amul3 Gem of Insight				Xithiss (shop)
+mh#amul4 Gem of Seeing				Xithiss (shop)
+mh#amul5 Necklace of Adaption			Xithiss (shop)
+
+mh#armr2 Eversing +2				Gorch the Armorer (shop)
+
+mh#belt2 Sunite Sash				Elan Garaq (shop)
+
+mh#boot2 Boots of Striding and Springing	Elan Garaq (shop)
+
+mh#blun1 Shining Star +1			Magda (shop)
+
+mh#brac1 Vambraces of Evil's Warding		Elan Garaq (shop)
+mh#brac2 Gauntlets of the Dwarven King		Elan Garaq (shop)
+
+mh#clck3 Cloak of Arachnida			Elan Garaq (shop)
+
+mh#helm1 Helm of Valor				Gorch the Armorer (shop)
+
+mh#ioun1 Pale Blue Ioun Stone			Elan Garaq (shop)
+mh#ioun2 Crystal Clear Ioun Stone		Elan Garaq (shop)
+
+mh#lbow1 Bow of Eletha				Devlin Taralon (shop)
+
+mh#potn1 Oil of Acid Resistance			The Concocter (shop)
+
+mh#ring2 Ring of Warmth				Xithiss (shop)
+mh#ring3 Ring of the Neophyte			Xithiss (shop)
+mh#ring4 Ring of Shocking Grasp			Xithiss (shop)
+mh#ring5 Ring of Protection from Silence	Xithiss (shop)
+
+mh#robe1 Robe of the Elements			Elan Garaq (shop)
+mh#robe3 Robe of the Pure Heart			Elan Garaq (shop)
+
+mh#shld3 Shield of the Phoenix +2		Gorch the Armorer (shop)
+
+mh#swrd2 Smythe's Slicer +1			Thardek (shop)
+
+mh#wand1 Wand of Illusions			Xithiss (shop)
+
+

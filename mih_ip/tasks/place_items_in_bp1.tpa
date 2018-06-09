@@ -1,0 +1,144 @@
+// Gorch the Armorer (heavy armor)
+
+COPY_EXISTING "bpgorc03.sto" "override"
+  // Eversing +2
+  ADD_STORE_ITEM "mh#armr2" AFTER "chan05" #0 #0 #0 "identified" #1
+
+  // Helm of Valor
+  ADD_STORE_ITEM "mh#helm1" AFTER "helm04" #0 #0 #0 "identified" #1
+
+  // Shield of the Phoenix
+  ADD_STORE_ITEM "mh#shld3" AFTER "shld19" #0 #0 #0 "identified" #1
+
+
+// Bellowgulp & The Concocter (potions)
+
+COPY_EXISTING "bpconc01.sto" "override"
+              "bpconc02.sto" "override"
+              "bpconc03.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn31" #1 #0 #0 "identified" #0 "unlimited"
+
+
+// Devlin Taralon (ranged weapons)
+
+COPY_EXISTING "bpdevl03.sto" "override"
+  // Bow of Eletha
+  ADD_STORE_ITEM "mh#lbow1" AFTER "bow17" #0 #0 #0 "identified" #1
+
+
+// Elan Garaq (magical clothing)
+
+COPY_EXISTING "bpelan01.sto" "override"
+  // Vambraces of Evil's Warding
+  ADD_STORE_ITEM "mh#brac1" AFTER "brac02" #0 #0 #0 "identified" #1
+
+
+COPY_EXISTING "bpelan02.sto" "override"
+  // Vambraces of Evil's Warding
+  ADD_STORE_ITEM "mh#brac1" AFTER "brac02" #0 #0 #0 "identified" #1
+
+  // Robe of the Pure Heart
+  ADD_STORE_ITEM "mh#robe3" AFTER "clck11" #0 #0 #0 "identified" #1
+
+
+COPY_EXISTING "bpelan03.sto" "override"
+  // Sunite Sash
+  ADD_STORE_ITEM "mh#belt1" AFTER "belt10" #0 #0 #0 "identified" #1
+
+  // Boots of Striding and Springing
+  ADD_STORE_ITEM "mh#boot2" AFTER "belt10" #0 #0 #0 "identified" #1
+
+  // Vambraces of Evil's Warding
+  ADD_STORE_ITEM "mh#brac1" AFTER "brac07" #0 #0 #0 "identified" #1
+
+  // Cloak of Arachnida
+  ADD_STORE_ITEM "mh#clck3" AFTER "clck31" #2 #0 #0 "identified" #1
+
+  // Pale Blue Ioun Stone
+  ADD_STORE_ITEM "mh#ioun1" AFTER "helm19" #2 #0 #0 "identified" #1
+
+  // Crystal Clear Ioun Stone
+  ADD_STORE_ITEM "mh#ioun2" AFTER "helm20" #2 #0 #0 "identified" #1
+
+  // Robe of the Pure Heart
+  ADD_STORE_ITEM "mh#robe3" AFTER "clck11" #0 #0 #0 "identified" #1
+
+  // Robe of the Elements
+  ADD_STORE_ITEM "mh#robe1" AFTER "clck11" #0 #0 #0 "identified" #1
+
+
+// Magda (heavy weapons)
+
+COPY_EXISTING "bpmagd03.sto" "override"
+  ADD_STORE_ITEM "mh#blun1" AFTER "blun07" #0 #0 #0 "identified" #1
+
+
+// Thardek (light weapons)
+
+COPY_EXISTING "bpthar03.sto" "override"
+  ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h22" #0 #0 #0 "identified" #1
+
+
+// Xithiss (amulets, rings, wands)
+
+COPY_EXISTING "bpxith01.sto" "override"
+  // Amulet against Undead
+  ADD_STORE_ITEM "mh#amul1" AFTER "amul24" #0 #0 #0 "identified" #1
+
+  // Ring of Warmth
+  ADD_STORE_ITEM "mh#ring2" AFTER "ring02" #0 #0 #0 "identified" #1
+
+  // Ring of the Neophyte
+  ADD_STORE_ITEM "mh#ring3" AFTER "ring06" #0 #0 #0 "identified" #1
+
+
+COPY_EXISTING "bpxith02.sto" "override"
+  // Amulet against Undead
+  ADD_STORE_ITEM "mh#amul1" AFTER "amul23" #0 #0 #0 "identified" #1
+
+  // Necklace of Adaption
+  ADD_STORE_ITEM "mh#amul5" AFTER "amul23" #0 #0 #0 "identified" #1
+
+  // Ring of Warmth
+  ADD_STORE_ITEM "mh#ring2" AFTER "ring02" #0 #0 #0 "identified" #1
+
+  // Ring of the Neophyte
+  ADD_STORE_ITEM "mh#ring3" AFTER "ring05" #0 #0 #0 "identified" #1
+
+  // Ring of Shocking Grasp
+  ADD_STORE_ITEM "mh#ring4" AFTER "ring20" #0 #0 #0 "identified" #1
+
+
+COPY_EXISTING "bpxith03.sto" "override"
+  // Wand of Illusions
+  ADD_STORE_ITEM "mh#wand1" AFTER "wand13" #5 #5 #0 "identified" #1
+
+  // Amulet against Undead
+  ADD_STORE_ITEM "mh#amul1" AFTER "amul25" #0 #0 #0 "identified" #1
+
+  // Necklace of Prayer Beads
+  ADD_STORE_ITEM "mh#amul2" AFTER "amul01" #0 #0 #0 "identified" #1
+
+  // Gem of Insight
+  ADD_STORE_ITEM "mh#amul3" AFTER "amul21" #0 #0 #0 "identified" #1
+
+  // Gem of Seeing
+  ADD_STORE_ITEM "mh#amul4" AFTER "wa2amu" #0 #0 #0 "identified" #1
+
+  // Necklace of Adaption
+  ADD_STORE_ITEM "mh#amul5" AFTER "amul23" #0 #0 #0 "identified" #1
+
+  // Ring of Warmth
+  ADD_STORE_ITEM "mh#ring2" AFTER "ring02" #0 #0 #0 "identified" #1
+
+  // Ring of the Neophyte
+  ADD_STORE_ITEM "mh#ring3" AFTER "ring05" #0 #0 #0 "identified" #1
+
+  // Ring of Shocking Grasp
+  ADD_STORE_ITEM "mh#ring4" AFTER "ring20" #0 #0 #0 "identified" #1
+
+  // Ring of Protection from Silence
+  ADD_STORE_ITEM "mh#ring5" AFTER "ring27" #0 #0 #0 "identified" #1
+
+
