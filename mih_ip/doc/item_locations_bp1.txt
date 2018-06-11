@@ -10,8 +10,6 @@ mh#belt2 Sunite Sash				Elan Garaq (shop)
 
 mh#boot2 Boots of Striding and Springing	Elan Garaq (shop)
 
-mh#blun1 Shining Star +1			Magda (shop)
-
 mh#brac1 Vambraces of Evil's Warding		Elan Garaq (shop)
 mh#brac2 Gauntlets of the Dwarven King		Elan Garaq (shop)
 
@@ -35,8 +33,6 @@ mh#robe1 Robe of the Elements			Elan Garaq (shop)
 mh#robe3 Robe of the Pure Heart			Elan Garaq (shop)
 
 mh#shld3 Shield of the Phoenix +2		Gorch the Armorer (shop)
-
-mh#swrd2 Smythe's Slicer +1			Thardek (shop)
 
 mh#wand1 Wand of Illusions			Xithiss (shop)
 

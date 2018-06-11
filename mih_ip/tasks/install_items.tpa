@@ -303,7 +303,8 @@ COPY "%MOD_FOLDER%/items/mh#ioun1.itm" "override"
 // mh#ioun2 - Crystal Clear Ioun Stone
 
 COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
-  SAY NAME2 @56
+  SAY NAME2 ~Crystal Clear Ioun Stone~
+  SAY IDENTIFIED_DESC @56
 
 
 // mh#lbow1 - Bow of Eletha
