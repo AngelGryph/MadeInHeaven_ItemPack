@@ -5,6 +5,51 @@ COPY_LARGE "%MOD_FOLDER%/bams" "override"
 
 OUTER_FOR (SET i = 1; i <= 3; ++i)
 BEGIN
+  // To-hit vs. Undead
+  CREATE EFF "mh#undh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("general" "undead")
+    WRITE_LONG	0x0020 3
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // To-hit vs. Lycanthrope
+  CREATE EFF "mh#lych%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "lycanthrope")
+    WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // To-hit vs. Demonic
+  CREATE EFF "mh#demh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "demonic")
+    WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // To-hit vs. Spider
+  CREATE EFF "mh#spdh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "spider")
+    WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // Damage vs. Undead
+  CREATE EFF "mh#undd%i%"
+    WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("general" "undead")
+    WRITE_LONG	0x0020 3
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
   // Extra slashing damage
   CREATE EFF "mh#slsh%i%"
     WRITE_LONG	0x0010 12	// HP: Damage
@@ -473,14 +518,6 @@ COPY "%MOD_FOLDER%/items/mh#swrd1.itm" "override"
 
 
 // mh#swrd2 - Smythe's Slicer +1
-
-CREATE EFF "mh#spdht"
-  WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
-  WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "spider")
-  WRITE_LONG	0x0020 4
-  WRITE_SHORT	0x0024 1
-  WRITE_LONG	0x002c 100
-  WRITE_LONG	0x0060 2
 
 
 COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"

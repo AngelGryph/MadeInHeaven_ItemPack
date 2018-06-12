@@ -1,0 +1,180 @@
+// Chateau Irenicus
+
+COPY_EXISTING "ar0602.are" "override"
+  // Girdle of Dwarvenkind
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 26
+    STR_VAR
+    item_to_add		= "mh#belt1"
+  END
+
+
+COPY "%MOD_FOLDER%/tables/mh#impt1.2da" "override"
+     "%MOD_FOLDER%/tables/mh#impt2.2da" "override"
+
+
+EXTEND_TOP "ar0602.bcs" "%MOD_FOLDER%/scripts/import_itempack.baf" USING "%MOD_FOLDER%/dummy.tra"
+
+
+COPY_EXISTING "duergar1.cre" "override"
+  // Winter Wolf Hide +1
+  REPLACE_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"
+
+
+// Arnolinus the dwarf
+
+COPY_EXISTING "shop02.sto" "override"
+  // Eversing +2
+  ADD_STORE_ITEM "mh#armr2" AFTER "plat10" #0 #0 #0 "identified" #1
+
+
+// Maheer
+
+COPY_EXISTING "shop03.sto" "override"
+  // Shining Star +1
+  ADD_STORE_ITEM "mh#blun1" AFTER "blun06" #0 #0 #0 "identified" #1
+  // Foesplitter +1
+  ADD_STORE_ITEM "mh#btax1" AFTER "ax1h04" #0 #0 #0 "identified" #1
+  // Smyte's Slicer +1
+  ADD_STORE_ITEM "mh#swrd2" AFTER "sw1h20" #0 #0 #0 "identified" #1
+
+
+// Temple of Lathander
+
+COPY_EXISTING "temlath.sto" "override"
+  // Amulet against Undead
+  ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
+  // Necklace of Prayer Beads
+  ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
+  // Robe of the Pure Heart
+  ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #3 #1 #1 "identified" #1
+
+
+// Trademeet
+
+COPY_EXISTING "trmer02.sto" "override"
+  // Mutamin's Cloak
+  ADD_STORE_ITEM "mh#clck1" AFTER "clck03" #0 #0 #0 "identified" #1
+  // Bow of Eletha
+  ADD_STORE_ITEM "mh#lbow1" AFTER "bow04" #0 #0 #0 "identified" #1
+  // Terminus Est +2
+  ADD_STORE_ITEM "mh#swrd1" AFTER "sw1h02" #0 #0 #0 "identified" #1
+
+
+// Temple of Oghma
+
+COPY_EXISTING "doghma.sto" "override"
+  // Gem of Insight
+  ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
+
+
+// Mae'var Guildhouse
+
+COPY_EXISTING "maevar.cre" "override"
+  // Catclaw +3
+  REPLACE_CRE_ITEM "mh#dagg1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+
+
+COPY_EXISTING "thief7.cre" "override"
+  // Boots of the Master Ninja
+  ADD_CRE_ITEM "mh#boot1" #0 #0 #0 "unstealable" "boots"
+
+
+// D'Arnise Keep
+
+COPY_EXISTING "ar1301.are" "override"
+  // Shield of the Phoenix +2
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 5
+    STR_VAR
+    item_to_add		= "mh#shld3"
+  END
+
+
+// Planar Sphere
+
+COPY_EXISTING "ar0411.are" "override"
+  // Wand of Illusions
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 5
+    charges1		= 12
+    charges2		= 12
+    STR_VAR
+    item_to_add		= "mh#wand1"
+  END
+
+
+COPY_EXISTING "tolger.cre" "override"
+              "tolger2.cre" "override"
+  // Staff of Rumathil +2
+  REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  // Ring of Protection from Silence
+  ADD_CRE_ITEM "mh#ring5" #0 #0 #0 "unstealable" "lring"
+
+
+// Windspear Hills / Firkraag's Lair
+
+COPY_EXISTING "vaelasa.cre" "override"
+  // Sunite Sash
+  ADD_CRE_ITEM "mh#belt2" #0 #0 #0 "unstealable" "belt"
+
+COMPILE "%MOD_FOLDER%/dialog/vaelasa_itempack.d"
+
+
+COPY_EXISTING "firban02.cre" "override"
+  // White Hide of Umpluutu +2
+  ADD_CRE_ITEM "mh#armr3" #1 #0 #0 "unstealable" "armor"
+
+
+COPY_EXISTING "firmag01.cre" "override"
+  // Robe of the Elements
+  REPLACE_CRE_ITEM "mh#robe1" #0 #0 #0 "unstealable" "armor"
+  // Boots of Striding & Springing
+  ADD_CRE_ITEM "mh#boot2" #0 #0 #0 "unstealable" "boots"
+
+
+// Therndle Daglefodd (Underdark)
+
+COPY_EXISTING "udsvir05.dlg" "override"
+  DECOMPILE_AND_PATCH
+  BEGIN
+    // Bracers of Winter's Chill
+    //
+    // Note: Dialog uses GiveItemCreate() and with the correct # of charges,
+    // so no further edits are needed to make this work.
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~brac14~ ~mh#brac3~
+  END
+
+
+// Ust Natha (Underdark)
+
+COPY_EXISTING "uddrow23.sto" "override"
+  // Cloak of Arachnida
+  ADD_STORE_ITEM "mh#clck3" AFTER "clck17" #2 #0 #0 "identified" #1
+  // Shadow Dancer's Robe
+  ADD_STORE_ITEM "mh#robe4" AFTER "clck17" #0 #0 #0 "identified" #1
+  // Robe of the Necromancer
+  ADD_STORE_ITEM "mh#robe2" AFTER "clck17" #0 #0 #0 "identified" #1
+
+
+// Firkraag (the red dragon)
+
+COPY_EXISTING "firkra02.cre" "override"
+  // Battlecloak of Vycaena (replaces extra Cloak of the Shield)
+  REMOVE_CRE_ITEM "clck20"
+  ADD_CRE_ITEM "mh#clck1" #0 #0 #0 "unstealable" "qitem3"
+
+
+// Potion shops
+
+COPY_EXISTING "gorch.sto" "override"
+              "murcrag.sto" "override"
+              "roger.sto" "override"
+              "uhmer02.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3
+
+

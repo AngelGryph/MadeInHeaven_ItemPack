@@ -1,0 +1,12 @@
+mh#brac4 Bracers of the Wind
+
+mh#ioun1 Pale Blue Ioun Stone			Sister Garlena (shop)
+mh#ioun2 Crystal Clear Ioun Stone		Sister Garlena (shop)
+
+mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
+
+mh#ring1 Ring of the Lich +3			Vongoethe (battle)
+
+mh#wand1 Wand of Illusions			Arcana Archives (shop)
+
+

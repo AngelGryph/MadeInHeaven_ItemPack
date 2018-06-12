@@ -92,12 +92,27 @@ BEGIN
   END
 END
 
-
 ACTION_IF GAME_IS "bgee eet" AND $ini_hash("place_items_in_bp1")
 BEGIN
   LAUNCH_ACTION_FUNCTION mh_run_task
     STR_VAR
     task		= "place_items_in_bp1"
+  END
+END
+
+ACTION_IF GAME_INCLUDES "bg2" AND $ini_hash("place_items_in_bg2")
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task		= "place_items_in_bg2"
+  END
+END
+
+ACTION_IF GAME_INCLUDES "tob" AND $ini_hash("place_items_in_tob")
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task		= "place_items_in_tob"
   END
 END
 

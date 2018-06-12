@@ -1,0 +1,27 @@
+// Sister Garlena
+
+COPY_EXISTING "garlena.sto" "override"
+  // Ring of Anti-Venom (from Vongoethe)
+  ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1
+  // Sky Blue Ioun Stone
+  ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
+  // Crystal Clear Ioun Stone
+  ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
+
+
+// Arcana Archives
+
+COPY_EXISTING "25spell.sto" "override"
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9
+  // Wand of Illusions
+  ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
+
+
+// Vongoethe the lich
+
+COPY_EXISTING "amlich01.cre" "override"
+  // Ring of the Lich +3
+  REPLACE_CRE_ITEM "mh#ring1" #0 #0 #0 "unstealable" "lring"
+
+
