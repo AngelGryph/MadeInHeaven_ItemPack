@@ -258,3 +258,27 @@ LAUNCH_ACTION_FUNCTION mh_run_task
 END
 
 
+// Relaxed Item Restrictions
+
+BEGIN ~Relaxed Item Restrictions~
+GROUP ~Optional Item Tweaks~
+
+REQUIRE_PREDICATE GAME_INCLUDES "tob" ~This component is not applicable to your game.~
+
+ACTION_IF $ini_hash("tweak_helm_of_the_rock")
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task			= "tweak_helm_of_the_rock"
+  END
+END
+
+ACTION_IF $ini_hash("tweak_bards_gloves")
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task			= "tweak_bards_gloves"
+  END
+END
+
+

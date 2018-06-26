@@ -1,0 +1,9 @@
+// Less Restrictive Helm of the Rock
+
+COPY_EXISTING "helm31.itm" "override"
+              "helm32.itm" "override"
+  WRITE_LONG 0x001e (THIS & `(BIT10 | BIT20 | BIT21))
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
