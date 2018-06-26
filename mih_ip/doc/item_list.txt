@@ -50,6 +50,9 @@ mh#ring2 Ring of Warmth				DMG (2E)
 mh#ring3 Ring of the Neophyte			DMG (2E)
 mh#ring4 Ring of Shocking Grasp			DMG (2E)
 mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
+mh#ring6 Ring of White Bone			Complete Necromancer (2E)
+mh#ring7 Ring of Mind Shielding			DMG (2E)
+mh#ring8 Ring of Shooting Stars			DMG (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
@@ -66,6 +69,8 @@ mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
 mh#swrd2 Smythe's Slicer +1
 mh#swrd3 Mithral Long Sword +3
 mh#swrd4 Mithral Scimitar +3
+mh#swrd5 Scimitar of the Seven +4		LoZ: Breath of the Wild
+mh#swrd6 Sword of the Planes +1			DMG (2E)
 
 mh#wand1 Wand of Illusions			DMG (2E)
 

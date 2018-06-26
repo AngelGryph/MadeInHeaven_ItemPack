@@ -7,7 +7,7 @@ BACKUP "mih_ip/backup"
 AUTHOR "angel@pearlgates.net"
 VERSION 1
 
-MODDER missing_eval none
+MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
@@ -23,12 +23,6 @@ ALWAYS
     ACTION_IF GAME_IS "bg1 totsc"
     BEGIN
       FAIL ~This mod no longer supports vanilla BG1/TotSC~
-    END
-
-    // Hack for recompiling SoD file bdbaldur.bcs without warnings
-    ACTION_IF GAME_INCLUDES "sod" AND NOT FILE_EXISTS_IN_GAME "d_sdd117.bcs"
-    BEGIN
-      COPY "%MOD_FOLDER%/dummy.bcs" "override/d_sdd117.bcs"
     END
 
     // Load compatibility variables for various implementations of BG1.

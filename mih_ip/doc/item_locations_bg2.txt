@@ -37,6 +37,8 @@ mh#ring2 Ring of Warmth				Chateau Irenicus (import)
 mh#ring3 Ring of the Neophyte			Chateau Irenicus (import)
 mh#ring4 Ring of Shocking Grasp			Chateau Irenicus (import)
 mh#ring5 Ring of Protection from Silence	Planar Sphere (battle)
+mh#ring6 Ring of White Bone			Temple Ruins (werewolf cave)
+mh#ring7 Ring of Mind Shielding			Ust Natha (shop)
 
 mh#robe1 Robe of the Elements			Firkraag's Lair (battle)
 mh#robe2 Robe of the Necromancer		Ust Natha (shop)
@@ -50,6 +52,7 @@ mh#staf1 Staff of Rumathil			Planar Sphere (battle)
 
 mh#swrd1 Terminus Est +2			Trademeet Merchant (shop)
 mh#swrd2 Smythe's Slicer +1			Maheer (shop)
+mh#swrd6 Planar Sword +1			Planar Sphere (controls)
 
 mh#wand1 Wand of Illusions			Planar Sphere (chest)
 

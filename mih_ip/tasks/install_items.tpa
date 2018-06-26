@@ -41,6 +41,15 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
+  // To-hit vs. Elemental
+  CREATE EFF "mh#elmh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "elemental")
+    WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
   // Damage vs. Undead
   CREATE EFF "mh#undd%i%"
     WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
@@ -407,6 +416,74 @@ COPY "%MOD_FOLDER%/items/mh#ring5.itm" "override"
   SAY IDENTIFIED_DESC @86
 
 
+// mh#ring6 - RIng of White Bone
+
+COPY "%MOD_FOLDER%/items/mh#ring6.itm" "override"
+  SAY NAME2 ~Ring of White Bone~
+  SAY IDENTIFIED_DESC ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
+
+As the name suggests, this ring is carved entirely from bone, preferably from an undead creature destroyed in combat.  When first created, it contains twelve charges of the priest spell "Negative Plane Protection", which can be cast by anyone wearing the ring as if they were a 12th level priest.  After all charges have been used, the ring crumbles into worthless powder.
+
+STATISTICS:
+
+Charge abilities:
+- Casts Negative Plane Protection (at 12th level of ability)~
+
+
+// mh#ring7 - RIng of Mind Shielding
+
+COPY "%MOD_FOLDER%/items/mh#ring7.itm" "override"
+  SAY NAME2 ~Ring of Mind Shielding~
+  SAY IDENTIFIED_DESC ~This ring protects the wearer's mind from all external influences such as psionic abilities and spells like Domination.  No prior history is known, this ring seems to have been crafted very recently.  It would be a great boon for any hero who has to explore the Underdark though, as it provides solid defenses against some of its more horrid denizens, especially the mind flayers.  Perhaps it can earn a name and history for itself in this way.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to berserk, charm, confusion, domination, feeblemind and stunning
+- The wearer's alignment cannot be determined~
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_charm_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_confusion_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_feeblemind_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_psionics_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_stun_arrays"
+  END
+
+
+// mh#ring8 - RIng of Shooting Stars
+
+COPY "%MOD_FOLDER%/items/mh#ring8.itm" "override"
+  SAY NAME2 ~Ring of Shooting Stars~
+  SAY IDENTIFIED_DESC ~This unusual elven-made ring throbs with power.  It dates back to the days of Myth Drannor, were it was possibly the cause of the destruction of the Rule Tower in the Year of Stern Judgment (666).  Since then it has left a path of chaos and destruction throughout history, having been used in several wars.  Although the ring is not cursed in any way, it seems to be drawn to violent conflicts, and its appearance has become a bad omen to many.
+
+STATISTICS:
+
+Charge abilities (all as a 20th level wizard):
+- Casts Melf's Minute Meteors (3/day)
+- Casts Chain Lightning (2/day)
+- Casts Meteor Swarm (1/day)
+
+Requires: 14 intelligence~
+
+
 // mh#robe1 - Robe of the Elements
 
 COPY "%MOD_FOLDER%/items/mh#robe1.itm" "override"
@@ -440,12 +517,17 @@ Equipped abilities:
 
 Weight: 3~
 
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_level_drain_arrays"
+  END
+
 
 // mh#robe3 - Robe of the Pure Heart
 
 COPY "%MOD_FOLDER%/items/mh#robe3.itm" "override"
   SAY NAME1 ~Monk's Robes~
-  SAY UNIDENTIFIED_DESC ~These are robes monks typically use when practicing their magical arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
+  SAY UNIDENTIFIED_DESC ~These are robes monks typically use when practicing their martial arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
 
 Weight: 3~
   SAY NAME2 ~Robe of the Pure Heart~
@@ -465,7 +547,7 @@ Weight: 3~
 
 COPY "%MOD_FOLDER%/items/mh#robe4.itm" "override"
   SAY NAME1 ~Monk's Robes~
-  SAY UNIDENTIFIED_DESC ~These are robes monks typically use when practicing their magical arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
+  SAY UNIDENTIFIED_DESC ~These are robes monks typically use when practicing their martial arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
 
 Weight: 3~
   SAY NAME2 ~Shadow Dancer's Robe~
@@ -537,6 +619,74 @@ COPY "%MOD_FOLDER%/items/mh#swrd3.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#swrd4.itm" "override"
   SAY NAME2 @89
   SAY IDENTIFIED_DESC @90
+
+
+// mh#swrd5 - Scimitar of the Seven +4
+
+COPY "%MOD_FOLDER%/items/mh#swrd5.itm" "override"
+  SAY NAME2 ~Scimitar of the Seven +4~
+  SAY IDENTIFIED_DESC ~This powerful enchanted scimitar is a bit of an enigma.  Its construction suggests a desert culture, but it cannot be traced to any such culture on Aber-Toril.  Divinations reveal it was crafted in honor of seven legendary heroes and wielded by a great queen and a chosen knight destined to slay a great evil, but names and details remain vague at best.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d8+4 (slashing)
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 1~
+
+
+// mh#swrd6 - Sword of the Planes +1
+
+COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
+  SAY NAME2 ~Sword of the Planes +1~
+  SAY IDENTIFIED_DESC ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  In the presence of certain creatures from other planes it grows in power.  And if actually taken into another plane, its power flares.
+
+STATISTICS:
+
+Equipped abilities:
+- Always strikes as a +4 weapon against any enemy
+- Increases in power if taken into another plane of existence
+
+THAC0: +1, +2 vs. undead, +3 vs. cold-using creatures, +4 vs. undead
+Damage: 1d8+1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+
+COPY "%MOD_FOLDER%/items/mh#swd6a.itm" "override"
+  SAY NAME2 ~Sword of the Planes +4~
+  SAY IDENTIFIED_DESC ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  Within this Outer Plane it is at maximum power, but it will return to normal if taken back to the Prime.
+
+STATISTICS:
+
+Equipped abilities:
+- Decreases in power if returned to the prime material plane
+
+THAC0: +4
+Damage: 1d8+4
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+
+EXTEND_BOTTOM "baldur.bcs" "%MOD_FOLDER%/scripts/planar_sword.baf"
+EXTEND_BOTTOM "baldur25.bcs" "%MOD_FOLDER%/scripts/planar_sword.baf"
 
 
 // mh#wand1 - Wand of Illusions

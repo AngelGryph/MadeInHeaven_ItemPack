@@ -1,0 +1,336 @@
+IF
+  HasItem("mh#swrd6", PLAYER1)
+  Or(18)
+    AreaCheck("AR0414")
+    AreaCheck("AR0516")
+    AreaCheck("AR0517")
+    AreaCheck("AR0518")
+    AreaCheck("AR0519")
+    AreaCheck("AR0520")
+    AreaCheck("AR0521")
+    AreaCheck("AR2900")
+    AreaCheck("AR2901")
+    AreaCheck("AR2902")
+    AreaCheck("AR2903")
+    AreaCheck("AR2904")
+    AreaCheck("AR2905")
+    AreaCheck("AR2906")
+    AreaCheck("AR4500")
+    AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swd6a", "mh#swrd6", PLAYER1)
+    ActionOverride(PLAYER1, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER1, @0)
+END
+
+IF
+  HasItem("mh#swd6a", PLAYER1)
+  !AreaCheck("AR0414")
+  !AreaCheck("AR0516")
+  !AreaCheck("AR0517")
+  !AreaCheck("AR0518")
+  !AreaCheck("AR0519")
+  !AreaCheck("AR0520")
+  !AreaCheck("AR0521")
+  !AreaCheck("AR2900")
+  !AreaCheck("AR2901")
+  !AreaCheck("AR2902")
+  !AreaCheck("AR2903")
+  !AreaCheck("AR2904")
+  !AreaCheck("AR2905")
+  !AreaCheck("AR2906")
+  !AreaCheck("AR4500")
+  !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swrd6", "mh#swd6a", PLAYER1)
+    ActionOverride(PLAYER1, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER1, @1)
+END
+
+
+IF
+  HasItem("mh#swrd6", PLAYER2)
+  Or(18)
+    AreaCheck("AR0414")
+    AreaCheck("AR0516")
+    AreaCheck("AR0517")
+    AreaCheck("AR0518")
+    AreaCheck("AR0519")
+    AreaCheck("AR0520")
+    AreaCheck("AR0521")
+    AreaCheck("AR2900")
+    AreaCheck("AR2901")
+    AreaCheck("AR2902")
+    AreaCheck("AR2903")
+    AreaCheck("AR2904")
+    AreaCheck("AR2905")
+    AreaCheck("AR2906")
+    AreaCheck("AR4500")
+    AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swd6a", "mh#swrd6", PLAYER2)
+    ActionOverride(PLAYER2, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER2, @0)
+END
+
+IF
+  HasItem("mh#swd6a", PLAYER2)
+  !AreaCheck("AR0414")
+  !AreaCheck("AR0516")
+  !AreaCheck("AR0517")
+  !AreaCheck("AR0518")
+  !AreaCheck("AR0519")
+  !AreaCheck("AR0520")
+  !AreaCheck("AR0521")
+  !AreaCheck("AR2900")
+  !AreaCheck("AR2901")
+  !AreaCheck("AR2902")
+  !AreaCheck("AR2903")
+  !AreaCheck("AR2904")
+  !AreaCheck("AR2905")
+  !AreaCheck("AR2906")
+  !AreaCheck("AR4500")
+  !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swrd6", "mh#swd6a", PLAYER2)
+    ActionOverride(PLAYER2, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER2, @1)
+END
+
+
+IF
+  HasItem("mh#swrd6", PLAYER3)
+  Or(18)
+    AreaCheck("AR0414")
+    AreaCheck("AR0516")
+    AreaCheck("AR0517")
+    AreaCheck("AR0518")
+    AreaCheck("AR0519")
+    AreaCheck("AR0520")
+    AreaCheck("AR0521")
+    AreaCheck("AR2900")
+    AreaCheck("AR2901")
+    AreaCheck("AR2902")
+    AreaCheck("AR2903")
+    AreaCheck("AR2904")
+    AreaCheck("AR2905")
+    AreaCheck("AR2906")
+    AreaCheck("AR4500")
+    AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swd6a", "mh#swrd6", PLAYER3)
+    ActionOverride(PLAYER3, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER3, @0)
+END
+
+IF
+  HasItem("mh#swd6a", PLAYER3)
+  !AreaCheck("AR0414")
+  !AreaCheck("AR0516")
+  !AreaCheck("AR0517")
+  !AreaCheck("AR0518")
+  !AreaCheck("AR0519")
+  !AreaCheck("AR0520")
+  !AreaCheck("AR0521")
+  !AreaCheck("AR2900")
+  !AreaCheck("AR2901")
+  !AreaCheck("AR2902")
+  !AreaCheck("AR2903")
+  !AreaCheck("AR2904")
+  !AreaCheck("AR2905")
+  !AreaCheck("AR2906")
+  !AreaCheck("AR4500")
+  !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swrd6", "mh#swd6a", PLAYER3)
+    ActionOverride(PLAYER3, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER3, @1)
+END
+
+
+IF
+  HasItem("mh#swrd6", PLAYER4)
+  Or(18)
+    AreaCheck("AR0414")
+    AreaCheck("AR0516")
+    AreaCheck("AR0517")
+    AreaCheck("AR0518")
+    AreaCheck("AR0519")
+    AreaCheck("AR0520")
+    AreaCheck("AR0521")
+    AreaCheck("AR2900")
+    AreaCheck("AR2901")
+    AreaCheck("AR2902")
+    AreaCheck("AR2903")
+    AreaCheck("AR2904")
+    AreaCheck("AR2905")
+    AreaCheck("AR2906")
+    AreaCheck("AR4500")
+    AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swd6a", "mh#swrd6", PLAYER4)
+    ActionOverride(PLAYER4, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER4, @0)
+END
+
+IF
+  HasItem("mh#swd6a", PLAYER4)
+  !AreaCheck("AR0414")
+  !AreaCheck("AR0516")
+  !AreaCheck("AR0517")
+  !AreaCheck("AR0518")
+  !AreaCheck("AR0519")
+  !AreaCheck("AR0520")
+  !AreaCheck("AR0521")
+  !AreaCheck("AR2900")
+  !AreaCheck("AR2901")
+  !AreaCheck("AR2902")
+  !AreaCheck("AR2903")
+  !AreaCheck("AR2904")
+  !AreaCheck("AR2905")
+  !AreaCheck("AR2906")
+  !AreaCheck("AR4500")
+  !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swrd6", "mh#swd6a", PLAYER4)
+    ActionOverride(PLAYER4, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER4, @1)
+END
+
+
+IF
+  HasItem("mh#swrd6", PLAYER5)
+  Or(18)
+    AreaCheck("AR0414")
+    AreaCheck("AR0516")
+    AreaCheck("AR0517")
+    AreaCheck("AR0518")
+    AreaCheck("AR0519")
+    AreaCheck("AR0520")
+    AreaCheck("AR0521")
+    AreaCheck("AR2900")
+    AreaCheck("AR2901")
+    AreaCheck("AR2902")
+    AreaCheck("AR2903")
+    AreaCheck("AR2904")
+    AreaCheck("AR2905")
+    AreaCheck("AR2906")
+    AreaCheck("AR4500")
+    AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swd6a", "mh#swrd6", PLAYER5)
+    ActionOverride(PLAYER5, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER5, @0)
+END
+
+IF
+  HasItem("mh#swd6a", PLAYER5)
+  !AreaCheck("AR0414")
+  !AreaCheck("AR0516")
+  !AreaCheck("AR0517")
+  !AreaCheck("AR0518")
+  !AreaCheck("AR0519")
+  !AreaCheck("AR0520")
+  !AreaCheck("AR0521")
+  !AreaCheck("AR2900")
+  !AreaCheck("AR2901")
+  !AreaCheck("AR2902")
+  !AreaCheck("AR2903")
+  !AreaCheck("AR2904")
+  !AreaCheck("AR2905")
+  !AreaCheck("AR2906")
+  !AreaCheck("AR4500")
+  !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swrd6", "mh#swd6a", PLAYER5)
+    ActionOverride(PLAYER5, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER5, @1)
+END
+
+
+IF
+  HasItem("mh#swrd6", PLAYER6)
+  Or(18)
+    AreaCheck("AR0414")
+    AreaCheck("AR0516")
+    AreaCheck("AR0517")
+    AreaCheck("AR0518")
+    AreaCheck("AR0519")
+    AreaCheck("AR0520")
+    AreaCheck("AR0521")
+    AreaCheck("AR2900")
+    AreaCheck("AR2901")
+    AreaCheck("AR2902")
+    AreaCheck("AR2903")
+    AreaCheck("AR2904")
+    AreaCheck("AR2905")
+    AreaCheck("AR2906")
+    AreaCheck("AR4500")
+    AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swd6a", "mh#swrd6", PLAYER6)
+    ActionOverride(PLAYER6, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER6, @0)
+END
+
+IF
+  HasItem("mh#swd6a", PLAYER6)
+  !AreaCheck("AR0414")
+  !AreaCheck("AR0516")
+  !AreaCheck("AR0517")
+  !AreaCheck("AR0518")
+  !AreaCheck("AR0519")
+  !AreaCheck("AR0520")
+  !AreaCheck("AR0521")
+  !AreaCheck("AR2900")
+  !AreaCheck("AR2901")
+  !AreaCheck("AR2902")
+  !AreaCheck("AR2903")
+  !AreaCheck("AR2904")
+  !AreaCheck("AR2905")
+  !AreaCheck("AR2906")
+  !AreaCheck("AR4500")
+  !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
+THEN
+  RESPONSE #100
+    TakeItemReplace("mh#swrd6", "mh#swd6a", PLAYER6)
+    ActionOverride(PLAYER6, EquipMostDamagingMelee())
+    DisplayStringHead(PLAYER6, @1)
+END
+
+

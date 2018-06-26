@@ -95,6 +95,16 @@ COPY_EXISTING "ar1301.are" "override"
 
 // Planar Sphere
 
+COPY_EXISTING "ar0410.are" "override"
+  // Sword of the Planes +1
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 1
+    STR_VAR
+    item_to_add		= "mh#swrd6"
+  END
+
+
 COPY_EXISTING "ar0411.are" "override"
   // Wand of Illusions
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
@@ -113,6 +123,19 @@ COPY_EXISTING "tolger.cre" "override"
   REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
   // Ring of Protection from Silence
   ADD_CRE_ITEM "mh#ring5" #0 #0 #0 "unstealable" "lring"
+
+
+// Temple Ruins
+
+COPY_EXISTING "ar1403.are" "override"
+  // Ring of White Bone
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 2
+    charges1		= 12
+    STR_VAR
+    item_to_add		= "mh#ring6"
+  END
 
 
 // Windspear Hills / Firkraag's Lair
@@ -152,6 +175,8 @@ COPY_EXISTING "udsvir05.dlg" "override"
 // Ust Natha (Underdark)
 
 COPY_EXISTING "uddrow23.sto" "override"
+  // Ring of Mind Shielding
+  ADD_STORE_ITEM "mh#ring7" AFTER "amul10" #0 #0 #0 "identified" #1
   // Cloak of Arachnida
   ADD_STORE_ITEM "mh#clck3" AFTER "clck17" #2 #0 #0 "identified" #1
   // Shadow Dancer's Robe
@@ -165,7 +190,7 @@ COPY_EXISTING "uddrow23.sto" "override"
 COPY_EXISTING "firkra02.cre" "override"
   // Battlecloak of Vycaena (replaces extra Cloak of the Shield)
   REMOVE_CRE_ITEM "clck20"
-  ADD_CRE_ITEM "mh#clck1" #0 #0 #0 "unstealable" "qitem3"
+  ADD_CRE_ITEM "mh#clck2" #0 #0 #0 "unstealable" "qitem3"
 
 
 // Potion shops

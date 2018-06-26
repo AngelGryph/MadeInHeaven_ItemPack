@@ -7,6 +7,8 @@ COPY_EXISTING "garlena.sto" "override"
   ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
+  // Scimitar of the Seven +4
+  ADD_STORE_ITEM "mh#swrd5" AFTER "sw1h58" #0 #0 #0 "identified" #1
 
 
 // Arcana Archives
@@ -14,6 +16,10 @@ COPY_EXISTING "garlena.sto" "override"
 COPY_EXISTING "25spell.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9
+  // Ring of Shooting Stars
+  ADD_STORE_ITEM "mh#ring8" AFTER "ring02" #3 #2 #1 "identified" #1
+  // Ring of White Bone
+  ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1
   // Wand of Illusions
   ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
 
