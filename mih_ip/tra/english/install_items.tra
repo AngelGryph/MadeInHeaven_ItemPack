@@ -475,3 +475,134 @@ Requires:
  10 Strength
 
 Weight: 1~
+@91   = ~Crystal Clear Ioun Stone~
+@92   = ~Ring of White Bone~
+@93   = ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
+
+As the name suggests, this ring is carved entirely from bone, preferably from an undead creature destroyed in combat.  When first created, it contains twelve charges of the priest spell "Negative Plane Protection", which can be cast by anyone wearing the ring as if they were a 12th level priest.  After all charges have been used, the ring crumbles into worthless powder.
+
+STATISTICS:
+
+Charge abilities:
+- Casts Negative Plane Protection (at 12th level of ability)~
+@94   = ~Ring of Mind Shielding~
+@95   = ~This ring protects the wearer's mind from all external influences such as psionic abilities and spells like Domination.  No prior history is known, this ring seems to have been crafted very recently.  It would be a great boon for any hero who has to explore the Underdark though, as it provides solid defenses against some of its more horrid denizens, especially the mind flayers.  Perhaps it can earn a name and history for itself in this way.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to berserk, charm, confusion, domination, feeblemind and stunning
+- The wearer's alignment cannot be determined~
+@96   = ~Ring of Shooting Stars~
+@97   = ~This unusual elven-made ring throbs with power.  It dates back to the days of Myth Drannor, were it was possibly the cause of the destruction of the Rule Tower in the Year of Stern Judgment (666).  Since then it has left a path of chaos and destruction throughout history, having been used in several wars.  Although the ring is not cursed in any way, it seems to be drawn to violent conflicts, and its appearance has become a bad omen to many.
+
+STATISTICS:
+
+Charge abilities (all as a 20th level wizard):
+- Melf's Minute Meteors (3/day)
+- Chain Lightning (2/day)
+- Meteor Swarm (1/day)
+
+Requires: 14 Intelligence~
+@98   = ~Robe of the Elements~
+@99   = ~Unsatisfied with the basic mage robes, Zavoros the Moderately Insane experimented to find a more powerful enchantment for his personal wardrobe.  After two explosions, the village being overrun with a horde of accidentally summoned gibberlings, and his latest prototype coming apart at the seams in the town square, he finally came up with this design.  At this point however, he was asked in rather firm terms to perform his experiments in a more remote location, and to never wear untested prototype robes in public again.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 bonus
+- Fire Resistance: +20%
+- Cold Resistance: +20%
+- Electrical Resistance: +20%
+
+Weight: 3~
+@100  = ~Robe of the Necromancer~
+@101  = ~This robe was created by the Netherese arcanist Jeharis the Red after one too many instances of his own undead creations escaping his control.  Jeharis escaped the fall of Netheril because he was in his secret lair in the Stormhorn mountains at the time, where he eventually transformed himself into a lich.  For one of his gruesome experiments he needed the souls of thirteen virgins, and the subsequent kidnappings eventually led to adventurers finding his lair and destroying the Crimson Flame as he now called himself in an epic battle.  His robe survived the battle and was claimed as a prize by the victors, though what exactly happened to it afterwards and how it arrived in its current location is a riddle for the ages.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +3 vs. Death
+- Magic Resistance: +20%
+- Poison Resistance: +20%
+- Immunity to Energy Drain
+
+Weight: 3~
+@102  = ~Monk's Robes~
+@103  = ~These are robes monks typically use when practicing their martial arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
+
+Weight: 3~
+@104  = ~Robe of the Pure Heart~
+@105  = ~A priestess of Sune created these robes for a monk lover.  Unfortunately the name turned out be a misnomer; her lover cheated her with another woman.  Heart broken she left, taking the robe with her.  An adventuring party found her corpse in the woods almost a year later, she had apparently fallen victim to bandits.  Having no use for it they eventually sold it to a visiting Calishite monk.
+
+These monk robes are made of very tough fibers that resist cutting and carry a minor enchantment that enhances the wearer's defenses somewhat.  
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 bonus, additional +2 vs. slashing
+
+Weight: 3~
+@106  = ~Shadow Dancer's Robe~
+@107  = ~Unknown to most surfacers, the drow have a small but succesful monk tradition.  They make great assassins, needing no weapons to be lethal in combat.  The Shadow Dancer was one such assassin, and was sent to murder	the king of a nearby dwarven hall.  The attempt succeeded, but the crown prince relentlessly pursued the killer and eventually avenged his father.  Later on the dwarven hall was abandoned in a hurry and fell in ruin, and adventurers eventually found this robe in a chest buried under the rubble.
+
+This robe has been strengthened with adamantine fibers and is very resistant to cutting.  Unlike most drow items, this robe will not disintegrate in sunlight.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2 bonus, additional +3 vs. slashing
+- Regenerates 1 hp/round
+
+Weight: 3~
+@108  = ~Scimitar of the Seven +4~
+@109  = ~This powerful enchanted scimitar is a bit of an enigma.  Its construction suggests a desert culture, but it cannot be traced to any such culture on Aber-Toril.  Divinations reveal it was crafted in honor of seven legendary heroes and wielded by a great queen and a chosen knight destined to slay a great evil, but names and details remain vague at best.
+
+STATISTICS:
+
+THAC0: +4
+Damage: 1d8+4 (slashing)
+Speed Factor: 1
+Proficiency Type: Scimitar/Wakizashi/Ninjato
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 1~
+@110  = ~Sword of the Planes +1~
+@111  = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  In the presence of certain creatures from other planes it grows in power.  And if actually taken into another plane, its power flares.
+
+STATISTICS:
+
+Equipped abilities:
+- Always strikes as a +4 weapon against any enemy
+- Increases in power if taken into another plane of existence
+
+THAC0: +1, +2 vs. undead, +3 vs. cold-using creatures, +4 vs. undead
+Damage: 1d8+1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+@112  = ~Sword of the Planes +4~
+@113  = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  Within this Outer Plane it is at maximum power, but it will return to normal if taken back to the Prime.
+
+STATISTICS:
+
+Equipped abilities:
+- Decreases in power if returned to the prime material plane
+
+THAC0: +4
+Damage: 1d8+4
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~

@@ -5,6 +5,24 @@ BEGIN
   "cdwolfm"	=> 1
   "cdibclaw"	=> 1
   "princess"	=> 1
+  "dw#shbrp"	=> 1
+  "dw#shear"	=> 1
+  "dw#shfir"	=> 1
+  "dw#shnbr"	=> 1
+  "dw#shnea"	=> 1
+  "dw#shnfi"	=> 1
+  "dw#shnsa"	=> 1
+  "dw#shnw1"	=> 1
+  "dw#shnw2"	=> 1
+  "dw#shnw3"	=> 1
+  "dw#shnwo"	=> 1
+  "dw#shnwy"	=> 1
+  "dw#shsal"	=> 1
+  "dw#shwe1"	=> 1
+  "dw#shwe2"	=> 1
+  "dw#shwe3"	=> 1
+  "dw#shwol"	=> 1
+  "dw#shwyv"	=> 1
   "li#gwer"	=> 1
   "li#were"	=> 1
   "tg#gwer"	=> 1
@@ -28,8 +46,11 @@ BEGIN
   "sw1h61"	=> 10
   "bdblun06"	=> 11
   "x#ringro"	=> 12
-  "ohhbrac"	=> 13
+  "ohbbrac1"	=> 13
   "b!kegf"	=> 14
+  "beltstr"	=> 15
+  "gauntem"	=> 16
+  "ogi"		=> 17
 END
 
 

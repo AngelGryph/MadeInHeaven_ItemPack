@@ -17,6 +17,16 @@ COPY "%MOD_FOLDER%/tables/mh#impt1.2da" "override"
 EXTEND_TOP "ar0602.bcs" "%MOD_FOLDER%/scripts/import_itempack.baf" USING "%MOD_FOLDER%/dummy.tra"
 
 
+ACTION_IF GAME_IS "eet"
+BEGIN
+  APPEND "k#import.2da" "1	mh#brac1" UNLESS "mh#brac1"
+  APPEND "k#import.2da" "1	mh#brac2" UNLESS "mh#brac2"
+  APPEND "k#import.2da" "1	mh#ring2" UNLESS "mh#ring2"
+  APPEND "k#import.2da" "1	mh#ring3" UNLESS "mh#ring3"
+  APPEND "k#import.2da" "1	mh#ring4" UNLESS "mh#ring4"
+END
+
+
 COPY_EXISTING "duergar1.cre" "override"
   // Winter Wolf Hide +1
   REPLACE_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"

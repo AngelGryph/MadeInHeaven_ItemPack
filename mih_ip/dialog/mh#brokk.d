@@ -144,7 +144,7 @@ BEGIN meteor4
     EXIT
 END
 
-IF ~PartyHasItem("%tutu_var%plat06%eet_var%")
+IF ~PartyHasItem("plat06%eet_var%")
     Global("mh#BrokkAnkheg", "GLOBAL", 0)~
 BEGIN ankheg1
   SAY @31

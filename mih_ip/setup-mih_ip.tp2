@@ -19,14 +19,13 @@ ALWAYS
   BEGIN
     OUTER_SET done_init = 1
 
-    // We no longer support vanilla BG1, it's too much of a hassle.
-    ACTION_IF GAME_IS "bg1 totsc"
+    // We no longer support vanilla BG1 or Tutu, it's too much of a hassle.
+    ACTION_IF GAME_IS "bg1 totsc tutu tutu_totsc"
     BEGIN
-      FAIL ~This mod no longer supports vanilla BG1/TotSC~
+      FAIL ~Sorryt, but this mod no longer supports this version of the game.~
     END
 
     // Load compatibility variables for various implementations of BG1.
-    INCLUDE "%MOD_FOLDER%/lib/g3_tutu_cpmvars.tpa"
     INCLUDE "%MOD_FOLDER%/lib/g3_bgt_cpmvars.tpa"
     INCLUDE "%MOD_FOLDER%/lib/g3_bgee_cpmvars.tpa"
     INCLUDE "%MOD_FOLDER%/lib/g3_eet_cpmvars.tpa"
@@ -124,7 +123,7 @@ END
 
 // Alternative Healing Potions
 
-BEGIN ~2d4 +2, 3d8 +3, 10d4 +20 (P&P)~
+BEGIN ~2d4+2, 3d8+3, 10d4+20 (P&P)~
 SUBCOMPONENT ~Alternative Healing Potions~
 GROUP ~Optional Item Tweaks~
 

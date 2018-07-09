@@ -3,6 +3,7 @@ mh#amul2 Necklace of Prayer Beads		DMG (2E)
 mh#amul3 Gem of Insight				DMG (2E)
 mh#amul4 Gem of Seeing				DMG (2E)
 mh#amul5 Necklace of Adaption			DMG (2E)
+*mh#amul6 Scarab versus Golems			DMG (2E)
 
 mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow

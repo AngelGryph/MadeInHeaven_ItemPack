@@ -3,7 +3,7 @@
 STATISTICS:
 
 Equipped abilities:
-- Strength: +3 bonus
+- Strength: +3
 
 Weight: 2~
 @1 = ~As a young boy, Stewart Elttil was kidnapped by raiding kobolds after his family was slain. However, en route to their den, the kobolds surprised a family of stone giants. These giants rescued Stewart and raised him as their own. It soon became apparent that the boy, no matter how hard he tried, could not compete in the family rock-throwing contests. The stone giant father bartered with a local wizard for this girdle, which made Stewart as strong as his brothers and sisters. When Stewart met an untimely end, the girdle was stolen away.
@@ -11,7 +11,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Strength: +3 bonus
+- Strength: +3
 
 Weight: 2~
 @2 = ~This belt is actually the woven hair from a frost giant's beard.  When worn the belt greatly increases the wearer's strength, making him or her as strong as a frost giant.
@@ -19,7 +19,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Strength: +4 bonus
+- Strength: +4
 
 Weight: 2~
 @3 = ~This belt is actually the woven hair from a fire giant's beard.  When worn the belt greatly increases the wearer's strength.
@@ -27,7 +27,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Strength: +4 bonus
+- Strength: +4
 
 Weight: 2~
 @4 = ~Cursed Girdle of Hill Giant Strength: Big-Fisted Belt
@@ -36,7 +36,7 @@ A fist-shaped brass buckle secures this belt of thick elk hide. The old bloodsta
 STATISTICS:
 
 Equipped abilities:
-- Strength: +3 bonus
+- Strength: +3
 - Intelligence: 6
 - May only be removed by a Remove Curse spell
 
@@ -46,7 +46,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped Ability:
-- Strength: +2 bonus
+- Strength: +2
 
 THAC0: +2
 Damage: 1d6+3
@@ -62,7 +62,7 @@ The Hands of Takkok are exactly that: his very hands. He lost them when he attac
 STATISTICS:
 
 Equipped abilities:
-- Strength: +2 bonus
+- Strength: +2
 
 Weight: 2~
 @7 = ~Gauntlets of Dexterity: The Brawling Hands
@@ -71,7 +71,7 @@ This pair of gauntlets was likely developed in Kara-Tur to aid masters of the ma
 STATISTICS:
 
 Equipped abilities:
-- Dexterity: +2 bonus
+- Dexterity: +2
 
 Weight: 2~
 @8 = ~This is the true name that the dwarven weaponsmith, Silverblade, gave to the weapon he intended to create for his son. Alas, his son died before the weapon was ever completed, but here it stands complete... forged from the combined magic of the original hammer with the gauntlets of ogre power and a girdle of frost giant strength. Crom Faeyr gifts its users with all the powers of the original Hammer of Thunderbolts, in addition to enormous strength and the ability to kill golems, ettins, and trolls in one blow.
@@ -79,7 +79,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Strength: +6 bonus
+- Strength: +6
 
 Combat abilities:
 - Slays stone golems, clay golems, ettins, and trolls
@@ -97,7 +97,7 @@ Weight: 4~
 STATISTICS:
 
 Equipped abilities:
-- Charisma: +2 bonus
+- Charisma: +2
 
 Charge abilities:
 - Charm Person once per day (Save vs. Spell at +3 negates)
@@ -111,7 +111,7 @@ Weight: 0~
 STATISTICS:
 
 Equipped abilities:
-- Strength: +4 bonus
+- Strength: +4
 - Immunity to level drain
 
 THAC0: +5
@@ -129,7 +129,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Strength: +2 bonus
+- Strength: +2
 
 THAC0: -2
 Damage: 1d6-2 (crushing)
@@ -146,7 +146,7 @@ Lord Foreshadow gave this ring to <CHARNAME> alluding that it might help <PRO_HI
 STATISTICS:
 
 Equipped Abilities:
-- Charisma: +2 bonus
+- Charisma: +2
 
 Special Abilities:
 - Charm person once per day~
@@ -155,8 +155,8 @@ Special Abilities:
 STATISTICS:
 
 Equipped abilities:
-- Strength: +3 bonus
-- Dexterity: -2 penalty
+- Strength: +3
+- Dexterity: -2
 
 Weight: 2~
 @14 = ~The speedy execution of one's duty is one of the hallmarks of a paladin's role, however not all are up to the task without magical assistance. To this end, Sir Roderick of Cormyr commissioned this holy symbol of Torm.
@@ -164,6 +164,34 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Dexterity: +2 bonus~
+- Dexterity: +2~
+@15 = ~The enchanter Presdon of the Vast created this girdle several hundred years ago for his bodyguard, Dendes the Wry.  He named the broad belt after a hill giant who had almost killed him when he was looking for spell components.  Dendes died defending Presdon from rival mages near Ordulin.
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: +3
+
+Weight: 2~
+@16 = ~These slender steel gauntlets were crafted by the elven smith Idrial Ashleaf and enchanted by his brother, Beldan.  The pair gave the gauntlets to their cousin, Galain, when he alone returned from a failed quest to destroy a venerable green dragon in the forests of what are now known as Amn.  The three elves made a pact to avenge their kin in ten years time.  The subsequent adventures of the trio were immortalized in Merador of Waterdeep's epic "Three Avengers" ballads.  The songs, sixteen in number, tell all of the adventures that the group went on.  From the Ballad of the Goblin King to the Ballad of Green Night, every deed is retold.  Unfortunately, the history of Galain's gauntlets end with the final bars of Green Night.  The rest is shrouded in mystery.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Strength: +2
+- Saving Throws: +1
+
+Weight: 2~
+@17 = ~This robe was fashioned from strong fabric and dyed dark blue, the favorite color of its proud owner, the archmage Ogi-Luc.  A Sembian by birth, Ogi-Luc was a powerful man, as strong in body as he was in mind.  However, Ogi-Luc wasn't content to merely be strong.  He wanted to be exceptionally strong.  When he put on these robes, proud men stood aside and braggarts stilled their tongues.  For all of Ogi-Luc's pride and prowess, he was unable to defeat the Red Wizard abjurer Nesk Vhaltim.  Nesk took the robes as a prize.  They were later stolen and sold by a daring rogue.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 4
+- Strength: +2
+- Constitution: +2
+
+Weight: 5~
 
 

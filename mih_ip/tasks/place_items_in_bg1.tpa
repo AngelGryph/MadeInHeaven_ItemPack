@@ -97,28 +97,28 @@ EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%MOD_FOLDER%/scripts/gemquest_gullykin.baf" 
 
 // Carnival potion store
 
-COPY_EXISTING "%tutu_var%sto4905.sto" "override"
+COPY_EXISTING "sto4905.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
 
 
 // Song of the Morning
 
-COPY_EXISTING "%tutu_var%tem3402.sto" "override"
+COPY_EXISTING "tem3402.sto" "override"
   // Amulet against Undead
   ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
 
 
 // The Lady's Hall
 
-COPY_EXISTING "%tutu_var%tem0132.sto" "override"
+COPY_EXISTING "tem0132.sto" "override"
   // Necklace of Prayer Beads
   ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
 
 
 // High Hedge
 
-COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
+COPY_EXISTING "highhedg.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
 
@@ -129,10 +129,10 @@ COPY_EXISTING "%tutu_scripth%ighhedg.sto" "override"
   ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
 
   // Cloak of Arachnida
-  ADD_STORE_ITEM "mh#clck3" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #12 #0 #0 "identified" #1
 
   // Cloak of the Shield (from Durlag's Tower)
-  ADD_STORE_ITEM "%tutu_var%clck20" AFTER "%tutu_var%clck16" #12 #0 #0 "identified" #1
+  ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1
 
 
 // Temple of Yondalla
@@ -150,30 +150,30 @@ COPY_EXISTING "sto0703.sto" "override"
 
 // Black Lily
 
-COPY_EXISTING "%tutu_scripts%toblack.sto" "override"
+COPY_EXISTING "stoblack.sto" "override"
   // Boots of the Master Ninja
-  ADD_STORE_ITEM "mh#boot1" BEFORE "%tutu_var%clck01" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#boot1" BEFORE "clck01" #0 #0 #0 "identified" #1
 
 
 // Mutamin
 
-COPY_EXISTING "%tutu_var%mutami.cre" "override"
+COPY_EXISTING "mutami.cre" "override"
   // Mutamin's Cloak
   ADD_CRE_ITEM "mh#clck1" #0 #0 #0 "none" "cloak"
 
 
 // Bassilius
 
-COPY_EXISTING "%tutu_var%bassil.cre" "override"
+COPY_EXISTING "bassil.cre" "override"
   // The Kneecapper (from Hurgan Stoneblade)
-  REPLACE_CRE_ITEM "%tutu_var%hamm04" #0 #0 #0 "none" "weapon1" EQUIP
+  REPLACE_CRE_ITEM "hamm04" #0 #0 #0 "none" "weapon1" EQUIP
 
 
 // Taugosz Khosann
 
-COPY_EXISTING "%tutu_var%taugos.cre" "override"
+COPY_EXISTING "taugos.cre" "override"
   // Aishideena (from Bassilius)
-  REPLACE_CRE_ITEM "%tutu_var%hamm03" #0 #0 #0 "none" "weapon1" EQUIP
+  REPLACE_CRE_ITEM "hamm03" #0 #0 #0 "none" "weapon1" EQUIP
 
 
 // Candlekeep Catacombs L1
@@ -190,15 +190,15 @@ COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
 
 // Hurgan Stoneblade
 
-COPY_EXISTING "%tutu_var%hurgan.cre" "override"
+COPY_EXISTING "hurgan.cre" "override"
   // Final Strike +3
   REPLACE_CRE_ITEM "mh#hamm1" #0 #0 #0 "none" "qitem3"
   
-COPY_EXISTING "%tutu_var%hurgan.dlg" "override"
+COPY_EXISTING "hurgan.dlg" "override"
   // Final Strike +3
   DECOMPILE_AND_PATCH
   BEGIN
-    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "%tutu_var%hamm04" "mh#hamm1"
+    REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "hamm04" "mh#hamm1"
   END
 
 
@@ -220,7 +220,7 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
   // Bracers of Winter's Chill
   LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
     STR_VAR
-    old_item		= "%tutu_var%brac01"
+    old_item		= "brac01"
     new_item		= "mh#brac3"
   END
 
@@ -235,7 +235,7 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
   // Battlecloak of Vycaena
   LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
     STR_VAR
-    old_item		= "%tutu_var%clck20"
+    old_item		= "clck20"
     new_item		= "mh#clck2"
   END
 

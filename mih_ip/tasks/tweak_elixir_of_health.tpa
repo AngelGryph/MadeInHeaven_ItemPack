@@ -17,4 +17,22 @@ COPY_EXISTING "potn17.itm" "override"
     insert		= "below"
   END
 
+  LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+    INT_VAR
+    match_opcode	= 75	// Cure: Blindness
+    opcode		= 240	// Graphics: Remove Special Effect Icon
+    parameter2		= 8	// Blind
+    STR_VAR
+    insert		= "below"
+  END
+
+  LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+    INT_VAR
+    match_opcode	= 81	// Cure: Deafness
+    opcode		= 240	// Graphics: Remove Special Effect Icon
+    parameter2		= 112	// Deaf
+    STR_VAR
+    insert		= "below"
+  END
+
 
