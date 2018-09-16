@@ -17,7 +17,6 @@ mh#brac1 Vambraces of Evil's Warding		Brokk's Forge (event)
 mh#brac3 Bracers of Winter's Chill		Durlag Tower (mushrooms)
 
 mh#btax1 Foesplitter +1				Durlag's Tower D4 (chest2
-mh#btax2 Mithral Battle Axe +3			Brokk's Forge (event)
 
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Battlecloak of Vycaena			Durlag's Tower D4 (chest)
@@ -47,7 +46,5 @@ mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
 
 mh#swrd1 Terminus Est +2			Durlag's Tower D4 (chest)
 mh#swrd2 Smythe's Slicer +1			Brokk's Forge (shop)
-mh#swrd3 Mithral Long Sword +3			Brokk's Forge (event)
-mh#swrd4 Mithral Scimitar +3			Brokk's Forge (event)
 
 

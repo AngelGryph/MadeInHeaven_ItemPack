@@ -111,7 +111,7 @@ COPY_EXISTING "ar0410.are" "override"
     INT_VAR
     container_to_add_to	= 1
     STR_VAR
-    item_to_add		= "mh#swrd6"
+    item_to_add		= "mh#swrd4"
   END
 
 

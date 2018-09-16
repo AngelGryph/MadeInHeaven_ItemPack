@@ -8,7 +8,7 @@ COPY_EXISTING "garlena.sto" "override"
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
   // Scimitar of the Seven +4
-  ADD_STORE_ITEM "mh#swrd5" AFTER "sw1h58" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1
 
 
 // Arcana Archives

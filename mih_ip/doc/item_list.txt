@@ -11,6 +11,7 @@ mh#armr3 White Skin of Umpluutu			Arms & Equipment Guide (2E)
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2E)
 mh#belt2 Sunite Sash				Magic of Faerun (3E)
+*mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
 mh#boot2 Boots of Striding and Springing	DMG (2E)
@@ -23,11 +24,12 @@ mh#brac3 Bracers of Winter's Chill
 mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3E)
-mh#btax2 Mithral Battle Axe +3
+*mh#btax2 Redethemar +4				Elves of Evermeet (2E)
 
 mh#clck1 Mutamin's Cloak
 mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
 mh#clck3 Cloak of Arachnida			DMG (2E)
+*mh#clck4 Cloak of the Night Sky		Elves of Evermeet (2E)
 
 mh#comp1 Meteoric Iron
 mh#comp2 Mithral Ore
@@ -38,6 +40,7 @@ mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#hamm1 Final Strike +3
 
 mh#helm1 Helm of Valor				Elves of Evermeet (2E)
+*mh#helm2 Helm of the Dwarven Lords
 
 mh#ioun1 Pale Blue Ioun Stone			DMG (2E)
 mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
@@ -54,6 +57,7 @@ mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
 mh#ring6 Ring of White Bone			Complete Necromancer (2E)
 mh#ring7 Ring of Mind Shielding			DMG (2E)
 mh#ring8 Ring of Shooting Stars			DMG (2E)
+*mh#ring9 Ring of ??
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
@@ -68,10 +72,8 @@ mh#staf1 Staff of Rumathil			Elves of Evermeet (2E)
 
 mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
 mh#swrd2 Smythe's Slicer +1
-mh#swrd3 Mithral Long Sword +3
-mh#swrd4 Mithral Scimitar +3
-mh#swrd5 Scimitar of the Seven +4		LoZ: Breath of the Wild
-mh#swrd6 Sword of the Planes +1			DMG (2E)
+mh#swrd3 Scimitar of the Seven +4		LoZ: Breath of the Wild
+mh#swrd4 Sword of the Planes +1			DMG (2E)
 
 mh#wand1 Wand of Illusions			DMG (2E)
 

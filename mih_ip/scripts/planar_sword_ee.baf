@@ -1,6 +1,6 @@
 IF
   HasItem("mh#swrd4", PLAYER1)
-  Or(16)
+  Or(18)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -17,10 +17,11 @@ IF
     AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER1)
-    ActionOverride(PLAYER1, EquipMostDamagingMelee())
+    ActionOverride(PLAYER1, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER1, @0)
 END
 
@@ -42,17 +43,18 @@ IF
   !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER1)
-    ActionOverride(PLAYER1, EquipMostDamagingMelee())
+    ActionOverride(PLAYER1, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER1, @1)
 END
 
 
 IF
   HasItem("mh#swrd4", PLAYER2)
-  Or(16)
+  Or(18)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -69,10 +71,11 @@ IF
     AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER2)
-    ActionOverride(PLAYER2, EquipMostDamagingMelee())
+    ActionOverride(PLAYER2, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER2, @0)
 END
 
@@ -94,17 +97,18 @@ IF
   !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER2)
-    ActionOverride(PLAYER2, EquipMostDamagingMelee())
+    ActionOverride(PLAYER2, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER2, @1)
 END
 
 
 IF
   HasItem("mh#swrd4", PLAYER3)
-  Or(16)
+  Or(18)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -121,10 +125,11 @@ IF
     AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER3)
-    ActionOverride(PLAYER3, EquipMostDamagingMelee())
+    ActionOverride(PLAYER3, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER3, @0)
 END
 
@@ -146,17 +151,18 @@ IF
   !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER3)
-    ActionOverride(PLAYER3, EquipMostDamagingMelee())
+    ActionOverride(PLAYER3, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER3, @1)
 END
 
 
 IF
   HasItem("mh#swrd4", PLAYER4)
-  Or(16)
+  Or(18)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -173,10 +179,11 @@ IF
     AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER4)
-    ActionOverride(PLAYER4, EquipMostDamagingMelee())
+    ActionOverride(PLAYER4, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER4, @0)
 END
 
@@ -198,17 +205,18 @@ IF
   !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER4)
-    ActionOverride(PLAYER4, EquipMostDamagingMelee())
+    ActionOverride(PLAYER4, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER4, @1)
 END
 
 
 IF
   HasItem("mh#swrd4", PLAYER5)
-  Or(16)
+  Or(18)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -225,10 +233,11 @@ IF
     AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER5)
-    ActionOverride(PLAYER5, EquipMostDamagingMelee())
+    ActionOverride(PLAYER5, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER5, @0)
 END
 
@@ -250,17 +259,18 @@ IF
   !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER5)
-    ActionOverride(PLAYER5, EquipMostDamagingMelee())
+    ActionOverride(PLAYER5, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER5, @1)
 END
 
 
 IF
   HasItem("mh#swrd4", PLAYER6)
-  Or(16)
+  Or(18)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -277,10 +287,11 @@ IF
     AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
+    AreaCheck("OH4230")
+    AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER6)
-    ActionOverride(PLAYER6, EquipMostDamagingMelee())
+    ActionOverride(PLAYER6, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER6, @0)
 END
 
@@ -302,10 +313,11 @@ IF
   !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
+  !AreaCheck("OH4230")
+  !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER6)
-    ActionOverride(PLAYER6, EquipMostDamagingMelee())
+    ActionOverride(PLAYER6, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER6, @1)
 END
 

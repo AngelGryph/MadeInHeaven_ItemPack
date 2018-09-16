@@ -293,13 +293,6 @@ COPY "%MOD_FOLDER%/items/mh#btax1.itm" "override"
   SAY IDENTIFIED_DESC @15
 
 
-// mh#btax2 - Mithral Battle Axe +3
-
-COPY "%MOD_FOLDER%/items/mh#btax2.itm" "override"
-  SAY NAME2 @77
-  SAY IDENTIFIED_DESC @78
-
-
 // mh#clck1 - Mutamin's Cloak
 
 COPY "%MOD_FOLDER%/items/mh#clck1.itm" "override"
@@ -573,41 +566,41 @@ COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
   SAY IDENTIFIED_DESC @39
 
 
-// mh#swrd3 - Mithral Long Sword +3
+// mh#swrd3 - Scimitar of the Seven +4
 
 COPY "%MOD_FOLDER%/items/mh#swrd3.itm" "override"
-  SAY NAME2 @87
-  SAY IDENTIFIED_DESC @88
-
-
-// mh#swrd4 - Mithral Scimitar +3
-
-COPY "%MOD_FOLDER%/items/mh#swrd4.itm" "override"
-  SAY NAME2 @89
-  SAY IDENTIFIED_DESC @90
-
-
-// mh#swrd5 - Scimitar of the Seven +4
-
-COPY "%MOD_FOLDER%/items/mh#swrd5.itm" "override"
   SAY NAME2 @108
   SAY IDENTIFIED_DESC @109
 
 
-// mh#swrd6 - Sword of the Planes +1
+// mh#swrd4 - Sword of the Planes +1
 
-COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
+COPY "%MOD_FOLDER%/items/mh#swrd4.itm" "override"
   SAY NAME2 @110
   SAY IDENTIFIED_DESC @111
 
 
-COPY "%MOD_FOLDER%/items/mh#swd6a.itm" "override"
+COPY "%MOD_FOLDER%/items/mh#swd4a.itm" "override"
   SAY NAME2 @112
   SAY IDENTIFIED_DESC @113
 
 
-EXTEND_BOTTOM "baldur.bcs" "%MOD_FOLDER%/scripts/planar_sword.baf"
-EXTEND_BOTTOM "baldur25.bcs" "%MOD_FOLDER%/scripts/planar_sword.baf"
+ACTION_IF ENGINE_IS "bgee bg2ee"
+BEGIN
+  EXTEND_BOTTOM "baldur.bcs" "%MOD_FOLDER%/scripts/planar_sword_ee.baf"
+  USING "%MOD_FOLDER%/tra/%LANGUAGE%/planar_sword.tra"
+  EXTEND_BOTTOM "baldur25.bcs" "%MOD_FOLDER%/scripts/planar_sword_ee.baf"
+  USING "%MOD_FOLDER%/tra/%LANGUAGE%/planar_sword.tra"
+END
+ELSE
+BEGIN
+  EXTEND_BOTTOM "baldur.bcs" "%MOD_FOLDER%/scripts/planar_sword.baf"
+  EXTEND_BOTTOM "baldur25.bcs" "%MOD_FOLDER%/scripts/planar_sword.baf"
+
+  COPY_EXISTING "mh#swrd4.itm" "override"
+                "mh#swd4a.itm" "override"
+    WRITE_SHORT 0x0042 0
+END
 
 
 // mh#wand1 - Wand of Illusions

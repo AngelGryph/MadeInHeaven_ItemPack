@@ -194,91 +194,6 @@ BEGIN ankheg4
     EXIT
 END
 
-IF ~PartyHasItem("mh#comp2")
-    Global("mh#BrokkMithral", "GLOBAL", 0)~
-BEGIN mithral1
-  SAY @55
-  = @56
-  IF ~PartyGoldGT(9999)~
-    REPLY @57
-    GOTO mithral3
-  IF ~~
-    REPLY @58
-    GOTO mithral2
-END
-
-IF ~~
-BEGIN mithral2
-  SAY @59
-  IF ~~
-    DO ~SetGlobal("mh#BrokkMithral", "GLOBAL", 1)~
-    UNSOLVED_JOURNAL @60
-  EXIT
-END
-
-IF ~~
-BEGIN mithral3
-  SAY @61
-  IF ~~
-    REPLY @62
-    GOTO mithral4
-  IF ~~
-    REPLY @63
-    GOTO mithral5
-  IF ~~
-    REPLY @64
-    GOTO mithral6
-END
-
-IF ~~
-BEGIN mithral4
-  SAY @65
-  IF ~~
-    DO ~TakePartyItem("mh#comp2")
-        DestroyItem("mh#comp2")
-	TakePartyGold(10000)
-	DestroyGold(10000)
-	GiveItemCreate("mh#btax2", LastTalkedToBy(Myself), 0, 0, 0)~
-    GOTO mithral7
-END
-
-IF ~~
-BEGIN mithral5
-  SAY @65
-  IF ~~
-    DO ~TakePartyItem("mh#comp2")
-        DestroyItem("mh#comp2")
-	TakePartyGold(10000)
-	DestroyGold(10000)
-	GiveItemCreate("mh#swrd3", LastTalkedToBy(Myself), 0, 0, 0)~
-    GOTO mithral7
-END
-
-IF ~~
-BEGIN mithral6
-  SAY @65
-  IF ~~
-    DO ~TakePartyItem("mh#comp2")
-        DestroyItem("mh#comp2")
-	TakePartyGold(10000)
-	DestroyGold(10000)
-	GiveItemCreate("mh#swrd4", LastTalkedToBy(Myself), 0, 0, 0)~
-    GOTO mithral7
-END
-
-IF ~~
-BEGIN mithral7
-  SAY @66
-  = @67
-  IF ~~
-    DO ~DayNight(MIDNIGHT)
-        RestParty()
-        EraseJournalEntry(@60)
-        SetGlobal("mh#BrokkMithal", "GLOBAL", 2)~
-    SOLVED_JOURNAL @68
-    EXIT
-END
-
 IF ~True()~
 BEGIN default
   SAY @41
@@ -293,11 +208,6 @@ BEGIN default
       PartyGoldGT(1999)~
     REPLY @43
     GOTO ankheg3
-  IF ~PartyHasItem("mh#comp2")
-      PartyGoldGT(9999)
-      Global("mh#BrokkMithral", "GLOBAL", 1)~
-    REPLY @69
-    GOTO mithral3
   IF ~~
     REPLY @44
     GOTO store

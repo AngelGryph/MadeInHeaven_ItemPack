@@ -4,7 +4,7 @@ COPY "%MOD_FOLDER%/stores/mh#brokk.sto" "override"
   SAY NAME1 "Brokk's Forge"
 
 
-ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @68 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#brokk.tra"
+ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#brokk.tra"
 
 COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/mh#brokk.d"
 

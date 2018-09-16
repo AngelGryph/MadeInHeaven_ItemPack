@@ -9,7 +9,7 @@ mh#ring1 Ring of the Lich +3			Vongoethe (battle)
 mh#ring6 Ring of White Bone			Arcana Archives (shop)
 mh#ring8 Ring of Shooting Stars			Arcana Archives (shop)
 
-mh#swrd5 Scimitar of the Seven +4		Sister Garlena (shop)
+mh#swrd3 Scimitar of the Seven +4		Sister Garlena (shop)
 
 mh#wand1 Wand of Illusions			Arcana Archives (shop)
 

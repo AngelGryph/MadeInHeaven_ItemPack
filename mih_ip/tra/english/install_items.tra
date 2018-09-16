@@ -411,20 +411,6 @@ Equipped abilities:
 - THAC0 lowered by 3
 
 Weight: 2~
-@77   = ~Mithral Battle Axe +3~
-@78   = ~This battle axe was forged for <CHARNAME> by the dwarven smith Brokk.  Crafted from mithral it is light and easy to handle, and retains a sharp and deadly edge.  Truly a weapon worthy of the Hero of the Sword Coast!
-
-STATISTICS:
-
-THAC0: +3
-Damage: 1d8+3 (slashing)
-Speed Factor: 2
-Proficiency Type: Axe
-Type: One-handed
-Requires:
- 10 Strength
-
-Weight: 2~
 @79   = ~Cloak of Arachnida~
 @80   = ~Cloaks of this kind are a boon both to those who ally themselves with giant spiders like some druids or the fearsome drow, and those who would fight against them, like most adventurers.
 
@@ -437,7 +423,7 @@ Equipped abilities:
 
 Weight: 3~
 @81   = ~Mithral Ore~
-@82   = ~These are lumps of mithral ore.  Mithral is a metal as hard as steel but with half the weight.  Elves use it to fashion the fabled elven chain, while dwarves forge it into weapons that become the stuff of myth and legend.  Only an elven or dwarven smith knows how to properly smelt the ore and fashion it into anything useful.~
+@82   = ~These are lumps of mithral ore.  Mithral is a metal as hard as steel but with half the weight.  Elves use it to fashion the fabled elven chain, while dwarves forge it into weapons and armor that become the stuff of myth and legend.  Only an elven or dwarven smith knows how to properly smelt the ore and fashion it into anything useful.~
 @83   = ~Lux Veritatis~
 @84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.~
 @85   = ~Ring of Protection from Silence~
@@ -447,34 +433,6 @@ STATISTICS:
 
 Equipped abilities:
 - Wearer is immune to magical silence~
-@87   = ~Mithral Long Sword +3~
-@88   = ~This long sword was forged for <CHARNAME> by the dwarven smith Brokk.  Crafted from mithral it is light and easy to handle, and retains a sharp and deadly edge.  Truly a weapon worthy of the Hero of the Sword Coast!
-
-STATISTICS:
-
-THAC0: +3
-Damage: 1d8+3 (slashing)
-Speed Factor: 1
-Proficiency Type: Long Sword
-Type: One-handed
-Requires:
- 6 Strength
-
-Weight: 1~
-@89   = ~Mithral Scimitar +3~
-@90   = ~This scimitar was forged for <CHARNAME> by the dwarven smith Brokk.  Crafted from mithral it is light and easy to handle, and retains a sharp and deadly edge.  Truly a weapon worthy of the Hero of the Sword Coast!
-
-STATISTICS:
-
-THAC0: +3
-Damage: 1d8+3 (slashing)
-Speed Factor: 1
-Proficiency Type: Scimitar/Wakizashi/Ninjato
-Type: One-handed
-Requires:
- 10 Strength
-
-Weight: 1~
 @91   = ~Crystal Clear Ioun Stone~
 @92   = ~Ring of White Bone~
 @93   = ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
