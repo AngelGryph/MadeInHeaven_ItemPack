@@ -20,7 +20,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER1)
-    ActionOverride(PLAYER1, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER1, @0)
 END
 
@@ -45,7 +44,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER1)
-    ActionOverride(PLAYER1, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER1, @1)
 END
 
@@ -72,7 +70,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER2)
-    ActionOverride(PLAYER2, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER2, @0)
 END
 
@@ -97,7 +94,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER2)
-    ActionOverride(PLAYER2, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER2, @1)
 END
 
@@ -124,7 +120,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER3)
-    ActionOverride(PLAYER3, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER3, @0)
 END
 
@@ -149,7 +144,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER3)
-    ActionOverride(PLAYER3, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER3, @1)
 END
 
@@ -176,7 +170,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER4)
-    ActionOverride(PLAYER4, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER4, @0)
 END
 
@@ -201,7 +194,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER4)
-    ActionOverride(PLAYER4, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER4, @1)
 END
 
@@ -228,7 +220,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER5)
-    ActionOverride(PLAYER5, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER5, @0)
 END
 
@@ -253,7 +244,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER5)
-    ActionOverride(PLAYER5, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER5, @1)
 END
 
@@ -280,7 +270,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER6)
-    ActionOverride(PLAYER6, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER6, @0)
 END
 
@@ -305,7 +294,6 @@ IF
 THEN
   RESPONSE #100
     TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER6)
-    ActionOverride(PLAYER6, EquipMostDamagingMelee())
     DisplayStringHead(PLAYER6, @1)
 END
 

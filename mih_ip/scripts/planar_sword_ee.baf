@@ -21,7 +21,7 @@ IF
     AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER1, TransformItem("mh#swd4a", "mh#swrd4"))
+    ActionOverride(PLAYER1, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER1, @0)
 END
 
@@ -47,7 +47,7 @@ IF
   !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER1, TransformItem("mh#swrd4", "mh#swd4a"))
+    ActionOverride(PLAYER1, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER1, @1)
 END
 
@@ -75,7 +75,7 @@ IF
     AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER2, TransformItem("mh#swd4a", "mh#swrd4"))
+    ActionOverride(PLAYER2, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER2, @0)
 END
 
@@ -101,7 +101,7 @@ IF
   !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER2, TransformItem("mh#swrd4", "mh#swd4a"))
+    ActionOverride(PLAYER2, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER2, @1)
 END
 
@@ -129,7 +129,7 @@ IF
     AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER3, TransformItem("mh#swd4a", "mh#swrd4"))
+    ActionOverride(PLAYER3, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER3, @0)
 END
 
@@ -155,7 +155,7 @@ IF
   !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER3, TransformItem("mh#swrd4", "mh#swd4a"))
+    ActionOverride(PLAYER3, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER3, @1)
 END
 
@@ -183,7 +183,7 @@ IF
     AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER4, TransformItem("mh#swd4a", "mh#swrd4"))
+    ActionOverride(PLAYER4, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER4, @0)
 END
 
@@ -209,7 +209,7 @@ IF
   !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER4, TransformItem("mh#swrd4", "mh#swd4a"))
+    ActionOverride(PLAYER4, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER4, @1)
 END
 
@@ -237,7 +237,7 @@ IF
     AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER5, TransformItem("mh#swd4a", "mh#swrd4"))
+    ActionOverride(PLAYER5, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER5, @0)
 END
 
@@ -263,7 +263,7 @@ IF
   !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER5, TransformItem("mh#swrd4", "mh#swd4a"))
+    ActionOverride(PLAYER5, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER5, @1)
 END
 
@@ -291,7 +291,7 @@ IF
     AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER6, TransformItem("mh#swd4a", "mh#swrd4"))
+    ActionOverride(PLAYER6, TransformItem("mh#swrd4", "mh#swd4a"))
     DisplayStringHead(PLAYER6, @0)
 END
 
@@ -317,7 +317,7 @@ IF
   !AreaCheck("OH5500")
 THEN
   RESPONSE #100
-    ActionOverride(PLAYER6, TransformItem("mh#swrd4", "mh#swd4a"))
+    ActionOverride(PLAYER6, TransformItem("mh#swd4a", "mh#swrd4"))
     DisplayStringHead(PLAYER6, @1)
 END
 
