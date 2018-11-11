@@ -70,7 +70,9 @@ Weight: 1~
 
 STATISTICS:
 
-This axe counts as a +3 weapon for purposes of what it can hit, and will strike critical hits on a roll of 19 or 20.
+Combat abilities:
+- counts as a +3 weapon
+- +5% critical hit chance
 
 THAC0: +1 bonus
 Damage: 1d10 +1
@@ -319,7 +321,7 @@ Fire Resistance: +30%
 Armor Class Bonus: 3, 5 vs. Undead
 Weight: 5
 Requires: 12 Strength~
-@65   = ~Staff of Rumathil~
+@65   = ~Staff of Rumathil +2~
 @66   = ~This ancient staff of elven make is a boon to both wizards and clerics.  The exact origin is a mystery even to the elves themselves, but it is said to have been crafted in the secret elven nation of Evermeet.  How exactly it made its way to the mainland is not known either.
 
 STATISTICS:
@@ -407,8 +409,21 @@ It turned out that Starkas' quickness with the blade came from an enchantment on
 STATISTICS:
 
 Equipped abilities:
-- 3 attacks per round with any weapon
-- THAC0 lowered by 3
+- One extra attack per round
+- THAC0: -2 penalty
+
+Weight: 2~
+@77   = ~Storm's Garter~
+@78   = ~This enchanted black silken sash was designed by Storm Silverhand, one of the Seven Sisters, but she has shared the secret of making then with other members of the Harpers.  As such, items bearing this title are common among their members and are worn by both genders.  
+
+Equipped abilities:
+- Infravision 60'
+- Dexterity: +1
+
+Charge abilities:
+- Silence once per day
+- Cure Disease once per day
+- Neutralize Poison once per day
 
 Weight: 2~
 @79   = ~Cloak of Arachnida~
@@ -433,6 +448,31 @@ STATISTICS:
 
 Equipped abilities:
 - Wearer is immune to magical silence~
+@87   = ~Celestial Chain +2~
+@88   = ~This suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously forged from very fine mithral rings by the dwarven smith Brokk, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a price to their abilities.
+
+STATISTICS:
+
+Equipped abilities:
+- 10% chance of arcane spell failure
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+
+Armor Class: 3 (3 vs. slashing, 7 vs. crushing)
+Requires: 
+ 6 Strength
+
+Weight: 7~
+@89   = ~Dwarven Full Plate +2~
+@90   = ~This stout full plate is the pinnacle of the craftsmanship of the dwarven smith Brokk.  A sturdy base of the finest dwarven steel has been coated with a layer of mithral for extra hardness.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold.  Truly a masterwork item.
+
+Armor Class: -1 (-5 vs. slashing, -4 vs. piercing and missile)
+Requires:
+ 15 Strength
+
+Weight: 35~
 @91   = ~Crystal Clear Ioun Stone~
 @92   = ~Ring of White Bone~
 @93   = ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
@@ -564,3 +604,358 @@ Requires:
  6 Strength
 
 Weight: 4~
+@114  = ~Scarab versus Golems~
+@115  = ~Sometimes scathingly called the "Amulet of Tomb Robbers" by the clergy of Mulhorand, this enchanted jewel is a boon for those who expect to counter golems of any type.  Powerful wizards often employ these mindless but strong servants, making this necklace a favorite item among adventurers as well.
+
+STATISTICS:
+
+Equipped abilities:
+- THAC0: +3 vs. golems
+- Damage: +3 vs. golems
+
+Weight: 3~
+@115  = ~Cloak of the Night Sky~
+@116  = ~This enchanted blue-black cloak was fashioned in the near-mythical elven nation of Evermeet.  Crafted to resemble the night sky, glowing stars move across it in a flowing pattern whenever it is worn.  It bears a powerful protective enchantment, but that same enchantment also prevents it from being worn by those not of elven blood.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- Saving Throws: +3
+
+Charge abilities:
+- Improved Invisibility once per day
+
+Weight: 3~
+@117  = ~Helm of the Dwarven Lords~
+@118  = ~Although not nearly as powerful as the legendary Axe of the Dwarven Lords, this is none the less a rare and potent item that was worn by several dwarven kings of the past.  It was last seen in old Delzoun more than a thousand years ago, but what happened to it when the old dwarven kingdom fell is not known.  Perhaps orcs claimed it as a war trophy, or the drow pilfered it from the ruins.  Only those of dwarven- or gnomish descent can make full use of this item's powers, others find that the helm will simply not fit their head properly.
+
+STATISTICS:
+
+Equipped abilities:
+- Protects against critical hits
+- Regeneration: 2 hp/round
+- Permanent Minor Globe of Invulnerability
+
+Weight: 5~
+@119  = ~Ring of the Chosen~
+@120  = ~The plain appearance of this simple gold ring belies its great power.  Who forged this ring and why is a mystery of the ages; the ring defies all attempts to divine its origins.  What is known though is that it tends to appear on the eve of great cataclysms.  Perhaps it is a favor of the gods towards their chosen one?
+
+This ring grants powerful physical and magical protections, and unlike most items of such a nature, it can be combined with other protective enchantments.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- Magic Resistance: +10%~
+@121  = ~Gauntlets of Smiting~
+@122  = ~These iron gauntlets were created nearly twenty centuries ago when the human empire of Narfell practiced fiend summoning on a large scale.  Exactly whom created these is not known, but likely it was the clergy of a benevolent deity at the time.  Since then they have been worn by many a champion of good in an attempt to remove this fell taint from the Realms, a task that will never truly be complete as long as foolish mages are still willing to risk their life and soul for the promise of dark power.
+
+STATISTICS:
+
+Equipped abilities:
+- THAC0: +2 vs. evil creatures
+- Damage: +3 vs. evil creatures
+
+Weight: 3~
+@123  = ~Trollkiller +2~
+@124  = ~This double-bladed dwarven axe was the favorite of the hero Durlag "Trollkiller".  This was also the weapon he wielded during the terrifying tenday he spend fighting the dopplegangers that had infiltrated his tower.  Afterwards, he could no longer bear to look at the weapon, and it sat forgotten on a treasure pile for many years.
+
+STATISTICS:
+
+Combat abilities:
+- Deals an additional 1d3 points of acid damage per hit.
+
+THAC0: +2 bonus
+Damage: 1d10 +2
+Damage Type: Slashing
+Weight: 5
+Speed Factor: 5
+Proficiency Type: Axe
+Type: 1-handed
+Requires: 10 Strength~
+@125  = ~Black Swan Armor +2~
+@126  = ~This armor was made by the dwarven smith Karador and an elven enchanter known as Elameth of Five Trees. During the time of cooperation between the Hand of the Seldarine and Dorn's Deep, many wondrous items were produced. This suit of armor was one of them. Exceptionally light and beautiful, the armor was originally worn by a female elven marshal in the Severed Hand, which is why the orcs didn't take it when they sacked the towers. The armor was later stolen from the Hand by the evil elf Maiden Ilmadia, who wore it in her final battle against the Defenders of Easthaven at Lower Dorn's Deep. What happened to the armor after her defeat and how it traveled from the Spine of the World to the Sword Coast is unclear.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: +1
+- Fire Resistance: +10%
+- Cold Resistance: +10%
+- Electrical Resistance: +10%
+- Acid Resistance: +10%
+
+Armor Class: 1 (-2 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 20~
+@127  = ~Girdle of Beatification~
+@128  = ~Priests of Helm in Berdusk consecrated this belt and gave it to the warrior Thom Wainwright, who had performed a number of great services for the church, including the destruction of the Unseeing Eye and the cult that followed him, the Blinded Acolytes. Thom wore the girdle proudly until he fell into severe debt in his later years. To his undying regret, he auctioned it off to a well-known priest of Mask.
+
+STATISTICS:
+
+Equipped abilities:
+- Bless on wearer
+
+Weight: 2~
+@129  = ~Girdle of Ogre Blood~
+@130  = ~Caldinar the Wily was a wizard of keen wits. Suspicious by nature, Caldinar manufactured a number of protective devices to come to his aid in an emergency. This broad belt is made of tanned ogre hide and features five glass lozenges filled with black ogre blood. Caldinar used the belt frequently in his adventures. When he died, his practical comrades sold the belt in an auction.
+
+STATISTICS:
+
+Equipped abilities:
+- Regenerate 1 Hit Point every 5 rounds
+
+Charge abilities:
+- Summon five ogres once per day
+  Range: 20 ft.
+  Duration: 17 rounds
+
+Weight: 2~
+@131  = ~Silver Bracers of Kedl~
+@132  = ~This mage, who made his home in Phlan, was known as "Kedl of the Three Rings," for it was said that he perfected a technique whereby he could wear three magical rings simultaneously. An enchanter of items, he was well known for his discriminating taste in clothing, jewelry, and other accessories. His polished silver bracers were a constant part of his wardrobe. Kedl eventually sold his bracers when he needed the money for some powerful rings. Unfortunately, Kedl died in an orc attack on Phlan several years later.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 2
+
+Weight: 2~
+@133  = ~Redethemar +4~
+@134  = ~This mighty axe was crafted by the elves of Myth Drannor and has since been wielded by several elven heroes all over Faerun.  Normally reserved only for the greatest conflicts with the most dire foes, its appearance in Suldanessenar is testament to how deeply Irenicus' attack struck, and how far the elves are willing to go to stop him.
+
+STATISTICS:
+
+Combat abilities:
+- 10% chance of vorpal hit on evil enemies (no save)
+
+Charge abilities:
+- Earthquake once per day
+  5d10 damage to all enemies in target area (no save)
+
+THAC0: +4
+Damage: 1d8+4 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~
+@135  = ~Spinesheath +1~
+@136  = ~The ghastly name of this weapon is taken from its first owner's fondness for burying it in the backs of his enemies. The long stiletto blade was designed specifically to punch through armor. The assassin Beledor of Calimport used this weapon to kill dozens of people before he succumbed to the poison of an easily bribed servant.
+
+STATISTICS:
+
+THAC0: +5
+Damage: 1d4+1 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1~
+@137  = ~Blessed Helm of Lathander~
+@138  = ~This well-crafted helmet has a short history. A priestess of Lathander named Iraeni of Suzail had it constructed for the champion of her church, a warrior named Beldan Miller. Beldan employed the helm frequently, as Iraeni was often attacked by agents of Myrkul. After twenty years of serving Lathander, Iraeni decided to step down from her office, as did Beldan. They were married shortly after. Beldan gave the helm to an errant paladin of Lathander, who is believed to have died fighting a lich near the Battle of the Bones.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Protects against critical hits
+
+Charge abilities:
+- Cure Medium Wounds once per day
+  Heals 14 HP
+  Range: Touch
+  Area of Effect: 1 creature
+
+- Neutralize Poison once per day
+  Cures poison and restores 10 HP
+  Range: Touch
+  Area of Effect: 1 creature
+
+- Remove Paralysis once per day
+  Cures paralysis
+  Range: Visual range of the wearer
+  Area of Effect: Allies within 15 ft.
+
+Weight: 2~
+@139  = ~Pearl of Power~
+@140  = ~This beautiful black pearl would fetch a nice price for its rarity alone, but its enchantment makes it even more valuable.  Many a less scrupulous sorcerer would kill to get hold of an item like this, and even those who do have morals will often go to great lengths to obtain one.
+
+STATISTICS:
+
+Charge abilities:
+- Recall Spell once per day
+  This restores a spell of up to fourth level that the caster has previously used to <PRO_HISHER> mind, allowing it to be cast again.~
+@141  = ~Potion of Clairvoyance~
+@142  = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.~
+@143  = ~Shield Ring~
+@144  = ~This highly prized ring is made from simple jade to hide its powerful magic. Crafted by the wizard Bil, the shield ring is plain and functional. Bil, a sardonic mage of otherwise small repute (creator of such spells as Bil's Fantastic Ale and Bil's Blasting Ball), found the ring to be incredibly useful against the enemy mages he frequently fought. When Bil disappeared from the realms over a century ago, his ring was one of many items he left behind to his friends and associates. Because many of his friends and associates were larcenous thugs, it is assumed that the ring was sold to the highest bidder as soon as possible.
+
+STATISTICS:
+
+Equipped abilities:
+- Shield: Armor Class set to 4 (2 vs. missile weapons); immunity to magical missiles
+
+Weight: 0~
+@145  = ~Edion's Ring of Wizardry~
+@146  = ~Edion, a necromancer from Sembia, created this powerful ring more than a century ago for his private use. In his later years, he became so accustomed to wearing it that he almost never removed it. He wore it on the same finger that he would wear a wedding ring on, to symbolize his marriage to the Art.
+
+STATISTICS:
+
+Equipped abilities:
+- Can cast two additional 5th-level wizard spells
+
+Weight: 0~
+@147  = ~Shield of the Three Kings +5~
+@148  = ~The name of this masterwork golden shield is derived from the three crowns engraved in its front, for it hasn't been associated with any known king.  It was forged by the shield dwarves of the North to be used in one of their many skirmishes with the orc hordes that regular plague that area of Faerun.  It is not known whom exactly placed the massive enchantment on it, although the style used is typical for the Netherese arcanists of the past.  If the dwarves truly traded for this shield with the Netherese, the price demanded must have been mind boggling.  This is possibly the most strongly enchanted shield in the Realms.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +6
+
+Requires:
+ 12 Strength
+
+Weight: 3~
+@149  = ~Shield of the Revenant +2~
+@150  = ~Worn by a series of paladins in central and northern Faerun, this white and red enameled shield is sacred to the Trinity of Torm, Tyr, and Ilmater. The paladins found it quite useful in their constant battles against undead. Unlike priests, who often occupy a support position, paladins are expected to be at the front of most battles. This shield allowed them to fortify an area with holy magic before entering melee combat. It was most recently used by Kardod of Tyr, who was mauled to death by dozens of wights. His adversary, the necromancer Shanin, sold the shield to a friendly priest of Myrkul.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+
+Charge abilities:
+- Undead Ward once per day
+  Undead are affected as if turned by a 5th-level priest
+  Range: 0
+  Duration: 1 turn
+  Area of Effect: 10-ft. radius
+
+Requires:
+ 12 Strength
+
+Weight: 3~
+@151  = ~Mystery of the Dead +3~
+@152  = ~This front of this huge steel shield is decorated with black enameled patterns and a single skull set in the center. The interior of the shield is etched with encrypted ancient writings. The only legible words are at the top and read, "AND WHAT OF THE DEAD?" The history of the item is completely hidden from divination.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +4, an extra +1 vs. missile attacks
+- Immunity to instant death effects like Finger of Death and Power Word: Kill
+
+Requires:
+ 15 Strength
+
+Weight: 20~
+@153  = ~Waukeen's Defender +2~
+@154  = ~A number of these shields can be found in Waukeenar temples throughout Faerun. The church crafts these shields to sell to enterprising adventurers. In exchange for the powers of the device, the bearer is required to keep the front of the shield uncovered and in its original state. If the owner does not comply, the shield's powers fail. In this way, dozens of adventurers walk the realms bearing the golden face of Waukeen on their arm.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3 (only +2 vs. missile)
+- Saving Throws: +2
+- Magic Resistance: +10%
+
+Requires:
+ 4 Strength
+
+Weight: 4~
+@155  = ~Spendelard's Protector +1~
+@156  = ~The wizard Spendelard was famous for his extremely utilitarian spells. While he was not threatened a great deal during his life, his rare but far-reaching travels often took him into dangerous situations. A staff of his making protected him on those occasions. He eventually acquired a staff that he found more to his liking and sold his worn Protector to a traveling druid of Chauntea.
+
+STATISTICS:
+
+Equipped abilities:
+â€“ Armor Class: +1
+â€“ Save vs. Spell: +1
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@157  = ~Staff of Moradin's Breath +2~
+@158  = ~This staff was used sparingly by priests of Moradin during their darkest hours. Enchanted by several high priests, the Staff of Moradin's Breath has resurrected some of the greatest dwarven heroes of Dorn's Deep. It was last used to resurrect Creed Dorn, killed by elven archers and mages during a battle near Kuldahar Pass. The staff was hidden in Lower Dorn's Deep to prevent it from being stolen by orcs when they finally overran the dwarven defenses. The drow trader Nym found it and sold it to a group of adventurers.
+
+STATISTICS:
+
+Charge abilities:
+- Resurrection
+  Raised target is fully healed
+  Range: Unlimited
+  Area of Effect: 1 creature
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@159  = ~Amaunator's Legacy +3~
+@160  = ~This shiny brass sword is extremely old, dating back at least three thousand years before Dale Reckoning. It was created by a Netherese archmage named Pouldinus as a gift to a warrior friend. This friend, Kalamnin, was a strict devotee of Amaunator, a harsh, unforgiving god now almost forgotten by sages. Amaunator was the god of law and the god of the sun. He required his servants to follow his edicts exactly. Kalamnin did his best to observe Amaunator's laws in his travels. The blade was lost when Kalamnin was killed in battle by dozens of nycadaemons. The sorcerer who summoned the creatures, Ylmandi, kept the blade in his family until the fall of Netheril.
+
+STATISTICS:
+
+Combat abilities:
+- Additional 2d4+3 fire damage vs. undead
+
+Charge abilities:
+- Sunray once per day
+  Blindness for 2 rounds (Save vs. Spell negates); undead and myconids take 8d6 fire damage (Save vs. Spell for half)
+  Range: 100 ft.
+  Area of Effect: 8-ft. radius 
+
+THAC0: +3
+Damage: 2d4+3 (slashing)
+Speed Factor: 1
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 3~
+@161  = ~Pale Justice +4~
+@162  = ~This sword was made with one purpose: to destroy evil. Though a powerful weapon, Pale Justice has humble beginnings. The plain sword was crafted by a devout worshipper of Tyr named Renold. Renold spent thirty years of his life perfecting the metalworking techniques that allowed him to craft an almost flawless blade. As soon as Renold had completed the unadorned weapon, he turned it over to the church of Tyr. The priest who received it placed the naked blade on his monastery's altar. He asked his brothers to join him in praying to Tyr to ask their god to bless the weapon with holy power. The brothers never touched the blade, nor did they speak of it. After ten years, despite the fact that all of the other brothers lost faith in the blade ever becoming enchanted, the original priest, Edan, continued his prayers in silence. Another twenty years passed, and there was still no sign from Tyr. Visiting priests of Helm scoffed at Edan's blind devotion to the blade. It was then that, without warning, Edan walked up to the altar and gently removed the dust-covered blade from the altar.
+
+The priest of Helm asked Edan if he had finally come to his senses. Edan replied that he had, that he had been expecting the wrong thing from Tyr the entire time. He stated that Tyr had done his work long ago.
+
+The priest of Helm laughed out loud at Edan's claim and asked his bodyguard to draw his sword. The magnificent weapon in the hand of the Helmite had a gilded guard set with pearls. Runes were etched along the blade, with a small cluster of fine rubies set in the ricasso. The priest of Helm laughed again and spoke. "This is truly a sword blessed by the gods. Your weapon looks like an ordinary soldier's blade. It pales in comparison."
+
+Edan calmly grabbed the blade by the tang and swatted at the guard's weapon. The priest of Helm's laughter cut off quickly as he stared down at his retainer's broken weapon. He stood there speechless as Edan set the blade down and began to reply.
+
+"Justice always pales in comparison to vanity and ostentatious displays of power. I expected Tyr to manifest his divine will in this blade with lightning and fire. I should have remembered how the blade was given to me... with simple charity and humility. Justice is the right of every man, no matter how rich or poor, no matter how educated or ignorant. It should be found as often in the fields of farmers as it is in the fields of battle."
+
+Edan took the blade to a local weaponsmith and had him put a wooden, leather-wrapped grip on it. He then gave it to a fledgling paladin and asked him to always remember the potential for charity and kindness in the human race.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to charm- and fear effects
+
+THAC0: +4, +7 vs. evil creatures
+Damage: 1d8+4, +7 vs. evil creatures
+Damage Type: Slashing
+Speed Factor: 1
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5~

@@ -59,6 +59,15 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
+  // To-hit vs. Evil
+  CREATE EFF "mh#evlh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("align" "mask_evil")
+    WRITE_LONG	0x0020 8
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
   // Damage vs. Undead
   CREATE EFF "mh#undd%i%"
     WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
@@ -73,6 +82,15 @@ BEGIN
     WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "golem")
     WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // Damage vs. Evil
+  CREATE EFF "mh#evld%i%"
+    WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("align" "mask_evil")
+    WRITE_LONG	0x0020 8
     WRITE_SHORT	0x0024 1
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
@@ -109,7 +127,7 @@ COPY "%MOD_FOLDER%/items/mh#amul1.itm" "override"
   SAY NAME2 @0
   SAY IDENTIFIED_DESC @1
 
-  PATCH_IF GAME_IS "bgee bg2ee eet"
+  PATCH_IF ENGINE_IS "bgee bg2ee"
   BEGIN
     LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
       INT_VAR
@@ -161,6 +179,26 @@ COPY "%MOD_FOLDER%/items/mh#amul5.itm" "override"
 	timing		= 2	// While worn
 	parameter2	= IDS_OF_SYMBOL ("projectl" "%gas%")
       END
+    END
+  END
+
+
+// mh#amul6 - Scarab versus Golems
+
+COPY "%MOD_FOLDER%/items/mh#amul6.itm" "override"
+  SAY NAME2 @114
+  SAY IDENTIFIED_DESC @115
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("race" "golem")
+      parameter2	= 4
+      special		= 2
     END
   END
 
@@ -223,6 +261,27 @@ COPY_EXISTING "spin122.spl" "override"
   IF_EXISTS	// Not all of these are in BGEE
 
 
+// mh#armr4 - Celestial Chain +2
+
+COPY "%MOD_FOLDER%/items/mh#armr4.itm" "override"
+  SAY NAME2 @87
+  SAY IDENTIFIED_DESC @88
+
+
+// mh#armr5 - Dwarven Full Plate +2
+
+COPY "%MOD_FOLDER%/items/mh#armr5.itm" "override"
+  SAY NAME2 @89
+  SAY IDENTIFIED_DESC @90
+
+
+// mh#armr6 - Black Swan Armor +2
+
+COPY "%MOD_FOLDER%/items/mh#armr6.itm" "override"
+  SAY NAME2 @125
+  SAY IDENTIFIED_DESC @126
+
+
 // mh#belt1 - Girdle of Dwarvenkind
 
 COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
@@ -235,6 +294,38 @@ COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#belt2.itm" "override"
   SAY NAME2 @46
   SAY IDENTIFIED_DESC @47
+
+
+// mh#belt3 - Storm's Garter
+
+COPY "%MOD_FOLDER%/items/mh#belt3.itm" "override"
+  SAY NAME2 @77
+  SAY IDENTIFIED_DESC @78
+
+
+// mh#belt4 - Girdle of Beatification
+
+COPY "%MOD_FOLDER%/items/mh#belt4.itm" "override"
+  SAY NAME2 @127
+  SAY IDENTIFIED_DESC @128
+
+
+// mh#belt5 - Girdle of Ogre Blood
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME "ogresu.eff"
+BEGIN
+  CREATE EFF "ogresu"
+    WRITE_LONG	0x0010 67	// Summon: Creature Summoning
+    WRITE_LONG	0x001c 5
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_ASCII	0x0030 "ogresu"	#8
+    WRITE_ASCII 0x0070 "spmonsum"
+END
+
+COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
+  SAY NAME2 @129
+  SAY IDENTIFIED_DESC @130
 
 
 // mh#blun1 - Radiant Star +1
@@ -279,11 +370,25 @@ COPY "%MOD_FOLDER%/items/mh#brac3.itm" "override"
   SAY IDENTIFIED_DESC @74
 
 
-// mh#brac4 - Bracers of Lightning Speed
+// mh#brac4 - Bracers of the Wind
 
 COPY "%MOD_FOLDER%/items/mh#brac4.itm" "override"
   SAY NAME2 @75
   SAY IDENTIFIED_DESC @76
+
+
+// mh#brac5 - Gauntlets of Smiting
+
+COPY "%MOD_FOLDER%/items/mh#brac5.itm" "override"
+  SAY NAME2 @121
+  SAY IDENTIFIED_DESC @122
+
+
+// mh#brac6 - Silver Bracers of Kedl
+
+COPY "%MOD_FOLDER%/items/mh#brac6.itm" "override"
+  SAY NAME2 @131
+  SAY IDENTIFIED_DESC @132
 
 
 // mh#btax1 - Foesplitter +1
@@ -291,6 +396,23 @@ COPY "%MOD_FOLDER%/items/mh#brac4.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#btax1.itm" "override"
   SAY NAME2 @14
   SAY IDENTIFIED_DESC @15
+
+
+// mh#btax2 - Trollkiller +2
+
+COPY "%MOD_FOLDER%/items/mh#btax2.itm" "override"
+  SAY NAME2 @123
+  SAY IDENTIFIED_DESC @124
+
+
+// mh#btax3 - Redethemar +4
+
+COPY "%MOD_FOLDER%/spells/mh#btax3.spl" "override"
+
+
+COPY "%MOD_FOLDER%/items/mh#btax3.itm" "override"
+  SAY NAME2 @133
+  SAY IDENTIFIED_DESC @134
 
 
 // mh#clck1 - Mutamin's Cloak
@@ -317,6 +439,7 @@ BEGIN
   APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
 END
 
+
 // mh#clck3 - Cloak of Arachnida
 
 COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
@@ -327,6 +450,19 @@ COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
     STR_VAR
     array_name		= "cd_immunity_web_arrays"
   END
+
+
+// mh#clck4 - Cloak of the Night Sky
+
+COPY "%MOD_FOLDER%/items/mh#clck4.itm" "override"
+  SAY NAME2 @115
+  SAY IDENTIFIED_DESC @116
+
+
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
+BEGIN
+  APPEND "itemexcl.2da" "mh#clck4 1" UNLESS "mh#clck4"
+END
 
 
 // mh#comp1 - Meteoric Iron
@@ -357,6 +493,13 @@ COPY "%MOD_FOLDER%/items/mh#dagg1.itm" "override"
   SAY IDENTIFIED_DESC @53
 
 
+// mh#dagg2 - Spinesheath +1
+
+COPY "%MOD_FOLDER%/items/mh#dagg2.itm" "override"
+  SAY NAME2 @135
+  SAY IDENTIFIED_DESC @136
+
+
 // mh#hamm1 - Final Strike +3
 
 COPY "%MOD_FOLDER%/items/mh#hamm1.itm" "override"
@@ -369,6 +512,35 @@ COPY "%MOD_FOLDER%/items/mh#hamm1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#helm1.itm" "override"
   SAY NAME2 @22
   SAY IDENTIFIED_DESC @23
+
+
+// mh#helm2 - Helm of the Dwarven Lords
+
+COPY "%MOD_FOLDER%/items/mh#helm2.itm" "override"
+  SAY NAME2 @117
+  SAY IDENTIFIED_DESC @118
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_spell_level_1_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_spell_level_2_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_spell_level_3_arrays"
+  END
+
+
+// mh#helm3 - Blessed Helm of Lathander
+
+COPY "%MOD_FOLDER%/items/mh#helm3.itm" "override"
+  SAY NAME2 @137
+  SAY IDENTIFIED_DESC @138
 
 
 // mh#ioun1 - Pale Blue Ioun Stone
@@ -392,11 +564,25 @@ COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
   SAY IDENTIFIED_DESC @58
 
 
+// mh#misc1 - Pearl of Power
+
+COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
+  SAY NAME2 @139
+  SAY IDENTIFIED_DESC @140
+
+
 // mh#potn1 - Oil of Acid Resistance
 
 COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
   SAY NAME2 @59
   SAY IDENTIFIED_DESC @60
+
+
+// mh#potn2 - Potion of Clairvoyance
+
+COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
+  SAY NAME2 @141
+  SAY IDENTIFIED_DESC @142
 
 
 // mh#ring1 - Ring of the Lich +3
@@ -479,11 +665,32 @@ COPY "%MOD_FOLDER%/items/mh#ring7.itm" "override"
   END
 
 
-// mh#ring8 - RIng of Shooting Stars
+// mh#ring8 - Ring of Shooting Stars
 
 COPY "%MOD_FOLDER%/items/mh#ring8.itm" "override"
   SAY NAME2 @96
   SAY IDENTIFIED_DESC @97
+
+
+// mh#ring9 - Ring of the Chosen
+
+COPY "%MOD_FOLDER%/items/mh#ring9.itm" "override"
+  SAY NAME2 @119
+  SAY IDENTIFIED_DESC @120
+
+
+// mh#ringa - Shield Ring
+
+COPY "%MOD_FOLDER%/items/mh#ringa.itm" "override"
+  SAY NAME2 @143
+  SAY IDENTIFIED_DESC @144
+
+
+// mh#ringb - Edion's Ring of Wizardry
+
+COPY "%MOD_FOLDER%/items/mh#ringb.itm" "override"
+  SAY NAME2 @145
+  SAY IDENTIFIED_DESC @146
 
 
 // mh#robe1 - Robe of the Elements
@@ -544,11 +751,58 @@ COPY "%MOD_FOLDER%/items/mh#shld3.itm" "override"
   SAY IDENTIFIED_DESC @64
 
 
-// mh#staf1 - Staff of Rumathil
+// mh#shld4 - Shield of the Three Kings +5
+
+COPY "%MOD_FOLDER%/items/mh#shld4.itm" "override"
+  SAY NAME2 @147
+  SAY IDENTIFIED_DESC @148
+
+
+// mh#shld5 - Shield of the Revenant +2
+
+COPY "%MOD_FOLDER%/items/mh#shld5.itm" "override"
+  SAY NAME2 @149
+  SAY IDENTIFIED_DESC @150
+
+
+// mh#shld6 - Mystery of the Dead +3
+
+COPY "%MOD_FOLDER%/items/mh#shld6.itm" "override"
+  SAY NAME2 @151
+  SAY IDENTIFIED_DESC @152
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_slay_arrays"
+  END
+
+
+// mh#shld7 - Waukeen's Defender +2
+
+COPY "%MOD_FOLDER%/items/mh#shld7.itm" "override"
+  SAY NAME2 @153
+  SAY IDENTIFIED_DESC @154
+
+
+// mh#staf1 - Staff of Rumathil +2
 
 COPY "%MOD_FOLDER%/items/mh#staf1.itm" "override"
   SAY NAME2 @65
   SAY IDENTIFIED_DESC @66
+
+
+// mh#staf2 - Spendelard's Protector +1
+
+COPY "%MOD_FOLDER%/items/mh#staf2.itm" "override"
+  SAY NAME2 @155
+  SAY IDENTIFIED_DESC @156
+
+
+// mh#staf3 - Staff of Moradin's Breath +2
+
+COPY "%MOD_FOLDER%/items/mh#staf2.itm" "override"
+  SAY NAME2 @157
+  SAY IDENTIFIED_DESC @158
 
 
 // mh#swrd1 - Terminus Est +2
@@ -601,6 +855,40 @@ BEGIN
                 "mh#swd4a.itm" "override"
     WRITE_SHORT 0x0042 0
 END
+
+
+// mh#swrd5 - Amaunator's Legacy +3
+
+CREATE EFF "mh#swrd5"
+  WRITE_LONG	0x0010 12	// HP: Damage
+  WRITE_LONG	0x001c 3
+  WRITE_LONG	0x0020 524288	// Fire
+  WRITE_SHORT	0x0024 1
+  WRITE_LONG	0x002c 100
+  WRITE_LONG	0x0038 2	// # dice
+  WRITE_LONG	0x003c 4	// # sides
+
+
+COPY "%MOD_FOLDER%/items/mh#swrd5.itm" "override"
+  SAY NAME2 @159
+  SAY IDENTIFIED_DESC @160
+
+
+// mh#swrd6 - Pale Justice +4
+
+COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
+  SAY NAME2 @161
+  SAY IDENTIFIED_DESC @162
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_charm_arrays"
+  END
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_fear_arrays"
+  END
 
 
 // mh#wand1 - Wand of Illusions
