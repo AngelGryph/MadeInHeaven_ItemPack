@@ -891,6 +891,41 @@ COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
   END
 
 
+// mh#tome1 - Book of Exalted Deeds
+
+COPY "%MOD_FOLDER%/items/mh#tome1.itm" "override"
+  SAY NAME2 @163
+  SAY IDENTIFIED_DESC @164
+
+
+// mh#tome2 - Book of Vile Darkness
+
+COPY "%MOD_FOLDER%/items/mh#tome2.itm" "override"
+  SAY NAME2 @165
+  SAY IDENTIFIED_DESC @166
+
+
+// mh#tome3 - Libram of Silver Magic
+
+COPY "%MOD_FOLDER%/items/mh#tome3.itm" "override"
+  SAY NAME2 @167
+  SAY IDENTIFIED_DESC @168
+
+
+// mh#tome4 - Libram of Gainful Conjuration
+
+COPY "%MOD_FOLDER%/items/mh#tome4.itm" "override"
+  SAY NAME2 @169
+  SAY IDENTIFIED_DESC @170
+
+
+// mh#tome5 - Libram of Ineffable Damnation
+
+COPY "%MOD_FOLDER%/items/mh#tome5.itm" "override"
+  SAY NAME2 @171
+  SAY IDENTIFIED_DESC @172
+
+
 // mh#wand1 - Wand of Illusions
 
 COPY "%MOD_FOLDER%/items/mh#wand1.itm" "override"

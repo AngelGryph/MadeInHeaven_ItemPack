@@ -98,6 +98,12 @@ mh#swrd4 Sword of the Planes +1			DMG (2E)
 mh#swrd5 Amaunator's Legacy +3			Icewind Dale 1 (2E)
 mh#swrd6 Pale Justice +4			Icewind Dale 1 (2E)
 
+mh#tome1 Book of Exalted Deeds			DMG (2E)
+mh#tome2 Book of Vile Darkness			DMG (2E)
+mh#tome3 Libram of Silver Magic			DMG (2E)
+mh#tome4 Libram of Gainful Conjuration		DMG (2E)
+mh#tome5 Libram of Ineffable Damnation		DMG (2E)
+
 mh#wand1 Wand of Illusions			DMG (2E)
 
 
