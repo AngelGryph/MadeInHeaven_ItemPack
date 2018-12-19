@@ -1,0 +1,29 @@
+// Nerf the Cloak of Balduran
+
+
+OUTER_SET cloak_mr = $ini_hash("baldur_cloak_mres")
+
+COPY_EXISTING "clck05.itm" "override"
+  LAUNCH_PATCH_FUNCTION ALTER_EFFECT
+    INT_VAR
+    match_opcode	= 166	// Stat: Magic Resistance
+    parameter1		= cloak_mr
+  END
+
+  READ_STRREF IDENTIFIED_DESC old_desc
+
+  INNER_PATCH_SAVE new_desc ~%old_desc%~
+  BEGIN
+    REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "25" "%cloak_mr%"
+  END
+
+  SAY_EVALUATED IDENTIFIED_DESC ~%new_desc%~
+
+
+ACTION_IF GAME_INCLUDES "bg2" AND $ini_hash("baldur_cloak_in_bg2")
+BEGIN
+  COPY_EXISTING "ribald3.sto" "override"
+    ADD_STORE_ITEM "clck05" AFTER "chan11" #0 #0 #0 "identified" #1
+END
+
+
