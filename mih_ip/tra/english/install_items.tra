@@ -3,8 +3,8 @@
 
 STATISTICS:
 
-THAC0: +2 bonus vs. Undead
-Damage: +2 bonus vs. Undead
+THAC0: +2 bonus vs. undead
+Damage: +2 bonus vs. undead
 
 Weight: 3~
 @2    = ~Necklace of Prayer Beads~
@@ -43,7 +43,7 @@ STATISTICS:
 
 Charisma: -1 penalty
 Constitution: +1 bonus
-Saving Throws: +2 vs. Death, Wands and Spells
+Saving Throws: +2 vs. death, wands and spells
 
 Weight: 2~
 @10   = ~Boots of the Master Ninja~
@@ -121,7 +121,7 @@ Requires: 9 Strength~
 
 STATISTICS:
 
-Armor Class: +3 vs. Missiles
+Armor Class: +3 vs. missiles
 Missile Resistance: +50%
 Special: Protects against critical hits.~
 @24   = ~Meteoric Iron~
@@ -184,8 +184,8 @@ Requires: 11 Strength~
 
 STATISTICS:
 
-THAC0: +1 bonus, +3 vs. Spiders
-Damage: 1d8 +1, +3 vs. Spiders
+THAC0: +1 bonus, +3 vs. spiders
+Damage: 1d8 +1, +3 vs. spiders
 Damage Type: Slashing
 Weight: 3
 Speed Factor: 4
@@ -316,9 +316,10 @@ Requires: 12 Strength~
 
 STATISTICS:
 
-Fire Resistance: +30%
+Equipped abilities:
+- Fire Resistance: +30%
 
-Armor Class Bonus: 3, 5 vs. Undead
+Armor Class Bonus: 3, 5 vs. undead
 Weight: 5
 Requires: 12 Strength~
 @65   = ~Staff of Rumathil +2~
@@ -368,9 +369,7 @@ Requires:
 
 Weight: 25~
 @71   = ~Radiant Star +1~
-@72   = ~Morning Star +1, +4 vs. Lycanthropes, Undead and Demons: 'Radiant Star'
-
-This radiant golden mace was created by a joined effort between the temples of Lathander and Selune, and is blessed by both deities.  Made from alchemically treated gold, it is heavier and slower to swing than a standard mace, but it deals extra damage to many things that go bump in the night.  It can also damage some enemies with unusual defenses, like the loup garou and certain demonic beings.
+@72   = ~This radiant golden mace was created by a joined effort between the temples of Lathander and Selune, and is blessed by both deities.  Made from alchemically treated gold, it is heavier and slower to swing than a standard mace, but it deals extra damage to many things that go bump in the night.  It can also damage some enemies with unusual defenses, like the loup garou and certain demonic beings.
 
 STATISTICS:
 
@@ -876,8 +875,8 @@ Weight: 4~
 STATISTICS:
 
 Equipped abilities:
-â€“ Armor Class: +1
-â€“ Save vs. Spell: +1
+- Armor Class: +1
+- Save vs. Spell: +1
 
 THAC0: +1
 Damage: 1d6+1 (crushing)

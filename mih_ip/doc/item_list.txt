@@ -4,6 +4,8 @@ mh#amul3 Gem of Insight				DMG (2E)
 mh#amul4 Gem of Seeing				DMG (2E)
 mh#amul5 Necklace of Adaption			DMG (2E)
 mh#amul6 Scarab versus Golems			DMG (2E)
+mh#amul7 Dragon's Tear Amulet
+*mh#amul8 Periapt of Health			DMS (2E)
 
 mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow
@@ -18,10 +20,11 @@ mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
 mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
 
+mh#blun1 Shining Star +1
+mh#blun2 Slimecrusher +1
+
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
 mh#boot2 Boots of Striding and Springing	DMG (2E)
-
-mh#blun1 Shining Star +1
 
 mh#brac1 Vambraces of Evil's Warding		Warriors of Heaven (2E)
 mh#brac2 Gauntlets of the Dwarven King
@@ -54,10 +57,13 @@ mh#helm3 Blessed Helm of Lathander		Icewind Dale 1 (2E)
 
 mh#ioun1 Pale Blue Ioun Stone			DMG (2E)
 mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
+mh#ioun3 Bright Orange Ioun Stone		DMG (3E)
 
 mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
 
 mh#misc1 Pearl of Power				DMG (2E)
+mh#misc2 Bag of Tricks				DMG (2E)
+mh#misc3 Crystal Ball				DMG (2E)
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 mh#potn2 Potion of Clairvoyance			DMG (2E)
@@ -73,6 +79,7 @@ mh#ring8 Ring of Shooting Stars			DMG (2E)
 mh#ring9 Ring of the Chosen			Legends & Lore (2E)
 mh#ringa Shield Ring				Icewind Dale 1 (2E)
 mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
+mh#ringc Ring of Water Control			DMG (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
@@ -87,9 +94,12 @@ mh#shld5 Shield of the Revenant +2		Icewind Dale 1 (2E)
 mh#shld6 Mystery of the Dead +3			Icewind Dale 1 (2E)
 mh#shld7 Waukeen's Defender +2			Icewind Dale 1 (2E)
 
-mh#staf1 Staff of Rumathil			Elves of Evermeet (2E)
+mh#staf1 Staff of Rumathil +2			Elves of Evermeet (2E)
 mh#staf2 Spendelard's Protector +1		Icewind Dale 1 (2E)
-mh#staf3 Staff of Moradin's Breath		Icewind Dale 1 (2E)
+mh#staf3 Staff of Moradin's Breath +2		Icewind Dale 1 (2E)
+mh#staf4 Staff of the Legion +5			Undead (2E)
+mh#staf5 Staff of Water +2
+mh#staf6 Staff of Swarming Insects +2		DMG (2E)
 
 mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
 mh#swrd2 Smythe's Slicer +1
@@ -97,6 +107,9 @@ mh#swrd3 Scimitar of the Seven +4		LoZ: Breath of the Wild
 mh#swrd4 Sword of the Planes +1			DMG (2E)
 mh#swrd5 Amaunator's Legacy +3			Icewind Dale 1 (2E)
 mh#swrd6 Pale Justice +4			Icewind Dale 1 (2E)
+mh#swrd7 Mirthal +1
+mh#swrd8 Golden Sky +2
+*mh#swrd9 Cold Flame +3
 
 mh#tome1 Book of Exalted Deeds			DMG (2E)
 mh#tome2 Book of Vile Darkness			DMG (2E)
@@ -105,5 +118,6 @@ mh#tome4 Libram of Gainful Conjuration		DMG (2E)
 mh#tome5 Libram of Ineffable Damnation		DMG (2E)
 
 mh#wand1 Wand of Illusions			DMG (2E)
+mh#wand2 Elmira's Wand of Blasting
 
 

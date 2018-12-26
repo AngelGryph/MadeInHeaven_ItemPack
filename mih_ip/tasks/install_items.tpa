@@ -5,7 +5,7 @@ COPY_LARGE "%MOD_FOLDER%/bams" "override"
 
 OUTER_FOR (SET i = 1; i <= 3; ++i)
 BEGIN
-  // To-hit vs. Undead
+  // To-hit vs. undead
   CREATE EFF "mh#undh%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("general" "undead")
@@ -14,7 +14,16 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // To-hit vs. Lycanthrope
+  // To-hit vs. kobold
+  CREATE EFF "mh#kbdh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "kobold")
+    WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // To-hit vs. lycanthrope
   CREATE EFF "mh#lych%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "lycanthrope")
@@ -23,7 +32,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // To-hit vs. Demonic
+  // To-hit vs. demonic
   CREATE EFF "mh#demh%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "demonic")
@@ -32,7 +41,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // To-hit vs. Spider
+  // To-hit vs. spider
   CREATE EFF "mh#spdh%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "spider")
@@ -41,7 +50,16 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // To-hit vs. Elemental
+  // To-hit vs. slime
+  CREATE EFF "mh#slmh%i%"
+    WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+    WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "slime")
+    WRITE_LONG	0x0020 4
+    WRITE_SHORT	0x0024 1
+    WRITE_LONG	0x002c 100
+    WRITE_LONG	0x0060 i
+
+  // To-hit vs. elemental
   CREATE EFF "mh#elmh%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "elemental")
@@ -50,7 +68,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // To-hit vs. Golem
+  // To-hit vs. golem
   CREATE EFF "mh#golh%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "golem")
@@ -59,7 +77,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // To-hit vs. Evil
+  // To-hit vs. evil
   CREATE EFF "mh#evlh%i%"
     WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("align" "mask_evil")
@@ -68,7 +86,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // Damage vs. Undead
+  // Damage vs. undead
   CREATE EFF "mh#undd%i%"
     WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("general" "undead")
@@ -77,7 +95,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // Damage vs. Golem
+  // Damage vs. golem
   CREATE EFF "mh#gold%i%"
     WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "golem")
@@ -86,7 +104,7 @@ BEGIN
     WRITE_LONG	0x002c 100
     WRITE_LONG	0x0060 i
 
-  // Damage vs. Evil
+  // Damage vs. evil
   CREATE EFF "mh#evld%i%"
     WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
     WRITE_LONG	0x001c IDS_OF_SYMBOL("align" "mask_evil")
@@ -120,6 +138,34 @@ BEGIN
     WRITE_LONG	0x002c 100
 END
   
+
+// Required water elemental fixes
+
+APPEND "animate.ids" "0xef10 WATER_WEIRD" UNLESS "WATER_WEIRD"
+APPEND "class.ids" "219 ELEMENTAL_WATER" UNLESS "ELEMENTAL_WATER"
+CLEAR_IDS_MAP
+
+
+COPY_EXISTING "elwatg01.cre" "override"
+              "elemhydr.cre" "override"
+	      // Added by BG2EE
+              "ohbewwei.cre" "override"
+              "ohbwat01.cre" "override"
+	      // Added by aTweaks
+              "rr#ewwei.cre" "override"
+              "rr#ewatr.cre" "override"
+              "rr#ewatl.cre" "override"
+              "rr#ewate.cre" "override"
+	      // Added by Refinements
+	      "tg#benh.cre"  "override"
+	      "tg#wel2.cre"  "override"
+	      "tg#wel3.cre"  "override"
+              "li#druwa.cre" "override"
+  WRITE_BYTE 0x0273 IDS_OF_SYMBOL("class" "elemental_water")
+
+  IF_EXISTS
+  BUT_ONLY_IF_IT_CHANGES
+
 
 // mh#amul1 - Amulet against Undead
 
@@ -200,6 +246,44 @@ COPY "%MOD_FOLDER%/items/mh#amul6.itm" "override"
       parameter2	= 4
       special		= 2
     END
+  END
+
+
+// mh#amul7 - Dragon's Tear Amulet
+
+COPY "%MOD_FOLDER%/items/mh#amul7.itm" "override"
+  SAY NAME2 ~Dragon's Tear Amulet~
+  SAY IDENTIFIED_DESC ~A dragon's tear is a rare jewel of extraplanar origin.  This alone would make it worth a small fortune, but dragon's tears have the ability to block all involuntary interplanar travel, including teleportation.  This makes it useful for royalty, nobles and others who are wary of interplanar abduction, as well as anyone who might have to face a powerful spellcaster with access to spells like Maze or Imprisonment.
+
+The wearer can still initiate planar travel themselves, in fact this particular amulet also lets %PRO_HIMHER% use the spell Dimension Door a few times per day.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Teleport Field, Maze, Imprisonment and similar effects.
+
+Charge abilities:
+- Dimension Door (2/day)
+
+Weight: 3~
+
+
+// mh#amul8 - Periapt of Health
+
+COPY "%MOD_FOLDER%/items/mh#amul7.itm" "override"
+  SAY NAME2 ~Periapt of Health~
+  SAY IDENTIFIED_DESC ~This peculiar pendant was forged by the clergy of Ilmater, most likely to protect any priests that are sent to combat plagues.  Wearing it renders the user immune to most diseases both normal and magical.  This includes the dreaded mummy rot, but does not cover lycanthropy which is more like a curse than a disease.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to disease
+
+Weight: 3~
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_disease_arrays"
   END
 
 
@@ -319,8 +403,8 @@ BEGIN
     WRITE_LONG	0x001c 5
     WRITE_SHORT	0x0024 1
     WRITE_LONG	0x002c 100
-    WRITE_ASCII	0x0030 "ogresu"	#8
-    WRITE_ASCII 0x0070 "spmonsum"
+    WRITE_ASCII	0x0030 "ogresu" #8
+    WRITE_ASCII 0x0070 "spmonsum" #8
 END
 
 COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
@@ -333,6 +417,71 @@ COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#blun1.itm" "override"
   SAY NAME2 @71
   SAY IDENTIFIED_DESC @72
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("general" "undead")
+      parameter2	= 3
+      special		= 4
+    END
+
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("race" "lycanthrope")
+      parameter2	= 4
+      special		= 4
+    END
+
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("race" "demonic")
+      parameter2	= 4
+      special		= 4
+    END
+  END
+
+
+// mh#blun2 - Slimecrusher +1
+
+COPY "%MOD_FOLDER%/items/mh#blun2.itm" "override"
+  SAY NAME2 ~Slimecrusher +1~
+  SAY IDENTIFIED_DESC ~The head of this flail has been corroded from frequent contact with caustic substances, but remains intact and solid somehow.  Created almost three hundred years ago to fight an infestation of gray ooze in the deepest reaches of the dwarven stronghold Heran's Quarry it served admirably, until it was stolen by marauding orcs more than half a century later.  Since then it has changed hands several times.
+
+STATISTICS:
+
+THAC0: +1, +4 vs. slimes
+Damage: 1d6+2, +5 vs. slimes (crushing)
+Speed Factor: 6
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 13~
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("race" "slime")
+      parameter2	= 4
+      special		= 4
+    END
+  END
 
 
 // mh#boot1 - Boots of the Master Ninja
@@ -557,6 +706,20 @@ COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
   SAY IDENTIFIED_DESC @56
 
 
+// mh#ioun3 - Bright Orange Ioun Stone
+
+COPY "%MOD_FOLDER%/items/mh#ioun3.itm" "override"
+  SAY NAME2 ~Bright Orange Ioun Stone~
+  SAY IDENTIFIED_DESC ~This bright orange ioun stone glows and throbs with pure power.  Whom exacly made this item is not known and it resists divination, but historical records mention that this kind of ioun stone was popular with Netherese arcanists so it most likely belonged to one of them once.
+
+STATISTICS:
+
+Equipped abilities:
+- Caster Level: +1
+
+Weight: 2~
+
+
 // mh#lbow1 - Bow of Eletha
 
 COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
@@ -569,6 +732,60 @@ COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
   SAY NAME2 @139
   SAY IDENTIFIED_DESC @140
+
+
+// mh#misc2 - Bag of Tricks
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME "snakegsu.cre"
+BEGIN
+  COPY "%MOD_FOLDER%/actors/snakegsu.cre" "override"
+    SAY NAME1 ~Giant Snake~
+    SAY NAME2 ~Giant Snake~
+END
+
+
+ACTION_FOR_EACH summon IN "bearcasu" "bearbrsu" "bearposu" "catjagsu" "catliosu" "snakegsu" "spidphsu" "spidswsu" "wolfdisu" "wolfwisu"
+BEGIN
+  ACTION_IF NOT FILE_EXISTS_IN_GAME "%summon%.eff"
+  BEGIN
+    CREATE EFF "%summon%"
+      WRITE_LONG	0x0010 67	// Summon: Creature Summoning
+      WRITE_LONG	0x001c 5
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_ASCIIE	0x0030 "%summon%" #8
+      WRITE_ASCII	0x0070 "spmonsum" #8
+  END
+END
+
+
+COPY "%MOD_FOLDER%/items/mh#misc2.itm" "override"
+  SAY NAME2 ~Bag of Tricks~
+  SAY IDENTIFIED_DESC ~At first glance this appears to be a common burlap sack, but this mundane appearance hides a powerful magic.  When the owner reaches inside the bag, <PRO_HESHE> feels a number of fuzzy objects inside.  When such an object is pulled out and tossed to the ground it instantly grows into a ferocious animal that will fight its summoner's enemies to the best of its ability until it is slain or one hour passes.
+
+STATISTICS:
+
+Charge abilities:
+- Thrice per day, summons a random animal for one hour.
+  Possible animals are: cave bear, phase spider, dire wolf, brown bear, jaguar, polar bear, giant snake, sword spider, lion and winter wolf.
+
+Weight: 3~
+
+
+// mh#misc3 - Crystal Ball
+
+COPY "%MOD_FOLDER%/items/mh#misc3.itm" "override"
+  SAY NAME1 ~Crystal Ball~
+  SAY NAME2 ~Crystal Ball~
+  SAY UNIDENTIFIED_DESC ~This is a perfect sphere of clearest crystal.  Inside you see a swirling mist that sometimes seems to take vague shapes.  According to legends, mages or priests can use crystal balls like these to observe distant places magically, but you'll have to properly identify this item first.~
+  SAY IDENTIFIED_DESC ~This is a crystal ball, probably one of the most well-known magical items in existence and frequently used by wizards, priests, shamans, witch-doctors, gypsies and other people with a knack for magic to remotely view places of interest.
+
+STATISTICS:
+
+Charge abilities:
+- Clairvoyance (3/day)
+
+Weight: 2~
 
 
 // mh#potn1 - Oil of Acid Resistance
@@ -626,14 +843,14 @@ COPY "%MOD_FOLDER%/items/mh#ring5.itm" "override"
   SAY IDENTIFIED_DESC @86
 
 
-// mh#ring6 - RIng of White Bone
+// mh#ring6 - Ring of White Bone
 
 COPY "%MOD_FOLDER%/items/mh#ring6.itm" "override"
   SAY NAME2 @92
   SAY IDENTIFIED_DESC @93
 
 
-// mh#ring7 - RIng of Mind Shielding
+// mh#ring7 - Ring of Mind Shielding
 
 COPY "%MOD_FOLDER%/items/mh#ring7.itm" "override"
   SAY NAME2 @94
@@ -691,6 +908,29 @@ COPY "%MOD_FOLDER%/items/mh#ringa.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#ringb.itm" "override"
   SAY NAME2 @145
   SAY IDENTIFIED_DESC @146
+
+
+// mh#ringc - Ring of Water Control
+
+COPY "%MOD_FOLDER%/items/mh#ringc.itm" "override"
+  SAY NAME2 ~Ring of Water Control~
+  SAY IDENTIFIED_DESC ~This silver ring has a single deep blue sapphire set into it.  This somewhat simple appearance belies its great power over the element of water.
+
+STATISTICS:
+
+Equipped abilities:
+- Acid Resistance: +50%
+- Cold Resistance: +50%
+
+Charge abilities:
+- Charm Water Elemental once per day (Save vs. Spell at +2 negates)
+  Range: Touch
+  Duration: 45 seconds
+  Area of Effect: 1 water elemental
+
+- Melf's Acid Arrow once per day
+
+- Ice Storm once per day~
 
 
 // mh#robe1 - Robe of the Elements
@@ -800,9 +1040,128 @@ COPY "%MOD_FOLDER%/items/mh#staf2.itm" "override"
 
 // mh#staf3 - Staff of Moradin's Breath +2
 
-COPY "%MOD_FOLDER%/items/mh#staf2.itm" "override"
+COPY "%MOD_FOLDER%/items/mh#staf3.itm" "override"
   SAY NAME2 @157
   SAY IDENTIFIED_DESC @158
+
+
+// mh#staf4 - Staff of the Legion +5
+
+COPY "%MOD_FOLDER%/items/mh#staf4.itm" "override"
+  SAY NAME2 ~Staff of the Legion +5~
+  SAY IDENTIFIED_DESC ~This staff radiates a pallable aura of darkness and evil.  It was created many centuries ago by a being known only as Ahksar the Lich King.  Details on this entity are vague and incomplete, but he was apparently a horrifyingly powerful lich.  He may in fact have been the very first of such beings ever created.  Many necromantic spells that are still in use today, including the spell Animate Dead, may have been first developed by him.
+
+Ahksar himself thankfully no longer exists, apparently his power and depravity knew no bounds and eventually the gods intervened, destroying him completely and irrevocably.  This nefarious artifact yet remains though, and is surrounded by hundreds of tales of depravity and death throughout the ages.
+
+STATISTICS:
+
+Charge abilities:
+- Animate Dead (3/day, caster level 20th)
+- Abi-Dalzim's Horrid Wilting (1/day)
+
+Equipped abilities:
+- Saving throws: +5 vs. death
+- Immunity to energy drain
+
+Combat abilities:
+- 50% chance of additional 1d8+3 cold damage
+- 20% chance of Vampiric Touch on target
+
+THAC0: +5
+Damage: 1d6+5 (crushing)
+Speed Factor: 1
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_level_drain_arrays"
+  END
+
+
+// mh#staf5 - Staff of Water +2
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME "sumelwat.cre"
+BEGIN
+  COPY_EXISTING "sumelfir.cre" "override/sumelwat.cre"
+    SAY NAME1 ~Lesser Water Elemental~
+    SAY NAME2 ~Lesser Water Elemental~
+
+    WRITE_LONG 0x0028 IDS_OF_SYMBOL("animate" "water_weird")
+
+    WRITE_BYTE 0x0059 0
+    WRITE_BYTE 0x005e 0
+
+    WRITE_BYTE 0x0273 IDS_OF_SYMBOL("class" "elemental_water")
+
+    REPLACE_CRE_ITEM "b1-8m2" #0 #0 #0 "unstealable&undroppable" "weapon1" EQUIP
+END
+
+
+CREATE EFF "mh#staf5"
+  WRITE_LONG	0x0010 67	// Summon: Creature Summoning
+  WRITE_LONG	0x001c 5
+  WRITE_SHORT	0x0024 1
+  WRITE_LONG	0x002c 100
+  WRITE_ASCII	0x0030 "sumelwat" #8
+  WRITE_ASCII	0x0070 "spplanar" #8
+
+
+COPY "%MOD_FOLDER%/items/mh#staf5.itm" "override"
+  SAY NAME2 ~Staff of Water +2~
+  SAY IDENTIFIED_DESC ~This old, crooked staff has been fashioned in the style of the witches of Rasheman.  The runes inscribed on it indicate it has power over water, including summoning lesser Water Elementals to the user's aid, or quickly dispatching hostile Water Elementals.  Drawing upon the Plane of Water, it can also summon a cold aura similar to a Blue Fire Shield that damages attackers.  Some abilities are limited by charges however.
+
+STATISTICS:
+
+Combat abilities:
+- Struck water elementals must save vs. Spell or be destroyed
+
+Charge abilities:
+- Summon 8-HD Lesser Water Elemental
+  Range: 20 ft.
+  Duration: 1 hour
+
+- Fireshield (Blue)
+  Cold Resistance: +50%
+  Special: Any who strike the user within a 5-ft. radius suffers 1d8+2 cold damage
+  Duration: 13 rounds
+  Area of Effect: The user
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+
+
+// mh#staf6 - Staff of Swarming Insects +2
+
+COPY "%MOD_FOLDER%/items/mh#staf6.itm" "override"
+  SAY NAME2 ~Staff of Swarming Insects +2~
+  SAY IDENTIFIED_DESC ~The length of this unusual staff is covered with fine carvings of winged biting and stinging insects like wasps, horseflies and so on.  A cleric or druid can use this staff to call down a swarm of such insects on an opponent, as per the third level spell Summon Insects.  This ability is limited by charges though.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Insects
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 2
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
 
 
 // mh#swrd1 - Terminus Est +2
@@ -813,11 +1172,22 @@ COPY "%MOD_FOLDER%/items/mh#swrd1.itm" "override"
 
 
 // mh#swrd2 - Smythe's Slicer +1
-
-
 COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
   SAY NAME2 @38
   SAY IDENTIFIED_DESC @39
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("race" "spider")
+      parameter2	= 4
+      special		= 3
+    END
+  END
 
 
 // mh#swrd3 - Scimitar of the Seven +4
@@ -891,6 +1261,71 @@ COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
   END
 
 
+// mh#swrd7 - Mirthal +1
+
+
+COPY "%MOD_FOLDER%/items/mh#swrd7.itm" "override"
+  SAY NAME2 ~Mirthal +1~
+  SAY IDENTIFIED_DESC ~This graceful longsword is most certainly of elven make.  Golden runes in its silvered blade spell out its name, "Mirthal".  This blade does not have a long history yet, its first and only known owner was an elven adventurer called Iolrath Farran. He received it as a gift from his parents when he set out on his own, and used it for almost thirty years before trading it in for a better blade.
+
+STATISTICS:
+
+THAC0: +1, +2 vs. kobolds
+Damage: 1d8+1, +2 vs. kobolds (slashing)
+Speed Factor: 4
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 344	// Enchantment vs. creature type
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= IDS_OF_SYMBOL("race" "kobold")
+      parameter2	= 4
+      special		= 2
+    END
+  END
+
+
+// mh#swrd8 - Golden Sky +2
+
+COPY "%MOD_FOLDER%/items/mh#swrd8.itm" "override"
+  SAY NAME2 ~Golden Sky +2~
+  SAY IDENTIFIED_DESC ~This katana has a strange and sometimes conflicting history.  Its beginnings are common enough, a shogun in Kara-tur had it commissioned as a reward for a ronin whom had saved his daughter from an evil wu-jen.  But what exactly happened afterwards is the stuff of many legends.
+
+The most commonly accepted story goes as follows.  The ronin accepted the shogun as his new master and thus became a full-fledged samurai again.  After a while he came to love the daughter he helped save and wanted to marry her, but her father had already bethrothed her to another man.  The daughter loved the samurai too, but she could not go against the wishes of her father.  Eventually the samurai left in disgrace, leaving his katana as a memento to the woman he loved.
+
+The daughter married as her father wished, but soon found herself in a loveless marriage with an abusive husband.  At some point he beat her so savagely she did not survive.  When her father learned of that he had his samurai arrest the culprit and sentenced him to death.  The samurai also recovered the katana, but the shogun could not bear to look at it as it was such a painful reminder of his error in judgment that cost his daughter her life.
+
+He gave the blade to a trusted servant and ordered him to take it far, far away so he would never see it again.  The loyal servant followed his master's wish to the letter and traveled in the direction of the setting sun for many moons, until finally he reached the Sword Coast and could not travel any further west.  Here he disassembled the katana and hid its pieces in various places before engaging on the long journey back to Kara-tur.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +5%
+
+Combat abilities:
+- Lower Resistance whenever the sword strikes an opponent
+  Reduces the opponent's magic resistance by 5% for three rounds (cumulative)
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+
 // mh#tome1 - Book of Exalted Deeds
 
 COPY "%MOD_FOLDER%/items/mh#tome1.itm" "override"
@@ -931,5 +1366,27 @@ COPY "%MOD_FOLDER%/items/mh#tome5.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#wand1.itm" "override"
   SAY NAME2 @67
   SAY IDENTIFIED_DESC @68
+
+
+// mh#wand2 - Elmira's Wand of Blasting
+
+COPY "%MOD_FOLDER%/items/mh#wand2.itm" "override"
+  SAY NAME2 ~Elmira's Wand of Blasting~
+  SAY IDENTIFIED_DESC ~Elmira the Blue was a necromancer from Cormyr best known for being stark raving mad.  However, her faculties were in good enough order to create a number of useful magical items like this wand, which she frequently used whenever another torch-wielding mob attempted to drive her out. Due to her tendency to unleash all manner of undead horrors on the countryside, this happened every tenday or so.  Eventually she tried to embrace lichdom but botched the process, killing herself beyond any hope of revival.  This wand and several other treasures were recovered half a year later by adventurers brave enough to cleanse her stronghold of her marauding undead creations.
+
+Elmira's original name for this item was "Elmira's Little Stick of Blasting Pesky Torch-Wielders", but later owners shorted this to its current name.
+
+STATISTICS:
+
+Charge abilities:
+- Magic Missile
+  Creates 5 missiles, each inflicting 1d4+1 magic damage
+  Range: 70 ft.
+  Area of Effect: 1 creature
+
+Requires:
+ 12 Intelligence
+
+Weight: 1~
 
 
