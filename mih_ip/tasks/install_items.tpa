@@ -797,7 +797,7 @@ COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
 
 // mh#potn2 - Potion of Clairvoyance
 
-COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
+COPY "%MOD_FOLDER%/items/mh#potn2.itm" "override"
   SAY NAME2 @141
   SAY IDENTIFIED_DESC @142
 
