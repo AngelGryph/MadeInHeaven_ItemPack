@@ -154,8 +154,11 @@ Spells: Gives one extra first level spell slot.~
 
 STATISTICS:
 
-Abilities: Casts Shocking Grasp three times per day.
-Electrical Resistance: +10%~
+Equipped abilities:
+- Electrical Resistance: +10%
+
+Charge abilities:
+- Shocking Grasp (3/day)~
 @34   = ~Meteoric Shield +2~
 @35   = ~Forged for <CHARNAME> by the dwarven smith Brokk, this shield is quite a work of art.  The tough meteoric iron not only provides excellent physical protection, but also seems to dampen bursts of magical energy, protecting the wielder from raw magical damage like that inflicted by the Magic Missile spell.  This shield is a bit heavier than a regular one though.
 

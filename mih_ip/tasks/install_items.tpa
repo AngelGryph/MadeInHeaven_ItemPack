@@ -201,11 +201,19 @@ COPY "%MOD_FOLDER%/items/mh#amul3.itm" "override"
   SAY IDENTIFIED_DESC @5
 
 
-// mh#amul4 - Gem of Seeing
+// mh#amul4 - Mirror Amulet
 
 COPY "%MOD_FOLDER%/items/mh#amul4.itm" "override"
-  SAY NAME2 @6
-  SAY IDENTIFIED_DESC @7
+  SAY NAME2 ~Mirror Amulet~
+  SAY IDENTIFIED_DESC ~
+
+STATISTICS:
+
+Charge abilities:
+- Mirror Image (2/day)
+- Detect Illusion (1/day)
+
+Weight: 1~
 
 
 // mh#amul5 - Necklace of Adaptation
@@ -788,6 +796,13 @@ Charge abilities:
 Weight: 2~
 
 
+// mh#misc4 - Gem of Seeing
+
+COPY "%MOD_FOLDER%/items/mh#misc4.itm" "override"
+  SAY NAME2 @6
+  SAY IDENTIFIED_DESC @7
+
+
 // mh#potn1 - Oil of Acid Resistance
 
 COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
@@ -1324,6 +1339,32 @@ Requires:
  6 Strength
 
 Weight: 4~
+
+
+// mh#swrd9 - Cold Flame +3
+
+COPY "%MOD_FOLDER%/items/mh#swrd9.itm" "override"
+  SAY NAME2 ~Cold Flame +3~
+  SAY IDENTIFIED_DESC ~The blade of this magnificent bastard sword was created from a magically treated icicle.  It will never melt even in the hottest flame and feels only mildly cold to the touch.  Originally created by the ice elementalist Khaldus the Frostmaster almost four centuries ago, Cold Flame has been used by several warriors throughout the years, gradually making its way south from its frozen origins.
+
+STATISTICS:
+
+Equipped abilities:
+- Cold Resistance: +30%
+- Fire Resistance: +30%
+
+Combat abilities:
+- 1d4+1 additional cold damage per hit
+
+THAC0: +3
+Damage: 2d4+3 (slashing)
+Speed Factor: 5
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 7~
 
 
 // mh#tome1 - Book of Exalted Deeds

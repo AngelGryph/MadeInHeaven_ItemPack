@@ -1,7 +1,6 @@
 mh#amul1 Amulet against Undead			Xithiss (shop)
 mh#amul2 Necklace of Prayer Beads		Xithiss (shop)
 mh#amul3 Gem of Insight				Xithiss (shop)
-mh#amul4 Gem of Seeing				Xithiss (shop)
 mh#amul5 Necklace of Adaption			Xithiss (shop)
 
 mh#armr2 Eversing +2				Gorch the Armorer (shop)
@@ -21,6 +20,8 @@ mh#ioun1 Pale Blue Ioun Stone			Elan Garaq (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Elan Garaq (shop)
 
 mh#lbow1 Bow of Eletha				Devlin Taralon (shop)
+
+mh#misc4 Gem of Seeing				Xithiss (shop)
 
 mh#potn1 Oil of Acid Resistance			The Concocter (shop)
 

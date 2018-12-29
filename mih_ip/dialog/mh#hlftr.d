@@ -133,7 +133,7 @@ BEGIN gem3
 	EraseJournalEntry(@19)
 	EraseJournalEntry(@27)
 	EraseJournalEntry(@36)
-	GiveItemCreate("mh#amul4", LastTalkedToBy(Myself), 1, 0, 0)~
+	GiveItemCreate("mh#misc4", LastTalkedToBy(Myself), 1, 0, 0)~
     SOLVED_JOURNAL @29
     EXIT
 END
@@ -188,7 +188,7 @@ BEGIN gem3
 	EraseJournalEntry(@19)
 	EraseJournalEntry(@27)
 	EraseJournalEntry(@36)
-	GiveItemCreate("mh#amul4", LastTalkedToBy(Myself), 1, 0, 0)~
+	GiveItemCreate("mh#misc4", LastTalkedToBy(Myself), 1, 0, 0)~
     SOLVED_JOURNAL @38
     EXIT
 END

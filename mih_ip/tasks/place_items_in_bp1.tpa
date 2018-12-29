@@ -105,7 +105,7 @@ COPY_EXISTING "bpxith03.sto" "override"
   ADD_STORE_ITEM "mh#amul3" AFTER "amul21" #0 #0 #0 "identified" #1
 
   // Gem of Seeing
-  ADD_STORE_ITEM "mh#amul4" AFTER "wa2amu" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#misc4" AFTER "wa2amu" #1 #0 #0 "identified" #1
 
   // Necklace of Adaption
   ADD_STORE_ITEM "mh#amul5" AFTER "amul23" #0 #0 #0 "identified" #1

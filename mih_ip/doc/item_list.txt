@@ -1,7 +1,7 @@
 mh#amul1 Amulet against Undead			DMG (2E)
 mh#amul2 Necklace of Prayer Beads		DMG (2E)
 mh#amul3 Gem of Insight				DMG (2E)
-mh#amul4 Gem of Seeing				DMG (2E)
+*mh#amul4 Mirror of Illusions
 mh#amul5 Necklace of Adaption			DMG (2E)
 mh#amul6 Scarab versus Golems			DMG (2E)
 mh#amul7 Dragon's Tear Amulet
@@ -64,6 +64,7 @@ mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
 mh#misc1 Pearl of Power				DMG (2E)
 mh#misc2 Bag of Tricks				DMG (2E)
 mh#misc3 Crystal Ball				DMG (2E)
+mh#misc4 Gem of Seeing				DMG (2E)
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 mh#potn2 Potion of Clairvoyance			DMG (2E)
