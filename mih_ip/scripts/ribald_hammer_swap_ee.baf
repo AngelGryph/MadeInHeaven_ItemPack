@@ -1,0 +1,11 @@
+IF
+  Global("OH_IMPORT02","GLOBAL",2)
+  Global("OH_IMPORT02","AR0702",0)
+THEN
+  RESPONSE #100
+    RemoveStoreItem("ribald","hamm03",1)
+    SetGlobal("OH_IMPORT02","GLOBAL",100)
+    SetGlobal("OH_IMPORT02","AR0702",1)
+END
+
+
