@@ -1,0 +1,76 @@
+// Sensible Item Shops
+
+
+// Fix illogical overabundance of large shields in BG1 shops
+
+ACTION_IF $ini_hash("bg1_fix_large_shields")
+BEGIN
+  COPY_EXISTING "friend.sto" "override"
+                "sto1112.sto" "override"
+                "sto1320.sto" "override"
+                "sto2606.sto" "override"
+                "sto4803.sto" "override"
+	        "ulgoth.sto" "override"
+    REMOVE_STORE_ITEM "shld05"
+
+    LAUNCH_PATCH_FUNCTION REPLACE_STORE_ITEM
+      INT_VAR
+      number_in_stock	= 5
+      STR_VAR
+      old_item		= "shld06"
+      new_item		= "shld05"
+    END
+
+    IF_EXISTS	// some of these are not in BGT for some reason
+END
+
+
+// Move thieving stuff to Black Lily
+
+ACTION_IF $ini_hash("bg1_move_thieving_stuff")
+BEGIN
+  COPY_EXISTING "stoblack.sto" "override"
+    ADD_STORE_ITEM "leat08" AFTER "leat05" #0 #0 #0 "identified" #1
+    ADD_STORE_ITEM "misc75" AFTER "dagg01" #0 #0 #0 "identified" #1
+END
+
+
+// Thunderhammer Smithy all fixes
+
+COPY_EXISTING "taerum.sto" "override"
+  PATCH_IF $ini_hash("bg1_fix_large_shields")
+  BEGIN
+    ADD_STORE_ITEM "shld06" AFTER "shld05" #0 #0 #0 "identified" #1
+  END
+
+  PATCH_IF $ini_hash("bg1_move_thieving_stuff")
+  BEGIN
+    REMOVE_STORE_ITEM "leat08" "misc75"
+  END
+
+  PATCH_IF $ini_hash("bg1_add_obscure_items")
+  BEGIN
+    ADD_STORE_ITEM "hamm02" AFTER "hamm01" #0 #0 #0 "identified" #1
+    ADD_STORE_ITEM "chan05" AFTER "chan04" #0 #0 #0 "identified" #1
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
+// Feldepost's Inn all fixes
+
+COPY_EXISTING "inn3351.sto" "override"
+  PATCH_IF $ini_hash("bg1_fix_large_shields")
+  BEGIN
+    ADD_STORE_ITEM "shld06" AFTER "shld04" #0 #0 #0 "identified" #1
+  END
+
+  PATCH_IF $ini_hash("bg1_add_obscure_items")
+  BEGIN
+    ADD_STORE_ITEM "bow04" AFTER "bow02" #0 #0 #0 "identified" #1
+    ADD_STORE_ITEM "brac02" AFTER "brac01" #0 #0 #0 "identified" #1
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+

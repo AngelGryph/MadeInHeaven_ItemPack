@@ -210,6 +210,28 @@ LAUNCH_ACTION_FUNCTION mh_run_task
 END
 
 
+// Sensible Item Shops
+
+BEGIN ~Sensible Item Shops~
+GROUP ~Optional Item Tweaks~
+
+ACTION_IF GAME_INCLUDES "bg1"
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task			= "tweak_item_shops_bg1"
+  END
+END
+
+ACTION_IF GAME_INCLUDES "bg2"
+BEGIN
+  LAUNCH_ACTION_FUNCTION mh_run_task
+    STR_VAR
+    task			= "tweak_item_shops_bg2"
+  END
+END
+
+
 // Add Potions of Extra Healing to BG1
 
 BEGIN ~Add Potions of Extra Healing to BG1~
@@ -220,38 +242,6 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
   task			= "tweak_extra_healing_bg1"
-END
-
-
-// BG1 Shop Tweaks
-
-BEGIN ~BG1 Shop Tweaks~
-GROUP ~Optional Item Tweaks~
-
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
-
-ACTION_IF $ini_hash("fix_large_shields")
-BEGIN
-  LAUNCH_ACTION_FUNCTION mh_run_task
-    STR_VAR
-    task			= "fix_large_shields"
-  END
-END
-
-ACTION_IF $ini_hash("add_obscure_items")
-BEGIN
-  LAUNCH_ACTION_FUNCTION mh_run_task
-    STR_VAR
-    task			= "add_obscure_items"
-  END
-END
-
-ACTION_IF $ini_hash("move_thieving_stuff")
-BEGIN
-  LAUNCH_ACTION_FUNCTION mh_run_task
-    STR_VAR
-    task			= "move_thieving_stuff"
-  END
 END
 
 
