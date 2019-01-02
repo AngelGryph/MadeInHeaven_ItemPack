@@ -255,6 +255,20 @@ BEGIN
 END
 
 
+// Nerfed BG1 Easter Eggs
+
+BEGIN ~Nerfed BG1 Easter Eggs~
+GROUP ~Optional Item Tweaks~
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
+
+LAUNCH_ACTION_FUNCTION mh_run_task
+  STR_VAR
+  task			= "tweak_easter_eggs"
+END
+
+
+
 // Give Spectacles of Spectacle more charges
 
 BEGIN ~Give Spectacles of Spectacle more charges~

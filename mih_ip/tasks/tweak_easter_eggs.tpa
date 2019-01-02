@@ -1,0 +1,61 @@
+// Nerf BG1 Easter Eggs
+
+
+// Coast Way
+
+COPY_EXISTING "%CoastWay%.are" "override"
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    INT_VAR
+    charges1	= 1
+    STR_VAR
+    old_item	= "ring06"
+    new_item	= "ring16"
+  END
+
+
+// Friendly Arm Inn
+
+COPY_EXISTING "%FriendlyArmInn%.are" "override"
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    INT_VAR
+    charges1	= 1
+    STR_VAR
+    old_item	= "%tutu_scriptbg%ring08"
+    new_item	= "ring18"
+  END
+
+
+// Nashkel
+
+COPY_EXISTING "%Nashkel%.are" "override"
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    STR_VAR
+    old_item	= "plat06"
+    new_item	= "chan05"
+  END
+
+
+// Fire Leaf Forest
+
+COPY_EXISTING "%FireLeafForest%.are" "override"
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    INT_VAR
+    charges1	= 1
+    STR_VAR
+    old_item	= "scrl2e"
+    new_item	= "scrl1f"
+  END
+
+
+// Gibberling Mountains
+
+COPY_EXISTING "%GibberlingMountains%.are" "override"
+  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    INT_VAR
+    charges1	= 1
+    STR_VAR
+    old_item	= "ring02"
+    new_item	= "ring17"
+  END
+
+
