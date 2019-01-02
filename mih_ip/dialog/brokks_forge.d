@@ -194,6 +194,47 @@ BEGIN ankheg4
     EXIT
 END
 
+IF ~PartyHasItem("mh#comp4")
+    Global("mh#BrokkKatana", "GLOBAL", 0)~
+BEGIN katana1
+  SAY @55
+  =
+  @56
+  IF ~PartyHasItem("misc42")
+      PartyGoldGT(999)~
+    REPLY @57
+    GOTO katana3
+  IF ~~
+    REPLY @58
+    GOTO katana2
+END
+
+IF ~~
+BEGIN katana2
+  SAY @59
+  IF ~~
+    DO ~SetGlobal("mh#BrokkKatana", "GLOBAL", 1)~
+    UNSOLVED_JOURNAL @60
+    EXIT
+END
+
+IF ~~
+BEGIN katana3
+  SAY @61
+  =
+  @62
+  IF ~~
+    DO ~TakePartyItemNum("misc42", 1)
+        DestroyItem("misc42")
+	TakePartyGold(1000)
+	DestroyGold(1000)
+	GiveItemCreate("mh#swrd8", LastTalkedToBy(Myself), 0, 0, 0)
+        EraseJournalEntry(@60)
+        SetGlobal("mh#BrokkKatana", "GLOBAL", 2)~
+    SOLVED_JOURNAL @63
+    EXIT
+END
+
 IF ~True()~
 BEGIN default
   SAY @41
@@ -208,6 +249,11 @@ BEGIN default
       PartyGoldGT(1999)~
     REPLY @43
     GOTO ankheg3
+  IF ~PartyHasItem("mh#comp4")
+      PartyHasItem("misc42")
+      PartyGoldGT(999)~
+    REPLY @64
+    GOTO katana3
   IF ~~
     REPLY @44
     GOTO store

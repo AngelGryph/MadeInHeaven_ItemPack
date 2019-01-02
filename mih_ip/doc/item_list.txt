@@ -45,6 +45,7 @@ mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
 mh#comp1 Meteoric Iron
 mh#comp2 Mithral Ore
 mh#comp3 Lux Veritatis
+mh#comp4 Rusty Katana
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Spinesheath +1				Icewind Dale 1 (2E)

@@ -71,3 +71,17 @@ As promised, Brokk created a matching shield for my ankheg plate.  I cannot help
 @52   = ~Prying int' me secrets, are ye?  Har har, d'nae be givin' me that look, it be fine.~
 @53   = ~It be the blessing of Moradin, me lad.  Sum dwarves, like meself, be born with the gift t' craft items beyond the normal.  I cannae explain it more than that.~
 @54   = ~Fair enough, I suppose magic is by its nature not always easily explained.  Be well, Brokk.~
+@55   = ~Hey <GIRLBOY>, show me tha' sword fer a minute...~
+@56   = ~Aye, it be in bad shape.  Found her a dark 'n damp dungeon somewhere, aye?  Mm, I can clear this rust fer ya, give her a good sharpening and do sum minor repairs.  I'll be needin' a diamond and 1,000 gold fer the job though.~
+@57   = ~Sounds good, let's do it!~
+@58   = ~Mm, maybe later.~
+@59   = ~Suit yerself, m'<GIRLBOY>.  I'll be here.~
+@60   = ~Treasure in the Rust
+
+The smith Brokk can fix the rusty katana I found in Durlag's tower.  He needs a diamond and 1,000 gold for the job, though.~
+@61   = ~This will nae be takin' long, ye can wait around fer it...~
+@62   = ~And here ye be, all cleaned up 'n repaired.  An interesting blade this be.  All the way from the far east, one wonders how it got ta be here, aye?  Use her well, m'<GIRLBOY>!~
+@63   = ~Treasure in the Rust
+
+Brokk has restored the katana I found in Durlag's Tower to its former glory.~
+@64   = ~I have the diamond and gold, can you restore this katana for me?~

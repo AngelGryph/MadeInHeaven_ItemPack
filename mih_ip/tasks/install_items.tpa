@@ -643,6 +643,25 @@ COPY "%MOD_FOLDER%/items/mh#comp3.itm" "override"
   SAY IDENTIFIED_DESC @84
 
 
+// mh#comp4 - Rusty Katana
+
+COPY "%MOD_FOLDER%/items/mh#comp4.itm" "override"
+  SAY NAME2 ~Rusty Katana~
+  SAY IDENTIFIED_DESC ~This magical katana has dulled and rusted by years of neglect in a damp and harsh environment.  However, there is still a bit of a gleam to it through the layers of corrosion.  In its current state it would perform worse than an unenchanted blade, but a skilled swordsmith might be able to restore some of its former glory.
+
+STATISTICS:
+
+THAC0: -2
+Damage: 1d10-4 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6~
+
+
 // mh#dagg1 - Catclaw +3
 
 COPY "%MOD_FOLDER%/items/mh#dagg1.itm" "override"
@@ -1319,7 +1338,7 @@ The most commonly accepted story goes as follows.  The ronin accepted the shogun
 
 The daughter married as her father wished, but soon found herself in a loveless marriage with an abusive husband.  At some point he beat her so savagely she did not survive.  When her father learned of that he had his samurai arrest the culprit and sentenced him to death.  The samurai also recovered the katana, but the shogun could not bear to look at it as it was such a painful reminder of his error in judgment that cost his daughter her life.
 
-He gave the blade to a trusted servant and ordered him to take it far, far away so he would never see it again.  The loyal servant followed his master's wish to the letter and traveled in the direction of the setting sun for many moons, until finally he reached the Sword Coast and could not travel any further west.  Here he disassembled the katana and hid its pieces in various places before engaging on the long journey back to Kara-tur.
+He gave the blade to a trusted servant and ordered him to take it far, far away so he would never see it again.  The loyal servant followed his master's wish to the letter and traveled in the direction of the setting sun for many moons, until finally he reached the Sword Coast and could not travel any further west.  Here he hid the katana deep inside a dank cavern before engaging on the long journey back to Kara-tur.
 
 STATISTICS:
 
