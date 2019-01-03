@@ -3,8 +3,9 @@
 
 STATISTICS:
 
-THAC0: +2 bonus vs. undead
-Damage: +2 bonus vs. undead
+Equipped abilities:
+- THAC0: +2 vs. undead
+- Damage: +2 vs. undead
 
 Weight: 3~
 @2    = ~Necklace of Prayer Beads~
@@ -22,8 +23,9 @@ Many a person in Faerun has wished for a dozen or so of these gems to put on les
 
 STATISTICS:
 
-Intelligence: +1 bonus
-Wisdom: +1 bonus
+Equipped abilities:
+- Intelligence: +1
+- Wisdom: +1
 
 Weight: 3~
 @6    = ~Gem of Seeing~
@@ -33,7 +35,8 @@ An old legend tells of a wizard who invented a more powerful version of this ite
 
 STATISTICS:
 
-Abilities: Casts True Seeing once per day.
+Charge abilities:
+- True Seeing (1/day)
 
 Weight: 3~
 @8    = ~Girdle of Dwarvenkind~
@@ -41,9 +44,13 @@ Weight: 3~
 
 STATISTICS:
 
-Charisma: -1 penalty
-Constitution: +1 bonus
-Saving Throws: +2 vs. death, wands and spells
+Equiped abilities:
+- Charisma: -1
+- Constitution: +1
+- Save vs. Death: +2
+- Save vs. Wand: +2
+- Save vs. Spell: +2
+- Infravision 60'
 
 Weight: 2~
 @10   = ~Boots of the Master Ninja~
@@ -53,8 +60,9 @@ When worn, they reduce the impact of the owner's weight on the surface underneat
 
 STATISTICS:
 
-Stealth: +25%
-Find Traps: +10%
+Equipped abilities:
+- Stealth: +25%
+- Find Traps: +10%
 
 Weight: 4~
 @12   = ~Bracers of the Dwarven King~
@@ -62,7 +70,8 @@ Weight: 4~
 
 STATISTICS:
 
-Hit Points: +5 to maximum
+Equipped abilities:
+- Hit Points: +5
 
 Weight: 1~
 @14   = ~Foesplitter +1~
@@ -71,12 +80,11 @@ Weight: 1~
 STATISTICS:
 
 Combat abilities:
-- counts as a +3 weapon
-- +5% critical hit chance
+- Strikes as a +3 weapon
+- Critical hit on 19-20
 
-THAC0: +1 bonus
-Damage: 1d10 +1
-Damage Type: Slashing
+THAC0: +1
+Damage: 1d10 +1 (slashing)
 Weight: 7
 Speed Factor: 6
 Proficiency Type: Axe
@@ -87,7 +95,8 @@ Requires: 10 Strength~
 
 STATISTICS:
 
-Wearer is immune to all forms of petrification.
+Equipped abilities:
+- Immune to petrification
 
 Weight: 3~
 @18   = ~Battlecloak of Vycaena~
@@ -97,8 +106,9 @@ Cloaks like these were often owned by rich Calishite families in centuries past,
 
 STATISTICS:
 
-Armor Class: +4 bonus
-Saving Throws: +1 bonus
+Equipped abilities:
+- Armor Class: +4
+- Saving Throws: +1
 
 Weight: 3~
 @20   = ~Final Strike +3~
@@ -106,11 +116,11 @@ Weight: 3~
 
 STATISTICS:
 
-Armor Class: +1 bonus
+Equipped abilities:
+Armor Class: +1
 
-THAC0: +3 bonus
-Damage: 1d4 +4
-Damage Type: Crushing
+THAC0: +3
+Damage: 1d4 +4 (crushing)
 Weight: 4
 Speed Factor: 1
 Proficiency Type: War Hammer
@@ -121,9 +131,12 @@ Requires: 9 Strength~
 
 STATISTICS:
 
-Armor Class: +3 vs. missiles
-Missile Resistance: +50%
-Special: Protects against critical hits.~
+Equipped abilities:
+- Armor Class: +3 vs. missiles
+- Missile Resistance: +50%
+- Protects against critical hits
+
+Weight: 4~
 @24   = ~Meteoric Iron~
 @25   = ~At first glance these seem to be worthless red rocks, but closer inspection reveals them to be fragments of an iron meteorite.  This is useful as a crafting material, and might be worth something to a skilled smith.
 
@@ -135,20 +148,23 @@ Many years later on a moonless night Antares, now calling himself the Ebon Hand,
 
 STATISTICS:
 
-Armor Class: +3 bonus
-Saving Throws: +3 bonus~
+Equipped abilities:
+- Armor Class: +3
+- Saving Throws: +3~
 @28   = ~Ring of Warmth~
 @29   = ~This type of magical ring is often sought by those who are regularly exposed to freezing conditions, like mountaineers, explorers and, of course, adventurers.  The ring keeps the wearer comfortably warm in all but the most extreme cold weather, and reduces the damage done by freezing attacks like the Ice Storm spell or the chilling breath of a winter wolf.
 
 STATISTICS:
 
-Cold Resistance: +25%~
+Equipped abilities:
+- Cold Resistance: +25%~
 @30   = ~Ring of the Neophyte~
 @31   = ~Wizards sometimes create rings like these for very promising apprentices, both as a reward for their years of service and to provide their prize students with a small advantage on the hard and often dangerous road to arcane mastery.
 
 STATISTICS:
 
-Spells: Gives one extra first level spell slot.~
+Equipped abilities:
+Arcane Spells: +1 first level spell~
 @32   = ~Ring of Shocking Grasp~
 @33   = ~The gnome tinkerer whom first created this ring insisted on calling it 'The Buzzer' and would often use it to shock someone as part of a prank.  He met a messy end when he pulled this trick once too often on a dwarven battlerager with no sense of humor.
 
@@ -164,19 +180,23 @@ Charge abilities:
 
 STATISTICS:
 
-Armor Class: +3 bonus
+Equipped abilities:
+- Armor Class: +3 bonus
 Magic Damage Resistance: +50%
 
 Requires: 14 Strength
+
 Weight: 8~
 @36   = ~Terminus Est +2~
 @37   = ~When lady Walraven was judged guilty of high treason and sentenced to death, she had but one last request, that her delicate neck be spared the crude executioner's axe.  The village smith then forged this sword, and a knight beheaded her with it.  The sword was placed in Walraven keep, but not for long.  A week later, both the keep and the village were razed to the ground by an orc horde, and the sword was among the many things pillaged.  The tribe's shaman enchanted it and for years it served as the weapon of the chieftain until he fell in a fight against a paladin from Waterdeep.
 
 STATISTICS:
 
+Combat abilities:
+- Additional 1d2 acid damage per hit
+
 THAC0: +2 bonus
-Damage: 2d4 +2, +1d2 acid
-Damage Type: Slashing
+Damage: 2d4 +2 (slashing)
 Weight: 7
 Speed Factor: 6
 Proficiency Type: Bastard Sword
@@ -188,8 +208,7 @@ Requires: 11 Strength~
 STATISTICS:
 
 THAC0: +1 bonus, +3 vs. spiders
-Damage: 1d8 +1, +3 vs. spiders
-Damage Type: Slashing
+Damage: 1d8 +1, +3 vs. spiders (slashing)
 Weight: 3
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
@@ -202,21 +221,28 @@ There is no known history, and the near mint condition of the item suggests it w
 
 STATISTICS:
 
-Special: Wearer is protected from all harmful gasses and vapors.
+Equipped abilities:
+- Immunity to gasses
+
 Weight: 2~
 @42   = ~Winter Wolf Hide +1~
 @43   = ~This hide armor was sewn together from the hides of several winter wolves.  Some of the latent magic of these majestic wolves remains, granting superior protection as well as insulation from cold.  The armor remains uncomfortable to wear and appalling to look at though, and it will not fetch a high price in shops.
 
 STATISTICS:
 
-Armor Class: 5
-Cold Resistance: +50%
-Move Silently: -20
-Lock Picking: -10
-Find/Remove Traps: -10
-Pick Pockets: -10
-Weight: 20
-Requires: 6 Strength~
+Equipped abilities:
+- Cold Resistance: +50%
+- Move Silently: -20%
+- Lock Picking: -10%
+- Find/Remove Traps: -10%
+- Pick Pockets: -10%
+
+Armor Class: 5 (7 vs. piercing and missile)
+
+Requires:
+ 6 Strength
+
+Weight: 20~
 @44   = ~Eversing +2~
 @45   = ~This beautiful, elven-crafted splint mail is a pure work of art.  Each metal strip has been individually silvered, polished and engraved with a single elven rune.  Although it is many centuries old, there is not a single scratch or speck of rust to be found, its beauty remains untarnished.
 
@@ -224,23 +250,23 @@ Not much is known about the history of this armor.  It is known that it is a rel
 
 STATISTICS:
 
-Armor Class: 2
-Magic Resistance: +5%
-Special: Wearer is immune to petrification.
-Weight: 8
-Requires: 8 Strength
-Not Usable By:
- Bard
- Druid
- Mage
- Thief~
+Equipped abilities:
+- Magic Resistance: +5%
+- Immunity to petrification
+
+Armor Class: 2 (1 vs. piercing and missile, 0 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 8~
 @46   = ~Sunite Sash~
 @47   = ~This beautiful scarlet sash has been woven from fine red thread and delicate gold wire.  Priests of Sune sometimes create these enchanted sashes as a gift to a loved one.
 
 STATISTICS:
 
-Armor Class: +2 bonus
-Charisma: +2 bonus
+Equipped abilities:
+- Armor Class: +2
+- Charisma: +2
 
 Weight: 2~
 @48   = ~Boots of Striding and Springing~
@@ -248,8 +274,9 @@ Weight: 2~
 
 STATISTICS:
 
-Armor Class: +1 bonus
-Movement Rate: +2 bonus
+Equipped abilities:
+Armor Class: +1
+Movement Rate: +2
 
 Weight: 4~
 @50   = ~Vambraces of Evil's Warding~
@@ -257,7 +284,8 @@ Weight: 4~
 
 STATISTICS:
 
-Wearer has permanent protection from evil.
+Equipped abilities:
+- Protection from Evil
 
 Weight: 2~
 @52   = ~Catclaw +3~
@@ -267,12 +295,12 @@ Something in the enchantment of this dagger hints it may originate from another 
 
 STATISTICS:
 
-Backstab: +1
-Stealth: +15%
+Equipped abilities:
+- Backstab Multiplier: +1
+- Stealth: +15%
 
-THAC0: +3 bonus
-Damage: 1d4 +3
-Damage Type: Piercing
+THAC0: +3
+Damage: 1d4 +3 (piercing)
 Weight: 0
 Speed Factor: 0 
 Proficiency Type: Dagger
@@ -283,73 +311,101 @@ Require: 3 Strength~
 
 STATISTICS:
 
+Equipped abilities:
 Strength: +1 bonus
+
 Weight: 2~
 @56   = ~This ioun stone is so clear and transparent it becomes almost invisible.  Such ioun stones can supposedly absorb and nullify magical energy.
 
 STATISTICS:
 
+Equipped abilities:
 Magic Resistance: +5%
+
 Weight: 2~
 @57   = ~Bow of Eletha~
 @58   = ~This bow once belonged to the green elf Eletha, a legendary archer and hero.  How it came to leave elven lands is unknown, but the elves would certainly like it returned, and would no doubt take a dim view of anyone found using it for evil purposes.
 
 STATISTICS:
 
-This bow has double the normal range.  Three times a day, it can fire a Magic Missile as a 10th level wizard.
+Charge abilities:
+- Magic Missile (3/day, 10th level caster)
+
+Combat abilities:
+- Double normal range
 
 THAC0: +3 bonus
-Weight: 3
 Speed Factor: 5
 Proficiency Type: Long Bow
 Type: 2-handed
-Requires: 6 Strength~
+Requires:
+ 6 Strength
+
+Weight: 3~
 @59   = ~Oil of Acid Resistance~
-@60   = ~This ethereal oil, when applied to the skin and exposed equipment, bestows virtual immunity to all forms of acid, including ankheg spittle and the corrosive breath of black dragons.  All damage by acid is reduced by 90%.  The effect lasts for 10 turns or until dispelled.~
+@60   = ~This ethereal oil, when applied to the skin and exposed equipment, bestows virtual immunity to all forms of acid, including ankheg spittle and the corrosive breath of black dragons.  All damage by acid is reduced by 90%.  The effect lasts for 10 turns or until dispelled.
+
+STATISTICS:
+
+Acid Resistance: +90%
+Duration: 10 turns
+
+Weight: 1~
 @61   = ~Ankheg Shield +1~
 @62   = ~The dwarven smith Brokk created this shield for <CHARNAME> from the carapace of an ankheg.  Such material has several advantages over using steel, it cannot rust and weighs much less.  Druids can also use it without restriction.  The only drawback is in the inherent danger of procuring the base material.
 
 STATISTICS:
 
-Armor Class Bonus: 2
-Weight: 3
-Requires: 12 Strength~
+Equipped abilities:
+- Armor Class: +2
+
+Requires:
+ 12 Strength
+
+Weight: 3~
 @63   = ~Shield of the Phoenix +2~
 @64   = ~The Order of the Phoenix was a paladin order several hundred years ago.  The cause of the order's disappearance is unclear, some claim they fell to an orc horde, others say a clash of faith ripped them apart, and yet others whisper it was the work of dark forces.  Perhaps all of these are to blame to some degree.  Fact is that the order disappeared almost overnight, and only their iconic shields, occasionally found in an orc lair or dragon hoard, remain.
 
 STATISTICS:
 
 Equipped abilities:
+- Armor Class: +3, +5 vs. undead
 - Fire Resistance: +30%
 
-Armor Class Bonus: 3, 5 vs. undead
-Weight: 5
-Requires: 12 Strength~
+Requires:
+ 12 Strength
+
+Weight: 5~
 @65   = ~Staff of Rumathil +2~
 @66   = ~This ancient staff of elven make is a boon to both wizards and clerics.  The exact origin is a mystery even to the elves themselves, but it is said to have been crafted in the secret elven nation of Evermeet.  How exactly it made its way to the mainland is not known either.
 
 STATISTICS:
 
-This staff makes both wizards and priests cast spells as if they were actually one level higher.  It does not grant extra spell slots, but will affect damage, duration, and so on of known spells.
+Equipped abilities:
+- Caster Level: +1 (arcane and divine)
 
 THAC0: +2 bonus
-Damage: 1d6 +2
-Damage Type: Crushing
-Weight: 3
+Damage: 1d6 +2 (crushing)
 Speed Factor: 2
 Proficiency Type: Staff
 Type: 2-handed
-Requires: 5 Strength~
+Requires:
+ 5 Strength
+
+Weight: 3~
 @67   = ~Wand of Illusions~
 @68   = ~This wand is a powerful defensive tool, it can make a wizard invisible, or create illusionary copies of <PRO_HIMHER>.
 
 STATISTICS:
 
-Ability 1:
-Effect: Invisibility (self only)
+Charge abilities:
+- Invisibility (self only)
+- Mirror Image
 
-Ability 2:
-Effect: Mirror Image~
+Requires:
+ 9 Intelligence
+
+Weight: 1~
 @69   = ~White Hide of Umpluutu +2~
 @70   = ~Umpluutu was the name given to an unually large and strong polar bear that plagued the barbarian tribe of the Elk in the frozen tundras of the Spine of the World.  When the barbarians finally felled the great beast, the tribe's shaman created this hide armor from its skin.  How it came to leave the frozen north is not exactly known.
 
@@ -362,9 +418,10 @@ Equipped abilities:
 - Find Traps: -10%
 - Pick Pockets: -10% 
 - Move Silently: -20%
-
 - Cold Resistance: +50%
-- Polymorph into a polar bear 1/day
+
+Charge abilities:
+- Polymorph Self (1/day, polar bear)
 
 Armor Class: 4 (6 vs. piercing and missile)
 Requires:
@@ -377,12 +434,10 @@ Weight: 25~
 STATISTICS:
 
 Equipped abilities:
-- Always considered a +4 weapon for purposes of what it can hit
-- Counts as both a silver- and a cold iron weapon
+- Strikes as silver, cold iron +4 weapon
 
 THAC0: +1, +4 vs. lycanthropes, undead & demons
-Damage: 2d4+1, +4 vs. lycanthropes, undead & demons
-Damage Type: Crushing
+Damage: 2d4+1, +4 vs. lycanthropes, undead & demons (crushing)
 Speed Factor: 8
 Proficiency Type: Flail/Morning Star
 Type: One-handed
@@ -393,14 +448,15 @@ Weight: 15~
 @73   = ~Bracers of Winter's Chill~
 @74   = ~These magical bracers were originally created by the clergy of Auril, the Frost Maiden.  However, one of the priestesses had a crisis of faith and fled with the item.  Aurelite assassins hounded her steps every way and eventually cornered her in Waterdeep.  Fortunately for her, a group of adventurers intervened, saving her life.  She joined the group and they had several adventures together.  Eventually the group disappeared into the Underdark and was never seen again.
 
-<CHARNAME> recovered the bracers from the depths of Durlag's Tower, suggesting that the group fell victim to the same mind flayers that orchestrated the attack which wiped out Durlag's clan.
-
 STATISTICS:
 
 Equipped abilities:
 - Fire Resistance: +30%
 - Cold Resistance: +30%
-- Cast Ice Storm and Cone of Cold once a day each
+
+Charge abilities:
+- Ice Storm (1/day)
+- Cone of Cold (1/day)
 
 Weight: 2~
 @75   = ~Bracers of the Wind~
@@ -411,8 +467,8 @@ It turned out that Starkas' quickness with the blade came from an enchantment on
 STATISTICS:
 
 Equipped abilities:
-- One extra attack per round
-- THAC0: -2 penalty
+- Attacks per Round: +1
+- THAC0: -2
 
 Weight: 2~
 @77   = ~Storm's Garter~
@@ -423,9 +479,9 @@ Equipped abilities:
 - Dexterity: +1
 
 Charge abilities:
-- Silence once per day
-- Cure Disease once per day
-- Neutralize Poison once per day
+- Silence (1/day)
+- Cure Disease (1/day)
+- Neutralize Poison (1/day)
 
 Weight: 2~
 @79   = ~Cloak of Arachnida~
@@ -434,9 +490,11 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- move freely through all kinds of webs
-- +5 on saving throws versus death
-- cast Web twice per day (at 10th level)
+- Save vs. Death: +5
+- Immunity to Web
+
+Charge abilities:
+- Web (2/day, 10th level caster)
 
 Weight: 3~
 @81   = ~Mithral Ore~
@@ -449,20 +507,20 @@ Weight: 3~
 STATISTICS:
 
 Equipped abilities:
-- Wearer is immune to magical silence~
+- Immunity to Silence~
 @87   = ~Celestial Chain +2~
 @88   = ~This suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously forged from very fine mithral rings by the dwarven smith Brokk, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a price to their abilities.
 
 STATISTICS:
 
 Equipped abilities:
-- 10% chance of arcane spell failure
 - Open Locks: -10%
 - Find Traps: -10%
 - Pick Pockets: -25%
 - Move Silently: -15%
+- Arcane Spell Failure: +10%
 
-Armor Class: 3 (3 vs. slashing, 7 vs. crushing)
+Armor Class: 3 (1 vs. slashing, 5 vs. crushing)
 Requires: 
  6 Strength
 
@@ -484,21 +542,20 @@ As the name suggests, this ring is carved entirely from bone, preferably from an
 STATISTICS:
 
 Charge abilities:
-- Casts Negative Plane Protection (at 12th level of ability)~
+- Negative Plane Protection (12th level caster)~
 @94   = ~Ring of Mind Shielding~
 @95   = ~This ring protects the wearer's mind from all external influences such as psionic abilities and spells like Domination.  No prior history is known, this ring seems to have been crafted very recently.  It would be a great boon for any hero who has to explore the Underdark though, as it provides solid defenses against some of its more horrid denizens, especially the mind flayers.  Perhaps it can earn a name and history for itself in this way.
 
 STATISTICS:
 
 Equipped abilities:
-- Immunity to berserk, charm, confusion, domination, feeblemind and stunning
-- The wearer's alignment cannot be determined~
+- Immunity to berserk, charm, confusion, domination, feeblemind and stunning~
 @96   = ~Ring of Shooting Stars~
 @97   = ~This unusual elven-made ring throbs with power.  It dates back to the days of Myth Drannor, were it was possibly the cause of the destruction of the Rule Tower in the Year of Stern Judgment (666).  Since then it has left a path of chaos and destruction throughout history, having been used in several wars.  Although the ring is not cursed in any way, it seems to be drawn to violent conflicts, and its appearance has become a bad omen to many.
 
 STATISTICS:
 
-Charge abilities (all as a 20th level wizard):
+Charge abilities:
 - Melf's Minute Meteors (3/day)
 - Chain Lightning (2/day)
 - Meteor Swarm (1/day)
@@ -510,7 +567,7 @@ Requires: 14 Intelligence~
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +1 bonus
+- Armor Class: +1
 - Fire Resistance: +20%
 - Cold Resistance: +20%
 - Electrical Resistance: +20%
@@ -522,7 +579,7 @@ Weight: 3~
 STATISTICS:
 
 Equipped abilities:
-- Saving Throws: +3 vs. Death
+- Save vs. Death: +3
 - Magic Resistance: +20%
 - Poison Resistance: +20%
 - Immunity to Energy Drain
@@ -540,7 +597,7 @@ These monk robes are made of very tough fibers that resist cutting and carry a m
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +1 bonus, additional +2 vs. slashing
+- Armor Class: +1 (+3 vs. slashing)
 
 Weight: 3~
 @106  = ~Shadow Dancer's Robe~
@@ -551,12 +608,12 @@ This robe has been strengthened with adamantine fibers and is very resistant to 
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +2 bonus, additional +3 vs. slashing
-- Regenerates 1 hp/round
+- Armor Class: +2 (+5 vs. slashing)
+- Regeneratoin: 1 hp/round
 
 Weight: 3~
 @108  = ~Scimitar of the Seven +4~
-@109  = ~This powerful enchanted scimitar is a bit of an enigma.  Its construction suggests a desert culture, but it cannot be traced to any such culture on Aber-Toril.  Divinations reveal it was crafted in honor of seven legendary heroes and wielded by a great queen and a chosen knight destined to slay a great evil, but names and details remain vague at best.
+@109  = ~This powerful enchanted scimitar is a bit of an enigma.  Its construction suggests a desert culture, but it cannot be traced to any such culture on Abeir-Toril.  Divinations reveal it was crafted in honor of seven legendary heroes and wielded by a great queen and a chosen knight destined to slay a great evil, but names and details remain vague at best.
 
 STATISTICS:
 
@@ -575,8 +632,7 @@ Weight: 1~
 STATISTICS:
 
 Equipped abilities:
-- Always strikes as a +4 weapon against any enemy
-- Increases in power if taken into another plane of existence
+- Strikes as a +4 weapon
 
 THAC0: +1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends
 Damage: 1d8+1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends
@@ -592,9 +648,6 @@ Weight: 4~
 @113  = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  Within this Outer Plane it is at maximum power, but it will return to normal if taken back to the Prime.
 
 STATISTICS:
-
-Equipped abilities:
-- Decreases in power if returned to the prime material plane
 
 THAC0: +4
 Damage: 1d8+4
@@ -626,7 +679,7 @@ Equipped abilities:
 - Saving Throws: +3
 
 Charge abilities:
-- Improved Invisibility once per day
+- Improved Invisibility (1/day)
 
 Weight: 3~
 @117  = ~Helm of the Dwarven Lords~
@@ -637,7 +690,7 @@ STATISTICS:
 Equipped abilities:
 - Protects against critical hits
 - Regeneration: 2 hp/round
-- Permanent Minor Globe of Invulnerability
+- Minor Globe of Invulnerability
 
 Weight: 5~
 @119  = ~Ring of the Chosen~
@@ -666,16 +719,17 @@ Weight: 3~
 STATISTICS:
 
 Combat abilities:
-- Deals an additional 1d3 points of acid damage per hit.
+- Additional 1d3 points of acid damage per hit
 
 THAC0: +2 bonus
-Damage: 1d10 +2
-Damage Type: Slashing
-Weight: 5
+Damage: 1d10 +2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: 1-handed
-Requires: 10 Strength~
+Requires:
+ 10 Strength
+
+Weight: 5~
 @125  = ~Black Swan Armor +2~
 @126  = ~This armor was made by the dwarven smith Karador and an elven enchanter known as Elameth of Five Trees. During the time of cooperation between the Hand of the Seldarine and Dorn's Deep, many wondrous items were produced. This suit of armor was one of them. Exceptionally light and beautiful, the armor was originally worn by a female elven marshal in the Severed Hand, which is why the orcs didn't take it when they sacked the towers. The armor was later stolen from the Hand by the evil elf Maiden Ilmadia, who wore it in her final battle against the Defenders of Easthaven at Lower Dorn's Deep. What happened to the armor after her defeat and how it traveled from the Spine of the World to the Sword Coast is unclear.
 
@@ -699,7 +753,7 @@ Weight: 20~
 STATISTICS:
 
 Equipped abilities:
-- Bless on wearer
+- Bless
 
 Weight: 2~
 @129  = ~Girdle of Ogre Blood~
@@ -708,12 +762,10 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Regenerate 1 Hit Point every 5 rounds
+- Regeneration: 2 hp/turn
 
 Charge abilities:
-- Summon five ogres once per day
-  Range: 20 ft.
-  Duration: 17 rounds
+- Ogre Summoning (1/day, 5 ogres)
 
 Weight: 2~
 @131  = ~Silver Bracers of Kedl~
@@ -734,7 +786,7 @@ Combat abilities:
 - 10% chance of vorpal hit on evil enemies (no save)
 
 Charge abilities:
-- Earthquake once per day
+- Earthquake (1/day)
   5d10 damage to all enemies in target area (no save)
 
 THAC0: +4
@@ -770,20 +822,9 @@ Equipped abilities:
 - Protects against critical hits
 
 Charge abilities:
-- Cure Medium Wounds once per day
-  Heals 14 HP
-  Range: Touch
-  Area of Effect: 1 creature
-
-- Neutralize Poison once per day
-  Cures poison and restores 10 HP
-  Range: Touch
-  Area of Effect: 1 creature
-
-- Remove Paralysis once per day
-  Cures paralysis
-  Range: Visual range of the wearer
-  Area of Effect: Allies within 15 ft.
+- Cure Medium Wounds (1/day)
+- Neutralize Poison (1/day)
+- Remove Paralysis (1/day)
 
 Weight: 2~
 @139  = ~Pearl of Power~
@@ -792,8 +833,7 @@ Weight: 2~
 STATISTICS:
 
 Charge abilities:
-- Recall Spell once per day
-  This restores a spell of up to fourth level that the caster has previously used to <PRO_HISHER> mind, allowing it to be cast again.~
+- Recall Spell (1/day, 4th level)~
 @141  = ~Potion of Clairvoyance~
 @142  = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.~
 @143  = ~Shield Ring~
@@ -802,7 +842,8 @@ Charge abilities:
 STATISTICS:
 
 Equipped abilities:
-- Shield: Armor Class set to 4 (2 vs. missile weapons); immunity to magical missiles
+- Armor Class: 4 (2 vs. missiles)
+- Immunity to Magic Missile
 
 Weight: 0~
 @145  = ~Edion's Ring of Wizardry~
@@ -811,9 +852,7 @@ Weight: 0~
 STATISTICS:
 
 Equipped abilities:
-- Can cast two additional 5th-level wizard spells
-
-Weight: 0~
+- Arcane Spells: +2 5th level spells~
 @147  = ~Shield of the Three Kings +5~
 @148  = ~The name of this masterwork golden shield is derived from the three crowns engraved in its front, for it hasn't been associated with any known king.  It was forged by the shield dwarves of the North to be used in one of their many skirmishes with the orc hordes that regular plague that area of Faerun.  It is not known whom exactly placed the massive enchantment on it, although the style used is typical for the Netherese arcanists of the past.  If the dwarves truly traded for this shield with the Netherese, the price demanded must have been mind boggling.  This is possibly the most strongly enchanted shield in the Realms.
 
@@ -835,11 +874,7 @@ Equipped abilities:
 - Armor Class: +3
 
 Charge abilities:
-- Undead Ward once per day
-  Undead are affected as if turned by a 5th-level priest
-  Range: 0
-  Duration: 1 turn
-  Area of Effect: 10-ft. radius
+- Undead Ward (1/day)
 
 Requires:
  12 Strength
@@ -851,8 +886,8 @@ Weight: 3~
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +4, an extra +1 vs. missile attacks
-- Immunity to instant death effects like Finger of Death and Power Word: Kill
+- Armor Class: +4 (+5 vs. missile)
+- Death Ward
 
 Requires:
  15 Strength
@@ -897,9 +932,6 @@ STATISTICS:
 
 Charge abilities:
 - Resurrection
-  Raised target is fully healed
-  Range: Unlimited
-  Area of Effect: 1 creature
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
@@ -919,10 +951,7 @@ Combat abilities:
 - Additional 2d4+3 fire damage vs. undead
 
 Charge abilities:
-- Sunray once per day
-  Blindness for 2 rounds (Save vs. Spell negates); undead and myconids take 8d6 fire damage (Save vs. Spell for half)
-  Range: 100 ft.
-  Area of Effect: 8-ft. radius 
+- Sunray (1/day)
 
 THAC0: +3
 Damage: 2d4+3 (slashing)
@@ -952,8 +981,7 @@ Equipped abilities:
 - Immunity to charm- and fear effects
 
 THAC0: +4, +7 vs. evil creatures
-Damage: 1d8+4, +7 vs. evil creatures
-Damage Type: Slashing
+Damage: 1d8+4, +7 vs. evil creatures (slashing)
 Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed

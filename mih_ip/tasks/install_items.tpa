@@ -205,7 +205,7 @@ COPY "%MOD_FOLDER%/items/mh#amul3.itm" "override"
 
 COPY "%MOD_FOLDER%/items/mh#amul4.itm" "override"
   SAY NAME2 ~Mirror Amulet~
-  SAY IDENTIFIED_DESC ~
+  SAY IDENTIFIED_DESC ~This amulet consists of a single large sapphire on a silver chain.  As you gaze into the stone, you see your own face reflected multiple times in the stone's many facets.  This amulet defies exact identification, either it is so old that current day divination magic does not work on it, or the original creator is someone who values their privacy.  The subtle, elegant design hints on an elven origin though.
 
 STATISTICS:
 
@@ -278,7 +278,7 @@ Weight: 3~
 
 // mh#amul8 - Periapt of Health
 
-COPY "%MOD_FOLDER%/items/mh#amul7.itm" "override"
+COPY "%MOD_FOLDER%/items/mh#amul8.itm" "override"
   SAY NAME2 ~Periapt of Health~
   SAY IDENTIFIED_DESC ~This peculiar pendant was forged by the clergy of Ilmater, most likely to protect any priests that are sent to combat plagues.  Wearing it renders the user immune to most diseases both normal and magical.  This includes the dreaded mummy rot, but does not cover lycanthropy which is more like a curse than a disease.
 
@@ -747,6 +747,23 @@ Equipped abilities:
 Weight: 2~
 
 
+// mh#ioun4 - Telkiira
+
+COPY "%MOD_FOLDER%/items/mh#ioun4.itm" "override"
+  SAY NAME2 ~Telkiira~
+  SAY IDENTIFIED_DESC ~This is an elven telkiira, or lore-stone in the common language.  Such gems contain a portion of the knowledge and experience of previous bearers and as such enhance the mental prowess  and arcane abilities of its current owner.  Only those of elven blood can safely use a telkiira, use by a non-elf is extremely dangerous and likely to result in permanent insanity.
+
+STATISTICS:
+
+Equipped abilities:
+- Intelligence: +2
+- Lore: +20
+- Save vs. Spell: +2
+- Arcane Spells: +1 sixth level spell
+
+Weight: 2~
+
+
 // mh#lbow1 - Bow of Eletha
 
 COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
@@ -1094,7 +1111,7 @@ Charge abilities:
 - Abi-Dalzim's Horrid Wilting (1/day)
 
 Equipped abilities:
-- Saving throws: +5 vs. death
+- Save vs. Death: +5
 - Immunity to energy drain
 
 Combat abilities:
@@ -1331,6 +1348,12 @@ Weight: 4~
 // mh#swrd8 - Golden Sky +2
 
 COPY "%MOD_FOLDER%/items/mh#swrd8.itm" "override"
+  PATCH_IF GAME_IS "bgee"
+  BEGIN
+    SAY NAME1 #26711
+    SAY UNIDENTIFIED_DESC #26713
+  END
+
   SAY NAME2 ~Golden Sky +2~
   SAY IDENTIFIED_DESC ~This katana has a strange and sometimes conflicting history.  Its beginnings are common enough, a shogun in Kara-tur had it commissioned as a reward for a ronin whom had saved his daughter from an evil wu-jen.  But what exactly happened afterwards is the stuff of many legends.
 
