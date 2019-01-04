@@ -21,7 +21,9 @@ BEGIN
       new_item		= "shld05"
     END
 
-    IF_EXISTS	// some of these are not in BGT for some reason
+    IF "shld06"	// Already fixed in some shops in EE
+    IF_EXISTS	// Some of these are not in BGT for some reason
+    BUT_ONLY_IF_IT_CHANGES
 END
 
 
