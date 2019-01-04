@@ -46,6 +46,7 @@ mh#comp1 Meteoric Iron
 mh#comp2 Mithral Ore
 mh#comp3 Lux Veritatis
 mh#comp4 Rusty Katana
+*mh#comp5 Unicorn Horn
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Spinesheath +1				Icewind Dale 1 (2E)
@@ -95,6 +96,8 @@ mh#shld4 Shield of the Three Kings +5
 mh#shld5 Shield of the Revenant +2		Icewind Dale 1 (2E)
 mh#shld6 Mystery of the Dead +3			Icewind Dale 1 (2E)
 mh#shld7 Waukeen's Defender +2			Icewind Dale 1 (2E)
+
+mh#sper1 Alicorn Spear +2
 
 mh#staf1 Staff of Rumathil +2			Elves of Evermeet (2E)
 mh#staf2 Spendelard's Protector +1		Icewind Dale 1 (2E)
