@@ -4,9 +4,9 @@ COPY "%MOD_FOLDER%/stores/mh#brokk.sto" "override"
   SAY NAME1 "Brokk's Forge"
 
 
-ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#brokk.tra"
+ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 USING "%MOD_FOLDER%/tra/%LANGUAGE%/brokks_forge.tra"
 
-COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/mh#brokk.d"
+COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/brokks_forge.d"
 
 LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
   STR_VAR
@@ -33,7 +33,7 @@ COPY_EXISTING "%FriendlyArmInn_House%.are" "override"
 
 
 COPY_EXISTING "%FriendlyArmInn%.are" "override"
-  ADD_MAP_NOTE #1425 #2590 "gray" "Brokk's Forge"
+  ADD_MAP_NOTE #1500 #1900 "gray" "Brokk's Forge"
 
 
 // Phrenda's Scrolls
@@ -42,9 +42,9 @@ COPY "%MOD_FOLDER%/stores/mh#phend.sto" "override"
   SAY NAME1 "Phendra's Scrolls"
 
 
-ADD_JOURNAL @15 @17 @20 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#phend.tra"
+ADD_JOURNAL @15 @17 @20 USING "%MOD_FOLDER%/tra/%LANGUAGE%/phendras_scrolls.tra"
 
-COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/mh#phend.d"
+COMPILE EVALUATE_BUFFER "%MOD_FOLDER%/dialog/phendras_scrolls.d"
 
 LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
   STR_VAR
@@ -68,15 +68,15 @@ COPY_EXISTING "%NashkelCarnival_ArmorTent%.are" "override"
   END
 
 
-// The Gem of Seeing
+// Gem of Seeing quest
 
-ADD_JOURNAL @10 @19 @27 @29 @36 @38 USING "%MOD_FOLDER%/tra/%LANGUAGE%/mh#hlftr.tra"
+ADD_JOURNAL @10 @19 @27 @29 @36 @38 USING "%MOD_FOLDER%/tra/%LANGUAGE%/gem_of_seeing.tra"
 
-COMPILE "%MOD_FOLDER%/dialog/mh#hlftr.d"
+COMPILE "%MOD_FOLDER%/dialog/gem_of_seeing.d"
 
 LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
   STR_VAR
-  dialog	= "mh#phend"
+  dialog	= "mh#hlftr"
 END
 
 LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
@@ -85,42 +85,41 @@ LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
 END
 
 
-COPY_EXISTING "halftr.cre" "override/mh#hlftr.cre"
-  REPLACE_CRE_ITEM "mh#comp3" #0 #0 #0 "none" "qitem1"
+COPY_EXISTING "halftr.cre" "override"
+  WRITE_ASCII DEATHVAR "mh#Furret" #32
 
-  WRITE_ASCII SCRIPT_OVERRIDE	"mh#hlftr" #8
-  WRITE_ASCII DIALOG		"mh#hlftr" #8
+
+COPY_EXISTING "halftr.cre" "override/mh#hlftr.cre"
+  WRITE_ASCII SCRIPT_DEFAULT "wtrunsgt"
+  WRITE_ASCII DIALOG "mh#hlftr"
+  WRITE_ASCII DEATHVAR "mh#Furret" #32
+
+  REPLACE_CRE_ITEM "mh#comp3" #0 #0 #0 "unstealable" "qitem1"
+
+
+COPY "%MOD_FOLDER%/actors/mh#bobas.cre" "override"
+  SAY NAME1 "Bobas"
+  SAY NAME2 "Bobas"
 
 
 EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%MOD_FOLDER%/scripts/gemquest_gullykin.baf" USING "%MOD_FOLDER%/dummy.tra"
 
 
-// Carnival potion store
-
-COPY_EXISTING "sto4905.sto" "override"
-  // Oil of Acid Resistance
-  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
-
-
-// Song of the Morning
+// Beregost
 
 COPY_EXISTING "tem3402.sto" "override"
   // Amulet against Undead
   ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
+  // Girdle of Beatification
+  ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1
 
-
-// The Lady's Hall
-
-COPY_EXISTING "tem0132.sto" "override"
-  // Necklace of Prayer Beads
-  ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
-
-
-// High Hedge
 
 COPY_EXISTING "highhedg.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
+
+  // Potion of Clairvoyance
+  ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3
 
   // Gem of Insight
   ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
@@ -129,54 +128,124 @@ COPY_EXISTING "highhedg.sto" "override"
   ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
 
   // Cloak of Arachnida
-  ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #12 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1
 
   // Cloak of the Shield (from Durlag's Tower)
   ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1
 
-
-// Temple of Yondalla
-
-COPY_EXISTING "tem4003.sto" "override"
-  ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1
+  // Crystal Ball
+  ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #3 #0 #0 "identified" #1
 
 
-// Sorcerous Sundries
+// Red Canyons
 
-COPY_EXISTING "sto0703.sto" "override"
+COPY_EXISTING "bassil.cre" "override"
+  // The Kneecapper (from Hurgan Stoneblade)
+  REPLACE_CRE_ITEM "hamm04" #0 #0 #0 "unstealable" "weapon1" EQUIP
+
+
+// Nashkel / Carnival
+
+COPY_EXISTING "sto4905.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
 
 
-// Black Lily
-
-COPY_EXISTING "stoblack.sto" "override"
-  // Boots of the Master Ninja
-  ADD_STORE_ITEM "mh#boot1" BEFORE "clck01" #0 #0 #0 "identified" #1
+COPY_EXISTING "greywo.cre" "override"
+  // Mirthal (replaces Varscona)
+  REPLACE_CRE_ITEM "mh#swrd7" #0 #0 #0 "unstealable" "weapon1" EQUIP
 
 
-// Mutamin
+// Gullykin
+
+COPY_EXISTING "tem4003.sto" "override"
+  // Robe of the Pure Heart
+  ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1
+  // Periapt of Health
+  ADD_STORE_ITEM "mh#amul8" LAST #0 #0 #0 "identified" #1
+
+
+// Mutamin's Garden
 
 COPY_EXISTING "mutami.cre" "override"
   // Mutamin's Cloak
   ADD_CRE_ITEM "mh#clck1" #0 #0 #0 "none" "cloak"
 
 
-// Bassilius
-
-COPY_EXISTING "bassil.cre" "override"
-  // The Kneecapper (from Hurgan Stoneblade)
-  REPLACE_CRE_ITEM "hamm04" #0 #0 #0 "none" "weapon1" EQUIP
-
-
-// Taugosz Khosann
+// Bandit Camp
 
 COPY_EXISTING "taugos.cre" "override"
   // Aishideena (from Bassilius)
-  REPLACE_CRE_ITEM "hamm03" #0 #0 #0 "none" "weapon1" EQUIP
+  REPLACE_CRE_ITEM "hamm03" #0 #0 #0 "unstealable" "weapon1" EQUIP
 
 
-// Candlekeep Catacombs L1
+COPY_EXISTING "raemon.cre" "override"
+  // Varscona (from Greywolf)
+  REPLACE_CRE_ITEM "sw1h06" #0 #0 #0 "unstealable" "weapon1" EQUIP
+
+
+COPY_EXISTING "venkt.cre" "override"
+  // Spendelard's Protector
+  REPLACE_CRE_ITEM "mh#staf2" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
+
+
+COPY_EXISTING "%BanditCamp_Tent1%.are" "override"
+  // Unicorn Horn
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 3
+    STR_VAR
+    item_to_add		= "mh#comp5"
+  END
+
+
+// Cloakwood
+
+COPY_EXISTING "%CloakwoodNestSpiderNest%.are" "override"
+  // Storm's Garter
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 1
+    charges1		= 1
+    charges2		= 1
+    charges3		= 1
+    STR_VAR
+    item_to_add		= "mh#belt3"
+  END
+
+
+COPY_EXISTING "coksmth.cre" "override"
+  // Bag of Tricks
+  ADD_CRE_ITEM "mh#misc2" #3 #0 #0 "unstealable" "qitem"
+
+
+COPY_EXISTING "natash.cre" "override"
+  // Spinesheath
+  REPLACE_CRE_ITEM "mh#dagg2" #0 #0 #0 "unstealable" "weapon1" EQUIP
+
+
+// Baldur's Gate
+
+COPY_EXISTING "tem0132.sto" "override"
+  // Necklace of Prayer Beads
+  ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
+
+
+COPY_EXISTING "sto0703.sto" "override"
+  // Mirror Amulet
+  ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1
+  // Oil of Acid Resistance
+  ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
+  // Staff of Swarming Insects
+  ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1
+
+
+COPY_EXISTING "stoblack.sto" "override"
+  // Boots of the Master Ninja
+  ADD_STORE_ITEM "mh#boot1" BEFORE "clck01" #0 #0 #0 "identified" #1
+
+
+// Candlekeep (ch6)
 
 COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
   // Ring of the Lich +3
@@ -188,11 +257,11 @@ COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
   END
 
 
-// Hurgan Stoneblade
+// Ulgoth's Beard
 
 COPY_EXISTING "hurgan.cre" "override"
   // Final Strike +3
-  REPLACE_CRE_ITEM "mh#hamm1" #0 #0 #0 "none" "qitem3"
+  REPLACE_CRE_ITEM "mh#hamm1" #0 #0 #0 "unstealable" "qitem3"
   
 COPY_EXISTING "hurgan.dlg" "override"
   // Final Strike +3
@@ -202,7 +271,12 @@ COPY_EXISTING "hurgan.dlg" "override"
   END
 
 
-// Durlag's Tower D1
+COPY_EXISTING "tracea.cre" "override"
+  // Orange Ioun Stone
+  ADD_CRE_ITEM "mh#ioun3" #0 #0 #0 "unstealable" "helmet"
+
+
+// Durlag's Tower
 
 COPY_EXISTING "%DurlagsTower_D1%.are" "override"
   // Ring of Protection from Silence
@@ -214,8 +288,6 @@ COPY_EXISTING "%DurlagsTower_D1%.are" "override"
   END
 
 
-// Durlag's Tower D4
-
 COPY_EXISTING "%DurlagsTower_D4%.are" "override"
   // Bracers of Winter's Chill
   LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
@@ -224,12 +296,12 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
     new_item		= "mh#brac3"
   END
 
-  // Foesplitter +1
+  // Trollkiller +2
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to	= 7
     STR_VAR
-    item_to_add		= "mh#btax1"
+    item_to_add		= "mh#btax2"
   END
 
   // Battlecloak of Vycaena
@@ -255,8 +327,21 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
     item_to_add		= "mh#swrd1"
   END
 
+  // Rusty Katana
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 11
+    STR_VAR
+    item_to_add		= "mh#comp4"
+  END
 
-// Dradeel's Hut
+
+COPY_EXISTING "grael.cre" "override"
+  // Gauntlets of Smiting
+  ADD_CRE_ITEM "mh#brac5" #0 #0 #0 "unstealable" "gloves"
+
+
+// Isle of Balduran
 
 COPY_EXISTING "%IsleofBalduranNDradeelsHouse%.are" "override"
   // Robe of the Elements
@@ -268,7 +353,6 @@ COPY_EXISTING "%IsleofBalduranNDradeelsHouse%.are" "override"
   END
 
 
-// Balduran's Ship D2
 COPY_EXISTING "%IsleofBalduranNShip_D2%.are" "override"
   // Meteoric Iron
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM

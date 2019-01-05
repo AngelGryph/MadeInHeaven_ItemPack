@@ -1,6 +1,7 @@
 mh#armr3 White Skin of Umpluutu +3		Waizahb (shop)
 
 mh#belt2 Sunite Sash				Ziatar (battle)
+*mh#belt5 Girdle of Ogre Blood
 
 mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
 
@@ -14,12 +15,19 @@ mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
 
 mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 
+*mh#misc1 Pearl of Power
+
+*mh#ringa Shield Ring
+
 mh#robe2 Robe of the Necromancer		Waizahb (shop)
 mh#robe4 Shadow Dancer's Robe			Nazramu (shop)
 
 mh#shld3 Shield of the Phoenix +2		Temple of Cyric (chest)
 
 mh#staf1 Staff of Rumathil			Korlasz (battle)
+*mh#staf3 Staff of Moradin's Breath
+
+*mh#swrd9 Cold Flame +3
 
 mh#wand1 Wand of Illusions			Lich Outpost (table)
 

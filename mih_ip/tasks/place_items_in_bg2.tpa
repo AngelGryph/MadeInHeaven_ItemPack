@@ -32,14 +32,14 @@ COPY_EXISTING "duergar1.cre" "override"
   REPLACE_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"
 
 
-// Arnolinus the dwarf
+// Waukeen's Promenade
 
 COPY_EXISTING "shop02.sto" "override"
+  // Black Swan Armor +2
+  ADD_STORE_ITEM "mh#armr6" AFTER "plat10" #0 #0 #0 "identified" #1
   // Eversing +2
   ADD_STORE_ITEM "mh#armr2" AFTER "plat10" #0 #0 #0 "identified" #1
 
-
-// Maheer
 
 COPY_EXISTING "shop03.sto" "override"
   // Shining Star +1
@@ -48,59 +48,28 @@ COPY_EXISTING "shop03.sto" "override"
   ADD_STORE_ITEM "mh#btax1" AFTER "ax1h04" #0 #0 #0 "identified" #1
   // Smyte's Slicer +1
   ADD_STORE_ITEM "mh#swrd2" AFTER "sw1h20" #0 #0 #0 "identified" #1
+  // Slimecrusher +1
+  ADD_STORE_ITEM "mh#blun2" AFTER "blun02" #0 #0 #0 "identified" #1
 
 
-// Temple of Lathander
-
-COPY_EXISTING "temlath.sto" "override"
-  // Amulet against Undead
-  ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
-  // Necklace of Prayer Beads
-  ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
-  // Robe of the Pure Heart
-  ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #3 #1 #1 "identified" #1
-
-
-// Trademeet
-
-COPY_EXISTING "trmer02.sto" "override"
-  // Mutamin's Cloak
-  ADD_STORE_ITEM "mh#clck1" AFTER "clck03" #0 #0 #0 "identified" #1
-  // Bow of Eletha
-  ADD_STORE_ITEM "mh#lbow1" AFTER "bow04" #0 #0 #0 "identified" #1
-  // Terminus Est +2
-  ADD_STORE_ITEM "mh#swrd1" AFTER "sw1h02" #0 #0 #0 "identified" #1
+COPY_EXISTING "ribald.sto" "override"
+  // Ring of Acquity (moved from Lavok)
+  ADD_STORE_ITEM "ring40" AFTER "ring20" #0 #0 #0 "identified" #1
+  // Scarab versus Golems
+  ADD_STORE_ITEM "mh#amul6" AFTER "amul14" #0 #0 #0 "identified" #1
+  // Ring of Water Control
+  ADD_STORE_ITEM "mh#ringc" AFTER "ring28" #1 #1 #1 "identified" #1
+  // Staff of Water +2
+  ADD_STORE_ITEM "mh#staf5" AFTER "staf18" #0 #30 #30 "identified" #1
+  // Crystal Ball
+  ADD_STORE_ITEM "mh#misc3" AFTER "rods03" #3 #0 #0 "identified" #1
 
 
-// Temple of Oghma
-
-COPY_EXISTING "doghma.sto" "override"
-  // Gem of Insight
-  ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
-
-
-// Mae'var Guildhouse
-
-COPY_EXISTING "maevar.cre" "override"
-  // Catclaw +3
-  REPLACE_CRE_ITEM "mh#dagg1" #0 #0 #0 "unstealable" "weapon1" EQUIP
-
-
-COPY_EXISTING "thief7.cre" "override"
-  // Boots of the Master Ninja
-  ADD_CRE_ITEM "mh#boot1" #0 #0 #0 "unstealable" "boots"
-
-
-// D'Arnise Keep
-
-COPY_EXISTING "ar1301.are" "override"
-  // Shield of the Phoenix +2
-  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-    INT_VAR
-    container_to_add_to	= 5
-    STR_VAR
-    item_to_add		= "mh#shld3"
-  END
+COPY_EXISTING "ribald3.sto" "override"
+  // Helm of the Dwarven Lords
+  ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1
+  // Dragon's Tear Amulet
+  ADD_STORE_ITEM "mh#amul7" AFTER "potn42" #2 #0 #0 "identified" #1
 
 
 // Planar Sphere
@@ -135,7 +104,126 @@ COPY_EXISTING "tolger.cre" "override"
   ADD_CRE_ITEM "mh#ring5" #0 #0 #0 "unstealable" "lring"
 
 
+COPY_EXISTING "lavok01.cre"
+              "lavok02.cre"
+  // Shield Ring
+  ADD_CRE_ITEM "mh#ringa" #0 #0 #0 "unstealable" "rring"
+  // Ring of Wizardry (moved from jaga3.cre, replaces Ring of Acquity)
+  REPLACE_CRE_ITEM "ohringwi" #0 #0 #0 "unstealable" "lring"
+
+
+// Bridge District
+
+COPY_EXISTING "kaypal01.cre" "override"
+  // Gauntlets of Smiting
+  ADD_CRE_ITEM "mh#brac5" #0 #0 #0 "unstealable" "gloves"
+
+
+// Temple District
+
+COPY_EXISTING "temlath.sto" "override"
+  // Robe of the Pure Heart
+  ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1
+  // Shield of the Revenant +2
+  ADD_STORE_ITEM "mh#shld5" AFTER "staf05" #0 #1 #0 "identified" #1
+  // Blessed Helm of Lathander
+  ADD_STORE_ITEM "mh#helm3" AFTER "helm06" #1 #1 #1 "identified" #1
+  // Amulet against Undead
+  ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
+  // Necklace of Prayer Beads
+  ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
+  // Girdle of Beatification
+  ADD_STORE_ITEM "mh#bel4" LAST #0 #0 #0 "identified" #1
+
+
+// Lower Reaches (Cult of the Eyeless)
+
+COPY_EXISTING "ar0206.are" "override"
+  // Spinesheath +1
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 3
+    STR_VAR
+    item_to_add		= "mh#dagg2"
+  END
+
+
+// Docks District
+
+COPY_EXISTING "doghma.sto" "override"
+  // Gem of Insight
+  ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
+
+
+COPY_EXISTING "jagalvar.cre" "override"
+  // Storm's Garter
+  ADD_CRE_ITEM "mh#belt3" #1 #1 #1 "unstealable" "belt"
+
+
+COPY_EXISTING "jaga3.cre" "override"
+  // Edion's Ring of Wizardry (replaces normal Ring of Wizardry)
+  REPLACE_CRE_ITEM "mh#ringb" #0 #0 #0 "unstealable" "rring"
+
+
+// Mae'var Guildhouse
+
+COPY_EXISTING "maevar.cre" "override"
+  // Catclaw +3
+  REPLACE_CRE_ITEM "mh#dagg1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+
+
+COPY_EXISTING "thief7.cre" "override"
+  // Boots of the Master Ninja
+  ADD_CRE_ITEM "mh#boot1" #0 #0 #0 "unstealable" "boots"
+
+
+// D'Arnise Keep
+
+COPY_EXISTING "ar1301.are" "override"
+  // Shield of the Phoenix +2
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 5
+    STR_VAR
+    item_to_add		= "mh#shld3"
+  END
+
+
+// Trademeet
+
+COPY_EXISTING "trmer02.sto" "override"
+  // Mutamin's Cloak
+  ADD_STORE_ITEM "mh#clck1" AFTER "clck03" #0 #0 #0 "identified" #1
+  // Bow of Eletha
+  ADD_STORE_ITEM "mh#lbow1" AFTER "bow04" #0 #0 #0 "identified" #1
+  // Terminus Est +2
+  ADD_STORE_ITEM "mh#swrd1" AFTER "sw1h02" #0 #0 #0 "identified" #1
+
+
+COPY_EXISTING "temsup.sto" "override"
+  // Waukeen's Defender +2
+  ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1
+
+
+// Druid Grove
+
+COPY_EXISTING "cedruid2.cre" "override"
+  // Necklace of Adaption
+  ADD_CRE_ITEM "mh#amul6" #0 #0 #0 "none" "amulet"
+
+
 // Temple Ruins
+
+COPY_EXISTING "ar1403.are" "override"
+  // Amaunator's Legacy +3
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 4
+    charges1		= 1
+    STR_VAR
+    item_to_add		= "mh#swrd5"
+  END
+
 
 COPY_EXISTING "ar1403.are" "override"
   // Ring of White Bone
@@ -148,7 +236,7 @@ COPY_EXISTING "ar1403.are" "override"
   END
 
 
-// Windspear Hills / Firkraag's Lair
+// Windspear Hills
 
 COPY_EXISTING "vaelasa.cre" "override"
   // Sunite Sash
@@ -156,6 +244,8 @@ COPY_EXISTING "vaelasa.cre" "override"
 
 COMPILE "%MOD_FOLDER%/dialog/vaelasa_itempack.d"
 
+
+// Firkraag's Lair
 
 COPY_EXISTING "firban02.cre" "override"
   // White Hide of Umpluutu +2
@@ -169,7 +259,12 @@ COPY_EXISTING "firmag01.cre" "override"
   ADD_CRE_ITEM "mh#boot2" #0 #0 #0 "unstealable" "boots"
 
 
-// Therndle Daglefodd (Underdark)
+COPY_EXISTING "firkra02.cre" "override"
+  // Battlecloak of Vycaena (replaces extra Cloak of the Shield)
+  REPLACE_CRE_ITEM "mh#clck2" #0 #0 #0 "unstealable" "qitem3"
+
+
+// Underdark
 
 COPY_EXISTING "udsvir05.dlg" "override"
   DECOMPILE_AND_PATCH
@@ -182,11 +277,13 @@ COPY_EXISTING "udsvir05.dlg" "override"
   END
 
 
-// Ust Natha (Underdark)
+// Ust Natha
 
 COPY_EXISTING "uddrow23.sto" "override"
   // Ring of Mind Shielding
   ADD_STORE_ITEM "mh#ring7" AFTER "amul10" #0 #0 #0 "identified" #1
+  // Girdle of Ogre Blood
+  ADD_STORE_ITEM "mh#belt5" AFTER "shld22" #0 #0 #0 "identified" #1
   // Cloak of Arachnida
   ADD_STORE_ITEM "mh#clck3" AFTER "clck17" #2 #0 #0 "identified" #1
   // Shadow Dancer's Robe
@@ -195,15 +292,7 @@ COPY_EXISTING "uddrow23.sto" "override"
   ADD_STORE_ITEM "mh#robe2" AFTER "clck17" #0 #0 #0 "identified" #1
 
 
-// Firkraag (the red dragon)
-
-COPY_EXISTING "firkra02.cre" "override"
-  // Battlecloak of Vycaena (replaces extra Cloak of the Shield)
-  REMOVE_CRE_ITEM "clck20"
-  ADD_CRE_ITEM "mh#clck2" #0 #0 #0 "unstealable" "qitem3"
-
-
-// Potion shops
+// Various potion shops
 
 COPY_EXISTING "gorch.sto" "override"
               "murcrag.sto" "override"
@@ -211,5 +300,24 @@ COPY_EXISTING "gorch.sto" "override"
               "uhmer02.sto" "override"
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3
+  // Potion of Clairvoyance
+  ADD_STORE_ITEM "mh#potn2" AFTER "potn36" #1 #0 #0 "identified" #3
+
+
+// Suldanessenar
+
+COPY_EXISTING "dragblac.cre" "override"
+  // Pale Justice +4
+  ADD_CRE_ITEM "mh#swrd6" #0 #0 #0 "none" "inv"
+
+
+COPY_EXISTING "ar2806.are" "override"
+  // Redethemar +4
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 1
+    STR_VAR
+    item_to_add		= "mh#btax3"
+  END
 
 

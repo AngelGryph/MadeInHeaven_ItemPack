@@ -235,6 +235,56 @@ BEGIN katana3
     EXIT
 END
 
+IF ~PartyHasItem("mh#comp5")
+    Global("mh#BrokkAlicorn", "GLOBAL", 0)~
+BEGIN alicorn1
+  SAY @65
+  =
+  @66
+  IF ~PartyGoldGT(1999)~
+    REPLY @67
+    GOTO alicorn3
+  IF ~~
+    REPLY @68
+    GOTO alicorn2
+END
+
+IF ~~
+BEGIN alicorn2
+  SAY @69
+  IF ~~
+    DO ~SetGlobal("mh#BrokkAlicorn", "GLOBAL", 1)~
+    UNSOLVED_JOURNAL @70
+    EXIT
+END
+
+IF ~~
+BEGIN alicorn3
+  SAY @71
+  IF ~~
+    DO ~TakePartyItem("mh#comp5")
+        DestroyItem("mh#comp5")
+	TakePartyGold(2000)
+	DestroyGold(2000)
+	SetGlobal("mh#BrokkAlicorn", "GLOBAL", 2)
+	SetGlobalTimer("mh#BrokkAlicornForge", "GLOBAL", TWELVE_HOURS)~
+    UNSOLVED_JOURNAL @72
+    EXIT
+END
+
+IF ~Global("mh#BrokkAlicorn", "GLOBAL", 2)
+    GlobalTimerExpired("mh#BrokkAlicornForge", "GLOBAL")~
+BEGIN alicorn4
+  SAY @73
+  IF ~~
+    DO ~GiveItemCreate("mh#sper1", LastTalkedToBy(Myself), 0, 0, 0)
+        EraseJournalEntry(@70)
+        EraseJournalEntry(@72)
+        SetGlobal("mh#BrokkAlicorn", "GLOBAL", 3)~
+    SOLVED_JOURNAL @74
+    EXIT
+END
+
 IF ~True()~
 BEGIN default
   SAY @41
@@ -249,11 +299,17 @@ BEGIN default
       PartyGoldGT(1999)~
     REPLY @43
     GOTO ankheg3
-  IF ~PartyHasItem("mh#comp4")
+  IF ~Global("mh#BrokkKatana", "GLOBAL", 1)
+      PartyHasItem("mh#comp4")
       PartyHasItem("misc42")
       PartyGoldGT(999)~
     REPLY @64
     GOTO katana3
+  IF ~Global("mh#BrokkAlicorn", "GLOBAL", 1)
+      PartyHasItem("mh#comp5")
+      PartyGoldGT(1999)~
+    REPLY @75
+    GOTO alicorn3
   IF ~~
     REPLY @44
     GOTO store

@@ -1,22 +1,30 @@
 mh#amul1 Amulet against Undead			Song of the Morning (shop)
 mh#amul2 Necklace of Prayer Beads		The Lady's Hall (shop)
 mh#amul3 Gem of Insight				High Hedge (shop)
--mh#amul4 Gem of Seeing				Gullykin (event)
+mh#amul4 Mirror Amulet				Sorcerous Sundries (shop)
 mh#amul5 Necklace of Adaption			High Hedge (shop)
+mh#amul8 Periapt of Health			Gullykin (shop)
 
 mh#armr1 Winter Wolf Hide +1			Phendra's Scrolls (event)
 mh#armr2 Eversing +2				Brokk's Forge (shop)
+*mh#armr4 Celestial Chain +2			Brokk's Forge (event)
+*mh#armr5 Dwarven Full Plate +2			Brokk's Forge (event)
 
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
+mh#belt3 Storm's Garter				Centeol's Lair
+mh#belt4 Girdle of Beatification		Song of the Morning (shop)
 
 mh#blun1 Shining Star +1			Brokk's Forge (shop)
+mh#blun2 Slimecrusher +1			Brokk's Forge (shop)
 
 mh#boot1 Boots of the Master Ninja		Black Lily (shop)
 
 mh#brac1 Vambraces of Evil's Warding		Brokk's Forge (event)
-mh#brac3 Bracers of Winter's Chill		Durlag Tower (mushrooms)
+mh#brac3 Bracers of Winter's Chill		Durlag's Tower D4 (mushrooms)
+mh#brac5 Gauntlets of Smiting			Durlag's Tower L4 (battle)
 
-mh#btax1 Foesplitter +1				Durlag's Tower D4 (chest2
+mh#btax1 Foesplitter +1				Brokk's Forge (shop)
+mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
 
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Battlecloak of Vycaena			Durlag's Tower D4 (chest)
@@ -25,12 +33,23 @@ mh#clck3 Cloak of Arachnida			High Hedge (shop)
 mh#comp1 Meteoric Iron				Balduran's Ship (chest)
 mh#comp2 Mithral Ore				Durlag's Tower D4 (sack)
 mh#comp3 Lux Veritatis				Gullykin (event)
+mh#comp4 Rusty Katana				Durlag's Tower D4 (slime)
+mh#comp5 Unicorn Horn				Bandit Camp (sack)
+
+mh#dagg2 Spinesheath +1				Cloakwood Mine (battle)
 
 mh#hamm1 Final Strike +3			Ulgoth's Beard (event)
 
 mh#helm1 Helm of Valor				Brokk's Forge (shop)
 
+mh#ioun3 Bright Orange Ioun Stone		Ulgoth's Beard (battle)
+
+mh#misc2 Bag of Tricks				Cloakwood (battle)
+mh#misc3 Crystal Ball				High Hedge (shop)
+mh#misc4 Gem of Seeing				Gullykin (event)
+
 mh#potn1 Oil of Acid Resistance			High Hedge (shop)
+mh#potn2 Potion of Clairvoyance			High Hedge (shop)
 
 mh#ring1 Ring of the Lich +3			Candlekeep Catacombs (chest)
 mh#ring2 Ring of Warmth				Phendra's Scrolls (shop)
@@ -41,10 +60,17 @@ mh#ring5 Ring of Protection from Silence	Durlag's Tower D1 (chest)
 mh#robe1 Robe of the Elements			Dradeel' Hut (chest)
 mh#robe3 Robe of the Pure Heart			Gullykin (shop)
 
+mh#sper1 Alicorn Spear +2			Brokk's Forge (event)
+
+mh#staf2 Spendelard's Protector +1		Bandit Camp (battle)
+mh#staf6 Staff of Swarming Insects +2		Sorcerous Sundries (shop)
+
 mh#shld1 Meteoric Shield +2			Brokk's Forge (event)
 mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
 
 mh#swrd1 Terminus Est +2			Durlag's Tower D4 (chest)
 mh#swrd2 Smythe's Slicer +1			Brokk's Forge (shop)
+mh#swrd7 Mirthal +1				Nashkel Mines (battle)
+mh#swrd8 Golden Sky +2				Brokk's Forge (event)
 
 

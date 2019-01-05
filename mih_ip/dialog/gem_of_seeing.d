@@ -11,7 +11,7 @@ BEGIN END	// Transaction list (empty=all)
   ~SetGlobal("mh#GemOfSeeing", "GLOBAL", 1)~
 
 
-// Dialog if player bought the Gem of Seeing.
+// Halfling trader "Furret" dialog.
 
 BEGIN "mh#hlftr"
 
@@ -82,6 +82,87 @@ IF ~~
     DO ~GiveItem("mh#comp3", LastTalkedToBy())
         EscapeArea()~
     UNSOLVED_JOURNAL @19
+    EXIT
+END
+
+
+IF ~~
+BEGIN panic1
+  SAY @39
+  IF ~~
+    EXTERN "mh#bobas" intro2
+END
+
+IF ~~
+BEGIN panic2
+  SAY @40
+  IF ~~
+    EXTERN "mh#bobas" intro3
+END
+
+IF ~~
+BEGIN panic3
+  SAY @41
+  =
+  @42
+  IF ~~
+    EXTERN "mh#bobas" intro4
+END
+
+IF ~Global("mh#GemOfSeeing", "GLOBAL", 1)
+    !Dead("mh#bobas")~
+BEGIN watch_out
+  SAY @43
+  IF ~~
+    EXIT
+END
+
+IF ~Global("mh#GemOfSeeing", "GLOBAL", 1)
+    Dead("mh#bobas")~
+BEGIN thanks
+  SAY @44
+  IF ~~
+    REPLY @45
+    GOTO story
+  IF ~~
+    REPLY @46
+    GOTO story
+  IF ~~
+    REPLY @47
+    GOTO story
+END
+
+
+// Bobas the dwarf
+
+BEGIN "mh#bobas"
+
+IF ~NumTimesTalkedTo(0)~
+BEGIN intro1
+  SAY @48
+  IF ~~
+    EXTERN "mh#hlftr" panic1
+END
+
+IF ~~
+BEGIN intro2
+  SAY @49
+  IF ~~
+    EXTERN "mh#hlftr" panic2
+END
+
+IF ~~
+BEGIN intro3
+  SAY @50
+  IF ~~
+    EXTERN "mh#hlftr" panic3
+END
+
+IF ~~
+BEGIN intro4
+  SAY @51
+  IF ~~
+    DO ~Enemy()~
     EXIT
 END
 

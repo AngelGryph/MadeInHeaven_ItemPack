@@ -1,37 +1,56 @@
 mh#amul1 Amulet against Undead			Temple of Lathander (shop)
 mh#amul2 Necklace of Prayer Beads		Temple of Lathander (shop)
 mh#amul3 Gem of Insight				Temple of Oghma (shop)
-mh#amul5 Necklace of Adaption
+mh#amul5 Necklace of Adaption			Druid Grove (battle)
+mh#amul6 Scarab versus Golems			Adventurer's Market (shop)
+mh#amul7 Dragon's Tear Amulet			Adventurer's Market (ch6)
 
 mh#armr1 Winter Wolf Hide +1			Chateau Irenicus (battle)
 mh#armr2 Eversing +2				Arnolinus the dwarf (shop)
 mh#armr3 White Skin of Umpluutu			Windspear Hills (battle)
+mh#armr6 Black Swan Armor +2			Arnolinus the dwarf (shop)
 
 mh#belt1 Girdle of Dwarvenkind			Chateau Irenicus (chest)
 mh#belt2 Sunite Sash				Vaelasa (event or battle)
+mh#belt3 Storm's Garter				Harper Hold (battle)
+mh#belt4 Girdle of Beatification		Temple of Lathander (shop)
+mh#belt5 Girdle of Ogre Blood			Ust Natha (shop)
 
 mh#boot1 Boots of the Master Ninja		Mae'var Guildhouse (battle)
 mh#boot2 Boots of Striding and Springing	Firkraag's Lair (battle)
 
 mh#blun1 Shining Star +1			Maheer (shop)
+mh#blun2 Slimecrusher +1			Maheer (shop)
 
 mh#brac1 Vambraces of Evil's Warding		Chateau Irenicus (import)
 mh#brac2 Gauntlets of the Dwarven King		Chateau Irenicus (import)
 mh#brac3 Bracers of Winter's Chill		Therndle Daglefodd (event)
+mh#brac5 Gauntlets of Smiting			Bridge District (battle)
 
 mh#btax1 Foesplitter +1				Maheer (shop)
+mh#btax3 Redethemar +4				Tree of Life (container)
 
 mh#clck1 Mutamin's Cloak			Trademeet Merchant (shop)
 mh#clck2 Battlecloak of Vycaena			Firkraag (battle)
 mh#clck3 Cloak of Arachnida			Ust Natha (shop)
 
 mh#dagg1 Catclaw +3				Mae'var Guildhouse (battle)
+mh#dagg2 Spinesheath +1				Undead City (bones)
 
 mh#helm1 Helm of Valor				D'Arnise Keep (chest)
+mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)
+mh#helm3 Blessed Helm of Lathander		Temple of Lathander (shop)
+
+*mh#ioun3 Bright Orange Ioun Stone
 
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 
+*mh#misc1 Pearl of Power
+*mh#misc2 Bag of Tricks				Druid Grove (battle)
+mh#misc3 Crystal Ball				Adventurer's Market (shop)
+
 mh#potn1 Oil of Acid Resistance			(various potion shops)
+mh#potn2 Potion of Clairvoyance			(various potion shops)
 
 mh#ring2 Ring of Warmth				Chateau Irenicus (import)
 mh#ring3 Ring of the Neophyte			Chateau Irenicus (import)
@@ -39,20 +58,27 @@ mh#ring4 Ring of Shocking Grasp			Chateau Irenicus (import)
 mh#ring5 Ring of Protection from Silence	Planar Sphere (battle)
 mh#ring6 Ring of White Bone			Temple Ruins (werewolf cave)
 mh#ring7 Ring of Mind Shielding			Ust Natha (shop)
+mh#ringa Shield Ring				Planar Sphere (event)
+mh#ringb Edion's Ring of Wizardry		Harper Stronghold (battle)
+mh#ringc Ring of Water Control			Adventurer's Market (shop)
 
 mh#robe1 Robe of the Elements			Firkraag's Lair (battle)
 mh#robe2 Robe of the Necromancer		Ust Natha (shop)
 mh#robe3 Robe of the Pure Heart			Temple of Lathander (shop)
 mh#robe4 Shadow Dancer's Robe			Ust Natha (shop)
 
-mh#shld1 Meteoric Shield +2
 mh#shld3 Shield of the Phoenix +2		D'Arnise Keep (chest)
+mh#shld5 Shield of the Revenant +2		Temple of Lathander (shop)
+mh#shld7 Waukeen's Defender +2			Temple of Waukeen (shop)
 
 mh#staf1 Staff of Rumathil			Planar Sphere (battle)
+mh#staf5 Staff of Water +2			Adventurers Market (shop)
 
 mh#swrd1 Terminus Est +2			Trademeet Merchant (shop)
 mh#swrd2 Smythe's Slicer +1			Maheer (shop)
 mh#swrd4 Planar Sword +1			Planar Sphere (controls)
+mh#swrd5 Amaunator's Legacy +3			Temple Ruins (statue)
+mh#swrd6 Pale Justice +4			Suldanessenar (battle)
 
 mh#wand1 Wand of Illusions			Planar Sphere (chest)
 

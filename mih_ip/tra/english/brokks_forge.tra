@@ -85,3 +85,20 @@ The smith Brokk can fix the rusty katana I found in Durlag's tower.  He needs a 
 
 Brokk has restored the katana I found in Durlag's Tower to its former glory.~
 @64   = ~I have the diamond and gold, can you restore this katana for me?~
+@65   = ~Mm, what's that horn there, m'<GIRLBOY>?~
+@66   = ~Ah, this be da horn of a magnificent woodland creature.  A shame t'kill one really, but it seems ye be nae ta blame fer this.  If ye like, I kin be puttin' it on a spear head fer ya.  It'll cost ye, oh, 2,000 gold.~
+@67   = ~A splendid idea, let's do it!~
+@68   = ~Mm, not right now I'm afraid.~
+@69   = ~As ye wish, m'<GIRLBOY>.  I'll be here when ye'r ready.~
+@70   = ~Brokk's Alicorn Spear
+
+The smith Brokk can use the unicorn horn I found in the bandit camp to make a magical spear.  If I want it, I should give him the horn and 2,000 gold.~
+@71   = ~Alright, this will nae take long.  Come back tomorrow fer it, aye?~
+@72   = ~Brokk's Alicorn Spear
+
+The smith Brokk is making a spear out of the unicorn horn I found in the bandit camp.  He told me to come back for it the next day.~
+@73   = ~Ah, <CHARNAME>.  Yer spear be ready fer ya.  Use it well, aye?~
+@74   = ~Brokk's Alicorn Spear
+
+Brokk made a magical spear for me out of the unicorn horn I found in the bandit camp.~
+@75   = ~I've got the horn and gold, let's make that spear.~

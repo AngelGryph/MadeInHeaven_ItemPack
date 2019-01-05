@@ -1,19 +1,57 @@
-// Sister Garlena
+// Watcher's Keep
 
 COPY_EXISTING "garlena.sto" "override"
+  // Scimitar of the Seven +4
+  ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1
+  // Mystery of the Dead +3
+  ADD_STORE_ITEM "mh#shld6" LAST #0 #0 #0 "identified" #1
   // Ring of Anti-Venom (from Vongoethe)
   ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1
   // Sky Blue Ioun Stone
   ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
-  // Scimitar of the Seven +4
-  ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1
 
 
-// Arcana Archives
+COPY_EXISTING "ar3017.are" "override"
+  // Book of Exalted Deeds
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 3
+    charges1		= 1
+    STR_VAR
+    item_to_add		= "mh#tome1"
+  END
+
+
+COPY_EXISTING "ar3027.are" "override"
+  // Libram of Ineffable Damnation
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 1
+    charges1		= 1
+    STR_VAR
+    item_to_add		= "mh#tome5"
+  END
+
+
+COPY_EXISTING "fsdragon.cre" "override"
+  // Shield of Three Kings +5
+  ADD_CRE_ITEM "mh#shld4" #0 #0 #0 "unstealable" "inv"
+
+
+// Ancient Grove
+
+COPY_EXISTING "illasera.cre" "override"
+  // Bracers of the Wind
+  ADD_CRE_ITEM "mhbrac4" #0 #0 #0 "unstealable" "gloves"
+
+
+// Saradush
 
 COPY_EXISTING "25spell.sto" "override"
+  // Libram of Silver Magic
+  ADD_STORE_ITEM "mh#tome4" AFTER "restore" #1 #0 #0 "identified" #1
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9
   // Ring of Shooting Stars
@@ -22,12 +60,54 @@ COPY_EXISTING "25spell.sto" "override"
   ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1
   // Wand of Illusions
   ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
+ 
 
 
-// Vongoethe the lich
+COPY_EXISTING "gromg08.cre" "override"
+  // Silver Bracers of Kedl
+  ADD_CRE_ITEM "mh#brac6" #0 #0 #0 "unstealable" "gloves"
+
+
+// Forest of Mir / Marching Mountains
+
+COPY_EXISTING "ar5202.are" "override"
+  // Book of Vile Darkness
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 2
+    charges1		= 1
+    STR_VAR
+    item_to_add		= "mh#tome2"
+  END
+
+
+COPY_EXISTING "ar5204.are" "override"
+  // Libram of Gainful Conjuration
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 2
+    charges1		= 1
+    STR_VAR
+    item_to_add		= "mh#tome4"
+  END
+
+
+// Amkethran
+
+COPY_EXISTING "amcler02.sto" "override"
+  // Waukeen's Defender +2
+  ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1
+
 
 COPY_EXISTING "amlich01.cre" "override"
   // Ring of the Lich +3
   REPLACE_CRE_ITEM "mh#ring1" #0 #0 #0 "unstealable" "lring"
+
+
+// Sendai's Enclave
+
+COPY_EXISTING "sengua03.cre" "override"
+  // Cloak of the Night Sky
+  ADD_CRE_ITEM "mh#clck4" #0 #0 #0 "unstealable" "cloak"
 
 

@@ -1,21 +1,21 @@
 IF
   Global("mh#GemOfSeeing", "GLOBAL", 1)
   Global("mh#GemQuestSpawn", "MYAREA", 0)
-  !Dead("halftr")
+  !Dead("mh#Furret")
 THEN
   RESPONSE #100
-    CreateCreature("mh#hlftr",[2450.350], 4)
-    //CreateCreature("mh#???",[2320.385], 4)
+    CreateCreature("mh#hlftr",[2620.460], 13)
+    CreateCreature("mh#bobas",[2670.480], 5)
     SetGlobal("mh#GemQuestSpawn", "MYAREA", 1)
 END
 
 IF
   Global("mh#GemOfSeeing", "GLOBAL", 2)
   Global("mh#GemQuestSpawn", "MYAREA", 0)
-  !Dead("halftr")
+  !Dead("mh#Furret")
 THEN
   RESPONSE #100
-    CreateCreature("mh#hlftr",[2450.350], 4)
+    CreateCreature("mh#hlftr",[2620.460], 2)
     SetGlobal("mh#GemQuestSpawn", "MYAREA", 1)
 END
 
