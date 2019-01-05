@@ -70,7 +70,6 @@ COPY_EXISTING "inn3351.sto" "override"
   PATCH_IF $ini_hash("bg1_add_obscure_items")
   BEGIN
     ADD_STORE_ITEM "bow04" AFTER "bow02" #0 #0 #0 "identified" #1
-    ADD_STORE_ITEM "brac02" AFTER "brac01" #0 #0 #0 "identified" #1
   END
 
   BUT_ONLY_IF_IT_CHANGES
