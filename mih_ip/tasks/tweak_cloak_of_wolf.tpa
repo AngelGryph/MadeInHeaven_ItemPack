@@ -1,17 +1,11 @@
 // Cloak of the Wolf tweak
 
 COPY_EXISTING "clck04.itm" "override"
-  LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-    INT_VAR
-    opcode		= 73	// Stat: Extra Damage Modifier
-    target		= 1	// Self
-    timing		= 2	// While equipped
-    parameter1		= 1
-  END
+  SAY IDENTIFIED_DESC @0
 
   LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
     INT_VAR
-    opcode		= 176	// Stat: Movement Modifier (II)
+    opcode		= 0	// AC versus damage type
     target		= 1	// Self
     timing		= 2	// While equipped
     parameter1		= 1

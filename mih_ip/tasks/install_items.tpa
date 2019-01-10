@@ -991,6 +991,11 @@ COPY "%MOD_FOLDER%/items/mh#sper1.itm" "override"
   SAY NAME2 @199
   SAY IDENTIFIED_DESC @200
 
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_poison_arrays"
+  END
+
 
 // mh#staf1 - Staff of Rumathil +2
 
