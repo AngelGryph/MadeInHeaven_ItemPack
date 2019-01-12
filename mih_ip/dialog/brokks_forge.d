@@ -226,6 +226,8 @@ BEGIN katana3
   IF ~~
     DO ~TakePartyItemNum("misc42", 1)
         DestroyItem("misc42")
+        TakePartyItem("mh#comp4")
+        DestroyItem("mh#comp4")
 	TakePartyGold(1000)
 	DestroyGold(1000)
 	GiveItemCreate("mh#swrd8", LastTalkedToBy(Myself), 0, 0, 0)

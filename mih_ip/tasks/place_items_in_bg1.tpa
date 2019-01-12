@@ -291,6 +291,9 @@ COPY_EXISTING "%DurlagsTower_D1%.are" "override"
 COPY_EXISTING "%DurlagsTower_D4%.are" "override"
   // Bracers of Winter's Chill
   LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
+    INT_VAR
+    charges1		= 1
+    charges2		= 1
     STR_VAR
     old_item		= "brac01"
     new_item		= "mh#brac3"

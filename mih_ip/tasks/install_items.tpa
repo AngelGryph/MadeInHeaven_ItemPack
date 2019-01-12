@@ -607,6 +607,12 @@ COPY "%MOD_FOLDER%/items/mh#comp3.itm" "override"
 // mh#comp4 - Rusty Katana
 
 COPY "%MOD_FOLDER%/items/mh#comp4.itm" "override"
+  PATCH_IF GAME_IS "bgee"
+  BEGIN
+    SAY NAME1 #26711
+    SAY UNIDENTIFIED_DESC #26713
+  END
+
   SAY NAME2 @181
   SAY IDENTIFIED_DESC @182
 
