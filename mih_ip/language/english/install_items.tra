@@ -500,8 +500,8 @@ Charge abilities:
 - Web (2/day, 10th level caster)
 
 Weight: 3~
-@81   = ~Mithral Ore~
-@82   = ~These are lumps of mithral ore.  Mithral is a metal as hard as steel but with half the weight.  Elves use it to fashion the fabled elven chain, while dwarves forge it into weapons and armor that become the stuff of myth and legend.  Only an elven or dwarven smith knows how to properly smelt the ore and fashion it into anything useful.~
+@81   = ~Arandur Ore~
+@82   = ~These shards of volcanic glass seem like a worthless curiosity at first, but closer inspection reveals they contain veins of arandur, a rare metal that is very prized by dwarven weaponsmiths.~
 @83   = ~Lux Veritatis~
 @84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.~
 @85   = ~Ring of Protection from Silence~
@@ -512,7 +512,7 @@ STATISTICS:
 Equipped abilities:
 - Immunity to Silence~
 @87   = ~Celestial Chain +2~
-@88   = ~This suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously forged from very fine mithral rings by the dwarven smith Brokk, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a price to their abilities.
+@88   = ~Forged by the dwarven smith Brokk for <CHARNAME>, this suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously woven from precisely crafted arandur rings by the old dwarf, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a small price to their abilities.
 
 STATISTICS:
 
@@ -529,7 +529,7 @@ Requires:
 
 Weight: 7~
 @89   = ~Dwarven Full Plate +2~
-@90   = ~This stout full plate is the pinnacle of the craftsmanship of the dwarven smith Brokk.  A sturdy base of the finest dwarven steel has been coated with a layer of mithral for extra hardness.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold.  Truly a masterwork item.
+@90   = ~This stout full plate was commissioned from the dwarven smith Brokk by <CHARNAME>.  Forged entirely from the rare metal arandur, it is the pinnacle of the craftsmanship of the old dwarf.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold, adding aditional protection.  It is unlikely you will find a more sturdy suit of armor anywhere on the Sword Coast.
 
 Armor Class: -1 (-5 vs. slashing, -4 vs. piercing and missile)
 Requires:

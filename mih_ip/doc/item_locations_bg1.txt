@@ -7,8 +7,8 @@ mh#amul8 Periapt of Health			Gullykin (shop)
 
 mh#armr1 Winter Wolf Hide +1			Phendra's Scrolls (event)
 mh#armr2 Eversing +2				Brokk's Forge (shop)
-*mh#armr4 Celestial Chain +2			Brokk's Forge (event)
-*mh#armr5 Dwarven Full Plate +2			Brokk's Forge (event)
+mh#armr4 Celestial Chain +2			Brokk's Forge (event)
+mh#armr5 Dwarven Full Plate +2			Brokk's Forge (event)
 
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
 mh#belt3 Storm's Garter				Centeol's Lair
