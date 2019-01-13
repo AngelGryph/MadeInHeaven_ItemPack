@@ -1124,9 +1124,9 @@ COPY "%MOD_FOLDER%/items/mh#swd4a.itm" "override"
 ACTION_IF ENGINE_IS "bgee bg2ee"
 BEGIN
   EXTEND_BOTTOM "baldur.bcs" "%MOD_FOLDER%/scripts/planar_sword_ee.baf"
-  USING "%MOD_FOLDER%/tra/%LANGUAGE%/planar_sword.tra"
+  USING "%MOD_FOLDER%/language/%LANGUAGE%/planar_sword.tra"
   EXTEND_BOTTOM "baldur25.bcs" "%MOD_FOLDER%/scripts/planar_sword_ee.baf"
-  USING "%MOD_FOLDER%/tra/%LANGUAGE%/planar_sword.tra"
+  USING "%MOD_FOLDER%/language/%LANGUAGE%/planar_sword.tra"
 END
 ELSE
 BEGIN
