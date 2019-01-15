@@ -1,4 +1,4 @@
-// Korlasz
+// Korlasz's Crypt
 
 COPY_EXISTING "bdshkorl.cre" "override"
   // Staff of Rumathil
@@ -31,6 +31,8 @@ COPY_EXISTING "bdbellow.sto" "override"
 // Nazramu's Store
 
 COPY_EXISTING "bdnazram.sto" "override"
+  // Girdle of Ogre's Blood
+  ADD_STORE_ITEM "mh#belt5" AFTER "bdbelt01" #1 #0 #0 "identified" #1
   // Catclaw +3
   ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1
   // Crystal Clear Ioun Stone
@@ -61,17 +63,21 @@ COPY_EXISTING "bd1200.are" "override"
     item_to_add			= "mh#wand1"
   END
 
-
-// Underground River
-
-
-COPY_EXISTING "bd5100.are" "override"
-  // Gauntlets of the Dwarven King
+  // Pearl of Power
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
-    container_to_add_to		= 4
+    container_to_add_to		= 6
+    charges1			= 1
     STR_VAR
-    item_to_add			= "mh#brac2"
+    item_to_add			= "mh#misc1"
+  END
+
+  // Shield Ring
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 9
+    STR_VAR
+    item_to_add			= "mh#ringa"
   END
 
 
@@ -87,7 +93,7 @@ COPY_EXISTING "bd7210.are" "override"
   END
 
 
-// Temple of Cyric
+// Temple of Bhaal/Cyric
 
 COPY_EXISTING "bd7230.are" "override"
   // Shield of the Phoenix +2
@@ -98,8 +104,6 @@ COPY_EXISTING "bd7230.are" "override"
     item_to_add			= "mh#shld3"
   END
 
-
-// Ziatar
 
 COPY_EXISTING "bdziatar.cre" "override"
   // Sunite Sash
@@ -117,5 +121,40 @@ COPY_EXISTING "bd7410.are" "override"
     STR_VAR
     item_to_add			= "mh#lbow1"
   END
+
+
+// Underground River
+
+COPY_EXISTING "bd5100.are" "override"
+  // Gauntlets of the Dwarven King
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 4
+    STR_VAR
+    item_to_add			= "mh#brac2"
+  END
+
+
+// Kanaglym
+
+COPY_EXISTING "bd5300.are" "override"
+  // Staff of Moradin's Breath
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to		= 3
+    charges2			= 3
+    STR_VAR
+    item_to_add			= "mh#staf3"
+  END
+
+
+// Avernus
+
+COPY_EXISTING "bdillaru.cre" "override"
+  SET_BG2_PROFICIENCY PROFICIENCYBASTARDSWORD 2
+  SET_BG2_PROFICIENCY PROFICIENCYLONGSWORD 0
+
+  // Cold Flame +3
+  REPLACE_CRE_ITEM "mh#swrd9" #0 #0 #0 "none" "weapon2"
 
 

@@ -148,6 +148,13 @@ CLEAR_IDS_MAP
 
 COPY_EXISTING "elwatg01.cre" "override"
               "elemhydr.cre" "override"
+	      // Added by BG1EE
+	      "bdwe1str.cre" "override"
+	      "bdwe2str.cre" "override"
+	      "bdweledg.cre" "override"
+	      "bdweleds.cre" "override"
+	      "bdwelemg.cre" "override"
+	      "bdwelems.cre" "override"
 	      // Added by BG2EE
               "ohbewwei.cre" "override"
               "ohbwat01.cre" "override"
