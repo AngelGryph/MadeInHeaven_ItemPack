@@ -134,7 +134,7 @@ COPY_EXISTING "highhedg.sto" "override"
   ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1
 
   // Crystal Ball
-  ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #3 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1
 
 
 // Red Canyons

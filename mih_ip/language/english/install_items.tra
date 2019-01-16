@@ -1155,12 +1155,12 @@ Charge abilities:
 Weight: 3~
 @194  = ~Crystal Ball~
 @195  = ~This is a perfect sphere of clearest crystal.  Inside you see a swirling mist that sometimes seems to take vague shapes.  According to legends, mages or priests can use crystal balls like these to observe distant places magically, but you'll have to properly identify this item first.~
-@196  = ~This is a crystal ball, probably one of the most well-known magical items in existence and frequently used by wizards, priests, shamans, witch-doctors, gypsies and other people with a knack for magic to remotely view places of interest.
+@196  = ~This is a crystal ball, probably one of the most well-known magical items in existence and frequently used by wizards, priests, shamans, witch-doctors, gypsies and other people with a knack for magic to remotely view places of interest.  The ball only has a limited number of charges, and when they run out it shatters into useless shards.
 
 STATISTICS:
 
 Charge abilities:
-- Clairvoyance (3/day)
+- Clairvoyance
 
 Weight: 2~
 @197  = ~Ring of Water Control~
