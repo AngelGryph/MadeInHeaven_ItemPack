@@ -29,7 +29,8 @@ END
 
 COPY_EXISTING "duergar1.cre" "override"
   // Winter Wolf Hide +1
-  REPLACE_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"
+  ADD_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"
+  REMOVE_CRE_ITEM "leat01"
 
 
 // Waukeen's Promenade
@@ -99,7 +100,8 @@ COPY_EXISTING "ar0411.are" "override"
 COPY_EXISTING "tolger.cre" "override"
               "tolger2.cre" "override"
   // Staff of Rumathil +2
-  REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "staf01"
   // Ring of Protection from Silence
   ADD_CRE_ITEM "mh#ring5" #0 #0 #0 "unstealable" "lring"
 
@@ -109,7 +111,8 @@ COPY_EXISTING "lavok01.cre"
   // Shield Ring
   ADD_CRE_ITEM "mh#ringa" #0 #0 #0 "unstealable" "rring"
   // Ring of Wizardry (moved from jaga3.cre, replaces Ring of Acquity)
-  REPLACE_CRE_ITEM "ohringwi" #0 #0 #0 "unstealable" "lring"
+  ADD_CRE_ITEM "ohringwi" #0 #0 #0 "unstealable" "lring"
+  REMOVE_CRE_ITEM "ring40"
 
 
 // Bridge District
@@ -162,14 +165,16 @@ COPY_EXISTING "jagalvar.cre" "override"
 
 COPY_EXISTING "jaga3.cre" "override"
   // Edion's Ring of Wizardry (replaces normal Ring of Wizardry)
-  REPLACE_CRE_ITEM "mh#ringb" #0 #0 #0 "unstealable" "rring"
+  ADD_CRE_ITEM "mh#ringb" #0 #0 #0 "unstealable" "rring"
+  REMOVE_CRE_ITEM "ohringwi" "ring08"
 
 
 // Mae'var Guildhouse
 
 COPY_EXISTING "maevar.cre" "override"
   // Catclaw +3
-  REPLACE_CRE_ITEM "mh#dagg1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "mh#dagg1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "sw1h07"
 
 
 COPY_EXISTING "thief7.cre" "override"
@@ -254,14 +259,16 @@ COPY_EXISTING "firban02.cre" "override"
 
 COPY_EXISTING "firmag01.cre" "override"
   // Robe of the Elements
-  REPLACE_CRE_ITEM "mh#robe1" #0 #0 #0 "unstealable" "armor"
+  ADD_CRE_ITEM "mh#robe1" #0 #0 #0 "unstealable" "armor"
+  REMOVE_CRE_ITEM "clck12"
   // Boots of Striding & Springing
   ADD_CRE_ITEM "mh#boot2" #0 #0 #0 "unstealable" "boots"
 
 
 COPY_EXISTING "firkra02.cre" "override"
   // Battlecloak of Vycaena (replaces extra Cloak of the Shield)
-  REPLACE_CRE_ITEM "mh#clck2" #0 #0 #0 "unstealable" "qitem3"
+  ADD_CRE_ITEM "mh#clck2" #0 #0 #0 "unstealable" "inv"
+  REMOVE_CRE_ITEM "clck20"
 
 
 // Underdark

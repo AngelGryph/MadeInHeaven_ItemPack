@@ -101,7 +101,8 @@ COPY_EXISTING "amcler02.sto" "override"
 
 COPY_EXISTING "amlich01.cre" "override"
   // Ring of the Lich +3
-  REPLACE_CRE_ITEM "mh#ring1" #0 #0 #0 "unstealable" "lring"
+  ADD_CRE_ITEM "mh#ring1" #0 #0 #0 "unstealable" "lring"
+  REMOVE_CRE_ITEM "ring46"
 
 
 // Sendai's Enclave

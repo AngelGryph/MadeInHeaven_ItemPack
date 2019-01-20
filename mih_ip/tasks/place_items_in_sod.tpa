@@ -2,7 +2,8 @@
 
 COPY_EXISTING "bdshkorl.cre" "override"
   // Staff of Rumathil
-  REPLACE_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "mh#staf1" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "staf02"
 
 
 // Sorcerous Sundries
@@ -151,10 +152,10 @@ COPY_EXISTING "bd5300.are" "override"
 // Avernus
 
 COPY_EXISTING "bdillaru.cre" "override"
+  // Cold Flame +3
+  ADD_CRE_ITEM "mh#swrd9" #0 #0 #0 "none" "weapon2"
+  REMOVE_CRE_ITEM "sw1h41"
   SET_BG2_PROFICIENCY PROFICIENCYBASTARDSWORD 2
   SET_BG2_PROFICIENCY PROFICIENCYLONGSWORD 0
-
-  // Cold Flame +3
-  REPLACE_CRE_ITEM "mh#swrd9" #0 #0 #0 "none" "weapon2"
 
 

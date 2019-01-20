@@ -68,7 +68,7 @@ mh#staf6 Staff of Swarming Insects +2		Sorcerous Sundries (shop)
 mh#shld1 Meteoric Shield +2			Brokk's Forge (event)
 mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
 
-mh#swrd1 Terminus Est +2			Durlag's Tower D4 (chest)
+mh#swrd1 Terminus Est +2			Durlag's Tower D3 (battle)
 mh#swrd2 Smythe's Slicer +1			Brokk's Forge (shop)
 mh#swrd7 Mirthal +1				Nashkel Mines (battle)
 mh#swrd8 Golden Sky +2				Brokk's Forge (event)

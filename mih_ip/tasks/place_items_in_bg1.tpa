@@ -141,7 +141,8 @@ COPY_EXISTING "highhedg.sto" "override"
 
 COPY_EXISTING "bassil.cre" "override"
   // The Kneecapper (from Hurgan Stoneblade)
-  REPLACE_CRE_ITEM "hamm04" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "hamm04" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "hamm03"
 
 
 // Nashkel / Carnival
@@ -153,7 +154,8 @@ COPY_EXISTING "sto4905.sto" "override"
 
 COPY_EXISTING "greywo.cre" "override"
   // Mirthal (replaces Varscona)
-  REPLACE_CRE_ITEM "mh#swrd7" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "mh#swrd7" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "sw1h06"
 
 
 // Gullykin
@@ -176,17 +178,20 @@ COPY_EXISTING "mutami.cre" "override"
 
 COPY_EXISTING "taugos.cre" "override"
   // Aishideena (from Bassilius)
-  REPLACE_CRE_ITEM "hamm03" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "hamm03" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "hamm02"
 
 
 COPY_EXISTING "raemon.cre" "override"
   // Varscona (from Greywolf)
-  REPLACE_CRE_ITEM "sw1h06" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "sw1h06" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "sw1h04"
 
 
 COPY_EXISTING "venkt.cre" "override"
   // Spendelard's Protector
-  REPLACE_CRE_ITEM "mh#staf2" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
+  ADD_CRE_ITEM "mh#staf2" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
+  REMOVE_CRE_ITEM "staf02"
 
 
 COPY_EXISTING "%BanditCamp_Tent1%.are" "override"
@@ -221,7 +226,8 @@ COPY_EXISTING "coksmth.cre" "override"
 
 COPY_EXISTING "natash.cre" "override"
   // Spinesheath
-  REPLACE_CRE_ITEM "mh#dagg2" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  ADD_CRE_ITEM "mh#dagg2" #0 #0 #0 "unstealable" "weapon1" EQUIP
+  REMOVE_CRE_ITEM "dagg01"
 
 
 // Baldur's Gate
@@ -261,7 +267,9 @@ COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
 
 COPY_EXISTING "hurgan.cre" "override"
   // Final Strike +3
-  REPLACE_CRE_ITEM "mh#hamm1" #0 #0 #0 "unstealable" "qitem3"
+  ADD_CRE_ITEM "mh#hamm1" #0 #0 #0 "unstealable" "inv"
+  REMOVE_CRE_ITEM "hamm04"
+
   
 COPY_EXISTING "hurgan.dlg" "override"
   // Final Strike +3
@@ -288,17 +296,13 @@ COPY_EXISTING "%DurlagsTower_D1%.are" "override"
   END
 
 
-COPY_EXISTING "%DurlagsTower_D4%.are" "override"
-  // Bracers of Winter's Chill
-  LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
-    INT_VAR
-    charges1		= 1
-    charges2		= 1
-    STR_VAR
-    old_item		= "brac01"
-    new_item		= "mh#brac3"
-  END
+COPY_EXISTING "moorlock.cre" "override"
+  // Terminus Est +2
+  ADD_CRE_ITEM "mh#swrd1" #0 #0 #0 "unstealable" "weapon2"
+  REMOVE_CRE_ITEM "sw1h05"
 
+
+COPY_EXISTING "%DurlagsTower_D4%.are" "override"
   // Trollkiller +2
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
@@ -322,20 +326,22 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
     item_to_add		= "mh#comp2"
   END
 
-  // Terminus Est +2
-  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-    INT_VAR
-    container_to_add_to	= 33
-    STR_VAR
-    item_to_add		= "mh#swrd1"
-  END
-
   // Rusty Katana
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to	= 11
     STR_VAR
     item_to_add		= "mh#comp4"
+  END
+
+  // Bracers of Winter's Chill
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 33
+    charges1		= 1
+    charges2		= 1
+    STR_VAR
+    item_to_add		= "mh#brac3"
   END
 
 
