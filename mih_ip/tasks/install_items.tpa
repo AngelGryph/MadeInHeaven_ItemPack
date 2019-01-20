@@ -1,4 +1,12 @@
+// Set up graphical stuff
+
 COPY_LARGE "%MOD_FOLDER%/bams" "override"
+
+ACTION_BASH_FOR "override" "mh#vsio.\.bam"
+BEGIN
+  COPY "%MOD_FOLDER%/vvc/sporbit.vvc" "override/%BASH_FOR_RES%.vvc"
+    WRITE_EVALUATED_ASCII 0x8 "%BASH_FOR_RES%" #8
+END
 
 
 // Procedurally generate some effects
@@ -696,12 +704,38 @@ COPY "%MOD_FOLDER%/items/mh#ioun1.itm" "override"
   SAY NAME2 @54
   SAY IDENTIFIED_DESC @55
 
+  PATCH_IF $ini_hash("visible_ioun_stones")
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 215
+      target		= 1
+      timing		= 2
+      parameter2	= 1
+      STR_VAR
+      resource		= ~mh#vsio1~
+    END
+  END
+
 
 // mh#ioun2 - Crystal Clear Ioun Stone
 
 COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
   SAY NAME2 @91
   SAY IDENTIFIED_DESC @56
+
+  PATCH_IF $ini_hash("visible_ioun_stones")
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 215
+      target		= 1
+      timing		= 2
+      parameter2	= 1
+      STR_VAR
+      resource		= ~mh#vsio2~
+    END
+  END
 
 
 // mh#ioun3 - Bright Orange Ioun Stone
@@ -710,12 +744,38 @@ COPY "%MOD_FOLDER%/items/mh#ioun3.itm" "override"
   SAY NAME2 @187
   SAY IDENTIFIED_DESC @188
 
+  PATCH_IF $ini_hash("visible_ioun_stones")
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 215
+      target		= 1
+      timing		= 2
+      parameter2	= 1
+      STR_VAR
+      resource		= ~mh#vsio3~
+    END
+  END
+
 
 // mh#ioun4 - Telkiira
 
 COPY "%MOD_FOLDER%/items/mh#ioun4.itm" "override"
   SAY NAME2 @189
   SAY IDENTIFIED_DESC @190
+
+  PATCH_IF $ini_hash("visible_ioun_stones")
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 215
+      target		= 1
+      timing		= 2
+      parameter2	= 1
+      STR_VAR
+      resource		= ~mh#vsio4~
+    END
+  END
 
 
 // mh#lbow1 - Bow of Eletha
