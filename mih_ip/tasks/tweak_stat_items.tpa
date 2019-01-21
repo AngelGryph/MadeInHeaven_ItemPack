@@ -49,8 +49,10 @@ BEGIN
   "ohbbrac1"	=> 13
   "b!kegf"	=> 14
   "beltstr"	=> 15
+  "ntbelt01"	=> 15
   "gauntem"	=> 16
   "ogi"		=> 17
+  "ntrobe01"	=> 17
 END
 
 

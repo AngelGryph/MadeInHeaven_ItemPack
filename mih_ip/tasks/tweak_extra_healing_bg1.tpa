@@ -13,7 +13,7 @@ BEGIN
 	        "stoblack.sto"	"override"
 	        "ulgoth.sto"	"override"
 	        "erdane.sto"	"override"
-    ADD_STORE_ITEM "potn52" AFTER "potn08" #1 #0 #0 "IDENTIFIED" (RANDOM (2 5))
+    ADD_STORE_ITEM "potn52" AFTER "potn08" #1 #0 #0 "identified" (RANDOM (2 5))
 
     BUT_ONLY_IF_IT_CHANGES	// Other mods may already have done this.
 END

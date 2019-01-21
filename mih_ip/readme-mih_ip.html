@@ -30,9 +30,13 @@
 <h2>Installation</h2>
 <div class="section">
   <p><strong>Before you install</strong><br />
-  <p>If you have an older version of the MiH Item Pack, be sure to completely remove it first before trying to install the new version!</p>
-  <p>If you have a version of BGEE with Siege of Dragonspear obtained from Steam or GoG, you need to run a program called 'modmerge' before installing any WeiDU mods.  This is not needed if you obtained your copy from Beamdog.</p>
-  <p>If you are installing on the older non-EE games (BG2 or BGT) you must install both Throne of Bhaal Extender (ToBEx) and the G3 Fixpack version 11 or higher for this mod to work correctly.  Some parts of this mod will not work properly or at all without them.</p>
+  If you have an older version of the MiH Item Pack, be sure to completely remove it first before trying to install the new version!</p>
+  <p><strong>Vanilla BG2 and Baldur's Gate Trilogy</strong><br />
+  Before installing this mod, you must install the latest official patch, and you must also install the Throne of Bhaal Extender (ToBEx) and the G3 Fixpack version 11 or higher.  This mod will not work correctly without those two installed!</p>
+  <p><strong>BG1EE and Siege of Dragonspear</strong><br />
+  If you obtained your version of the game through Steam or GoG, you must run a program called 'modmerge' before installing any WeiDU mods like this one.  If you obtained your game from Beamdog, this is not required.</p>
+  <p><strong>BG2EE and Extended Edition Trilogy</strong><br />
+  There are no requirements at this time.  For EET, install this mod after EET has been installed but before the EET installation is finalized.</p>
   <p><strong>Windows</strong><br />
 Made in Heaven: Item Pack is packaged and installed with WeiDU and is distributed as a zip archive.  Modern versions of Windows have support for zip files built in, just double-click the archive to open it, and extract the contents to your game file.  If you are still using an older version of Windows, you should install WinZip or a similar program to extract the archive.</p>
   <p>Your game folder should then contain a mih_ip folder and setup-mih_ip.exe. To install, double-click setup-mih_ip.exe and follow the instructions on screen.</p>
@@ -45,6 +49,91 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
   <p>To install, open a terminal, cd to your game installation director and
  run <strong>weidu --log setup-mih_ip.debug mih_ip/setup-mih_ip.tp2</strong> from your game installation directory to install or uninstall the mod.</p>
   <p>Note: The readme files of some older mods recommend running tolower on Linux prior to installation.  <b>Don't do this on an Enhanced Edition game, you will break it!</b>  Modern versions of tolower will actually refuse to run in a EE game directory.  At any rate, the contents of MiH: Item Pack are already all lower case, there is no need for tolower.</p>
+  <p><strong>New Game required!</strong><br />
+  After installing this mod you must start a new game.  This mod edits area files and stores, both of which are stored into your save game after you have visited them.  Continuing a saved game after installing this mod will have unexpected and likely undesired results.</p>
+</div>
+<h2>Component Descriptions</h2>
+<div class="section">
+  <p>This mod consists of several components, each of which can be installed or removed independently from the others.<p>
+  <p><strong>MiH Item Pack</strong><br />
+  The main component of this mod, the item pack will add almost a hundred new items, divided all over BG1 and BG2, including Siege of Dragonspear (EE) and Throne of Bhaal.  A handful of these items were ported from Icewind Dale, all others are original creations, based on various D&amp;D source books and other media.</p>
+  <p>In BG1 a new merchant, the dwarven smith Brokk, will be added to the Friendly Arm Inn, he is in the normally unoccupied house just west of the main building.  He may not want to sell to you right away, but remember to visit him later!  Brokk may also offer to make a new item for you if you bring him something unusual, so check back with him now and then.</p>
+  <p><strong>Improved Cloak of the Wolf</strong><br />
+  The Cloak of the Wolf: Reiltar's Mistake is pretty weak and useless.  Turning into a wolf has very few real advantages and can't be used for stealth as enemies will attack anyway.  Noticing that this item was rather similar to the Cloak of the Bat from the DMG which also gives an AC bonus of 2, I decided to give the Cloak of the Wolf an AC bonus of 1, making it a little more useful.</p>
+  <p><strong>Nerfed Cloak of Balduran</strong><br />
+  Let's face it, the 25% magic resistance from this cloak is pretty overpowered, so much in fact that the developers decided not to bring this item back in BG2 and not even UB will restore it.  This modification will reduce it to a more modest but still useful 10%.  If installed on a BG2 game, the cloak will be available from the Adventurer's Market in chapter 6.</p>
+  <p><strong>Alternative Healing Potions</strong><br />
+  This modification will change the way healing potions work.  You can choose between Pen &amp; Paper rules, Icewind Dale Rules or Baldur's Gate 2 rules.  That last one will obviously not change anything on BG2, but will effect any games that include Icewind Dale.  The P&amp;P option tends to make the game slightly harder as healing is more random and less reliable.  The Icewind Dale option tends to make the late game harder as well.  The P&amp;P rule for Potions of Superior Healing was lifted from 5e, as I could not find a 2e source on these potions.</p>
+  <table>
+    <tr><th /><th>Pen &amp; Paper</th><th>Icewind Dale</th><th>Baldur's Gate 2</th></tr>
+    <tr><td>Potion of Healing</td><td>2d4+2 (4-10)</td><td>9</td><td>9</td></tr>
+    <tr><td>Potion of Extra Healing</td><td>3d8+3 (6-27)</td><td>18</td><td>27</td></tr>
+    <tr><td>Potion of Superior Healing</td><td>10d4+20 (30-60)</td><td>27</td><td>40</td></tr>
+  </table>
+  <p><strong>P&amp;P Potion of Invulnerability</strong><br />
+  This alters the Potion of Invulnerability to work by the book: It grants only a +2 bonus to AC and saves but also makes the imbiber immune to non-magical weapons.  This makes them very valuable in many fights in BG1 where not that many opponents have magical weapons.</p>
+  <p><strong>Elixers of Health cure blindness/deafness</strong><br />
+  As the title says, this changes Elixers of Health to also remove blindness and deafness.  I always thought it pretty strange that they didn't.</p>
+  <p><strong>Relative Stat Bonuses from Equipped Items</strong><br />
+  This alters items like the Gauntlets of Ogre Power and Girdle of Hill Giant Strength to give a bonus to the wearer's base stat instead of setting it to a fixed value.  This closes many min-maxing exploits, and makes these items more useful to characters that already have decent stats.  Temporary effects, like from potions and spells, are unchanged.  This tweak will affect all items (with some exceptions), and will update the descriptions of known affected items.  It will affect items from other mods (provided they are installed first) but may not update their descriptions.</p>
+  <table>
+    <tr><th>Fixed Stat</th><th>New Bonus</th></tr>
+    <tr><td>18</td><td>+2</td></tr>
+    <tr><td>19-20</td><td>+3</td></tr>
+    <tr><td>21-22</td><td>+4</td></tr>
+    <tr><td>23-24</td><td>+5</td></tr>
+    <tr><td>25</td><td>+6</td></tr>
+  </table>
+  <p><strong>Cap Item Charges</strong><br />
+  This component alters items that operate on charges, like wands.  It will cap the maximum number of charges to 12.  If an item already has less charges, it will be unchanged.  Items from other mods are also effected (provided they are installed first).</p>
+  <p><strong>Sensible Item Shops</strong><br \>
+  Okay, some would argue shops selling magical items makes no sense at all, but that's not what this modification is about.  This is about items that are not placed into shops that could logically carry them.  It mostly affects BG1, but makes some small BG2 modifications too.</p>
+  <p>In BG1, it removes the stacks of magical large shields that some shops have, most notably the Nashkel shop which sells otherwise mundane equipment.  (Note: in BGEE this is already the default.)  To compensate for this, the Thunderhammer Smithy and Feldepost's Inn will each now sell one of these shields.</p>
+  <p>Also in BG1, it adds a few items that are strangely obscure to get before they become irrelevant to shops in Beregost.  Currently these are the Warhammer +1, the Splint Mail +1 and the Long Bow +1.</p>
+  <p>It will move the Dagger of Venom and the Shadow Armor from the Thunderhammer Smithy to Black Lily's in Baldur's Gate, where they are thematically a much better fit and you are more likely to be able to afford them.</p>
+  <p>In BG2, it will swap the locations of Ashideena and Borok's Fist.  Charname most likely had Ashideena during the events of BG1, so what's it doing in a dungeon where nobody has been for a hundred years?  (NB: In BG2EE, Ashideena can be imported from your BG1 game.  This has been catered for.)</p>
+  <p><strong>Add Potions of Extra Healing to BG1</strong><br \>
+  This modification will add some potions of extra healing to the main BG1 game (Siege of Dragonspear already has them).  Five temples and three other shops will randomly receive between 2 and 5 potions of extra healing.  This mod may overlap with other mods with a similar option, like Sword Coast Stratagems.  If a shop already carries potions of extra healing, this modification will not add more.</p>
+  <p>This component also replaces the large stacks of normal healing potions found in Durlag's Tower with more or less equivalent stacks of potions of extra healing (in a 3:1 ratio).  Stacks with less than three potions are not altered.</p>
+  <p><strong>Nerfed BG1 Easter Eggs</strong><br />
+  This component will replace the overpowered items in the hidden containers at the Friendly Arm Inn, Nashkel and a few wilderness areas with other items, mostly (somewhat) valuable but non-magical rings.</p>
+  <p><strong>Give Spectacles of Spectacle more charges</strong><br />
+  This component makes it possible to complete all nine encounters with planar beings in Siege of Dragonspear instead of having to choose just three.  The spectacles are given nine charges and the quest won't complete until all nine have been used.  You still have to choose which of the two creatures to pull into the Prime at Dead Man's Pass though.</p>
+  <p><strong>Relaxed Item Class Restrictions</strong><br \>
+  This component relaxes the class restrictions on a few items somewhat, letting more classes equip them.  This currently only affects two Throne of Bhaal items: The Helm of the Rock can now be equipped by paladins and rangers, and the Wondrous Gloves can be equipped by wizards.  I might add a few more in the future.</p>
+</div>
+<h2>The .ini File</h2>
+<div class="section">
+  <p>Within the mod folder, there is a file called setup-mih.ini.  This file can be used to fine-tune certain aspects of this mod.  It is meant as an expert option, for normal installation you can leave this file as it is.  If you do edit this file, you must reinstall the mod, or at least the components whose settings you changed.</p>
+  <table>
+    <tr><th colspan=2>MiH Item Pack</th></tr>
+    <tr><td>place_items_in_bg1</td><td>If set to 0, new items will not be added to BG1 (including TotSC) and Brokk will not appear.</td></tr>
+    <tr><td>place_items_in_sod</td><td>If set to 0, new items will not be added to Siege of Dragonspear (EE).</td><tr>
+    <tr><td>place_items_in_bp1</td><td>If set to 0, new items will not be added to Black Pits 1 (EE).</td></tr>
+    <tr><td>place_items_in_bg2</td><td>If set to 0, new items will not be added to the Shadows of Amn part of BG2.</td></tr>
+    <tr><td>place_items_in_tob</td><td>If set to 0, new items will not be added to Throne of Bhaal, including Watcher's Keep.</td></tr>
+    <tr><td>place_items_in_bp2</td><td>If set to 0, new items will not be added to Black Pits 2 (EE).</td></tr>
+    <tr><td>update_itemexcl_2da</td><td>If set to 0, itemexcl.2da will not be updated with the new items, removing some restrictions.</td></tr>
+    <tr><td>visible_ioun_stones</td><td>If set to 0, the new ioun stones will not be visible on the characters.</td></tr>
+    <tr><th colspan=2>Nerfed Cloak of Balduran</th></tr>
+    <tr><td>baldur_cloak_mres</td><td>New MR value for the cloak (10).  Yes, you can set it higher than 25%, you cheater...</td></tr>
+    <tr><td>baldur_cloak_in_bg2</td><td>If set to 0, the cloak will not be added to BG2, useful if another mod already has it.</td></tr>
+    <tr><th colspan=2>Cap Item Charges</th></tr>
+    <tr><td>item_charge_cap</td><td>Controls the cap used (12).</td></tr>
+    <tr><th colspan=2>Sensible Item Shops</th></tr>
+    <tr><td>bg1_fix_large_shields</td><td>If set to 0, do not apply the large shield fix to BG1 shops.</td></tr>
+    <tr><td>bg1_add_obscure_items</td><td>If set to 0, do not add obscure items to Beregost shops.</td></tr>
+    <tr><td>bg1_move_thieving_stuff</td><td>If set to 0, do not move thieving gear to Black Lily.</td></tr>
+    <tr><td>bg2_swap_hammers</td><td>If set to 0, do not swap the locations of the two magical warhammers.</td></tr>
+    <tr><th colspan=2>Add Potions of Extra Healing to BG1</th></tr>
+    <tr><td>extra_healing_shops</td><td>If set to 0, do not add potions of extra healing to shops.</td></tr>
+    <tr><td>extra_healing_durlag</td><td>If set to 0, do not exchange potions in Durlag's Tower.</td></tr>
+    <tr><th colspan=2>Give Spectacles of Spectacle more charges</th></tr>
+    <tr><td>spectacle_charges</td><td>Set the number of charges in the Spectacles (9).</td></tr>
+    <tr><th colspan=2>Relaxed Item Class Restrictions</th></tr>
+    <tr><td>tweak_helm_of_the_rock</td><td>If set to 0, don't alter the Helm of the Rock.</td></tr>
+    <tr><td>tweak_bards_gloves</td><td>If set to 0, don't alter the Wondrous Gloves.</td></tr>
+  </table>
 </div>
 <h2>Contact Information</h2>
 <div class="section">
