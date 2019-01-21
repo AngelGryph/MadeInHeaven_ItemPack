@@ -17,7 +17,7 @@ mh#shld4 Shield of the Three Kings +5		Watcher's Keep (battle)
 mh#shld6 Mystery of the Dead +3			Sister Garlena (shop)
 mh#shld7 Waukeen's Defender +2			Temple of Waukeen (shop)
 
-*mh#staf4 Staff of the Legion +5			Saradush (battle)
+mh#staf4 Staff of the Legion +5			Saradush (battle)
 
 mh#swrd3 Scimitar of the Seven +4		Sister Garlena (shop)
 
@@ -28,6 +28,6 @@ mh#tome4 Libram of Gainful Conjuration		Marching Mountains (vault)
 mh#tome5 Libram of Ineffable Damnation		Watcher's Keep (crypt)
 
 mh#wand1 Wand of Illusions			Arcana Archives (shop)
-*mh#wand2 Elmira's Wand of Blasting		Sister Garlena (shop)
+mh#wand2 Elmira's Wand of Blasting		Sister Garlena (shop)
 
 

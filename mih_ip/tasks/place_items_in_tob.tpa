@@ -11,6 +11,8 @@ COPY_EXISTING "garlena.sto" "override"
   ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
+  // Elmira's Wand of Blasting
+  ADD_STORE_ITEM "mh#wand2" LAST #12 #0 #0 "identified" #1
 
 
 COPY_EXISTING "ar3017.are" "override"
@@ -66,6 +68,9 @@ COPY_EXISTING "25spell.sto" "override"
 COPY_EXISTING "gromg08.cre" "override"
   // Silver Bracers of Kedl
   ADD_CRE_ITEM "mh#brac6" #0 #0 #0 "unstealable" "gloves"
+  // Staff of the Legion +5
+  ADD_CRE_ITEM "mh#staf4" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
+  REMOVE_CRE_ITEM "staf18"
 
 
 // Forest of Mir / Marching Mountains

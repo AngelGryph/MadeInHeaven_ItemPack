@@ -41,12 +41,12 @@ mh#helm1 Helm of Valor				D'Arnise Keep (chest)
 mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)
 mh#helm3 Blessed Helm of Lathander		Temple of Lathander (shop)
 
-*mh#ioun3 Bright Orange Ioun Stone
+mh#ioun3 Bright Orange Ioun Stone		Adventurer's Market (shop)
 
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 
-*mh#misc1 Pearl of Power
-*mh#misc2 Bag of Tricks				Druid Grove (battle)
+mh#misc1 Pearl of Power				Trademeet Merchant (shop)
+mh#misc2 Bag of Tricks				Druid Grove (battle)
 mh#misc3 Crystal Ball				Adventurer's Market (shop)
 
 mh#potn1 Oil of Acid Resistance			(various potion shops)
