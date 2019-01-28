@@ -1,0 +1,10 @@
+IF Global("mh#ImportItems_ee", "ar0602", 0)
+THEN
+  RESPONSE #100
+  SetGlobal("mh#ImportItems_ee", "ar0602", 1)
+  ActionOverride("Table1", TakeItemListPartyNum("mh#impt3", 1)
+  SmallWait(4)
+  Continue()
+END
+
+

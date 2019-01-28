@@ -10,6 +10,12 @@ COPY_EXISTING "ar0602.are" "override"
   END
 
 
+COPY_EXISTING "duergar1.cre" "override"
+  // Winter Wolf Hide +1
+  ADD_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"
+  REMOVE_CRE_ITEM "leat01"
+
+
 COPY "%MOD_FOLDER%/tables/mh#impt1.2da" "override"
      "%MOD_FOLDER%/tables/mh#impt2.2da" "override"
 
@@ -17,20 +23,31 @@ COPY "%MOD_FOLDER%/tables/mh#impt1.2da" "override"
 EXTEND_TOP "ar0602.bcs" "%MOD_FOLDER%/scripts/import_itempack.baf" USING "%MOD_FOLDER%/dummy.tra"
 
 
-ACTION_IF GAME_IS "eet"
+ACTION_IF ENGINE_IS "bgee bg2ee"
 BEGIN
-  APPEND "k#import.2da" "1	mh#brac1" UNLESS "mh#brac1"
-  APPEND "k#import.2da" "1	mh#brac2" UNLESS "mh#brac2"
-  APPEND "k#import.2da" "1	mh#ring2" UNLESS "mh#ring2"
-  APPEND "k#import.2da" "1	mh#ring3" UNLESS "mh#ring3"
-  APPEND "k#import.2da" "1	mh#ring4" UNLESS "mh#ring4"
+  COPY "%MOD_FOLDER%/tables/mh#impt3.2da" "override"
+
+
+  EXTEND_TOP "ar0602.bcs" "%MOD_FOLDER%/scripts/import_itempack_ee.baf" USING "%MOD_FOLDER%/dummy.tra"
+
+  EXTEND_BOTTOM "ar0602.bcs" "%MOD_FOLDER%/scripts/import_itempack_ee_fin.baf" USING "%MOD_FOLDER%/dummy.tra"
+
+  EXTEND_BOTTOM "ar0700.bcs" "%MOD_FOLDER%/scripts/import_itempack_maheer.baf" USING "%MOD_FOLDER%/dummy.tra"
 END
 
 
-COPY_EXISTING "duergar1.cre" "override"
-  // Winter Wolf Hide +1
-  ADD_CRE_ITEM "mh#armr1" #0 #0 #0 "unstealable" "armor"
-  REMOVE_CRE_ITEM "leat01"
+ACTION_IF GAME_IS "eet"
+BEGIN
+  APPEND "k#import.2da" "1	mh#blun1" UNLESS "mh#blun1"
+  APPEND "k#import.2da" "1	mh#blun2" UNLESS "mh#blun2"
+  APPEND "k#import.2da" "1	mh#brac1" UNLESS "mh#brac1"
+  APPEND "k#import.2da" "1	mh#brac2" UNLESS "mh#brac2"
+  APPEND "k#import.2da" "1	mh#btax1" UNLESS "mh#btax1"
+  APPEND "k#import.2da" "1	mh#ring2" UNLESS "mh#ring2"
+  APPEND "k#import.2da" "1	mh#ring3" UNLESS "mh#ring3"
+  APPEND "k#import.2da" "1	mh#ring4" UNLESS "mh#ring4"
+  APPEND "k#import.2da" "1	mh#swrd2" UNLESS "mh#swrd2"
+END
 
 
 // Waukeen's Promenade
