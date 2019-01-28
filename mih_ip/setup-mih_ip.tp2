@@ -45,7 +45,7 @@ ALWAYS
       STR_VAR
       default_language	= "english"
       tra_path		= "%MOD_FOLDER%/language"
-      iconv_path	= "%MOD_FOLDER/bin/win32/iconv"
+      iconv_path	= "%MOD_FOLDER%/bin/win32/iconv"
       noconvert_array	= "mh#noconvert"
       reload_array	= "mh#reload"
     END
@@ -238,6 +238,17 @@ BEGIN
     STR_VAR
     task			= "tweak_item_shops_bg2"
   END
+END
+
+
+// Temples sell more Priest Scrolls
+
+BEGIN ~Temples sell (more) Priest Scrolls~
+GROUP ~Optional Item Tweaks~
+
+LAUNCH_ACTION_FUNCTION mh_run_task
+  STR_VAR
+  task			= "add_temple_spell_scrolls"
 END
 
 

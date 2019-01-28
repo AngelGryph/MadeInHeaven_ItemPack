@@ -242,7 +242,7 @@ COPY_EXISTING "cedruid2.cre" "override"
 
 // Temple Ruins
 
-COPY_EXISTING "ar1403.are" "override"
+COPY_EXISTING "ar1401.are" "override"
   // Amaunator's Legacy +3
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR

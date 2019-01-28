@@ -54,6 +54,7 @@ COPY_EXISTING "taerum.sto" "override"
   BEGIN
     ADD_STORE_ITEM "hamm02" AFTER "hamm01" #0 #0 #0 "identified" #1
     ADD_STORE_ITEM "chan05" AFTER "chan04" #0 #0 #0 "identified" #1
+    ADD_STORE_ITEM "sper02" AFTER "sper01" #0 #0 #0 "identified" #1
   END
 
   BUT_ONLY_IF_IT_CHANGES
