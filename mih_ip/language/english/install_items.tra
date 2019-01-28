@@ -672,7 +672,6 @@ Equipped abilities:
 - Damage: +3 vs. golems
 
 Weight: 3~
-@115  = ~Cloak of the Night Sky~
 @116  = ~This enchanted blue-black cloak was fashioned in the near-mythical elven nation of Evermeet.  Crafted to resemble the night sky, glowing stars move across it in a flowing pattern whenever it is worn.  It bears a powerful protective enchantment, but that same enchantment also prevents it from being worn by those not of elven blood.
 
 STATISTICS:
@@ -1354,3 +1353,6 @@ Requires:
  12 Intelligence
 
 Weight: 1~
+@216  = ~Cloak of the Night Sky~
+
+

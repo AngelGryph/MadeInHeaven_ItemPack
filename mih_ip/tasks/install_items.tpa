@@ -588,7 +588,7 @@ COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
 // mh#clck4 - Cloak of the Night Sky
 
 COPY "%MOD_FOLDER%/items/mh#clck4.itm" "override"
-  SAY NAME2 @115
+  SAY NAME2 @216
   SAY IDENTIFIED_DESC @116
 
 

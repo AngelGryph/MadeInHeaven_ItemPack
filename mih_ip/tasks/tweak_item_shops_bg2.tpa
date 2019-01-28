@@ -10,15 +10,16 @@ BEGIN
       INT_VAR
       number_in_stock	= 1
       STR_VAR
-      old_item		= "hamm03"
-      new_item		= "hamm05"
+      old_item		= "hamm05"
+      new_item		= "hamm03"
+      flags		= "identified"
     END
 
   COPY_EXISTING "ar0204.are" "override"
     LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
       STR_VAR
-      old_item		= "hamm05"
-      new_item		= "hamm03"
+      old_item		= "hamm03"
+      new_item		= "hamm05"
     END
 
     LAUNCH_PATCH_FUNCTION DELETE_AREA_ITEM

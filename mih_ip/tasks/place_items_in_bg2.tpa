@@ -138,7 +138,7 @@ COPY_EXISTING "temlath.sto" "override"
   // Necklace of Prayer Beads
   ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
   // Girdle of Beatification
-  ADD_STORE_ITEM "mh#bel4" LAST #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1
 
 
 // Lower Reaches (Cult of the Eyeless)
@@ -218,7 +218,7 @@ COPY_EXISTING "temsup.sto" "override"
 
 COPY_EXISTING "cedruid2.cre" "override"
   // Necklace of Adaption
-  ADD_CRE_ITEM "mh#amul6" #0 #0 #0 "none" "amulet"
+  ADD_CRE_ITEM "mh#amul5" #0 #0 #0 "none" "amulet"
   // Bag of Tricks
   ADD_CRE_ITEM "mh#misc2" #3 #0 #0 "none" "qitem"
 
