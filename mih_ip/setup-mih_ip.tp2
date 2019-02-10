@@ -5,7 +5,7 @@
 BACKUP "mih_ip/backup"
 
 AUTHOR "angel@pearlgates.net"
-VERSION 1beta3
+VERSION v1beta4
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
@@ -53,8 +53,8 @@ ALWAYS
 
     // Load macro/function libraries
 
-    INCLUDE ~%MOD_FOLDER%/lib/mh_functions.tph~
-    INCLUDE ~%MOD_FOLDER%/lib/cd_effect_batches.tph~
+    INCLUDE "%MOD_FOLDER%/lib/mh_functions.tph"
+    INCLUDE "%MOD_FOLDER%/lib/cd_effect_batches.tph"
 
 
     // Read the .ini file for this mod

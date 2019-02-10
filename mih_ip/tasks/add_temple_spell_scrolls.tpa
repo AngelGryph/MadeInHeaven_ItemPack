@@ -2,6 +2,7 @@
 
 COPY_EXISTING "scrl56.itm" "override/mh#scclw.itm"
   WRITE_LONG 0x0034 100
+  WRITE_ASCII 0x003a "sppr103a"
 
   LAUNCH_PATCH_FUNCTION ALTER_ITEM_HEADER
     STR_VAR
@@ -28,6 +29,7 @@ COPY_EXISTING "scrl56.itm" "override/mh#scclw.itm"
 
 COPY_EXISTING "scrl59.itm" "override/mh#scslp.itm"
   WRITE_LONG 0x0034 200
+  WRITE_ASCII 0x003a "sppr212a"
 
   LAUNCH_PATCH_FUNCTION ALTER_ITEM_HEADER
     STR_VAR

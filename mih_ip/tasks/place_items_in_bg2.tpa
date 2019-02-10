@@ -85,6 +85,13 @@ COPY_EXISTING "ribald.sto" "override"
   ADD_STORE_ITEM "mh#ioun3" AFTER "clck12" #0 #0 #0 "identified" #1
 
 
+// Adjust prices of Staff of Air & Staff of Fire for consistency
+COPY_EXISTING "staf15.itm" "override"
+              "staf17.itm" "override"
+  WRITE_LONG 0x0034 15000
+  BUT_ONLY_IF_IT_CHANGES
+
+
 COPY_EXISTING "ribald3.sto" "override"
   // Helm of the Dwarven Lords
   ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1
@@ -125,8 +132,8 @@ COPY_EXISTING "tolger.cre" "override"
   ADD_CRE_ITEM "mh#ring5" #0 #0 #0 "unstealable" "lring"
 
 
-COPY_EXISTING "lavok01.cre"
-              "lavok02.cre"
+COPY_EXISTING "lavok01.cre" "override"
+              "lavok02.cre" "override"
   // Shield Ring
   ADD_CRE_ITEM "mh#ringa" #0 #0 #0 "unstealable" "rring"
   // Ring of Wizardry (moved from jaga3.cre, replaces Ring of Acquity)
@@ -346,6 +353,7 @@ COPY_EXISTING "ar2806.are" "override"
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
     container_to_add_to	= 1
+    charges2		= 1
     STR_VAR
     item_to_add		= "mh#btax3"
   END

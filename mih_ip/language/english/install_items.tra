@@ -612,7 +612,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +2 (+5 vs. slashing)
-- Regeneratoin: 1 hp/round
+- Regeneration: 1 hp/round
 
 Weight: 3~
 @108  = ~Scimitar of the Seven +4~
@@ -1064,7 +1064,7 @@ Weight: 1~
 @175  = ~Dragon's Tear Amulet~
 @176  = ~A dragon's tear is a rare jewel of extraplanar origin.  This alone would make it worth a small fortune, but dragon's tears have the ability to block all involuntary interplanar travel, including teleportation.  This makes it useful for royalty, nobles and others who are wary of interplanar abduction, as well as anyone who might have to face a powerful spellcaster with access to spells like Maze or Imprisonment.
 
-The wearer can still initiate planar travel themselves, in fact this particular amulet also lets %PRO_HIMHER% use the spell Dimension Door a few times per day.
+The wearer can still initiate planar travel themselves, in fact this particular amulet also lets <PRO_HIMHER> use the spell Dimension Door a few times per day.
 
 STATISTICS:
 

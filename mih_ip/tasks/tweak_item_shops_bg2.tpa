@@ -30,7 +30,7 @@ BEGIN
 
   ACTION_IF ENGINE_IS "bg2ee"
   BEGIN
-    EXTEND_TOP "ar0702.bcs" "%MOD_FOLDER%/scripts/ribald_hammer_swap_ee.baf"
+    EXTEND_TOP "ar0702.bcs" "%MOD_FOLDER%/scripts/ribald_hammer_swap_ee.baf" USING "%MOD_FOLDER%/dummy.tra"
   END
 END
 

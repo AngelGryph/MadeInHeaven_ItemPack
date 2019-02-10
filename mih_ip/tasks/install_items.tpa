@@ -488,6 +488,23 @@ COPY "%MOD_FOLDER%/items/mh#brac1.itm" "override"
   SAY NAME2 @50
   SAY IDENTIFIED_DESC @51
 
+  PATCH_IF FILE_EXISTS "mih_sp/run/tweak_protection_from_evil.mh"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+      INT_VAR
+      match_opcode	= 142	// Graphics: Display Special Effect Icon
+      match_parameter2	= 9	// Protection from Evil
+      opcode		= 101	// 
+      parameter2	= 5	// Charm: Charm Specific Creature
+      silent		= 1
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name		= "cd_immunity_charm_arrays"
+    END
+  END
+
 
 // mh#brac2 - Gauntlets of the Dwarven King
 
