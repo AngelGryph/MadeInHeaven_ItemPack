@@ -53,7 +53,7 @@ mh#dagg2 Spinesheath +1				Icewind Dale 1 (2E)
 
 mh#hamm1 Final Strike +3
 
-mh#helm1 Helm of Valor				Elves of Evermeet (2E)
+mh#helm1 Helm of Valor				Complete Elves (2E)
 mh#helm2 Helm of the Dwarven Lords
 mh#helm3 Blessed Helm of Lathander		Icewind Dale 1 (2E)
 

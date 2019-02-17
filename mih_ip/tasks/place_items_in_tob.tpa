@@ -46,14 +46,14 @@ COPY_EXISTING "fsdragon.cre" "override"
 
 COPY_EXISTING "illasera.cre" "override"
   // Bracers of the Wind
-  ADD_CRE_ITEM "mhbrac4" #0 #0 #0 "unstealable" "gloves"
+  ADD_CRE_ITEM "mh#brac4" #0 #0 #0 "unstealable" "gloves"
 
 
 // Saradush
 
 COPY_EXISTING "25spell.sto" "override"
   // Libram of Silver Magic
-  ADD_STORE_ITEM "mh#tome4" AFTER "restore" #1 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9
   // Ring of Shooting Stars
@@ -62,7 +62,6 @@ COPY_EXISTING "25spell.sto" "override"
   ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1
   // Wand of Illusions
   ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
- 
 
 
 COPY_EXISTING "gromg08.cre" "override"
@@ -114,6 +113,6 @@ COPY_EXISTING "amlich01.cre" "override"
 
 COPY_EXISTING "sengua03.cre" "override"
   // Cloak of the Night Sky
-  ADD_CRE_ITEM "mh#clck4" #0 #0 #0 "unstealable" "cloak"
+  ADD_CRE_ITEM "mh#clck4" #1 #0 #0 "unstealable" "cloak"
 
 
