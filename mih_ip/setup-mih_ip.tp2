@@ -292,16 +292,3 @@ LAUNCH_ACTION_FUNCTION mh_run_task
 END
 
 
-// Relaxed Item Class Restrictions
-
-BEGIN ~Relaxed Item Class Restrictions~
-GROUP ~Optional Item Tweaks~
-
-REQUIRE_PREDICATE GAME_INCLUDES "tob" ~This component is not applicable to your game.~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "tweak_item_class_restrictions"
-END
-
-
