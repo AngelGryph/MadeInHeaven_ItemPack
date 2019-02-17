@@ -5,7 +5,7 @@
 BACKUP "mih_ip/backup"
 
 AUTHOR "angel@pearlgates.net"
-VERSION v1beta4
+VERSION v1
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
