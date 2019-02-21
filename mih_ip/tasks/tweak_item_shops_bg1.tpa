@@ -76,3 +76,35 @@ COPY_EXISTING "inn3351.sto" "override"
   BUT_ONLY_IF_IT_CHANGES
 
 
+// Thalantyr the *Conjurer*
+
+
+ACTION_IF $ini_hash("bg1_fix_thalantyr")
+BEGIN
+  COPY_EXISTING "highhedg.sto" "override"
+    // Remove Divination school spell scrolls
+    REMOVE_STORE_ITEM "scrl75 scrl76 scrl87"
+
+    // Melf's Acid Arrow
+    ADD_STORE_ITEM "scrl95" AFTER "scrl94" #1 #0 #0 "identified" #3
+
+    // Glitterdust
+    ADD_STORE_ITEM "scrla3" AFTER "scrla2 scrl1q" #1 #0 #0 "identified" #3
+
+    // Power Word: Sleep (for BGT, EE already has it)
+    ADD_STORE_ITEM "scrl6e" AFTER "scrla2 scrl1q" #1 #0 #0 "identified" #3
+
+    // Monster Summoning I
+    ADD_STORE_ITEM "scrl1l" AFTER "scrl1i" #1 #0 #0 "identified" #3
+
+    // Ghost Armor
+    ADD_STORE_ITEM "scrl1t" AFTER "scrl1q" #1 #0 #0 "identified" #3
+
+    // Monster Summoning II
+    ADD_STORE_ITEM "scrl2a" BEFORE "wand08" #1 #0 #0 "identified" #1
+
+    // Spider Spawn
+    ADD_STORE_ITEM "scrl6r" BEFORE "wand08" #1 #0 #0 "identified" #1
+END
+
+
