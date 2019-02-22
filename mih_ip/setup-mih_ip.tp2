@@ -126,7 +126,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_cloak_of_wolf"
+  task			= "improve_cloak_of_wolf"
 END
 
 
@@ -137,7 +137,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_cloak_of_balduran"
+  task			= "nerf_cloak_of_balduran"
 END
 
 
@@ -149,7 +149,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_healing_potions_pnp"
+  task			= "make_healing_potions_pnp"
 END
 
 
@@ -159,7 +159,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_healing_potions_iwd"
+  task			= "make_healing_potions_iwd"
 END
 
 
@@ -169,7 +169,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_healing_potions_bg2"
+  task			= "make_healing_potions_bg2"
 END
 
 
@@ -180,7 +180,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_potion_of_invulnerability"
+  task			= "improve_potion_of_invulnerability"
 END
 
 
@@ -191,104 +191,7 @@ GROUP ~Optional Item Tweaks~
 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
-  task			= "tweak_elixir_of_health"
-END
-
-
-// Relative Stat Bonuses from Equipped Items
-
-BEGIN ~Relative Stat Bonuses from Equipped Items~
-GROUP ~Optional Item Tweaks~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "tweak_stat_items"
-END
-
-
-// Cap Item Charges
-
-BEGIN ~Cap Item Charges~
-GROUP ~Optional Item Tweaks~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  INT_VAR
-  charge_cap		= $ini_hash("item_charge_cap")
-  STR_VAR
-  task			= "tweak_item_charges"
-END
-
-
-// Sensible Item Shops
-
-BEGIN ~Sensible Item Shops~
-GROUP ~Optional Item Tweaks~
-
-ACTION_IF GAME_INCLUDES "bg1"
-BEGIN
-  LAUNCH_ACTION_FUNCTION mh_run_task
-    STR_VAR
-    task			= "tweak_item_shops_bg1"
-  END
-END
-
-ACTION_IF GAME_INCLUDES "bg2"
-BEGIN
-  LAUNCH_ACTION_FUNCTION mh_run_task
-    STR_VAR
-    task			= "tweak_item_shops_bg2"
-  END
-END
-
-
-// Temples sell more Priest Scrolls
-
-BEGIN ~Temples sell (more) Priest Scrolls~
-GROUP ~Optional Item Tweaks~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "add_temple_spell_scrolls"
-END
-
-
-// Add Potions of Extra Healing to BG1
-
-BEGIN ~Add Potions of Extra Healing to BG1~
-GROUP ~Optional Item Tweaks~
-
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "tweak_extra_healing_bg1"
-END
-
-
-// Nerfed BG1 Easter Eggs
-
-BEGIN ~Nerfed BG1 Easter Eggs~
-GROUP ~Optional Item Tweaks~
-
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "tweak_easter_eggs"
-END
-
-
-
-// Give Spectacles of Spectacle more charges
-
-BEGIN ~Give Spectacles of Spectacle more charges~
-GROUP ~Optional Item Tweaks~
-
-REQUIRE_PREDICATE GAME_INCLUDES "sod" ~This component is not applicable to your game.~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "tweak_spectacles"
+  task			= "improve_elixir_of_health"
 END
 
 
