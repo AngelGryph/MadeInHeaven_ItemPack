@@ -54,7 +54,7 @@ ALWAYS
     // Load macro/function libraries
 
     INCLUDE "%MOD_FOLDER%/lib/mh_functions.tph"
-    INCLUDE "%MOD_FOLDER%/lib/cd_effect_batches.tph"
+    INCLUDE "%MOD_FOLDER%/lib/cd_functions.tph"
 
 
     // Read the .ini file for this mod
