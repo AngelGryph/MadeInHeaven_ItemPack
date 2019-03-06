@@ -39,9 +39,9 @@ COPY_EXISTING "potn55.itm" "override"
   LAUNCH_PATCH_FUNCTION ALTER_EFFECT
     INT_VAR
     match_opcode	= 17	// HP: Current HP Modifier
-    parameter1		= 20
-    dicenumber		= 10
-    dicesize		= 4
+    parameter1		= 2
+    dicenumber		= 6
+    dicesize		= 8
   END
 
   SAY IDENTIFIED_DESC @2
