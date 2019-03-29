@@ -108,24 +108,28 @@ EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%MOD_FOLDER%/scripts/gemquest_gullykin.baf" 
 // Beregost
 
 COPY_EXISTING "tem3402.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
+
   // Amulet against Undead
   ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
+
   // Girdle of Beatification
   ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1
 
 
 COPY_EXISTING "highhedg.sto" "override"
+  // Zilzanzer's Magnificent Darts +1
+  ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12
+
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
 
   // Potion of Clairvoyance
   ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3
 
-  // Gem of Insight
-  ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
-
-  // Necklace of Adaption
-  ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
+  // Oil of Disenchantment
+  ADD_STORE_ITEM "mh#potn4" AFTER "potn35" #1 #0 #0 "identified" #3
 
   // Cloak of Arachnida
   ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1
@@ -135,6 +139,12 @@ COPY_EXISTING "highhedg.sto" "override"
 
   // Crystal Ball
   ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1
+
+  // Gem of Insight
+  ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
+
+  // Brooch of Shielding
+  ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
 
 
 // Red Canyons
@@ -148,6 +158,9 @@ COPY_EXISTING "bassil.cre" "override"
 // Nashkel / Carnival
 
 COPY_EXISTING "sto4905.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
+
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
 
@@ -158,11 +171,37 @@ COPY_EXISTING "greywo.cre" "override"
   REMOVE_CRE_ITEM "sw1h06"
 
 
+// Ulcaster Ruins
+
+COPY_EXISTING "%UlcasterRuins%.are" "override"
+  // Chandler's Icy Darts
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 2
+    charges1		= 6
+    STR_VAR
+    item_to_add		= "mh#dart2"
+  END
+
+  // Lein's Fiery Darts
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 4
+    charges1		= 6
+    STR_VAR
+    item_to_add		= "mh#dart1"
+  END
+
+
 // Gullykin
 
 COPY_EXISTING "tem4003.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
+
   // Robe of the Pure Heart
   ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1
+   
   // Periapt of Health
   ADD_STORE_ITEM "mh#amul8" LAST #0 #0 #0 "identified" #1
 
@@ -233,6 +272,9 @@ COPY_EXISTING "natash.cre" "override"
 // Baldur's Gate
 
 COPY_EXISTING "tem0132.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
+
   // Necklace of Prayer Beads
   ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
 
@@ -240,8 +282,16 @@ COPY_EXISTING "tem0132.sto" "override"
 COPY_EXISTING "sto0703.sto" "override"
   // Mirror Amulet
   ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1
+
+  // Zilzanzer's Magnificent Darts +1
+  ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12
+
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
+
+  // Oil of Disenchantment
+  ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
+
   // Staff of Swarming Insects
   ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1
 
@@ -359,6 +409,14 @@ COPY_EXISTING "%IsleofBalduranNDradeelsHouse%.are" "override"
     container_to_add_to	= 1
     STR_VAR
     item_to_add		= "mh#robe1"
+  END
+
+  // Silver Dart of Selune +2
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 2
+    STR_VAR
+    item_to_add		= "mh#dart4"
   END
 
 

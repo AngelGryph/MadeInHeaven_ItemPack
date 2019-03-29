@@ -3,10 +3,14 @@ mh#brac6 Silver Bracers of Kedl			Saradush (battle)
 
 mh#clck4 Cloak of the Night Sky			Sendai's Lair (battle)
 
+mh#dart3 Zilzanzer's Magnificent Darts +1	Sister Garlena (shop)
+
 mh#ioun1 Pale Blue Ioun Stone			Sister Garlena (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Sister Garlena (shop)
 
 mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
+mh#potn3 Philter of Purification		Sister Garlena (shop)
+mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 
 mh#ring1 Ring of the Lich +3			Vongoethe (battle)
 mh#ring6 Ring of White Bone			Arcana Archives (shop)

@@ -1,7 +1,7 @@
 mh#amul1 Amulet against Undead			Temple of Lathander (shop)
 mh#amul2 Necklace of Prayer Beads		Temple of Lathander (shop)
 mh#amul3 Gem of Insight				Temple of Oghma (shop)
-mh#amul5 Necklace of Adaption			Druid Grove (battle)
+mh#amul5 Brooch of Shielding			Druid Grove (battle)
 mh#amul6 Scarab versus Golems			Adventurer's Market (shop)
 mh#amul7 Dragon's Tear Amulet			Adventurer's Market (ch6)
 
@@ -19,7 +19,7 @@ mh#belt5 Girdle of Ogre Blood			Ust Natha (shop)
 mh#boot1 Boots of the Master Ninja		Mae'var Guildhouse (battle)
 mh#boot2 Boots of Striding and Springing	Firkraag's Lair (battle)
 
-mh#blun1 Shining Star +1			Maheer (shop)
+mh#blun1 Radiant Star +1			Maheer (shop)
 mh#blun2 Slimecrusher +1			Maheer (shop)
 
 mh#brac1 Vambraces of Evil's Warding		Chateau Irenicus (import)
@@ -37,11 +37,18 @@ mh#clck3 Cloak of Arachnida			Ust Natha (shop)
 mh#dagg1 Catclaw +3				Mae'var Guildhouse (battle)
 mh#dagg2 Spinesheath +1				Undead City (bones)
 
+*mh#dart1 Lein's Fiery Darts			Planar Sphere (chest)
+*mh#dart2 Chandler's Icy Darts			Planar Sphere (chest)
+*mh#dart3 Zilzanzer's Magnificent Darts +1
+*mh#dart4 Silver Dart of Selune +2
+
 mh#helm1 Helm of Valor				D'Arnise Keep (chest)
 mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)
 mh#helm3 Blessed Helm of Lathander		Temple of Lathander (shop)
 
 mh#ioun3 Bright Orange Ioun Stone		Adventurer's Market (shop)
+mh#ioun4 Telkiira				Suldanessenar (battle)
+mh#ioun5 Mottled Green Ioun Stone		Harper Stronghold (battle)
 
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 
@@ -51,6 +58,8 @@ mh#misc3 Crystal Ball				Adventurer's Market (shop)
 
 mh#potn1 Oil of Acid Resistance			(various potion shops)
 mh#potn2 Potion of Clairvoyance			(various potion shops)
+mh#potn3 Philter of Purification		Temple of Lathander (shop)
+*mh#potn4 Oil of Disenchantment			(various potion shops)
 
 mh#ring2 Ring of Warmth				Chateau Irenicus (import)
 mh#ring3 Ring of the Neophyte			Chateau Irenicus (import)
@@ -61,6 +70,7 @@ mh#ring7 Ring of Mind Shielding			Ust Natha (shop)
 mh#ringa Shield Ring				Planar Sphere (event)
 mh#ringb Edion's Ring of Wizardry		Harper Stronghold (battle)
 mh#ringc Ring of Water Control			Adventurer's Market (shop)
+mh#ringd Ring of Three Wishes			Adventurer's Market (ch6)
 
 mh#robe1 Robe of the Elements			Firkraag's Lair (battle)
 mh#robe2 Robe of the Necromancer		Ust Natha (shop)

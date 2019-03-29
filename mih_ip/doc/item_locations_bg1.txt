@@ -2,7 +2,7 @@ mh#amul1 Amulet against Undead			Song of the Morning (shop)
 mh#amul2 Necklace of Prayer Beads		The Lady's Hall (shop)
 mh#amul3 Gem of Insight				High Hedge (shop)
 mh#amul4 Mirror Amulet				Sorcerous Sundries (shop)
-mh#amul5 Necklace of Adaption			High Hedge (shop)
+mh#amul5 Brooch of Shielding			High Hedge (shop)
 mh#amul8 Periapt of Health			Gullykin (shop)
 
 mh#armr1 Winter Wolf Hide +1			Phendra's Scrolls (event)
@@ -14,7 +14,7 @@ mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
 mh#belt3 Storm's Garter				Centeol's Lair
 mh#belt4 Girdle of Beatification		Song of the Morning (shop)
 
-mh#blun1 Shining Star +1			Brokk's Forge (shop)
+mh#blun1 Radiant Star +1			Brokk's Forge (shop)
 mh#blun2 Slimecrusher +1			Brokk's Forge (shop)
 
 mh#boot1 Boots of the Master Ninja		Black Lily (shop)
@@ -38,11 +38,17 @@ mh#comp5 Unicorn Horn				Bandit Camp (sack)
 
 mh#dagg2 Spinesheath +1				Cloakwood Mine (battle)
 
+mh#dart1 Lein's Fiery Darts			Ulcaster Ruins (body)
+mh#dart2 Chandler's Icy Darts			Ulcaster Ruins (body)
+mh#dart3 Zilzanzer's Magnificent Darts +1	High Hedge (shop)
+mh#dart4 Silver Dart of Selune +2		Dradeel's House (table)
+
 mh#hamm1 Final Strike +3			Ulgoth's Beard (event)
 
 mh#helm1 Helm of Valor				Brokk's Forge (shop)
 
 mh#ioun3 Bright Orange Ioun Stone		Ulgoth's Beard (battle)
+mh#ioun5 Mottled Green Ioun Stone		Candlekeep Catacombs (battle)
 
 mh#misc2 Bag of Tricks				Cloakwood (battle)
 mh#misc3 Crystal Ball				High Hedge (shop)
@@ -50,6 +56,8 @@ mh#misc4 Gem of Seeing				Gullykin (event)
 
 mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 mh#potn2 Potion of Clairvoyance			High Hedge (shop)
+mh#potn3 Philter of Purification		Song of the Morning (shop)
+mh#potn4 Oil of Disenchantment			High Hedge (shop)
 
 mh#ring1 Ring of the Lich +3			Candlekeep Catacombs (chest)
 mh#ring2 Ring of Warmth				Phendra's Scrolls (shop)
@@ -57,7 +65,7 @@ mh#ring3 Ring of the Neophyte			Phendra's Scrolls (shop)
 mh#ring4 Ring of Shocking Grasp			Phendra's Scrolls (shop)
 mh#ring5 Ring of Protection from Silence	Durlag's Tower D1 (chest)
 
-mh#robe1 Robe of the Elements			Dradeel' Hut (chest)
+mh#robe1 Robe of the Elements			Dradeel's House (chest)
 mh#robe3 Robe of the Pure Heart			Gullykin (shop)
 
 mh#sper1 Alicorn Spear +2			Brokk's Forge (event)

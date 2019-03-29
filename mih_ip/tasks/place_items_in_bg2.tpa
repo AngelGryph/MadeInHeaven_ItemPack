@@ -97,6 +97,8 @@ COPY_EXISTING "ribald3.sto" "override"
   ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1
   // Dragon's Tear Amulet
   ADD_STORE_ITEM "mh#amul7" AFTER "potn42" #2 #0 #0 "identified" #1
+  // Ring of Three Wishes
+  ADD_STORE_ITEM "mh#ringd" LAST #3 #0 #0 "identified" #1
 
 
 // Planar Sphere
@@ -151,6 +153,8 @@ COPY_EXISTING "kaypal01.cre" "override"
 // Temple District
 
 COPY_EXISTING "temlath.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6
   // Robe of the Pure Heart
   ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1
   // Shield of the Revenant +2
@@ -193,6 +197,8 @@ COPY_EXISTING "jaga3.cre" "override"
   // Edion's Ring of Wizardry (replaces normal Ring of Wizardry)
   ADD_CRE_ITEM "mh#ringb" #0 #0 #0 "unstealable" "rring"
   REMOVE_CRE_ITEM "ohringwi" "ring08"
+  // Mottled Green Ioun Stone
+  ADD_CRE_ITEM "mh#ioun5" #0 #0 #0 "unstealable" "helmet"
 
 
 // Mae'var Guildhouse
@@ -234,6 +240,8 @@ COPY_EXISTING "trmer02.sto" "override"
 
 
 COPY_EXISTING "temsup.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6
   // Waukeen's Defender +2
   ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1
 
@@ -329,6 +337,11 @@ COPY_EXISTING "uddrow23.sto" "override"
   ADD_STORE_ITEM "mh#robe2" AFTER "clck17" #0 #0 #0 "identified" #1
 
 
+COPY_EXISTING "uddrow24.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
+
+
 // Various potion shops
 
 COPY_EXISTING "gorch.sto" "override"
@@ -343,9 +356,24 @@ COPY_EXISTING "gorch.sto" "override"
 
 // Suldanessenar
 
+COPY_EXISTING "suelf10.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn52" #1 #0 #0 "identified" #10
+
+
 COPY_EXISTING "dragblac.cre" "override"
   // Pale Justice +4
   ADD_CRE_ITEM "mh#swrd6" #0 #0 #0 "none" "inv"
+
+
+COPY_EXISTING "ar2810.are" "override"
+  // Telkiira
+  LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+    INT_VAR
+    container_to_add_to	= 5
+    STR_VAR
+    item_to_add		= "mh#ioun4"
+  END
 
 
 COPY_EXISTING "ar2806.are" "override"

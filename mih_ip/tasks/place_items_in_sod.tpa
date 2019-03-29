@@ -9,6 +9,12 @@ COPY_EXISTING "bdshkorl.cre" "override"
 // Sorcerous Sundries
 
 COPY_EXISTING "bdsorcsc.sto" "override"
+  // Zilzander's Magnificent Darts +1
+  ADD_STORE_ITEM "mh#dart3" AFTER "dart01" #5 #0 #0 "identified" #20
+
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #10
+
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #5
 
@@ -18,8 +24,15 @@ COPY_EXISTING "bdsorcsc.sto" "override"
 COPY_EXISTING "bdkazzre.sto" "override"
   // Boots of Striding and Springing
   ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1
+
   // Pale Blue Ioun Stone
   ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1
+
+  // Lein's Fiery Darts
+  ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4
+
+  // Chandler's Icy Darts
+  ADD_STORE_ITEM "mh#dart2" LAST #3 #0 #0 "identified" #4
 
 
 // Bellowgulp & the Concocter
@@ -32,12 +45,18 @@ COPY_EXISTING "bdbellow.sto" "override"
 // Nazramu's Store
 
 COPY_EXISTING "bdnazram.sto" "override"
-  // Girdle of Ogre's Blood
-  ADD_STORE_ITEM "mh#belt5" AFTER "bdbelt01" #1 #0 #0 "identified" #1
   // Catclaw +3
   ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1
+
+  // Girdle of Ogre's Blood
+  ADD_STORE_ITEM "mh#belt5" AFTER "bdbelt01" #1 #0 #0 "identified" #1
+
+  // Edion's Ring of Wizardry
+  ADD_STORE_ITEM "mh#ringb" AFTER "bdring10" #0 #0 #0 "identified" #1
+
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
+
   // Shadow Dancer's Robe
   ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1
 
@@ -47,6 +66,7 @@ COPY_EXISTING "bdnazram.sto" "override"
 COPY_EXISTING "bdwaizah.sto" "override"
   // White Hide of Umpluutu +2
   ADD_STORE_ITEM "mh#armr3" AFTER "bdleat03" #1 #0 #0 "identified" #1
+
   // Robe of the Necromancer
   ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1
 

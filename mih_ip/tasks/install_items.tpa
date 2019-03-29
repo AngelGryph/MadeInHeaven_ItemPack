@@ -223,25 +223,11 @@ COPY "%MOD_FOLDER%/items/mh#amul4.itm" "override"
   SAY IDENTIFIED_DESC @174
 
 
-// mh#amul5 - Necklace of Adaptation
+// mh#amul5 - Brooch of Shielding
 
 COPY "%MOD_FOLDER%/items/mh#amul5.itm" "override"
   SAY NAME2 @40
   SAY IDENTIFIED_DESC @41
-
-  PATCH_FOR_EACH gas IN "CLOUD" "CLOUDKIL" "CLOUDPC" "GOLCLOUD" "DRAGGREE"
-  BEGIN
-    PATCH_IF IDS_OF_SYMBOL ("projectl" "%gas%") >= 0
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-	opcode		= 83	// Protection: From Projectile
-	target		= 1	// Self
-	timing		= 2	// While worn
-	parameter2	= IDS_OF_SYMBOL ("projectl" "%gas%")
-      END
-    END
-  END
 
 
 // mh#amul6 - Scarab versus Golems
@@ -540,6 +526,20 @@ COPY "%MOD_FOLDER%/items/mh#btax2.itm" "override"
 
 // mh#btax3 - Redethemar +4
 
+CREATE EFF "mh#vphit"
+  WRITE_LONG	0x0010 13	// Death: Instant Death
+  WRITE_LONG	0x0020 8	// Chunked death
+  WRITE_SHORT	0x0024 1
+  WRITE_LONG	0x002c 100
+
+
+CREATE EFF "mh#vhmsg"
+  WRITE_LONG	0x0010 139	// Text: Display String
+  WRITE_LONG	0x001c 64285	// "Vorpal Hit" in BG2(EE)
+  WRITE_SHORT	0x0024 1
+  WRITE_LONG	0x002c 100
+
+
 COPY "%MOD_FOLDER%/spells/mh#btax3.spl" "override"
 
 
@@ -653,6 +653,38 @@ COPY "%MOD_FOLDER%/items/mh#dagg1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#dagg2.itm" "override"
   SAY NAME2 @135
   SAY IDENTIFIED_DESC @136
+
+
+// mh#dart1 - Lein's Fiery Darts
+
+COPY "%MOD_FOLDER%/items/mh#dart1.itm" "override"
+  SAY NAME2 ~Lein's Fiery Dart +2~
+  SAY IDENTIFIED_DESC ~These small but deadly projectiles were created by Lein, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and engulfs the target in flames.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 4d4 (fire)
+Speed Factor: 2
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+
+
+COPY "%MOD_FOLDER%/items/mh#dart2.itm" "override"
+  SAY NAME2 ~Chandler's Icy Dart +2~
+  SAY IDENTIFIED_DESC ~These small but deadly projectiles were created by Chandler, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and releases a freezing cloud at the target.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 4d4 (cold)
+Speed Factor: 2
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
 
 
 // mh#hamm1 - Final Strike +3
@@ -778,6 +810,33 @@ COPY "%MOD_FOLDER%/items/mh#ioun4.itm" "override"
   END
 
 
+// mh#ioun5 - Mottled Green Ioun Stone
+
+COPY "%MOD_FOLDER%/items/mh#ioun5.itm" "override"
+  SAY NAME2 ~Mottled Green Ioun Stone~
+  SAY IDENTIFIED_DESC ~This ioun stone is a lush green with many yellow spots.  It is very pleasant to look at, and grants some protection against magical spells and effects.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +1 (all)
+
+Weight: 2~
+
+  PATCH_IF $ini_hash("visible_ioun_stones")
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 215
+      target		= 1
+      timing		= 2
+      parameter2	= 1
+      STR_VAR
+      resource		= ~mh#vsio4~
+    END
+  END
+
+
 // mh#lbow1 - Bow of Eletha
 
 COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
@@ -852,6 +911,32 @@ COPY "%MOD_FOLDER%/items/mh#potn2.itm" "override"
   SAY IDENTIFIED_DESC @142
 
 
+// mh#potn3 - Philter of Purification
+
+COPY "%MOD_FOLDER%/items/mh#potn3.itm" "override"
+  SAY NAME2 ~Philter of Purification~
+  SAY IDENTIFIED_DESC ~This elven concoction will purify the drinker of any diseases spreading through <PRO_HISHER> body, as well as certain afflictions.
+
+STATISTICS:
+
+Special: Cures blindness, deafness, and disease
+
+Weight: 1~
+
+
+// mh#potn4 - Oil of Disenchantment
+
+COPY "%MOD_FOLDER%/items/mh#potn4.itm" "override"
+  SAY NAME2 ~Oil of Disenchantment~
+  SAY IDENTIFIED_DESC ~This light, ethereal oil quickly evaporates when exposed to air.  As it evaporates, it will dispel all enchantments, making this oil ideal for removing unwanted enchantments from party members.
+
+STATISTICS:
+
+Special: Dispels all spells and effects of the Enchantment school.
+
+Weight: 1~
+
+
 // mh#ring1 - Ring of the Lich +3
 
 COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
@@ -891,6 +976,11 @@ COPY "%MOD_FOLDER%/items/mh#ring4.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#ring5.itm" "override"
   SAY NAME2 @85
   SAY IDENTIFIED_DESC @86
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_silence_arrays"
+  END
 
 
 // mh#ring6 - Ring of White Bone
@@ -965,6 +1055,18 @@ COPY "%MOD_FOLDER%/items/mh#ringb.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#ringc.itm" "override"
   SAY NAME2 @197
   SAY IDENTIFIED_DESC @198
+
+
+// mh#ringd - Ring of Three Wishes
+
+COPY "%MOD_FOLDER%/items/mh#ringd.itm" "override"
+  SAY NAME2 ~Ring of Three Wishes~
+  SAY IDENTIFIED_DESC ~This powerful ring houses a noble genie who will fulfill three of the owner's spoken wishes.  After the third wish, the genie is freed from service and the ring crumbles to powder.  The owner is well advised to be careful what <PRO_HESHE> wishes for, as unwise wishes will likely result in disaster.
+
+STATISTICS:
+
+Charge abilities:
+- Limited Wish~
 
 
 // mh#robe1 - Robe of the Elements

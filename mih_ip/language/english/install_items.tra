@@ -41,7 +41,7 @@ STATISTICS:
 Charge abilities:
 - True Seeing (1/day)
 
-Weight: 3~
+Weight: 1~
 @8    = ~Girdle of Dwarvenkind~
 @9    = ~Dwarven priests of Moradin sometimes fashion these belts to bestow upon a non-dwarf who has done the clan a great service.  In addition to making the wearer an honorary clans-member, the girdle has a number of beneficial effects.
 
@@ -87,12 +87,14 @@ Combat abilities:
 - Critical hit on 19-20
 
 THAC0: +1
-Damage: 1d10 +1 (slashing)
-Weight: 7
+Damage: 1d10+1 (slashing)
 Speed Factor: 6
 Proficiency Type: Axe
 Type: 1-handed
-Requires: 10 Strength~
+Requires:
+ 10 Strength
+
+Weight: 7~
 @16   = ~Mutamin's Cloak~
 @17   = ~This cloak was taken from the mad wizard Mutamin's body when he was slain by <CHARNAME> in the fields east of Beregost.  No prior history is known, perhaps Mutamin himself created it in order to keep him safe from his own 'pets'.
 
@@ -123,7 +125,7 @@ Equipped abilities:
 Armor Class: +1
 
 THAC0: +3
-Damage: 1d4 +4 (crushing)
+Damage: 1d4+4 (crushing)
 Weight: 4
 Speed Factor: 1
 Proficiency Type: War Hammer
@@ -139,7 +141,7 @@ Equipped abilities:
 - Missile Resistance: +50%
 - Protects against critical hits
 
-Weight: 4~
+Weight: 2~
 @24   = ~Meteoric Iron~
 @25   = ~At first glance these seem to be worthless red rocks, but closer inspection reveals them to be fragments of an iron meteorite.  This is useful as a crafting material, and might be worth something to a skilled smith.
 
@@ -153,21 +155,27 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +3
-- Saving Throws: +3~
+- Saving Throws: +3
+
+Weight: 0~
 @28   = ~Ring of Warmth~
 @29   = ~This type of magical ring is often sought by those who are regularly exposed to freezing conditions, like mountaineers, explorers and, of course, adventurers.  The ring keeps the wearer comfortably warm in all but the most extreme cold weather, and reduces the damage done by freezing attacks like the Ice Storm spell or the chilling breath of a winter wolf.
 
 STATISTICS:
 
 Equipped abilities:
-- Cold Resistance: +25%~
+- Cold Resistance: +25%
+
+Weight: 0~
 @30   = ~Ring of the Neophyte~
 @31   = ~Wizards sometimes create rings like these for very promising apprentices, both as a reward for their years of service and to provide their prize students with a small advantage on the hard and often dangerous road to arcane mastery.
 
 STATISTICS:
 
 Equipped abilities:
-Arcane Spells: +1 first level spell~
+Arcane Spells: +1 first level spell
+
+Weight: 0~
 @32   = ~Ring of Shocking Grasp~
 @33   = ~The gnome tinkerer whom first created this ring insisted on calling it 'The Buzzer' and would often use it to shock someone as part of a prank.  He met a messy end when he pulled this trick once too often on a dwarven battlerager with no sense of humor.
 
@@ -177,7 +185,9 @@ Equipped abilities:
 - Electrical Resistance: +10%
 
 Charge abilities:
-- Shocking Grasp (3/day)~
+- Shocking Grasp (3/day)
+
+Weight: 0~
 @34   = ~Meteoric Shield +2~
 @35   = ~Forged for <CHARNAME> by the dwarven smith Brokk, this shield is quite a work of art.  The tough meteoric iron not only provides excellent physical protection, but also seems to dampen bursts of magical energy, protecting the wielder from raw magical damage like that inflicted by the Magic Missile spell.  This shield is a bit heavier than a regular one though.
 
@@ -199,12 +209,14 @@ Combat abilities:
 - Additional 1d2 acid damage per hit
 
 THAC0: +2 bonus
-Damage: 2d4 +2 (slashing)
-Weight: 7
+Damage: 2d4+2 (slashing)
 Speed Factor: 6
 Proficiency Type: Bastard Sword
 Type:  1-handed
-Requires: 11 Strength~
+Requires:
+ 11 Strength
+
+Weight: 7~
 @38   = ~Smythe's Slicer +1~
 @39   = ~Smythe Stonehollow forged this weapon almost two hundred years ago after the Stonehollow clan was forced to flee their ancestral home when it overrun by arachnids from the Underdark.  He gathered a band of human- and elven adventurers and tried to drive the creatures back.  The attempt was partially successful, but in the end Smythe fell in a battle with the drow behind the invasion.
 
@@ -212,20 +224,22 @@ STATISTICS:
 
 THAC0: +1 bonus, +3 vs. spiders
 Damage: 1d8 +1, +3 vs. spiders (slashing)
-Weight: 3
 Speed Factor: 4
 Proficiency Type: Scimitar/Wakizashi/Ninja-To
 Type: 1-handed
-Requires: 10 Strength~
-@40   = ~Necklace of Adaptation~
-@41   = ~This magical necklace protects the wearer from all kinds of harmful gasses, like the arcane spells Stinking Cloud and Cloud Kill, and even the foul breath of a green dragon.
+Requires:
+ 10 Strength~
+
+Weight: 3~
+@40   = ~Brooch of Shielding~
+@41   = ~This enchanted brooch has but one purpose, to harmlessly absorb the projectiles of the Magic Missile spell and similar effects.
 
 There is no known history, and the near mint condition of the item suggests it was crafted quite recently, perhaps by Thalantyr of Beregost.
 
 STATISTICS:
 
 Equipped abilities:
-- Immunity to gasses
+- Immunity to Magic Missile
 
 Weight: 2~
 @42   = ~Winter Wolf Hide +1~
@@ -278,8 +292,8 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-Armor Class: +1
-Movement Rate: +2
+- Armor Class: +1
+- Movement Rate: +2
 
 Weight: 4~
 @50   = ~Vambraces of Evil's Warding~
@@ -303,12 +317,14 @@ Equipped abilities:
 - Stealth: +15%
 
 THAC0: +3
-Damage: 1d4 +3 (piercing)
-Weight: 0
+Damage: 1d4+3 (piercing)
 Speed Factor: 0 
 Proficiency Type: Dagger
 Type:  1-handed
-Require: 3 Strength~
+Requires:
+ 3 Strength
+
+Weight: 1~
 @54   = ~Pale Blue Ioun Stone~
 @55   = ~The beautiful azure blue of this ioun stone resembles the sky on a warm summer day.
 
@@ -332,14 +348,14 @@ Weight: 2~
 STATISTICS:
 
 Charge abilities:
-- Magic Missile (3/day, 10th level caster)
+- Magic Missile (3/day, 12th level caster)
 
 Combat abilities:
 - Double normal range
 
 THAC0: +3 bonus
 Speed Factor: 5
-Proficiency Type: Long Bow
+Proficiency Type: Longbow
 Type: 2-handed
 Requires:
  6 Strength
@@ -363,7 +379,7 @@ Equipped abilities:
 - Armor Class: +2
 
 Requires:
- 12 Strength
+ 9 Strength
 
 Weight: 3~
 @63   = ~Shield of the Phoenix +2~
@@ -390,7 +406,7 @@ Equipped abilities:
 THAC0: +2 bonus
 Damage: 1d6 +2 (crushing)
 Speed Factor: 2
-Proficiency Type: Staff
+Proficiency Type: Quarterstaff
 Type: 2-handed
 Requires:
  5 Strength
@@ -437,7 +453,7 @@ Weight: 25~
 STATISTICS:
 
 Equipped abilities:
-- Strikes as silver, cold iron +4 weapon
+- Can strike creatures that require silver or cold iron weapons to hit.
 
 THAC0: +1, +4 vs. lycanthropes, undead & demons
 Damage: 2d4+1, +4 vs. lycanthropes, undead & demons (crushing)
@@ -501,16 +517,22 @@ Charge abilities:
 
 Weight: 3~
 @81   = ~Arandur Ore~
-@82   = ~These shards of volcanic glass seem like a worthless curiosity at first, but closer inspection reveals they contain veins of arandur, a rare metal that is very prized by dwarven weaponsmiths.~
+@82   = ~These shards of volcanic glass seem like a worthless curiosity at first, but closer inspection reveals they contain veins of arandur, a rare metal that is very prized by dwarven weaponsmiths.
+
+Weight: 75~
 @83   = ~Lux Veritatis~
-@84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.~
+@84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.
+
+Weight: 2~
 @85   = ~Ring of Protection from Silence~
 @86   = ~This ring was created more than two centuries ago by an unnamed student of the enchanter Myrl, who lived on the southern shore of the Vilhon Reach.  Sages claim Myrl and his students created hundreds of enchanted items, which ended up in treasure hordes all across Faerun.  Among these items were a number of unusual rings, including this one.  Myrl himself is believed to have perished in the conflagration that destroyed his wizard school after a heated spell battle among the students, but his legacy still survives.
 
 STATISTICS:
 
 Equipped abilities:
-- Immunity to Silence~
+- Immunity to Silence
+
+Weight: 0~
 @87   = ~Celestial Chain +2~
 @88   = ~Forged by the dwarven smith Brokk for <CHARNAME>, this suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously woven from precisely crafted arandur rings by the old dwarf, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a small price to their abilities.
 
@@ -545,14 +567,19 @@ As the name suggests, this ring is carved entirely from bone, preferably from an
 STATISTICS:
 
 Charge abilities:
-- Negative Plane Protection (12th level caster)~
+- Negative Plane Protection (12th level caster)
+
+Weight: 0~
 @94   = ~Ring of Mind Shielding~
 @95   = ~This ring protects the wearer's mind from all external influences such as psionic abilities and spells like Domination.  No prior history is known, this ring seems to have been crafted very recently.  It would be a great boon for any hero who has to explore the Underdark though, as it provides solid defenses against some of its more horrid denizens, especially the mind flayers.  Perhaps it can earn a name and history for itself in this way.
 
 STATISTICS:
 
 Equipped abilities:
-- Immunity to berserk, charm, confusion, domination, feeblemind and stunning~
+- Immunity to berserk, charm, confusion, domination, feeblemind and stunning.
+- Wearer's alignment cannot be magically detected.
+
+Weight: 0~
 @96   = ~Ring of Shooting Stars~
 @97   = ~This unusual elven-made ring throbs with power.  It dates back to the days of Myth Drannor, were it was possibly the cause of the destruction of the Rule Tower in the Year of Stern Judgment (666).  Since then it has left a path of chaos and destruction throughout history, having been used in several wars.  Although the ring is not cursed in any way, it seems to be drawn to violent conflicts, and its appearance has become a bad omen to many.
 
@@ -563,7 +590,10 @@ Charge abilities:
 - Chain Lightning (2/day)
 - Meteor Swarm (1/day)
 
-Requires: 14 Intelligence~
+Requires:
+ 14 Intelligence
+ 
+Weight: 0~
 @98   = ~Robe of the Elements~
 @99   = ~Unsatisfied with the basic mage robes, Zavoros the Moderately Insane experimented to find a more powerful enchantment for his personal wardrobe.  After two explosions, the village being overrun with a horde of accidentally summoned gibberlings, and his latest prototype coming apart at the seams in the town square, he finally came up with this design.  At this point however, he was asked in rather firm terms to perform his experiments in a more remote location, and to never wear untested prototype robes in public again.
 
@@ -638,9 +668,8 @@ Equipped abilities:
 - Strikes as a +4 weapon
 
 THAC0: +1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends
-Damage: 1d8+1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends
-Damage type: Slashing
-Speed Factor: 3
+Damage: 1d8+1, +2 vs. undead, +3 vs. elementals, +4 vs. fiends (slashing)
+Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
@@ -653,9 +682,8 @@ Weight: 4~
 STATISTICS:
 
 THAC0: +4
-Damage: 1d8+4
-Damage type: Slashing
-Speed Factor: 3
+Damage: 1d8+4 (slashing)
+Speed Factor: 1
 Proficiency Type: Long Sword
 Type: One-handed
 Requires:
@@ -704,7 +732,9 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +3
-- Magic Resistance: +10%~
+- Magic Resistance: +10%
+
+Weight: 0~
 @121  = ~Gauntlets of Smiting~
 @122  = ~These iron gauntlets were created nearly twenty centuries ago when the human empire of Narfell practiced fiend summoning on a large scale.  Exactly whom created these is not known, but likely it was the clergy of a benevolent deity at the time.  Since then they have been worn by many a champion of good in an attempt to remove this fell taint from the Realms, a task that will never truly be complete as long as foolish mages are still willing to risk their life and soul for the promise of dark power.
 
@@ -714,7 +744,7 @@ Equipped abilities:
 - THAC0: +2 vs. evil creatures
 - Damage: +3 vs. evil creatures
 
-Weight: 3~
+Weight: 2~
 @123  = ~Trollkiller +2~
 @124  = ~This double-bladed dwarven axe was the favorite of the hero Durlag "Trollkiller".  This was also the weapon he wielded during the terrifying tenday he spend fighting the dopplegangers that had infiltrated his tower.  Afterwards, he could no longer bear to look at the weapon, and it sat forgotten on a treasure pile for many years.
 
@@ -724,7 +754,7 @@ Combat abilities:
 - Additional 1d3 points of acid damage per hit
 
 THAC0: +2 bonus
-Damage: 1d10 +2 (slashing)
+Damage: 1d10+2 (slashing)
 Speed Factor: 5
 Proficiency Type: Axe
 Type: 1-handed
@@ -835,9 +865,13 @@ Weight: 2~
 STATISTICS:
 
 Charge abilities:
-- Recall Spell (1/day, 4th level)~
+- Recall Spell (1/day, 4th level)
+
+Weight: 0~
 @141  = ~Potion of Clairvoyance~
-@142  = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.~
+@142  = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.
+
+Weight: 1~
 @143  = ~Shield Ring~
 @144  = ~This highly prized ring is made from simple jade to hide its powerful magic. Crafted by the wizard Bil, the shield ring is plain and functional. Bil, a sardonic mage of otherwise small repute (creator of such spells as Bil's Fantastic Ale and Bil's Blasting Ball), found the ring to be incredibly useful against the enemy mages he frequently fought. When Bil disappeared from the realms over a century ago, his ring was one of many items he left behind to his friends and associates. Because many of his friends and associates were larcenous thugs, it is assumed that the ring was sold to the highest bidder as soon as possible.
 
@@ -854,7 +888,9 @@ Weight: 0~
 STATISTICS:
 
 Equipped abilities:
-- Arcane Spells: +2 5th level spells~
+- Arcane Spells: +2 fifth level spells
+
+Weight: 0~
 @147  = ~Shield of the Three Kings +5~
 @148  = ~The name of this masterwork golden shield is derived from the three crowns engraved in its front, for it hasn't been associated with any known king.  It was forged by the shield dwarves of the North to be used in one of their many skirmishes with the orc hordes that regular plague that area of Faerun.  It is not known whom exactly placed the massive enchantment on it, although the style used is typical for the Netherese arcanists of the past.  If the dwarves truly traded for this shield with the Netherese, the price demanded must have been mind boggling.  This is possibly the most strongly enchanted shield in the Realms.
 
@@ -862,6 +898,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +6
+- Magic Resistance: +10%
 
 Requires:
  12 Strength
@@ -876,7 +913,7 @@ Equipped abilities:
 - Armor Class: +3
 
 Charge abilities:
-- Undead Ward (1/day)
+- Repulse Undead (1/day)
 
 Requires:
  12 Strength
@@ -937,7 +974,7 @@ Charge abilities:
 
 THAC0: +2
 Damage: 1d6+2 (crushing)
-Speed Factor: 3
+Speed Factor: 2
 Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires:
@@ -957,7 +994,7 @@ Charge abilities:
 
 THAC0: +3
 Damage: 2d4+3 (slashing)
-Speed Factor: 1
+Speed Factor: 5
 Proficiency Type: Bastard Sword
 Type: One-handed
 Requires:
@@ -980,7 +1017,7 @@ Edan took the blade to a local weaponsmith and had him put a wooden, leather-wra
 STATISTICS:
 
 Equipped abilities:
-- Immunity to charm- and fear effects
+- Immunity to charm and fear
 
 THAC0: +4, +7 vs. evil creatures
 Damage: 1d8+4, +7 vs. evil creatures (slashing)
@@ -1099,7 +1136,7 @@ Requires:
 
 Weight: 13~
 @181  = ~Rusty Katana~
-@182  = ~This magical katana has dulled and rusted by years of neglect in a damp and harsh environment.  However, there is still a bit of a gleam to it through the layers of corrosion.  In its current state it would perform worse than an unenchanted blade, but a skilled swordsmith might be able to restore some of its former glory.
+@182  = ~This magical katana has dulled and rusted by years of neglect in a damp and harsh environment.  However, there is still a bit of a gleam to it through the layers of corrosion.  In its current state it would perform worse than an unenchanted blade and it might even break, but a skilled swordsmith could be able to restore some of its former glory.
 
 STATISTICS:
 
@@ -1117,7 +1154,7 @@ Weight: 6~
 @185  = ~This beautiful twisted horn seems to come from some sort of woodland creature.  The ivory feels warm in your hand, almost still alive.
 
 Weight: 3~
-@186  = ~This is the severed horn of a unicorn, also known as an alicorn.  A unicorn cannot live without its horn, so it is safe to assume that the unicorn this was taken from was either already dead or died soon after.  Killing such a magnificent and benevolent creature is a great crime, but now that the deed has already been done, perhaps something good can come from it by putting it to a noble use.
+@186  = ~This is an alicorn, the severed horn of a unicorn.  A unicorn cannot live without its horn, so it is safe to assume that the unicorn this was taken from was either already dead or died soon after.  Killing such a magnificent and benevolent creature is a great crime, but now that the deed has already been done, perhaps something good can come from it by putting it to a noble use.
 
 Weight: 3~
 @187  = ~Bright Orange Ioun Stone~
@@ -1176,10 +1213,10 @@ Charge abilities:
   Range: Touch
   Duration: 45 seconds
   Area of Effect: 1 water elemental
-
 - Melf's Acid Arrow once per day
+- Ice Storm once per day
 
-- Ice Storm once per day~
+Weight: 0~
 @199  = ~Alicorn Spear +2~
 @200  = ~This masterwork spear has been tipped by an alicorn, the actual horn of a unicorn.  It was commissioned from the dwarven smith Brokk by <CHARNAME>, who found the horn in a bandit camp.  Most likely the slayer of the unicorn in question is now dead themselves, and perhaps the creation of this item can do some good in the Realms.
 

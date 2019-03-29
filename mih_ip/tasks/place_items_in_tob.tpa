@@ -1,16 +1,27 @@
 // Watcher's Keep
 
 COPY_EXISTING "garlena.sto" "override"
+  // Zilzanzer's Magnificent Darts +1
+  ADD_STORE_ITEM "mh#dart3" AFTER "dart01" #12 #0 #0 "identified" #12
+
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn52" #1 #0 #0 "identified" #2
+
   // Scimitar of the Seven +4
   ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1
+
   // Mystery of the Dead +3
   ADD_STORE_ITEM "mh#shld6" LAST #0 #0 #0 "identified" #1
+
   // Ring of Anti-Venom (from Vongoethe)
   ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1
+
   // Sky Blue Ioun Stone
   ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
+
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
+
   // Elmira's Wand of Blasting
   ADD_STORE_ITEM "mh#wand2" LAST #12 #0 #0 "identified" #1
 
@@ -52,14 +63,24 @@ COPY_EXISTING "illasera.cre" "override"
 // Saradush
 
 COPY_EXISTING "25spell.sto" "override"
+  // Zilzanzer's Magnificent Darts +1
+  ADD_STORE_ITEM "mh#dart3" AFTER "helm23" #12 #0 #0 "identified" #12
+
   // Libram of Silver Magic
   ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1
+
   // Oil of Acid Resistance
   ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9
+
+  // Oil of Disenchantment
+  ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5
+
   // Ring of Shooting Stars
   ADD_STORE_ITEM "mh#ring8" AFTER "ring02" #3 #2 #1 "identified" #1
+
   // Ring of White Bone
   ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1
+
   // Wand of Illusions
   ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
 
@@ -67,6 +88,7 @@ COPY_EXISTING "25spell.sto" "override"
 COPY_EXISTING "gromg08.cre" "override"
   // Silver Bracers of Kedl
   ADD_CRE_ITEM "mh#brac6" #0 #0 #0 "unstealable" "gloves"
+
   // Staff of the Legion +5
   ADD_CRE_ITEM "mh#staf4" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
   REMOVE_CRE_ITEM "staf18"
@@ -99,6 +121,9 @@ COPY_EXISTING "ar5204.are" "override"
 // Amkethran
 
 COPY_EXISTING "amcler02.sto" "override"
+  // Philter of Purification
+  ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6
+
   // Waukeen's Defender +2
   ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1
 

@@ -2,7 +2,7 @@ mh#amul1 Amulet against Undead			DMG (2E)
 mh#amul2 Necklace of Prayer Beads		DMG (2E)
 mh#amul3 Gem of Insight				DMG (2E)
 mh#amul4 Mirror of Illusions
-mh#amul5 Necklace of Adaption			DMG (2E)
+mh#amul5 Brooch of Shielding			DMG (2E)
 mh#amul6 Scarab versus Golems			DMG (2E)
 mh#amul7 Dragon's Tear Amulet
 mh#amul8 Periapt of Health			DMG (2E)
@@ -20,7 +20,7 @@ mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
 mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
 
-mh#blun1 Shining Star +1
+mh#blun1 Radiant Star +1
 mh#blun2 Slimecrusher +1
 
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
@@ -43,13 +43,18 @@ mh#clck3 Cloak of Arachnida			DMG (2E)
 mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
 
 mh#comp1 Meteoric Iron
-mh#comp2 Mithral Ore
+mh#comp2 Arandur Ore
 mh#comp3 Lux Veritatis
 mh#comp4 Rusty Katana
 mh#comp5 Unicorn Horn
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Spinesheath +1				Icewind Dale 1 (2E)
+
+mh#dart1 Lein's Fiery Darts +2			Pages from the Mages (2E)
+mh#dart2 Chandler's Icy Darts +2		Pages from the Mages (2E)
+mh#dart3 Zilzanzer's Magnificent Darts +1	Icewind Dale 1 (2E)
+mh#dart4 Silver Dart of Selune +2
 
 mh#hamm1 Final Strike +3
 
@@ -60,6 +65,8 @@ mh#helm3 Blessed Helm of Lathander		Icewind Dale 1 (2E)
 mh#ioun1 Pale Blue Ioun Stone			DMG (2E)
 mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
 mh#ioun3 Bright Orange Ioun Stone		DMG (3E)
+mh#ioun4 Telkiira				Fallen Empires of Faerun (3E)
+mh#ioun5 Mottled Green Ioun Stone
 
 mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
 
@@ -70,6 +77,8 @@ mh#misc4 Gem of Seeing				DMG (2E)
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 mh#potn2 Potion of Clairvoyance			DMG (2E)
+mh#potn3 Philter of Purification		Icewind Dale 1 (2E)
+mh#potn4 Oil of Disenchantment			DMG (2E)
 
 mh#ring1 Ring of the Lich +3			DMG (2E)
 mh#ring2 Ring of Warmth				DMG (2E)
@@ -83,6 +92,7 @@ mh#ring9 Ring of the Chosen			Legends & Lore (2E)
 mh#ringa Shield Ring				Icewind Dale 1 (2E)
 mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
 mh#ringc Ring of Water Control			DMG (2E)
+mh#ringd Ring of Three Wishes			DMG (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer

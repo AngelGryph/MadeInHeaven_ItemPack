@@ -10,6 +10,10 @@ mh#brac4 Bracers of the Wind			Morentherene's Lair (nest)
 
 mh#dagg1 Catclaw +3				Nazramu (shop)
 
+mh#dart1 Lein's Fiery Darts			Kazzrem (shop)
+mh#dart2 Chandler's Icy Darts			Kazzrem (shop)
+mh#dart3 Zilzanzer's Magnificent Darts +1	Sorcerous Sundries (shop)
+
 mh#ioun1 Pale Blue Ioun Stone			Kazzrem (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
 
@@ -17,7 +21,11 @@ mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 
 mh#misc1 Pearl of Power				Lich Outpost (shelf)
 
+mh#potn1 Oil of Acid Resistance			Sorcerous Sundries (shop)
+mh#potn3 Philter of Purification		Sorcerous Sundries (shop)
+
 mh#ringa Shield Ring				Lich Outpost (mage remains)
+mh#ringb Edion's Ring of Wizardry		Nazramu (shop)
 
 mh#robe2 Robe of the Necromancer		Waizahb (shop)
 mh#robe4 Shadow Dancer's Robe			Nazramu (shop)
