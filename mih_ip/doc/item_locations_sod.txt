@@ -1,3 +1,5 @@
+mh#amul9 Medallion of the Arctic		Nazramu (shop)
+
 mh#armr3 White Skin of Umpluutu +3		Waizahb (shop)
 
 mh#belt2 Sunite Sash				Ziatar (battle)

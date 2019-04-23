@@ -2,7 +2,7 @@
 
 COPY_EXISTING "garlena.sto" "override"
   // Zilzanzer's Magnificent Darts +1
-  ADD_STORE_ITEM "mh#dart3" AFTER "dart01" #12 #0 #0 "identified" #12
+  ADD_STORE_ITEM "mh#dart3" AFTER "dart01" #12 #0 #0 "identified" #5
 
   // Philter of Purification
   ADD_STORE_ITEM "mh#potn3" AFTER "potn52" #1 #0 #0 "identified" #2
@@ -75,8 +75,8 @@ COPY_EXISTING "25spell.sto" "override"
   // Oil of Disenchantment
   ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5
 
-  // Ring of Shooting Stars
-  ADD_STORE_ITEM "mh#ring8" AFTER "ring02" #3 #2 #1 "identified" #1
+  // Ring of Thex
+  ADD_STORE_ITEM "mh#ring9" AFTER "ring02" #0 #0 #0 "identified" #1
 
   // Ring of White Bone
   ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1

@@ -14,7 +14,7 @@ mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 
 mh#ring1 Ring of the Lich +3			Vongoethe (battle)
 mh#ring6 Ring of White Bone			Arcana Archives (shop)
-mh#ring8 Ring of Shooting Stars			Arcana Archives (shop)
+mh#ring9 Ring of Thex				Arcana Archives (shop)
 
 mh#shld4 Shield of the Three Kings +5		Watcher's Keep (battle)
 mh#shld6 Mystery of the Dead +3			Sister Garlena (shop)

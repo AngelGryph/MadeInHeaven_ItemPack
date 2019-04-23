@@ -6,6 +6,7 @@ mh#amul5 Brooch of Shielding			DMG (2E)
 mh#amul6 Scarab versus Golems			DMG (2E)
 mh#amul7 Dragon's Tear Amulet
 mh#amul8 Periapt of Health			DMG (2E)
+mh#amul9 Medallion of the Arctic		Encyclopedia Magica (2E)
 
 mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow
@@ -19,6 +20,7 @@ mh#belt2 Sunite Sash				Magic of Faerun (3E)
 mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
 mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
+mh#belt6 Belt of Vampire Protection
 
 mh#blun1 Radiant Star +1
 mh#blun2 Slimecrusher +1
@@ -41,6 +43,7 @@ mh#clck1 Mutamin's Cloak
 mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
 mh#clck3 Cloak of Arachnida			DMG (2E)
 mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
+mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2E)
 
 mh#comp1 Meteoric Iron
 mh#comp2 Arandur Ore
@@ -67,6 +70,7 @@ mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
 mh#ioun3 Bright Orange Ioun Stone		DMG (3E)
 mh#ioun4 Telkiira				Fallen Empires of Faerun (3E)
 mh#ioun5 Mottled Green Ioun Stone
+mh#ioun6 Maroon Star Ioun Stone			Encyclopedia Magica (2E)
 
 mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
 
@@ -88,7 +92,7 @@ mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
 mh#ring6 Ring of White Bone			Complete Necromancer (2E)
 mh#ring7 Ring of Mind Shielding			DMG (2E)
 mh#ring8 Ring of Shooting Stars			DMG (2E)
-mh#ring9 Ring of the Chosen			Legends & Lore (2E)
+mh#ring9 Ring of Thex				Planescape Torment (2E)
 mh#ringa Shield Ring				Icewind Dale 1 (2E)
 mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
 mh#ringc Ring of Water Control			DMG (2E)

@@ -269,17 +269,47 @@ COPY "%MOD_FOLDER%/items/mh#amul8.itm" "override"
   END
 
 
+// mh#amul9 - Medallion of the Arctic
+
+ADD_PROJECTILE "%MOD_FOLDER%/projectiles/mh#amul9.pro"
+
+
+COPY "%MOD_FOLDER%/spells/mh#amul9.spl" "override"
+  LAUNCH_PATCH_FUNCTION ALTER_SPELL_HEADER
+    INT_VAR
+    projectile	= "%mh#amul9%"
+  END
+
+
+CREATE EFF "mh#amul9"
+  WRITE_LONG	0x0010 146	// Spell: Cast Spell (at Creature)
+  WRITE_LONG	0x0014 1
+  WRITE_LONG	0x001c 1
+  WRITE_LONG	0x0020 1
+  WRITE_SHORT	0x0024 1
+  WRITE_LONG	0x002c 100
+  WRITE_ASCII	0x0030 "mh#amul9"
+
+
+COPY "%MOD_FOLDER%/items/mh#amul9.itm" "override"
+  SAY NAME2 ~Medallion of the Arctic~
+  SAY IDENTIFIED_DESC ~This strange medallion is decorated with an engraving of a beautiful woman with her arms outstretched at her sides, snow piled in each hand.  A bear stands in profile behind her.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 to entire party (within 60')
+- Saving Throws: +1 to entire party (within 60')
+- Cold Resistance: +35% (wearer only)
+
+Weight: 1~
+
+
 // mh#armr1 - Winter Wolf Hide +1
 
 COPY "%MOD_FOLDER%/items/mh#armr1.itm" "override"
   SAY NAME2 @42
   SAY IDENTIFIED_DESC @43
-
-
-ACTION_IF $ini_hash("update_itemexcl_2da") & BIT1
-BEGIN
-  APPEND "itemexcl.2da" "mh#armr1 1" UNLESS "mh#armr1"
-END
 
 
 // mh#armr2 - Eversing +2
@@ -292,12 +322,6 @@ COPY "%MOD_FOLDER%/items/mh#armr2.itm" "override"
     STR_VAR
     array_name		= "cd_immunity_petrification_arrays"
   END
-
-
-ACTION_IF $ini_hash("update_itemexcl_2da") & BIT1
-BEGIN
-  APPEND "itemexcl.2da" "mh#armr2 1" UNLESS "mh#armr2"
-END
 
 
 // mh#armr3 - White Hide of Umpluutu
@@ -389,9 +413,17 @@ BEGIN
     WRITE_ASCII 0x0070 "spmonsum" #8
 END
 
+
 COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
   SAY NAME2 @129
   SAY IDENTIFIED_DESC @130
+
+
+// mh#belt6 - Belt of Vampire Protection
+
+COPY "%MOD_FOLDER%/items/mh#belt6.itm" "override"
+  SAY NAME2 ~Belt of Vampire Protection~
+  //SAY IDENTIFIED_DESC ~~
 
 
 // mh#blun1 - Radiant Star +1
@@ -567,12 +599,6 @@ COPY "%MOD_FOLDER%/items/mh#clck2.itm" "override"
   SAY IDENTIFIED_DESC @19
 
 
-ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
-BEGIN
-  APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
-END
-
-
 // mh#clck3 - Cloak of Arachnida
 
 COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
@@ -592,10 +618,27 @@ COPY "%MOD_FOLDER%/items/mh#clck4.itm" "override"
   SAY IDENTIFIED_DESC @116
 
 
-ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
-BEGIN
-  APPEND "itemexcl.2da" "mh#clck4 1" UNLESS "mh#clck4"
-END
+// mh#clck5 - Bolder's Cloak of the Rogue
+
+COPY "%MOD_FOLDER%/items/mh#clck5.itm" "override"
+  SAY NAME2 ~Bolder's Cloak of the Rogue~
+  SAY IDENTIFIED_DESC ~Centuries ago a brash noble of Waterdeepm who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
+
+Due to the nature of its protective enchantment, this cloak can not be worn together with other protection devices, like a Ring of Protection.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Backstab Multiplier: +1
+- Pick Pockets: +10%
+- Open Locks: +10%
+- Find Traps: +10%
+- Hide in Shadows: +10%
+- Move Silently: +10%
+
+Weight: 3~
 
 
 // mh#comp1 - Meteoric Iron
@@ -837,6 +880,33 @@ Weight: 2~
   END
 
 
+// mh#ioun6 - Maroon Star Ioun Stone
+
+COPY "%MOD_FOLDER%/items/mh#ioun6.itm" "override"
+  SAY NAME2 ~Maroon Star Ioun Stone~
+  SAY IDENTIFIED_DESC ~This chestnut-colored ioun stone is quite old and bears an unusual enchantment.  Its exact history has been lost to the mists of time, but most likely it was made in old Netheril, perhaps even by Congenio Ioun himself.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to normal weapons.
+
+Weight: 2~
+
+  PATCH_IF $ini_hash("visible_ioun_stones")
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 215
+      target		= 1
+      timing		= 2
+      parameter2	= 1
+      STR_VAR
+      resource		= ~mh#vsio3~
+    END
+  END
+
+
 // mh#lbow1 - Bow of Eletha
 
 COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
@@ -942,12 +1012,6 @@ Weight: 1~
 COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
   SAY NAME2 @26
   SAY IDENTIFIED_DESC @27
-
-
-ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
-BEGIN
-  APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
-END
 
 
 // mh#ring2 - Ring of Warmth
@@ -1430,5 +1494,25 @@ COPY "%MOD_FOLDER%/items/mh#wand1.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#wand2.itm" "override"
   SAY NAME2 @214
   SAY IDENTIFIED_DESC @215
+
+
+// Update itemexcl.2da
+
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT1
+BEGIN
+  APPEND "itemexcl.2da" "mh#armr1 1" UNLESS "mh#armr1"
+  APPEND "itemexcl.2da" "mh#armr2 1" UNLESS "mh#armr2"
+END
+
+ACTION_IF $ini_hash("update_itemexcl_2da") & BIT0
+BEGIN
+  APPEND "itemexcl.2da" "mh#amul9 1" UNLESS "mh#amul9"
+  APPEND "itemexcl.2da" "mh#belt6 1" UNLESS "mh#belt6"
+  APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
+  APPEND "itemexcl.2da" "mh#clck4 1" UNLESS "mh#clck4"
+  APPEND "itemexcl.2da" "mh#clck5 1" UNLESS "mh#clck5"
+  APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
+  APPEND "itemexcl.2da" "mh#ring9 1" UNLESS "mh#ring9"
+END
 
 

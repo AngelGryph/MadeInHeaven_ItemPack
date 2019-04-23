@@ -723,16 +723,15 @@ Equipped abilities:
 - Minor Globe of Invulnerability
 
 Weight: 5~
-@119  = ~Ring of the Chosen~
-@120  = ~The plain appearance of this simple gold ring belies its great power.  Who forged this ring and why is a mystery of the ages; the ring defies all attempts to divine its origins.  What is known though is that it tends to appear on the eve of great cataclysms.  Perhaps it is a favor of the gods towards their chosen one?
-
-This ring grants powerful physical and magical protections, and unlike most items of such a nature, it can be combined with other protective enchantments.
+@119  = ~Ring of Thex~
+@120  = ~This ornate silver ring is set with a single red stone of an unknown type. The ring is believed to have been created by an adventuring mage named Thex. Thex claimed she was tired of sitting back and flinging spells at enemies while the rest of her adventuring party was able to get into the thick of battle. She felt that the ring would allow her to become what she chose to call a Battlemage. The Ring of Thex was the crowning achievement of her short career.
 
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +3
-- Magic Resistance: +10%
+- Hit Points: +20
+- Armor Class: +4
+- Saving Throws: +2
 
 Weight: 0~
 @121  = ~Gauntlets of Smiting~

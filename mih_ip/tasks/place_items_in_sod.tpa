@@ -54,6 +54,9 @@ COPY_EXISTING "bdnazram.sto" "override"
   // Edion's Ring of Wizardry
   ADD_STORE_ITEM "mh#ringb" AFTER "bdring10" #0 #0 #0 "identified" #1
 
+  // Medallion of the Arctic
+  ADD_STORE_ITEM "mh#amul9" AFTER "bdamul25" #0 #0 #0 "identified" #1
+
   // Crystal Clear Ioun Stone
   ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
 
