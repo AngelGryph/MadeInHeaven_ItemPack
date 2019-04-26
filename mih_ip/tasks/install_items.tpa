@@ -1447,6 +1447,80 @@ COPY "%MOD_FOLDER%/items/mh#swrd9.itm" "override"
   SAY IDENTIFIED_DESC @213
 
 
+// Construct tome spells
+
+COPY_EXISTING - "xplevel.2da" "dummy"
+  COUNT_2DA_COLS cols
+  COUNT_2DA_ROWS cols rows
+  SET max_level = cols - 2
+  
+  FOR (SET y = 0; y < rows; ++y)
+  BEGIN
+    READ_2DA_ENTRY y 0 cols class
+
+    PATCH_IF "%class%" STRING_EQUAL_CASE "mage"
+          OR "%class%" STRING_EQUAL_CASE "cleric"
+    BEGIN
+      READ_2DA_ENTRY y 9 cols last_level_xp
+      FOR (SET x = 10; x < (cols - 1); ++x)
+      BEGIN
+        READ_2DA_ENTRY y x cols next_level_xp
+	SET xp_gain = (next_level_xp - last_level_xp) / 2
+	SET last_level_xp = next_level_xp
+	
+	PATCH_IF "%class%" STRING_EQUAL_CASE "mage"
+	BEGIN
+	  SPRINT $mage_xp_gain("%x%") "%xp_gain%"
+	END
+	ELSE
+	BEGIN
+	  SPRINT $cleric_xp_gain("%x%") "%xp_gain%"
+	END
+      END
+    END
+  END
+
+
+COPY "%MOD_FOLDER%/spells/mh#mtome.spl" "override"
+  LAUNCH_PATCH_FUNCTION CD_EXTEND-O-MATIC
+    INT_VAR
+    step_size		= 1
+    step_dur		= 0
+    level_cap		= max_level
+    min_lev_alt		= 10
+  END
+
+  PHP_EACH mage_xp_gain AS level => xp_gain
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ALTER_EFFECT
+      INT_VAR
+      match_opcode	= 104	// Stat: Experience Points
+      header		= level - 10
+      parameter1	= xp_gain
+    END
+  END
+
+
+COPY "%MOD_FOLDER%/spells/mh#ctome.spl" "override"
+  LAUNCH_PATCH_FUNCTION CD_EXTEND-O-MATIC
+    INT_VAR
+    step_size		= 1
+    step_dur		= 0
+    level_cap		= max_level
+    min_lev_alt		= 10
+  END
+
+  PHP_EACH cleric_xp_gain AS level => xp_gain
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ALTER_EFFECT
+      INT_VAR
+      match_opcode	= 104	// Stat: Experience Points
+      header		= level - 10
+      parameter1	= xp_gain
+    END
+  END
+
+
 // mh#tome1 - Book of Exalted Deeds
 
 COPY "%MOD_FOLDER%/items/mh#tome1.itm" "override"
