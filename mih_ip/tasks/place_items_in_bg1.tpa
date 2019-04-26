@@ -129,7 +129,7 @@ COPY_EXISTING "highhedg.sto" "override"
   ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3
 
   // Oil of Disenchantment
-  ADD_STORE_ITEM "mh#potn4" AFTER "potn35" #1 #0 #0 "identified" #3
+  ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
 
   // Cloak of Arachnida
   ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1

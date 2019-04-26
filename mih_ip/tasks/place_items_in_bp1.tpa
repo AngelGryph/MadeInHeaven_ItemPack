@@ -24,7 +24,7 @@ COPY_EXISTING "bpconc01.sto" "override"
 
 COPY_EXISTING "bpelan01.sto" "override"
   // Vambraces of Evil's Warding
-  ADD_STORE_ITEM "mh#brac1" AFTER "brac02" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#brac1" AFTER "brac01" #0 #0 #0 "identified" #1
 
 
 COPY_EXISTING "bpelan02.sto" "override"
