@@ -1390,5 +1390,98 @@ Requires:
 
 Weight: 1~
 @216  = ~Cloak of the Night Sky~
+@217  = ~Medallion of the Arctic~
+@218  = ~This strange medallion is decorated with an engraving of a beautiful woman with her arms outstretched at her sides, snow piled in each hand.  A bear stands in profile behind her.
 
+STATISTICS:
 
+Equipped abilities:
+- Armor Class: +1 to entire party (within 60')
+- Saving Throws: +1 to entire party (within 60')
+- Cold Resistance: +35% (wearer only)
+
+Weight: 1~
+@219  = ~Belt of Vampire Protection~
+@220  = ~Bolder's Cloak of the Rogue~
+@221  = ~Centuries ago a brash noble of Waterdeepm who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
+
+Due to the nature of its protective enchantment, this cloak can not be worn together with other protection devices, like a Ring of Protection.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+- Backstab Multiplier: +1
+- Pick Pockets: +10%
+- Open Locks: +10%
+- Find Traps: +10%
+- Hide in Shadows: +10%
+- Move Silently: +10%
+
+Weight: 3~
+@222  = ~Lein's Fiery Dart +2~
+@223  = ~These small but deadly projectiles were created by Lein, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and engulfs the target in flames.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 4d4 (fire)
+Speed Factor: 2
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+@224  = ~Chandler's Icy Dart +2~
+@225  = ~These small but deadly projectiles were created by Chandler, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and releases a freezing cloud at the target.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 4d4 (cold)
+Speed Factor: 2
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+@226  = ~Mottled Green Ioun Stone~
+@227  = ~This ioun stone is a lush green with many yellow spots.  It is very pleasant to look at, and grants some protection against magical spells and effects.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +1 (all)
+
+Weight: 2~
+@228  = ~Maroon Star Ioun Stone~
+@229  = ~This chestnut-colored ioun stone is quite old and bears an unusual enchantment.  Its exact history has been lost to the mists of time, but most likely it was made in old Netheril, perhaps even by Congenio Ioun himself.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to normal weapons.
+
+Weight: 2~
+@230  = ~Philter of Purification~
+@231  = ~This elven concoction will purify the drinker of any diseases spreading through <PRO_HISHER> body, as well as certain afflictions.
+
+STATISTICS:
+
+Special: Cures blindness, deafness, and disease
+
+Weight: 1~
+@232  = ~Oil of Disenchantment~
+@233  = ~This light, ethereal oil quickly evaporates when exposed to air.  As it evaporates, it will dispel all enchantments, making this oil ideal for removing unwanted enchantments from party members.
+
+STATISTICS:
+
+Special: Dispels all spells and effects of the Enchantment school.
+
+Weight: 1~
+@234  = ~Ring of Three Wishes~
+@235  = ~This powerful ring houses a noble genie who will fulfill three of the owner's spoken wishes.  After the third wish, the genie is freed from service and the ring crumbles to powder.  The owner is well advised to be careful what <PRO_HESHE> wishes for, as unwise wishes will likely result in disaster.
+
+STATISTICS:
+
+Charge abilities:
+- Limited Wish~

@@ -292,17 +292,8 @@ CREATE EFF "mh#amul9"
 
 
 COPY "%MOD_FOLDER%/items/mh#amul9.itm" "override"
-  SAY NAME2 ~Medallion of the Arctic~
-  SAY IDENTIFIED_DESC ~This strange medallion is decorated with an engraving of a beautiful woman with her arms outstretched at her sides, snow piled in each hand.  A bear stands in profile behind her.
-
-STATISTICS:
-
-Equipped abilities:
-- Armor Class: +1 to entire party (within 60')
-- Saving Throws: +1 to entire party (within 60')
-- Cold Resistance: +35% (wearer only)
-
-Weight: 1~
+  SAY NAME2 @217
+  SAY IDENTIFIED_DESC @218
 
 
 // mh#armr1 - Winter Wolf Hide +1
@@ -422,7 +413,7 @@ COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
 // mh#belt6 - Belt of Vampire Protection
 
 COPY "%MOD_FOLDER%/items/mh#belt6.itm" "override"
-  SAY NAME2 ~Belt of Vampire Protection~
+  SAY NAME2 @219
   //SAY IDENTIFIED_DESC ~~
 
 
@@ -621,24 +612,8 @@ COPY "%MOD_FOLDER%/items/mh#clck4.itm" "override"
 // mh#clck5 - Bolder's Cloak of the Rogue
 
 COPY "%MOD_FOLDER%/items/mh#clck5.itm" "override"
-  SAY NAME2 ~Bolder's Cloak of the Rogue~
-  SAY IDENTIFIED_DESC ~Centuries ago a brash noble of Waterdeepm who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
-
-Due to the nature of its protective enchantment, this cloak can not be worn together with other protection devices, like a Ring of Protection.
-
-STATISTICS:
-
-Equipped abilities:
-- Armor Class: +1
-- Saving Throws: +1
-- Backstab Multiplier: +1
-- Pick Pockets: +10%
-- Open Locks: +10%
-- Find Traps: +10%
-- Hide in Shadows: +10%
-- Move Silently: +10%
-
-Weight: 3~
+  SAY NAME2 @220
+  SAY IDENTIFIED_DESC @221
 
 
 // mh#comp1 - Meteoric Iron
@@ -701,33 +676,13 @@ COPY "%MOD_FOLDER%/items/mh#dagg2.itm" "override"
 // mh#dart1 - Lein's Fiery Darts
 
 COPY "%MOD_FOLDER%/items/mh#dart1.itm" "override"
-  SAY NAME2 ~Lein's Fiery Dart +2~
-  SAY IDENTIFIED_DESC ~These small but deadly projectiles were created by Lein, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and engulfs the target in flames.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
-
-STATISTICS:
-
-THAC0: +2
-Damage: 4d4 (fire)
-Speed Factor: 2
-Proficiency Type: Dart
-Type: One-handed
-
-Weight: 0~
+  SAY NAME2 @222
+  SAY IDENTIFIED_DESC @223
 
 
 COPY "%MOD_FOLDER%/items/mh#dart2.itm" "override"
-  SAY NAME2 ~Chandler's Icy Dart +2~
-  SAY IDENTIFIED_DESC ~These small but deadly projectiles were created by Chandler, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and releases a freezing cloud at the target.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
-
-STATISTICS:
-
-THAC0: +2
-Damage: 4d4 (cold)
-Speed Factor: 2
-Proficiency Type: Dart
-Type: One-handed
-
-Weight: 0~
+  SAY NAME2 @224
+  SAY IDENTIFIED_DESC @225
 
 
 // mh#hamm1 - Final Strike +3
@@ -856,15 +811,8 @@ COPY "%MOD_FOLDER%/items/mh#ioun4.itm" "override"
 // mh#ioun5 - Mottled Green Ioun Stone
 
 COPY "%MOD_FOLDER%/items/mh#ioun5.itm" "override"
-  SAY NAME2 ~Mottled Green Ioun Stone~
-  SAY IDENTIFIED_DESC ~This ioun stone is a lush green with many yellow spots.  It is very pleasant to look at, and grants some protection against magical spells and effects.
-
-STATISTICS:
-
-Equipped abilities:
-- Saving Throws: +1 (all)
-
-Weight: 2~
+  SAY NAME2 @226
+  SAY IDENTIFIED_DESC @227
 
   PATCH_IF $ini_hash("visible_ioun_stones")
   BEGIN
@@ -883,15 +831,8 @@ Weight: 2~
 // mh#ioun6 - Maroon Star Ioun Stone
 
 COPY "%MOD_FOLDER%/items/mh#ioun6.itm" "override"
-  SAY NAME2 ~Maroon Star Ioun Stone~
-  SAY IDENTIFIED_DESC ~This chestnut-colored ioun stone is quite old and bears an unusual enchantment.  Its exact history has been lost to the mists of time, but most likely it was made in old Netheril, perhaps even by Congenio Ioun himself.
-
-STATISTICS:
-
-Equipped abilities:
-- Immunity to normal weapons.
-
-Weight: 2~
+  SAY NAME2 @228
+  SAY IDENTIFIED_DESC @229
 
   PATCH_IF $ini_hash("visible_ioun_stones")
   BEGIN
@@ -984,27 +925,15 @@ COPY "%MOD_FOLDER%/items/mh#potn2.itm" "override"
 // mh#potn3 - Philter of Purification
 
 COPY "%MOD_FOLDER%/items/mh#potn3.itm" "override"
-  SAY NAME2 ~Philter of Purification~
-  SAY IDENTIFIED_DESC ~This elven concoction will purify the drinker of any diseases spreading through <PRO_HISHER> body, as well as certain afflictions.
-
-STATISTICS:
-
-Special: Cures blindness, deafness, and disease
-
-Weight: 1~
+  SAY NAME2 @230
+  SAY IDENTIFIED_DESC @231
 
 
 // mh#potn4 - Oil of Disenchantment
 
 COPY "%MOD_FOLDER%/items/mh#potn4.itm" "override"
-  SAY NAME2 ~Oil of Disenchantment~
-  SAY IDENTIFIED_DESC ~This light, ethereal oil quickly evaporates when exposed to air.  As it evaporates, it will dispel all enchantments, making this oil ideal for removing unwanted enchantments from party members.
-
-STATISTICS:
-
-Special: Dispels all spells and effects of the Enchantment school.
-
-Weight: 1~
+  SAY NAME2 @232
+  SAY IDENTIFIED_DESC @233
 
 
 // mh#ring1 - Ring of the Lich +3
@@ -1124,13 +1053,8 @@ COPY "%MOD_FOLDER%/items/mh#ringc.itm" "override"
 // mh#ringd - Ring of Three Wishes
 
 COPY "%MOD_FOLDER%/items/mh#ringd.itm" "override"
-  SAY NAME2 ~Ring of Three Wishes~
-  SAY IDENTIFIED_DESC ~This powerful ring houses a noble genie who will fulfill three of the owner's spoken wishes.  After the third wish, the genie is freed from service and the ring crumbles to powder.  The owner is well advised to be careful what <PRO_HESHE> wishes for, as unwise wishes will likely result in disaster.
-
-STATISTICS:
-
-Charge abilities:
-- Limited Wish~
+  SAY NAME2 @234
+  SAY IDENTIFIED_DESC @235
 
 
 // mh#robe1 - Robe of the Elements
@@ -1470,11 +1394,11 @@ COPY_EXISTING - "xplevel.2da" "dummy"
 	
 	PATCH_IF "%class%" STRING_EQUAL_CASE "mage"
 	BEGIN
-	  SPRINT $mage_xp_gain("%x%") "%xp_gain%"
+	  TEXT_SPRINT $mage_xp_gain("%x%") "%xp_gain%"
 	END
 	ELSE
 	BEGIN
-	  SPRINT $cleric_xp_gain("%x%") "%xp_gain%"
+	  TEXT_SPRINT $cleric_xp_gain("%x%") "%xp_gain%"
 	END
       END
     END
