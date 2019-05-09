@@ -1485,3 +1485,32 @@ STATISTICS:
 
 Charge abilities:
 - Limited Wish~
+@236  = ~Zilzanzer's Magnificent Darts +1~
+@237  = ~The eccentric master wizard Zilzanzer, well known for his Ring of the Gorgon, was also the creator of a number of small magical missile weapons.  "Zilzanzer's Magnificent Darts" were sold to many of the wizards' colleagues.  Unlike many of Zilzanzer's other creations, his darts actually performed as he intended them to.  He created a great number of the darts before his untimely demise.
+
+STATISTICS:
+
+Combat abilities:
+- 5 attacks per round
+
+Damage: 1d3+2 (missile)
+Speed Factor: 1
+Proficiency Type: Dart
+Type:  1-handed
+
+Weight: 0~
+@238  = ~Silver Dart of Selune +2~
+@239  = ~This small but deadly weapon has been blessed by Selune, the Moon Maiden, and as such has certain powers over werewolves and other creatures affected by the moon.
+
+STATISTICS:
+
+Combat abilities:
+- Returns to the wielder's hand when thrown
+
+THAC0: +2, +4 vs. lycanthropes
+Damage: 1d3+2, +4 vs. lycanthropes (missile)
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~

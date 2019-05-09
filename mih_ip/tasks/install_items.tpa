@@ -673,16 +673,32 @@ COPY "%MOD_FOLDER%/items/mh#dagg2.itm" "override"
   SAY IDENTIFIED_DESC @136
 
 
-// mh#dart1 - Lein's Fiery Darts
+// mh#dart1 - Lein's Fiery Darts +1
 
 COPY "%MOD_FOLDER%/items/mh#dart1.itm" "override"
   SAY NAME2 @222
   SAY IDENTIFIED_DESC @223
 
 
+// mh#dart2 - Chandler's Icy Darts +1
+
 COPY "%MOD_FOLDER%/items/mh#dart2.itm" "override"
   SAY NAME2 @224
   SAY IDENTIFIED_DESC @225
+
+
+// mh#dart3 - Zilzanzer's Magnificent Darts +1
+
+COPY "%MOD_FOLDER%/items/mh#dart3.itm" "override"
+  SAY NAME2 @236
+  SAY IDENTIFIED_DESC @237
+
+
+// mh#dart4 - Silver Dart of Selune +2
+
+COPY "%MOD_FOLDER%/items/mh#dart4.itm" "override"
+  SAY NAME2 @238
+  SAY IDENTIFIED_DESC @239
 
 
 // mh#hamm1 - Final Strike +3
