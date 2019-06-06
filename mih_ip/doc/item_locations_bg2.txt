@@ -16,6 +16,7 @@ mh#belt3 Storm's Garter				Harper Hold (battle)
 mh#belt4 Girdle of Beatification		Temple of Lathander (shop)
 mh#belt5 Girdle of Ogre Blood			Ust Natha (shop)
 mh#belt6 Belt of Vampire Protection		Temple of Lathander (shop)
+*mh#belt7 Girdle of Priestly Might		Temple of Lathander (shop)
 
 mh#boot1 Boots of the Master Ninja		Mae'var Guildhouse (battle)
 mh#boot2 Boots of Striding and Springing	Firkraag's Lair (battle)
@@ -27,6 +28,7 @@ mh#brac1 Vambraces of Evil's Warding		Chateau Irenicus (import)
 mh#brac2 Gauntlets of the Dwarven King		Chateau Irenicus (import)
 mh#brac3 Bracers of Winter's Chill		Therndle Daglefodd (event)
 mh#brac5 Gauntlets of Smiting			Bridge District (battle)
+*mh#brac7 Gloves of Evasion			???
 
 mh#btax1 Foesplitter +1				Maheer (shop)
 mh#btax3 Redethemar +4				Tree of Life (container)
@@ -63,6 +65,9 @@ mh#potn1 Oil of Acid Resistance			(various potion shops)
 mh#potn2 Potion of Clairvoyance			(various potion shops)
 mh#potn3 Philter of Purification		Temple of Lathander (shop)
 mh#potn4 Oil of Disenchantment			(various potion shops)
+mh#potn5 Potion of Wizardry			(various potion shops)
+
+mh#quiv2 Quiver of Ehlonna			Bowyer/Fletcher (shop)
 
 mh#ring2 Ring of Warmth				Chateau Irenicus (import)
 mh#ring3 Ring of the Neophyte			Chateau Irenicus (import)

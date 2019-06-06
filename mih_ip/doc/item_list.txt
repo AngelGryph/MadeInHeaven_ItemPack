@@ -21,6 +21,7 @@ mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
 mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
 mh#belt6 Belt of Vampire Protection
+mh#belt7 Girlde of Priestly Might		The Shining South (2E)
 
 mh#blun1 Radiant Star +1
 mh#blun2 Slimecrusher +1
@@ -34,6 +35,7 @@ mh#brac3 Bracers of Winter's Chill
 mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 mh#brac5 Gauntlets of Smiting
 mh#brac6 Silver Bracers of Kedl			Icewind Dale 1 (2E)
+mh#brac7 Gloves of Evasion			Complete Thieves (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3E)
 mh#btax2 Trollkiller +2
@@ -78,11 +80,16 @@ mh#misc1 Pearl of Power				DMG (2E)
 mh#misc2 Bag of Tricks				DMG (2E)
 mh#misc3 Crystal Ball				DMG (2E)
 mh#misc4 Gem of Seeing				DMG (2E)
+*mh#misc5 Jade Snakes				Encyclopedia Magica (2E)
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 mh#potn2 Potion of Clairvoyance			DMG (2E)
 mh#potn3 Philter of Purification		Icewind Dale 1 (2E)
 mh#potn4 Oil of Disenchantment			DMG (2E)
+mh#potn5 Potion of Wizardry			Encyclopedia Magica (2E)
+
+mh#quiv1 Quiver of Ehlonna (BG1)		DMG (2E)
+mh#quiv2 Quiver of Ehlonna (BG2)		DMG (2E)
 
 mh#ring1 Ring of the Lich +3			DMG (2E)
 mh#ring2 Ring of Warmth				DMG (2E)

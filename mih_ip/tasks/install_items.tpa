@@ -182,6 +182,55 @@ COPY_EXISTING "elwatg01.cre" "override"
   BUT_ONLY_IF_IT_CHANGES
 
 
+// Add some summoned monsters
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME "p1-3p.itm"
+BEGIN
+  COPY_EXISTING "p1-3.itm" "override/p1-3p.itm"
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EFFECT
+      INT_VAR
+      type		= 1	// Melee
+      opcode		= 25	// State: Poison
+      target		= 2	// Pre-target
+      duration		= 24
+      parameter1	= 2
+      parameter2	= 2
+    END
+
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EFFECT
+      INT_VAR
+      type		= 1	// Melee
+      opcode		= 142	// Graphics: Display Icon
+      target		= 2	// Pre-target
+      duration		= 24
+      parameter2	= 6
+    END
+END
+
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME "snakegsu.cre"
+BEGIN
+  COPY "%MOD_FOLDER%/actors/snakegsu.cre" "override"
+    SAY NAME1 @191
+    SAY NAME2 @191
+END
+
+
+ACTION_FOR_EACH summon IN "bearcasu" "bearbrsu" "bearposu" "catjagsu" "catliosu" "snakegsu" "spidphsu" "spidswsu" "wolfdisu" "wolfwisu"
+BEGIN
+  ACTION_IF NOT FILE_EXISTS_IN_GAME "%summon%.eff"
+  BEGIN
+    CREATE EFF "%summon%"
+      WRITE_LONG	0x0010 67	// Summon: Creature Summoning
+      WRITE_LONG	0x001c 5
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_ASCIIE	0x0030 "%summon%" #8
+      WRITE_ASCII	0x0070 "spmonsum" #8
+  END
+END
+
+
 // mh#amul1 - Amulet against Undead
 
 COPY "%MOD_FOLDER%/items/mh#amul1.itm" "override"
@@ -417,6 +466,23 @@ COPY "%MOD_FOLDER%/items/mh#belt6.itm" "override"
   //SAY IDENTIFIED_DESC ~~
 
 
+// mh#belt7 - Girdle of Priestly Might
+
+COPY "%MOD_FOLDER%/items/mh#belt7.itm" "override"
+  SAY NAME2 ~Girdle of Priestly Might~
+  SAY IDENTIFIED_DESC ~These enchanted girdles started appearing shortly after the end of the Time of Troubles.  Priests of Mystra took it to be a sign that their goddess had returned to power, while others saw it as a sign that the gods desired to take a more active role in the Realms from now on.  Exactly how many of these exist is not known, but there are thought to be at least a dozen around.
+
+Each girdle is bonded to a particular god, although any priest who shares the same moral alignment as the deity may use a belt, they need not be a follower.  This particular girdle has a symbol of the rising sun, marking it as bonded to the Morning Lord, Lathander.
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: 18/99
+- Armor Class: +2
+
+Weight: 2~
+
+
 // mh#blun1 - Radiant Star +1
 
 COPY "%MOD_FOLDER%/items/mh#blun1.itm" "override"
@@ -531,6 +597,22 @@ COPY "%MOD_FOLDER%/items/mh#brac5.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#brac6.itm" "override"
   SAY NAME2 @131
   SAY IDENTIFIED_DESC @132
+
+
+// mh#brac7 - Gloves of Evasion
+
+COPY "%MOD_FOLDER%/items/mh#brac7.itm" "override"
+  SAY NAME2 ~Gloves of Evasion~
+  SAY IDENTIFIED_DESC ~These soft, supple gloves of thin calfskin are enchanted to help a rogue evade capture.  Exactly who made them is not known which is unsurprising, rogues and those who aid them tend to value privacy over fame.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +2
+- Open Locks: +10%
+- Non-Detection
+
+Weight: 2~
 
 
 // mh#btax1 - Foesplitter +1
@@ -880,53 +962,6 @@ COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
 
 // mh#misc2 - Bag of Tricks
 
-ACTION_IF NOT FILE_EXISTS_IN_GAME "p1-3p.itm"
-BEGIN
-  COPY_EXISTING "p1-3.itm" "override/p1-3p.itm"
-    LAUNCH_PATCH_FUNCTION ADD_ITEM_EFFECT
-      INT_VAR
-      type		= 1	// Melee
-      opcode		= 25	// State: Poison
-      target		= 2	// Pre-target
-      duration		= 24
-      parameter1	= 2
-      parameter2	= 2
-    END
-
-    LAUNCH_PATCH_FUNCTION ADD_ITEM_EFFECT
-      INT_VAR
-      type		= 1	// Melee
-      opcode		= 142	// Graphics: Display Icon
-      target		= 2	// Pre-target
-      duration		= 24
-      parameter2	= 6
-    END
-END
-
-
-ACTION_IF NOT FILE_EXISTS_IN_GAME "snakegsu.cre"
-BEGIN
-  COPY "%MOD_FOLDER%/actors/snakegsu.cre" "override"
-    SAY NAME1 @191
-    SAY NAME2 @191
-END
-
-
-ACTION_FOR_EACH summon IN "bearcasu" "bearbrsu" "bearposu" "catjagsu" "catliosu" "snakegsu" "spidphsu" "spidswsu" "wolfdisu" "wolfwisu"
-BEGIN
-  ACTION_IF NOT FILE_EXISTS_IN_GAME "%summon%.eff"
-  BEGIN
-    CREATE EFF "%summon%"
-      WRITE_LONG	0x0010 67	// Summon: Creature Summoning
-      WRITE_LONG	0x001c 5
-      WRITE_SHORT	0x0024 1
-      WRITE_LONG	0x002c 100
-      WRITE_ASCIIE	0x0030 "%summon%" #8
-      WRITE_ASCII	0x0070 "spmonsum" #8
-  END
-END
-
-
 COPY "%MOD_FOLDER%/items/mh#misc2.itm" "override"
   SAY NAME2 @192
   SAY IDENTIFIED_DESC @193
@@ -946,6 +981,13 @@ COPY "%MOD_FOLDER%/items/mh#misc3.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#misc4.itm" "override"
   SAY NAME2 @6
   SAY IDENTIFIED_DESC @7
+
+
+// mh#misc5 - Jade Snakes
+
+COPY "%MOD_FOLDER%/items/mh#misc5.itm" "override"
+  SAY NAME2 ~Jade Snakes~
+  //SAY IDENTIFIED_DESC ~~
 
 
 // mh#potn1 - Oil of Acid Resistance
@@ -974,6 +1016,41 @@ COPY "%MOD_FOLDER%/items/mh#potn3.itm" "override"
 COPY "%MOD_FOLDER%/items/mh#potn4.itm" "override"
   SAY NAME2 @232
   SAY IDENTIFIED_DESC @233
+
+
+// mh#potn5 - Potion of Wizardry
+
+COPY "%MOD_FOLDER%/spells/mh#potn5.spl" "override"
+  LAUNCH_PATCH_FUNCTION mh_prevent_spell_effect_stacking END
+
+
+COPY "%MOD_FOLDER%/items/mh#potn5.itm" "override"
+  SAY NAME2 ~Potion of Wizardry~
+  SAY IDENTIFIED_DESC ~This potent brew temporarily increases arcane powers.  The wizard functions as if <PRO_HESHE> were three levels higher than normal, although this does not grant any extra hit points or additional spells.  The effects last for an hour.
+
+STATISTICS:
+
+THAC0: +2
+Saving Throws: +2
+Caster Level: +3 (arcane)
+Duration: 1 hour
+
+Weight: 1~
+
+
+// mh#quivX - Quiver(s) of Ehlonna
+
+COPY "%MOD_FOLDER%/stores/mh#quivx.sto" "override/mh#quiv1.sto"
+     "%MOD_FOLDER%/stores/mh#quivx.sto" "override/mh#quiv2.sto"
+  SAY NAME2 ~Quiver of Ehlonna~
+
+
+COPY "%MOD_FOLDER%/items/mh#quivx.itm" "override/mh#quiv1.itm"
+     "%MOD_FOLDER%/items/mh#quivx.itm" "override/mh#quiv2.itm"
+  SAY NAME2 ~Quiver of Ehlonna~
+  SAY IDENTIFIED_DESC ~At first glance, this seems to be a normal leather quiver for storing arrows and similar ammunition.  However, this quiver has properties similar to a Bag of Holding and can store many objects provided they are the general shape of an unstringed bow.  Arrows, wands, spears, swords and even polearms will all fit, but not crossbows and other objects whose shape does not allow fitting them through a narrow opening, or that are too small to be retrieved easily.  No matter how many objects are stowed away, the quiver will not bulge and its weight will not change.
+
+Weight: 4~
 
 
 // mh#ring1 - Ring of the Lich +3

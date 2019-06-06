@@ -22,6 +22,7 @@ mh#boot1 Boots of the Master Ninja		Black Lily (shop)
 mh#brac1 Vambraces of Evil's Warding		Brokk's Forge (event)
 mh#brac3 Bracers of Winter's Chill		Durlag's Tower D4 (mushrooms)
 mh#brac5 Gauntlets of Smiting			Durlag's Tower L4 (battle)
+mh#brac7 Gloves of Evasion			Black Lily (shop)
 
 mh#btax1 Foesplitter +1				Brokk's Forge (shop)
 mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
@@ -58,6 +59,9 @@ mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 mh#potn2 Potion of Clairvoyance			High Hedge (shop)
 mh#potn3 Philter of Purification		Song of the Morning (shop)
 mh#potn4 Oil of Disenchantment			High Hedge (shop)
+mh#potn5 Potion of Wizardry			High Hedge (shop)
+
+mh#quiv1 Quiver of Ehlonna			Feldepost's Inn (shop)
 
 mh#ring1 Ring of the Lich +3			Candlekeep Catacombs (chest)
 mh#ring2 Ring of Warmth				Phendra's Scrolls (shop)

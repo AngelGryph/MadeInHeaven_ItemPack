@@ -1,7 +1,7 @@
 // Brokk's Forge
 
 COPY "%MOD_FOLDER%/stores/mh#brokk.sto" "override"
-  SAY NAME1 "Brokk's Forge"
+  SAY NAME2 "Brokk's Forge"
 
 
 ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 @81 @84 @87 USING "%MOD_FOLDER%/language/%LANGUAGE%/brokks_forge.tra"
@@ -39,7 +39,7 @@ COPY_EXISTING "%FriendlyArmInn%.are" "override"
 // Phrenda's Scrolls
 
 COPY "%MOD_FOLDER%/stores/mh#phend.sto" "override"
-  SAY NAME1 "Phendra's Scrolls"
+  SAY NAME2 "Phendra's Scrolls"
 
 
 ADD_JOURNAL @15 @17 @20 USING "%MOD_FOLDER%/language/%LANGUAGE%/phendras_scrolls.tra"
@@ -107,6 +107,11 @@ EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%MOD_FOLDER%/scripts/gemquest_gullykin.baf" 
 
 // Beregost
 
+COPY_EXISTING "inn3351.sto" "override"
+  // Quiver of Ehlonna
+  ADD_STORE_ITEM "mh#quiv1" AFTER "bow02" #0 #0 #0 "identified" #1
+
+
 COPY_EXISTING "tem3402.sto" "override"
   // Philter of Purification
   ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
@@ -130,6 +135,9 @@ COPY_EXISTING "highhedg.sto" "override"
 
   // Oil of Disenchantment
   ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
+
+  // Potion of Wizardry
+  ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #3
 
   // Cloak of Arachnida
   ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1
@@ -292,13 +300,18 @@ COPY_EXISTING "sto0703.sto" "override"
   // Oil of Disenchantment
   ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
 
+  // Potion of Wizardry
+  ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #3
+
   // Staff of Swarming Insects
   ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1
 
 
 COPY_EXISTING "stoblack.sto" "override"
   // Boots of the Master Ninja
-  ADD_STORE_ITEM "mh#boot1" BEFORE "clck01" #0 #0 #0 "identified" #1
+  ADD_STORE_ITEM "mh#boot1" AFTER "clck01" #0 #0 #0 "identified" #1
+  // Gloves of Evasion
+  ADD_STORE_ITEM "mh#brac7" AFTER "clck01" #0 #0 #0 "identified" #1
 
 
 // Candlekeep (ch6)
@@ -348,7 +361,7 @@ COPY_EXISTING "%DurlagsTower_D1%.are" "override"
 
 COPY_EXISTING "moorlock.cre" "override"
   // Terminus Est +2
-  ADD_CRE_ITEM "mh#swrd1" #0 #0 #0 "unstealable" "weapon2"
+  ADD_CRE_ITEM "mh#swrd1" #0 #0 #0 "unstealable" "weapon1" EQUIP
   REMOVE_CRE_ITEM "sw1h05"
 
 
