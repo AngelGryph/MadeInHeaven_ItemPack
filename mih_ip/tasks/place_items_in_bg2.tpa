@@ -315,6 +315,9 @@ COPY_EXISTING "temsup.sto" "override"
   // Philter of Purification
   ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6
 
+  // Jade Snakes
+  ADD_STORE_ITEM "mh#misc5" AFTER "ring03" #1 #1 #0 "identified" #6
+
   // Waukeen's Defender +2
   ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1
 
@@ -322,7 +325,7 @@ COPY_EXISTING "temsup.sto" "override"
 // Druid Grove
 
 COPY_EXISTING "cedruid2.cre" "override"
-  // Necklace of Adaption
+  // Brooch of Shielding
   ADD_CRE_ITEM "mh#amul5" #0 #0 #0 "none" "amulet"
 
   // Bag of Tricks
@@ -438,7 +441,7 @@ COPY_EXISTING "gorch.sto" "override"
   ADD_STORE_ITEM "mh#potn4" AFTER "potn10 potn19" #1 #0 #0 "identified" #3
 
   // Potion of Wizardry
-  ADD_STORE_ITEM "mh#potn5" AFTER "potn09 potn39" #1 #0 #0 "identified" #3
+  ADD_STORE_ITEM "mh#potn5" AFTER "potn36" #1 #0 #0 "identified" #3
 
 
 // Suldanessenar

@@ -1574,3 +1574,12 @@ Weight: 1~
 @250  = ~At first glance, this seems to be a normal leather quiver for storing arrows and similar ammunition.  However, this quiver has properties similar to a Bag of Holding and can store many objects provided they are the general shape of an unstringed bow.  Arrows, wands, spears, swords and even polearms will all fit, but not crossbows and other objects whose shape does not allow fitting them through a narrow opening, or that are too small to be retrieved easily.  No matter how many objects are stowed away, the quiver will not bulge and its weight will not change.
 
 Weight: 4~
+@251  = ~These are two small figurines of snakes, one made of green jade and the other of white jade, both entwined around a golden staff.  It looks quite old and was probably crafted by a druid or nature priest now forgotten to history.  Once per day either snake can come to life at the owner's command.  The green snake attacks enemies while the white snake cures allies.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Giant Snake (1/day)
+- Cure Critical Wounds (1/day)
+
+Weight: 2~

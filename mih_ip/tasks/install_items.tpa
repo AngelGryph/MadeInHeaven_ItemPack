@@ -992,7 +992,7 @@ COPY "%MOD_FOLDER%/items/mh#misc4.itm" "override"
 
 COPY "%MOD_FOLDER%/items/mh#misc5.itm" "override"
   SAY NAME2 @246
-  //SAY IDENTIFIED_DESC ~~
+  SAY IDENTIFIED_DESC @251
 
 
 // mh#potn1 - Oil of Acid Resistance
