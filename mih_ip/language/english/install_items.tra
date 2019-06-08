@@ -1514,3 +1514,63 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0~
+@240  = ~Girdle of Priestly Might~
+@241  = ~These enchanted girdles started appearing shortly after the end of the Time of Troubles.  Priests of Mystra took it to be a sign that their goddess had returned to power, while others saw it as a sign that the gods desired to take a more active role in the Realms from now on.  Exactly how many of these exist is not known, but there are thought to be at least a dozen around.
+
+Each girdle is bonded to a particular god, although any priest who shares the same moral alignment as the deity may use a belt, they need not be a follower.  This particular girdle has a symbol of the rising sun, marking it as bonded to the Morning Lord, Lathander.
+
+STATISTICS:
+
+Equipped abilities:
+- Strength: 18/99
+- Armor Class: +2
+
+Weight: 2~
+@242  = ~Battle Star +4~
+@243  = ~This heavily enchanted flail was created by dwarves and it is unlikely they parted with it willingly.  Its exact history is not known but the nature of the enchantment on it suggests an otherworldly origin, it may have come to Toril from Realmspace.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to Hold Person, Hold Monster and similar spells
+- Saving Throws: +4 vs. Enchantment
+
+Combat abilities:
+- Starfire: -1 to THAC0 for 1 round (no save)
+
+THAC0: +4
+Damage: 1d6+5 (crushing)
+Speed Factor: 3
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 10~
+@244  = ~Gloves of Evasion~
+@245  = ~These soft, supple gloves of thin calfskin are enchanted to help a rogue evade capture.  Exactly who made them is not known which is unsurprising, rogues and those who aid them tend to value privacy over fame.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +2
+- Open Locks: +10%
+- Non-Detection
+
+Weight: 2~
+@246  = ~Jade Snakes~
+@247  = ~Potion of Wizardry~
+@248  = ~This potent brew temporarily increases arcane powers.  The wizard functions as if <PRO_HESHE> were three levels higher than normal, although this does not grant any extra hit points or additional spells.  The effects last for an hour.
+
+STATISTICS:
+
+THAC0: +2
+Saving Throws: +2
+Caster Level: +3 (arcane)
+Duration: 1 hour
+
+Weight: 1~
+@249  = ~Quiver of Ehlonna~
+@250  = ~At first glance, this seems to be a normal leather quiver for storing arrows and similar ammunition.  However, this quiver has properties similar to a Bag of Holding and can store many objects provided they are the general shape of an unstringed bow.  Arrows, wands, spears, swords and even polearms will all fit, but not crossbows and other objects whose shape does not allow fitting them through a narrow opening, or that are too small to be retrieved easily.  No matter how many objects are stowed away, the quiver will not bulge and its weight will not change.
+
+Weight: 4~

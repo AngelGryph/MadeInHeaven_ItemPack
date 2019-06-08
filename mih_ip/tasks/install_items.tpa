@@ -469,18 +469,8 @@ COPY "%MOD_FOLDER%/items/mh#belt6.itm" "override"
 // mh#belt7 - Girdle of Priestly Might
 
 COPY "%MOD_FOLDER%/items/mh#belt7.itm" "override"
-  SAY NAME2 ~Girdle of Priestly Might~
-  SAY IDENTIFIED_DESC ~These enchanted girdles started appearing shortly after the end of the Time of Troubles.  Priests of Mystra took it to be a sign that their goddess had returned to power, while others saw it as a sign that the gods desired to take a more active role in the Realms from now on.  Exactly how many of these exist is not known, but there are thought to be at least a dozen around.
-
-Each girdle is bonded to a particular god, although any priest who shares the same moral alignment as the deity may use a belt, they need not be a follower.  This particular girdle has a symbol of the rising sun, marking it as bonded to the Morning Lord, Lathander.
-
-STATISTICS:
-
-Equipped abilities:
-- Strength: 18/99
-- Armor Class: +2
-
-Weight: 2~
+  SAY NAME2 @240
+  SAY IDENTIFIED_DESC @241
 
 
 // mh#blun1 - Radiant Star +1
@@ -539,6 +529,30 @@ COPY "%MOD_FOLDER%/items/mh#blun2.itm" "override"
       parameter1	= IDS_OF_SYMBOL("race" "slime")
       parameter2	= 4
       special		= 4
+    END
+  END
+
+
+// mh#blun3 - Battle Star +4
+
+COPY "%MOD_FOLDER%/items/mh#blun3.itm" "override"
+  SAY NAME2 @242
+  SAY IDENTIFIED_DESC @243
+
+  LAUNCH_PATCH_FUNCTION cd_apply_batch
+    STR_VAR
+    array_name		= "cd_immunity_hold_arrays"
+  END
+
+  PATCH_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
+      INT_VAR
+      opcode		= 346	// Save vs. School bonus
+      target		= 1	// Self
+      timing		= 2	// While equipped
+      parameter1	= 4
+      special		= 4	// Enchantment
     END
   END
 
@@ -602,17 +616,8 @@ COPY "%MOD_FOLDER%/items/mh#brac6.itm" "override"
 // mh#brac7 - Gloves of Evasion
 
 COPY "%MOD_FOLDER%/items/mh#brac7.itm" "override"
-  SAY NAME2 ~Gloves of Evasion~
-  SAY IDENTIFIED_DESC ~These soft, supple gloves of thin calfskin are enchanted to help a rogue evade capture.  Exactly who made them is not known which is unsurprising, rogues and those who aid them tend to value privacy over fame.
-
-STATISTICS:
-
-Equipped abilities:
-- Dexterity: +2
-- Open Locks: +10%
-- Non-Detection
-
-Weight: 2~
+  SAY NAME2 @244
+  SAY IDENTIFIED_DESC @245
 
 
 // mh#btax1 - Foesplitter +1
@@ -986,7 +991,7 @@ COPY "%MOD_FOLDER%/items/mh#misc4.itm" "override"
 // mh#misc5 - Jade Snakes
 
 COPY "%MOD_FOLDER%/items/mh#misc5.itm" "override"
-  SAY NAME2 ~Jade Snakes~
+  SAY NAME2 @246
   //SAY IDENTIFIED_DESC ~~
 
 
@@ -1025,32 +1030,21 @@ COPY "%MOD_FOLDER%/spells/mh#potn5.spl" "override"
 
 
 COPY "%MOD_FOLDER%/items/mh#potn5.itm" "override"
-  SAY NAME2 ~Potion of Wizardry~
-  SAY IDENTIFIED_DESC ~This potent brew temporarily increases arcane powers.  The wizard functions as if <PRO_HESHE> were three levels higher than normal, although this does not grant any extra hit points or additional spells.  The effects last for an hour.
-
-STATISTICS:
-
-THAC0: +2
-Saving Throws: +2
-Caster Level: +3 (arcane)
-Duration: 1 hour
-
-Weight: 1~
+  SAY NAME2 @247
+  SAY IDENTIFIED_DESC @248
 
 
 // mh#quivX - Quiver(s) of Ehlonna
 
 COPY "%MOD_FOLDER%/stores/mh#quivx.sto" "override/mh#quiv1.sto"
      "%MOD_FOLDER%/stores/mh#quivx.sto" "override/mh#quiv2.sto"
-  SAY NAME2 ~Quiver of Ehlonna~
+  SAY NAME2 @249
 
 
 COPY "%MOD_FOLDER%/items/mh#quivx.itm" "override/mh#quiv1.itm"
      "%MOD_FOLDER%/items/mh#quivx.itm" "override/mh#quiv2.itm"
-  SAY NAME2 ~Quiver of Ehlonna~
-  SAY IDENTIFIED_DESC ~At first glance, this seems to be a normal leather quiver for storing arrows and similar ammunition.  However, this quiver has properties similar to a Bag of Holding and can store many objects provided they are the general shape of an unstringed bow.  Arrows, wands, spears, swords and even polearms will all fit, but not crossbows and other objects whose shape does not allow fitting them through a narrow opening, or that are too small to be retrieved easily.  No matter how many objects are stowed away, the quiver will not bulge and its weight will not change.
-
-Weight: 4~
+  SAY NAME2 @249
+  SAY IDENTIFIED_DESC @250
 
 
 // mh#ring1 - Ring of the Lich +3

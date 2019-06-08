@@ -1,3 +1,5 @@
+mh#blun3 Battle Star +4				Sister Garlena (shop)
+
 mh#brac4 Bracers of the Wind			Ancient Grove (battle)
 mh#brac6 Silver Bracers of Kedl			Saradush (battle)
 

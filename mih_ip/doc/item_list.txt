@@ -21,10 +21,11 @@ mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
 mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
 mh#belt6 Belt of Vampire Protection
-mh#belt7 Girlde of Priestly Might		The Shining South (2E)
+mh#belt7 Girdle of Priestly Might		Encyclopedia Magica (2E)
 
 mh#blun1 Radiant Star +1
 mh#blun2 Slimecrusher +1
+mh#blun3 Battle Star +4				Encyclopedia Magica (2E)
 
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
 mh#boot2 Boots of Striding and Springing	DMG (2E)
