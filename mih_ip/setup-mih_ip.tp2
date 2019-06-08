@@ -5,7 +5,7 @@
 BACKUP "mih_ip/backup"
 
 AUTHOR "angel@pearlgates.net"
-VERSION v2
+VERSION v3
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
@@ -186,6 +186,19 @@ GROUP ~Optional Item Tweaks~
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
   task			= "improve_elixir_of_health"
+END
+
+
+// Improved Skull of Death
+
+BEGIN ~Improved Skull of Death~
+GROUP ~Optional Item Tweaks~
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg2" ~This component is not applicable to your game.~
+
+LAUNCH_ACTION_FUNCTION mh_run_task
+  STR_VAR
+  task			= "improve_skull_of_death"
 END
 
 
