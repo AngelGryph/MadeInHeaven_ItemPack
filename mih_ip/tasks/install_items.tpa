@@ -1,10 +1,11 @@
 // Set up graphical stuff
 
-COPY_LARGE "%MOD_FOLDER%/bams" "override"
+LAUNCH_ACTION_FUNCTION mh_batch_install_files END
+
 
 ACTION_BASH_FOR "override" "mh#vsio.\.bam"
 BEGIN
-  COPY "%MOD_FOLDER%/vvc/sporbit.vvc" "override/%BASH_FOR_RES%.vvc"
+  COPY "%MOD_FOLDER%/vvcs/sporbit.vvc" "override/%BASH_FOR_RES%.vvc"
     WRITE_EVALUATED_ASCII 0x8 "%BASH_FOR_RES%" #8
 END
 
