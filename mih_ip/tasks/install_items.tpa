@@ -1016,6 +1016,17 @@ COPY "%MOD_FOLDER%/items/mh#potn3.itm" "override"
   SAY NAME2 @230
   SAY IDENTIFIED_DESC @231
 
+  PATCH_IF FILE_EXISTS_IN_GAME "sppr316.spl"
+  BEGIN
+    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
+      INT_VAR
+      match_opcode	= 146
+      STR_VAR
+      match_resource	= "sppr317"
+      resource		= "sppr316"
+    END
+  END
+
 
 // mh#potn4 - Oil of Disenchantment
 
