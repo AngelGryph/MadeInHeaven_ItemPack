@@ -1403,7 +1403,7 @@ Equipped abilities:
 Weight: 1~
 @219  = ~Belt of Vampire Protection~
 @220  = ~Bolder's Cloak of the Rogue~
-@221  = ~Centuries ago a brash noble of Waterdeepm who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
+@221  = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
 
 Due to the nature of its protective enchantment, this cloak can not be worn together with other protection devices, like a Ring of Protection.
 
@@ -1583,3 +1583,14 @@ Charge abilities:
 - Cure Critical Wounds (1/day)
 
 Weight: 2~
+@252  = ~This girdle is made from a strip of gold plating that has magically been altered to be as supple as leather.  A stylished rising sun has been engraved on the clasp.  In battle it functions similarly to a ring of protection, and it is especially effective against vampires.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2 (+4 vs. vampires)
+- Saving Throws: +2
+
+Weight: 2~
+
+

@@ -464,7 +464,7 @@ COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
 
 COPY "%MOD_FOLDER%/items/mh#belt6.itm" "override"
   SAY NAME2 @219
-  //SAY IDENTIFIED_DESC ~~
+  SAY IDENTIFIED_DESC @252
 
 
 // mh#belt7 - Girdle of Priestly Might
