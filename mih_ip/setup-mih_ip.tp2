@@ -194,3 +194,16 @@ LAUNCH_ACTION_FUNCTION mh_run_task
 END
 
 
+// BG1-style wands
+
+BEGIN ~BG1-style Wands of Frost & -Lightning~
+GROUP ~Optional Item Tweaks~
+
+REQUIRE_PREDICATE NOT GAME_IS "bgee" ~This component is not applicable to your game.~
+
+LAUNCH_ACTION_FUNCTION mh_run_task
+  STR_VAR
+  task			= "tweak_wands_bg1"
+END
+
+

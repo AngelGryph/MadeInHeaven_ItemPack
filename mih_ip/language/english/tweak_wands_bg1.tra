@@ -1,0 +1,16 @@
+@0  = ~The possessor of the wand can discharge a bolt of lightning. As it passes through a creature, it does 6d6 points of damage with a Save vs. Wand for half. The bolt will continue through the target and proceed to "rebound" until expended.
+
+STATISTICS:
+
+Charge abilities:
+- Lightning Bolt
+  Damage: 6d6 electrical (Save vs. Wand for half)
+  Range: 100 ft.
+  Area of Effect: Path of bolt
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+

@@ -1,0 +1,45 @@
+// Tweak Wands - BG1 style
+
+
+// Wand of Frost
+
+COPY_EXISTING "wand06.itm" "override"
+  GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
+  PHP_EACH ab_array AS ab_no => ab_offset
+  BEGIN
+    WRITE_BYTE (ab_offset + 0x002a) 191
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
+// Wand of Lightning
+
+COPY_EXISTING "wand07.itm" "override"
+  SAY IDENTIFIED_DESC @0
+
+  GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
+  PHP_EACH ab_array AS ab_no => ab_offset
+  BEGIN
+    WRITE_BYTE (ab_offset + 0x000d) 0
+
+    GET_OFFSET_ARRAY2 fx_array ab_offset ITM_V10_HEAD_EFFECTS
+    PHP_EACH fx_array AS fx_no => fx_offset
+    BEGIN
+      PATCH_IF SHORT_AT (fx_offset) == 12
+      BEGIN
+        PATCH_IF LONG_AT (fx_offset + 0x002c) & BIT8
+	BEGIN
+	  WRITE_LONG (fx_offset + 0x001c) 6
+	END
+	ELSE
+	BEGIN
+	  WRITE_LONG (fx_offset + 0x001c) 3
+	END
+      END
+    END
+  END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
