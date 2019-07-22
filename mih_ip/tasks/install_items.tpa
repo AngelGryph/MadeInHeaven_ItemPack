@@ -1,6 +1,9 @@
 // Set up graphical stuff
 
-LAUNCH_ACTION_FUNCTION mh_batch_install_files END
+LAUNCH_ACTION_FUNCTION mh_batch_install_files
+  STR_VAR
+  dir_path	= "%MOD_FOLDER%/bams/item_pack"
+END
 
 
 ACTION_BASH_FOR "override" "mh#vsio.\.bam"
@@ -234,7 +237,7 @@ END
 
 // mh#amul1 - Amulet against Undead
 
-COPY "%MOD_FOLDER%/items/mh#amul1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul1.itm" "override"
   SAY NAME2 @0
   SAY IDENTIFIED_DESC @1
 
@@ -254,35 +257,35 @@ COPY "%MOD_FOLDER%/items/mh#amul1.itm" "override"
 
 // mh#amul2 - Necklace of Prayer Beads
 
-COPY "%MOD_FOLDER%/items/mh#amul2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul2.itm" "override"
   SAY NAME2 @2
   SAY IDENTIFIED_DESC @3
 
 
 // mh#amul3 - Gem of Insight
 
-COPY "%MOD_FOLDER%/items/mh#amul3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul3.itm" "override"
   SAY NAME2 @4
   SAY IDENTIFIED_DESC @5
 
 
 // mh#amul4 - Mirror Amulet
 
-COPY "%MOD_FOLDER%/items/mh#amul4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul4.itm" "override"
   SAY NAME2 @173
   SAY IDENTIFIED_DESC @174
 
 
 // mh#amul5 - Brooch of Shielding
 
-COPY "%MOD_FOLDER%/items/mh#amul5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul5.itm" "override"
   SAY NAME2 @40
   SAY IDENTIFIED_DESC @41
 
 
 // mh#amul6 - Scarab versus Golems
 
-COPY "%MOD_FOLDER%/items/mh#amul6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul6.itm" "override"
   SAY NAME2 @114
   SAY IDENTIFIED_DESC @115
 
@@ -302,14 +305,14 @@ COPY "%MOD_FOLDER%/items/mh#amul6.itm" "override"
 
 // mh#amul7 - Dragon's Tear Amulet
 
-COPY "%MOD_FOLDER%/items/mh#amul7.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul7.itm" "override"
   SAY NAME2 @175
   SAY IDENTIFIED_DESC @176
 
 
 // mh#amul8 - Periapt of Health
 
-COPY "%MOD_FOLDER%/items/mh#amul8.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul8.itm" "override"
   SAY NAME2 @177
   SAY IDENTIFIED_DESC @178
 
@@ -341,21 +344,21 @@ CREATE EFF "mh#amul9"
   WRITE_ASCII	0x0030 "mh#amul9"
 
 
-COPY "%MOD_FOLDER%/items/mh#amul9.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#amul9.itm" "override"
   SAY NAME2 @217
   SAY IDENTIFIED_DESC @218
 
 
 // mh#armr1 - Winter Wolf Hide +1
 
-COPY "%MOD_FOLDER%/items/mh#armr1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#armr1.itm" "override"
   SAY NAME2 @42
   SAY IDENTIFIED_DESC @43
 
 
 // mh#armr2 - Eversing +2
 
-COPY "%MOD_FOLDER%/items/mh#armr2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#armr2.itm" "override"
   SAY NAME2 @44
   SAY IDENTIFIED_DESC @45
 
@@ -367,9 +370,9 @@ COPY "%MOD_FOLDER%/items/mh#armr2.itm" "override"
 
 // mh#armr3 - White Hide of Umpluutu
 
-COPY "%MOD_FOLDER%/items/mh#pbpaw.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#pbpaw.itm" "override"
 
-COPY "%MOD_FOLDER%/items/mh#armr3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#armr3.itm" "override"
   SAY NAME2 @69
   SAY IDENTIFIED_DESC @70
 
@@ -394,49 +397,49 @@ COPY_EXISTING "spin122.spl" "override"
 
 // mh#armr4 - Celestial Chain +2
 
-COPY "%MOD_FOLDER%/items/mh#armr4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#armr4.itm" "override"
   SAY NAME2 @87
   SAY IDENTIFIED_DESC @88
 
 
 // mh#armr5 - Dwarven Full Plate +2
 
-COPY "%MOD_FOLDER%/items/mh#armr5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#armr5.itm" "override"
   SAY NAME2 @89
   SAY IDENTIFIED_DESC @90
 
 
 // mh#armr6 - Black Swan Armor +2
 
-COPY "%MOD_FOLDER%/items/mh#armr6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#armr6.itm" "override"
   SAY NAME2 @125
   SAY IDENTIFIED_DESC @126
 
 
 // mh#belt1 - Girdle of Dwarvenkind
 
-COPY "%MOD_FOLDER%/items/mh#belt1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt1.itm" "override"
   SAY NAME2 @8
   SAY IDENTIFIED_DESC @9
 
 
 // mh#belt2 - Sunite Sash
 
-COPY "%MOD_FOLDER%/items/mh#belt2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt2.itm" "override"
   SAY NAME2 @46
   SAY IDENTIFIED_DESC @47
 
 
 // mh#belt3 - Storm's Garter
 
-COPY "%MOD_FOLDER%/items/mh#belt3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt3.itm" "override"
   SAY NAME2 @77
   SAY IDENTIFIED_DESC @78
 
 
 // mh#belt4 - Girdle of Beatification
 
-COPY "%MOD_FOLDER%/items/mh#belt4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt4.itm" "override"
   SAY NAME2 @127
   SAY IDENTIFIED_DESC @128
 
@@ -455,28 +458,28 @@ BEGIN
 END
 
 
-COPY "%MOD_FOLDER%/items/mh#belt5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt5.itm" "override"
   SAY NAME2 @129
   SAY IDENTIFIED_DESC @130
 
 
 // mh#belt6 - Belt of Vampire Protection
 
-COPY "%MOD_FOLDER%/items/mh#belt6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt6.itm" "override"
   SAY NAME2 @219
   SAY IDENTIFIED_DESC @252
 
 
 // mh#belt7 - Girdle of Priestly Might
 
-COPY "%MOD_FOLDER%/items/mh#belt7.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#belt7.itm" "override"
   SAY NAME2 @240
   SAY IDENTIFIED_DESC @241
 
 
 // mh#blun1 - Radiant Star +1
 
-COPY "%MOD_FOLDER%/items/mh#blun1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#blun1.itm" "override"
   SAY NAME2 @71
   SAY IDENTIFIED_DESC @72
 
@@ -516,7 +519,7 @@ COPY "%MOD_FOLDER%/items/mh#blun1.itm" "override"
 
 // mh#blun2 - Slimecrusher +1
 
-COPY "%MOD_FOLDER%/items/mh#blun2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#blun2.itm" "override"
   SAY NAME2 @179
   SAY IDENTIFIED_DESC @180
 
@@ -536,7 +539,7 @@ COPY "%MOD_FOLDER%/items/mh#blun2.itm" "override"
 
 // mh#blun3 - Battle Star +4
 
-COPY "%MOD_FOLDER%/items/mh#blun3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#blun3.itm" "override"
   SAY NAME2 @242
   SAY IDENTIFIED_DESC @243
 
@@ -560,77 +563,77 @@ COPY "%MOD_FOLDER%/items/mh#blun3.itm" "override"
 
 // mh#boot1 - Boots of the Master Ninja
 
-COPY "%MOD_FOLDER%/items/mh#boot1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#boot1.itm" "override"
   SAY NAME2 @10
   SAY IDENTIFIED_DESC @11
 
 
 // mh#boot2 - Boots of Striding and Springing
 
-COPY "%MOD_FOLDER%/items/mh#boot2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#boot2.itm" "override"
   SAY NAME2 @48
   SAY IDENTIFIED_DESC @49
 
 
 // mh#brac1 - Vambraces of Evil's Warding
 
-COPY "%MOD_FOLDER%/items/mh#brac1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac1.itm" "override"
   SAY NAME2 @50
   SAY IDENTIFIED_DESC @51
 
 
 // mh#brac2 - Gauntlets of the Dwarven King
 
-COPY "%MOD_FOLDER%/items/mh#brac2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac2.itm" "override"
   SAY NAME2 @12
   SAY IDENTIFIED_DESC @13
 
 
 // mh#brac3 - Bracers of Winter's Chill
 
-COPY "%MOD_FOLDER%/items/mh#brac3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac3.itm" "override"
   SAY NAME2 @73
   SAY IDENTIFIED_DESC @74
 
 
 // mh#brac4 - Bracers of the Wind
 
-COPY "%MOD_FOLDER%/items/mh#brac4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac4.itm" "override"
   SAY NAME2 @75
   SAY IDENTIFIED_DESC @76
 
 
 // mh#brac5 - Gauntlets of Smiting
 
-COPY "%MOD_FOLDER%/items/mh#brac5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac5.itm" "override"
   SAY NAME2 @121
   SAY IDENTIFIED_DESC @122
 
 
 // mh#brac6 - Silver Bracers of Kedl
 
-COPY "%MOD_FOLDER%/items/mh#brac6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac6.itm" "override"
   SAY NAME2 @131
   SAY IDENTIFIED_DESC @132
 
 
 // mh#brac7 - Gloves of Evasion
 
-COPY "%MOD_FOLDER%/items/mh#brac7.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#brac7.itm" "override"
   SAY NAME2 @244
   SAY IDENTIFIED_DESC @245
 
 
 // mh#btax1 - Foesplitter +1
 
-COPY "%MOD_FOLDER%/items/mh#btax1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#btax1.itm" "override"
   SAY NAME2 @14
   SAY IDENTIFIED_DESC @15
 
 
 // mh#btax2 - Trollkiller +2
 
-COPY "%MOD_FOLDER%/items/mh#btax2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#btax2.itm" "override"
   SAY NAME2 @123
   SAY IDENTIFIED_DESC @124
 
@@ -654,14 +657,14 @@ CREATE EFF "mh#vhmsg"
 COPY "%MOD_FOLDER%/spells/mh#btax3.spl" "override"
 
 
-COPY "%MOD_FOLDER%/items/mh#btax3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#btax3.itm" "override"
   SAY NAME2 @133
   SAY IDENTIFIED_DESC @134
 
 
 // mh#clck1 - Mutamin's Cloak
 
-COPY "%MOD_FOLDER%/items/mh#clck1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#clck1.itm" "override"
   SAY NAME2 @16
   SAY IDENTIFIED_DESC @17
 
@@ -673,14 +676,14 @@ COPY "%MOD_FOLDER%/items/mh#clck1.itm" "override"
 
 // mh#clck2 - Battlecloak of Vycaena
 
-COPY "%MOD_FOLDER%/items/mh#clck2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#clck2.itm" "override"
   SAY NAME2 @18
   SAY IDENTIFIED_DESC @19
 
 
 // mh#clck3 - Cloak of Arachnida
 
-COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#clck3.itm" "override"
   SAY NAME2 @79
   SAY IDENTIFIED_DESC @80
 
@@ -692,42 +695,42 @@ COPY "%MOD_FOLDER%/items/mh#clck3.itm" "override"
 
 // mh#clck4 - Cloak of the Night Sky
 
-COPY "%MOD_FOLDER%/items/mh#clck4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#clck4.itm" "override"
   SAY NAME2 @216
   SAY IDENTIFIED_DESC @116
 
 
 // mh#clck5 - Bolder's Cloak of the Rogue
 
-COPY "%MOD_FOLDER%/items/mh#clck5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#clck5.itm" "override"
   SAY NAME2 @220
   SAY IDENTIFIED_DESC @221
 
 
 // mh#comp1 - Meteoric Iron
 
-COPY "%MOD_FOLDER%/items/mh#comp1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#comp1.itm" "override"
   SAY NAME2 @24
   SAY IDENTIFIED_DESC @25
 
 
 // mh#comp2 - Mithral Ore
 
-COPY "%MOD_FOLDER%/items/mh#comp2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#comp2.itm" "override"
   SAY NAME2 @81
   SAY IDENTIFIED_DESC @82
 
 
 // mh#comp3 - Lux Veritatis
 
-COPY "%MOD_FOLDER%/items/mh#comp3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#comp3.itm" "override"
   SAY NAME2 @83
   SAY IDENTIFIED_DESC @84
 
 
 // mh#comp4 - Rusty Katana
 
-COPY "%MOD_FOLDER%/items/mh#comp4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#comp4.itm" "override"
   PATCH_IF GAME_IS "bgee"
   BEGIN
     SAY NAME1 #26711
@@ -740,7 +743,7 @@ COPY "%MOD_FOLDER%/items/mh#comp4.itm" "override"
 
 // mh#comp5 - Unicorn Horn
 
-COPY "%MOD_FOLDER%/items/mh#comp5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#comp5.itm" "override"
   SAY NAME1 @183
   SAY NAME2 @184
   SAY UNIDENTIFIED_DESC @185
@@ -749,63 +752,63 @@ COPY "%MOD_FOLDER%/items/mh#comp5.itm" "override"
 
 // mh#dagg1 - Catclaw +3
 
-COPY "%MOD_FOLDER%/items/mh#dagg1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#dagg1.itm" "override"
   SAY NAME2 @52
   SAY IDENTIFIED_DESC @53
 
 
 // mh#dagg2 - Spinesheath +1
 
-COPY "%MOD_FOLDER%/items/mh#dagg2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#dagg2.itm" "override"
   SAY NAME2 @135
   SAY IDENTIFIED_DESC @136
 
 
 // mh#dart1 - Lein's Fiery Darts +1
 
-COPY "%MOD_FOLDER%/items/mh#dart1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#dart1.itm" "override"
   SAY NAME2 @222
   SAY IDENTIFIED_DESC @223
 
 
 // mh#dart2 - Chandler's Icy Darts +1
 
-COPY "%MOD_FOLDER%/items/mh#dart2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#dart2.itm" "override"
   SAY NAME2 @224
   SAY IDENTIFIED_DESC @225
 
 
 // mh#dart3 - Zilzanzer's Magnificent Darts +1
 
-COPY "%MOD_FOLDER%/items/mh#dart3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#dart3.itm" "override"
   SAY NAME2 @236
   SAY IDENTIFIED_DESC @237
 
 
 // mh#dart4 - Silver Dart of Selune +2
 
-COPY "%MOD_FOLDER%/items/mh#dart4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#dart4.itm" "override"
   SAY NAME2 @238
   SAY IDENTIFIED_DESC @239
 
 
 // mh#hamm1 - Final Strike +3
 
-COPY "%MOD_FOLDER%/items/mh#hamm1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#hamm1.itm" "override"
   SAY NAME2 @20
   SAY IDENTIFIED_DESC @21
 
 
 // mh#helm1 - Helm of Valor
 
-COPY "%MOD_FOLDER%/items/mh#helm1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#helm1.itm" "override"
   SAY NAME2 @22
   SAY IDENTIFIED_DESC @23
 
 
 // mh#helm2 - Helm of the Dwarven Lords
 
-COPY "%MOD_FOLDER%/items/mh#helm2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#helm2.itm" "override"
   SAY NAME2 @117
   SAY IDENTIFIED_DESC @118
 
@@ -827,14 +830,14 @@ COPY "%MOD_FOLDER%/items/mh#helm2.itm" "override"
 
 // mh#helm3 - Blessed Helm of Lathander
 
-COPY "%MOD_FOLDER%/items/mh#helm3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#helm3.itm" "override"
   SAY NAME2 @137
   SAY IDENTIFIED_DESC @138
 
 
 // mh#ioun1 - Pale Blue Ioun Stone
 
-COPY "%MOD_FOLDER%/items/mh#ioun1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ioun1.itm" "override"
   SAY NAME2 @54
   SAY IDENTIFIED_DESC @55
 
@@ -854,7 +857,7 @@ COPY "%MOD_FOLDER%/items/mh#ioun1.itm" "override"
 
 // mh#ioun2 - Crystal Clear Ioun Stone
 
-COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ioun2.itm" "override"
   SAY NAME2 @91
   SAY IDENTIFIED_DESC @56
 
@@ -874,7 +877,7 @@ COPY "%MOD_FOLDER%/items/mh#ioun2.itm" "override"
 
 // mh#ioun3 - Bright Orange Ioun Stone
 
-COPY "%MOD_FOLDER%/items/mh#ioun3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ioun3.itm" "override"
   SAY NAME2 @187
   SAY IDENTIFIED_DESC @188
 
@@ -894,7 +897,7 @@ COPY "%MOD_FOLDER%/items/mh#ioun3.itm" "override"
 
 // mh#ioun4 - Telkiira
 
-COPY "%MOD_FOLDER%/items/mh#ioun4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ioun4.itm" "override"
   SAY NAME2 @189
   SAY IDENTIFIED_DESC @190
 
@@ -914,7 +917,7 @@ COPY "%MOD_FOLDER%/items/mh#ioun4.itm" "override"
 
 // mh#ioun5 - Mottled Green Ioun Stone
 
-COPY "%MOD_FOLDER%/items/mh#ioun5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ioun5.itm" "override"
   SAY NAME2 @226
   SAY IDENTIFIED_DESC @227
 
@@ -934,7 +937,7 @@ COPY "%MOD_FOLDER%/items/mh#ioun5.itm" "override"
 
 // mh#ioun6 - Maroon Star Ioun Stone
 
-COPY "%MOD_FOLDER%/items/mh#ioun6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ioun6.itm" "override"
   SAY NAME2 @228
   SAY IDENTIFIED_DESC @229
 
@@ -954,28 +957,28 @@ COPY "%MOD_FOLDER%/items/mh#ioun6.itm" "override"
 
 // mh#lbow1 - Bow of Eletha
 
-COPY "%MOD_FOLDER%/items/mh#lbow1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#lbow1.itm" "override"
   SAY NAME2 @57
   SAY IDENTIFIED_DESC @58
 
 
 // mh#misc1 - Pearl of Power
 
-COPY "%MOD_FOLDER%/items/mh#misc1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#misc1.itm" "override"
   SAY NAME2 @139
   SAY IDENTIFIED_DESC @140
 
 
 // mh#misc2 - Bag of Tricks
 
-COPY "%MOD_FOLDER%/items/mh#misc2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#misc2.itm" "override"
   SAY NAME2 @192
   SAY IDENTIFIED_DESC @193
 
 
 // mh#misc3 - Crystal Ball
 
-COPY "%MOD_FOLDER%/items/mh#misc3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#misc3.itm" "override"
   SAY NAME1 @194
   SAY NAME2 @194
   SAY UNIDENTIFIED_DESC @195
@@ -984,35 +987,35 @@ COPY "%MOD_FOLDER%/items/mh#misc3.itm" "override"
 
 // mh#misc4 - Gem of Seeing
 
-COPY "%MOD_FOLDER%/items/mh#misc4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#misc4.itm" "override"
   SAY NAME2 @6
   SAY IDENTIFIED_DESC @7
 
 
 // mh#misc5 - Jade Snakes
 
-COPY "%MOD_FOLDER%/items/mh#misc5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#misc5.itm" "override"
   SAY NAME2 @246
   SAY IDENTIFIED_DESC @251
 
 
 // mh#potn1 - Oil of Acid Resistance
 
-COPY "%MOD_FOLDER%/items/mh#potn1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#potn1.itm" "override"
   SAY NAME2 @59
   SAY IDENTIFIED_DESC @60
 
 
 // mh#potn2 - Potion of Clairvoyance
 
-COPY "%MOD_FOLDER%/items/mh#potn2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#potn2.itm" "override"
   SAY NAME2 @141
   SAY IDENTIFIED_DESC @142
 
 
 // mh#potn3 - Philter of Purification
 
-COPY "%MOD_FOLDER%/items/mh#potn3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#potn3.itm" "override"
   SAY NAME2 @230
   SAY IDENTIFIED_DESC @231
 
@@ -1030,7 +1033,7 @@ COPY "%MOD_FOLDER%/items/mh#potn3.itm" "override"
 
 // mh#potn4 - Oil of Disenchantment
 
-COPY "%MOD_FOLDER%/items/mh#potn4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#potn4.itm" "override"
   SAY NAME2 @232
   SAY IDENTIFIED_DESC @233
 
@@ -1041,7 +1044,7 @@ COPY "%MOD_FOLDER%/spells/mh#potn5.spl" "override"
   LAUNCH_PATCH_FUNCTION mh_prevent_spell_effect_stacking END
 
 
-COPY "%MOD_FOLDER%/items/mh#potn5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#potn5.itm" "override"
   SAY NAME2 @247
   SAY IDENTIFIED_DESC @248
 
@@ -1053,43 +1056,43 @@ COPY "%MOD_FOLDER%/stores/mh#quivx.sto" "override/mh#quiv1.sto"
   SAY NAME2 @249
 
 
-COPY "%MOD_FOLDER%/items/mh#quivx.itm" "override/mh#quiv1.itm"
-     "%MOD_FOLDER%/items/mh#quivx.itm" "override/mh#quiv2.itm"
+COPY "%MOD_FOLDER%/items/item_pack/mh#quivx.itm" "override/mh#quiv1.itm"
+     "%MOD_FOLDER%/items/item_pack/mh#quivx.itm" "override/mh#quiv2.itm"
   SAY NAME2 @249
   SAY IDENTIFIED_DESC @250
 
 
 // mh#ring1 - Ring of the Lich +3
 
-COPY "%MOD_FOLDER%/items/mh#ring1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring1.itm" "override"
   SAY NAME2 @26
   SAY IDENTIFIED_DESC @27
 
 
 // mh#ring2 - Ring of Warmth
 
-COPY "%MOD_FOLDER%/items/mh#ring2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring2.itm" "override"
   SAY NAME2 @28
   SAY IDENTIFIED_DESC @29
 
 
 // mh#ring3 - Ring of the Neophyte
 
-COPY "%MOD_FOLDER%/items/mh#ring3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring3.itm" "override"
   SAY NAME2 @30
   SAY IDENTIFIED_DESC @31
 
 
 // mh#ring4 - Ring of Shocking Grasp
 
-COPY "%MOD_FOLDER%/items/mh#ring4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring4.itm" "override"
   SAY NAME2 @32
   SAY IDENTIFIED_DESC @33
 
 
 // mh#ring5 - Ring of Protection from Silence
 
-COPY "%MOD_FOLDER%/items/mh#ring5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring5.itm" "override"
   SAY NAME2 @85
   SAY IDENTIFIED_DESC @86
 
@@ -1101,14 +1104,14 @@ COPY "%MOD_FOLDER%/items/mh#ring5.itm" "override"
 
 // mh#ring6 - Ring of White Bone
 
-COPY "%MOD_FOLDER%/items/mh#ring6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring6.itm" "override"
   SAY NAME2 @92
   SAY IDENTIFIED_DESC @93
 
 
 // mh#ring7 - Ring of Mind Shielding
 
-COPY "%MOD_FOLDER%/items/mh#ring7.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring7.itm" "override"
   SAY NAME2 @94
   SAY IDENTIFIED_DESC @95
 
@@ -1140,56 +1143,56 @@ COPY "%MOD_FOLDER%/items/mh#ring7.itm" "override"
 
 // mh#ring8 - Ring of Shooting Stars
 
-COPY "%MOD_FOLDER%/items/mh#ring8.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring8.itm" "override"
   SAY NAME2 @96
   SAY IDENTIFIED_DESC @97
 
 
 // mh#ring9 - Ring of the Chosen
 
-COPY "%MOD_FOLDER%/items/mh#ring9.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ring9.itm" "override"
   SAY NAME2 @119
   SAY IDENTIFIED_DESC @120
 
 
 // mh#ringa - Shield Ring
 
-COPY "%MOD_FOLDER%/items/mh#ringa.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ringa.itm" "override"
   SAY NAME2 @143
   SAY IDENTIFIED_DESC @144
 
 
 // mh#ringb - Edion's Ring of Wizardry
 
-COPY "%MOD_FOLDER%/items/mh#ringb.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ringb.itm" "override"
   SAY NAME2 @145
   SAY IDENTIFIED_DESC @146
 
 
 // mh#ringc - Ring of Water Control
 
-COPY "%MOD_FOLDER%/items/mh#ringc.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ringc.itm" "override"
   SAY NAME2 @197
   SAY IDENTIFIED_DESC @198
 
 
 // mh#ringd - Ring of Three Wishes
 
-COPY "%MOD_FOLDER%/items/mh#ringd.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#ringd.itm" "override"
   SAY NAME2 @234
   SAY IDENTIFIED_DESC @235
 
 
 // mh#robe1 - Robe of the Elements
 
-COPY "%MOD_FOLDER%/items/mh#robe1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#robe1.itm" "override"
   SAY NAME2 @98
   SAY IDENTIFIED_DESC @99
 
 
 // mh#robe2 - Robe of the Necromancer
 
-COPY "%MOD_FOLDER%/items/mh#robe2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#robe2.itm" "override"
   SAY NAME2 @100
   SAY IDENTIFIED_DESC @101
 
@@ -1201,7 +1204,7 @@ COPY "%MOD_FOLDER%/items/mh#robe2.itm" "override"
 
 // mh#robe3 - Robe of the Pure Heart
 
-COPY "%MOD_FOLDER%/items/mh#robe3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#robe3.itm" "override"
   SAY NAME1 @102
   SAY UNIDENTIFIED_DESC @103
   SAY NAME2 @104
@@ -1210,7 +1213,7 @@ COPY "%MOD_FOLDER%/items/mh#robe3.itm" "override"
 
 // mh#robe4 - Shadow Dancer's Robe
 
-COPY "%MOD_FOLDER%/items/mh#robe4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#robe4.itm" "override"
   SAY NAME1 @102
   SAY UNIDENTIFIED_DESC @103
   SAY NAME2 @106
@@ -1219,42 +1222,42 @@ COPY "%MOD_FOLDER%/items/mh#robe4.itm" "override"
 
 // mh#shld1 - Meteoric Shield +2
 
-COPY "%MOD_FOLDER%/items/mh#shld1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld1.itm" "override"
   SAY NAME2 @34
   SAY IDENTIFIED_DESC @35
 
 
 // mh#shld2 - Ankheg Shield +1
 
-COPY "%MOD_FOLDER%/items/mh#shld2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld2.itm" "override"
   SAY NAME2 @61
   SAY IDENTIFIED_DESC @62
 
 
 // mh#shld3 - Shield of the Phoenix +2
 
-COPY "%MOD_FOLDER%/items/mh#shld3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld3.itm" "override"
   SAY NAME2 @63
   SAY IDENTIFIED_DESC @64
 
 
 // mh#shld4 - Shield of the Three Kings +5
 
-COPY "%MOD_FOLDER%/items/mh#shld4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld4.itm" "override"
   SAY NAME2 @147
   SAY IDENTIFIED_DESC @148
 
 
 // mh#shld5 - Shield of the Revenant +2
 
-COPY "%MOD_FOLDER%/items/mh#shld5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld5.itm" "override"
   SAY NAME2 @149
   SAY IDENTIFIED_DESC @150
 
 
 // mh#shld6 - Mystery of the Dead +3
 
-COPY "%MOD_FOLDER%/items/mh#shld6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld6.itm" "override"
   SAY NAME2 @151
   SAY IDENTIFIED_DESC @152
 
@@ -1266,14 +1269,14 @@ COPY "%MOD_FOLDER%/items/mh#shld6.itm" "override"
 
 // mh#shld7 - Waukeen's Defender +2
 
-COPY "%MOD_FOLDER%/items/mh#shld7.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#shld7.itm" "override"
   SAY NAME2 @153
   SAY IDENTIFIED_DESC @154
 
 
 // mh#sper1 - Alicorn Spear +2
 
-COPY "%MOD_FOLDER%/items/mh#sper1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#sper1.itm" "override"
   SAY NAME2 @199
   SAY IDENTIFIED_DESC @200
 
@@ -1285,28 +1288,28 @@ COPY "%MOD_FOLDER%/items/mh#sper1.itm" "override"
 
 // mh#staf1 - Staff of Rumathil +2
 
-COPY "%MOD_FOLDER%/items/mh#staf1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#staf1.itm" "override"
   SAY NAME2 @65
   SAY IDENTIFIED_DESC @66
 
 
 // mh#staf2 - Spendelard's Protector +1
 
-COPY "%MOD_FOLDER%/items/mh#staf2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#staf2.itm" "override"
   SAY NAME2 @155
   SAY IDENTIFIED_DESC @156
 
 
 // mh#staf3 - Staff of Moradin's Breath +2
 
-COPY "%MOD_FOLDER%/items/mh#staf3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#staf3.itm" "override"
   SAY NAME2 @157
   SAY IDENTIFIED_DESC @158
 
 
 // mh#staf4 - Staff of the Legion +5
 
-COPY "%MOD_FOLDER%/items/mh#staf4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#staf4.itm" "override"
   SAY NAME2 @201
   SAY IDENTIFIED_DESC @202
 
@@ -1344,27 +1347,27 @@ CREATE EFF "mh#staf5"
   WRITE_ASCII	0x0070 "spplanar" #8
 
 
-COPY "%MOD_FOLDER%/items/mh#staf5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#staf5.itm" "override"
   SAY NAME2 @204
   SAY IDENTIFIED_DESC @205
 
 
 // mh#staf6 - Staff of Swarming Insects +2
 
-COPY "%MOD_FOLDER%/items/mh#staf6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#staf6.itm" "override"
   SAY NAME2 @206
   SAY IDENTIFIED_DESC @207
 
 
 // mh#swrd1 - Terminus Est +2
 
-COPY "%MOD_FOLDER%/items/mh#swrd1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd1.itm" "override"
   SAY NAME2 @36
   SAY IDENTIFIED_DESC @37
 
 
 // mh#swrd2 - Smythe's Slicer +1
-COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd2.itm" "override"
   SAY NAME2 @38
   SAY IDENTIFIED_DESC @39
 
@@ -1384,19 +1387,19 @@ COPY "%MOD_FOLDER%/items/mh#swrd2.itm" "override"
 
 // mh#swrd3 - Scimitar of the Seven +4
 
-COPY "%MOD_FOLDER%/items/mh#swrd3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd3.itm" "override"
   SAY NAME2 @108
   SAY IDENTIFIED_DESC @109
 
 
 // mh#swrd4 - Sword of the Planes +1
 
-COPY "%MOD_FOLDER%/items/mh#swrd4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd4.itm" "override"
   SAY NAME2 @110
   SAY IDENTIFIED_DESC @111
 
 
-COPY "%MOD_FOLDER%/items/mh#swd4a.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swd4a.itm" "override"
   SAY NAME2 @112
   SAY IDENTIFIED_DESC @113
 
@@ -1431,14 +1434,14 @@ CREATE EFF "mh#swrd5"
   WRITE_LONG	0x003c 4	// # sides
 
 
-COPY "%MOD_FOLDER%/items/mh#swrd5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd5.itm" "override"
   SAY NAME2 @159
   SAY IDENTIFIED_DESC @160
 
 
 // mh#swrd6 - Pale Justice +4
 
-COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd6.itm" "override"
   SAY NAME2 @161
   SAY IDENTIFIED_DESC @162
 
@@ -1456,7 +1459,7 @@ COPY "%MOD_FOLDER%/items/mh#swrd6.itm" "override"
 // mh#swrd7 - Mirthal +1
 
 
-COPY "%MOD_FOLDER%/items/mh#swrd7.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd7.itm" "override"
   SAY NAME2 @208
   SAY IDENTIFIED_DESC @209
 
@@ -1476,7 +1479,7 @@ COPY "%MOD_FOLDER%/items/mh#swrd7.itm" "override"
 
 // mh#swrd8 - Golden Sky +2
 
-COPY "%MOD_FOLDER%/items/mh#swrd8.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd8.itm" "override"
   PATCH_IF GAME_IS "bgee"
   BEGIN
     SAY NAME1 #26711
@@ -1489,7 +1492,7 @@ COPY "%MOD_FOLDER%/items/mh#swrd8.itm" "override"
 
 // mh#swrd9 - Cold Flame +3
 
-COPY "%MOD_FOLDER%/items/mh#swrd9.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#swrd9.itm" "override"
   SAY NAME2 @212
   SAY IDENTIFIED_DESC @213
 
@@ -1570,49 +1573,49 @@ COPY "%MOD_FOLDER%/spells/mh#ctome.spl" "override"
 
 // mh#tome1 - Book of Exalted Deeds
 
-COPY "%MOD_FOLDER%/items/mh#tome1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#tome1.itm" "override"
   SAY NAME2 @163
   SAY IDENTIFIED_DESC @164
 
 
 // mh#tome2 - Book of Vile Darkness
 
-COPY "%MOD_FOLDER%/items/mh#tome2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#tome2.itm" "override"
   SAY NAME2 @165
   SAY IDENTIFIED_DESC @166
 
 
 // mh#tome3 - Libram of Silver Magic
 
-COPY "%MOD_FOLDER%/items/mh#tome3.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#tome3.itm" "override"
   SAY NAME2 @167
   SAY IDENTIFIED_DESC @168
 
 
 // mh#tome4 - Libram of Gainful Conjuration
 
-COPY "%MOD_FOLDER%/items/mh#tome4.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#tome4.itm" "override"
   SAY NAME2 @169
   SAY IDENTIFIED_DESC @170
 
 
 // mh#tome5 - Libram of Ineffable Damnation
 
-COPY "%MOD_FOLDER%/items/mh#tome5.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#tome5.itm" "override"
   SAY NAME2 @171
   SAY IDENTIFIED_DESC @172
 
 
 // mh#wand1 - Wand of Illusions
 
-COPY "%MOD_FOLDER%/items/mh#wand1.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#wand1.itm" "override"
   SAY NAME2 @67
   SAY IDENTIFIED_DESC @68
 
 
 // mh#wand2 - Elmira's Wand of Blasting
 
-COPY "%MOD_FOLDER%/items/mh#wand2.itm" "override"
+COPY "%MOD_FOLDER%/items/item_pack/mh#wand2.itm" "override"
   SAY NAME2 @214
   SAY IDENTIFIED_DESC @215
 

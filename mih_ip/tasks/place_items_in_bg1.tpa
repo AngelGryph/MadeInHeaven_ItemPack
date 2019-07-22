@@ -392,7 +392,7 @@ COPY_EXISTING "%DurlagsTower_D4%.are" "override"
   // Rusty Katana
   LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
     INT_VAR
-    container_to_add_to	= 11
+    container_to_add_to	= 22
     STR_VAR
     item_to_add		= "mh#comp4"
   END

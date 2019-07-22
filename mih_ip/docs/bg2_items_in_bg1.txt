@@ -1,0 +1,18 @@
+amul19	Amulet of 5% Magic Resistance		Sorcerous Sundries (shop)
+amul25	Amulet of Spell Warding			Sorcerous Sundries (shop)
+
+brac18	Gloves of Missile Snaring		Fisherman's Lake (battle)
+
+boot07	Boots of Elvenkind			Cloakwood wyvern lair (cache)
+
+clck23	Cloak of Elvenkind			Cloakwood wyvern lair (cache)
+
+dagg11	Boomerang Dagger			Durlag's Tower D4 (barrel)
+
+ring35	Ring of Lock Picks			Black Lily (shop)
+ring36	Ring of Danger Sense			Black Lily (shop)
+ring46	Ring of Anti-Venom			High Hedge (shop)
+
+sw1h37	Taragarth the Bloodbrand +1		Bandit Camp (battle)
+
+

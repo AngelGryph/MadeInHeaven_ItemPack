@@ -1,6 +1,6 @@
 // Improved Skull of Death
 
-COPY "%MOD_FOLDER%/items/helm17.itm" "override"
+COPY "%MOD_FOLDER%/items/skull/helm17.itm" "override"
   SAY IDENTIFIED_DESC @0
 
   PATCH_IF ENGINE_IS "bgee bg2ee"
