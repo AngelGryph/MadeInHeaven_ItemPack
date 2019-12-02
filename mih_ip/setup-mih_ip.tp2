@@ -5,7 +5,7 @@
 BACKUP "mih_ip/backup"
 
 AUTHOR "angel@pearlgates.net"
-VERSION v3
+VERSION v4
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
@@ -50,6 +50,7 @@ ALWAYS
 
   INCLUDE "%MOD_FOLDER%/lib/mh_functions.tph"
   INCLUDE "%MOD_FOLDER%/lib/cd_functions.tph"
+  INCLUDE "%MOD_FOLDER%/lib/ids_entries_cleanup.tph"
 
 
   // Read the .ini file for this mod

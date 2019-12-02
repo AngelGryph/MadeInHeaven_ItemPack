@@ -153,7 +153,6 @@ END
 
 // Required water elemental fixes
 
-APPEND "animate.ids" "0xef10 WATER_WEIRD" UNLESS "WATER_WEIRD"
 APPEND "class.ids" "219 ELEMENTAL_WATER" UNLESS "ELEMENTAL_WATER"
 CLEAR_IDS_MAP
 

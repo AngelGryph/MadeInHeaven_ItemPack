@@ -8,7 +8,7 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
-Version 3 - June ?? 2019
+Version 3 - December 2 2019
 - Silver Dart and Zilzanzer's Darts now install properly
 - Added component "Improved Skull of Death"
 
