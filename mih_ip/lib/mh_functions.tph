@@ -7,32 +7,32 @@ DEFINE_ACTION_FUNCTION mh_run_task
   STR_VAR
   task		= "???"
 BEGIN
-  ACTION_IF NOT FILE_EXISTS "%MOD_FOLDER%/run/%task%.mih"
+  ACTION_IF NOT FILE_EXISTS "%marker_dir%/mh#%mod_name%-%task%.mrk"
   BEGIN
     PRINT ~Running task %task%...~
 
-    ACTION_IF NOT FILE_EXISTS "%MOD_FOLDER%/tasks/%task%.tpa"
+    ACTION_IF NOT FILE_EXISTS "%mod_name%/tasks/%task%.tpa"
     BEGIN
       FAIL ~Command file "%task%.tpa" not found!~
     END
 
     ACTION_IF !no_log
     BEGIN
-      COPY "%MOD_FOLDER%/dummy.mih" "%MOD_FOLDER%/run/%task%.mih"
+      COPY "%mod_name%/dummy.mih" "%marker_dir%/mh#%mod_name%-%task%.mrk"
     END
 
-    ACTION_IF FILE_EXISTS "%MOD_FOLDER%/language/%LANGUAGE%/%task%.tra"
+    ACTION_IF FILE_EXISTS "%mod_name%/lang/%LANGUAGE%/%task%.tra"
     BEGIN
-      WITH_TRA "%MOD_FOLDER%/language/%LANGUAGE%/%task%.tra"
+      WITH_TRA "%mod_name%/lang/%LANGUAGE%/%task%.tra"
       BEGIN
-        PRINT "Using tra file %MOD_FOLDER%/language/%LANGUAGE%/%task%.tra..."
+        PRINT "Using tra file %mod_name%/lang/%LANGUAGE%/%task%.tra..."
 
-        INCLUDE "%MOD_FOLDER%/tasks/%task%.tpa"
+        INCLUDE "%mod_name%/tasks/%task%.tpa"
       END
     END
     ELSE
     BEGIN
-      INCLUDE "%MOD_FOLDER%/tasks/%task%.tpa"
+      INCLUDE "%mod_name%/tasks/%task%.tpa"
     END
   END
   ELSE
@@ -44,9 +44,9 @@ END
 
 DEFINE_ACTION_MACRO mh_process_ini_file
 BEGIN
-  ACTION_IF FILE_EXISTS "%MOD_FOLDER%/setup-%MOD_FOLDER%.ini"
+  ACTION_IF FILE_EXISTS "%mod_name%/setup-%mod_name%.ini"
   BEGIN
-    COPY - "%MOD_FOLDER%/setup-%MOD_FOLDER%.ini" "override"
+    COPY - "%mod_name%/setup-%mod_name%.ini" "override"
       READ_2DA_ENTRIES_NOW ini_array 2
       FOR (i = 0; i < ini_array; ++i) BEGIN
         READ_2DA_ENTRY_FORMER ini_array i 0 key
@@ -169,7 +169,7 @@ DEFINE_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
 BEGIN
   ACTION_IF GAME_IS "bgt" AND FILE_EXISTS_IN_GAME "aram00.bcs"
   BEGIN
-    COPY_EXISTING - "%dialog%.dlg" "%MOD_FOLDER%/work"
+    COPY_EXISTING - "%dialog%.dlg" "%mod_name%/work"
       GET_OFFSET_ARRAY trans_array 0x0014 4 0x0010 4 0 0 0x0020
       PHP_EACH trans_array AS int => trans_offset
       BEGIN
@@ -377,9 +377,9 @@ DEFINE_ACTION_FUNCTION mh_install_spell
   RET
   ingame_res
 BEGIN
-  ACTION_IF FILE_EXISTS "%MOD_FOLDER%/%proj_dir%/%spell_res%.pro"
+  ACTION_IF FILE_EXISTS "%mod_name%/%proj_dir%/%spell_res%.pro"
   BEGIN
-    ADD_PROJECTILE "%MOD_FOLDER%/%proj_dir%/%spell_res%.pro"
+    ADD_PROJECTILE "%mod_name%/%proj_dir%/%spell_res%.pro"
     OUTER_SET spell_pro	= EVALUATE_BUFFER "%%spell_res%%"
   END
   ELSE
@@ -411,7 +411,7 @@ BEGIN
   END
 
 
-  ADD_SPELL "%MOD_FOLDER%/%spell_dir%/%spell_res%.spl" "%spell_type_num%" "%spell_level%" "%spell_ids%"
+  ADD_SPELL "%mod_name%/%spell_dir%/%spell_res%.spl" "%spell_type_num%" "%spell_level%" "%spell_ids%"
     TEXT_SPRINT ingame_res "%DEST_RES%"
 
     WRITE_LONG NAME1 spell_name_strref
@@ -433,11 +433,11 @@ BEGIN
       END
     END
 
-    PATCH_IF FILE_EXISTS "%MOD_FOLDER%/%item_dir%/%spell_res%.itm"
+    PATCH_IF FILE_EXISTS "%mod_name%/%item_dir%/%spell_res%.itm"
     BEGIN
       INNER_ACTION
       BEGIN
-        COPY "%MOD_FOLDER%/%item_dir%/%spell_res%.itm" "override"
+        COPY "%mod_name%/%item_dir%/%spell_res%.itm" "override"
           WRITE_LONG NAME2 spell_name_strref
           WRITE_LONG IDENTIFIED_DESC spell_desc_strref
 
@@ -453,7 +453,7 @@ END
 
 DEFINE_ACTION_FUNCTION mh_batch_install_files
   STR_VAR
-  dir_path	= "%MOD_FOLDER%/bams"
+  dir_path	= "%mod_name%/bams"
   file_ext	= "bam"
 BEGIN
   ACTION_BASH_FOR "%dir_path%" EVALUATE_REGEXP "^.+\.%file_ext%$"
@@ -463,6 +463,123 @@ BEGIN
       COPY_LARGE "%BASH_FOR_FILESPEC%" "override/%BASH_FOR_FILE%"
     END
   END
+END
+
+
+DEFINE_PATCH_FUNCTION mh_easy_alter_monster
+  INT_VAR
+  modifier	= 1
+BEGIN
+  READ_BYTE 0x0234 hd
+
+  WRITE_SHORT 0x0024 THIS + modifier * hd	// current HP
+  WRITE_SHORT 0x0026 THIS + modifier * hd	// maximum HP
+
+  WRITE_SHORT 0x0046 THIS - modifier		// base AC
+  WRITE_SHORT 0x0048 THIS - modifier		// eff. AC
+
+  WRITE_BYTE 0x0052 THIS - modifier		// THAC0
+  WRITE_BYTE 0x0054 THIS - modifier		// save vs. death
+  WRITE_BYTE 0x0055 THIS - modifier		// save vs. wand
+  WRITE_BYTE 0x0056 THIS - modifier		// save vs. poly
+  WRITE_BYTE 0x0057 THIS - modifier		// save vs. breath
+  WRITE_BYTE 0x0058 THIS - modifier		// save vs. spell
+END
+
+
+DEFINE_PATCH_FUNCTION mh_change_monster_hd
+  INT_VAR
+  hd_min	= 0
+  hd_bonus	= 0
+  hp_per_hd	= 8
+  thac0_bonus	= 0
+  save_bonus	= 0
+  thac0_line	= IDS_OF_SYMBOL("class" "cleric")
+  STR_VAR
+  save_table	= "saveprs"
+BEGIN
+  READ_SHORT 0x0026 hp_max
+  READ_SBYTE 0x0052 thac0
+  READ_SBYTE 0x0054 save_death
+  READ_SBYTE 0x0055 save_wands
+  READ_SBYTE 0x0056 save_poly
+  READ_SBYTE 0x0057 save_breath
+  READ_SBYTE 0x0058 save_spell
+  READ_BYTE 0x0234 hd
+
+  PATCH_IF hd_min > hd
+  BEGIN
+    SET hd = hd_min
+  END
+
+  SET hd = hd + hd_bonus
+  
+  INNER_PATCH_FILE "thac0.2da"
+  BEGIN
+    READ_2DA_ENTRY thac0_line hd 9 thac0_min
+  END
+
+  PATCH_IF thac0_min < thac0
+  BEGIN
+    SET thac0 = thac0_min
+  END
+
+  SET thac0 -= thac0_bonus
+
+  INNER_PATCH_FILE "%save_table%.2da"
+  BEGIN
+    READ_2DA_ENTRY 1 hd 9 save_death_min
+    READ_2DA_ENTRY 2 hd 9 save_wands_min
+    READ_2DA_ENTRY 3 hd 9 save_poly_min
+    READ_2DA_ENTRY 4 hd 9 save_breath_min
+    READ_2DA_ENTRY 5 hd 9 save_spell_min
+  END
+
+  PATCH_IF save_death_min < save_death
+  BEGIN
+    SET save_death = save_death_min
+  END
+
+  PATCH_IF save_wands_min < save_wands
+  BEGIN
+    SET save_wands = save_wands_min
+  END
+
+  PATCH_IF save_poly_min < save_poly
+  BEGIN
+    SET save_poly = save_poly_min
+  END
+
+  PATCH_IF save_breath_min < save_breath
+  BEGIN
+    SET save_breath = save_breath_min
+  END
+
+  PATCH_IF save_spell_min < save_spell
+  BEGIN
+    SET save_spell = save_spell_min
+  END
+
+  SET save_death -= save_bonus
+  SET save_wands -= save_bonus
+  SET save_poly -= save_bonus
+  SET save_breath -= save_bonus
+  SET save_spell -= save_bonus
+
+  PATCH_IF hp_max < (hd * hp_per_hd)
+  BEGIN
+    SET hp_max = hd * hp_per_hd
+  END
+
+  WRITE_SHORT 0x0024 hp_max
+  WRITE_SHORT 0x0026 hp_max
+  WRITE_BYTE 0x0052 thac0
+  WRITE_BYTE 0x0054 save_death
+  WRITE_BYTE 0x0055 save_wands
+  WRITE_BYTE 0x0056 save_poly
+  WRITE_BYTE 0x0057 save_breath
+  WRITE_BYTE 0x0058 save_spell
+  WRITE_BYTE 0x0234 hd
 END
 
 

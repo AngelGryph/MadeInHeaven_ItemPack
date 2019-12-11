@@ -2,7 +2,7 @@
 //
 // WeiDU installer
 
-BACKUP "mih_ip/backup"
+BACKUP "weidu_external/backup/mih_ip"
 
 AUTHOR "angel@pearlgates.net"
 VERSION v4
@@ -11,7 +11,7 @@ VERSION v4
 ASK_EVERY_COMPONENT
 NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
-AUTO_TRA "mih_ip/language/%s"
+AUTO_TRA "mih_ip/lang/%s"
 
 ALWAYS
   // We no longer support vanilla BG1 or Tutu, it's too much of a hassle.
@@ -22,46 +22,17 @@ ALWAYS
   END
 
 
-  // Load compatibility variables for various implementations of BG1.
+  // Set mod name and other variables
 
-  INCLUDE "%MOD_FOLDER%/lib/g3_bgt_cpmvars.tpa"
-  INCLUDE "%MOD_FOLDER%/lib/g3_bgee_cpmvars.tpa"
-  INCLUDE "%MOD_FOLDER%/lib/g3_eet_cpmvars.tpa"
+  OUTER_SPRINT mod_name "mih_ip"
 
-
-  // BG(2)EE compat: handle charsets
-
-  ACTION_DEFINE_ARRAY mh#reload BEGIN "setup-%MOD_FOLDER%" END
-  ACTION_DEFINE_ARRAY mh#noconvert BEGIN END
-
-  LAUNCH_ACTION_FUNCTION HANDLE_CHARSETS
-    INT_VAR
-    infer_charset	= 1
-    STR_VAR
-    default_language	= "english"
-    tra_path		= "%MOD_FOLDER%/language"
-    iconv_path	= "%MOD_FOLDER%/bin/win32/iconv"
-    noconvert_array	= "mh#noconvert"
-    reload_array	= "mh#reload"
-  END
-
-
-  // Load macro/function libraries
-
-  INCLUDE "%MOD_FOLDER%/lib/mh_functions.tph"
-  INCLUDE "%MOD_FOLDER%/lib/cd_functions.tph"
-  INCLUDE "%MOD_FOLDER%/lib/ids_entries_cleanup.tph"
-
-
-  // Read the .ini file for this mod
-
-  LAUNCH_ACTION_MACRO mh_process_ini_file
+  INCLUDE "%mod_name%/lib/always.tpa"
 END	// ALWAYS block
 
 
 LANGUAGE ~English~
          ~english~
-	 ~%MOD_FOLDER%/language/english/setup-%MOD_FOLDER%.tra~
+	 ~mih_ip/lang/english/setup-mih_ip.tra~
 
 
 // Item Pack

@@ -2,27 +2,27 @@
 
 ACTION_IF GAME_IS "bgee"
 BEGIN
-  COPY "%MOD_FOLDER%/items/bg2_items/amul19.itm" "override"
+  COPY "%mod_name%/items/bg2_items/amul19.itm" "override"
     SAY NAME2 @0
     SAY IDENTIFIED_DESC @1
 
 
-  COPY "%MOD_FOLDER%/items/bg2_items/boot07.itm" "override"
+  COPY "%mod_name%/items/bg2_items/boot07.itm" "override"
     SAY NAME2 @2
     SAY IDENTIFIED_DESC @3
 
 
-  COPY "%MOD_FOLDER%/items/bg2_items/clck23.itm" "override"
+  COPY "%mod_name%/items/bg2_items/clck23.itm" "override"
     SAY NAME2 @4
     SAY IDENTIFIED_DESC @5
 
 
-  COPY "%MOD_FOLDER%/items/bg2_items/ring46.itm" "override"
+  COPY "%mod_name%/items/bg2_items/ring46.itm" "override"
     SAY NAME2 @6
     SAY IDENTIFIED_DESC @7
 
 
-  COPY "%MOD_FOLDER%/items/bg2_items/sw1h37.itm" "override"
+  COPY "%mod_name%/items/bg2_items/sw1h37.itm" "override"
     SAY NAME2 @8
     SAY IDENTIFIED_DESC @9
 
