@@ -1,0 +1,149 @@
+DEFINE_ACTION_FUNCTION place_items_in_tob
+BEGIN
+  // Watcher's Keep
+  
+  COPY_EXISTING "garlena.sto" "override"
+    // Battle Star +4
+    ADD_STORE_ITEM "mh#blun3" AFTER "xbow15" #0 #0 #0 "identified" #1
+  
+    // Zilzanzer's Magnificent Darts +1
+    ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #12 #0 #0 "identified" #5
+  
+    // Philter of Purification
+    ADD_STORE_ITEM "mh#potn3" AFTER "potn52" #1 #0 #0 "identified" #2
+  
+    // Scimitar of the Seven +4
+    ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1
+  
+    // Mystery of the Dead +3
+    ADD_STORE_ITEM "mh#shld6" LAST #0 #0 #0 "identified" #1
+  
+    // Ring of Anti-Venom (from Vongoethe)
+    ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1
+  
+    // Sky Blue Ioun Stone
+    ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
+  
+    // Crystal Clear Ioun Stone
+    ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
+  
+    // Elmira's Wand of Blasting
+    ADD_STORE_ITEM "mh#wand2" LAST #12 #0 #0 "identified" #1
+  
+  
+  COPY_EXISTING "ar3017.are" "override"
+    // Book of Exalted Deeds
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 3
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#tome1"
+    END
+  
+  
+  COPY_EXISTING "ar3027.are" "override"
+    // Libram of Ineffable Damnation
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 1
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#tome5"
+    END
+  
+  
+  COPY_EXISTING "fsdragon.cre" "override"
+    // Shield of Three Kings +5
+    ADD_CRE_ITEM "mh#shld4" #0 #0 #0 "unstealable" "inv"
+  
+  
+  // Ancient Grove
+  
+  COPY_EXISTING "illasera.cre" "override"
+    // Bracers of the Wind
+    ADD_CRE_ITEM "mh#brac4" #0 #0 #0 "unstealable" "gloves"
+  
+  
+  // Saradush
+  
+  COPY_EXISTING "25spell.sto" "override"
+    // Zilzanzer's Magnificent Darts +1
+    ADD_STORE_ITEM "mh#dart3" AFTER "helm23" #12 #0 #0 "identified" #12
+  
+    // Libram of Silver Magic
+    ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1
+  
+    // Oil of Acid Resistance
+    ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9
+  
+    // Oil of Disenchantment
+    ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5
+  
+    // Ring of Thex
+    ADD_STORE_ITEM "mh#ring9" AFTER "ring02" #0 #0 #0 "identified" #1
+  
+    // Ring of White Bone
+    ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1
+  
+    // Wand of Illusions
+    ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
+  
+  
+  COPY_EXISTING "gromg08.cre" "override"
+    // Silver Bracers of Kedl
+    ADD_CRE_ITEM "mh#brac6" #0 #0 #0 "unstealable" "gloves"
+  
+    // Staff of the Legion +5
+    ADD_CRE_ITEM "mh#staf4" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
+    REMOVE_CRE_ITEM "staf18"
+  
+  
+  // Forest of Mir / Marching Mountains
+  
+  COPY_EXISTING "ar5202.are" "override"
+    // Book of Vile Darkness
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 2
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#tome2"
+    END
+  
+  
+  COPY_EXISTING "ar5204.are" "override"
+    // Libram of Gainful Conjuration
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 2
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#tome4"
+    END
+  
+  
+  // Amkethran
+  
+  COPY_EXISTING "amcler02.sto" "override"
+    // Philter of Purification
+    ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6
+  
+    // Waukeen's Defender +2
+    ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1
+  
+  
+  COPY_EXISTING "amlich01.cre" "override"
+    // Ring of the Lich +3
+    ADD_CRE_ITEM "mh#ring1" #0 #0 #0 "unstealable" "lring"
+    REMOVE_CRE_ITEM "ring46"
+  
+  
+  // Sendai's Enclave
+  
+  COPY_EXISTING "sengua03.cre" "override"
+    // Cloak of the Night Sky
+    ADD_CRE_ITEM "mh#clck4" #1 #0 #0 "unstealable" "cloak"
+END	// place_items_in_tob
+  
+  
