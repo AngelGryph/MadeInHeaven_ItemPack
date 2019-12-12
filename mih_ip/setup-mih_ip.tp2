@@ -76,13 +76,16 @@ END
 
 // BG2 Items in BG1
 
-BEGIN ~BG2 Items in BG1~
+BEGIN ~Make a few BG2 items available in BG1~
+GROUP ~Optional Item Tweaks~
 
 REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
 
-LAUNCH_ACTION_FUNCTION mh_run_task
+LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  task		= "add_bg2_items_to_bg1"
+  file		= "bg2_items_in_bg1"
+  location	= "bg2_items"
+  tra		= "bg2_items_in_bg1"
 END
 
 
