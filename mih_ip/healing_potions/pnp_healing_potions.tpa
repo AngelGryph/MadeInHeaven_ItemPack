@@ -1,0 +1,37 @@
+DEFINE_ACTION_FUNCTION pnp_healing_potions
+BEGIN
+  // Potion of Healing: 2d4+2
+  // (as described in 2e DMG)
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item		= "potn08 ipotn08 potn25"
+    editstring		= ~patch_effect_inline=>"match=>opcode=17 dicenum=>2 dicesize=>4 parameter1=>2" substitute_description=>"9=>2d4+2"~
+  END
+
+
+  // Potion of Extra Healing: 3d8+3
+  // (as described in 2e DMG)
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    item		= "potn52 ttpot extheal"
+    editstring		= ~patch_effect_inline=>"match=>opcode=17 dicenum=>3 dicesize=>8 parameter1=>3" substitute_description=>"27=>3d8+3"~
+  END
+
+
+  // Potion of Superior Healing/Spirit Essence: 6d8+2
+  // (as described in Encyclopedia Arcana)
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    item		= "potn55 spirit"
+    editstring		= ~patch_effect_inline=>"match=>opcode=17 dicenum=>6 dicesize=>8 parameter1=>2" substitute_description=>"40=>6d8+2"~
+  END
+END	// pnp_healing_potions
+
+

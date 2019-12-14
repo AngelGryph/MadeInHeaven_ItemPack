@@ -89,6 +89,44 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// Alternative Healing Potions
+
+BEGIN ~Healing potions work as in Pen & Paper~
+SUBCOMPONENT ~Alternative Healing Potions~
+GROUP ~Optional Item Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "pnp_healing_potions"
+  location		= "healing_potions"
+END
+
+
+BEGIN ~Healing Potions work as in Icewind Dale~
+SUBCOMPONENT ~Alternative Healing Potions~
+GROUP ~Optional Item Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "iwd_healing_potions"
+  location		= "healing_potions"
+END
+
+
+BEGIN ~Healing Potions work as in Baldur's Gate~
+SUBCOMPONENT ~Alternative Healing Potions~
+GROUP ~Optional Item Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "bg2_healing_potions"
+  location		= "healing_potions"
+END
+
+
+// P&P Potion of Invulnerability
+
+/*
 // Improved Cloak of the Wolf
 
 BEGIN ~Improved Cloak of the Wolf~
@@ -110,40 +148,6 @@ LAUNCH_ACTION_FUNCTION mh_run_task
   task			= "nerf_cloak_of_balduran"
 END
 
-
-// Alternative Healing Potions
-
-BEGIN ~2d4+2, 3d8+3, 6d8+2 (P&P)~
-SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Optional Item Tweaks~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "make_healing_potions_pnp"
-END
-
-
-BEGIN ~9, 18, 27 (Icewind Dale)~
-SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Optional Item Tweaks~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "make_healing_potions_iwd"
-END
-
-
-BEGIN ~9, 27, 40 (Baldur's Gate 2)~
-SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Optional Item Tweaks~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "make_healing_potions_bg2"
-END
-
-
-// P&P Potion of Invulnerability
 
 BEGIN ~P&P Potion of Invulnerability~
 GROUP ~Optional Item Tweaks~
@@ -189,5 +193,6 @@ LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
   task			= "tweak_wands_bg1"
 END
+*/
 
 

@@ -1,0 +1,25 @@
+DEFINE_ACTION_FUNCTION bg2_healing_potions
+BEGIN
+  // Potion of Extra Healing: 27
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    item		= "potn52 ttpot extheal"
+    editstring		= ~patch_effect_inline=>"match=>opcode=17 parameter1=>16" substitute_description=>"16=>27"~
+  END
+
+
+  // Potion of Superior Healing/Spirit Essence: 40
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    item		= "potn55 spirit"
+    editstring		= ~patch_effect_inline=>"match=>opcode=17 parameter1=>25" substitute_description=>"25=>40"~
+  END
+END	// bg2_healing_potions
+
+
