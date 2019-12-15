@@ -124,9 +124,23 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// P&P Potion of Invulnerability
+// BG1-style wands
+
+BEGIN ~BG1-style Wands of Frost & -Lightning~
+GROUP ~Optional Item Tweaks~
+
+REQUIRE_PREDICATE NOT GAME_IS "bgee" ~This component is not applicable to your game.~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "bg1_wands"
+  location		= "wand_styles"
+END
+
 
 /*
+// P&P Potion of Invulnerability
+
 // Improved Cloak of the Wolf
 
 BEGIN ~Improved Cloak of the Wolf~
@@ -179,19 +193,6 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg2" ~This component is not applicable to your 
 LAUNCH_ACTION_FUNCTION mh_run_task
   STR_VAR
   task			= "improve_skull_of_death"
-END
-
-
-// BG1-style wands
-
-BEGIN ~BG1-style Wands of Frost & -Lightning~
-GROUP ~Optional Item Tweaks~
-
-REQUIRE_PREDICATE NOT GAME_IS "bgee" ~This component is not applicable to your game.~
-
-LAUNCH_ACTION_FUNCTION mh_run_task
-  STR_VAR
-  task			= "tweak_wands_bg1"
 END
 */
 

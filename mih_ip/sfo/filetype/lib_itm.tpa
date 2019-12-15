@@ -176,6 +176,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY item_ability_fields BEGIN
    ability_icon_loc => ~0x2,BYTE~
    ability_icon => ~0x4,ASCII~
    ability_target=>~0xc,BYTE~
+   ability_target_count=>~0xd,BYTE~
    ability_range=>~0xe,SHORT~
    launcher_required=>~0x10,SHORT~
    speed=> ~0x12,SHORT~

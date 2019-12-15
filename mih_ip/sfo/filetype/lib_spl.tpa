@@ -233,6 +233,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY spell_ability_fields BEGIN
    ability_icon => ~0x4,ASCII~
    ability_range => ~0xe,SHORT~
    ability_target => ~0xc,BYTE~
+   ability_target_count=>~0xd,BYTE~
    ability_min_level =>~0x10,SHORT~
    ability_damage_type => ~0x1c,SHORT~
    ability_dicesize => ~0x16,SHORT~

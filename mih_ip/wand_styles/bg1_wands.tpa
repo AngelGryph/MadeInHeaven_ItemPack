@@ -1,0 +1,30 @@
+DEFINE_ACTION_FUNCTION bg1_wands
+BEGIN
+  // Wand of Frost
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "wand06"
+    editstring	= ~patch_ability_inline=>"projectile=>191"~
+  END
+
+
+  // Wand of Lightning
+
+  ACTION_IF ENGINE_IS "bgee"
+  BEGIN
+    OUTER_SPRINT editstring ~patch_effect_inline=>"match=>opcode=12 dicenum=>6~
+  END
+  ELSE
+  BEGIN
+    OUTER_SPRINT editstring ~patch_effect_inline=>"match=>opcode=12 dicenum=>3~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "wand07"
+    editstring
+  END
+END	// bg1_wands
+
+
