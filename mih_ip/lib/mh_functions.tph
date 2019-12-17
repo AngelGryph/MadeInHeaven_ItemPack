@@ -1,3 +1,5 @@
+// IDS additions
+
 // Made in Heaven function library
 
 DEFINE_PATCH_MACRO mh_remove_all_area_actors
@@ -139,97 +141,6 @@ BEGIN
 	  EraseJournalEntry(%strref%)~
       END
     END
-  END
-END
-
-
-DEFINE_PATCH_FUNCTION mh_make_magical
-  INT_VAR
-  enchantment   = "-1"
-  lore          = "-1"
-  flag_silver	= 0
-  flag_iron	= 0
-BEGIN
-  WRITE_LONG    0x0018 (THIS | BIT6)
-
-  PATCH_IF flag_silver
-  BEGIN
-    WRITE_LONG    0x0018 (THIS | BIT8)
-  END
-
-  PATCH_IF flag_iron
-  BEGIN
-    WRITE_LONG    0x0018 (THIS | BIT9)
-  END
-
-
-  PATCH_IF enchantment >= 0
-  BEGIN
-    WRITE_LONG  0x0060 enchantment
-  END
-
-  PATCH_IF lore >= 0
-  BEGIN
-    WRITE_SHORT 0x0042 lore
-  END
-END
-
-
-DEFINE_PATCH_FUNCTION mh_make_summon
-  INT_VAR
-  power_level	= "-1"
-BEGIN
-  WRITE_LONG	0x0010 (THIS | BIT1)	// No corpse
-  WRITE_LONG	0x0014 0		// XP
-  WRITE_LONG	0x001c 0		// Gold
-  WRITE_BYTE	0x0270 IDS_OF_SYMBOL("ea" "neutral")
-
-  // Play nice with Remove Summoning Cap from D0Tweak
-  PATCH_IF FILE_EXISTS "override/no_summoning_cap.d0"
-  BEGIN
-    WRITE_BYTE	0x0275 20	// D0Tweak alt. value
-  END
-  ELSE
-  BEGIN
-    WRITE_BYTE	0x0275 IDS_OF_SYMBOL("gender" "summoned")
-  END
-
-  // Add unstealable&undroppable flags to carried items
-  GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
-  PHP_EACH itm_array AS int => itm_offset
-  BEGIN
-    WRITE_LONG (itm_offset + 0x0010) (THIS | (BIT1 | BIT3))
-  END
-
-  // Handle power level if specified
-  PATCH_IF (power_level >= 0)
-  BEGIN
-    WRITE_LONG	0x0018 power_level
-  END
-END
-
-
-DEFINE_PATCH_FUNCTION mh_make_illusion
-  INT_VAR
-  power_level	= "-1"
-BEGIN
-  WRITE_LONG	0x0010 (THIS | BIT1)	// No corpse
-  WRITE_LONG	0x0014 0		// XP
-  WRITE_LONG	0x001c 0		// Gold
-  WRITE_BYTE	0x0270 IDS_OF_SYMBOL("ea" "neutral")
-  WRITE_BYTE	0x0275 IDS_OF_SYMBOL("gender" "illusionary")
-
-  // Add unstealable&undroppable flags to carried items
-  GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
-  PHP_EACH itm_array AS int => itm_offset
-  BEGIN
-    WRITE_LONG (itm_offset + 0x0010) (THIS | (BIT1 | BIT3))
-  END
-
-  // Handle power level if specified
-  PATCH_IF (power_level >= 0)
-  BEGIN
-    WRITE_LONG	0x0018 power_level
   END
 END
 

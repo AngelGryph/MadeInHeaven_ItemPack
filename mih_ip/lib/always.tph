@@ -39,6 +39,11 @@ BEGIN
   INCLUDE "%mod_root%/lib/mh_functions.tph"
 
 
+  // Add ids entries missing in some games
+
+  INCLUDE "%mod_root%/lib/missing_ids.tpa"
+
+
   // Read the .ini file
   OUTER_SPRINT ini_to_read "%mod_root%/setup-%mod_root%.ini"
 

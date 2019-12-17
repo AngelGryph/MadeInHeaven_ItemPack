@@ -6,6 +6,7 @@ BEGIN
     STR_VAR
     files	= "all"
     location	= "bam"
+    postfix	= "bam"
   END
 
 
@@ -156,9 +157,6 @@ BEGIN
 
   // Required water elemental fixes
 
-  APPEND "class.ids" "219 ELEMENTAL_WATER" UNLESS "ELEMENTAL_WATER"
-  CLEAR_IDS_MAP
-
   LAUNCH_ACTION_FUNCTION edit_creature
     INT_VAR
     allow_missing	= 1
@@ -172,37 +170,42 @@ BEGIN
 
   ACTION_IF NOT FILE_EXISTS_IN_GAME "p1-3p.itm"
   BEGIN
-    COPY_EXISTING "p1-3.itm" "override/p1-3p.itm"
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EFFECT
-        INT_VAR
-        type		= 1	// Melee
-        opcode		= 25	// State: Poison
-        target		= 2	// Pre-target
-        duration	= 24
-        parameter1	= 2
-        parameter2	= 2
-      END
+    MAKE_PATCH
+      add_effect_inline'1=>~match=>parent_type=1 opcode=>25 target=>2 duration=>24 parameter1=>2 parameter2=>2~
+      add_effect_inline'2=>~match=>parent_type=1 opcode=>142 target=>2 duration=>24 parameter2=>6~
+    END
 
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EFFECT
-        INT_VAR
-        type		= 1	// Melee
-        opcode		= 142	// Graphics: Display Icon
-        target		= 2	// Pre-target
-        duration	= 24
-        parameter2	= 6
-      END
+    LAUNCH_ACTION_FUNCTION clone_item
+      STR_VAR
+      item	= "p1-3=>p1-3p"
+      edits	= "patch_data"
+    END
   END
 
 
   ACTION_IF NOT FILE_EXISTS_IN_GAME "snakegsu.cre"
   BEGIN
-    COPY "%mod_root%/item_pack/cre/snakegsu.cre" "override"
-      SAY NAME1 @191
-      SAY NAME2 @191
+    LAUNCH_ACTION_FUNCTION clone_creature
+      INT_VAR
+      allow_missing	= 1
+      STR_VAR
+      creature		= "bdsnak01=>snakegsu snakeg01=>snakegsu"
+      editstring	= "xp_value=>0 gold=>0 allegiance=>neutral gender=>summoned thac0=>16 replace_items=>p1-3p(weapon1)"
+    END
   END
 
 
-  ACTION_FOR_EACH summon IN "bearcasu" "bearbrsu" "bearposu" "catjagsu" "catliosu" "snakegsu" "spidphsu" "spidswsu" "wolfdisu" "wolfwisu"
+  ACTION_IF NOT FILE_EXISTS_IN_GAME "sumelwat.cre"
+  BEGIN
+    LAUNCH_ACTION_FUNCTION clone_creature
+      STR_VAR
+      creature		= "sumelfir=>sumelwat"
+      editstring	= "say_name=>203 animation=>water_weird resist_fire=>-10 resist_magic_fire=>0 resist_cold=>10 class=>elemental_water replace_items=>b1-8m2(weapon1)"
+    END
+  END
+
+
+  ACTION_FOR_EACH summon IN "bearcasu" "bearbrsu" "bearposu" "catjagsu" "catliosu" "ogresu" "snakegsu" "spidphsu" "spidswsu" "wolfdisu" "wolfwisu"
   BEGIN
     ACTION_IF NOT FILE_EXISTS_IN_GAME "%summon%.eff"
     BEGIN
@@ -222,19 +225,6 @@ BEGIN
   COPY "%mod_root%/item_pack/itm/mh#amul1.itm" "override"
     SAY NAME2 @0
     SAY IDENTIFIED_DESC @1
-
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("general" "undead")
-        parameter2	= 3
-        special		= 2
-      END
-    END
 
 
   // mh#amul2 - Necklace of Prayer Beads
@@ -353,29 +343,16 @@ BEGIN
 
   // mh#armr3 - White Hide of Umpluutu
 
-  COPY "%mod_root%/item_pack/itm/mh#pbpaw.itm" "override"
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "mh#pbpaw"
+    location		= "itm"
+  END
+
 
   COPY "%mod_root%/item_pack/itm/mh#armr3.itm" "override"
     SAY NAME2 @69
     SAY IDENTIFIED_DESC @70
-
-
-  COPY_EXISTING "spin122.spl" "override"
-                "spin123.spl" "override"
-                "spin124.spl" "override"
-                "spinhum.spl" "override"
-                "spwi490.spl" "override"
-                "spwi491.spl" "override"
-    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
-      INT_VAR
-      match_opcode	= 172	// Spell: Remove Spell
-      multi_match	= 1
-      opcode		= 112	// Item: Remove Item
-      STR_VAR
-      resource		= "mh#pbpaw"
-    END
-
-    IF_EXISTS	// Not all of these are in BGEE
 
 
   // mh#armr4 - Celestial Chain +2
@@ -428,18 +405,6 @@ BEGIN
 
 
   // mh#belt5 - Girdle of Ogre Blood
-
-  ACTION_IF NOT FILE_EXISTS_IN_GAME "ogresu.eff"
-  BEGIN
-    CREATE EFF "ogresu"
-      WRITE_LONG	0x0010 67	// Summon: Creature Summoning
-      WRITE_LONG	0x001c 5
-      WRITE_SHORT	0x0024 1
-      WRITE_LONG	0x002c 100
-      WRITE_ASCII	0x0030 "ogresu" #8
-      WRITE_ASCII 0x0070 "spmonsum" #8
-  END
-
 
   COPY "%mod_root%/item_pack/itm/mh#belt5.itm" "override"
     SAY NAME2 @129
@@ -657,7 +622,7 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_petrification_arrays"
+      array_name	= "cd_immunity_petrification_arrays"
     END
 
 
@@ -676,7 +641,7 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_web_arrays"
+      array_name	= "cd_immunity_web_arrays"
     END
 
 
@@ -801,12 +766,12 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_spell_level_1_arrays"
+      array_name	= "cd_immunity_spell_level_1_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_spell_level_2_arrays"
+      array_name	= "cd_immunity_spell_level_2_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
@@ -837,7 +802,7 @@ BEGIN
         timing		= 2
         parameter2	= 1
         STR_VAR
-        resource		= ~mh#vsio1~
+        resource	= ~mh#vsio1~
       END
     END
 
@@ -877,7 +842,7 @@ BEGIN
         timing		= 2
         parameter2	= 1
         STR_VAR
-        resource		= ~mh#vsio3~
+        resource	= ~mh#vsio3~
       END
     END
 
@@ -897,7 +862,7 @@ BEGIN
         timing		= 2
         parameter2	= 1
         STR_VAR
-        resource		= ~mh#vsio4~
+        resource	= ~mh#vsio4~
       END
     END
 
@@ -917,7 +882,7 @@ BEGIN
         timing		= 2
         parameter2	= 1
         STR_VAR
-        resource		= ~mh#vsio4~
+        resource	= ~mh#vsio4~
       END
     END
 
@@ -937,7 +902,7 @@ BEGIN
         timing		= 2
         parameter2	= 1
         STR_VAR
-        resource		= ~mh#vsio3~
+        resource	= ~mh#vsio3~
       END
     END
 
@@ -1013,7 +978,7 @@ BEGIN
         match_opcode	= 146
         STR_VAR
         match_resource	= "sppr317"
-        resource		= "sppr316"
+        resource	= "sppr316"
       END
     END
 
@@ -1039,7 +1004,7 @@ BEGIN
 
   ACTION_IF ENGINE_IS "bg2 tob"
   BEGIN
-    OUTER_SPRINT editstring ~clone_effect_inline=>"match=>opcode=142 opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 clone_at_bottom"~
+    OUTER_SPRINT editstring ~clone_effect_inline=>"match=>opcode=142 opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 at_end=>1"~
   END
 
   LAUNCH_ACTION_FUNCTION install_spell
@@ -1104,7 +1069,7 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_silence_arrays"
+      array_name	= "cd_immunity_silence_arrays"
     END
 
 
@@ -1123,27 +1088,27 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_charm_arrays"
+      array_name	= "cd_immunity_charm_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_confusion_arrays"
+      array_name	= "cd_immunity_confusion_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_feeblemind_arrays"
+      array_name	= "cd_immunity_feeblemind_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_psionics_arrays"
+      array_name	= "cd_immunity_psionics_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_stun_arrays"
+      array_name	= "cd_immunity_stun_arrays"
     END
 
 
@@ -1204,7 +1169,7 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_level_drain_arrays"
+      array_name	= "cd_immunity_level_drain_arrays"
     END
 
 
@@ -1269,7 +1234,7 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_slay_arrays"
+      array_name	= "cd_immunity_slay_arrays"
     END
 
 
@@ -1321,28 +1286,11 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_level_drain_arrays"
+      array_name	= "cd_immunity_level_drain_arrays"
     END
 
 
   // mh#staf5 - Staff of Water +2
-
-  ACTION_IF NOT FILE_EXISTS_IN_GAME "sumelwat.cre"
-  BEGIN
-    COPY_EXISTING "sumelfir.cre" "override/sumelwat.cre"
-      SAY NAME1 @203
-      SAY NAME2 @203
-
-      WRITE_LONG 0x0028 IDS_OF_SYMBOL("animate" "water_weird")
-
-      WRITE_BYTE 0x0059 0
-      WRITE_BYTE 0x005e 0
-
-      WRITE_BYTE 0x0273 IDS_OF_SYMBOL("class" "elemental_water")
-
-      REPLACE_CRE_ITEM "b1-8m2" #0 #0 #0 "unstealable&undroppable" "weapon1" EQUIP
-  END
-
 
   CREATE EFF "mh#staf5"
     WRITE_LONG	0x0010 67	// Summon: Creature Summoning
@@ -1453,12 +1401,12 @@ BEGIN
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_charm_arrays"
+      array_name	= "cd_immunity_charm_arrays"
     END
 
     LAUNCH_PATCH_FUNCTION cd_apply_batch
       STR_VAR
-      array_name		= "cd_immunity_fear_arrays"
+      array_name	= "cd_immunity_fear_arrays"
     END
 
 

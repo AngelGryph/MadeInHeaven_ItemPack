@@ -15123,6 +15123,44 @@
                           END
                           
  
+                          DEFINE_PATCH_FUNCTION CRE_gold 
+                                   INT_VAR offset_secondary=0 offset_base=0 STR_VAR arguments="" RET value 
+                          BEGIN 
+                                   LPF fail_unless_int STR_VAR value="%arguments%" expression="" END  
+                                   PATCH_IF "%arguments%" STRING_COMPARE no_change BEGIN 
+                                          WRITE_LONG 0x1d arguments 
+                                   END 
+                                   SET value=1 
+                          END
+                          DEFINE_PATCH_FUNCTION CRE_goldGT 
+                                  INT_VAR offset_secondary=0 offset_base=0 STR_VAR arguments="" RET value 
+                          BEGIN 
+                                    LPF fail_unless_int STR_VAR value="%arguments%" expression="" END 
+                                    PATCH_IF LONG_AT 0x1d < arguments BEGIN 
+                                           PATCH_IF "%arguments%" STRING_COMPARE no_change BEGIN 
+                                                     WRITE_LONG 0x1d arguments 
+                                           END 
+                                    END 
+                                    SET value=1 
+                          END
+                          DEFINE_PATCH_FUNCTION CRE_goldLT 
+                                    INT_VAR offset_secondary=0 offset_base=0 STR_VAR arguments="" RET value 
+                          BEGIN 
+                                     LPF fail_unless_int STR_VAR value="%arguments%" expression="" END  
+                                     PATCH_IF LONG_AT 0x1d > arguments BEGIN 
+                                                PATCH_IF "%arguments%" STRING_COMPARE no_change BEGIN 
+                                                          WRITE_LONG 0x1d arguments 
+                                                END 
+                                     END 
+                                     SET value=1 
+                          END
+                          DEFINE_PATCH_FUNCTION CRE_read_gold 
+                                     INT_VAR offset_secondary=0 offset_base=0 RET value 
+                          BEGIN
+                                     READ_LONG 0x1d value 
+                          END
+                          
+ 
                           DEFINE_PATCH_FUNCTION CRE_color_metal 
                                    INT_VAR offset_secondary=0 offset_base=0 STR_VAR arguments="" RET value 
                           BEGIN 
