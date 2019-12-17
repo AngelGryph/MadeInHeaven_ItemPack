@@ -1,8 +1,6 @@
-// =========================
-// Stuff that is always done
-// =========================
-
+// =============================
 // Test for unsupported versions
+// =============================
 
 ACTION_IF GAME_IS "bg1 totsc tutu tutu_totsc"
 BEGIN
@@ -45,16 +43,18 @@ BEGIN
   OUTER_SPRINT ini_to_read "%mod_root%/setup-%mod_root%.ini"
 
   LAUNCH_ACTION_MACRO SFO_read_ini_file
-
-
-  // Handle EE charsets
-
-  LAUNCH_ACTION_FUNCTION handle_charsets_immutably
-    STR_VAR
-    tra_base	= "language"
-    RET
-    scs_tra_loc
-  END
 END	// done_init
+
+
+// ==================
+// Handle EE charsets
+// ==================
+
+LAUNCH_ACTION_FUNCTION handle_charsets_immutably
+  STR_VAR
+  tra_base	= "language"
+  RET
+  scs_tra_loc
+END
 
 

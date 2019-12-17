@@ -34,7 +34,7 @@
   <p><strong>Vanilla BG2 and Baldur's Gate Trilogy</strong><br />
   Before installing this mod, you must install the latest official patch, and you must also install the Throne of Bhaal Extender (ToBEx) and the G3 Fixpack version 11 or higher.  This mod will not work correctly without those two installed!</p>
   <p><strong>BG1EE and Siege of Dragonspear</strong><br />
-  If you obtained your version of the game through Steam or GoG, you must run a program called 'modmerge' before installing any WeiDU mods like this one.  If you obtained your game from Beamdog, this is not required.</p>
+  If you obtained your version of the game through Steam or GoG, you must either run a 'modmerge' or install 'A7-DlcMerger' before installing this mod (or any WeiDU-based mods, really).  If you obtained your game from Beamdog, this is not required.</p>
   <p><strong>BG2EE and Extended Edition Trilogy</strong><br />
   There are no requirements at this time.  For EET, install this mod after EET has been installed but before the EET installation is finalized.</p>
   <p><strong>Windows</strong><br />
@@ -45,12 +45,12 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
     Made in Heaven: Item Pack is packaged and installed with WeiDU and is distributed as a compressed archive.  Extract the contents of the archive and move them to your game folder. Your game folder should then contain a mih_ip folder, setup-mih_ip, and setup-mih_ip.command. To install, simply double-click <strong>setup-mih_ip.command</strong> and follow the instructions on screen.</p>
   <p><strong>Linux</strong><br />
     Extract the contents of the mod archive to your game installation directory.</p>
-  <p>If you haven't already, download the latest version of WeiDU for Linux from <a href="http://www.weidu.org/%7Ethebigg/" title="External link" rel="nofollow external">weidu.org</a> and extract (at least) the weidu executable to a $PATH directory (e.g. /usr/bin).</p>
+  <p>If you haven't already, download the latest version of WeiDU for Linux from <a href="http://www.weidu.org/%7Ethebigg/" title="External link" rel="nofollow external">weidu.org</a> and extract (at least) the weidu executable to a directory that is in your $PATH (commonly /usr/local/bin).</p>
   <p>To install, open a terminal, cd to your game installation directory and
  run <strong>weidu --log setup-mih_ip.debug mih_ip/setup-mih_ip.tp2</strong> from your game installation directory to install or uninstall the mod.</p>
-  <p>Note: The readme files of some older mods recommend running tolower on Linux prior to installation.  <b>Don't do this on an Enhanced Edition game, you will break it!</b>  Modern versions of tolower will actually refuse to run in a EE game directory.  At any rate, the contents of MiH: Item Pack are already all lower case, there is no need for tolower.</p>
+  <p>Note: The readme files of some older mods recommend running tolower on Linux prior to installation.  <b>Don't do this on an Enhanced Edition game, you will break it!</b>  Modern versions of tolower will actually refuse to run in a EE game directory.  At any rate, the contents of MiH: Item Pack are already all lower case, there is no need to run tolower.</p>
   <p><strong>New Game required!</strong><br />
-  After installing this mod you must start a new game.  This mod edits area files and stores, both of which are stored in your save game after you have visited them.  Continuing a saved game after installing this mod will have unexpected and likely undesired results.</p>
+  After installing this mod you must start a new game.  This mod edits area files and stores, both of which are stored in your save game after you have visited them.  Continuing a saved game after installing this mod may have unexpected and likely undesired results.</p>
 </div>
 <h2>Component Descriptions</h2>
 <div class="section">
@@ -61,25 +61,26 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
   <p>The second new merchant is found in the armorer's tent at the Nashkel fair.  A young girl named Phendra will be selling low-level spell scrolls to fund her uncle's arcane research.  And if you find something inherently magical, she might be able to help both her uncle and you in some other way...</p>
   <p><strong>BG2 Items in BG1</strong><br />
   <p>This adds a few select items from BG2, that are generally a bit too weak for that game, into BG1 where they are much more useful and fun.  You'll find them here and there in shops and containers, and on defeated enemies.  If there is a BG2 item you think should be in BG1, let me know!  If you can convince me it should be in BG1, I will make it so!</p>
-  <p><strong>Improved Cloak of the Wolf</strong><br />
-  The Cloak of the Wolf: Reiltar's Mistake is pretty weak and useless.  Turning into a wolf has very few real advantages and can't be used for stealth as enemies will attack anyway.  Noticing that this item was rather similar to the Cloak of the Bat from the DMG which also gives an AC bonus of 2, I decided to give the Cloak of the Wolf an AC bonus of 1, making it a little more useful.</p>
-  <p><strong>Nerfed Cloak of Balduran</strong><br />
-  Let's face it, the 25% magic resistance from this cloak is pretty overpowered, so much in fact that the developers decided not to bring this item back in BG2 and not even UB will restore it.  This modification will reduce it to a more modest but still useful 10%.  If installed on a BG2 game, the cloak will be available from the Adventurer's Market in chapter 6.</p>
+  <p><strong>BG1-style Wands in BG2</strong><br />
+  <p>This alters wands in BG2 and games based on it like BGT to work like they did in BG1; the Wand of Frost is a single beam of frost, and the Wand of Lightning projects one 6d6 lightning bolt per use.</p>
   <p><strong>Alternative Healing Potions</strong><br />
   This modification will change the way healing potions work.  You can choose between Pen &amp; Paper rules, Icewind Dale Rules or Baldur's Gate 2 rules.  That last one will obviously not change anything on BG2, but will effect any games that include Icewind Dale.  The P&amp;P option tends to make the game slightly harder as healing is more random and less reliable.  The Icewind Dale option tends to make the late game harder as well.</p>
+  <p><strong>Item Improvements</strong><br />
+  This is a collection of small tweaks that makes a couple of items more powerful, less overpowered, or less of a hassle to use.</p>
+  <ul>
+    <li>Cloak of the Wolf: The wolf polymorphed into is now a winter wolf.  The cloak now also gives infravision and some cold resistance.</li>
+    <li>Cloak of Balduran: Magic resistance reduced from 25% to 10%, but in exchange it is now available in chapter 6 of BG2.</li>
+    <li>Cloak of the Shield: It no longer uses charges, effects are permanent while worn.</li>
+    <li>Potion of Invulnerability: Now works as per P&amp;P: +2 AC, +2 saves, immunity to normal weapons for one turn.</li>
+    <li>Elixer of Health: This potion will now also cure blindness and deafness in addition to poison and disease.</li>
+    <li>Skull of Death (BG2 only): It now regenerates 1 HP/turn and casts the following spells once per day: Animate Dead, Finger of Death and Control Undead.</li>
+  </ul>
   <table>
     <tr><th /><th>Pen &amp; Paper</th><th>Icewind Dale</th><th>Baldur's Gate 2</th></tr>
     <tr><td>Potion of Healing</td><td>2d4+2 (4-10)</td><td>9</td><td>9</td></tr>
     <tr><td>Potion of Extra Healing</td><td>3d8+3 (6-27)</td><td>18</td><td>27</td></tr>
     <tr><td>Potion of Superior Healing</td><td>6d8+2 (8-50)</td><td>27</td><td>40</td></tr>
   </table>
-  <p><strong>P&amp;P Potion of Invulnerability</strong><br />
-  This alters the Potion of Invulnerability to work by the book: It grants only a +2 bonus to AC and saves but also makes the imbiber immune to non-magical weapons.  This makes them very valuable in many fights in BG1 where not that many opponents have magical weapons.</p>
-  <p><strong>Elixers of Health cure blindness/deafness</strong><br />
-  As the title says, this changes Elixers of Health to also remove blindness and deafness.  I always thought it pretty strange that they didn't.</p>
-  <p><strong>Improved Skull of Death</strong><br />
-  This alters the Skull of Death to be closer to the version described in the Encyclopedia Magica.  It now gives the wearer mild regeneration, and casts the following three spells once a day: Animate Dead, Finger of Death and Control Undead.<br/>
-  Note: This component overwrites the item, previous changes are lost.</p>
 </div>
 <h2>The .ini File</h2>
 <div class="section">
@@ -108,9 +109,10 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
     <a href="https://www.gibberlings3.net/mods/tools/dltcep/"><acronym title="DragonLance Total Converter Editor Pro">DLTCEP</acronym></a> by Avenger</p>
     <a href="http://www.shsforums.net/files/file/837-bam-batcher/">BAM Batcher</a> by Miloch</p>
   <p><strong>People who Contributed in some way</strong><br />
-    CamDawg, for an extensive bug report and several useful suggestions on my first version, and being a general cool guy.<br />
-    Sleep of Bronze, for providing me with the correct stats and a P&amp;P source for the Potion of Superior Healing.<br />
-    Jastey, for some help with compatibility testing and generic install issues.<br />
+    DavidW, who provided the SFO library and the tutorial on mod immutability and encapsulation.<br />
+    CamDawg, who provided an extensive bug report and several useful suggestions on my first version, and is generally cool to hang out with.<br />
+    Sleep of Bronze, who provided me with the correct stats and a P&amp;P source for the Potion of Superior Healing.<br />
+    Jastey, who gave me some help with compatibility testing and generic install issues.<br />
     All people brave enough to try and install my early beta versions...<br />
     The people at Bioware and Beamdog, for creating respectively the original games and the Enhanced Editions in the first place.<br />
     Anyone else I forgot?  (Please let me know!)</p>
@@ -123,6 +125,10 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
 <h2>Version History</h2>
 <div class="section">
   <p><strong>Version 4 - ???</strong></p>
+  <ul>
+    <li>Implemented encapsulation and mod immutability.</li>
+    <li>Implemented SFO library and converted most code.</li>
+  </ul>
   <p><strong>Version 3 - December 2019</strong></p>
   <ul>
     <li>Silver Dart and Zilzanzer's Darts now get installed properly.</li>

@@ -143,64 +143,6 @@ BEGIN
 END
 
 
-DEFINE_PATCH_FUNCTION mh_prevent_spell_effect_stacking
-  INT_VAR
-  match_opcode        = 142
-BEGIN
-  PATCH_IF ENGINE_IS "iwd1 how totlm"
-  BEGIN
-    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
-      INT_VAR
-      match_opcode
-      multi_match	= 1
-      silent		= 1	// Don't care about warnings
-      opcode		= 254	// Remove effects by resource
-      timing		= 0	// Duration
-      duration		= 0
-      parameter1	= 0
-      parameter2	= 0
-      STR_VAR
-      insert		= "first"
-      resource		= "%DEST_RES%"
-    END
-  END
-
-  PATCH_IF ENGINE_IS "bgee bg2ee"
-  BEGIN
-    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
-      INT_VAR
-      match_opcode
-      multi_match	= 1
-      silent		= 1	// Don't care about warnings
-      opcode		= 321	// Remove effects by resource
-      timing		= 0	// Duration
-      duration		= 0
-      parameter1	= 0
-      parameter2	= 0
-      STR_VAR
-      insert		= "first"
-      resource		= "%DEST_RES%"
-    END
-  END
-
-  PATCH_IF ENGINE_IS "bg2 tob"
-  BEGIN
-    LAUNCH_PATCH_FUNCTION CLONE_EFFECT
-      INT_VAR
-      match_opcode
-      multi_match	= 1
-      silent		= 1	// Don't care about warnings
-      opcode		= 206	// Spell Effect: Immunity Spell
-      parameter1	= RESOLVE_STR_REF ("Multiple castings of this spell have no effect.")
-      parameter2	= 0	// Default (IWD1)
-      STR_VAR
-      insert		= "last"
-      resource		= "%DEST_RES%"
-    END
-  END
-END
-
-
 DEFINE_PATCH_FUNCTION mh_make_magical
   INT_VAR
   enchantment   = "-1"
@@ -367,6 +309,7 @@ BEGIN
       END
     END
 
+    /*
     PATCH_IF prevent_stacking != "-1"
     BEGIN
       LAUNCH_PATCH_FUNCTION mh_prevent_spell_effect_stacking
@@ -374,6 +317,7 @@ BEGIN
 	match_opcode	= prevent_stacking
       END
     END
+    */
 
     PATCH_IF FILE_EXISTS "%mod_name%/%item_dir%/%spell_res%.itm"
     BEGIN
