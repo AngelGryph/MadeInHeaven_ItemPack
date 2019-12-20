@@ -2,13 +2,13 @@ DEFINE_ACTION_FUNCTION place_items_in_bg1
 BEGIN
   // Brokk's Forge
   
-  COPY "%mod_root%/item_pack/sto/mh#brokk.sto" "override"
+  COPY "%mod_root%/item_pack/stores/mh#brokk.sto" "override"
     SAY NAME2 "Brokk's Forge"
   
   
   ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 @81 @84 @87 USING "%scs_tra_loc%/%LANGUAGE%/brokks_forge.tra"
   
-  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dlg/brokks_forge.d" USING "%scs_tra_loc%/%LANGUAGE%/brokks_forge.tra"
+  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/brokks_forge.d" USING "%scs_tra_loc%/%LANGUAGE%/brokks_forge.tra"
   
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
@@ -16,7 +16,7 @@ BEGIN
   END
   
   
-  COPY "%mod_root%/item_pack/cre/mh#brokk.cre" "override"
+  COPY "%mod_root%/item_pack/actors/mh#brokk.cre" "override"
     SAY NAME1 "Brokk"
     SAY NAME2 "Brokk"
   
@@ -40,13 +40,13 @@ BEGIN
   
   // Phrenda's Scrolls
   
-  COPY "%mod_root%/item_pack/sto/mh#phend.sto" "override"
+  COPY "%mod_root%/item_pack/stores/mh#phend.sto" "override"
     SAY NAME2 "Phendra's Scrolls"
   
   
   ADD_JOURNAL @15 @17 @20 USING "%scs_tra_loc%/%LANGUAGE%/phendras_scrolls.tra"
   
-  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dlg/phendras_scrolls.d" USING "%scs_tra_loc%/%LANGUAGE%/phendras_scrolls.tra"
+  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/phendras_scrolls.d" USING "%scs_tra_loc%/%LANGUAGE%/phendras_scrolls.tra"
   
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
@@ -54,7 +54,7 @@ BEGIN
   END
   
   
-  COPY "%mod_root%/item_pack/cre/mh#phend.cre" "override"
+  COPY "%mod_root%/item_pack/actors/mh#phend.cre" "override"
     SAY NAME1 "Phendra"
     SAY NAME2 "Phendra"
   
@@ -74,7 +74,7 @@ BEGIN
   
   ADD_JOURNAL @10 @19 @27 @29 @36 @38 USING "%scs_tra_loc%/%LANGUAGE%/gem_of_seeing.tra"
   
-  COMPILE "%mod_root%/item_pack/dlg/gem_of_seeing.d" USING "%scs_tra_loc%/%LANGUAGE%/gem_of_seeing.tra"
+  COMPILE "%mod_root%/item_pack/dialogs/gem_of_seeing.d" USING "%scs_tra_loc%/%LANGUAGE%/gem_of_seeing.tra"
   
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
@@ -99,12 +99,12 @@ BEGIN
     REPLACE_CRE_ITEM "mh#comp3" #0 #0 #0 "unstealable" "qitem1"
   
   
-  COPY "%mod_root%/item_pack/cre/mh#bobas.cre" "override"
+  COPY "%mod_root%/item_pack/actors/mh#bobas.cre" "override"
     SAY NAME1 "Bobas"
     SAY NAME2 "Bobas"
   
   
-  EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%mod_root%/item_pack/baf/gemquest_gullykin.baf" USING "%mod_root%/dummy.tra"
+  EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%mod_root%/item_pack/scripts/gemquest_gullykin.baf" USING "%mod_root%/dummy.tra"
   
   
   // Beregost

@@ -18,23 +18,23 @@ BEGIN
     REMOVE_CRE_ITEM "leat01"
   
   
-  COPY "%mod_root%/item_pack/2da/mh#impt1.2da" "override"
-       "%mod_root%/item_pack/2da/mh#impt2.2da" "override"
+  COPY "%mod_root%/item_pack/tables/mh#impt1.2da" "override"
+       "%mod_root%/item_pack/tables/mh#impt2.2da" "override"
   
   
-  EXTEND_TOP "ar0602.bcs" "%mod_root%/item_pack/baf/import_itempack.baf" USING "%scsroot%/dummy.tra"
+  EXTEND_TOP "ar0602.bcs" "%mod_root%/item_pack/scripts/import_itempack.baf" USING "%scsroot%/dummy.tra"
   
   
   ACTION_IF ENGINE_IS "bgee bg2ee"
   BEGIN
-    COPY "%mod_root%/item_pack/2da/mh#impt3.2da" "override"
+    COPY "%mod_root%/item_pack/tables/mh#impt3.2da" "override"
   
   
-    EXTEND_TOP "ar0602.bcs" "%mod_root%/item_pack/baf/import_itempack_ee.baf" USING "%scsroot%/dummy.tra"
+    EXTEND_TOP "ar0602.bcs" "%mod_root%/item_pack/scripts/import_itempack_ee.baf" USING "%scsroot%/dummy.tra"
   
-    EXTEND_BOTTOM "ar0602.bcs" "%mod_root%/item_pack/baf/import_itempack_ee_fin.baf" USING "%scsroot%/dummy.tra"
+    EXTEND_BOTTOM "ar0602.bcs" "%mod_root%/item_pack/scripts/import_itempack_ee_fin.baf" USING "%scsroot%/dummy.tra"
   
-    EXTEND_BOTTOM "ar0700.bcs" "%mod_root%/item_pack/baf/import_itempack_maheer.baf" USING "%scsroot%/dummy.tra"
+    EXTEND_BOTTOM "ar0700.bcs" "%mod_root%/item_pack/scripts/import_itempack_maheer.baf" USING "%scsroot%/dummy.tra"
   END
   
   
@@ -364,7 +364,7 @@ BEGIN
     // Sunite Sash
     ADD_CRE_ITEM "mh#belt2" #0 #0 #0 "unstealable" "belt"
   
-  COMPILE "%mod_root%/item_pack/dlg/vaelasa_itempack.d" USING "%scs_tra_loc%/%LANGUAGE%/vaelasa_itempack.tra"
+  COMPILE "%mod_root%/item_pack/dialogs/vaelasa_itempack.d" USING "%scs_tra_loc%/%LANGUAGE%/vaelasa_itempack.tra"
   
   
   // Firkraag's Lair

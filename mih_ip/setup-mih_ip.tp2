@@ -28,63 +28,25 @@ LANGUAGE ~English~
 
 // Item Pack
 
-BEGIN ~MiH Item Pack~
+BEGIN ~Made in Heaven: Item Pack~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "install_item_pack"
   location	= "item_pack"
-  tra		= "install_item_pack"
-END
-
-ACTION_IF GAME_INCLUDES "bg1" AND $SFO_reserved_ini_hash("place_items_in_bg1")
-BEGIN
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "place_items_in_bg1"
-    location	= "item_pack"
-  END
-END
-
-ACTION_IF GAME_INCLUDES "sod" AND $SFO_reserved_ini_hash("place_items_in_sod")
-BEGIN
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "place_items_in_sod"
-    location	= "item_pack"
-  END
-END
-
-ACTION_IF GAME_INCLUDES "bg2" AND $SFO_reserved_ini_hash("place_items_in_bg2")
-BEGIN
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "place_items_in_bg2"
-    location	= "item_pack"
-  END
-END
-
-ACTION_IF GAME_INCLUDES "tob" AND $SFO_reserved_ini_hash("place_items_in_tob")
-BEGIN
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "place_items_in_tob"
-    location	= "item_pack"
-  END
 END
 
 
 // BG2 Items in BG1
 
-BEGIN ~Make a few BG2 items available in BG1~
-GROUP ~Optional Item Tweaks~
+BEGIN ~BG2 Item Pack for BG1~
 
 REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "bg2_items_in_bg1"
-  location	= "bg2_items"
+  location	= "bg2_in_bg1"
   tra		= "bg2_items_in_bg1"
 END
 
@@ -99,7 +61,7 @@ REQUIRE_PREDICATE NOT GAME_IS "bgee" ~This component is not applicable to your g
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file			= "bg1_wands"
-  location		= "wand_styles"
+  location		= "tweaks"
 END
 
 
@@ -112,7 +74,7 @@ GROUP ~Optional Item Tweaks~
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file			= "pnp_healing_potions"
-  location		= "healing_potions"
+  location		= "tweaks"
 END
 
 
@@ -123,7 +85,7 @@ GROUP ~Optional Item Tweaks~
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file			= "iwd_healing_potions"
-  location		= "healing_potions"
+  location		= "tweaks"
 END
 
 
@@ -134,7 +96,7 @@ GROUP ~Optional Item Tweaks~
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file			= "bg2_healing_potions"
-  location		= "healing_potions"
+  location		= "tweaks"
 END
 
 
@@ -146,7 +108,7 @@ GROUP ~Optional Item Tweaks~
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file			= "item_improvements"
-  location		= "better_items"
+  location		= "tweaks"
 END
 
 

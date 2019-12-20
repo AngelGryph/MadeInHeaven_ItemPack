@@ -1406,8 +1406,8 @@ BEGIN
           name2_string=>"%name%"
           description2_string=>"%desc%"
           patch_effect_inline=>"resource=>%resref%"
-          patch_ability_inline'1=>"ability_icon=>%resref%A"
-          icon=>"%resref%A"
+          patch_ability_inline'1=>"ability_icon=>%icon_base%A"
+          icon=>"%icon_base%A"
           price=>"%price%"
        END
        ACTION_PHP_EACH unusable_flag AS flag=>discard BEGIN
@@ -1425,6 +1425,7 @@ DEFINE_PATCH_MACRO scroll_of_spell_data_collection // just broken out for readab
 BEGIN
            LPF SPL_read_description1_string RET desc=value END
            LPF SPL_read_name1_string RET name=value END
+	   READ_ASCII 0x3a icon_base (7)
            READ_LONG 0x64 offset_base
            LPF SPL_read_ability_target STR_VAR offset_base RET ability_target=value END
            LPF SPL_read_ability_range STR_VAR offset_base RET range=value END

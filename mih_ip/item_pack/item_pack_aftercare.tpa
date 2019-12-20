@@ -1,0 +1,114 @@
+DEFINE_ACTION_FUNCTION item_pack_aftercare
+BEGIN
+  // Apply CamDawg's immunity arrays
+
+  COPY_EXISTING_REGEXP "mh#.*\.itm" "override"
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_charm_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_confusion_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_disease_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_feeblemind_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_hold_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_silence_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_spell_level_1_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_spell_level_2_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_spell_level_3_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_level_drain_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_petrification_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_poison_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_psionics_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_slay_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_stun_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_web_arrays"
+    END
+
+    LAUNCH_PATCH_FUNCTION cd_apply_batch
+      STR_VAR
+      array_name	= "cd_immunity_fear_arrays"
+    END
+
+  BUT_ONLY_IF_IT_CHANGES
+
+
+  // Update itemexcl.2da
+
+  ACTION_IF $SFO_reserved_ini_hash("update_itemexcl_2da") & BIT1
+  BEGIN
+    APPEND "itemexcl.2da" "mh#armr1 1" UNLESS "mh#armr1"
+    APPEND "itemexcl.2da" "mh#armr2 1" UNLESS "mh#armr2"
+  END
+
+  ACTION_IF $SFO_reserved_ini_hash("update_itemexcl_2da") & BIT0
+  BEGIN
+    APPEND "itemexcl.2da" "mh#amul9 1" UNLESS "mh#amul9"
+    APPEND "itemexcl.2da" "mh#belt6 1" UNLESS "mh#belt6"
+    APPEND "itemexcl.2da" "mh#clck2 1" UNLESS "mh#clck2"
+    APPEND "itemexcl.2da" "mh#clck4 1" UNLESS "mh#clck4"
+    APPEND "itemexcl.2da" "mh#clck5 1" UNLESS "mh#clck5"
+    APPEND "itemexcl.2da" "mh#ring1 1" UNLESS "mh#ring1"
+    APPEND "itemexcl.2da" "mh#ring9 1" UNLESS "mh#ring9"
+  END
+END	// item_pack_aftercare
+
+

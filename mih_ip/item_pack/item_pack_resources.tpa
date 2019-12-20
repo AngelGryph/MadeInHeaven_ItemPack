@@ -1,0 +1,158 @@
+DEFINE_ACTION_FUNCTION item_pack_resources
+BEGIN
+  // Set up graphical stuff
+
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    files	= "all"
+    location	= "graphics"
+    postfix	= "bam"
+  END
+
+
+  ACTION_BASH_FOR "override" "mh#vsio.\.bam"
+  BEGIN
+    COPY "%mod_root%/item_pack/graphics/sporbit.vvc" "override/%BASH_FOR_RES%.vvc"
+      WRITE_EVALUATED_ASCII 0x8 "%BASH_FOR_RES%" #8
+  END
+
+
+  // Procedurally generate some effects
+
+  OUTER_FOR (SET i = 1; i <= 3; ++i)
+  BEGIN
+    // To-hit vs. undead
+    CREATE EFF "mh#undh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("general" "undead")
+      WRITE_LONG	0x0020 3
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. kobold
+    CREATE EFF "mh#kbdh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "kobold")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. lycanthrope
+    CREATE EFF "mh#lych%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "lycanthrope")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. demonic
+    CREATE EFF "mh#demh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "demonic")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. spider
+    CREATE EFF "mh#spdh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "spider")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. slime
+    CREATE EFF "mh#slmh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "slime")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. elemental
+    CREATE EFF "mh#elmh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "elemental")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. golem
+    CREATE EFF "mh#golh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "golem")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // To-hit vs. evil
+    CREATE EFF "mh#evlh%i%"
+      WRITE_LONG	0x0010 178	// Spell Effect: THAC0 vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("align" "mask_evil")
+      WRITE_LONG	0x0020 8
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // Damage vs. undead
+    CREATE EFF "mh#undd%i%"
+      WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("general" "undead")
+      WRITE_LONG	0x0020 3
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // Damage vs. golem
+    CREATE EFF "mh#gold%i%"
+      WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("race" "golem")
+      WRITE_LONG	0x0020 4
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // Damage vs. evil
+    CREATE EFF "mh#evld%i%"
+      WRITE_LONG	0x0010 179	// Spell Effect: Damage vs. Creature
+      WRITE_LONG	0x001c IDS_OF_SYMBOL("align" "mask_evil")
+      WRITE_LONG	0x0020 8
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+      WRITE_LONG	0x0060 i
+
+    // Extra slashing damage
+    CREATE EFF "mh#slsh%i%"
+      WRITE_LONG	0x0010 12	// HP: Damage
+      WRITE_LONG	0x001c i
+      WRITE_LONG	0x0020 16777216	// Slashing
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+
+    // Extra piercing damage
+    CREATE EFF "mh#prce%i%"
+      WRITE_LONG	0x0010 12	// HP: Damage
+      WRITE_LONG	0x001c i
+      WRITE_LONG	0x0020 1048576	// Piercing
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+
+    // Extra crushing damage
+    CREATE EFF "mh#crsh%i%"
+      WRITE_LONG	0x0010 12	// HP: Damage
+      WRITE_LONG	0x001c i
+      WRITE_LONG	0x0020 0	// Crushing
+      WRITE_SHORT	0x0024 1
+      WRITE_LONG	0x002c 100
+  END
+END	// item_pack_resources
+
+

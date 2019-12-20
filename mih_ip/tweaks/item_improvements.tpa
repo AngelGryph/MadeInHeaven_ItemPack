@@ -85,7 +85,7 @@ BEGIN
 
 
   MAKE_PATCH
-    patch_effect_inline'1=>~match=>duration>2 duration=>60~
+    patch_effect_inline'1=>~duration_if_variable=>60~
     patch_effect_inline'2=>~match=>"opcode is_in [0 33 34 35 36 37]" parameter1=>2 parameter2=>0~
     add_effect_inline'1=>~opcode=>120 duration=>60 target=>2 parameter2=>2 resist_dispel=>3~
     add_effect_inline'2=>~opcode=>142 duration=>60 target=>2 parameter2=>70 resist_dispel=>3~

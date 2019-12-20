@@ -1,0 +1,12 @@
+DEFINE_ACTION_FUNCTION fix_water_elementals
+BEGIN
+  LAUNCH_ACTION_FUNCTION edit_creature
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    creature		= "elwatg01 elemhydr bdwe1str bdwe2str bdweledg bdweleds bdwelemg bdwelems ohbewwei ohbwat01 rr#ewwei rr#ewatr rr#ewatl rr#ewate tg#benh tg#wel2 tg#wel3 li#druwa"
+    editstring		= ~class=>"elemental_water"~
+  END
+END	// fix_water_elementals
+
+
