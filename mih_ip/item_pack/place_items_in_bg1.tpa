@@ -1,29 +1,35 @@
 DEFINE_ACTION_FUNCTION place_items_in_bg1
 BEGIN
+  // =============
   // Brokk's Forge
-  
-  COPY "%mod_root%/item_pack/stores/mh#brokk.sto" "override"
-    SAY NAME2 "Brokk's Forge"
-  
-  
+  // =============
+
+  LAUNCH_ACTION_FUNCTION install_store
+    STR_VAR
+    store	= "mh#brokk"
+    location	= "stores"
+    editstring	= "say_name=>0"
+  END
+
   ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 @81 @84 @87 USING "%scs_tra_loc%/%LANGUAGE%/brokks_forge.tra"
-  
+
   COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/brokks_forge.d" USING "%scs_tra_loc%/%LANGUAGE%/brokks_forge.tra"
-  
+
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
     dialog	= "mh#brokk"
   END
-  
-  
-  COPY "%mod_root%/item_pack/actors/mh#brokk.cre" "override"
-    SAY NAME1 "Brokk"
-    SAY NAME2 "Brokk"
-  
-  
+
+  LAUNCH_ACTION_FUNCTION install_creature
+    STR_VAR
+    creature	= "mh#brokk"
+    location	= "actors"
+    editstring	= "say_both_names=>1"
+  END
+
   COPY_EXISTING "%FriendlyArmInn_House%.are" "override"
     LAUNCH_PATCH_MACRO mh_remove_all_area_actors
-  
+
     LAUNCH_PATCH_FUNCTION mh_add_area_actor
       INT_VAR
       x_position		= 450
@@ -32,33 +38,38 @@ BEGIN
       STR_VAR
       cre_resref		= "mh#brokk"
     END
-  
-  
+
   COPY_EXISTING "%FriendlyArmInn%.are" "override"
-    ADD_MAP_NOTE #1500 #1900 "gray" "Brokk's Forge"
-  
-  
+    ADD_MAP_NOTE #1500 #1900 "gray" @0
+
+
+  // =================
   // Phrenda's Scrolls
-  
-  COPY "%mod_root%/item_pack/stores/mh#phend.sto" "override"
-    SAY NAME2 "Phendra's Scrolls"
-  
-  
+  // =================
+
+  LAUNCH_ACTION_FUNCTION install_store
+    STR_VAR
+    store	= "mh#phend"
+    location	= "stores"
+    editstring	= "say_name=>2"
+  END
+
   ADD_JOURNAL @15 @17 @20 USING "%scs_tra_loc%/%LANGUAGE%/phendras_scrolls.tra"
-  
+
   COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/phendras_scrolls.d" USING "%scs_tra_loc%/%LANGUAGE%/phendras_scrolls.tra"
-  
+
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
     dialog	= "mh#phend"
   END
-  
-  
-  COPY "%mod_root%/item_pack/actors/mh#phend.cre" "override"
-    SAY NAME1 "Phendra"
-    SAY NAME2 "Phendra"
-  
-  
+
+  LAUNCH_ACTION_FUNCTION install_creature
+    STR_VAR
+    creature	= "mh#phend"
+    location	= "actors"
+    editstring	= "say_both_names=>3"
+  END
+
   COPY_EXISTING "%NashkelCarnival_ArmorTent%.are" "override"
     LAUNCH_PATCH_FUNCTION mh_add_area_actor
       INT_VAR
@@ -68,121 +79,164 @@ BEGIN
       STR_VAR
       cre_resref		= "mh#phend"
     END
-  
-  
-  // Gem of Seeing quest
-  
+
+
+  // ========================
+  // Gem of Seeing mini-quest
+  // ========================
+
   ADD_JOURNAL @10 @19 @27 @29 @36 @38 USING "%scs_tra_loc%/%LANGUAGE%/gem_of_seeing.tra"
-  
+
   COMPILE "%mod_root%/item_pack/dialogs/gem_of_seeing.d" USING "%scs_tra_loc%/%LANGUAGE%/gem_of_seeing.tra"
-  
+
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
     dialog	= "mh#hlftr"
   END
-  
+
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR
     dialog	= "thalan"
   END
-  
-  
-  COPY_EXISTING "halftr.cre" "override"
-    WRITE_ASCII DEATHVAR "mh#Furret" #32
-  
-  
-  COPY_EXISTING "halftr.cre" "override/mh#hlftr.cre"
-    WRITE_ASCII SCRIPT_DEFAULT "wtrunsgt"
-    WRITE_ASCII DIALOG "mh#hlftr"
-    WRITE_ASCII DEATHVAR "mh#Furret" #32
-  
-    REPLACE_CRE_ITEM "mh#comp3" #0 #0 #0 "unstealable" "qitem1"
-  
-  
-  COPY "%mod_root%/item_pack/actors/mh#bobas.cre" "override"
-    SAY NAME1 "Bobas"
-    SAY NAME2 "Bobas"
-  
-  
-  EXTEND_BOTTOM "%Gullykin_BCS%.bcs" "%mod_root%/item_pack/scripts/gemquest_gullykin.baf" USING "%mod_root%/dummy.tra"
-  
-  
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "halftr"
+    editstring	= "dv=>mh#Furret"
+  END
+
+  LAUNCH_ACTION_FUNCTION clone_creature
+    STR_VAR
+    creature	= "halftr=>mh#hlftr"
+    editstring	= ~script_default=>wtrunsgt dialog=>mh#Furret replace_items=>"mh#comp3(qitem1)"~
+  END
+
+  LAUNCH_ACTION_FUNCTION install_creature
+    STR_VAR
+    creature	= "mh#bobas"
+    location	= "actors"
+    editstring	= "say_both_names=>4"
+  END
+
+  LAUNCH_ACTION_FUNCTION extend_area_script
+    STR_VAR
+    area	= "%Gullykin%"
+    bottom	= "gemquest_gullykin"
+    location	= "scripts"
+  END
+
+
+  // ========
   // Beregost
-  
-  COPY_EXISTING "inn3351.sto" "override"
-    // Quiver of Ehlonna
-    ADD_STORE_ITEM "mh#quiv1" AFTER "bow02" #0 #0 #0 "identified" #1
-  
-  
-  COPY_EXISTING "tem3402.sto" "override"
-    // Philter of Purification
-    ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
-  
-    // Amulet against Undead
-    ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
-  
-    // Girdle of Beatification
-    ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1
-  
-  
-  COPY_EXISTING "highhedg.sto" "override"
-    // Zilzanzer's Magnificent Darts +1
-    ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12
-  
-    // Oil of Acid Resistance
-    ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
-  
-    // Potion of Clairvoyance
-    ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3
-  
-    // Oil of Disenchantment
-    ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
-  
-    // Potion of Wizardry
-    ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #3
-  
-    // Cloak of Arachnida
-    ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1
-  
-    // Cloak of the Shield (from Durlag's Tower)
-    ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1
-  
-    // Crystal Ball
-    ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1
-  
-    // Gem of Insight
-    ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
-  
-    // Brooch of Shielding
-    ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
-  
-  
-  // Red Canyons
-  
-  COPY_EXISTING "bassil.cre" "override"
-    // The Kneecapper (from Hurgan Stoneblade)
-    ADD_CRE_ITEM "hamm04" #0 #0 #0 "unstealable" "weapon1" EQUIP
-    REMOVE_CRE_ITEM "hamm03"
-  
-  
+  // ========
+
+  // Feldepost's Inn
+  //
+  // mh#quiv1 - Quiver of Ehlonna
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#quiv1" AFTER "bow02" #0 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "inn3351"
+    edits	= "patch_data"
+  END
+
+  // Song of the Morning Temple
+  //
+  // mh#amul1 - Amulet against Undead
+  // mh#belt4 - Girdle of Beatification
+  // mh#potn3 - Philter of Purification
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
+
+    literal'2=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
+
+    literal'3=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "tem3402"
+    edits	= "patch_data"
+  END
+
+  // High Hedge (Thalantyr)
+  //
+  // mh#amul3 - Gem of Insight
+  // mh#amul5 - Brooch of Shielding
+  // mh#dart3 - Zilzanzer's Magnificent Darts +1
+  // mh#misc3 - Crystal Ball
+  // mh#potn1 - Oil of Acid Resistance
+  // mh#potn2 - Potion of Clairvoyance
+  // mh#potn4 - Oil of Disenchantment
+  // mh#potn5 - Potion of Wizardry
+  // clck20   - Cloak of the Shield (from Durlag's Tower)
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
+    literal'2=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3~
+    literal'3=>~ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3~
+    literal'4=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
+    literal'5=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #3~
+    literal'6=>~ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1~
+    literal'7=>~ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1~
+    literal'8=>~ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1~
+    literal'9=>~ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "highhedg"
+    edits	= "patch_data"
+  END
+
+  // Bassilus the Mad Cleric
+  //
+  // hamm04   - The Kneecapper (from Hurgan Stoneblade)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bassil"
+    editstring	= ~remove_items=>"hamm03" add_items=>"hamm04(weapon1)"~
+  END
+
+
+  // ==================
   // Nashkel / Carnival
-  
-  COPY_EXISTING "sto4905.sto" "override"
-    // Philter of Purification
-    ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
-  
-    // Oil of Acid Resistance
-    ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
-  
-  
-  COPY_EXISTING "greywo.cre" "override"
-    // Mirthal (replaces Varscona)
-    ADD_CRE_ITEM "mh#swrd7" #0 #0 #0 "unstealable" "weapon1" EQUIP
-    REMOVE_CRE_ITEM "sw1h06"
-  
-  
+  // ==================
+
+  // The "Badass Merchant" (may need BG1UB to encounter)
+  // Oil of Acid Resistance
+  // Philter of Purification
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
+    literal'2=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "sto4905"
+    edits	= "patch_data"
+  END
+
+  // Nashkel Mine Entrance
+  //
+  // mh#swrd7 - Mirthal +1 (equipped on Greywolf, replaces Varscona +2)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "greywo"
+    editstring	= ~remove_items=>"sw1h06" add_items=>"mh#swrd7(weapon1)"~
+  END
+
+
   // Ulcaster Ruins
-  
+
   COPY_EXISTING "%UlcasterRuins%.are" "override"
     // Chandler's Icy Darts
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
@@ -192,7 +246,7 @@ BEGIN
       STR_VAR
       item_to_add		= "mh#dart2"
     END
-  
+
     // Lein's Fiery Darts
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
@@ -201,222 +255,323 @@ BEGIN
       STR_VAR
       item_to_add		= "mh#dart1"
     END
-  
-  
+
+
+  // ========
   // Gullykin
-  
-  COPY_EXISTING "tem4003.sto" "override"
-    // Philter of Purification
-    ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
-  
-    // Robe of the Pure Heart
-    ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1
-     
-    // Periapt of Health
-    ADD_STORE_ITEM "mh#amul8" LAST #0 #0 #0 "identified" #1
-  
-  
+  // ========
+
+  // Temple of Yondala
+  //
+  // mh#amul8 - Periapt of Health
+  // mh#potn3 - Philter of Purification
+  // mh#robe3 - Robe of the Pure Heart
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
+    literal'2=>~ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#amul8" LAST #0 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "tem4003"
+    edits	= "patch_data"
+  END
+
   // Mutamin's Garden
-  
-  COPY_EXISTING "mutami.cre" "override"
-    // Mutamin's Cloak
-    ADD_CRE_ITEM "mh#clck1" #0 #0 #0 "none" "cloak"
-  
-  
+  //
+  // mh#clck1 - Mutamin's Cloak (on Mutamin, obviously)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "mutami"
+    editstring	= ~add_items=>"mh#clck1(cloak)"~
+  END
+
+
+  // ===========
   // Bandit Camp
-  
-  COPY_EXISTING "taugos.cre" "override"
-    // Aishideena (from Bassilius)
-    ADD_CRE_ITEM "hamm03" #0 #0 #0 "unstealable" "weapon1" EQUIP
-    REMOVE_CRE_ITEM "hamm02"
-  
-  
-  COPY_EXISTING "raemon.cre" "override"
-    // Varscona (from Greywolf)
-    ADD_CRE_ITEM "sw1h06" #0 #0 #0 "unstealable" "weapon1" EQUIP
-    REMOVE_CRE_ITEM "sw1h04"
-  
-  
-  COPY_EXISTING "venkt.cre" "override"
-    // Spendelard's Protector
-    ADD_CRE_ITEM "mh#staf2" #0 #0 #0 "unstealable" "weapon1" EQUIP TWOHANDED
-    REMOVE_CRE_ITEM "staf02"
-  
-  
+  // ===========
+
+  // Stolen by the Bandits
+  //
+  // mh#staf2 - Spendelard's Protector (equipped by Venkt)
+  // hamm03   - Aishideena +2 (equipped on Taugosh, from Bassilus)
+  // sw1h06   - Varscona +2 (equipped on Raemon, from Greywolf)
+
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "taugos"
+    editstring	= ~remove_items=>"hamm02" add_items=>"hamm03(weapon1)~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "raemon"
+    editstring	= ~remove_items=>"sw1h04" add_items=>"sw1h06(weapon1)~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "venkt"
+    editstring	= ~remove_items=>"staf02" add_items=>"mh#staf2(weapon1)~
+  END
+
+  // Hidden in the Tents
+  //
+  // mh#comp5 - Unicorn Horn
+
   COPY_EXISTING "%BanditCamp_Tent1%.are" "override"
-    // Unicorn Horn
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 3
       STR_VAR
       item_to_add		= "mh#comp5"
     END
-  
-  
+
+
+  // =========
   // Cloakwood
-  
+  // =========
+
+  // Spider's Nest (Centeol's Lair)
+  //
+  // mh#belt3 - Storm's Garter
+
   COPY_EXISTING "%CloakwoodNestSpiderNest%.are" "override"
-    // Storm's Garter
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 1
-      charges1		= 1
-      charges2		= 1
-      charges3		= 1
+      charges1			= 1
+      charges2			= 1
+      charges3			= 1
       STR_VAR
       item_to_add		= "mh#belt3"
     END
-  
-  
-  COPY_EXISTING "coksmth.cre" "override"
-    // Bag of Tricks
-    ADD_CRE_ITEM "mh#misc2" #3 #0 #0 "unstealable" "qitem"
-  
-  
-  COPY_EXISTING "natash.cre" "override"
-    // Spinesheath
-    ADD_CRE_ITEM "mh#dagg2" #0 #0 #0 "unstealable" "weapon1" EQUIP
-    REMOVE_CRE_ITEM "dagg01"
-  
-  
+
+  // Shadow Druids
+  //
+  // mh#misc2 - Bag of Tricks (on Peter of the North)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "coksmth"
+    editstring	= ~add_items=>"mh#misc2(qitem)~
+  END
+
+  // Orothiar Mines
+  //
+  // mh#dagg2 - Spinesheath +1 (on Natasha)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "natash"
+    editstring	= ~remove_items=>"dagg01" add_items=>"mh#dagg2(weapon1)~
+  END
+
+
+  // =============
   // Baldur's Gate
-  
-  COPY_EXISTING "tem0132.sto" "override"
-    // Philter of Purification
-    ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3
-  
-    // Necklace of Prayer Beads
-    ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
-  
-  
-  COPY_EXISTING "sto0703.sto" "override"
-    // Mirror Amulet
-    ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1
-  
-    // Zilzanzer's Magnificent Darts +1
-    ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12
-  
-    // Oil of Acid Resistance
-    ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3
-  
-    // Oil of Disenchantment
-    ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
-  
-    // Potion of Wizardry
-    ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #3
-  
-    // Staff of Swarming Insects
-    ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1
-  
-  
-  COPY_EXISTING "stoblack.sto" "override"
-    // Boots of the Master Ninja
-    ADD_STORE_ITEM "mh#boot1" AFTER "clck01" #0 #0 #0 "identified" #1
-    // Gloves of Evasion
-    ADD_STORE_ITEM "mh#brac7" AFTER "clck01" #0 #0 #0 "identified" #1
-  
-  
+  // =============
+
+  // House of the Lady
+  //
+  // mh#amul2 - Necklace of Prayer Beads
+  // mh#potn3 - Philter of Purification
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
+    literal'2=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "tem0132"
+    edits	= "patch_data"
+  END
+
+
+  // Sorcerous Sundries
+  //
+  // mh#amul4 - Mirror Amulet
+  // mh#dart3 - Zilzanzer's Magnificent Darts +1
+  // mh#potn1 - Oil of Acid Resistance
+  // mh#potn4 - Oil of Disenchantment
+  // mh#potn5 - Potion of Wizardry
+  // mh#staf6 - Staff of Swarming Insects
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
+    literal'3=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3~
+    literal'4=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
+    literal'5=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #3~
+    literal'6=>~ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "sto0703"
+    edits	= "patch_data"
+  END
+
+  // Black Lily
+  //
+  // mh#clck3 - Cloak of Arachnida
+  // mh#boot1 - Boots of the Master Ninja
+  // mh#brac1 - Gloves of Evasion
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#brac7" AFTER "clck01" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#boot1" AFTER "clck01" #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "stoblack"
+    edits	= "patch_data"
+  END
+
+
+  // ================
   // Candlekeep (ch6)
-  
+  // ================
+
+  // Catacombs L1
+  //
+  // mh#ring1 - Ring of the Lich +3
+
   COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
-    // Ring of the Lich +3
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 4
       STR_VAR
       item_to_add		= "mh#ring1"
     END
-  
-  
+
+
+  // ==============
   // Ulgoth's Beard
-  
-  COPY_EXISTING "hurgan.cre" "override"
-    // Final Strike +3
-    ADD_CRE_ITEM "mh#hamm1" #0 #0 #0 "unstealable" "inv"
-    REMOVE_CRE_ITEM "hamm04"
-  
-    
+  // ==============
+
+  // Better Durlag's Tower Reward
+  //
+  // mh#hamm1 - Final Strike +3 (on Hurgan Stoneblade)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "hurgan"
+    editstring	= ~remove_items=>"hamm04" add_items=>"mh#hamm1(qitem)~
+  END
+
   COPY_EXISTING "hurgan.dlg" "override"
-    // Final Strike +3
     DECOMPILE_AND_PATCH
     BEGIN
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "hamm04" "mh#hamm1"
     END
-  
-  
-  COPY_EXISTING "tracea.cre" "override"
-    // Orange Ioun Stone
-    ADD_CRE_ITEM "mh#ioun3" #0 #0 #0 "unstealable" "helmet"
-  
-  
+
+  // The Demon Cultists
+  //
+  // mh#ioun3 - Orange Ioun Stone (on Tracea Carol)
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "tracea"
+    editstring	= ~add_items=>"mh#ioun3(helmet)~
+  END
+
+
+  // ==============
   // Durlag's Tower
-  
+  // ==============
+
+  // Durlag's Dungeon D1
+  //
+  // mh#ring5 - Ring of Protection from Silence
+
   COPY_EXISTING "%DurlagsTower_D1%.are" "override"
-    // Ring of Protection from Silence
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 2
       STR_VAR
       item_to_add		= "mh#ring5"
     END
-  
-  
-  COPY_EXISTING "moorlock.cre" "override"
-    // Terminus Est +2
-    ADD_CRE_ITEM "mh#swrd1" #0 #0 #0 "unstealable" "weapon1" EQUIP
-    REMOVE_CRE_ITEM "sw1h05"
-  
-  
+
+  // Durlag's Dungeon D3
+  //
+  // mh#swrd1 - Terminus Est +2
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "moorlock"
+    editstring	= ~remove_items=>"sw1h05" add_items=>"mh#swrd1(weapon1)~
+  END
+
+  // Durlag's Dungeon D4
+  //
+  // mh#btax2 - Trollkiller +2
+  // mh#brac3 - Bracers of Winter's Chill
+  // mh#brac5 - Gauntlets of Smiting
+  // mh#clck2 - Battlecloak of Vycaena (replaces Cloak of the Shield)
+  // mh#comp2 - Arandur Ore
+  // mh#comp4 - Rusty Katana
+
   COPY_EXISTING "%DurlagsTower_D4%.are" "override"
-    // Trollkiller +2
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 7
       STR_VAR
       item_to_add		= "mh#btax2"
     END
-  
-    // Battlecloak of Vycaena
+
     LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
       STR_VAR
-      old_item		= "clck20"
-      new_item		= "mh#clck2"
+      old_item			= "clck20"
+      new_item			= "mh#clck2"
     END
-  
-    // Mithral Ore
+
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 6
       STR_VAR
       item_to_add		= "mh#comp2"
     END
-  
-    // Rusty Katana
+
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 22
       STR_VAR
       item_to_add		= "mh#comp4"
     END
-  
-    // Bracers of Winter's Chill
+
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 33
-      charges1		= 1
-      charges2		= 1
+      charges1			= 1
+      charges2			= 1
       STR_VAR
       item_to_add		= "mh#brac3"
     END
-  
-  
-  COPY_EXISTING "grael.cre" "override"
-    // Gauntlets of Smiting
-    ADD_CRE_ITEM "mh#brac5" #0 #0 #0 "unstealable" "gloves"
-  
-  
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "grael"
+    editstring	= ~add_items=>"mh#brac5(gloves)~
+  END
+
+
+  // ================
   // Isle of Balduran
-  
+  // ================
+
+  // Dradeel's Cabin
+  //
+  // mh#dart4 - Silver Dart of Selune +2
+  // mh#robe1 - Robe of the Elements
+
   COPY_EXISTING "%IsleofBalduranNDradeelsHouse%.are" "override"
     // Robe of the Elements
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
@@ -425,7 +580,7 @@ BEGIN
       STR_VAR
       item_to_add		= "mh#robe1"
     END
-  
+
     // Silver Dart of Selune +2
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
@@ -433,10 +588,12 @@ BEGIN
       STR_VAR
       item_to_add		= "mh#dart4"
     END
-  
-  
+
+  // Shipwreck L1
+  //
+  // mh#comp1 - Meteoric iron
+
   COPY_EXISTING "%IsleofBalduranNShip_D2%.are" "override"
-    // Meteoric Iron
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 3
@@ -444,5 +601,5 @@ BEGIN
       item_to_add		= "mh#comp1"
     END
 END	// place_items_in_bg1
-  
-  
+
+

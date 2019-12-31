@@ -82,7 +82,7 @@ DEFINE_ACTION_FUNCTION install_creature
            allow_missing=0
            tv=0
     STR_VAR
-           creatire=""
+           creature=""
            edits=""
            editstring=""
            location=""

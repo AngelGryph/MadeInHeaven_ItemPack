@@ -3,7 +3,6 @@ mh#amul2 Necklace of Prayer Beads		Temple of Lathander (shop)
 mh#amul3 Gem of Insight				Temple of Oghma (shop)
 mh#amul5 Brooch of Shielding			Druid Grove (battle)
 mh#amul6 Scarab versus Golems			Adventurer's Market (shop)
-mh#amul7 Dragon's Tear Amulet			Adventurer's Market (ch6)
 
 mh#armr1 Winter Wolf Hide +1			Chateau Irenicus (battle)
 mh#armr2 Eversing +2				Arnolinus the dwarf (shop)

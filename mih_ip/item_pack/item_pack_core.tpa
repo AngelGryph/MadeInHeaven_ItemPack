@@ -1,114 +1,136 @@
 DEFINE_ACTION_FUNCTION item_pack_core
 BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "visible_ioun_stones"
+    RET
+    visible_ioun_stones	= value
+  END
+
+
   // mh#amul1 - Amulet against Undead
 
-  COPY "%mod_root%/item_pack/items/mh#amul1.itm" "override"
-    SAY NAME2 @0
-    SAY IDENTIFIED_DESC @1
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul1"
+    location	= "items"
+    editstring	= "say_name=>0 say_description=>1"
+  END
 
 
   // mh#amul2 - Necklace of Prayer Beads
 
-  COPY "%mod_root%/item_pack/items/mh#amul2.itm" "override"
-    SAY NAME2 @2
-    SAY IDENTIFIED_DESC @3
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul2"
+    location	= "items"
+    editstring	= "say_name=>2 say_description=>3"
+  END
 
 
   // mh#amul3 - Gem of Insight
 
-  COPY "%mod_root%/item_pack/items/mh#amul3.itm" "override"
-    SAY NAME2 @4
-    SAY IDENTIFIED_DESC @5
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul3"
+    location	= "items"
+    editstring	= "say_name=>4 say_description=>5"
+  END
 
 
   // mh#amul4 - Mirror Amulet
 
-  COPY "%mod_root%/item_pack/items/mh#amul4.itm" "override"
-    SAY NAME2 @173
-    SAY IDENTIFIED_DESC @174
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul4"
+    location	= "items"
+    editstring	= "say_name=>173 say_description=>174"
+  END
 
 
   // mh#amul5 - Brooch of Shielding
 
-  COPY "%mod_root%/item_pack/items/mh#amul5.itm" "override"
-    SAY NAME2 @40
-    SAY IDENTIFIED_DESC @41
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul5"
+    location	= "items"
+    editstring	= "say_name=>40 say_description=>41"
+  END
 
 
   // mh#amul6 - Scarab versus Golems
 
-  COPY "%mod_root%/item_pack/items/mh#amul6.itm" "override"
-    SAY NAME2 @114
-    SAY IDENTIFIED_DESC @115
-
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("race" "golem")
-        parameter2	= 4
-        special		= 2
-      END
-    END
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul6"
+    location	= "items"
+    editstring	= "say_name=>114 say_description=>115"
+  END
 
 
   // mh#amul7 - Dragon's Tear Amulet
 
-  COPY "%mod_root%/item_pack/items/mh#amul7.itm" "override"
-    SAY NAME2 @175
-    SAY IDENTIFIED_DESC @176
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul7"
+    location	= "items"
+    editstring	= "say_name=>175 say_description=>176"
+  END
 
 
   // mh#amul8 - Periapt of Health
 
-  COPY "%mod_root%/item_pack/items/mh#amul8.itm" "override"
-    SAY NAME2 @177
-    SAY IDENTIFIED_DESC @178
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul8"
+    location	= "items"
+    editstring	= "say_name=>177 say_description=>178"
+  END
 
 
   // mh#amul9 - Medallion of the Arctic
 
-  ADD_PROJECTILE "%mod_root%/item_pack/projectiles/mh#amul9.pro"
+  LAUNCH_ACTION_FUNCTION make_effect
+    STR_VAR
+    effect		= "mh#amul9"
+    editstring		= "opcode=>146 target=>1 timing=>1 parameter1=>1 parameter2=>1 resource=>mh#amul9"
+  END
 
+  ADD_PROJECTILE "%mod_root%/%component_loc%/projectiles/mh#amul9.pro"
 
   LAUNCH_ACTION_FUNCTION install_spell
     STR_VAR
-    spell		= "mh#amul9"
-    location		= "spells"
-    editstring		= ~patch_ability_inline=>"projectile=>%mh#amul9%"~
+    spell	= "mh#amul9"
+    location	= "spells"
+    editstring	= ~patch_ability_inline=>"projectile=>%mh#amul9%"~
   END
 
-
-  CREATE EFF "mh#amul9"
-    WRITE_LONG	0x0010 146	// Spell: Cast Spell (at Creature)
-    WRITE_LONG	0x0014 1
-    WRITE_LONG	0x001c 1
-    WRITE_LONG	0x0020 1
-    WRITE_SHORT	0x0024 1
-    WRITE_LONG	0x002c 100
-    WRITE_ASCII	0x0030 "mh#amul9"
-
-
-  COPY "%mod_root%/item_pack/items/mh#amul9.itm" "override"
-    SAY NAME2 @217
-    SAY IDENTIFIED_DESC @218
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amul9"
+    location	= "items"
+    editstring	= "say_name=>217 say_description=>218"
+  END
 
 
   // mh#armr1 - Winter Wolf Hide +1
 
-  COPY "%mod_root%/item_pack/items/mh#armr1.itm" "override"
-    SAY NAME2 @42
-    SAY IDENTIFIED_DESC @43
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr1"
+    location	= "items"
+    editstring	= "say_name=>42 say_description=>43"
+  END
 
 
   // mh#armr2 - Eversing +2
 
-  COPY "%mod_root%/item_pack/items/mh#armr2.itm" "override"
-    SAY NAME2 @44
-    SAY IDENTIFIED_DESC @45
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr2"
+    location	= "items"
+    editstring	= "say_name=>44 say_description=>45"
+  END
 
 
   // mh#armr3 - White Hide of Umpluutu
@@ -119,253 +141,311 @@ BEGIN
     location		= "items"
   END
 
-
-  COPY "%mod_root%/item_pack/items/mh#armr3.itm" "override"
-    SAY NAME2 @69
-    SAY IDENTIFIED_DESC @70
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr3"
+    location	= "items"
+    editstring	= "say_name=>69 say_description=>70"
+  END
 
 
   // mh#armr4 - Celestial Chain +2
 
-  COPY "%mod_root%/item_pack/items/mh#armr4.itm" "override"
-    SAY NAME2 @87
-    SAY IDENTIFIED_DESC @88
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr4"
+    location	= "items"
+    editstring	= "say_name=>87 say_description=>88"
+  END
 
 
   // mh#armr5 - Dwarven Full Plate +2
 
-  COPY "%mod_root%/item_pack/items/mh#armr5.itm" "override"
-    SAY NAME2 @89
-    SAY IDENTIFIED_DESC @90
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr5"
+    location	= "items"
+    editstring	= "say_name=>89 say_description=>90"
+  END
 
 
   // mh#armr6 - Black Swan Armor +2
 
-  COPY "%mod_root%/item_pack/items/mh#armr6.itm" "override"
-    SAY NAME2 @125
-    SAY IDENTIFIED_DESC @126
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr6"
+    location	= "items"
+    editstring	= "say_name=>125 say_description=>126"
+  END
 
 
   // mh#belt1 - Girdle of Dwarvenkind
 
-  COPY "%mod_root%/item_pack/items/mh#belt1.itm" "override"
-    SAY NAME2 @8
-    SAY IDENTIFIED_DESC @9
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt1"
+    location	= "items"
+    editstring	= "say_name=>8 say_description=>9"
+  END
 
 
   // mh#belt2 - Sunite Sash
 
-  COPY "%mod_root%/item_pack/items/mh#belt2.itm" "override"
-    SAY NAME2 @46
-    SAY IDENTIFIED_DESC @47
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt2"
+    location	= "items"
+    editstring	= "say_name=>46 say_description=>47"
+  END
 
 
   // mh#belt3 - Storm's Garter
 
-  COPY "%mod_root%/item_pack/items/mh#belt3.itm" "override"
-    SAY NAME2 @77
-    SAY IDENTIFIED_DESC @78
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt3"
+    location	= "items"
+    editstring	= "say_name=>77 say_description=>78"
+  END
 
 
   // mh#belt4 - Girdle of Beatification
 
-  COPY "%mod_root%/item_pack/items/mh#belt4.itm" "override"
-    SAY NAME2 @127
-    SAY IDENTIFIED_DESC @128
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt4"
+    location	= "items"
+    editstring	= "say_name=>127 say_description=>128"
+  END
 
 
   // mh#belt5 - Girdle of Ogre Blood
 
-  COPY "%mod_root%/item_pack/items/mh#belt5.itm" "override"
-    SAY NAME2 @129
-    SAY IDENTIFIED_DESC @130
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt5"
+    location	= "items"
+    editstring	= "say_name=>129 say_description=>130"
+  END
 
 
   // mh#belt6 - Belt of Vampire Protection
 
-  COPY "%mod_root%/item_pack/items/mh#belt6.itm" "override"
-    SAY NAME2 @219
-    SAY IDENTIFIED_DESC @252
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt6"
+    location	= "items"
+    editstring	= "say_name=>219 say_description=>252"
+  END
 
 
   // mh#belt7 - Girdle of Priestly Might
 
-  COPY "%mod_root%/item_pack/items/mh#belt7.itm" "override"
-    SAY NAME2 @240
-    SAY IDENTIFIED_DESC @241
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#belt7"
+    location	= "items"
+    editstring	= "say_name=>240 say_description=>241"
+  END
 
 
   // mh#blun1 - Radiant Star +1
 
-  COPY "%mod_root%/item_pack/items/mh#blun1.itm" "override"
-    SAY NAME2 @71
-    SAY IDENTIFIED_DESC @72
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
+    OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
+    OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
 
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("general" "undead")
-        parameter2	= 3
-        special		= 4
-      END
-
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("race" "lycanthrope")
-        parameter2	= 4
-        special		= 4
-      END
-
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("race" "demonic")
-        parameter2	= 4
-        special		= 4
-      END
+    MAKE_PATCH
+      say_name=>71
+      say_description=>72
+      add_effect_global_inline'1=>"opcode=>344 target=>1 timing=>2 parameter1=>%general_undead% parameter2=>3 mode=>4"
+      add_effect_global_inline'2=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4"
+      add_effect_global_inline'3=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_demonic% parameter2=>4 mode=>4"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>71
+      say_description=>72
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#blun1"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#blun2 - Slimecrusher +1
 
-  COPY "%mod_root%/item_pack/items/mh#blun2.itm" "override"
-    SAY NAME2 @179
-    SAY IDENTIFIED_DESC @180
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    OUTER_SET race_slime = IDS_OF_SYMBOL("race" "slime")
 
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("race" "slime")
-        parameter2	= 4
-        special		= 4
-      END
+    MAKE_PATCH
+      say_name=>179
+      say_description=>180
+      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_slime% parameter2=>4 mode=>4"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>179
+      say_description=>180
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#blun2"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#blun3 - Battle Star +4
 
-  COPY "%mod_root%/item_pack/items/mh#blun3.itm" "override"
-    SAY NAME2 @242
-    SAY IDENTIFIED_DESC @243
-
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 346	// Save vs. School bonus
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= 4
-        special		= 4	// Enchantment
-      END
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    MAKE_PATCH
+      say_name=>242
+      say_description=>243
+      add_effect_global_inline=>"opcode=>346 target=>1 timing=>2 parameter1=>4 mode=>4"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>242
+      say_description=>243
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#blun3"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#boot1 - Boots of the Master Ninja
 
-  COPY "%mod_root%/item_pack/items/mh#boot1.itm" "override"
-    SAY NAME2 @10
-    SAY IDENTIFIED_DESC @11
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#boot1"
+    location	= "items"
+    editstring	= "say_name=>10 say_description=>11"
+  END
 
 
   // mh#boot2 - Boots of Striding and Springing
 
-  COPY "%mod_root%/item_pack/items/mh#boot2.itm" "override"
-    SAY NAME2 @48
-    SAY IDENTIFIED_DESC @49
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#boot2"
+    location	= "items"
+    editstring	= "say_name=>48 say_description=>49"
+  END
 
 
   // mh#brac1 - Vambraces of Evil's Warding
 
-  COPY "%mod_root%/item_pack/items/mh#brac1.itm" "override"
-    SAY NAME2 @50
-    SAY IDENTIFIED_DESC @51
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac1"
+    location	= "items"
+    editstring	= "say_name=>50 say_description=>51"
+  END
 
 
   // mh#brac2 - Gauntlets of the Dwarven King
 
-  COPY "%mod_root%/item_pack/items/mh#brac2.itm" "override"
-    SAY NAME2 @12
-    SAY IDENTIFIED_DESC @13
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac2"
+    location	= "items"
+    editstring	= "say_name=>12 say_description=>13"
+  END
 
 
   // mh#brac3 - Bracers of Winter's Chill
 
-  COPY "%mod_root%/item_pack/items/mh#brac3.itm" "override"
-    SAY NAME2 @73
-    SAY IDENTIFIED_DESC @74
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac3"
+    location	= "items"
+    editstring	= "say_name=>73 say_description=>74"
+  END
 
 
   // mh#brac4 - Bracers of the Wind
 
-  COPY "%mod_root%/item_pack/items/mh#brac4.itm" "override"
-    SAY NAME2 @75
-    SAY IDENTIFIED_DESC @76
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac4"
+    location	= "items"
+    editstring	= "say_name=>75 say_description=>76"
+  END
 
 
   // mh#brac5 - Gauntlets of Smiting
 
-  COPY "%mod_root%/item_pack/items/mh#brac5.itm" "override"
-    SAY NAME2 @121
-    SAY IDENTIFIED_DESC @122
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac5"
+    location	= "items"
+    editstring	= "say_name=>121 say_description=>122"
+  END
 
 
   // mh#brac6 - Silver Bracers of Kedl
 
-  COPY "%mod_root%/item_pack/items/mh#brac6.itm" "override"
-    SAY NAME2 @131
-    SAY IDENTIFIED_DESC @132
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac6"
+    location	= "items"
+    editstring	= "say_name=>131 say_description=>132"
+  END
 
 
   // mh#brac7 - Gloves of Evasion
 
-  COPY "%mod_root%/item_pack/items/mh#brac7.itm" "override"
-    SAY NAME2 @244
-    SAY IDENTIFIED_DESC @245
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac7"
+    location	= "items"
+    editstring	= "say_name=>244 say_description=>245"
+  END
 
 
   // mh#btax1 - Foesplitter +1
 
-  COPY "%mod_root%/item_pack/items/mh#btax1.itm" "override"
-    SAY NAME2 @14
-    SAY IDENTIFIED_DESC @15
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#btax1"
+    location	= "items"
+    editstring	= "say_name=>14 say_description=>15"
+  END
 
 
   // mh#btax2 - Trollkiller +2
 
-  COPY "%mod_root%/item_pack/items/mh#btax2.itm" "override"
-    SAY NAME2 @123
-    SAY IDENTIFIED_DESC @124
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#btax1"
+    location	= "items"
+    editstring	= "say_name=>123 say_description=>124"
+  END
 
 
   // mh#btax3 - Redethemar +4
-
-  CREATE EFF "mh#vphit"
-    WRITE_LONG	0x0010 13	// Death: Instant Death
-    WRITE_LONG	0x0020 8	// Chunked death
-    WRITE_SHORT	0x0024 1
-    WRITE_LONG	0x002c 100
-
-
-  CREATE EFF "mh#vhmsg"
-    WRITE_LONG	0x0010 139	// Text: Display String
-    WRITE_LONG	0x001c 64285	// "Vorpal Hit" in BG2(EE)
-    WRITE_SHORT	0x0024 1
-    WRITE_LONG	0x002c 100
-
 
   LAUNCH_ACTION_FUNCTION install_spell
     STR_VAR
@@ -373,884 +453,1112 @@ BEGIN
     location	= "spells"
   END
 
-
-  COPY "%mod_root%/item_pack/items/mh#btax3.itm" "override"
-    SAY NAME2 @133
-    SAY IDENTIFIED_DESC @134
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#btax3"
+    location	= "items"
+    editstring	= "say_name=>133 say_description=>134"
+  END
 
 
   // mh#clck1 - Mutamin's Cloak
 
-  COPY "%mod_root%/item_pack/items/mh#clck1.itm" "override"
-    SAY NAME2 @16
-    SAY IDENTIFIED_DESC @17
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck1"
+    location	= "items"
+    editstring	= "say_name=>16 say_description=>17"
+  END
 
 
   // mh#clck2 - Battlecloak of Vycaena
 
-  COPY "%mod_root%/item_pack/items/mh#clck2.itm" "override"
-    SAY NAME2 @18
-    SAY IDENTIFIED_DESC @19
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck2"
+    location	= "items"
+    editstring	= "say_name=>18 say_description=>19"
+  END
 
 
   // mh#clck3 - Cloak of Arachnida
 
-  COPY "%mod_root%/item_pack/items/mh#clck3.itm" "override"
-    SAY NAME2 @79
-    SAY IDENTIFIED_DESC @80
-
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck3"
+    location	= "items"
+    editstring	= "say_name=>79 say_description=>80"
+  END
 
   // mh#clck4 - Cloak of the Night Sky
 
-  COPY "%mod_root%/item_pack/items/mh#clck4.itm" "override"
-    SAY NAME2 @216
-    SAY IDENTIFIED_DESC @116
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck4"
+    location	= "items"
+    editstring	= "say_name=>216 say_description=>116"
+  END
 
 
   // mh#clck5 - Bolder's Cloak of the Rogue
 
-  COPY "%mod_root%/item_pack/items/mh#clck5.itm" "override"
-    SAY NAME2 @220
-    SAY IDENTIFIED_DESC @221
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck5"
+    location	= "items"
+    editstring	= "say_name=>220 say_description=>221"
+  END
 
 
   // mh#comp1 - Meteoric Iron
 
-  COPY "%mod_root%/item_pack/items/mh#comp1.itm" "override"
-    SAY NAME2 @24
-    SAY IDENTIFIED_DESC @25
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#comp1"
+    location	= "items"
+    editstring	= "say_name=>24 say_description=>25"
+  END
 
 
-  // mh#comp2 - Mithral Ore
+  // mh#comp2 - Arandur Ore
 
-  COPY "%mod_root%/item_pack/items/mh#comp2.itm" "override"
-    SAY NAME2 @81
-    SAY IDENTIFIED_DESC @82
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#comp2"
+    location	= "items"
+    editstring	= "say_name=>81 say_description=>82"
+  END
 
 
   // mh#comp3 - Lux Veritatis
 
-  COPY "%mod_root%/item_pack/items/mh#comp3.itm" "override"
-    SAY NAME2 @83
-    SAY IDENTIFIED_DESC @84
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#comp3"
+    location	= "items"
+    editstring	= "say_name=>83 say_description=>84"
+  END
 
 
   // mh#comp4 - Rusty Katana
 
-  COPY "%mod_root%/item_pack/items/mh#comp4.itm" "override"
-    PATCH_IF GAME_IS "bgee"
-    BEGIN
-      SAY NAME1 #26711
-      SAY UNIDENTIFIED_DESC #26713
+  ACTION_IF GAME_IS "bgee"
+  BEGIN
+    MAKE_PATCH
+      set_unidentified_name=>26711
+      set_unidentified_description=>26713
+      say_name=>181
+      say_description=>182
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>181
+      say_description=>182
+    END
+  END
 
-    SAY NAME2 @181
-    SAY IDENTIFIED_DESC @182
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#comp4"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#comp5 - Unicorn Horn
 
-  COPY "%mod_root%/item_pack/items/mh#comp5.itm" "override"
-    SAY NAME1 @183
-    SAY NAME2 @184
-    SAY UNIDENTIFIED_DESC @185
-    SAY IDENTIFIED_DESC @186
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#comp5"
+    location	= "items"
+    editstring	= "say_unidentified_name=>183 say_unidentified_description=>185 say_name=>185 say_description=>186"
+  END
 
 
   // mh#dagg1 - Catclaw +3
 
-  COPY "%mod_root%/item_pack/items/mh#dagg1.itm" "override"
-    SAY NAME2 @52
-    SAY IDENTIFIED_DESC @53
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dagg1"
+    location	= "items"
+    editstring	= "say_name=>52 say_description=>53"
+  END
 
 
   // mh#dagg2 - Spinesheath +1
 
-  COPY "%mod_root%/item_pack/items/mh#dagg2.itm" "override"
-    SAY NAME2 @135
-    SAY IDENTIFIED_DESC @136
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dagg2"
+    location	= "items"
+    editstring	= "say_name=>135 say_description=>136"
+  END
 
 
   // mh#dart1 - Lein's Fiery Darts +1
 
-  COPY "%mod_root%/item_pack/items/mh#dart1.itm" "override"
-    SAY NAME2 @222
-    SAY IDENTIFIED_DESC @223
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dart1"
+    location	= "items"
+    editstring	= "say_name=>222 say_description=>223"
+  END
 
 
   // mh#dart2 - Chandler's Icy Darts +1
 
-  COPY "%mod_root%/item_pack/items/mh#dart2.itm" "override"
-    SAY NAME2 @224
-    SAY IDENTIFIED_DESC @225
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dart2"
+    location	= "items"
+    editstring	= "say_name=>224 say_description=>225"
+  END
 
 
   // mh#dart3 - Zilzanzer's Magnificent Darts +1
 
-  COPY "%mod_root%/item_pack/items/mh#dart3.itm" "override"
-    SAY NAME2 @236
-    SAY IDENTIFIED_DESC @237
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dart3"
+    location	= "items"
+    editstring	= "say_name=>236 say_description=>237"
+  END
 
 
   // mh#dart4 - Silver Dart of Selune +2
 
-  COPY "%mod_root%/item_pack/items/mh#dart4.itm" "override"
-    SAY NAME2 @238
-    SAY IDENTIFIED_DESC @239
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
+
+    MAKE_PATCH
+      say_name=>238
+      say_description=>239
+      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4"
+    END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>238
+      say_description=>238
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dart4"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#hamm1 - Final Strike +3
 
-  COPY "%mod_root%/item_pack/items/mh#hamm1.itm" "override"
-    SAY NAME2 @20
-    SAY IDENTIFIED_DESC @21
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#hamm1"
+    location	= "items"
+    editstring	= "say_name=>20 say_description=>21"
+  END
 
 
   // mh#helm1 - Helm of Valor
 
-  COPY "%mod_root%/item_pack/items/mh#helm1.itm" "override"
-    SAY NAME2 @22
-    SAY IDENTIFIED_DESC @23
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#helm1"
+    location	= "items"
+    editstring	= "say_name=>22 say_description=>23"
+  END
 
 
   // mh#helm2 - Helm of the Dwarven Lords
 
-  COPY "%mod_root%/item_pack/items/mh#helm2.itm" "override"
-    SAY NAME2 @117
-    SAY IDENTIFIED_DESC @118
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#helm2"
+    location	= "items"
+    editstring	= "say_name=>117 say_description=>118"
+  END
 
 
   // mh#helm3 - Blessed Helm of Lathander
 
-  COPY "%mod_root%/item_pack/items/mh#helm3.itm" "override"
-    SAY NAME2 @137
-    SAY IDENTIFIED_DESC @138
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#helm3"
+    location	= "items"
+    editstring	= "say_name=>137 say_description=>138"
+  END
 
 
   // mh#ioun1 - Pale Blue Ioun Stone
 
-  COPY "%mod_root%/item_pack/items/mh#ioun1.itm" "override"
-    SAY NAME2 @54
-    SAY IDENTIFIED_DESC @55
-
-    PATCH_IF $SFO_reserved_ini_hash("visible_ioun_stones")
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 215
-        target		= 1
-        timing		= 2
-        parameter2	= 1
-        STR_VAR
-        resource	= ~mh#vsio1~
-      END
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    MAKE_PATCH
+      say_name=>54
+      say_description=>55
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio1"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>54
+      say_description=>55
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun1"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#ioun2 - Crystal Clear Ioun Stone
 
-  COPY "%mod_root%/item_pack/items/mh#ioun2.itm" "override"
-    SAY NAME2 @91
-    SAY IDENTIFIED_DESC @56
-
-    PATCH_IF $SFO_reserved_ini_hash("visible_ioun_stones")
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 215
-        target		= 1
-        timing		= 2
-        parameter2	= 1
-        STR_VAR
-        resource		= ~mh#vsio2~
-      END
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    MAKE_PATCH
+      say_name=>91
+      say_description=>56
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio2"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>91
+      say_description=>56
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun2"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#ioun3 - Bright Orange Ioun Stone
 
-  COPY "%mod_root%/item_pack/items/mh#ioun3.itm" "override"
-    SAY NAME2 @187
-    SAY IDENTIFIED_DESC @188
-
-    PATCH_IF $SFO_reserved_ini_hash("visible_ioun_stones")
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 215
-        target		= 1
-        timing		= 2
-        parameter2	= 1
-        STR_VAR
-        resource	= ~mh#vsio3~
-      END
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    MAKE_PATCH
+      say_name=>187
+      say_description=>188
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio3"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>187
+      say_description=>188
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun3"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#ioun4 - Telkiira
 
-  COPY "%mod_root%/item_pack/items/mh#ioun4.itm" "override"
-    SAY NAME2 @189
-    SAY IDENTIFIED_DESC @190
-
-    PATCH_IF $SFO_reserved_ini_hash("visible_ioun_stones")
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 215
-        target		= 1
-        timing		= 2
-        parameter2	= 1
-        STR_VAR
-        resource	= ~mh#vsio4~
-      END
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    MAKE_PATCH
+      say_name=>189
+      say_description=>190
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio4"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>189
+      say_description=>190
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun4"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#ioun5 - Mottled Green Ioun Stone
 
-  COPY "%mod_root%/item_pack/items/mh#ioun5.itm" "override"
-    SAY NAME2 @226
-    SAY IDENTIFIED_DESC @227
-
-    PATCH_IF $SFO_reserved_ini_hash("visible_ioun_stones")
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 215
-        target		= 1
-        timing		= 2
-        parameter2	= 1
-        STR_VAR
-        resource	= ~mh#vsio4~
-      END
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    MAKE_PATCH
+      say_name=>226
+      say_description=>227
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio4"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>226
+      say_description=>227
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun5"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#ioun6 - Maroon Star Ioun Stone
 
-  COPY "%mod_root%/item_pack/items/mh#ioun6.itm" "override"
-    SAY NAME2 @228
-    SAY IDENTIFIED_DESC @229
-
-    PATCH_IF $SFO_reserved_ini_hash("visible_ioun_stones")
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 215
-        target		= 1
-        timing		= 2
-        parameter2	= 1
-        STR_VAR
-        resource	= ~mh#vsio3~
-      END
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    MAKE_PATCH
+      say_name=>228
+      say_description=>229
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio3"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>228
+      say_description=>229
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun6"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#lbow1 - Bow of Eletha
 
-  COPY "%mod_root%/item_pack/items/mh#lbow1.itm" "override"
-    SAY NAME2 @57
-    SAY IDENTIFIED_DESC @58
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#lbow1"
+    location	= "items"
+    editstring	= "say_name=>57 say_description=>58"
+  END
 
 
   // mh#misc1 - Pearl of Power
 
-  COPY "%mod_root%/item_pack/items/mh#misc1.itm" "override"
-    SAY NAME2 @139
-    SAY IDENTIFIED_DESC @140
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#misc1"
+    location	= "items"
+    editstring	= "say_name=>139 say_description=>140"
+  END
 
 
   // mh#misc2 - Bag of Tricks
 
-  COPY "%mod_root%/item_pack/items/mh#misc2.itm" "override"
-    SAY NAME2 @192
-    SAY IDENTIFIED_DESC @193
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#misc2"
+    location	= "items"
+    editstring	= "say_name=>192 say_description=>193"
+  END
 
 
   // mh#misc3 - Crystal Ball
 
-  COPY "%mod_root%/item_pack/items/mh#misc3.itm" "override"
-    SAY NAME1 @194
-    SAY NAME2 @194
-    SAY UNIDENTIFIED_DESC @195
-    SAY IDENTIFIED_DESC @196
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#misc3"
+    location	= "items"
+    editstring	= "say_both_names=>194 say_unidentified_description=>194 say_description=>196"
+  END
 
 
   // mh#misc4 - Gem of Seeing
 
-  COPY "%mod_root%/item_pack/items/mh#misc4.itm" "override"
-    SAY NAME2 @6
-    SAY IDENTIFIED_DESC @7
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#misc4"
+    location	= "items"
+    editstring	= "say_name=>6 say_description=>7"
+  END
 
 
   // mh#misc5 - Jade Snakes
 
-  COPY "%mod_root%/item_pack/items/mh#misc5.itm" "override"
-    SAY NAME2 @246
-    SAY IDENTIFIED_DESC @251
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#misc5"
+    location	= "items"
+    editstring	= "say_name=>246 say_description=>251"
+  END
 
 
   // mh#potn1 - Oil of Acid Resistance
 
-  COPY "%mod_root%/item_pack/items/mh#potn1.itm" "override"
-    SAY NAME2 @59
-    SAY IDENTIFIED_DESC @60
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn1"
+    location	= "items"
+    editstring	= "say_name=>59 say_description=>60"
+  END
 
 
   // mh#potn2 - Potion of Clairvoyance
 
-  COPY "%mod_root%/item_pack/items/mh#potn2.itm" "override"
-    SAY NAME2 @141
-    SAY IDENTIFIED_DESC @142
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn2"
+    location	= "items"
+    editstring	= "say_name=>141 say_description=>142"
+  END
 
 
   // mh#potn3 - Philter of Purification
 
-  COPY "%mod_root%/item_pack/items/mh#potn3.itm" "override"
-    SAY NAME2 @230
-    SAY IDENTIFIED_DESC @231
-
-    PATCH_IF FILE_EXISTS_IN_GAME "sppr316.spl"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION CLONE_EFFECT
-        INT_VAR
-        match_opcode	= 146
-        STR_VAR
-        match_resource	= "sppr317"
-        resource	= "sppr316"
-      END
-    END
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn3"
+    location	= "items"
+    editstring	= "say_name=>230 say_description=>231"
+  END
 
 
   // mh#potn4 - Oil of Disenchantment
 
-  COPY "%mod_root%/item_pack/items/mh#potn4.itm" "override"
-    SAY NAME2 @232
-    SAY IDENTIFIED_DESC @233
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn4"
+    location	= "items"
+    editstring	= "say_name=>232 say_description=>233"
+  END
 
 
   // mh#potn5 - Potion of Wizardry
 
   ACTION_IF ENGINE_IS "iwd1 how totlm"
   BEGIN
-    OUTER_SPRINT editstring ~add_effect_inline=>"opcode=>254 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"~
+    MAKE_PATCH
+      add_effect_inline=>"opcode=>254 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"
+    END
   END
 
   ACTION_IF ENGINE_IS "bgee bg2ee"
   BEGIN
-    OUTER_SPRINT editstring ~add_effect_inline=>"opcode=>321 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"~
+    MAKE_PATCH
+      add_effect_inline=>"opcode=>321 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"
+    END
   END
 
   ACTION_IF ENGINE_IS "bg2 tob"
   BEGIN
-    OUTER_SPRINT editstring ~clone_effect_inline=>"match=>opcode=142 opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 at_end=>1"~
+    MAKE_PATCH
+       clone_effect_inline=>"match=>opcode=142 opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 at_end=>1"
+    END
   END
 
   LAUNCH_ACTION_FUNCTION install_spell
     STR_VAR
     spell	= "mh#potn5"
     location	= "spells"
-    editstring
+    edits	= "patch_data"
   END
 
-
-  COPY "%mod_root%/item_pack/items/mh#potn5.itm" "override"
-    SAY NAME2 @247
-    SAY IDENTIFIED_DESC @248
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn5"
+    location	= "items"
+    editstring	= "say_name=>247 say_description=>248"
+  END
 
 
   // mh#quivX - Quiver(s) of Ehlonna
 
-  COPY "%mod_root%/item_pack/stores/mh#quivx.sto" "override/mh#quiv1.sto"
-       "%mod_root%/item_pack/stores/mh#quivx.sto" "override/mh#quiv2.sto"
-    SAY NAME2 @249
+  LAUNCH_ACTION_FUNCTION install_store
+    STR_VAR
+    store	= "mh#quivx=>mh#quiv1 mh#quivx=>mh#quiv2"
+    location	= "stores"
+    editstring	= "say_name=>249"
+  END
 
-
-  COPY "%mod_root%/item_pack/items/mh#quivx.itm" "override/mh#quiv1.itm"
-       "%mod_root%/item_pack/items/mh#quivx.itm" "override/mh#quiv2.itm"
-    SAY NAME2 @249
-    SAY IDENTIFIED_DESC @250
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#quivx=>mh#quiv1 mh#quivx=>mh#quiv2"
+    location	= "items"
+    editstring	= "say_name=>249 say_description=>250"
+  END
 
 
   // mh#ring1 - Ring of the Lich +3
 
-  COPY "%mod_root%/item_pack/items/mh#ring1.itm" "override"
-    SAY NAME2 @26
-    SAY IDENTIFIED_DESC @27
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring1"
+    location	= "items"
+    editstring	= "say_name=>26 say_description=>27"
+  END
 
 
   // mh#ring2 - Ring of Warmth
 
-  COPY "%mod_root%/item_pack/items/mh#ring2.itm" "override"
-    SAY NAME2 @28
-    SAY IDENTIFIED_DESC @29
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring2"
+    location	= "items"
+    editstring	= "say_name=>28 say_description=>29"
+  END
 
 
   // mh#ring3 - Ring of the Neophyte
 
-  COPY "%mod_root%/item_pack/items/mh#ring3.itm" "override"
-    SAY NAME2 @30
-    SAY IDENTIFIED_DESC @31
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring3"
+    location	= "items"
+    editstring	= "say_name=>30 say_description=>31"
+  END
 
 
   // mh#ring4 - Ring of Shocking Grasp
 
-  COPY "%mod_root%/item_pack/items/mh#ring4.itm" "override"
-    SAY NAME2 @32
-    SAY IDENTIFIED_DESC @33
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring4"
+    location	= "items"
+    editstring	= "say_name=>32 say_description=>33"
+  END
 
 
   // mh#ring5 - Ring of Protection from Silence
 
-  COPY "%mod_root%/item_pack/items/mh#ring5.itm" "override"
-    SAY NAME2 @85
-    SAY IDENTIFIED_DESC @86
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring5"
+    location	= "items"
+    editstring	= "say_name=>85 say_description=>86"
+  END
 
 
   // mh#ring6 - Ring of White Bone
 
-  COPY "%mod_root%/item_pack/items/mh#ring6.itm" "override"
-    SAY NAME2 @92
-    SAY IDENTIFIED_DESC @93
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring6"
+    location	= "items"
+    editstring	= "say_name=>92 say_description=>93"
+  END
 
 
   // mh#ring7 - Ring of Mind Shielding
 
-  COPY "%mod_root%/item_pack/items/mh#ring7.itm" "override"
-    SAY NAME2 @94
-    SAY IDENTIFIED_DESC @95
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring7"
+    location	= "items"
+    editstring	= "say_name=>94 say_description=>95"
+  END
 
 
   // mh#ring8 - Ring of Shooting Stars
 
-  COPY "%mod_root%/item_pack/items/mh#ring8.itm" "override"
-    SAY NAME2 @96
-    SAY IDENTIFIED_DESC @97
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring8"
+    location	= "items"
+    editstring	= "say_name=>96 say_description=>97"
+  END
 
 
-  // mh#ring9 - Ring of the Chosen
+  // mh#ring9 - Ring of Thex
 
-  COPY "%mod_root%/item_pack/items/mh#ring9.itm" "override"
-    SAY NAME2 @119
-    SAY IDENTIFIED_DESC @120
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ring9"
+    location	= "items"
+    editstring	= "say_name=>119 say_description=>120"
+  END
 
 
   // mh#ringa - Shield Ring
 
-  COPY "%mod_root%/item_pack/items/mh#ringa.itm" "override"
-    SAY NAME2 @143
-    SAY IDENTIFIED_DESC @144
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ringa"
+    location	= "items"
+    editstring	= "say_name=>143 say_description=>144"
+  END
 
 
   // mh#ringb - Edion's Ring of Wizardry
 
-  COPY "%mod_root%/item_pack/items/mh#ringb.itm" "override"
-    SAY NAME2 @145
-    SAY IDENTIFIED_DESC @146
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ringb"
+    location	= "items"
+    editstring	= "say_name=>145 say_description=>146"
+  END
 
 
   // mh#ringc - Ring of Water Control
 
-  COPY "%mod_root%/item_pack/items/mh#ringc.itm" "override"
-    SAY NAME2 @197
-    SAY IDENTIFIED_DESC @198
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ringc"
+    location	= "items"
+    editstring	= "say_name=>197 say_description=>198"
+  END
 
 
   // mh#ringd - Ring of Three Wishes
 
-  COPY "%mod_root%/item_pack/items/mh#ringd.itm" "override"
-    SAY NAME2 @234
-    SAY IDENTIFIED_DESC @235
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ringd"
+    location	= "items"
+    editstring	= "say_name=>234 say_description=>235"
+  END
 
 
   // mh#robe1 - Robe of the Elements
 
-  COPY "%mod_root%/item_pack/items/mh#robe1.itm" "override"
-    SAY NAME2 @98
-    SAY IDENTIFIED_DESC @99
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#robe1"
+    location	= "items"
+    editstring	= "say_name=>98 say_description=>99"
+  END
 
 
   // mh#robe2 - Robe of the Necromancer
 
-  COPY "%mod_root%/item_pack/items/mh#robe2.itm" "override"
-    SAY NAME2 @100
-    SAY IDENTIFIED_DESC @101
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#robe2"
+    location	= "items"
+    editstring	= "say_name=>100 say_description=>101"
+  END
 
 
   // mh#robe3 - Robe of the Pure Heart
 
-  COPY "%mod_root%/item_pack/items/mh#robe3.itm" "override"
-    SAY NAME1 @102
-    SAY UNIDENTIFIED_DESC @103
-    SAY NAME2 @104
-    SAY IDENTIFIED_DESC @105
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#robe2"
+    location	= "items"
+    editstring	= "say_unidentified_name=>102 say_unidentified_description=>103 say_name=>104 say_description=>105"
+  END
 
 
   // mh#robe4 - Shadow Dancer's Robe
 
-  COPY "%mod_root%/item_pack/items/mh#robe4.itm" "override"
-    SAY NAME1 @102
-    SAY UNIDENTIFIED_DESC @103
-    SAY NAME2 @106
-    SAY IDENTIFIED_DESC @107
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#robe2"
+    location	= "items"
+    editstring	= "say_unidentified_name=>102 say_unidentified_description=>103 say_name=>106 say_description=>107"
+  END
 
 
   // mh#shld1 - Meteoric Shield +2
 
-  COPY "%mod_root%/item_pack/items/mh#shld1.itm" "override"
-    SAY NAME2 @34
-    SAY IDENTIFIED_DESC @35
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld1"
+    location	= "items"
+    editstring	= "say_name=>34 say_description=>35"
+  END
 
 
   // mh#shld2 - Ankheg Shield +1
 
-  COPY "%mod_root%/item_pack/items/mh#shld2.itm" "override"
-    SAY NAME2 @61
-    SAY IDENTIFIED_DESC @62
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld2"
+    location	= "items"
+    editstring	= "say_name=>61 say_description=>62"
+  END
 
 
   // mh#shld3 - Shield of the Phoenix +2
 
-  COPY "%mod_root%/item_pack/items/mh#shld3.itm" "override"
-    SAY NAME2 @63
-    SAY IDENTIFIED_DESC @64
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld3"
+    location	= "items"
+    editstring	= "say_name=>63 say_description=>64"
+  END
 
 
   // mh#shld4 - Shield of the Three Kings +5
 
-  COPY "%mod_root%/item_pack/items/mh#shld4.itm" "override"
-    SAY NAME2 @147
-    SAY IDENTIFIED_DESC @148
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld4"
+    location	= "items"
+    editstring	= "say_name=>147 say_description=>148"
+  END
 
 
   // mh#shld5 - Shield of the Revenant +2
 
-  COPY "%mod_root%/item_pack/items/mh#shld5.itm" "override"
-    SAY NAME2 @149
-    SAY IDENTIFIED_DESC @150
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld5"
+    location	= "items"
+    editstring	= "say_name=>149 say_description=>150"
+  END
 
 
   // mh#shld6 - Mystery of the Dead +3
 
-  COPY "%mod_root%/item_pack/items/mh#shld6.itm" "override"
-    SAY NAME2 @151
-    SAY IDENTIFIED_DESC @152
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld6"
+    location	= "items"
+    editstring	= "say_name=>151 say_description=>152"
+  END
 
 
   // mh#shld7 - Waukeen's Defender +2
 
-  COPY "%mod_root%/item_pack/items/mh#shld7.itm" "override"
-    SAY NAME2 @153
-    SAY IDENTIFIED_DESC @154
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld7"
+    location	= "items"
+    editstring	= "say_name=>153 say_description=>154"
+  END
 
 
   // mh#sper1 - Alicorn Spear +2
 
-  COPY "%mod_root%/item_pack/items/mh#sper1.itm" "override"
-    SAY NAME2 @199
-    SAY IDENTIFIED_DESC @200
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#sper1"
+    location	= "items"
+    editstring	= "say_name=>199 say_description=>200"
+  END
 
 
   // mh#staf1 - Staff of Rumathil +2
 
-  COPY "%mod_root%/item_pack/items/mh#staf1.itm" "override"
-    SAY NAME2 @65
-    SAY IDENTIFIED_DESC @66
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#staf1"
+    location	= "items"
+    editstring	= "say_name=>65 say_description=>66"
+  END
 
 
   // mh#staf2 - Spendelard's Protector +1
 
-  COPY "%mod_root%/item_pack/items/mh#staf2.itm" "override"
-    SAY NAME2 @155
-    SAY IDENTIFIED_DESC @156
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#staf2"
+    location	= "items"
+    editstring	= "say_name=>155 say_description=>156"
+  END
 
 
   // mh#staf3 - Staff of Moradin's Breath +2
 
-  COPY "%mod_root%/item_pack/items/mh#staf3.itm" "override"
-    SAY NAME2 @157
-    SAY IDENTIFIED_DESC @158
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#staf3"
+    location	= "items"
+    editstring	= "say_name=>157 say_description=>158"
+  END
 
 
   // mh#staf4 - Staff of the Legion +5
 
-  COPY "%mod_root%/item_pack/items/mh#staf4.itm" "override"
-    SAY NAME2 @201
-    SAY IDENTIFIED_DESC @202
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#staf4"
+    location	= "items"
+    editstring	= "say_name=>201 say_description=>202"
+  END
 
 
   // mh#staf5 - Staff of Water +2
 
-  CREATE EFF "mh#staf5"
-    WRITE_LONG	0x0010 67	// Summon: Creature Summoning
-    WRITE_LONG	0x001c 5
-    WRITE_SHORT	0x0024 1
-    WRITE_LONG	0x002c 100
-    WRITE_ASCII	0x0030 "sumelwat" #8
-    WRITE_ASCII	0x0070 "spplanar" #8
-
-
-  COPY "%mod_root%/item_pack/items/mh#staf5.itm" "override"
-    SAY NAME2 @204
-    SAY IDENTIFIED_DESC @205
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#staf5"
+    location	= "items"
+    editstring	= "say_name=>204 say_description=>205"
+  END
 
 
   // mh#staf6 - Staff of Swarming Insects +2
 
-  COPY "%mod_root%/item_pack/items/mh#staf6.itm" "override"
-    SAY NAME2 @206
-    SAY IDENTIFIED_DESC @207
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#staf5"
+    location	= "items"
+    editstring	= "say_name=>206 say_description=>207"
+  END
 
 
   // mh#swrd1 - Terminus Est +2
 
-  COPY "%mod_root%/item_pack/items/mh#swrd1.itm" "override"
-    SAY NAME2 @36
-    SAY IDENTIFIED_DESC @37
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd1"
+    location	= "items"
+    editstring	= "say_name=>36 say_description=>37"
+  END
 
 
   // mh#swrd2 - Smythe's Slicer +1
-  COPY "%mod_root%/item_pack/items/mh#swrd2.itm" "override"
-    SAY NAME2 @38
-    SAY IDENTIFIED_DESC @39
 
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("race" "spider")
-        parameter2	= 4
-        special		= 3
-      END
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    OUTER_SET race_spider = IDS_OF_SYMBOL("race" "spider")
+
+    MAKE_PATCH
+      say_name=>179
+      say_description=>180
+      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_spider% parameter2=>4 mode=>3"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>179
+      say_description=>180
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd2"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#swrd3 - Scimitar of the Seven +4
 
-  COPY "%mod_root%/item_pack/items/mh#swrd3.itm" "override"
-    SAY NAME2 @108
-    SAY IDENTIFIED_DESC @109
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd3"
+    location	= "items"
+    editstring	= "say_name=>108 say_description=>109"
+  END
 
 
   // mh#swrd4 - Sword of the Planes +1
 
-  COPY "%mod_root%/item_pack/items/mh#swrd4.itm" "override"
-    SAY NAME2 @110
-    SAY IDENTIFIED_DESC @111
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd4"
+    location	= "items"
+    editstring	= "say_name=>110 say_description=>111"
+  END
 
-
-  COPY "%mod_root%/item_pack/items/mh#swd4a.itm" "override"
-    SAY NAME2 @112
-    SAY IDENTIFIED_DESC @113
-
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swd4a"
+    location	= "items"
+    editstring	= "say_name=>112 say_description=>113"
+  END
 
   ACTION_IF ENGINE_IS "bgee bg2ee"
   BEGIN
-    EXTEND_BOTTOM "baldur.bcs" "%mod_root%/item_pack/scripts/planar_sword_ee.baf"
+    EXTEND_BOTTOM "baldur.bcs" "%mod_root%/%component_loc%/scripts/planar_sword_ee.baf"
     USING "%scs_tra_loc%/%LANGUAGE%/planar_sword.tra"
-    EXTEND_BOTTOM "baldur25.bcs" "%mod_root%/item_pack/scripts/planar_sword_ee.baf"
+    EXTEND_BOTTOM "baldur25.bcs" "%mod_root%/%component_loc%/scripts/planar_sword_ee.baf"
     USING "%scs_tra_loc%/%LANGUAGE%/planar_sword.tra"
   END
   ELSE
   BEGIN
-    EXTEND_BOTTOM "baldur.bcs" "%mod_root%/item_pack/scripts/planar_sword.baf"
-    EXTEND_BOTTOM "baldur25.bcs" "%mod_root%/item_pack/scripts/planar_sword.baf"
+    EXTEND_BOTTOM "baldur.bcs" "%mod_root%/%component_loc%/scripts/planar_sword.baf"
+    EXTEND_BOTTOM "baldur25.bcs" "%mod_root%/%component_loc%/scripts/planar_sword.baf"
 
-    COPY_EXISTING "mh#swrd4.itm" "override"
-                  "mh#swd4a.itm" "override"
-      WRITE_SHORT 0x0042 0
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item		= "mh#swrd4 mh#swd4a"
+      editstring	= "lore=>0"
+    END
   END
 
 
   // mh#swrd5 - Amaunator's Legacy +3
 
-  CREATE EFF "mh#swrd5"
-    WRITE_LONG	0x0010 12	// HP: Damage
-    WRITE_LONG	0x001c 3
-    WRITE_LONG	0x0020 524288	// Fire
-    WRITE_SHORT	0x0024 1
-    WRITE_LONG	0x002c 100
-    WRITE_LONG	0x0038 2	// # dice
-    WRITE_LONG	0x003c 4	// # sides
+  LAUNCH_ACTION_FUNCTION make_effect
+    STR_VAR
+    effect		= "mh#swrd5"
+    editstring		= "opcode=>12 target=>2 timing=>1 parameter1=>3 parameter2=>524288 dicenum=>2 dicesize=>4"
+  END
 
-
-  COPY "%mod_root%/item_pack/items/mh#swrd5.itm" "override"
-    SAY NAME2 @159
-    SAY IDENTIFIED_DESC @160
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd5"
+    location	= "items"
+    editstring	= "say_name=>159 say_description=>160"
+  END
 
 
   // mh#swrd6 - Pale Justice +4
 
-  COPY "%mod_root%/item_pack/items/mh#swrd6.itm" "override"
-    SAY NAME2 @161
-    SAY IDENTIFIED_DESC @162
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd6"
+    location	= "items"
+    editstring	= "say_name=>161 say_description=>162"
+  END
 
 
   // mh#swrd7 - Mirthal +1
 
-  COPY "%mod_root%/item_pack/items/mh#swrd7.itm" "override"
-    SAY NAME2 @208
-    SAY IDENTIFIED_DESC @209
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    OUTER_SET race_kobold = IDS_OF_SYMBOL("race" "kobold")
 
-    PATCH_IF ENGINE_IS "bgee bg2ee"
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ADD_ITEM_EQEFFECT
-        INT_VAR
-        opcode		= 344	// Enchantment vs. creature type
-        target		= 1	// Self
-        timing		= 2	// While equipped
-        parameter1	= IDS_OF_SYMBOL("race" "kobold")
-        parameter2	= 4
-        special		= 2
-      END
+    MAKE_PATCH
+      say_name=>208
+      say_description=>209
+      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_kobold% parameter2=>4 mode=>2"
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>208
+      say_description=>209
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd7"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#swrd8 - Golden Sky +2
 
-  COPY "%mod_root%/item_pack/items/mh#swrd8.itm" "override"
-    PATCH_IF GAME_IS "bgee"
-    BEGIN
-      SAY NAME1 #26711
-      SAY UNIDENTIFIED_DESC #26713
+  ACTION_IF GAME_IS "bgee"
+  BEGIN
+    MAKE_PATCH
+      set_unidentified_name=>26711
+      set_unidentified_description=>26713
+      say_name=>210
+      say_description=>211
     END
+  END
+  ELSE
+  BEGIN
+    MAKE_PATCH
+      say_name=>210
+      say_description=>211
+    END
+  END
 
-    SAY NAME2 @210
-    SAY IDENTIFIED_DESC @211
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd8"
+    location	= "items"
+    edits	= "patch_data"
+  END
 
 
   // mh#swrd9 - Cold Flame +3
 
-  COPY "%mod_root%/item_pack/items/mh#swrd9.itm" "override"
-    SAY NAME2 @212
-    SAY IDENTIFIED_DESC @213
-
-
-  // Construct tome spells
-
-  COPY_EXISTING - "xplevel.2da" "dummy"
-    COUNT_2DA_COLS cols
-    COUNT_2DA_ROWS cols rows
-    SET max_level = cols - 2
-
-    FOR (SET y = 0; y < rows; ++y)
-    BEGIN
-      READ_2DA_ENTRY y 0 cols class
-
-      PATCH_IF "%class%" STRING_EQUAL_CASE "mage"
-            OR "%class%" STRING_EQUAL_CASE "cleric"
-      BEGIN
-        READ_2DA_ENTRY y 9 cols last_level_xp
-        FOR (SET x = 10; x < (cols - 1); ++x)
-        BEGIN
-          READ_2DA_ENTRY y x cols next_level_xp
-  	SET xp_gain = (next_level_xp - last_level_xp) / 2
-  	SET last_level_xp = next_level_xp
-  	
-  	PATCH_IF "%class%" STRING_EQUAL_CASE "mage"
-  	BEGIN
-  	  TEXT_SPRINT $mage_xp_gain("%x%") "%xp_gain%"
-  	END
-  	ELSE
-  	BEGIN
-  	  TEXT_SPRINT $cleric_xp_gain("%x%") "%xp_gain%"
-  	END
-        END
-      END
-    END
-
-
-  COPY "%mod_root%/item_pack/spells/mh#mtome.spl" "override"
-    LAUNCH_PATCH_FUNCTION CD_EXTEND-O-MATIC
-      INT_VAR
-      step_size		= 1
-      step_dur		= 0
-      level_cap		= max_level
-      min_lev_alt	= 10
-    END
-
-    PHP_EACH mage_xp_gain AS level => xp_gain
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ALTER_EFFECT
-        INT_VAR
-        match_opcode	= 104	// Stat: Experience Points
-        header		= level - 10
-        parameter1	= xp_gain
-      END
-    END
-
-
-  COPY "%mod_root%/item_pack/spells/mh#ctome.spl" "override"
-    LAUNCH_PATCH_FUNCTION CD_EXTEND-O-MATIC
-      INT_VAR
-      step_size		= 1
-      step_dur		= 0
-      level_cap		= max_level
-      min_lev_alt	= 10
-    END
-
-    PHP_EACH cleric_xp_gain AS level => xp_gain
-    BEGIN
-      LAUNCH_PATCH_FUNCTION ALTER_EFFECT
-        INT_VAR
-        match_opcode	= 104	// Stat: Experience Points
-        header		= level - 10
-        parameter1	= xp_gain
-      END
-    END
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd9"
+    location	= "items"
+    editstring	= "say_name=>212 say_description=>213"
+  END
 
 
   // mh#tome1 - Book of Exalted Deeds
 
-  COPY "%mod_root%/item_pack/items/mh#tome1.itm" "override"
-    SAY NAME2 @163
-    SAY IDENTIFIED_DESC @164
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#tome1"
+    location	= "items"
+    editstring	= "say_name=>163 say_description=>164"
+  END
 
 
   // mh#tome2 - Book of Vile Darkness
 
-  COPY "%mod_root%/item_pack/items/mh#tome2.itm" "override"
-    SAY NAME2 @165
-    SAY IDENTIFIED_DESC @166
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#tome2"
+    location	= "items"
+    editstring	= "say_name=>165 say_description=>166"
+  END
 
 
   // mh#tome3 - Libram of Silver Magic
 
-  COPY "%mod_root%/item_pack/items/mh#tome3.itm" "override"
-    SAY NAME2 @167
-    SAY IDENTIFIED_DESC @168
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#tome3"
+    location	= "items"
+    editstring	= "say_name=>167 say_description=>168"
+  END
 
 
   // mh#tome4 - Libram of Gainful Conjuration
 
-  COPY "%mod_root%/item_pack/items/mh#tome4.itm" "override"
-    SAY NAME2 @169
-    SAY IDENTIFIED_DESC @170
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#tome4"
+    location	= "items"
+    editstring	= "say_name=>169 say_description=>170"
+  END
 
 
   // mh#tome5 - Libram of Ineffable Damnation
 
-  COPY "%mod_root%/item_pack/items/mh#tome5.itm" "override"
-    SAY NAME2 @171
-    SAY IDENTIFIED_DESC @172
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#tome5"
+    location	= "items"
+    editstring	= "say_name=>171 say_description=>172"
+  END
 
 
   // mh#wand1 - Wand of Illusions
 
-  COPY "%mod_root%/item_pack/items/mh#wand1.itm" "override"
-    SAY NAME2 @67
-    SAY IDENTIFIED_DESC @68
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#wand1"
+    location	= "items"
+    editstring	= "say_name=>67 say_description=>68"
+  END
 
 
   // mh#wand2 - Elmira's Wand of Blasting
 
-  COPY "%mod_root%/item_pack/items/mh#wand2.itm" "override"
-    SAY NAME2 @214
-    SAY IDENTIFIED_DESC @215
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#wand2"
+    location	= "items"
+    editstring	= "say_name=>214 say_description=>215"
+  END
 END	// item_pack_core
 
 

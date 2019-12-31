@@ -1,5 +1,33 @@
 DEFINE_ACTION_FUNCTION install_item_pack
 BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "place_items_in_bg1"
+    RET
+    place_items_in_bg1	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "place_items_in_sod"
+    RET
+    place_items_in_sod	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "place_items_in_bg2"
+    RET
+    place_items_in_bg2	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "place_items_in_tob"
+    RET
+    place_items_in_tob	= value
+  END
+
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
     file	= "item_pack_resources"
@@ -29,15 +57,16 @@ BEGIN
     file	= "item_pack_aftercare"
   END
 
-  ACTION_IF GAME_INCLUDES "bg1" AND $SFO_reserved_ini_hash("place_items_in_bg1")
+  ACTION_IF GAME_INCLUDES "bg1" AND place_items_in_bg1
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
       file	= "place_items_in_bg1"
+      tra	= "place_items_in_bg1"
     END
   END
 
-  ACTION_IF GAME_INCLUDES "sod" AND $SFO_reserved_ini_hash("place_items_in_sod")
+  ACTION_IF GAME_INCLUDES "sod" AND place_items_in_sod
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
@@ -45,7 +74,7 @@ BEGIN
     END
   END
 
-  ACTION_IF GAME_INCLUDES "bg2" AND $SFO_reserved_ini_hash("place_items_in_bg2")
+  ACTION_IF GAME_INCLUDES "bg2" AND place_items_in_bg2
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
@@ -53,7 +82,7 @@ BEGIN
     END
   END
 
-  ACTION_IF GAME_INCLUDES "tob" AND $SFO_reserved_ini_hash("place_items_in_tob")
+  ACTION_IF GAME_INCLUDES "tob" AND place_items_in_tob
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR

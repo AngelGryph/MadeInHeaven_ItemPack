@@ -29,7 +29,7 @@ mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
 
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Battlecloak of Vycaena			Durlag's Tower D4 (chest)
-mh#clck3 Cloak of Arachnida			High Hedge (shop)
+mh#clck3 Cloak of Arachnida			Black Lily (shop)
 
 mh#comp1 Meteoric Iron				Balduran's Ship (chest)
 mh#comp2 Mithral Ore				Durlag's Tower D4 (sack)
