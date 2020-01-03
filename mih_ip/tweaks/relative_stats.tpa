@@ -1,0 +1,96 @@
+DEFINE_ACTION_FUNCTION relative_stats
+BEGIN
+  // Keeping this in WeiDU code for now.
+  // I have no idea how to do this in SFO.
+
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY exclude_items
+  BEGIN
+    "bclaw"	=> 1
+    "cdwolfm"	=> 1
+    "cdibclaw"	=> 1
+    "princess"	=> 1
+    "dw#shbrp"	=> 1
+    "dw#shear"	=> 1
+    "dw#shfir"	=> 1
+    "dw#shnbr"	=> 1
+    "dw#shnea"	=> 1
+    "dw#shnfi"	=> 1
+    "dw#shnsa"	=> 1
+    "dw#shnw1"	=> 1
+    "dw#shnw2"	=> 1
+    "dw#shnw3"	=> 1
+    "dw#shnwo"	=> 1
+    "dw#shnwy"	=> 1
+    "dw#shsal"	=> 1
+    "dw#shwe1"	=> 1
+    "dw#shwe2"	=> 1
+    "dw#shwe3"	=> 1
+    "dw#shwol"	=> 1
+    "dw#shwyv"	=> 1
+    "li#gwer"	=> 1
+    "li#were"	=> 1
+    "tg#gwer"	=> 1
+    "tg#were"	=> 1
+    "mh#pbpaw"	=> 1
+    "mh#wlfck"	=> 1
+  END
+
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY desc_updates
+  BEGIN
+    "belt06"	=> 0
+    "belt07"	=> 1
+    "belt08"	=> 2
+    "belt11"	=> 3
+    "belt15"	=> 4
+    "blun19"	=> 5
+    "brac06"	=> 6
+    "brac07"	=> 7
+    "hamm09"	=> 8
+    "ring30"	=> 9
+    "sw1h61"	=> 10
+    "bdblun06"	=> 11
+    "x#ringro"	=> 12
+    "ohbbrac1"	=> 13
+    "b!kegf"	=> 14
+    "beltstr"	=> 15
+    "ntbelt01"	=> 15
+    "gauntem"	=> 16
+    "ogi"	=> 17
+    "ntrobe01"	=> 17
+    "mh#belt7"	=> 18
+  END
+
+  COPY_EXISTING_REGEXP ".+\.itm" "override"
+    GET_OFFSET_ARRAY eq_array ITM_V10_GEN_EFFECTS
+    PHP_EACH eq_array AS int => eq_offset
+    BEGIN
+      READ_SHORT (eq_offset + 0x0000) opcode
+      READ_LONG (eq_offset + 0x0004) parameter1
+      READ_LONG (eq_offset + 0x0008) parameter2
+      READ_BYTE (eq_offset + 0x000c) timing
+
+      SPRINT item_name "%SOURCE_RES%"
+      TO_LOWER item_name
+
+      PATCH_IF (opcode ==  6 || opcode == 10 || opcode == 15 ||
+                opcode == 19 || opcode == 44 || opcode == 49) &&
+  	      parameter1 >= 18 && parameter2 == 1 && timing == 2 &&
+  	      NOT VARIABLE_IS_SET $exclude_items("%item_name%")
+      BEGIN
+        SET bonus = (parameter1 - 17) / 2 + 2
+
+        WRITE_LONG (eq_offset + 0x0004) bonus
+        WRITE_LONG (eq_offset + 0x0008) 0
+
+        PATCH_IF VARIABLE_IS_SET $desc_updates("%item_name%")
+        BEGIN
+          SET tra_no = $desc_updates("%item_name%")
+  	SAY IDENTIFIED_DESC ( AT "tra_no" )
+        END
+      END
+    END
+
+    BUT_ONLY_IF_IT_CHANGES
+END	// relative_stats
+
+

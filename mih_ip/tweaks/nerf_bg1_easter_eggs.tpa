@@ -1,0 +1,48 @@
+DEFINE_ACTION_FUNCTION nerf_bg1_easter_eggs
+BEGIN
+  // Coast Way
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%CoastWay%"
+    editstring	= ~swap_items=>"ring06=>ring16"~
+  END
+
+
+  // Friendly Arm Inn
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%FriendlyArmInn%"
+    editstring	= ~swap_items=>"%tutu_scriptbg%ring08=>ring18"~
+  END
+
+
+  // Nashkel
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%Nashkel%"
+    editstring	= ~swap_items=>"plat06=>chan05"~
+  END
+
+
+  // Fire Leaf Forest
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%FireLeafForest%"
+    editstring	= ~swap_items=>"scrl2e=>scrl1f"~
+  END
+
+
+  // Gibberling Mountains
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%FireLeafForest%"
+    editstring	= ~swap_items=>"ring02=>ring17"~
+  END
+END	// nerf_bg1_easter_eggs
+
+

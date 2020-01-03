@@ -1,0 +1,209 @@
+DEFINE_ACTION_FUNCTION sensible_shops
+BEGIN
+  // Check/retrieve ini variables
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini			= "bg1_fix_large_shields"
+    RET
+    bg1_fix_large_shields	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini			= "bg1_move_thieving_stuff"
+    RET
+    bg1_move_thieving_stuff	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini			= "bg1_add_obscure_items"
+    RET
+    bg1_add_obscure_items	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini			= "bg1_fix_thalantyr"
+    RET
+    bg1_fix_thalantyr		= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini			= "bg2_swap_hammers"
+    RET
+    bg2_swap_hammers		= value
+  END
+
+
+  // BG1 section
+
+  ACTION_IF GAME_INCLUDES "bg1"
+  BEGIN
+    // Fix illogical overabundance of large shields in BG1 shops
+
+    ACTION_IF bg1_fix_large_shields
+    BEGIN
+      LAUNCH_ACTION_FUNCTION edit_store
+        INT_VAR
+        allow_missing	= 1	// Some are not in BGT
+        STR_VAR
+        store		= "friend sto1112 sto1320 sto2606 sto4803 ulgoth"
+        editstring	= ~swap_items=>"shld06=>shld05"~
+      END
+    END
+
+
+    // Move thieving stuff to Black Lily
+
+    ACTION_IF bg1_move_thieving_stuff
+    BEGIN
+      MAKE_PATCH
+        literal'1=>~ADD_STORE_ITEM "leat08" AFTER "leat05" #0 #0 #0 "identified" #1~
+        literal'2=>~ADD_STORE_ITEM "misc75" AFTER "dagg01" #0 #0 #0 "identified" #1~
+      END
+  
+      LAUNCH_ACTION_FUNCTION edit_store
+        STR_VAR
+        store		= "stoblack"
+        edits		= "patch_data"
+      END
+    END
+
+
+    // Thunderhammer Smithy all fixes
+
+    ACTION_CLEAR_ARRAY patch_data
+
+    ACTION_IF bg1_fix_large_shields
+    BEGIN
+      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+      BEGIN
+        literal'1=>~ADD_STORE_ITEM "shld06" AFTER "shld05" #0 #0 #0 "identified" #1~
+      END
+    END
+
+    ACTION_IF bg1_move_thieving_stuff
+    BEGIN
+      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+      BEGIN
+        remove_items=>"leat08 misc75"
+      END
+    END
+
+    ACTION_IF bg1_add_obscure_items
+    BEGIN
+      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+      BEGIN
+        literal'2=>~ADD_STORE_ITEM "hamm02" AFTER "hamm01" #0 #0 #0 "identified" #1~
+        literal'3=>~ADD_STORE_ITEM "chan05" AFTER "chan04" #0 #0 #0 "identified" #1~
+        literal'4=>~ADD_STORE_ITEM "sper02" AFTER "sper01" #0 #0 #0 "identified" #1~
+      END
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_store
+      STR_VAR
+      store		= "taerum"
+      edits		= "patch_data"
+    END
+
+
+    // Feldepost's Inn all fixes
+
+    ACTION_CLEAR_ARRAY patch_data
+
+    ACTION_IF bg1_fix_large_shields
+    BEGIN
+      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+      BEGIN
+        literal'1=>~ADD_STORE_ITEM "shld06" AFTER "shld05" #0 #0 #0 "identified" #1~
+      END
+    END
+
+    ACTION_IF bg1_add_obscure_items
+    BEGIN
+      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+      BEGIN
+        literal'2=>~ADD_STORE_ITEM "bow04" AFTER "bow02" #0 #0 #0 "identified" #1~
+      END
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_store
+      STR_VAR
+      store		= "inn3351"
+      edits		= "patch_data"
+    END
+
+
+    // Thalantyr the *Conjurer*
+
+    ACTION_IF bg1_fix_thalantyr
+    BEGIN
+      MAKE_PATCH
+        remove_items=>"scrl75 scrl76 scrl87"
+        literal'1=>~ADD_STORE_ITEM "scrl95" AFTER "scrl94" #1 #0 #0 "identified" #3~
+        literal'2=>~ADD_STORE_ITEM "scrla3" AFTER "scrla2 scrl1q" #1 #0 #0 "identified" #3~
+        literal'3=>~ADD_STORE_ITEM "scrl6e" AFTER "scrla2 scrl1q" #1 #0 #0 "identified" #3~
+        literal'4=>~ADD_STORE_ITEM "scrl1l" AFTER "scrl1i" #1 #0 #0 "identified" #3~
+        literal'5=>~ADD_STORE_ITEM "scrl1t" AFTER "scrl1q" #1 #0 #0 "identified" #3~
+        literal'6=>~ADD_STORE_ITEM "scrl2a" BEFORE "wand08" #1 #0 #0 "identified" #1~
+        literal'7=>~ADD_STORE_ITEM "scrl6r" BEFORE "wand08" #1 #0 #0 "identified" #1~
+      END
+
+      LAUNCH_ACTION_FUNCTION edit_store
+        STR_VAR
+        store		= "highhedg"
+        edits		= "patch_data"
+      END
+    END
+  END	// GAME_INCLUDES "bg1"
+
+
+  // BG2 section
+
+  ACTION_IF GAME_INCLUDES "bg2"
+  BEGIN
+    // Hammer Swap: Borok's Fist <=> Aishideena
+
+    ACTION_IF bg2_swap_hammers
+    BEGIN
+      LAUNCH_ACTION_FUNCTION edit_store
+        STR_VAR
+        store		= "ribald"
+        editstring	= ~swap_items=>"hamm05=>hamm03"~
+      END
+
+      LAUNCH_ACTION_FUNCTION edit_area
+        STR_VAR
+        area		= "ar0204"
+        editstring	= ~swap_items=>"hamm03=>hamm05"~
+      END
+
+      ACTION_IF ENGINE_IS "bg2ee"
+      BEGIN
+<<<<<<<< %mod_root%/%component_loc%/inline/hammer_swap.baf
+IF
+  Global("OH_IMPORT02","GLOBAL",2)
+  Global("OH_IMPORT02","AR0702",0)
+THEN
+  RESPONSE #100
+    RemoveStoreItem("ribald","hamm03",1)
+    SetGlobal("OH_IMPORT02","GLOBAL",100)
+    SetGlobal("OH_IMPORT02","AR0702",1)
+END
+>>>>>>>>
+
+        LAUNCH_ACTION_FUNCTION extend_area_script
+          STR_VAR
+	  area		= "ar0702"
+	  top		= "hammer_swap"
+	  location	= "inline"
+        END
+      END
+    END
+  END	// GAME_INCLUDES "bg2"
+END	// sensible_shops
+
+

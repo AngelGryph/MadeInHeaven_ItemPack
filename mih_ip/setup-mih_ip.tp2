@@ -54,7 +54,7 @@ END
 // BG1-style wands
 
 BEGIN ~BG1-style Wands of Frost & -Lightning~
-GROUP ~Optional Item Tweaks~
+GROUP ~Item Functionality Tweaks~
 
 REQUIRE_PREDICATE NOT GAME_IS "bgee" ~This component is not applicable to your game.~
 
@@ -69,7 +69,7 @@ END
 
 BEGIN ~Healing potions work as in Pen & Paper~
 SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Optional Item Tweaks~
+GROUP ~Item Functionality Tweaks~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -80,7 +80,7 @@ END
 
 BEGIN ~Healing Potions work as in Icewind Dale~
 SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Optional Item Tweaks~
+GROUP ~Item Functionality Tweaks~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -91,7 +91,7 @@ END
 
 BEGIN ~Healing Potions work as in Baldur's Gate~
 SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Optional Item Tweaks~
+GROUP ~Item Functionality Tweaks~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -100,15 +100,92 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// Relative Stats
+
+BEGIN ~Equipped items give relative stat bonuses~
+GROUP ~Item Functionality Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "relative_stats"
+  location		= "tweaks"
+  tra			= "relative_stats"
+END
+
+
+// Cap charges of wands and staves
+
+BEGIN ~Cap charges of Wands and Staves~
+GROUP ~Item Functionality Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "cap_charges"
+  location		= "tweaks"
+END
+
+
 // Miscellaneous Item Improvements
 
 BEGIN ~Miscellaneous Item Improvements (see readme)~
-GROUP ~Optional Item Tweaks~
+GROUP ~Item Functionality Tweaks~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file			= "item_improvements"
   location		= "tweaks"
+END
+
+
+// Potions of Extra Healing in BG1
+
+BEGIN ~Add Potions of Extra Healing in BG1~
+GROUP ~Item Availability Tweaks~
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "extra_healing_in_bg1"
+  location	= "tweaks"
+END
+
+
+// Nerf BG1 easter egg items
+
+BEGIN ~Nerf BG1 easter egg items~
+GROUP ~Item Availability Tweaks~
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "nerf_bg1_easter_eggs"
+  location	= "tweaks"
+END
+
+
+// Temples sell Priest Scrolls
+
+BEGIN ~Temples sell Priest Scrolls~
+GROUP ~Item Availability Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "temples_sell_scrolls"
+  location	= "tweaks"
+END
+
+
+// Sensible Shops (see readme)
+
+BEGIN ~Sensible Shops (see readme)~
+GROUP ~Item Availability Tweaks~
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "sensible_shops"
+  location	= "tweaks"
 END
 
 

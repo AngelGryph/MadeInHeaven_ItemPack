@@ -1,0 +1,77 @@
+DEFINE_ACTION_FUNCTION extra_healing_in_bg1
+BEGIN
+  // Distribute potions of extra healing to major temples and some shops.
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "extra_healing_shops"
+    RET
+    extra_healing_shops	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "extra_healing_minimum"
+    RET
+    extra_healing_minimum	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "extra_healing_maximum"
+    RET
+    extra_healing_maximum	= value
+  END
+
+  ACTION_IF extra_healing_shops
+  BEGIN
+    MAKE_PATCH
+      literal=>~ADD_STORE_ITEM + "potn52" AFTER "potn08" #1 #0 #0 "identified" (RANDOM(%extra_healing_minimum% %extra_healing_maximum%))~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_store
+      STR_VAR
+      store	= "tem0002 tem0131 tem0132 tem3402 tem4003 stoblack ulgoth erdane"
+      edits	= "patch_data"
+    END
+  END
+
+
+  // Replace large stacks of healing potions in Durlag's Tower with
+  // equivalent stacks of potions of extra healing.
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "extra_healing_durlag"
+    RET
+    extra_healing_durlag	= value
+  END
+
+  ACTION_IF extra_healing_durlag
+  BEGIN
+    COPY_EXISTING "%DurlagsTower_D1%.are" "override"
+                  "%DurlagsTower_D2%.are" "override"
+                  "%DurlagsTower_D3%.are" "override"
+                  "%DurlagsTower_D4%.are" "override"
+      GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
+      PHP_EACH cont_array AS int => cont_offset
+      BEGIN
+        GET_OFFSET_ARRAY2 itm_array cont_offset ARE_V10_ITEMS
+        PHP_EACH itm_array AS int => itm_offset
+        BEGIN
+          READ_ASCII (itm_offset + 0x0000) itm_resref
+          READ_SHORT (itm_offset + 0x000a) amount
+
+          PATCH_IF "%itm_resref%" STRING_EQUAL_CASE "potn08" AND amount > 2
+          BEGIN
+            WRITE_ASCII (itm_offset + 0x0000) "potn52" #8
+  	  WRITE_SHORT (itm_offset + 0x000a) (amount + 1) / 3
+          END
+        END
+      END
+
+      BUT_ONLY_IF_IT_CHANGES	// Other mods may already have done this.
+  END
+END	// extra_healing_in_bg1
+
+

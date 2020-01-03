@@ -1,0 +1,146 @@
+DEFINE_ACTION_FUNCTION cap_charges
+BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "charge_cap_wands"
+    RET
+    charge_cap_wands	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "charge_cap_staves"
+    RET
+    charge_cap_staves	= value
+  END
+
+
+  // Keeping this in WeiDU for now.
+  // I have no idea how to do it in SFO.
+
+  COPY_EXISTING_REGEXP ".+\.itm" "override"
+    PATCH_MATCH SHORT_AT (0x01c)
+    WITH
+    0x001a	// Staff
+    BEGIN
+      SET charge_cap = charge_cap_staves
+    END
+    0x0023	// Wand
+    BEGIN
+      SET charge_cap = charge_cap_wands
+    END
+    DEFAULT
+      SET charge_cap = 0
+    END	// MATCH
+
+    
+    PATCH_IF charge_cap > 0
+    BEGIN
+      SET $item_charge_cap("%SOURCE_RES%") = charge_cap
+
+      GET_OFFSET_ARRAY ab_array ITM_V10_HEADERS
+      PHP_EACH ab_array AS int => ab_offset
+      BEGIN
+        PATCH_IF SHORT_AT (ab_offset + 0x0022) > charge_cap
+        BEGIN
+          WRITE_SHORT (ab_offset + 0x0022) charge_cap
+        END
+      END
+    END
+
+    BUT_ONLY_IF_IT_CHANGES
+
+
+  COPY_EXISTING_REGEXP ".+\.cre" "override"
+    GET_OFFSET_ARRAY itm_array CRE_V10_ITEMS
+    PHP_EACH itm_array AS int => itm_offset
+    BEGIN
+      READ_ASCII (itm_offset + 0x0000) itm_resref
+
+      PATCH_IF VARIABLE_IS_SET $item_charge_cap("%itm_resref%")
+      BEGIN
+        SET charge_cap = $item_charge_cap("%itm_resref%")
+
+        PATCH_IF SHORT_AT (itm_offset + 0x000a) > charge_cap
+        BEGIN
+          WRITE_SHORT (itm_offset + 0x000a) charge_cap
+        END
+
+        PATCH_IF SHORT_AT (itm_offset + 0x000c) > charge_cap
+        BEGIN
+          WRITE_SHORT (itm_offset + 0x000c) charge_cap
+        END
+
+        PATCH_IF SHORT_AT (itm_offset + 0x000e) > charge_cap
+        BEGIN
+          WRITE_SHORT (itm_offset + 0x000e) charge_cap
+        END
+      END
+    END
+
+    BUT_ONLY_IF_IT_CHANGES
+
+
+  COPY_EXISTING_REGEXP ".+\.sto" "override"
+    GET_OFFSET_ARRAY itm_array STO_V10_ITEMS_SOLD
+    PHP_EACH itm_array AS int => itm_offset
+    BEGIN
+      READ_ASCII (itm_offset + 0x000) itm_resref
+      PATCH_IF VARIABLE_IS_SET $item_charge_cap("%itm_resref%")
+      BEGIN
+        SET charge_cap = $item_charge_cap("%itm_resref%")
+
+        PATCH_IF SHORT_AT (itm_offset + 0x000a) > charge_cap
+        BEGIN
+          WRITE_SHORT (itm_offset + 0x000a) charge_cap
+        END
+
+        PATCH_IF SHORT_AT (itm_offset + 0x000c) > charge_cap
+        BEGIN
+          WRITE_SHORT (itm_offset + 0x000c) charge_cap
+        END
+
+        PATCH_IF SHORT_AT (itm_offset + 0x000e) > charge_cap
+        BEGIN
+          WRITE_SHORT (itm_offset + 0x000e) charge_cap
+        END
+      END
+    END
+
+    BUT_ONLY_IF_IT_CHANGES
+
+
+  COPY_EXISTING_REGEXP ".+\.are" "override"
+    GET_OFFSET_ARRAY cont_array ARE_V10_CONTAINERS
+    PHP_EACH cont_array AS int => cont_offset
+    BEGIN
+      GET_OFFSET_ARRAY2 itm_array cont_offset ARE_V10_ITEMS
+      PHP_EACH itm_array AS int => itm_offset
+      BEGIN
+        READ_ASCII (itm_offset + 0x0000) itm_resref
+        PATCH_IF VARIABLE_IS_SET $item_charge_cap("%itm_resref%")
+        BEGIN
+          SET charge_cap = $item_charge_cap("%itm_resref%")
+
+  	PATCH_IF SHORT_AT (itm_offset + 0x000a) > charge_cap
+  	BEGIN
+  	  WRITE_SHORT (itm_offset + 0x000a) charge_cap
+  	END
+
+  	PATCH_IF SHORT_AT (itm_offset + 0x000c) > charge_cap
+  	BEGIN
+  	  WRITE_SHORT (itm_offset + 0x000c) charge_cap
+  	END
+
+  	PATCH_IF SHORT_AT (itm_offset + 0x000e) > charge_cap
+  	BEGIN
+  	  WRITE_SHORT (itm_offset + 0x000e) charge_cap
+  	END
+        END
+      END
+    END
+
+    BUT_ONLY_IF_IT_CHANGES
+END	// cap_charges
+
+
