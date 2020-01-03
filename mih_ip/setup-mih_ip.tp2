@@ -165,18 +165,6 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Temples sell Priest Scrolls
-
-BEGIN ~Temples sell Priest Scrolls~
-GROUP ~Item Availability Tweaks~
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "temples_sell_scrolls"
-  location	= "tweaks"
-END
-
-
 // Sensible Shops (see readme)
 
 BEGIN ~Sensible Shops (see readme)~
