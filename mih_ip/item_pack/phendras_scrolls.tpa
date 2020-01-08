@@ -1,0 +1,37 @@
+DEFINE_ACTION_FUNCTION phendras_scrolls
+BEGIN
+  LAUNCH_ACTION_FUNCTION install_store
+    STR_VAR
+    store	= "mh#phend"
+    location	= "stores"
+    editstring	= "say_name=>30"
+  END
+
+  ADD_JOURNAL @15 @17 @20
+
+  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/phendras_scrolls.d"
+
+  LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+    STR_VAR
+    dialog	= "mh#phend"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_creature
+    STR_VAR
+    creature	= "mh#phend"
+    location	= "actors"
+    editstring	= "say_both_names=>29"
+  END
+
+  MAKE_PATCH
+    add_actor_inline=>~actor_name=>"{literal:Phendra}" actor_resource=>"mh#phend" actor_x_coord_start=>285 actor_y_coord_start=>435 actor_x_coord_dest=>285 actor_y_coord_dest=>435 actor_orientation=>13~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%NashkelCarnival_ArmorTent%"
+    edits	= "patch_data"
+  END
+END	// phendras_scrolls
+
+

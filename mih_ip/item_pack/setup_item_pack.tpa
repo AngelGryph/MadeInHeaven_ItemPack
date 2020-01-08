@@ -1,4 +1,4 @@
-DEFINE_ACTION_FUNCTION install_item_pack
+DEFINE_ACTION_FUNCTION setup_item_pack
 BEGIN
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
@@ -36,8 +36,8 @@ BEGIN
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
     file	= "summoned_monsters"
-    locbase	= "shared"
     tra		= "summoned_monsters"
+    locbase	= "shared"
   END
 
   LAUNCH_ACTION_FUNCTION run
@@ -62,7 +62,6 @@ BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
       file	= "place_items_in_bg1"
-      tra	= "place_items_in_bg1"
     END
   END
 
@@ -89,6 +88,6 @@ BEGIN
       file	= "place_items_in_tob"
     END
   END
-END	// install_item_pack
+END	// setup_item_pack
 
 

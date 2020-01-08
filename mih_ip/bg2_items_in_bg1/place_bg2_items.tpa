@@ -1,46 +1,5 @@
-DEFINE_ACTION_FUNCTION bg2_items_in_bg1
+DEFINE_ACTION_FUNCTION place_bg2_items
 BEGIN
-  // Missing BG2 items in BG1EE
-
-  ACTION_IF GAME_IS "bgee"
-  BEGIN
-    LAUNCH_ACTION_FUNCTION install_item
-      STR_VAR
-      item		= "amul19"
-      location		= "items"
-      editstring	= "say_name=>0 say_description=>1"
-    END
-
-    LAUNCH_ACTION_FUNCTION install_item
-      STR_VAR
-      item		= "boot07"
-      location		= "items"
-      editstring	= "say_name=>2 say_description=>3"
-    END
-
-    LAUNCH_ACTION_FUNCTION install_item
-      STR_VAR
-      item		= "clck23"
-      location		= "items"
-      editstring	= "say_name=>4 say_description=>5"
-    END
-
-    LAUNCH_ACTION_FUNCTION install_item
-      STR_VAR
-      item		= "clck23"
-      location		= "items"
-      editstring	= "say_name=>6 say_description=>7"
-    END
-
-    LAUNCH_ACTION_FUNCTION install_item
-      STR_VAR
-      item		= "sw1h37"
-      location		= "items"
-      editstring	= "say_name=>8 say_description=>9 price=>4800"
-    END
-  END
-
-
   // High Hedge (Thalantyr)
   //
   // ring46 - Ring of Anti-Venom
@@ -141,6 +100,6 @@ BEGIN
       STR_VAR
       item_to_add		= "dagg11"
     END
-END	// bg2_items_in_bg1
+END	// place_bg2_items
 
 

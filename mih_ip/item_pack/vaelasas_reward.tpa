@@ -1,0 +1,12 @@
+DEFINE_ACTION_FUNCTION vaelasas_reward
+BEGIN
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "vaelasa"
+    editstring	= ~add_items=>"mh#belt2(belt)~
+  END
+
+  COMPILE "%mod_root%/item_pack/dialogs/vaelasas_reward.d"
+END	// vaelasas_reward
+
+

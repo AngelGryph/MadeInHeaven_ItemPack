@@ -1,0 +1,51 @@
+DEFINE_ACTION_FUNCTION import_bg1_items
+BEGIN
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    files	= "mh#impt1 mh#impt2 mh#impt3"
+    location	= "tables"
+    postfix	= "2da"
+  END
+
+  LAUNCH_ACTION_FUNCTION extend_area_script
+    STR_VAR
+    area	= "ar0602"
+    top		= "import_itempack"
+    location	= "scripts"
+  END
+
+  ACTION_IF ENGINE_IS "bgee bg2ee"
+  BEGIN
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area	= "ar0602"
+      top	= "import_itempack_ee"
+      bottom	= "import_itempack_ee_fin"
+      location	= "scripts"
+    END
+
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area	= "ar0602"
+      top	= "import_itempack_ee"
+      bottom	= "import_itempack_ee_fin"
+      location	= "scripts"
+    END
+
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area	= "ar0700"
+      top	= "import_itempack_maheer"
+      bottom	= "import_itempack_ee_fin"
+      location	= "scripts"
+    END
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME "k#import.2da"
+  BEGIN
+    COPY_EXISTING "k#import.2da" "override"
+      APPEND_FILE TEXT "%mod_root%/%component_loc%/tables/eet_import.2da"
+  END
+END	// import_bg1_items
+
+

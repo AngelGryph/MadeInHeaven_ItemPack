@@ -1382,15 +1382,19 @@ BEGIN
 
   ACTION_IF ENGINE_IS "bgee bg2ee"
   BEGIN
-    EXTEND_BOTTOM "baldur.bcs" "%mod_root%/%component_loc%/scripts/planar_sword_ee.baf"
-    USING "%scs_tra_loc%/%LANGUAGE%/planar_sword.tra"
-    EXTEND_BOTTOM "baldur25.bcs" "%mod_root%/%component_loc%/scripts/planar_sword_ee.baf"
-    USING "%scs_tra_loc%/%LANGUAGE%/planar_sword.tra"
+    LAUNCH_ACTION_FUNCTION extend
+      STR_VAR
+      script	= "baldur baldur25"
+      bottom	= "scripts/planar_sword_ee"
+    END
   END
   ELSE
   BEGIN
-    EXTEND_BOTTOM "baldur.bcs" "%mod_root%/%component_loc%/scripts/planar_sword.baf"
-    EXTEND_BOTTOM "baldur25.bcs" "%mod_root%/%component_loc%/scripts/planar_sword.baf"
+    LAUNCH_ACTION_FUNCTION extend
+      STR_VAR
+      script	= "baldur baldur25"
+      bottom	= "scripts/planar_sword"
+    END
 
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR

@@ -153,7 +153,7 @@ BEGIN
 
       ACTION_IF ENGINE_IS "bg2ee"
       BEGIN
-<<<<<<<< %mod_root%/%component_loc%/inline/hammer_swap.baf
+<<<<<<<< .../%mod_root%-inline/hammer_swap.baf
 IF
   Global("OH_IMPORT02","GLOBAL",2)
   Global("OH_IMPORT02","AR0702",0)
@@ -169,7 +169,7 @@ END
           STR_VAR
 	  area		= "ar0702"
 	  top		= "hammer_swap"
-	  location	= "inline"
+	  inline	= "yes"
         END
       END
     END

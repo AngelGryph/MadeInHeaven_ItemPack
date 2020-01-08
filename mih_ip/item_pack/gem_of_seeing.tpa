@@ -1,0 +1,44 @@
+DEFINE_ACTION_FUNCTION gem_of_seeing
+BEGIN
+  ADD_JOURNAL @10 @19 @27 @29 @36 @38
+
+  COMPILE "%mod_root%/item_pack/dialogs/gem_of_seeing.d"
+
+  LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+    STR_VAR
+    dialog	= "mh#hlftr"
+  END
+
+  LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+    STR_VAR
+    dialog	= "thalan"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "halftr"
+    editstring	= "dv=>mh#Furret"
+  END
+
+  LAUNCH_ACTION_FUNCTION clone_creature
+    STR_VAR
+    creature	= "halftr=>mh#hlftr"
+    editstring	= ~script_default=>wtrunsgt dialog=>mh#Furret replace_items=>"mh#comp3(qitem1)"~
+  END
+
+  LAUNCH_ACTION_FUNCTION install_creature
+    STR_VAR
+    creature	= "mh#bobas"
+    location	= "actors"
+    editstring	= "say_both_names=>52"
+  END
+
+  LAUNCH_ACTION_FUNCTION extend_area_script
+    STR_VAR
+    area	= "%Gullykin%"
+    bottom	= "gemquest_gullykin"
+    location	= "scripts"
+  END
+END	// gem_of_seeing
+
+

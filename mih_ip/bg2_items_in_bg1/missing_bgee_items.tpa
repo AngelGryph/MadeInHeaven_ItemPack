@@ -1,0 +1,41 @@
+DEFINE_ACTION_FUNCTION missing_bgee_items
+BEGIN
+  // Missing BG2 items in BG1EE
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "amul19"
+    location		= "items"
+    editstring	= "say_name=>0 say_description=>1"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "boot07"
+    location		= "items"
+    editstring	= "say_name=>2 say_description=>3"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "clck23"
+    location		= "items"
+    editstring	= "say_name=>4 say_description=>5"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "clck23"
+    location		= "items"
+    editstring	= "say_name=>6 say_description=>7"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "sw1h37"
+    location		= "items"
+    editstring	= "say_name=>8 say_description=>9 price=>4800"
+  END
+END	// missing_bgee_items
+
+

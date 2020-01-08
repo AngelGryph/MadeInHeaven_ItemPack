@@ -1,0 +1,44 @@
+DEFINE_ACTION_FUNCTION brokks_forge
+BEGIN
+  LAUNCH_ACTION_FUNCTION install_store
+    STR_VAR
+    store	= "mh#brokk"
+    location	= "stores"
+    editstring	= "say_name=>90"
+  END
+
+  ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 @81 @84 @87
+
+  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/brokks_forge.d"
+
+  LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+    STR_VAR
+    dialog	= "mh#brokk"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_creature
+    STR_VAR
+    creature	= "mh#brokk"
+    location	= "actors"
+    editstring	= "say_both_names=>89"
+  END
+
+  MAKE_PATCH
+    delete_actor=>null
+    add_actor_inline=>~actor_name=>"{literal:Brokk}" actor_resource=>"mh#brokk" actor_x_coord_start=>450 actor_y_coord_start=>300 actor_x_coord_dest=>450 actor_y_coord_dest=>300 actor_orientation=>10~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%FriendlyArmInn_House%"
+    edits	= "patch_data"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%FriendlyArmInn%"
+    editstring	= ~add_mapnote_inline=>"say_mapnote_text=>90 mapnote_color=>0 mapnote_xloc=>1500 mapnote_yloc=>1900"~
+  END
+END	// brokks_forge
+
+

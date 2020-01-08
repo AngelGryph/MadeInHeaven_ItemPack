@@ -32,7 +32,7 @@ BEGIN ~Made in Heaven: Item Pack~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file		= "install_item_pack"
+  file		= "setup_item_pack"
   location	= "item_pack"
 END
 
@@ -45,9 +45,8 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file		= "bg2_items_in_bg1"
-  location	= "bg2_in_bg1"
-  tra		= "bg2_items_in_bg1"
+  file		= "setup_bg2_items_in_bg1"
+  location	= "bg2_items_in_bg1"
 END
 
 
