@@ -25,7 +25,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item		= "clck23"
+    item		= "ring46"
     location		= "items"
     editstring	= "say_name=>6 say_description=>7"
   END

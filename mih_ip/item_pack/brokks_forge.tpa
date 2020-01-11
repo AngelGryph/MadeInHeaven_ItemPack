@@ -25,7 +25,7 @@ BEGIN
 
   MAKE_PATCH
     delete_actor=>null
-    add_actor_inline=>~actor_name=>"{literal:Brokk}" actor_resource=>"mh#brokk" actor_x_coord_start=>450 actor_y_coord_start=>300 actor_x_coord_dest=>450 actor_y_coord_dest=>300 actor_orientation=>10~
+    add_actor_inline=>~actor_name=>"{literal:Brokk}" actor_resource=>"mh#brokk" actor_x_coord=>450 actor_y_coord=>300 actor_orientation=>10~
   END
 
   LAUNCH_ACTION_FUNCTION edit_area

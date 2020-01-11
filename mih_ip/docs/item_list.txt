@@ -12,7 +12,7 @@ mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow
 mh#armr3 White Skin of Umpluutu			Arms & Equipment Guide (2E)
 mh#armr4 Celestial Chain +2
-mh#armr5 Dwarven Full Plate +2
+mh#armr5 Dwarven Plate +2
 mh#armr6 Black Swan Armor +2			Icewind Dale 1 (2E)
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2E)

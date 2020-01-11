@@ -24,7 +24,7 @@ BEGIN
   END
 
   MAKE_PATCH
-    add_actor_inline=>~actor_name=>"{literal:Phendra}" actor_resource=>"mh#phend" actor_x_coord_start=>285 actor_y_coord_start=>435 actor_x_coord_dest=>285 actor_y_coord_dest=>435 actor_orientation=>13~
+    add_actor_inline=>~actor_name=>"{literal:Phendra}" actor_resource=>"mh#phend" actor_x_coord=>285 actor_y_coord=>435 actor_orientation=>13~
   END
 
   LAUNCH_ACTION_FUNCTION edit_area

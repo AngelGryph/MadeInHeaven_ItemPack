@@ -439,7 +439,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item	= "mh#btax1"
+    item	= "mh#btax2"
     location	= "items"
     editstring	= "say_name=>123 say_description=>124"
   END
@@ -545,8 +545,8 @@ BEGIN
   ACTION_IF GAME_IS "bgee"
   BEGIN
     MAKE_PATCH
-      set_unidentified_name=>26711
-      set_unidentified_description=>26713
+      name1_string=>26711
+      description1_string=>26713
       say_name=>181
       say_description=>182
     END
@@ -1160,7 +1160,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item	= "mh#robe2"
+    item	= "mh#robe3"
     location	= "items"
     editstring	= "say_unidentified_name=>102 say_unidentified_description=>103 say_name=>104 say_description=>105"
   END
@@ -1170,7 +1170,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item	= "mh#robe2"
+    item	= "mh#robe4"
     location	= "items"
     editstring	= "say_unidentified_name=>102 say_unidentified_description=>103 say_name=>106 say_description=>107"
   END
@@ -1310,7 +1310,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item	= "mh#staf5"
+    item	= "mh#staf6"
     location	= "items"
     editstring	= "say_name=>206 say_description=>207"
   END
@@ -1333,16 +1333,16 @@ BEGIN
     OUTER_SET race_spider = IDS_OF_SYMBOL("race" "spider")
 
     MAKE_PATCH
-      say_name=>179
-      say_description=>180
+      say_name=>38
+      say_description=>39
       add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_spider% parameter2=>4 mode=>3"
     END
   END
   ELSE
   BEGIN
     MAKE_PATCH
-      say_name=>179
-      say_description=>180
+      say_name=>38
+      say_description=>39
     END
   END
 
@@ -1463,8 +1463,8 @@ BEGIN
   ACTION_IF GAME_IS "bgee"
   BEGIN
     MAKE_PATCH
-      set_unidentified_name=>26711
-      set_unidentified_description=>26713
+      name1_string=>26711
+      description1_string=>26713
       say_name=>210
       say_description=>211
     END

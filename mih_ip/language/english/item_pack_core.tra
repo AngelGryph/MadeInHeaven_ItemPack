@@ -550,14 +550,17 @@ Requires:
  6 Strength
 
 Weight: 7~
-@89   = ~Dwarven Full Plate +2~
-@90   = ~This stout full plate was commissioned from the dwarven smith Brokk by <CHARNAME>.  Forged entirely from the rare metal arandur, it is the pinnacle of the craftsmanship of the old dwarf.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold, adding aditional protection.  It is unlikely you will find a more sturdy suit of armor anywhere on the Sword Coast.
+@89   = ~Dwarven Plate +2~
+@90   = ~This stout plate was commissioned from the dwarven smith Brokk by <CHARNAME>.  Forged entirely from the rare metal arandur, it is the pinnacle of the craftsmanship of the old dwarf.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold, adding aditional protection.  Much lighter than most plate and yet extremely resistant to physical damage, this plate was made to last a dwarven lifetime.
 
-Armor Class: -1 (-5 vs. slashing, -4 vs. piercing and missile)
+Equipped abilities:
+- 10% resistance to all physical damage (slashing, crushing, piercing and missile)
+
+Armor Class: 1 (-2 vs. slashing)
 Requires:
- 15 Strength
+ 10 Strength
 
-Weight: 35~
+Weight: 15~
 @91   = ~Crystal Clear Ioun Stone~
 @92   = ~Ring of White Bone~
 @93   = ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
