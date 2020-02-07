@@ -54,7 +54,7 @@ BEGIN
     STR_VAR
     item	= "mh#amul5"
     location	= "items"
-    editstring	= "say_name=>40 say_description=>41"
+    editstring	= ~say_name=>40 say_description=>41 cd_immunity=>"magic_missile"~
   END
 
 
@@ -84,7 +84,7 @@ BEGIN
     STR_VAR
     item	= "mh#amul8"
     location	= "items"
-    editstring	= "say_name=>177 say_description=>178"
+    editstring	= ~say_name=>177 say_description=>178 cd_immunity=>"disease"~
   END
 
 
@@ -129,7 +129,7 @@ BEGIN
     STR_VAR
     item	= "mh#armr2"
     location	= "items"
-    editstring	= "say_name=>44 say_description=>45"
+    editstring	= ~say_name=>44 say_description=>45 cd_immunity=>"petrification"~
   END
 
 
@@ -137,8 +137,8 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item		= "mh#pbpaw"
-    location		= "items"
+    item	= "mh#pbpaw"
+    location	= "items"
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -317,6 +317,7 @@ BEGIN
       say_name=>242
       say_description=>243
       add_effect_global_inline=>"opcode=>346 target=>1 timing=>2 parameter1=>4 mode=>4"
+      cd_immunity=>"hold"
     END
   END
   ELSE
@@ -324,6 +325,7 @@ BEGIN
     MAKE_PATCH
       say_name=>242
       say_description=>243
+      cd_immunity=>"hold"
     END
   END
 
@@ -467,7 +469,7 @@ BEGIN
     STR_VAR
     item	= "mh#clck1"
     location	= "items"
-    editstring	= "say_name=>16 say_description=>17"
+    editstring	= ~say_name=>16 say_description=>17 cd_immunity=>"petrification"~
   END
 
 
@@ -487,7 +489,7 @@ BEGIN
     STR_VAR
     item	= "mh#clck3"
     location	= "items"
-    editstring	= "say_name=>79 say_description=>80"
+    editstring	= ~say_name=>79 say_description=>80 cd_immunity=>"web"~
   END
 
   // mh#clck4 - Cloak of the Night Sky
@@ -681,7 +683,7 @@ BEGIN
     STR_VAR
     item	= "mh#helm2"
     location	= "items"
-    editstring	= "say_name=>117 say_description=>118"
+    editstring	= ~say_name=>117 say_description=>118 cd_immunity=>"spell_level_1 spell_level_2 spell_level_3"~
   END
 
 
@@ -1052,7 +1054,7 @@ BEGIN
     STR_VAR
     item	= "mh#ring5"
     location	= "items"
-    editstring	= "say_name=>85 say_description=>86"
+    editstring	= ~say_name=>85 say_description=>86 cd_immunity=>"silence"~
   END
 
 
@@ -1062,7 +1064,7 @@ BEGIN
     STR_VAR
     item	= "mh#ring6"
     location	= "items"
-    editstring	= "say_name=>92 say_description=>93"
+    editstring	= ~say_name=>92 say_description=>93 cd_immunity=>"level_drain"~
   END
 
 
@@ -1072,7 +1074,7 @@ BEGIN
     STR_VAR
     item	= "mh#ring7"
     location	= "items"
-    editstring	= "say_name=>94 say_description=>95"
+    editstring	= ~say_name=>94 say_description=>95 cd_immunity=>"charm confusion feeblemind psionics stun~
   END
 
 
@@ -1102,7 +1104,7 @@ BEGIN
     STR_VAR
     item	= "mh#ringa"
     location	= "items"
-    editstring	= "say_name=>143 say_description=>144"
+    editstring	= ~say_name=>143 say_description=>144 cd_immunity=>"magic_missile"~
   END
 
 
@@ -1152,7 +1154,7 @@ BEGIN
     STR_VAR
     item	= "mh#robe2"
     location	= "items"
-    editstring	= "say_name=>100 say_description=>101"
+    editstring	= ~say_name=>100 say_description=>101 cd_immunity=>"level_drain"~
   END
 
 
@@ -1232,7 +1234,7 @@ BEGIN
     STR_VAR
     item	= "mh#shld6"
     location	= "items"
-    editstring	= "say_name=>151 say_description=>152"
+    editstring	= ~say_name=>151 say_description=>152 cd_immunity=>"kill_target slay"~
   END
 
 
@@ -1252,7 +1254,7 @@ BEGIN
     STR_VAR
     item	= "mh#sper1"
     location	= "items"
-    editstring	= "say_name=>199 say_description=>200"
+    editstring	= ~say_name=>199 say_description=>200 cd_immunity=>"poison"~
   END
 
 
@@ -1292,7 +1294,7 @@ BEGIN
     STR_VAR
     item	= "mh#staf4"
     location	= "items"
-    editstring	= "say_name=>201 say_description=>202"
+    editstring	= ~say_name=>201 say_description=>202 cd_immunity=>"level_drain"~
   END
 
 
@@ -1426,7 +1428,7 @@ BEGIN
     STR_VAR
     item	= "mh#swrd6"
     location	= "items"
-    editstring	= "say_name=>161 say_description=>162"
+    editstring	= ~say_name=>161 say_description=>162 cd_immunity=>"charm fear"~
   END
 
 
