@@ -13,17 +13,23 @@ BEGIN
 
   ACTION_IF ENGINE_IS "bgee"
   BEGIN
-    OUTER_SPRINT editstring ~patch_effect_inline=>"match=>opcode=12 dicenum=>6~
+    MAKE_PATCH
+      patch_ability_inline=>~ability_target_count=>0~
+      patch_effect_inline=>~match=>"opcode = 12" dicenum=>6~
+    END
   END
   ELSE
   BEGIN
-    OUTER_SPRINT editstring ~patch_effect_inline=>"match=>opcode=12 dicenum=>3~
+    MAKE_PATCH
+      patch_ability_inline=>~ability_target_count=>0~
+      patch_effect_inline=>~match=>"opcode = 12" dicenum=>3~
+    END
   END
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
     item	= "wand07"
-    editstring
+    edits	= "patch_data"
   END
 END	// bg1_wands
 
