@@ -1593,7 +1593,47 @@ Equipped abilities:
 - Saving Throws: +2
 
 Weight: 2~
-@253 = ~The Sword of the Planes flares with power!~
-@254 = ~The Sword of the Planes has returned to normal.~
+@253  = ~The Sword of the Planes flares with power!~
+@254  = ~The Sword of the Planes has returned to normal.~
+@255  = ~Druidic Robe~
+@256  = ~A non-descript grey druidic robe.~
+@257  = ~Nyalee's Robe of Stone~
+@258  = ~This garment looks rather plain at first glance, but it bears powerful protective enchantments.  Although it is as soft and supple as a normal robe to the wearer, attackers find the exterior as hard as stone due to an earth elemental being woven into the fabric.
+
+This robe can only be worn by clerics and druids.  There is no known history, most likely Nyalee created this robe herself at some point.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 0 (base)
+- Saving Throws: +2 (all)
+- Missile Resistance: 90%
+
+Charge abilities:
+- Conjure Earth Elemental (1/day)
+
+Weight: 6~
+@259  = ~Ogi-Luc's Great Robe~
+@260  = ~This robe was fashioned from strong fabric and dyed dark blue, the favorite color of its proud owner, the archmage Ogi-Luc. A Sembian by birth, Ogi-Luc was a powerful man, as strong in body as he was in mind. However, Ogi-Luc wasn't content to merely be strong. He wanted to be exceptionally strong. When he put on these robes, proud men stood aside and braggarts stilled their tongues. For all of Ogi-Luc's pride and prowess, he was unable to defeat the Red Wizard abjurer Nesk Vhaltim. Nesk took the robes as a prize. They were later stolen and sold by a daring rogue.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 4
+- Strength: 18/99
+- Constitution: +2
+
+Weight: 5~
+@261  = ~White Shield +4~
+@262  = ~This shield was crafted from a single scale of a great wyrm white dragon and strongly enchanted.  Another relic from the ancient elven conflict known as Crown Wars, its exact history is a riddle elven sages do not wish to discuss and those of other races may only guess at.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +5
+- Cold Resistance: +50%
+- +10 to maximum HP
+
+Weight: 5~
 
 

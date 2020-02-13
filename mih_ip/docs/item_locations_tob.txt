@@ -4,6 +4,9 @@ mh#blun3 Battle Star +4				Sister Garlena (shop)
 
 mh#brac4 Bracers of the Wind			Ancient Grove (battle)
 mh#brac6 Silver Bracers of Kedl			Saradush (battle)
+mh#brac7 Gloves of Evasion			Watcher's Keep (maze)
+
+mh#belt7 Girdle of Priestly Might		Watcher's Keep (maze)
 
 mh#clck4 Cloak of the Night Sky			Sendai's Lair (battle)
 
@@ -19,6 +22,8 @@ mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 mh#ring1 Ring of the Lich +3			Vongoethe (battle)
 mh#ring6 Ring of White Bone			Arcana Archives (shop)
 mh#ring9 Ring of Thex				Arcana Archives (shop)
+
+mh#robe5 Nyalee's Robe of Stone			Forest of Mir (battle)
 
 mh#shld4 Shield of the Three Kings +5		Watcher's Keep (battle)
 mh#shld6 Mystery of the Dead +3			Sister Garlena (shop)

@@ -162,7 +162,8 @@ BEGIN
     literal'1=>~ADD_STORE_ITEM "mh#dart2" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'2=>~ADD_STORE_ITEM "mh#dart1" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'3=>~ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#ringd" LAST #3 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#robe6" AFTER "chan11" #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#ringd" LAST #3 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -619,12 +620,21 @@ BEGIN
     editstring	= ~add_items=>"mh#swrd6(qitem)~
   END
 
+  // House of the Moon
+  //
+  // mh#shld8 - White Shield +4
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "sumoon"
+    editstring	= ~add_items=>"mh#shld8(shield)~
+  END
+
   // House of the Priest
   //
   // mh#ioun4 - Telkiira
 
   COPY_EXISTING "ar2810.are" "override"
-    // Telkiira
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR
       container_to_add_to	= 5

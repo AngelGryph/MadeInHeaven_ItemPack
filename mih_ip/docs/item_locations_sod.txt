@@ -31,6 +31,7 @@ mh#ringb Edion's Ring of Wizardry		Nazramu (shop)
 
 mh#robe2 Robe of the Necromancer		Waizahb (shop)
 mh#robe4 Shadow Dancer's Robe			Nazramu (shop)
+mh#robe6 Ogi-Luc's Great Robe			Nazramu (shop)
 
 mh#shld3 Shield of the Phoenix +2		Temple of Cyric (chest)
 

@@ -1178,6 +1178,26 @@ BEGIN
   END
 
 
+  // mh#robe5 - Nyalee's Robe of Stone
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#robe5"
+    location	= "items"
+    editstring	= "say_unidentified_name=>255 say_unidentified_description=>256 say_name=>257 say_description=>258"
+  END
+
+
+  // mh#robe6 - Ogi-Luc's Great Robe
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#robe6"
+    location	= "items"
+    editstring	= ~say_name=>259 say_description=>260~
+  END
+
+
   // mh#shld1 - Meteoric Shield +2
 
   LAUNCH_ACTION_FUNCTION install_item

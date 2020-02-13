@@ -76,6 +76,7 @@ BEGIN
   // mh#ioun2 - Crystal Clear Ioun Stone
   // mh#ringb - Edion's Ring of Wizardry
   // mh#robe4 - Shadow Dancer's Robe
+  // mh#robe6 - Ogi-Luc's Great Robe
   
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1~
@@ -84,6 +85,7 @@ BEGIN
     literal'4=>~ADD_STORE_ITEM "mh#amul9" AFTER "bdamul25" #0 #0 #0 "identified" #1~
     literal'5=>~ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1~
     literal'6=>~ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1~
+    literal'7=>~ADD_STORE_ITEM "mh#robe6" LAST #0 #0 #0 "identified" #1~
   END
   
   LAUNCH_ACTION_FUNCTION edit_store
