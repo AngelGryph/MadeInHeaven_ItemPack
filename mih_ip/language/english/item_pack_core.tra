@@ -206,7 +206,7 @@ Weight: 8~
 STATISTICS:
 
 Combat abilities:
-- Additional 1d2 acid damage per hit
+- Poison: 2 damage per round for five rounds (save vs. poison at -2 negates)
 
 THAC0: +2 bonus
 Damage: 2d4+2 (slashing)
@@ -1635,5 +1635,49 @@ Equipped abilities:
 - +10 to maximum HP
 
 Weight: 5~
+@263  = ~Blackblood +3~
+@264  = ~This oak club is coated with darkened, dried globs of a tar-like substance. During battle, this substance glows black with an inner light and becomes thick and fluid. When the club strikes an opponent, it delivers additional acid damage from the liquid splashing over the victim.
+
+STATISTICS:
+
+Combat abilities:
+- +3 acid damage
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@265  = ~Amulet of 5% Magic Resistance~
+@266  = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist any efforts at being imprisoned or killed.
+
+STATISTICS:
+
+Equipped abilities:
+- Magic Resistance: +5%
+
+Weight: 3~
+@267  = ~Ring of Anti-Venom~
+@268  = ~This ring is an unadorned silver band. However, its plain appearance belies the powerful magic within. A Ring of Anti-Venom is eagerly sought after by royalty, influential political figures, and other potential assassination targets. 
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to poison
+
+Weight: 0~
+@269  = ~Gloves of Missile Snaring~
+@270  = ~Foik Morur demonstrated the effectiveness of these gloves at a community fair near Beregost several years back.  He paid a local archer to fire arrows at him.  As the arrows approached, Foik's hands would move of their own accord, either knocking the arrow away or catching it.  He earned more than a few pieces of gold for his troubles, and these earnings attracted some shadowy figures to Foik's tent that evening.  The next morning Foik was found dead and the gloves missing.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2 vs. Missiles
+
+Weight: 2~
 
 

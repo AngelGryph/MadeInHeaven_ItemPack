@@ -7,6 +7,7 @@ mh#amul6 Scarab versus Golems			DMG (2E)
 mh#amul7 Dragon's Tear Amulet
 mh#amul8 Periapt of Health			DMG (2E)
 mh#amul9 Medallion of the Arctic		Encyclopedia Magica (2E)
+mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2E)
 
 mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow
@@ -26,6 +27,7 @@ mh#belt7 Girdle of Priestly Might		Encyclopedia Magica (2E)
 mh#blun1 Radiant Star +1
 mh#blun2 Slimecrusher +1
 mh#blun3 Battle Star +4				Encyclopedia Magica (2E)
+mh#blun4 Blackblood +3				Baldur's Gate 2 (2E)
 
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
 mh#boot2 Boots of Striding and Springing	DMG (2E)
@@ -37,6 +39,7 @@ mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 mh#brac5 Gauntlets of Smiting
 mh#brac6 Silver Bracers of Kedl			Icewind Dale 1 (2E)
 mh#brac7 Gloves of Evasion			Complete Thieves (2E)
+mh#brac8 Gloves of Missile Snaring		Baldur's Gate 2 (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3E)
 mh#btax2 Trollkiller +2
@@ -105,6 +108,7 @@ mh#ringa Shield Ring				Icewind Dale 1 (2E)
 mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
 mh#ringc Ring of Water Control			DMG (2E)
 mh#ringd Ring of Three Wishes			DMG (2E)
+mh#ringe Ring of Anti-Venom			Baldur's Gate 2 (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer

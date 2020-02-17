@@ -113,6 +113,16 @@ BEGIN
   END
 
 
+  // mh#amula - Amulet of 5% Magic Resistance
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "mh#amula"
+    location		= "items"
+    editstring	= "say_name=>265 say_description=>266"
+  END
+
+
   // mh#armr1 - Winter Wolf Hide +1
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -337,6 +347,16 @@ BEGIN
   END
 
 
+  // mh#blun4 - Blackblood +3
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#blun4"
+    location	= "items"
+    editstring	= "say_name=>263 say_description=>264"
+  END
+
+
   // mh#boot1 - Boots of the Master Ninja
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -424,6 +444,16 @@ BEGIN
     item	= "mh#brac7"
     location	= "items"
     editstring	= "say_name=>244 say_description=>245"
+  END
+
+
+  // mh#brac8 - Gloves of Missile Snaring
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#brac8"
+    location	= "items"
+    editstring	= "say_name=>269 say_description=>270"
   END
 
 
@@ -1135,6 +1165,16 @@ BEGIN
     item	= "mh#ringd"
     location	= "items"
     editstring	= "say_name=>234 say_description=>235"
+  END
+
+
+  // mh#ringe - Ring of Three Wishes
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item		= "mh#ringe"
+    location		= "items"
+    editstring	= "say_name=>267 say_description=>268"
   END
 
 

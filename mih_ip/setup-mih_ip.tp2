@@ -37,19 +37,6 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// BG2 Items in BG1
-
-BEGIN ~BG2 Item Pack for BG1~
-
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "setup_bg2_items_in_bg1"
-  location	= "bg2_items_in_bg1"
-END
-
-
 // BG1-style wands
 
 BEGIN ~BG1-style Wands of Frost & -Lightning~

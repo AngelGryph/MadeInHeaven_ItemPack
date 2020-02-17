@@ -5,6 +5,8 @@ mh#armr3 White Skin of Umpluutu +3		Waizahb (shop)
 mh#belt2 Sunite Sash				Ziatar (battle)
 mh#belt5 Girdle of Ogre Blood			Nazramu (shop)
 
+mh#blun4 Blackblood +3				Underground River (event)
+
 mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
 
 mh#brac2 Gauntlets of the Dwarven King		Underground River (cache)

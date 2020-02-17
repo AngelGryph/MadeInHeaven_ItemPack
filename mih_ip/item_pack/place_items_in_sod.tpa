@@ -189,7 +189,24 @@ BEGIN
       item_to_add		= "mh#lbow1"
     END
   
+
+  // Underground River entrance
+  //
+  // mh#blun4 - Blackblood +3 (replaces The Root of the Problem)
   
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdjamven"
+    editstring	= ~add_items=>"mh#blun4(weapon1)" remove_items=>"blun10"~
+  END
+  
+  COPY_EXISTING "bdjamven.dlg" "override"
+    DECOMPILE_AND_PATCH
+    BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#blun4"
+    END
+
+
   // Underground River
   //
   // mh#brac2 - Gauntlets of the Dwarven King
