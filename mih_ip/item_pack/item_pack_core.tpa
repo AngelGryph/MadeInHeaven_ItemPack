@@ -1308,6 +1308,16 @@ BEGIN
   END
 
 
+  // mh#shld8 - White Shield +4
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld8"
+    location	= "items"
+    editstring	= "say_name=>261 say_description=>262"
+  END
+
+
   // mh#sper1 - Alicorn Spear +2
 
   LAUNCH_ACTION_FUNCTION install_item

@@ -21,7 +21,7 @@ mh#belt2 Sunite Sash				Magic of Faerun (3E)
 mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
 mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
 mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
-mh#belt6 Belt of Vampire Protection
+mh#belt6 Belt of Vampire Protection		Encyclopedia Magica (2E)
 mh#belt7 Girdle of Priestly Might		Encyclopedia Magica (2E)
 
 mh#blun1 Radiant Star +1
@@ -115,7 +115,7 @@ mh#robe2 Robe of the Necromancer
 mh#robe3 Robe of the Pure Heart
 mh#robe4 Shadow Dancer's Robe
 mh#robe5 Nyalee's Robe of Stone
-mh#robe8 Ogi-Luc's Great Robe			Icewind Dale 1 (2E)
+mh#robe6 Ogi-Luc's Great Robe			Icewind Dale 1 (2E)
 
 mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1
