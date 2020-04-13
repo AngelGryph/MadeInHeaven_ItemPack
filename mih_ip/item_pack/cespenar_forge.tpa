@@ -1,0 +1,17 @@
+DEFINE_ACTION_FUNCTION cespenar_forge
+BEGIN
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    file	= "cespenar_forge.d"
+    location	= "dialogs"
+  END
+
+  LAUNCH_ACTION_FUNCTION extend
+    STR_VAR
+    file	= "botsmith.bcs"
+    bottom	= "cespenar_forge"
+    location	= "scripts"
+  END
+END	// cespenar_forge
+
+

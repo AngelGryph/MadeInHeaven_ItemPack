@@ -1,0 +1,15 @@
+IF
+  Global("mh#CromwellForgeItem", "GLOBAL", 1)
+  Global("ForgeStuff", "GLOBAL", 1)
+THEN
+  RESPONSE #100
+    SetGlobal("mh#CromwellForgeItem", "GLOBAL", 0)
+    SetGlobal("ForgeStuff", "GLOBAL", 0)
+    SetGlobal("ForgeItem", "GLOBAL", 99999)
+    TakePartyItem("mh#comp6")
+    DestroyItem("mh#comp6")
+    GiveItemCreate("mh#armr7", Player1, 0, 0, 0)
+    ActionOverride("wsmith01", StartDialogueNoSet([PC]))
+END
+
+

@@ -1,5 +1,9 @@
 DEFINE_ACTION_FUNCTION item_improvements
 BEGIN
+  // ==================================
+  // Items that are both in BG1 and BG2
+  // ==================================
+
   // clck04 - Cloak of the Wolf
 
   MAKE_PATCH
@@ -25,8 +29,8 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item		= "clck04"
-    edits		= "patch_data"
+    item	= "clck04"
+    edits	= "patch_data"
   END
 
 
@@ -44,15 +48,22 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item		= "clck05"
-    edits		= "patch_data"
+    item	= "clck05"
+    edits	= "patch_data"
   END
 
 
   ACTION_IF GAME_INCLUDES "bg2" AND $SFO_reserved_ini_hash("baldurans_cloak_in_bg2")
   BEGIN
-    COPY_EXISTING "ribald3.sto" "override"
-      ADD_STORE_ITEM "clck05" AFTER "chan11" #0 #0 #0 "identified" #1
+    MAKE_PATCH
+      literal=>~ADD_STORE_ITEM "clck05" AFTER "chan11" #0 #0 #0 "identified" #1~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_store
+      STR_VAR
+      store	= "ribald3"
+      edits	= "patch_data"
+    END
   END
 
 
@@ -68,8 +79,8 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item		= "clck20"
-    edits		= "patch_data"
+    item	= "clck20"
+    edits	= "patch_data"
   END
 
 
@@ -80,7 +91,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION externalise_item_ability
     STR_VAR
-    item		= "potn11"
+    item	= "potn11"
   END
 
 
@@ -94,8 +105,8 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_spell
     STR_VAR
-    spell		= "potn11"
-    edits		= "patch_data"
+    spell	= "potn11"
+    edits	= "patch_data"
   END
 
 
@@ -112,31 +123,53 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item		= "potn17"
-    edits		= "patch_data"
+    item	= "potn17"
+    edits	= "patch_data"
   END
 
 
-  // helm17 - Skull of Death
-  //
-  // This item will be made as described in Encyclopedia Arcana:
-  // - Regenerates 1 HP/turn
-  // - Casts Animate Dead, Finger of Death and Control undead 1/day each
+  // ==============================
+  // Items that are in BG2/SoA only
+  // ==============================
 
-  MAKE_PATCH
-    add_effect_global_inline'1=>~opcode=>98 target=>1 timing=>2 parameter1=>60 parameter2=>3~
-    add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>87~
-    clone_ability_inline=>~number_to_add=>2 at_end=>1~
-    patch_ability_inline=>~ability_icon=>"entry_index from [spwi501b spwi713b spwi720b]" ability_target=>"entry_index from [4 1 1]" ability_range=>"entry_index from [20 40 40]"~
-    patch_effect_inline=>~opcode=>"parent_index from [148 146 146]" target=>"parent_index from [1 2 2]" parameter1=>15 resource=>"parent_index from [spwi501b spwi713b spwi720b]"~
-  END
+  ACTION_IF GAME_INCLUDES "soa"
+  BEGIN
+    // helm17 - Skull of Death
+    //
+    // This item will be made as described in Encyclopedia Arcana:
+    // - Regenerates 1 HP/turn
+    // - Casts Animate Dead, Finger of Death and Control undead 1/day each
 
-  LAUNCH_ACTION_FUNCTION edit_item
-    INT_VAR
-    allow_missing	= 1
-    STR_VAR
-    item		= "helm17"
-    edits		= "patch_data"
+    MAKE_PATCH
+      add_effect_global_inline'1=>~opcode=>98 target=>1 timing=>2 parameter1=>60 parameter2=>3~
+      add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>87~
+      clone_ability_inline=>~number_to_add=>2 at_end=>1~
+      patch_ability_inline=>~ability_icon=>"entry_index from [spwi501b spwi713b spwi720b]" ability_target=>"entry_index from [4 1 1]" ability_range=>"entry_index from [20 40 40]"~
+      patch_effect_inline=>~opcode=>"parent_index from [148 146 146]" target=>"parent_index from [1 2 2]" parameter1=>15 resource=>"parent_index from [spwi501b spwi713b spwi720b]"~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "helm17"
+      edits	= "patch_data"
+    END
+
+
+    // leat19 - Shadow Dragon Scale
+    //
+    // - Change acid resistance to negative plane protection.
+    //   (This fits it better thematically.)
+
+    MAKE_PATCH
+      patch_effect_global_inline'1=>~match=>"opcode = 27" opcode=>101 parameter1=>0 parameter2=>216~
+      patch_effect_global_inline'2=>~match=>"opcode = 142" parameter2=>90~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "leat19"
+      edits	= "patch_data"
+    END
   END
 END	// item_improvements
 

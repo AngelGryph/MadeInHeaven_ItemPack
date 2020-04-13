@@ -13,6 +13,12 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
+    file	= "cromwell_forge"
+    tra		= "cromwell_forge"
+  END
+
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
     file	= "other_bg2_locations"
   END
 END	// place_items_in_bg2

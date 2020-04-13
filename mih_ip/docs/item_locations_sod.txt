@@ -1,4 +1,5 @@
 mh#amul9 Medallion of the Arctic		Nazramu (shop)
+mh#amulb Phylactery of Bravery			Kazzrem (shop)
 
 mh#armr3 White Skin of Umpluutu +3		Waizahb (shop)
 

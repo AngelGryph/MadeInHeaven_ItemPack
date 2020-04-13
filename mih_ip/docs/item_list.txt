@@ -8,6 +8,8 @@ mh#amul7 Dragon's Tear Amulet
 mh#amul8 Periapt of Health			DMG (2E)
 mh#amul9 Medallion of the Arctic		Encyclopedia Magica (2E)
 mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2E)
+mh#amulb Phylactery of Bravery			Encyclopedia Magica (2E)
+mh#amulc Medallion of Faith			Encyclopedia Magica (2E)
 
 mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow
@@ -15,6 +17,7 @@ mh#armr3 White Skin of Umpluutu			Arms & Equipment Guide (2E)
 mh#armr4 Celestial Chain +2
 mh#armr5 Dwarven Plate +2
 mh#armr6 Black Swan Armor +2			Icewind Dale 1 (2E)
+mh#armr7 Black Dragon Scale
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2E)
 mh#belt2 Sunite Sash				Magic of Faerun (3E)
@@ -31,6 +34,7 @@ mh#blun4 Blackblood +3				Baldur's Gate 2 (2E)
 
 mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
 mh#boot2 Boots of Striding and Springing	DMG (2E)
+mh#boot3 Boots of Balance			Complete Thieves (2E)
 
 mh#brac1 Vambraces of Evil's Warding		Warriors of Heaven (2E)
 mh#brac2 Gauntlets of the Dwarven King
@@ -50,12 +54,16 @@ mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
 mh#clck3 Cloak of Arachnida			DMG (2E)
 mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
 mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2E)
+mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2E)
+mh#clck7 Cloak of Lathander			Encyclopedia Magica (2E)
+mh#clck8 Cloak of Flame				Encyclopedia Magica (2E)
 
 mh#comp1 Meteoric Iron
 mh#comp2 Arandur Ore
 mh#comp3 Lux Veritatis
 mh#comp4 Rusty Katana
 mh#comp5 Unicorn Horn
+mh#comp6 Black Dragon Scales
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Spinesheath +1				Icewind Dale 1 (2E)
@@ -85,6 +93,7 @@ mh#misc2 Bag of Tricks				DMG (2E)
 mh#misc3 Crystal Ball				DMG (2E)
 mh#misc4 Gem of Seeing				DMG (2E)
 mh#misc5 Jade Snakes				Encyclopedia Magica (2E)
+mh#misc6 Bottle of Pleasant Odors		Encyclopedia Magica (2E)
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 mh#potn2 Potion of Clairvoyance			DMG (2E)
@@ -144,6 +153,7 @@ mh#swrd6 Pale Justice +4			Icewind Dale 1 (2E)
 mh#swrd7 Mirthal +1
 mh#swrd8 Golden Sky +2
 mh#swrd9 Cold Flame +3
+*mh#swrda ???
 
 mh#tome1 Book of Exalted Deeds			DMG (2E)
 mh#tome2 Book of Vile Darkness			DMG (2E)

@@ -117,9 +117,29 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item		= "mh#amula"
-    location		= "items"
+    item	= "mh#amula"
+    location	= "items"
     editstring	= "say_name=>265 say_description=>266"
+  END
+
+
+  // mh#amulb - Phylactery of Bravery
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amulb"
+    location	= "items"
+    editstring	= "say_name=>271 say_description=>272 cd_immunity=>fear"
+  END
+
+
+  // mh#amulc - Medallion of Faith
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#amulc"
+    location	= "items"
+    editstring	= "say_name=>273 say_description=>274"
   END
 
 
@@ -186,6 +206,16 @@ BEGIN
     item	= "mh#armr6"
     location	= "items"
     editstring	= "say_name=>125 say_description=>126"
+  END
+
+
+  // mh#armr7 - Black Dragon Scale
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr7"
+    location	= "items"
+    editstring	= "say_name=>287 say_description=>288"
   END
 
 
@@ -377,6 +407,16 @@ BEGIN
   END
 
 
+  // mh#boot3 - Boots of Balance
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#boot3"
+    location	= "items"
+    editstring	= "say_name=>275 say_description=>276"
+  END
+
+
   // mh#brac1 - Vambraces of Evil's Warding
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -542,6 +582,36 @@ BEGIN
   END
 
 
+  // mh#clck6 - Cloak of Blackflame
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck6"
+    location	= "items"
+    editstring	= ~say_name=>277 say_description=>278 cd_immunity=>"hold level_drain"~
+  END
+
+
+  // mh#clck7 - Cloak of Lathander
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck7"
+    location	= "items"
+    editstring	= "say_name=>281 say_description=>282"
+  END
+
+
+  // mh#clck8 - Cloak of Flame
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck8"
+    location	= "items"
+    editstring	= "say_name=>279 say_description=>280"
+  END
+
+
   // mh#comp1 - Meteoric Iron
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -606,6 +676,16 @@ BEGIN
     item	= "mh#comp5"
     location	= "items"
     editstring	= "say_unidentified_name=>183 say_unidentified_description=>185 say_name=>185 say_description=>186"
+  END
+
+
+  // mh#comp6 - Black Dragon Scales
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#comp6"
+    location	= "items"
+    editstring	= "say_name=>285 say_description=>286"
   END
 
 
@@ -940,6 +1020,16 @@ BEGIN
     item	= "mh#misc5"
     location	= "items"
     editstring	= "say_name=>246 say_description=>251"
+  END
+
+
+  // mh#misc6 - Bottle of Pleasant Odors
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#misc6"
+    location	= "items"
+    editstring	= "say_name=>283 say_description=>284"
   END
 
 

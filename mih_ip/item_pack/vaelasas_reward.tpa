@@ -6,7 +6,11 @@ BEGIN
     editstring	= ~add_items=>"mh#belt2(belt)~
   END
 
-  COMPILE "%mod_root%/item_pack/dialogs/vaelasas_reward.d"
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    file	= "vaelasas_reward.d"
+    location	= "dialogs"
+  END
 END	// vaelasas_reward
 
 

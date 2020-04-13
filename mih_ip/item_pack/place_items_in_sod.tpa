@@ -33,16 +33,18 @@ BEGIN
   
   // Kazzrem the Calishite
   //
+  // mh#amulb - Phylactery of Bravery
   // mh#boot2 - Boots of Striding and Springing
   // mh#ioun1 - Pale Blue Ioun Stone
   // mh#dart1 - Lein's Fiery Darts
   // mh#dart2 - Chandler's Icy Darts
   
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4~
-    literal'4=>~ADD_STORE_ITEM "mh#dart2" LAST #3 #0 #0 "identified" #4~
+    literal'1=>~ADD_STORE_ITEM "mh#amulb" AFTER "bdamul24" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4~
+    literal'5=>~ADD_STORE_ITEM "mh#dart2" LAST #3 #0 #0 "identified" #4~
   END
   
   LAUNCH_ACTION_FUNCTION edit_store

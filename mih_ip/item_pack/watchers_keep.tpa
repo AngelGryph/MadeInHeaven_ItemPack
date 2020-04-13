@@ -1,0 +1,94 @@
+DEFINE_ACTION_FUNCTION watchers_keep
+BEGIN
+  // Sister Garlena
+  //
+  // mh#blun3 - Battle Star +4
+  // mh#dart3 - Zilzanzer's Magnificent Darts +1
+  // mh#ioun1 - Sky Blue Ioun Stone
+  // mh#ioun2 - Crystal Clear Ioun Stone
+  // mh#potn3 - Philter of Purification
+  // mh#swrd3 - Scimitar of the Seven +4
+  // mh#shld6 - Mystery of the Dead +3
+  // mh#wand2 - Elmira's Wand of Blasting
+  // ring46   - Ring of Anti-Venom (from Vongoethe)
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#blun3" AFTER "xbow15" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #12 #0 #0 "identified" #5~
+    literal'3=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn52" #1 #0 #0 "identified" #2~
+    literal'4=>~ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#shld6" LAST #0 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1~
+    literal'7=>~ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1~
+    literal'8=>~ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1~
+    literal'9=>~ADD_STORE_ITEM "mh#wand2" LAST #12 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "garlena"
+    edits	= "patch_data"
+  END
+
+  // L3 - Portal Maze - Demon Wraith's lair
+  //
+  // mh#amulb - Phylactery of Bravery (on Demon Wraith's victims)
+  // mh#brac7 - Gloves of Evasion (on Demon Wraith's victims)
+  // mh#belt7 - Girdle of Priestly Might (on Demon Wraith's victims)
+
+  COPY_EXISTING "ar3014.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 3
+      STR_VAR
+      item_to_add		= "mh#amulb"
+    END
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 6
+      STR_VAR
+      item_to_add		= "mh#belt7"
+    END
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 2
+      STR_VAR
+      item_to_add		= "mh#brac7"
+    END
+
+  // L4 - Machine of Lum the Mad
+  // 
+  // mh#tome1 - Book of Exalted Deeds
+
+  COPY_EXISTING "ar3017.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 3
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#tome1"
+    END
+
+  // L4 - Demilich's Lair
+  //
+  // mh#tome5 - Libram of Ineffable Damnation
+
+  COPY_EXISTING "ar3027.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 1
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#tome5"
+    END
+
+  // L5 - Dragon's Lair
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "fsdragon"
+    editstring	= ~add_items=>"mh#shld4(inv)"~
+  END
+END	// watchers_keep
+
+

@@ -113,6 +113,20 @@ BEGIN
     edits	= "patch_data"
   END
 
+  // Mira
+  //
+  // mh#misc6 - Bottle of Pleasant Odors
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#misc6" LAST #1 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "shop01"
+    edits	= "patch_data"
+  END
+
   // Perter the Fletcher
   //
   // mh#quiv2 - Quiver of Ehlonna
@@ -137,6 +151,7 @@ BEGIN
   // mh#ioun3 - Orange Ioun Stone
   // ring40   - Ring of Acquity (moved from Lavok)
   //
+  // mh#clck6 - Cloak of Blackflame
   // mh#dart1 - Lein's Fiery Darts +2
   // mh#dart2 - Chandler's Icy Darts +2
   // mh#helm2 - Helm of the Dwarven Lords
@@ -162,14 +177,30 @@ BEGIN
     literal'1=>~ADD_STORE_ITEM "mh#dart2" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'2=>~ADD_STORE_ITEM "mh#dart1" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'3=>~ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#robe6" AFTER "chan11" #0 #0 #0 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#ringd" LAST #3 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#clck6" AFTER "chan11" #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#robe6" AFTER "chan11" #0 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#ringd" LAST #3 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
     STR_VAR
     store	= "ribald3"
     edits	= "patch_data"
+  END
+
+
+  // ==============
+  // Copper Coronet
+  // ==============
+
+  // Stolen by Captain Haegan
+  //
+  // mh#boot3 - Boots of Balance
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "haegan"
+    editstring	= ~add_items=>"mh#boot3(boots)"~
   END
 
 
@@ -220,6 +251,16 @@ BEGIN
       STR_VAR
       item_to_add		= "mh#dart1"
     END
+
+  // Stolen by Necre
+  //
+  // mh#clck8 - Cloak of Flame
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "obshal03"
+    editstring	= ~add_items=>"mh#clck8(cloak)"~
+  END
 
   // Stolen by Tolgerias
   //
@@ -289,6 +330,7 @@ BEGIN
   // mh#amul2 - Necklace of Prayer Beads
   // mh#belt4 - Girdle of Beatification
   // mh#belt6 - Belt of Vampire Protection
+  // mh#clck7 - Cloak of Lathander
   // mh#helm3 - Blessed Helm of Lathander
   // mh#potn3 - Philter of Purification
   // mh#robe3 - Robe of the Pure Heart
@@ -296,13 +338,14 @@ BEGIN
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6~
-    literal'2=>~ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#shld5" AFTER "staf05" #0 #1 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#helm3" AFTER "helm06" #1 #1 #1 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
-    literal'7=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
-    literal'8=>~ADD_STORE_ITEM "mh#belt6" LAST #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#clck7" AFTER "boot05" #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#shld5" AFTER "staf05" #0 #1 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#helm3" AFTER "helm06" #1 #1 #1 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
+    literal'7=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
+    literal'8=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
+    literal'9=>~ADD_STORE_ITEM "mh#belt6" LAST #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -612,12 +655,13 @@ BEGIN
 
   // Nizidramanii'yt Hoard
   //
+  // mh#comp6 - Black Dragon Scales
   // mh#swrd6 - Pale Justice +4
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "dragblac"
-    editstring	= ~add_items=>"mh#swrd6(qitem)~
+    editstring	= ~add_items=>"mh#comp6(qitem) mh#swrd6(qitem)"~
   END
 
   // House of the Moon

@@ -1678,5 +1678,97 @@ Equipped abilities:
 - Armor Class: +2 vs. Missiles
 
 Weight: 2~
+@271  = ~Phylactery of Bravery~
+@272  = ~The name of this item is actually a bit of a misnomer, as it was the product of cowardice, not bravery.  Almost two hundred years ago the warrior Kerian the Bold lived the life of an adventurer, but always found himself suffering from a crippling fear whenever the party had to face undead foes, making him run at the mere sight of even a lowly skeleton.  Eventually a wizard crafted this medallion for him.  Now free of his crippling fear, Kerian took a habit of charging every undead he saw, a tactic that proved most unwise when the party encountered a group of skeleton warriors.  Kerian died before the rest of his party could catch up with him.  Nowadays, the Tale of Kerian the Bold is often sung by bards in the Realms as an example of why it is important not to confuse courage with recklessness.
+
+STATISTICS:
+
+Equipped abilities:
+- THAC0: +1 bonus
+- Immunity to fear
+
+Weight: 1~
+@273  = ~Medallion of Faith~
+@274  = ~When worn by a devout priest or paladin of good alignment, this medallion shows the holy symbol of their chosen patron and enables them to cast several useful spells.  To anyone else it is merely a pretty bauble.
+
+STATISTICS:
+
+Charge abilities:
+- Bless (1/day)
+- Protection from Evil, 10' radius (1/day)
+- Slow Poison (1/day)
+
+Weight: 1~
+@275  = ~Boots of Balance~
+@276  = ~The wearer of these soft, low-heeled supple leather boots is endowed with a magically enhanced sense of balance.  Although popular with rogues, they can be worn by any class.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+- Move Silently: +10%
+
+Weight: 4~
+@277  = ~Cloak of Blackflame~
+@278  = ~This purple-black cloak was specifically designed to protect the wearer from the Negative Energy plane, that bleak dimension which eternally hungers for life force and souls to devour and gives many undead like wights and vampires their horrid powers.
+
+Exactly who made it is not known, the cloak pre-dates written history in Faerun and may even be of divine origin.  It was worn by several heroes through the ages, most of whom met a gruesome end at the claws and fangs of the abominations they tried to fight.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to paralysis and level drain.
+- Cold Resistance: 100%
+
+Weight: 3~
+@279  = ~Cloak of Flame~
+@280  = ~This strange cloak can only be worn by mages.  It functions as a basic cloak of protection but has additional powers over fire.  According to some tales it was once a normal cloak of protection until the wizard who wore it at the time died in the hellish blaze of a meteor swarm cast by a jealous rival.  Partially infused with both the spirit of the departed wizard and the arcane fire that ended his life it became what it is now, or so the story goes.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1 bonus
+- Saving Throws: +1 (all)
+- Cold Resistance: +25%
+- Fire Resistance: -25%
+
+Charge abilities:
+- Fire Shield (1/day, red only)
+
+Weight: 3~
+@281  = ~Cloak of Lathander~
+@282  = ~Cloaks of this type are sometimes made by the clergy of Lathander, and sold or given to good-hearted adventurers who seek to combat undead foes.  A bright orange-red, it resembles the color of the rising sun at dawn, the bane of vampires and many other walking dead that shun its cleansing light.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2 vs. Undead
+
+Charge abilities:
+- False Dawn (1/day as a 14th level priest)
+
+Weight: 3~
+@283  = ~Bottle of Pleasant Odors~
+@284  = ~The noblewoman Lady Devanna of Baldur's Gate commissioned this enchanted bottle from the temple of Gond after one too many pranks involving the Stinking Cloud spell was played on her.
+
+STATISTICS:
+
+Charge abilities:
+- Zone of Sweet Air (1/day)
+
+Weight: 2~
+@285  = ~Black Dragon Scales~
+@286  = ~These are the scales harvested from the black dragon that Irenicus rode into Suldanessenar.  Deep black yet glinting in the light, they feel strong and supple like tough leather.   They could probably be made into some great armor.~
+@287  = ~Black Dragon Scale~
+@288  = ~Although it looks like a fancy suit of studded leather at first glance, this armor has been crafted from the scales of a powerful black dragon.  Like the beast they came from, this armor naturally resists acid and spells.
+
+STATISTICS:
+
+- Equipped Abilities:
+  Armor Class: 0 (1 vs. crushing, -1 vs. slashing, piercing and missile)
+  Acid Resistance: +25%
+  Saving Throws: +2 vs. Spell
+
+Weight: 10~
 
 
