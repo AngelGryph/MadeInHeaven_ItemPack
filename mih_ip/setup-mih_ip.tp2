@@ -86,16 +86,15 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Relative Stats
+// 3e-style Girdles of Giant Strength (and similar items)
 
-BEGIN ~Equipped items give relative stat bonuses~
+BEGIN ~3e-style Girdles of Strength (and similar items)~
 GROUP ~Item Functionality Tweaks~
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "relative_stats"
+  file			= "3e_style_stat_girdles"
   location		= "tweaks"
-  tra			= "relative_stats"
 END
 
 

@@ -1,0 +1,18 @@
+DEFINE_ACTION_FUNCTION 3e_style_stat_girdles
+BEGIN
+  MAKE_PATCH
+    patch_effect_global_inline=>~match=>"opcode is_in [6 10 15 19 44 49] and parameter1 > 17 and parameter2 = 1" parameter1=>"parameter1 - 16" parameter2=>0~
+    delete_effect=>~opcode = 97~
+    substitute_description=>~18/00=>+2 19=>+3 20=>+4 21=>+5 22=>+6 23=>+7 24=>+8 25=>+9~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    item		= "belt06 belt07 belt08 belt11 belt15 blun19 brac06 brac07 ring30 x#ringro ohbbrac1 b!kegf beltstr ntbelt01 gauntem mh#belt7"
+    edits		= "patch_data"
+  END
+END	// 3e_style_stat_girdles
+
+
