@@ -8,7 +8,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION extend
     STR_VAR
-    file	= "botsmith.bcs"
+    file	= "botsmith"
     bottom	= "cespenar_forge"
     location	= "scripts"
   END
