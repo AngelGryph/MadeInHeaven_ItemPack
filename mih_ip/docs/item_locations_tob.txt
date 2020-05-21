@@ -22,9 +22,9 @@ mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
 mh#potn3 Philter of Purification		Sister Garlena (shop)
 mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 
-mh#ring1 Ring of the Lich +3			Vongoethe (battle)
 mh#ring6 Ring of White Bone			Arcana Archives (shop)
 mh#ring9 Ring of Thex				Arcana Archives (shop)
+mh#ringf Ring of the Lich			Vongoethe (battle)
 
 mh#robe5 Nyalee's Robe of Stone			Forest of Mir (battle)
 

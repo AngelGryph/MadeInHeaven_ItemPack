@@ -15,7 +15,7 @@ mh#armr1 Winter Wolf Hide +1
 mh#armr2 Eversing +2				Castlevania Aria of Sorrow
 mh#armr3 White Skin of Umpluutu			Arms & Equipment Guide (2E)
 mh#armr4 Celestial Chain +2
-mh#armr5 Dwarven Plate +2
+mh#armr5 Dwarven Plate +1
 mh#armr6 Black Swan Armor +2			Icewind Dale 1 (2E)
 mh#armr7 Black Dragon Scale
 
@@ -50,13 +50,14 @@ mh#btax2 Trollkiller +2
 mh#btax3 Redethemar +4				Elves of Evermeet (2E)
 
 mh#clck1 Mutamin's Cloak
-mh#clck2 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
+mh#clck2 Varazdin's Cloak of Protection
 mh#clck3 Cloak of Arachnida			DMG (2E)
 mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
 mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2E)
 mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2E)
 mh#clck7 Cloak of Lathander			Encyclopedia Magica (2E)
 mh#clck8 Cloak of Flame				Encyclopedia Magica (2E)
+mh#clck9 Battlecloak of Vycaena			Lost Empires of Faerun (3E)
 
 mh#comp1 Meteoric Iron
 mh#comp2 Arandur Ore
@@ -104,7 +105,7 @@ mh#potn5 Potion of Wizardry			Encyclopedia Magica (2E)
 mh#quiv1 Quiver of Ehlonna (BG1)		DMG (2E)
 mh#quiv2 Quiver of Ehlonna (BG2)		DMG (2E)
 
-mh#ring1 Ring of the Lich +3			DMG (2E)
+mh#ring1 Ring of the Elven Mage			DMG (2E)
 mh#ring2 Ring of Warmth				DMG (2E)
 mh#ring3 Ring of the Neophyte			DMG (2E)
 mh#ring4 Ring of Shocking Grasp			DMG (2E)
@@ -118,6 +119,7 @@ mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
 mh#ringc Ring of Water Control			DMG (2E)
 mh#ringd Ring of Three Wishes			DMG (2E)
 mh#ringe Ring of Anti-Venom			Baldur's Gate 2 (2E)
+mh#ringf Ring of the Lich			DMG (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer

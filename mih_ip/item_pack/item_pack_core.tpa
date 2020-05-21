@@ -543,13 +543,13 @@ BEGIN
   END
 
 
-  // mh#clck2 - Battlecloak of Vycaena
+  // mh#clck2 - ???
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
     item	= "mh#clck2"
     location	= "items"
-    editstring	= "say_name=>18 say_description=>19"
+    editstring	= ~say_name=>289 say_description=>290~
   END
 
 
@@ -609,6 +609,16 @@ BEGIN
     item	= "mh#clck8"
     location	= "items"
     editstring	= "say_name=>279 say_description=>280"
+  END
+
+
+  // mh#clck9 - Battlecloak of Vycaena
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#clck9"
+    location	= "items"
+    editstring	= "say_name=>18 say_description=>19"
   END
 
 
@@ -1128,13 +1138,13 @@ BEGIN
   END
 
 
-  // mh#ring1 - Ring of the Lich +3
+  // mh#ring1 - ???
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
     item	= "mh#ring1"
     location	= "items"
-    editstring	= "say_name=>26 say_description=>27"
+    editstring	= "say_name=>291 say_description=>292"
   END
 
 
@@ -1265,6 +1275,16 @@ BEGIN
     item		= "mh#ringe"
     location		= "items"
     editstring	= "say_name=>267 say_description=>268"
+  END
+
+
+  // mh#ringf - Ring of the Lich +4
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ringf"
+    location	= "items"
+    editstring	= "say_name=>26 say_description=>27"
   END
 
 

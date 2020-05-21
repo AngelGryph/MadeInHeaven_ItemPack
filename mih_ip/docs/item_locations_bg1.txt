@@ -32,7 +32,7 @@ mh#btax1 Foesplitter +1				Brokk's Forge (shop)
 mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
 
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
-mh#clck2 Battlecloak of Vycaena			Durlag's Tower D4 (chest)
+mh#clck2 Varazdin's Cloak of Protection		Durlag's Tower D4 (chest)
 mh#clck3 Cloak of Arachnida			Black Lily (shop)
 mh#clck8 Cloak of Flame				Sorcerous Sundries (shop)
 
@@ -69,7 +69,7 @@ mh#potn5 Potion of Wizardry			High Hedge (shop)
 
 mh#quiv1 Quiver of Ehlonna			Feldepost's Inn (shop)
 
-mh#ring1 Ring of the Lich +3			Candlekeep Catacombs (chest)
+mh#ring1 Ring of the Elven Mage			Candlekeep Catacombs (chest)
 mh#ring2 Ring of Warmth				Phendra's Scrolls (shop)
 mh#ring3 Ring of the Neophyte			Phendra's Scrolls (shop)
 mh#ring4 Ring of Shocking Grasp			Phendra's Scrolls (shop)

@@ -105,7 +105,9 @@ Equipped abilities:
 
 Weight: 3~
 @18   = ~Battlecloak of Vycaena~
-@19   = ~This voluminous, emerald-green cloak is trimmed and richly decorated with fine gold thread, and an emerald has been set in each of its two golden clasps.  This alone would make it worth a fortune, but in addition to that the cloak carries an enchantment that protects its wearer almost as well as chain mail.
+@19   = ~Cloak of Protection +4/+1: 'Battlecloak of Vycaena'
+
+This voluminous, emerald-green cloak is trimmed and richly decorated with fine gold thread, and an emerald has been set in each of its two golden clasps.  This alone would make it worth a fortune, but in addition to that the cloak carries an enchantment that protects its wearer almost as well as chain mail.
 
 Cloaks like these were often owned by rich Calishite families in centuries past, but the secret to making them was lost at some point and has not yet been rediscovered.  A rare and powerful item that puts the owner in a dilemma; while it grants excellent protection, it will also make the wearer even more of a target.
 
@@ -146,16 +148,18 @@ Weight: 2~
 @25   = ~At first glance these seem to be worthless red rocks, but closer inspection reveals them to be fragments of an iron meteorite.  This is useful as a crafting material, and might be worth something to a skilled smith.
 
 Weight: 150~
-@26   = ~Ring of the Lich +3~
-@27   = ~This magical ring was created centuries ago by Antares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Antares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
+@26   = ~Ring of the Lich~
+@27   = ~Ring of Protection +6/+1: 'Ring of the Lich'
+
+This magical ring was created centuries ago by Antares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Antares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
 
 Many years later on a moonless night Antares, now calling himself the Ebon Hand, rose from the waves and stalked the land, attacking lone travelers and small settlements as he searched for a way to raise his fallen enclave.  This continued for a few years until his reign of terror was ended by a group of adventurers from the Dales.  This ring was pilfered off of his withered corpse.
 
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +3
-- Saving Throws: +3
+- Armor Class: +6
+- Saving Throws: +1 (all)
 
 Weight: 0~
 @28   = ~Ring of Warmth~
@@ -550,13 +554,13 @@ Requires:
  6 Strength
 
 Weight: 7~
-@89   = ~Dwarven Plate +2~
+@89   = ~Dwarven Plate +1~
 @90   = ~This stout plate was commissioned from the dwarven smith Brokk by <CHARNAME>.  Forged entirely from the rare metal arandur, it is the pinnacle of the craftsmanship of the old dwarf.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold, adding aditional protection.  Much lighter than most plate and yet extremely resistant to physical damage, this plate was made to last a dwarven lifetime.
 
 Equipped abilities:
 - 10% resistance to all physical damage (slashing, crushing, piercing and missile)
 
-Armor Class: 1 (-2 vs. slashing)
+Armor Class: 2 (-1 vs. slashing)
 Requires:
  10 Strength
 
@@ -1186,7 +1190,7 @@ Weight: 2~
 STATISTICS:
 
 Charge abilities:
-- Thrice per day, summons a random animal for one hour.
+- Once per day, summons a random animal for one hour.
   Possible animals are: cave bear, phase spider, dire wolf, brown bear, jaguar, polar bear, giant snake, sword spider, lion and winter wolf.
 
 Weight: 3~
@@ -1770,5 +1774,27 @@ STATISTICS:
   Saving Throws: +2 vs. Spell
 
 Weight: 10~
+@289  = ~Varazdin's Cloak of Protection~
+@290  = ~Cloak of Protection +3/+1: 'Varazdin's Cloak'
+
+This cloak was created about two hundred years ago by the reclusive mage Varazdin, who often found himself in conflict with orcs that threatened his secluded home in the forest.  It served him well until his death in yet another massive orc raid.  The orc chieftain Groth Skullsmasher claimed it for himself, but he was in turn slain by a dwarven champion whose name has been lost to the ages.  Since then, it has been worn by several adventurers.  It was last seen in the possession of an adventuring party seeking to explore Durlag's Tower.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3
+- Saving Throws: +1 (all)
+
+Weight: 3~
+@291  = ~Ring of the Elven Mage~
+@292  = ~Ring of Protection +1/+3: 'Ring of the Elven Mage'
+
+This ring was created almost nine centuries ago by an elven mage as a gift for his human lover.  When the woman died of old age, the wizard gifted it to their eldest child, and then to his eldest child and so on.  When the elven wizard himself finally died to old age, the ring had been worn by his half-elven family for almost eighthundred years.
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +3 (all)
+
+Weight: 0~
 
 

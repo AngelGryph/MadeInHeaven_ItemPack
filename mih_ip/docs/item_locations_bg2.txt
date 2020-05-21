@@ -34,12 +34,12 @@ mh#btax1 Foesplitter +1				Maheer (shop)
 mh#btax3 Redethemar +4				Tree of Life (container)
 
 mh#clck1 Mutamin's Cloak			Trademeet Merchant (shop)
-mh#clck2 Battlecloak of Vycaena			Firkraag (battle)
 mh#clck3 Cloak of Arachnida			Ust Natha (shop)
 mh#clck5 Bolder's Cloak of the Rogue		Twisted Rune (battle)
 mh#clck6 Cloak of Blackflame			Adventurer's Market (ch6)
 mh#clck7 Cloak of Lathander			Temple of Lathander (shop)
-mh#clck8 Cloak of Flame			Planar Sphere (battle)
+mh#clck8 Cloak of Flame				Planar Sphere (battle)
+mh#clck9 Battlecloak of Vycaena			Firkraag (battle)
 
 mh#comp6 Black Dragon Scales			Suldanessenar (battle)
 

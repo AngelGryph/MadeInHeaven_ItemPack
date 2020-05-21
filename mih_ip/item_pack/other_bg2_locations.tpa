@@ -537,7 +537,7 @@ BEGIN
   // mh#armr3 - White Hide of Umpluutu +2 (on Plath Rededge)
   // mh#boot2 - Boots of Striding & Springing (on Conster)
   // mh#robe1 - Robe of the Elements (on Conster)
-  // mh#clck2 - Battlecloak of Vycaena (on Firkraag, replaces Cloak of the Shield)
+  // mh#clck9 - Battlecloak of Vycaena (on Firkraag, replaces Cloak of the Shield)
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
@@ -554,7 +554,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "firkra02"
-    editstring	= ~remove_items=>"clck20" add_items=>"mh#clck2(cloak)~
+    editstring	= ~remove_items=>"clck20" add_items=>"mh#clck9(inv)~
   END
 
 

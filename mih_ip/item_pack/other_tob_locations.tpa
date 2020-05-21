@@ -120,12 +120,12 @@ BEGIN
 
   // Sealed Cave
   //
-  // mh#ring1 - Ring of the Lich +3 (on Vongoethe, replaces Ring of Anti-Venom)
+  // mh#ringf - Ring of the Lich +3 (on Vongoethe, replaces Ring of Anti-Venom)
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "amlich01"
-    editstring	= ~remove_items=>"ring46" add_items=>"mh#ring1(lring)"~
+    editstring	= ~remove_items=>"ring46" add_items=>"mh#ringf(lring)"~
   END
 
 
