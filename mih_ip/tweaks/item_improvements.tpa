@@ -39,11 +39,22 @@ BEGIN
   // - Nerf the overpowered magic resistance
   // - Make it available in chapter 6 of BG2
 
-  OUTER_SET cloak_mr = $SFO_reserved_ini_hash("baldurans_cloak_magic_resistance")
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "baldurans_cloak_magic_resistance"
+    RET
+    baldurans_cloak_magic_resistance	= value
+  END
 
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "baldurans_cloak_in_bg2"
+    RET
+    baldurans_cloak_in_bg2	= value
+  END
   MAKE_PATCH
-    patch_effect_global_inline=>~match=>opcode=166 parameter1=>%cloak_mr%~
-    substitute_description=>~25\%=>%cloak_mr%\%~
+    patch_effect_global_inline=>~match=>opcode=166 parameter1=>%baldurans_cloak_magic_resistance%~
+    substitute_description=>~25\%=>%baldurans_cloak_magic_resistance%\%~
   END
 
   LAUNCH_ACTION_FUNCTION edit_item
@@ -53,7 +64,7 @@ BEGIN
   END
 
 
-  ACTION_IF GAME_INCLUDES "bg2" AND $SFO_reserved_ini_hash("baldurans_cloak_in_bg2")
+  ACTION_IF GAME_INCLUDES "bg2" AND baldurans_cloak_in_bg2
   BEGIN
     MAKE_PATCH
       literal=>~ADD_STORE_ITEM "clck05" AFTER "chan11" #0 #0 #0 "identified" #1~

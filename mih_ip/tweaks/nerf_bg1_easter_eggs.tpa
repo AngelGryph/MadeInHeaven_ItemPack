@@ -40,7 +40,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_area
     STR_VAR
-    area	= "%FireLeafForest%"
+    area	= "%GibberlingMountains%"
     editstring	= ~swap_items=>"ring02=>ring17"~
   END
 END	// nerf_bg1_easter_eggs

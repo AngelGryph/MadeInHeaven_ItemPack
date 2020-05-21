@@ -10,7 +10,7 @@ BEGIN
     INT_VAR
     allow_missing	= 1
     STR_VAR
-    item		= "belt06 belt07 belt08 belt11 belt15 blun19 brac06 brac07 ring30 x#ringro ohbbrac1 b!kegf beltstr ntbelt01 gauntem mh#belt7"
+    item		= "belt06 belt07 belt08 belt11 belt15 brac06 brac07 ring30 x#ringro ohbbrac1 b!kegf beltstr ntbelt01 gauntem mh#belt7"
     edits		= "patch_data"
   END
 END	// 3e_style_stat_girdles

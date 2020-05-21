@@ -8,6 +8,13 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
+Version 4 - May 21 2020
+- Implemented encapsulation, mod immutability and other best practices
+- Converted almost entire mod to using SFO libary
+- Ring of the Lich and Battlecloak of Vycaena are now BG2 only
+- Several new items to play with!
+- Many, many bug fixes...
+
 Version 3 - December 2 2019
 - Silver Dart and Zilzanzer's Darts now install properly
 - Added component "Improved Skull of Death"
