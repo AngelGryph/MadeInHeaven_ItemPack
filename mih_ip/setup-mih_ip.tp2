@@ -4,8 +4,8 @@
 
 BACKUP "weidu_external/backup/mih_ip"
 
-AUTHOR "angel@pearlgates.net"
-VERSION v4
+SUPPORT "https://www.gibberlings3.net/forums/topic/29992-my-new-made-in-heaven-mods/"
+VERSION v5
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
@@ -14,7 +14,7 @@ AUTO_EVAL_STRINGS
 
 ALWAYS
   OUTER_SPRINT MOD_NAME "mih_ip"
-  OUTER_SPRINT MOD_VERSION "v4"
+  OUTER_SPRINT MOD_VERSION "v5"
 
   INCLUDE "mih_ip/lib/always.tph"
 END

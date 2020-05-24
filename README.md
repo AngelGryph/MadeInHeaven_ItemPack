@@ -8,6 +8,8 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
+Version 5 - ???
+
 Version 4 - May 21 2020
 - Implemented encapsulation, mod immutability and other best practices
 - Converted almost entire mod to using SFO libary
