@@ -16,7 +16,6 @@ mh#belt2 Sunite Sash				Vaelasa (event or battle)
 mh#belt3 Storm's Garter				Harper Hold (battle)
 mh#belt4 Girdle of Beatification		Temple of Lathander (shop)
 mh#belt5 Girdle of Ogre Blood			Ust Natha (shop)
-mh#belt6 Belt of Vampire Protection		Temple of Lathander (shop)
 
 mh#boot1 Boots of the Master Ninja		Mae'var Guildhouse (battle)
 mh#boot2 Boots of Striding and Springing	Firkraag's Lair (battle)

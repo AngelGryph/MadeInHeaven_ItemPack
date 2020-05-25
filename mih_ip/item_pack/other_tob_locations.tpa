@@ -135,12 +135,13 @@ BEGIN
 
   // Duelling a Bhaalspawn
   //
+  // mh#belt7 - Girdle of Storm Giant Strength (on Captain Egeissag)
   // mh#clck4 - Cloak of the Night Sky +3 (on Captain Egeissag)
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "sengua03"
-    editstring	= ~add_items=>"mh#clck4(cloak)"~
+    editstring	= ~add_items=>"mh#clck4(cloak) mh#belt7(belt)"~
   END
 END	// other_tob_locations
 

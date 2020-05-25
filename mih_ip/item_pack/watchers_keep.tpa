@@ -34,7 +34,6 @@ BEGIN
   //
   // mh#amulb - Phylactery of Bravery (on Demon Wraith's victims)
   // mh#brac7 - Gloves of Evasion (on Demon Wraith's victims)
-  // mh#belt7 - Girdle of Priestly Might (on Demon Wraith's victims)
 
   COPY_EXISTING "ar3014.are" "override"
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
@@ -42,12 +41,6 @@ BEGIN
       container_to_add_to	= 3
       STR_VAR
       item_to_add		= "mh#amulb"
-    END
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 6
-      STR_VAR
-      item_to_add		= "mh#belt7"
     END
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
       INT_VAR

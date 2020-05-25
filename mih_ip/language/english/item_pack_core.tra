@@ -1406,7 +1406,7 @@ Equipped abilities:
 - Cold Resistance: +35% (wearer only)
 
 Weight: 1~
-@219  = ~Belt of Vampire Protection~
+@219  = ~Girdle of Cloud Giant Strength~
 @220  = ~Bolder's Cloak of the Rogue~
 @221  = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
 
@@ -1519,16 +1519,13 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0~
-@240  = ~Girdle of Priestly Might~
-@241  = ~These enchanted girdles started appearing shortly after the end of the Time of Troubles.  Priests of Mystra took it to be a sign that their goddess had returned to power, while others saw it as a sign that the gods desired to take a more active role in the Realms from now on.  Exactly how many of these exist is not known, but there are thought to be at least a dozen around.
-
-Each girdle is bonded to a particular god, although any priest who shares the same moral alignment as the deity may use a belt, they need not be a follower.  This particular girdle has a symbol of the rising sun, marking it as bonded to the Morning Lord, Lathander.
+@240  = ~Girdle of Storm Giant Strength~
+@241  = ~This incredibly powerful belt grants the wearer the immense strength of a storm giant, the physically strongest mortal beings to walk Faerun except for dragons.  Exactly who made it and why is not known, but some suspect the touch of the divine in it.  This is further supported by its tendency to show up whenever there is an event of divine significance playing out, only to mysteriously disappear soon afterwards.
 
 STATISTICS:
 
 Equipped abilities:
-- Strength: 18/99
-- Armor Class: +2
+- Strength: 24
 
 Weight: 2~
 @242  = ~Battle Star +4~
@@ -1588,12 +1585,12 @@ Charge abilities:
 - Cure Critical Wounds (1/day)
 
 Weight: 2~
-@252  = ~This blessed girdle is made from a strip of gold plating that has magically been altered to be as supple as leather.  A stylished rising sun has been engraved on the clasp.  Its enchantment protects the user in battle, especially against vampires.
+@252  = ~This mighty enchanted belt grants the wearer the equivalent strength of a cloud giant.  It was once the property of the paladin Hardan of Waterdeep, who brought it back from an expedition into the Undermountain.  Hardan himself disappeared during the second Dragonspear war, and is assumed to have been dragged into hell by the devils like so many others.
 
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +2 (+4 vs. vampires)
+- Strength: 23
 
 Weight: 2~
 @253  = ~The Sword of the Planes flares with power!~
@@ -1775,25 +1772,25 @@ STATISTICS:
 
 Weight: 10~
 @289  = ~Varazdin's Cloak of Protection~
-@290  = ~Cloak of Protection +3/+1: 'Varazdin's Cloak'
+@290  = ~Cloak of Protection +1/+3: 'Varazdin's Cloak'
 
 This cloak was created about two hundred years ago by the reclusive mage Varazdin, who often found himself in conflict with orcs that threatened his secluded home in the forest.  It served him well until his death in yet another massive orc raid.  The orc chieftain Groth Skullsmasher claimed it for himself, but he was in turn slain by a dwarven champion whose name has been lost to the ages.  Since then, it has been worn by several adventurers.  It was last seen in the possession of an adventuring party seeking to explore Durlag's Tower.
 
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +3
-- Saving Throws: +1 (all)
+- Armor Class: +1
+- Saving Throws: +2 (all)
 
 Weight: 3~
 @291  = ~Ring of the Elven Mage~
-@292  = ~Ring of Protection +1/+3: 'Ring of the Elven Mage'
+@292  = ~Ring of Protection +3/+1: 'Ring of the Elven Mage'
 
 This ring was created almost nine centuries ago by an elven mage as a gift for his human lover.  When the woman died of old age, the wizard gifted it to their eldest child, and then to his eldest child and so on.  When the elven wizard himself finally died to old age, the ring had been worn by his half-elven family for almost eighthundred years.
 
 Equipped abilities:
-- Armor Class: +1
-- Saving Throws: +3 (all)
+- Armor Class: +3
+- Saving Throws: +1 (all)
 
 Weight: 0~
 

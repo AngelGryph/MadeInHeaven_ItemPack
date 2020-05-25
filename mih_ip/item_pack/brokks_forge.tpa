@@ -9,7 +9,11 @@ BEGIN
 
   ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 @81 @84 @87
 
-  COMPILE EVALUATE_BUFFER "%mod_root%/item_pack/dialogs/brokks_forge.d"
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    file	= "brokks_forge.d"
+    location	= "dialogs"
+  END
 
   LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
     STR_VAR

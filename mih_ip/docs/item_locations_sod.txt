@@ -5,6 +5,7 @@ mh#armr3 White Skin of Umpluutu +3		Waizahb (shop)
 
 mh#belt2 Sunite Sash				Ziatar (battle)
 mh#belt5 Girdle of Ogre Blood			Nazramu (shop)
+mh#belt6 Girdle of Cloud Giant Strength		Avernus (event)
 
 mh#blun4 Blackblood +3				Underground River (event)
 

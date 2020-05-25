@@ -9,9 +9,9 @@ mh#brac4 Bracers of the Wind			Ancient Grove (battle)
 mh#brac6 Silver Bracers of Kedl			Saradush (battle)
 mh#brac7 Gloves of Evasion			Watcher's Keep (maze)
 
-mh#belt7 Girdle of Priestly Might		Watcher's Keep (maze)
+mh#belt7 Girdle of Storm Giant Strength		Sendai's Enclave (battle)
 
-mh#clck4 Cloak of the Night Sky			Sendai's Lair (battle)
+mh#clck4 Cloak of the Night Sky			Sendai's Enclave (battle)
 
 mh#dart3 Zilzanzer's Magnificent Darts +1	Sister Garlena (shop)
 

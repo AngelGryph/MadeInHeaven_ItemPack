@@ -329,7 +329,6 @@ BEGIN
   // mh#amul1 - Amulet against Undead
   // mh#amul2 - Necklace of Prayer Beads
   // mh#belt4 - Girdle of Beatification
-  // mh#belt6 - Belt of Vampire Protection
   // mh#clck7 - Cloak of Lathander
   // mh#helm3 - Blessed Helm of Lathander
   // mh#potn3 - Philter of Purification
@@ -345,7 +344,6 @@ BEGIN
     literal'6=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
     literal'7=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
     literal'8=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
-    literal'9=>~ADD_STORE_ITEM "mh#belt6" LAST #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

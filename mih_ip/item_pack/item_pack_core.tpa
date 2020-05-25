@@ -269,7 +269,7 @@ BEGIN
   END
 
 
-  // mh#belt6 - Belt of Vampire Protection
+  // mh#belt6 - Girdle of Cloud Giant Strength
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
@@ -279,7 +279,7 @@ BEGIN
   END
 
 
-  // mh#belt7 - Girdle of Priestly Might
+  // mh#belt7 - Girdle of Storm Giant Strength
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR

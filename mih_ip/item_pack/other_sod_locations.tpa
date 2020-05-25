@@ -1,0 +1,256 @@
+DEFINE_ACTION_FUNCTION other_sod_locations
+BEGIN
+  // Korlasz's Crypt
+  //
+  // mh#staf1 - Staff of Rumathil (equipped on Korlasz)
+  
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdshkorl"
+    editstring	= ~remove_items=>"staf02" add_items=>"mh#staf1(weapon1)"~
+  END
+
+  
+  // Sorcerous Sundries
+  //
+  // mh#dart3 - Zilzander's Magnificent Darts +1
+  // mh#potn1 - Oil of Acid Resistance
+  // mh#potn3 - Philter of Purification
+  
+  COPY_EXISTING "bdsorcsc.sto" "override"
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart04" #5 #0 #0 "identified" #20~
+    literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #10~
+    literal'3=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #5~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "bdsorcsc"
+    edits	= "patch_data"
+  END
+  
+  
+  // Kazzrem the Calishite
+  //
+  // mh#amulb - Phylactery of Bravery
+  // mh#boot2 - Boots of Striding and Springing
+  // mh#ioun1 - Pale Blue Ioun Stone
+  // mh#dart1 - Lein's Fiery Darts
+  // mh#dart2 - Chandler's Icy Darts
+  
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#amulb" AFTER "bdamul24" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4~
+    literal'5=>~ADD_STORE_ITEM "mh#dart2" LAST #3 #0 #0 "identified" #4~
+  END
+  
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "bdkazzre"
+    edits	= "patch_data"
+  END
+  
+
+  // Bellowgulp & the Concocter
+  //
+  // mh#potn1 - Oil of Acid Resistance
+  // mh#potn3 - Philter of Purification
+  
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #15~
+    literal'2=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn22" #1 #0 #0 "identified" #15~
+  END
+  
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "bdbellow" "override"
+    edits	= "patch_data"
+  END
+  
+  // Nazramu's Store
+  //
+  // mh#amul9 - Medallion of the Arctic
+  // mh#belt5 - Girdle of Ogre's Blood
+  // mh#dagg1 - Catclaw +3
+  // mh#ioun2 - Crystal Clear Ioun Stone
+  // mh#ringb - Edion's Ring of Wizardry
+  // mh#robe4 - Shadow Dancer's Robe
+  // mh#robe6 - Ogi-Luc's Great Robe
+  
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#belt5" AFTER "bdbelt01" #1 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#ringb" AFTER "bdring10" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#amul9" AFTER "bdamul25" #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1~
+    literal'7=>~ADD_STORE_ITEM "mh#robe6" LAST #0 #0 #0 "identified" #1~
+  END
+  
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "bdnazram"
+    edits	= "patch_data"
+  END
+
+  
+  // Waizahb's Store
+  //
+  // mh#armr3 - White Hide of Umpluutu +2
+  // mh#robe2 - Robe of the Necromancer
+  
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#armr3" AFTER "bdleat03" #1 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1~
+  END
+  
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "bdwaizah"
+    edits	= "patch_data"
+  END
+  
+  // Lich Outpost
+  //
+  // mh#wand1 - Wand of Illusions
+  // mh#misc1 - Pearl of Power
+  // mh#ringa - Shield Ring
+  
+  COPY_EXISTING "bd1200.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 1
+      charges1			= 12
+      charges2			= 12
+      STR_VAR
+      item_to_add		= "mh#wand1"
+    END
+  
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 6
+      charges1			= 1
+      STR_VAR
+      item_to_add		= "mh#misc1"
+    END
+  
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 9
+      STR_VAR
+      item_to_add		= "mh#ringa"
+    END
+  
+  
+  // Morentherene's Lair
+  //
+  // mh#brac4 - Bracers of the Wind
+  
+  COPY_EXISTING "bd7210.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 1
+      STR_VAR
+      item_to_add		= "mh#brac4"
+    END
+  
+  
+  // Temple of Bhaal/Cyric
+  //
+  // mh#belt2 - Sunite Sash (equipped on Ziatar)
+  // mh#shld3 - Shield of the Phoenix +2
+  
+  COPY_EXISTING "bd7230.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 11
+      STR_VAR
+      item_to_add		= "mh#shld3"
+    END
+  
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdziatar"
+    editstring	= ~add_items=>"mh#belt2(belt)"~
+  END
+
+  
+  // Vampire Hideout (in Trollbark forest)
+  //
+  // mh#lbow1 - Bow of Elathil +2
+  
+  COPY_EXISTING "bd7410.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 1
+      charges2			= 3
+      STR_VAR
+      item_to_add		= "mh#lbow1"
+    END
+  
+
+  // Underground River entrance
+  //
+  // mh#blun4 - Blackblood +3 (replaces The Root of the Problem)
+  
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdjamven"
+    editstring	= ~add_items=>"mh#blun4(weapon1)" remove_items=>"blun10"~
+  END
+  
+  COPY_EXISTING "bdjamven.dlg" "override"
+    DECOMPILE_AND_PATCH
+    BEGIN
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#blun4"
+    END
+
+
+  // Underground River
+  //
+  // mh#brac2 - Gauntlets of the Dwarven King
+  
+  COPY_EXISTING "bd5100.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 4
+      STR_VAR
+      item_to_add		= "mh#brac2"
+    END
+  
+  
+  // Kanaglym
+  //
+  // mh#staf3 - Staff of Moradin's Breath
+  
+  COPY_EXISTING "bd5300.are" "override"
+    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
+      INT_VAR
+      container_to_add_to	= 3
+      charges2			= 3
+      STR_VAR
+      item_to_add		= "mh#staf3"
+    END
+  
+  
+  // Avernus
+  //
+  // mh#swrd9 - Cold Flame +3 (equipped on Illaruel)
+  
+  MAKE_PATCH
+    remove_items=>"sw1h41"
+    add_items=>"mh#swrd9(weapon2)"
+    patch_effect_inline=>~match=>"opcode=233 and parameter2=90" parameter2=>89~
+  END
+    
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdillaru"
+    edits	= "patch_data"
+  END
+END	// other_sod_locations
+  
+
