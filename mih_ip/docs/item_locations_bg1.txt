@@ -31,6 +31,8 @@ mh#brac8 Gloves of Missile Snaring		Fisherman's Lake (battle)
 mh#btax1 Foesplitter +1				Brokk's Forge (shop)
 mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
 
+mh#bull1 Priest's Bullet			(various temples)
+
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Varazdin's Cloak of Protection		Durlag's Tower D4 (chest)
 mh#clck3 Cloak of Arachnida			Black Lily (shop)
@@ -63,7 +65,7 @@ mh#misc6 Bottle of Pleasant Odors		High House of Wonders (shop)
 
 mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 mh#potn2 Potion of Clairvoyance			High Hedge (shop)
-mh#potn3 Philter of Purification		Song of the Morning (shop)
+mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			High Hedge (shop)
 mh#potn5 Potion of Wizardry			High Hedge (shop)
 

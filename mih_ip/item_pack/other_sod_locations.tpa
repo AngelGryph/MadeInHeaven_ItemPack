@@ -100,11 +100,13 @@ BEGIN
   // Waizahb's Store
   //
   // mh#armr3 - White Hide of Umpluutu +2
+  // mh#bull1 - Priest's Bullet
   // mh#robe2 - Robe of the Necromancer
   
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#armr3" AFTER "bdleat03" #1 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#bull1" AFTER "bull04" #5 #0 #0 "identified" #10~
+    literal'3=>~ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1~
   END
   
   LAUNCH_ACTION_FUNCTION edit_store

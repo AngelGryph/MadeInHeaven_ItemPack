@@ -1793,5 +1793,15 @@ Equipped abilities:
 - Saving Throws: +1 (all)
 
 Weight: 0~
+@293  = ~Priest's Bullet~
+@294  = ~These hollow glass sling bullets are filled with holy water.  Upon impact they shatter, dousing the target in holy water. This deals additional damage to undead and fiends.  These bullets are larger and heavier than normal, resulting in reduced accuracy and range.
+
+STATISTICS:
+
+THAC0: -2
+Damage: 1d4+1 (missile), +2d4+2 vs. undead and fiends (magic)
+Launcher: Sling
+
+Weight: 0~
 
 

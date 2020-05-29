@@ -14,6 +14,8 @@ mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
 mh#brac2 Gauntlets of the Dwarven King		Underground River (cache)
 mh#brac4 Bracers of the Wind			Morentherene's Lair (nest)
 
+mh#bull1 Priest's Bullet			Waizahb (shop)
+
 mh#dagg1 Catclaw +3				Nazramu (shop)
 
 mh#dart1 Lein's Fiery Darts			Kazzrem (shop)

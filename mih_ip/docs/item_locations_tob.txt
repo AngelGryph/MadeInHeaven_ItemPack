@@ -11,6 +11,8 @@ mh#brac7 Gloves of Evasion			Watcher's Keep (maze)
 
 mh#belt7 Girdle of Storm Giant Strength		Sendai's Enclave (battle)
 
+mh#bull1 Priest's Bullet			(various temples)
+
 mh#clck4 Cloak of the Night Sky			Sendai's Enclave (battle)
 
 mh#dart3 Zilzanzer's Magnificent Darts +1	Sister Garlena (shop)
@@ -19,7 +21,7 @@ mh#ioun1 Pale Blue Ioun Stone			Sister Garlena (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Sister Garlena (shop)
 
 mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
-mh#potn3 Philter of Purification		Sister Garlena (shop)
+mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 
 mh#ring6 Ring of White Bone			Arcana Archives (shop)

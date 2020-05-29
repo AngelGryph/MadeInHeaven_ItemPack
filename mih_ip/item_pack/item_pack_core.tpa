@@ -533,6 +533,22 @@ BEGIN
   END
 
 
+  // mhbull1 - Priest's Bullet
+
+  LAUNCH_ACTION_FUNCTION make_effect
+    STR_VAR
+    effect		= "mh#bull1"
+    editstring		= "opcode=>12 target=>2 timing=>1 parameter1=>2 parameter2=>4194304 dicenum=>2 dicesize=>4"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#bull1"
+    location	= "items"
+    editstring	= "say_name=>293 say_description=>294"
+  END
+
+
   // mh#clck1 - Mutamin's Cloak
 
   LAUNCH_ACTION_FUNCTION install_item

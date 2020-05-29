@@ -21,6 +21,7 @@ BEGIN
   // Song of the Morning Temple
   //
   // mh#amul1 - Amulet against Undead
+  // mh#bull1 - Priest's Bullet
   // mh#belt4 - Girdle of Beatification
   // mh#potn3 - Philter of Purification
 
@@ -30,6 +31,7 @@ BEGIN
     literal'2=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
 
     literal'3=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -164,6 +166,7 @@ BEGIN
   // Temple of Yondala
   //
   // mh#amul8 - Periapt of Health
+  // mh#bull1 - Priest's Bullet
   // mh#potn3 - Philter of Purification
   // mh#robe3 - Robe of the Pure Heart
 
@@ -171,6 +174,7 @@ BEGIN
     literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
     literal'2=>~ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1~
     literal'3=>~ADD_STORE_ITEM "mh#amul8" LAST #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -279,22 +283,26 @@ BEGIN
   // High House of Wonders
   //
   // mh#amulc - Medallion of Faith
+  // mh#bull1 - Priest's Bullet
   // mh#potn3 - Philter of Purification
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #5~
     literal'2=>~ADD_STORE_ITEM "mh#amulc" LAST #1 #1 #1 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
   END
 
 
   // The Lady's Hall
   //
   // mh#amul2 - Necklace of Prayer Beads
+  // mh#bull1 - Priest's Bullet
   // mh#potn3 - Philter of Purification
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
     literal'2=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

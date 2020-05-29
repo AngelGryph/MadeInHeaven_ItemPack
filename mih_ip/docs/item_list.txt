@@ -49,6 +49,8 @@ mh#btax1 Foesplitter +1				Races of Faerun (3E)
 mh#btax2 Trollkiller +2
 mh#btax3 Redethemar +4				Elves of Evermeet (2E)
 
+mh#bull1 Priest's Bullet			Libris Mortis (3.5E)
+
 mh#clck1 Mutamin's Cloak
 mh#clck2 Varazdin's Cloak of Protection
 mh#clck3 Cloak of Arachnida			DMG (2E)
