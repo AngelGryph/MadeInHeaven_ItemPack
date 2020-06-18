@@ -82,7 +82,8 @@ BEGIN
   // Abandoned Temple of Bhaal
   //
   // mh#tome2 - Book of Vile Darkness
-  // mh#robe5 - Nyalee's Robe of Stone (on Nyalee, unsurprisingly)
+  // mh#ringg - Ring of the Hierophant (on Nyalee)
+  // mh#robe5 - Nyalee's Robe of Stone (guess)
 
   COPY_EXISTING "ar5202.are" "override"
     LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
@@ -96,7 +97,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "hgnya01"
-    editstring	= ~ac=>10 add_items=>"mh#robe5(armor)" remove_items=>"brac15"~
+    editstring	= ~ac=>10 add_items=>"mh#robe5(armor) mh#ringg(lring)" remove_items=>"brac15 ring03"~
   END
 
   // Fire Giant Temple

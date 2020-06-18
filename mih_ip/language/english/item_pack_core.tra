@@ -1803,5 +1803,18 @@ Damage: 1d4+1 (missile), +2d4+2 vs. undead and fiends (magic)
 Launcher: Sling
 
 Weight: 0~
+@295  = ~Ring of the Hierophant~
+@296  = ~Created by a Cormanthian archdruid hundreds of years ago, this enchanted ring was traditionally worn by the oldest living druid in the great forest.  At some point the ring was stolen by an unknown thief, and until now hadn't been seen for at least a century.
+
+STATISTICS:
+
+Equipped abilities:
+- Fire Resistance: +20%
+- Cold Resistance: +20%
+- Acid Resistance: +20%
+- Electricity Resistance: +20%
+- Casting Level: +4 (druid)
+
+Weight: 0~
 
 

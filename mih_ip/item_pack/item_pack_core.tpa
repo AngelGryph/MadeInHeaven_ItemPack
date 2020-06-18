@@ -559,7 +559,7 @@ BEGIN
   END
 
 
-  // mh#clck2 - ???
+  // mh#clck2 - Varazdin's Cloak of Protection
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
@@ -1294,13 +1294,23 @@ BEGIN
   END
 
 
-  // mh#ringf - Ring of the Lich +4
+  // mh#ringf - Ring of the Lich
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
     item	= "mh#ringf"
     location	= "items"
     editstring	= "say_name=>26 say_description=>27"
+  END
+
+
+  // mh#ringg - Ring of the Hierophant
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ringg"
+    location	= "items"
+    editstring	= "say_name=>295 say_description=>296"
   END
 
 

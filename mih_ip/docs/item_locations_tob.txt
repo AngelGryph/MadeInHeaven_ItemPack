@@ -27,6 +27,7 @@ mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 mh#ring6 Ring of White Bone			Arcana Archives (shop)
 mh#ring9 Ring of Thex				Arcana Archives (shop)
 mh#ringf Ring of the Lich			Vongoethe (battle)
+mh#ringg Ring of the Hierophant			Forest of Mir (battle)
 
 mh#robe5 Nyalee's Robe of Stone			Forest of Mir (battle)
 
