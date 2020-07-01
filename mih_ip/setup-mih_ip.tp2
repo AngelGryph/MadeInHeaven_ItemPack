@@ -5,7 +5,7 @@
 BACKUP "weidu_external/backup/mih_ip"
 
 SUPPORT "https://www.gibberlings3.net/forums/topic/29992-my-new-made-in-heaven-mods/"
-VERSION v5
+VERSION @0
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
@@ -13,8 +13,8 @@ NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 
 ALWAYS
-  OUTER_SPRINT MOD_NAME "mih_ip"
-  OUTER_SPRINT MOD_VERSION "v5"
+  OUTER_TEXT_SPRINT MOD_NAME "mih_ip"
+  OUTER_SPRINT MOD_VERSION @0
 
   INCLUDE "mih_ip/lib/always.tph"
 END
@@ -22,13 +22,13 @@ END
 
 LANGUAGE ~English~
          ~english~
-	 ~mih_ip/lang/english/setup-mih_ip.tra~
-	 ~weidu-external/lang/english/setup-mih_ip.tra~
+	 ~mih_ip/language/english/setup-mih_ip.tra~
+	 ~weidu-external/lang/mih_ip/english/setup-mih_ip.tra~
 
 
 // Item Pack
 
-BEGIN ~Made in Heaven: Item Pack~
+BEGIN @1 /* Made in Heaven: Item Pack */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -39,10 +39,10 @@ END
 
 // BG1-style wands
 
-BEGIN ~BG1-style Wands of Frost & -Lightning~
-GROUP ~Item Functionality Tweaks~
+BEGIN @2 /* BG1-style Wands of Frost & -Lightning */
+GROUP @3 /* Item Functionality Tweaks */
 
-REQUIRE_PREDICATE NOT GAME_IS "bgee" ~This component is not applicable to your game.~
+REQUIRE_PREDICATE NOT GAME_IS "bgee" @4 /* This component is not applicable to your game. */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -53,9 +53,9 @@ END
 
 // Alternative Healing Potions
 
-BEGIN ~Healing potions work as in Pen & Paper~
-SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Item Functionality Tweaks~
+BEGIN @5 /* Healing potions work as in Pen & Paper */
+SUBCOMPONENT @6 /* Alternative Healing Potions */
+GROUP @3 /* Item Functionality Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -64,9 +64,9 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-BEGIN ~Healing Potions work as in Icewind Dale~
-SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Item Functionality Tweaks~
+BEGIN @7 /* Healing Potions work as in Icewind Dale */
+SUBCOMPONENT @6 /* Alternative Healing Potions */
+GROUP @3 /* Item Functionality Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -75,9 +75,9 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-BEGIN ~Healing Potions work as in Baldur's Gate~
-SUBCOMPONENT ~Alternative Healing Potions~
-GROUP ~Item Functionality Tweaks~
+BEGIN @8 /* Healing Potions work as in Baldur's Gate */
+SUBCOMPONENT @6 /* Alternative Healing Potions */
+GROUP @3 /* Item Functionality Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -88,8 +88,8 @@ END
 
 // 3e-style Girdles of Giant Strength (and similar items)
 
-BEGIN ~3e-style Girdles of Strength (and similar items)~
-GROUP ~Item Functionality Tweaks~
+BEGIN @9 /* 3e-style Girdles of Strength (and similar items) */
+GROUP @3 /* Item Functionality Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -100,8 +100,8 @@ END
 
 // Cap charges of wands and staves
 
-BEGIN ~Cap charges of Wands and Staves~
-GROUP ~Item Functionality Tweaks~
+BEGIN @10 /* Cap charges of Wands and Staves */
+GROUP @3 /* Item Functionality Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -112,8 +112,8 @@ END
 
 // Miscellaneous Item Improvements
 
-BEGIN ~Miscellaneous Item Improvements (see readme)~
-GROUP ~Item Functionality Tweaks~
+BEGIN @11 /* Miscellaneous Item Improvements (see readme) */
+GROUP @3 /* Item Functionality Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -124,10 +124,10 @@ END
 
 // Potions of Extra Healing in BG1
 
-BEGIN ~Add Potions of Extra Healing in BG1~
-GROUP ~Item Availability Tweaks~
+BEGIN @12 /* Add Potions of Extra Healing in BG1 */
+GROUP @13 /* Item Availability Tweaks */
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 /* This component is not applicable to your game. */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -138,10 +138,10 @@ END
 
 // Nerf BG1 easter egg items
 
-BEGIN ~Nerf BG1 easter egg items~
-GROUP ~Item Availability Tweaks~
+BEGIN @14 /* Nerf BG1 easter egg items */
+GROUP @13 /* Item Availability Tweaks */
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" ~This component is not applicable to your game.~
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 /* This component is not applicable to your game. */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -152,8 +152,8 @@ END
 
 // Sensible Shops (see readme)
 
-BEGIN ~Sensible Shops (see readme)~
-GROUP ~Item Availability Tweaks~
+BEGIN @15 /* Sensible Shops (see readme) */
+GROUP @13 /* Item Availability Tweaks */
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR

@@ -349,7 +349,7 @@ BEGIN
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#brac7" AFTER "clck01" #0 #0 #0 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#boot1" AFTER "clck01" #0 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#clck3" AFTER "clck16" #2 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#clck3" AFTER "clck01" #2 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
