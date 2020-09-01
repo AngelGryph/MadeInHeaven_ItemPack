@@ -18,6 +18,8 @@ BEGIN mh#PartyHasBlackDragonScale
     REPLY #66909
     DO ~SetGlobal("mh#CespenarForgeItem", "GLOBAL", 1)
         SetGlobal("ImpForgeStuff", "GLOBAL", 1)
+	TakePartyItem("mh#comp6")
+	DestroyItem("mh#comp6")
 	TakePartyGold(5000)
 	DestroyGold(5000)~
     GOTO 11

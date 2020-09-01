@@ -1,9 +1,9 @@
 IF
-  Global("mh#CespenarItemMaker", "GLOBAL", 1)
+  Global("mh#CespenarForgeItem", "GLOBAL", 1)
   Global("ImpForgeStuff", "GLOBAL", 1)
 THEN
   RESPONSE #100
-    SetGlobal("mh#CespenarItemMaker", "GLOBAL", 0)
+    SetGlobal("mh#CespenarForgeItem", "GLOBAL", 0)
     SetGlobal("ImpForgeStuff", "GLOBAL", 0)
     SetGlobal("ItemMaker", "GLOBAL", 99999)
     GiveItemCreate("mh#armr7", Player1, 0, 0, 0)

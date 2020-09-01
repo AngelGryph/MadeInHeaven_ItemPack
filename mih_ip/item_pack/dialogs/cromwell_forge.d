@@ -32,6 +32,8 @@ BEGIN mh#InterestedBlackDragonScale
     REPLY #59775
     DO ~SetGlobal("mh#CromwellForgeItem", "GLOBAL", 1)
         SetGlobal("ForgeStuff", "GLOBAL", 1)
+	TakePartyItem("mh#comp6")
+	DestroyItem("mh#comp6")
 	TakePartyGold(5000)
 	DestroyGold(5000)~
     GOTO 56
