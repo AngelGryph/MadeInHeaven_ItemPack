@@ -110,6 +110,33 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// Change item type of holy symbols
+
+BEGIN @17 /* Holy Symbols are Amulets */
+SUBCOMPONENT @16 /* Change item type of holy symbols */
+GROUP @3 /* Item Functionality Tweaks */
+
+REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 /* This component is not applicable to your game. */
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "holy_symbols_are_amulets"
+  location	= "tweaks"
+END
+
+BEGIN @18 /* Holy Symbols are Belts */
+SUBCOMPONENT @16 /* Change item type of holy symbols */
+GROUP @3 /* Item Functionality Tweaks */
+
+REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 /* This component is not applicable to your game. */
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "holy_symbols_are_belts"
+  location	= "tweaks"
+END
+
+
 // Miscellaneous Item Improvements
 
 BEGIN @11 /* Miscellaneous Item Improvements (see readme) */

@@ -1,0 +1,12 @@
+DEFINE_ACTION_FUNCTION holy_symbols_are_amulets
+BEGIN
+  LAUNCH_ACTION_FUNCTION edit_item
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    item		= "belt12 belt13 belt14 beltbw beltsh beltty ohtempus j#belt12 j#belt14 lk#ysy1i"
+    editstring		= "name1_string=>6852 description1_string=>6900 category=>0x0001"
+  END
+END	// holy_symbols_are_amulets
+
+
