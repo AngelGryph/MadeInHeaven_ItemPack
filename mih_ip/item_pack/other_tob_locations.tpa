@@ -97,7 +97,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "hgnya01"
-    editstring	= ~ac=>10 add_items=>"mh#robe5(armor) mh#ringg(lring)" remove_items=>"brac15 ring03"~
+    editstring	= ~ac=>10 add_items=>"mh#robe5(armor,x1) mh#ringg(lring)" remove_items=>"brac15 ring03"~
   END
 
   // Fire Giant Temple

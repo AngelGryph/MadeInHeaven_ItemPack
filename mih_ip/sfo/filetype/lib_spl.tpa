@@ -313,7 +313,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY eff_bit_fields BEGIN
       save_vs_wands => ~0x24,3~
       save_vs_petrification => ~0x24,4~
       save_vs_polymorph => ~0x24,4~
+      ignore_primary_target => ~0x25,2~
+      ignore_secondary_target => ~0x25,3~
       bypass_mirror_image => ~0x27,0~
+      ignore_difficulty => ~0x27,1~
       does_not_wake_sleeper => ~0x2d,2~
 END
 
@@ -1377,6 +1380,7 @@ DEFINE_ACTION_FUNCTION make_scroll_of_spell
     INT_VAR price="-1"
     STR_VAR resref=""
             scrollname=""
+	    scrollicon=""
             name_func=""
             spell_loc=""
             price_func="standard_scroll_price"
@@ -1385,6 +1389,10 @@ BEGIN
        // find a name
        ACTION_IF "%scrollname%" STRING_EQUAL "" BEGIN
           LAF "%name_func%" STR_VAR arguments="%resref%" RET scrollname=value END
+       END
+       // set the icon if none given
+       ACTION_IF "%scrollicon%" STRING_EQUAL "" BEGIN
+          OUTER_TEXT_SPRINT scrollicon "%resref%A"
        END
        // find a price
        ACTION_IF price<0 BEGIN
@@ -1414,8 +1422,8 @@ BEGIN
           name2_string=>"%name%"
           description2_string=>"%desc%"
           patch_effect_inline=>"resource=>%resref%"
-          patch_ability_inline'1=>"ability_icon=>%resref%A"
-          icon=>"%resref%A"
+          patch_ability_inline'1=>"ability_icon=>%scrollicon%"
+          icon=>"%scrollicon%"
           price=>"%price%"
        END
        ACTION_PHP_EACH unusable_flag AS flag=>discard BEGIN
