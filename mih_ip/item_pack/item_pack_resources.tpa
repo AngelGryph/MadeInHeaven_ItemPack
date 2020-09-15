@@ -123,21 +123,21 @@ BEGIN
     LAUNCH_ACTION_FUNCTION make_effect
       STR_VAR
       effect		= "mh#slsh%i%"
-      editstring	= "opcode=>12 target=>2 timing=>1 parameter1=>%i% parameter2=>16777216"
+      editstring	= "opcode=>12 target=>2 timing=>1 parameter1=>%i% parameter2=>0x01000000"
     END
 
     // Extra piercing damage
     LAUNCH_ACTION_FUNCTION make_effect
       STR_VAR
       effect		= "mh#prce%i%"
-      editstring	= "opcode=>12 target=>2 timing=>1 parameter1=>%i% parameter2=>1048576"
+      editstring	= "opcode=>12 target=>2 timing=>1 parameter1=>%i% parameter2=>0x00100000"
     END
 
     // Extra crushing damage
     LAUNCH_ACTION_FUNCTION make_effect
       STR_VAR
       effect		= "mh#crsh%i%"
-      editstring	= "opcode=>12 target=>2 timing=>1 parameter1=>%i% parameter2=>0"
+      editstring	= "opcode=>12 target=>2 timing=>1 parameter1=>%i% parameter2=>0x00000000"
     END
   END
 

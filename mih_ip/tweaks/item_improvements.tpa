@@ -10,7 +10,7 @@ BEGIN
     add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>100 parameter2=>1~
     add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
     patch_effect_global_inline=>~match=>opcode=53 parameter1=>0x7b03~
-    add_effect_inline=>~opcode=>12 target=>2 timing=>1 parameter2=>0x2000 dicenum=>2 dicesize=>4~
+    add_effect_inline=>~opcode=>12 target=>2 timing=>1 parameter2=>0x00020000 dicenum=>2 dicesize=>4~
   END
 
   LAUNCH_ACTION_FUNCTION clone_item
@@ -179,6 +179,47 @@ BEGIN
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
       item	= "leat19"
+      edits	= "patch_data"
+    END
+  END
+
+
+  // ==============================
+  // Items that are in BG2/ToB only
+  // ==============================
+
+  ACTION_IF GAME_INCLUDES "tob"
+  BEGIN
+    // helm31 - Helm of the Rock
+    // helm32
+    //
+    // - This item will be usable by paladins and rangers.
+
+    MAKE_PATCH
+      unusable_paladin=>0
+      unusable_ranger=>0
+    END
+    
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "helm31 helm32"
+      edits	= "patch_data"
+    END
+
+    
+    // brac24 - Bard's Gloves
+    // brac25 - Wondrous Gloves
+    //
+    // - This item will be usable by thief/mages and fighter/thief/mages.
+
+    MAKE_PATCH
+      unusable_mage_thief=>0
+      unusable_fighter_mage_thief=>0
+    END
+    
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "brac24 brac25"
       edits	= "patch_data"
     END
   END

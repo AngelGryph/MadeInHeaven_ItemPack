@@ -223,6 +223,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY cre_fields BEGIN
    effect_type      =>     ~0x33,BYTE~
    ac_natural       =>     ~0x46,SSHORT~
    ac_effective     =>     ~0x48,SSHORT~
+   ac_vs_crushing   =>     ~0x4a,SSHORT~
+   ac_vs_missiles   =>     ~0x4c,SSHORT~
+   ac_vs_piercing   =>     ~0x4e,SSHORT~
+   ac_vs_slashing   =>     ~0x50,SSHORT~
    morale           =>     ~0x23f,BYTE~
    morale_break     =>     ~0x240,BYTE~
    nightmare_mode   =>     ~0x7d,BYTE~

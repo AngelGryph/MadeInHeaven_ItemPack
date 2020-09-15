@@ -10,11 +10,24 @@ BEGIN
 
   // mh#amul1 - Amulet against Undead
 
+  MAKE_PATCH
+    say_name=>0
+    say_description=>1
+  END
+
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      add_effect_global_inline=>~opcode=>323 target=>1 timing=>2 parameter1=>2~
+    END
+  END
+    
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
     item	= "mh#amul1"
     location	= "items"
-    editstring	= "say_name=>0 say_description=>1"
+    edits	= "patch_data"
   END
 
 
@@ -291,15 +304,19 @@ BEGIN
 
   // mh#blun1 - Radiant Star +1
 
+  MAKE_PATCH
+    say_name=>71
+    say_description=>72
+  END
+
   ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
   BEGIN
     OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
     OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
     OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
 
-    MAKE_PATCH
-      say_name=>71
-      say_description=>72
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline'1=>"opcode=>344 target=>1 timing=>2 parameter1=>%general_undead% parameter2=>3 mode=>4"
       add_effect_global_inline'2=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4"
       add_effect_global_inline'3=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_demonic% parameter2=>4 mode=>4"
@@ -307,9 +324,9 @@ BEGIN
   END
   ELSE
   BEGIN
-    MAKE_PATCH
-      say_name=>71
-      say_description=>72
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      enchantment=>4
     END
   END
 
@@ -323,11 +340,17 @@ BEGIN
 
   // mh#blun2 - Slimecrusher +1
 
+  MAKE_PATCH
+    say_name=>179
+    say_description=>180
+  END
+
   ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
   BEGIN
     OUTER_SET race_slime = IDS_OF_SYMBOL("race" "slime")
 
-    MAKE_PATCH
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       say_name=>179
       say_description=>180
       add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_slime% parameter2=>4 mode=>4"
@@ -335,9 +358,9 @@ BEGIN
   END
   ELSE
   BEGIN
-    MAKE_PATCH
-      say_name=>179
-      say_description=>180
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      enchantment=>4
     END
   END
 
@@ -351,21 +374,17 @@ BEGIN
 
   // mh#blun3 - Battle Star +4
 
+  MAKE_PATCH
+    say_name=>242
+    say_description=>243
+    cd_immunity=>"hold"
+  END
+
   ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
   BEGIN
-    MAKE_PATCH
-      say_name=>242
-      say_description=>243
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>346 target=>1 timing=>2 parameter1=>4 mode=>4"
-      cd_immunity=>"hold"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>242
-      say_description=>243
-      cd_immunity=>"hold"
     END
   END
 
@@ -538,7 +557,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION make_effect
     STR_VAR
     effect		= "mh#bull1"
-    editstring		= "opcode=>12 target=>2 timing=>1 parameter1=>2 parameter2=>4194304 dicenum=>2 dicesize=>4"
+    editstring		= "opcode=>12 target=>2 timing=>1 parameter1=>2 parameter2=>0x00400000 dicenum=>2 dicesize=>4"
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -835,19 +854,16 @@ BEGIN
 
   // mh#ioun1 - Pale Blue Ioun Stone
 
+  MAKE_PATCH
+    say_name=>54
+    say_description=>55
+  END
+
   ACTION_IF visible_ioun_stones
   BEGIN
-    MAKE_PATCH
-      say_name=>54
-      say_description=>55
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio1"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>54
-      say_description=>55
     END
   END
 
@@ -861,19 +877,16 @@ BEGIN
 
   // mh#ioun2 - Crystal Clear Ioun Stone
 
+  MAKE_PATCH
+    say_name=>91
+    say_description=>56
+  END
+
   ACTION_IF visible_ioun_stones
   BEGIN
-    MAKE_PATCH
-      say_name=>91
-      say_description=>56
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio2"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>91
-      say_description=>56
     END
   END
 
@@ -887,19 +900,16 @@ BEGIN
 
   // mh#ioun3 - Bright Orange Ioun Stone
 
+  MAKE_PATCH
+    say_name=>187
+    say_description=>188
+  END
+
   ACTION_IF visible_ioun_stones
   BEGIN
-    MAKE_PATCH
-      say_name=>187
-      say_description=>188
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio3"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>187
-      say_description=>188
     END
   END
 
@@ -913,19 +923,16 @@ BEGIN
 
   // mh#ioun4 - Telkiira
 
+  MAKE_PATCH
+    say_name=>189
+    say_description=>190
+  END
+
   ACTION_IF visible_ioun_stones
   BEGIN
-    MAKE_PATCH
-      say_name=>189
-      say_description=>190
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio4"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>189
-      say_description=>190
     END
   END
 
@@ -939,19 +946,16 @@ BEGIN
 
   // mh#ioun5 - Mottled Green Ioun Stone
 
+  MAKE_PATCH
+    say_name=>226
+    say_description=>227
+  END
+
   ACTION_IF visible_ioun_stones
   BEGIN
-    MAKE_PATCH
-      say_name=>226
-      say_description=>227
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio4"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>226
-      say_description=>227
     END
   END
 
@@ -965,19 +969,16 @@ BEGIN
 
   // mh#ioun6 - Maroon Star Ioun Stone
 
+  MAKE_PATCH
+    say_name=>228
+    say_description=>229
+  END
+
   ACTION_IF visible_ioun_stones
   BEGIN
-    MAKE_PATCH
-      say_name=>228
-      say_description=>229
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio3"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>228
-      say_description=>229
     END
   END
 
@@ -1154,7 +1155,7 @@ BEGIN
   END
 
 
-  // mh#ring1 - ???
+  // mh#ring1 - Ring of the Elven Mage
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
@@ -1284,12 +1285,12 @@ BEGIN
   END
 
 
-  // mh#ringe - Ring of Three Wishes
+  // mh#ringe - Ring of Anti-Venom
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item		= "mh#ringe"
-    location		= "items"
+    item	= "mh#ringe"
+    location	= "items"
     editstring	= "say_name=>267 say_description=>268"
   END
 
@@ -1536,21 +1537,25 @@ BEGIN
 
   // mh#swrd2 - Smythe's Slicer +1
 
+  MAKE_PATCH
+    say_name=>38
+    say_description=>39
+  END
+
   ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
   BEGIN
     OUTER_SET race_spider = IDS_OF_SYMBOL("race" "spider")
 
-    MAKE_PATCH
-      say_name=>38
-      say_description=>39
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_spider% parameter2=>4 mode=>3"
     END
   END
   ELSE
   BEGIN
-    MAKE_PATCH
-      say_name=>38
-      say_description=>39
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      enchantment=>3
     END
   END
 
@@ -1617,7 +1622,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION make_effect
     STR_VAR
     effect		= "mh#swrd5"
-    editstring		= "opcode=>12 target=>2 timing=>1 parameter1=>3 parameter2=>524288 dicenum=>2 dicesize=>4"
+    editstring		= "opcode=>12 target=>2 timing=>1 parameter1=>3 parameter2=>0x00080000 dicenum=>2 dicesize=>4"
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1640,21 +1645,25 @@ BEGIN
 
   // mh#swrd7 - Mirthal +1
 
+  MAKE_PATCH
+    say_name=>208
+    say_description=>209
+  END
+
   ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
   BEGIN
     OUTER_SET race_kobold = IDS_OF_SYMBOL("race" "kobold")
 
-    MAKE_PATCH
-      say_name=>208
-      say_description=>209
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
       add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_kobold% parameter2=>4 mode=>2"
     END
   END
   ELSE
   BEGIN
-    MAKE_PATCH
-      say_name=>208
-      say_description=>209
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      enchantment=>2
     END
   END
 

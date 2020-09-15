@@ -6,6 +6,7 @@ STATISTICS:
 Equipped abilities:
 - THAC0: +2 vs. undead
 - Damage: +2 vs. undead
+- Turn Undead Level: +2
 
 Weight: 3~
 @2    = ~Necklace of Prayer Beads~
@@ -1382,10 +1383,12 @@ Weight: 7~
 
 Elmira's original name for this item was "Elmira's Little Stick of Blasting Pesky Torch-Wielders", but later owners shorted this to its current name.
 
+Unlike most wands, this wand will recharge overnight.
+
 STATISTICS:
 
 Charge abilities:
-- Magic Missile
+- Magic Missile (6/day)
   Creates 5 missiles, each inflicting 1d4+1 magic damage
   Range: 70 ft.
   Area of Effect: 1 creature
