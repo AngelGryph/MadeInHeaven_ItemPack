@@ -160,7 +160,7 @@ mh#swrd6 Pale Justice +4			Icewind Dale 1 (2E)
 mh#swrd7 Mirthal +1
 mh#swrd8 Golden Sky +2
 mh#swrd9 Cold Flame +3
-*mh#swrda ???
+mh#swrda Holy Sword +2
 
 mh#tome1 Book of Exalted Deeds			DMG (2E)
 mh#tome2 Book of Vile Darkness			DMG (2E)

@@ -92,6 +92,28 @@ BEGIN girdle1
     EXIT
 END
 
+IF ~GlobalGT("Chapter", "GLOBAL", %tutu_chapter_5%)
+    Reputation(Player1, 20)
+    Or(6)
+      Class(Player1, PALADIN)
+      Class(Player2, PALADIN)
+      Class(Player3, PALADIN)
+      Class(Player4, PALADIN)
+      Class(Player5, PALADIN)
+      Class(Player6, PALADIN)
+    Global("mh#BrokkHolySword", "GLOBAL", 0)~
+BEGIN holy_sword
+  SAY @91
+  = @92
+  = @93
+  = @94
+  IF ~~
+    DO ~GiveItemCreate("mh#swrda", LastTalkedToBy(Myself), 0, 1, 1)
+        SetGlobal("mh#BrokkHolySword", "GLOBAL", 1)~
+    SOLVED_JOURNAL @95
+  EXIT
+END
+
 IF ~PartyHasItem("mh#comp1")
     Global("mh#BrokkMeteor", "GLOBAL", 0)~
 BEGIN meteor1

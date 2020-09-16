@@ -97,7 +97,7 @@ The smith Brokk can use the unicorn horn I found in the bandit camp to make a ma
 @72   = ~Brokk's Alicorn Spear
 
 The smith Brokk is making a spear out of the unicorn horn I found in the bandit camp.  He told me to come back for it the next day.~
-@73   = ~Ah, <CHARNAME>.  Yer spear be ready fer ya.  Use it well, aye?~
+@73   = ~Ah, <GABBER>.  Yer spear be ready fer ya.  Use it well, aye?~
 @74   = ~Brokk's Alicorn Spear
 
 Brokk made a magical spear for me out of the unicorn horn I found in the bandit camp.~
@@ -123,5 +123,10 @@ It took a lot of patience, but we helped Brokk forge a splendid suit of chain ma
 @88   = ~Can you make me something from this arandur ore?~
 @89   = ~Brokk~
 @90   = ~Brokk's Forge~
+@91   = ~<CHARNAME>!  Sum of them Flamin' Fists were here lookin' fer ya.  Said ye'd committed murder!  I d'nae believe them, ye're a hero my <PRO_GIRLBOY>!~
+@92   = ~Mark this old dwarf's words, young one, sumthin' very foul is goin' on in that city.  Ye should be on yer toes if y' plan ta investigate.~
+@93   = ~I got sumthin' special fer ya.  Took many days t' make, so I hope it's sumthin' ya can use.  I nae made one like these before, and I may nae make one evah again.~
+@94   = ~This be a holy blade, m'<PRO_GIRLBOY>, and only a holy warrior may wield.  And nay, ya don't haf ta pay fer it, this one's all on me.  Ya be a good one, y' earned it and much more!~
+@95   = ~Brokk's Forge
 
-
+Brokk was so impressed with me, he forged a holy sword for me!  I wonder if I will even be able to use it?~

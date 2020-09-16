@@ -1712,6 +1712,40 @@ BEGIN
   END
 
 
+  // mh#swrda - Holy Sword +2
+
+  MAKE_PATCH
+    say_name=>297
+    say_description=>298
+  END
+
+  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
+  BEGIN
+    OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
+    OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
+
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      add_effect_global_inline'1=>"opcode=>344 target=>1 timing=>2 parameter1=>%general_undead% parameter2=>3 mode=>4"
+      add_effect_global_inline'2=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_demonic% parameter2=>4 mode=>4"
+    END
+  END
+  ELSE
+  BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      enchantment=>4
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#swrd2"
+    location	= "items"
+    edits	= "patch_data"
+  END
+
+
   // mh#tome1 - Book of Exalted Deeds
 
   LAUNCH_ACTION_FUNCTION install_item

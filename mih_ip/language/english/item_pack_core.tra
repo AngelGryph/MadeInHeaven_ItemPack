@@ -1819,5 +1819,25 @@ Equipped abilities:
 - Casting Level: +4 (druid)
 
 Weight: 0~
+@297  = ~Holy Sword +2~
+@298  = ~This sacred blade was created by the dwarven smith Brokk in honor of all the good deeds of <CHARNAME> and <PRO_HISHER> friends.  As such it has no history, but perhaps this is the beginning of a legend?
+
+In addition to dealing extra damage to undead and fiends, this sword can heal the wielder's wounds once per day, and call down the wrath of <PRO_HISHER> deity on a foe.  Only the purest and holiest of warriors can wield this blade.
+
+STATISTICS:
+
+Charge abilities:
+- Cure Critical Wounds (1/day, self only)
+- Flame Strike (1/day)
+
+THAC0: +2, +4 vs. undead and fiends
+Damage: 2d4+2, +4 vs. undead and fiends (slashing)
+Speed Factor: 6
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 8~
 
 
