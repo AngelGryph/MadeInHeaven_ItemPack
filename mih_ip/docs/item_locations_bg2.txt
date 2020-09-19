@@ -28,6 +28,7 @@ mh#brac1 Vambraces of Evil's Warding		Chateau Irenicus (import)
 mh#brac2 Gauntlets of the Dwarven King		Chateau Irenicus (import)
 mh#brac3 Bracers of Winter's Chill		Therndle Daglefodd (event)
 mh#brac5 Gauntlets of Smiting			Bridge District (battle)
+mh#brac9 Gloves of Thievery			Chateau Irenicus (import)
 
 mh#btax1 Foesplitter +1				Maheer (shop)
 mh#btax3 Redethemar +4				Tree of Life (container)
@@ -60,6 +61,7 @@ mh#ioun3 Bright Orange Ioun Stone		Adventurer's Market (shop)
 mh#ioun4 Telkiira				Suldanessenar (battle)
 mh#ioun5 Mottled Green Ioun Stone		Harper Stronghold (battle)
 mh#ioun6 Maroon Star Ioun Stone			Bridge District (battle)
+*mh#ioun7 Dark Indigo Ioun Stone		???
 
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 
@@ -73,6 +75,8 @@ mh#potn2 Potion of Clairvoyance			(various potion shops)
 mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			(various potion shops)
 mh#potn5 Potion of Wizardry			(various potion shops)
+mh#potn6 Alchemist's Fire			Adventurer's Market (shop)
+mh#potn7 Acid Flask				Adventurer's Market (shop)
 
 mh#quiv2 Quiver of Ehlonna			Bowyer/Fletcher (shop)
 
@@ -97,7 +101,6 @@ mh#robe6 Ogi-Luc's Great Robe			Adventurer's Market (ch6)
 mh#shld3 Shield of the Phoenix +2		D'Arnise Keep (chest)
 mh#shld5 Shield of the Revenant +2		Temple of Lathander (shop)
 mh#shld7 Waukeen's Defender +2			Temple of Waukeen (shop)
-mh#swrd8 White Shield +4			Suldanessenar (event)
 
 mh#staf1 Staff of Rumathil			Planar Sphere (battle)
 mh#staf5 Staff of Water +2			Adventurers Market (shop)
@@ -107,6 +110,7 @@ mh#swrd2 Smythe's Slicer +1			Maheer (shop)
 mh#swrd4 Planar Sword +1			Planar Sphere (controls)
 mh#swrd5 Amaunator's Legacy +3			Temple Ruins (statue)
 mh#swrd6 Pale Justice +4			Suldanessenar (battle)
+mh#swrd9 Holy Sword +2				Chateau Irenicus (import)
 
 mh#wand1 Wand of Illusions			Planar Sphere (chest)
 

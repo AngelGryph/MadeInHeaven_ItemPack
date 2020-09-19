@@ -8,12 +8,12 @@ BEGIN
     location	= "dialogs"
   END
 
-  LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
     STR_VAR
     dialog	= "mh#hlftr"
   END
 
-  LAUNCH_ACTION_FUNCTION mh_erase_journal_entries_on_bg2_transition
+  LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
     STR_VAR
     dialog	= "thalan"
   END

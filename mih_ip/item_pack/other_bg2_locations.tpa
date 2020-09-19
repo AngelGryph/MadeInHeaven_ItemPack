@@ -146,6 +146,8 @@ BEGIN
   // mh#amul6 - Scarab versus Golems
   // mh#dart3 - Zilzanzer's Magnificent Darts +1
   // mh#misc3 - Crystal Ball
+  // mh#potn6 - Alchemist's Fire
+  // mh#potn7 - Flask of Acid
   // mh#ringc - Ring of Water Control
   // mh#staf5 - Staff of Water +2
   // mh#ioun3 - Orange Ioun Stone
@@ -165,6 +167,8 @@ BEGIN
     literal'5=>~ADD_STORE_ITEM "mh#staf5" AFTER "staf18" #0 #30 #30 "identified" #1~
     literal'6=>~ADD_STORE_ITEM "mh#misc3" AFTER "rods03" #7 #0 #0 "identified" #1~
     literal'7=>~ADD_STORE_ITEM "mh#ioun3" AFTER "clck12" #0 #0 #0 "identified" #1~
+    literal'8=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #10~
+    literal'9=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -666,16 +670,6 @@ BEGIN
     STR_VAR
     creature	= "dragblac"
     editstring	= ~add_items=>"mh#comp6(qitem) mh#swrd6(qitem)"~
-  END
-
-  // House of the Moon
-  //
-  // mh#shld8 - White Shield +4
-
-  LAUNCH_ACTION_FUNCTION edit_creature
-    STR_VAR
-    creature	= "sumoon"
-    editstring	= ~add_items=>"mh#shld8(shield)~
   END
 
   // House of the Priest

@@ -23,22 +23,26 @@ BEGIN
   //
   // mh#amul7 - Dragon's Tear Amulet
   // mh#dart3 - Zilzanzer's Magnificent Darts +1
-  // mh#tome3 - Libram of Silver Magic
   // mh#potn1 - Oil of Acid Resistance
   // mh#potn4 - Oil of Disenchantment
+  // mh#potn6 - Alchemist's Fire
+  // mh#potn7 - Flask of Acid
   // mh#ring6 - Ring of White Bone
   // mh#ring9 - Ring of Thex
+  // mh#tome3 - Libram of Silver Magic
   // mh#wand1 - Wand of Illusions
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#dart3" AFTER "helm23" #12 #0 #0 "identified" #12~
-    literal'2=>~ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #9~
-    literal'4=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5~
-    literal'5=>~ADD_STORE_ITEM "mh#ring9" AFTER "ring02" #0 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1~
-    literal'7=>~ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1~
-    literal'8=>~ADD_STORE_ITEM "mh#amul7" BEFORE "ring02" #2 #0 #0 "identified" #1~
+    literal'01=>~ADD_STORE_ITEM "mh#dart3" AFTER "helm23" #12 #0 #0 "identified" #12~
+    literal'02=>~ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1~
+    literal'03=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #9~
+    literal'04=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5~
+    literal'05=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10~
+    literal'06=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
+    literal'07=>~ADD_STORE_ITEM "mh#ring9" AFTER "ring02" #0 #0 #0 "identified" #1~
+    literal'08=>~ADD_STORE_ITEM "mh#ring6" AFTER "ring02" #12 #0 #0 "identified" #1~
+    literal'09=>~ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1~
+    literal'10=>~ADD_STORE_ITEM "mh#amul7" BEFORE "ring02" #2 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -134,6 +138,20 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_store
     STR_VAR
     store	= "amcler02"
+    edits	= "patch_data"
+  END
+
+  // Amkethran Smugglers
+  //
+  // mh#shld8 - White Shield +4
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#shld8" AFTER "plat21" #0 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "amsmug02"
     edits	= "patch_data"
   END
 

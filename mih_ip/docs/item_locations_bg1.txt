@@ -27,6 +27,7 @@ mh#brac3 Bracers of Winter's Chill		Durlag's Tower D4 (mushrooms)
 mh#brac5 Gauntlets of Smiting			Durlag's Tower L4 (battle)
 mh#brac7 Gloves of Evasion			Black Lily (shop)
 mh#brac8 Gloves of Missile Snaring		Fisherman's Lake (battle)
+mh#brac9 Gloves of Thievery			Phendra's Scrolls (shop)
 
 mh#btax1 Foesplitter +1				Brokk's Forge (shop)
 mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
@@ -68,6 +69,8 @@ mh#potn2 Potion of Clairvoyance			High Hedge (shop)
 mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			High Hedge (shop)
 mh#potn5 Potion of Wizardry			High Hedge (shop)
+mh#potn6 Alchemist's Fire			High Hedge (shop)
+mh#potn7 Acid Flask				High Hedge (shop)
 
 mh#quiv1 Quiver of Ehlonna			Feldepost's Inn (shop)
 

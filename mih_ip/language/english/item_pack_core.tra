@@ -21,11 +21,14 @@ Charge abilities:
 
 Weight: 3~
 @4    = ~Gem of Insight~
-@5    = ~The enchanted gem on this pendant bestows an unusual sharpness of wit and clarity of mind upon the wearer.
+@5    = ~The enchanted gem on this pendant bestows an unusual sharpness of wit and clarity of mind upon the wearer.  It can also be used to raise the wearer's intelligence permanently, but in this case the gem and the wisdom it bestows will be lost forever.
  
 Many a person in Faerun has wished for a dozen or so of these gems to put on less than bright employees, apprentices or minions, but as Thalantyr of Beregost once put it: "Even the dwarves' deepest gem mines will have run dry long before we have eliminated all the stupidity from Faerun."
 
 STATISTICS:
+
+Charge abilities:
+- Gain +1 intelligence permanently
 
 Equipped abilities:
 - Intelligence: +1
@@ -1174,7 +1177,7 @@ Equipped abilities:
 
 Weight: 2~
 @189  = ~Telkiira~
-@190  = ~This is an elven telkiira, or lore-stone in the common language.  Such gems contain a portion of the knowledge and experience of previous bearers and as such enhance the mental prowess  and arcane abilities of its current owner.  Only those of elven blood can safely use a telkiira, use by a non-elf is extremely dangerous and likely to result in permanent insanity.
+@190  = ~This is an elven telkiira, or lore-stone in the common tongue.  Such gems contain a portion of the knowledge and experience of previous bearers and as such enhance the mental prowess  and arcane abilities of its current owner.  Only those of elven blood can safely use a telkiira, use by a non-elf is extremely dangerous and likely to result in permanent insanity.
 
 STATISTICS:
 
@@ -1337,7 +1340,7 @@ The most commonly accepted story goes as follows.  The ronin accepted the shogun
 
 The daughter married as her father wished, but soon found herself in a loveless marriage with an abusive husband.  At some point he beat her so savagely she did not survive.  When her father learned of that he had his samurai arrest the culprit and sentenced him to death.  The samurai also recovered the katana, but the shogun could not bear to look at it as it was such a painful reminder of his error in judgment that cost his daughter her life.
 
-He gave the blade to a trusted servant and ordered him to take it far, far away so he would never see it again.  The loyal servant followed his master's wish to the letter and traveled in the direction of the setting sun for many moons, until finally he reached the Sword Coast and could not travel any further west.  Here he hid the katana deep inside a dank cavern before engaging on the long journey back to Kara-tur.
+He gave the blade to a trusted servant and ordered him to take to the far end of the world so he would never see it again.  The loyal servant followed his master's wish to the letter and traveled in the direction of the setting sun for many moons, until finally he reached the Sword Coast and could not travel any further west.  Here he hid the katana deep inside a dank cavern before engaging on the long journey back to Kara-tur.
 
 STATISTICS:
 
@@ -1411,7 +1414,7 @@ Equipped abilities:
 Weight: 1~
 @219  = ~Girdle of Cloud Giant Strength~
 @220  = ~Bolder's Cloak of the Rogue~
-@221  = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentatim.
+@221  = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentarim.
 
 Due to the nature of its protective enchantment, this cloak can not be worn together with other protection devices, like a Ring of Protection.
 
@@ -1839,5 +1842,30 @@ Requires:
  11 Strength
 
 Weight: 8~
+@299  = ~Dark Indigo Ioun Stone~
+@300  = ~This deep blue ioun stone resembles the darkening sky during twilight.  It has a rather serene feel about it.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to critical hits and backstabs
+
+Weight: 2~
+@301  = ~Alchemist's Fire~
+@302  = ~This is a bottle of alchemist's fire, a secret mixture of oils and volatile substances that ignites on contact with the air.  While it is not explosive like an Oil of Fiery burning, the substance still burns with a very hot flame, inclicting fire damage on whatever the bottle is thrown at.  It also has the advantage of being a completely non-magical effect, so it can damage even things that resist magic.
+
+STATISTICS:
+
+Damage: 2d8 (Save vs. Breath for half)
+
+Weight: 1~
+@303  = ~Flask of Acid~
+@304  = ~This is a bottle of concentrated acid, refined and distilled through secret alchemical processes.  When thrown at a target, the acid will spread over it, inflicting damage.  If not neutralized or washed off somehow, the acid will do more damage after a round, then it becomes inert.  This is a completely non-magical effect, so it may damage even things that resist magic.
+
+STATISTICS:
+
+Damage: 2d6 initially, plus 1d6 after a round (Save vs. Breath halves the initial damage and negates the secondary damage)
+
+Weight: 1~
 
 

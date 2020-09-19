@@ -24,6 +24,7 @@ mh#dart3 Zilzanzer's Magnificent Darts +1	Sorcerous Sundries (shop)
 
 mh#ioun1 Pale Blue Ioun Stone			Kazzrem (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
+*mh#ioun7 Dark Indigo Ioun Stone		???
 
 mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 
@@ -31,6 +32,8 @@ mh#misc1 Pearl of Power				Lich Outpost (shelf)
 
 mh#potn1 Oil of Acid Resistance			Sorcerous Sundries (shop)
 mh#potn3 Philter of Purification		Sorcerous Sundries (shop)
+mh#potn6 Alchemist's Fire			Sorcerous Sundries (shop)
+mh#potn7 Acid Flask				Sorcerous Sundries (shop)
 
 mh#ringa Shield Ring				Lich Outpost (mage remains)
 mh#ringb Edion's Ring of Wizardry		Nazramu (shop)

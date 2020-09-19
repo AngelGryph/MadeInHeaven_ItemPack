@@ -990,6 +990,29 @@ BEGIN
   END
 
 
+  // mh#ioun7 - Deep Indigo Ioun Stone
+
+  MAKE_PATCH
+    say_name=>299
+    say_description=>300
+  END
+
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
+    BEGIN
+      add_effect_global_inline=>"opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>mh#vsio5"
+    END
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#ioun7"
+    location	= "items"
+    edits	= "patch_data"
+  END
+
+
   // mh#lbow1 - Bow of Eletha
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1135,6 +1158,26 @@ BEGIN
     item	= "mh#potn5"
     location	= "items"
     editstring	= "say_name=>247 say_description=>248"
+  END
+
+
+  // mh#potn6 - Alchemist's Fire
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn6"
+    location	= "items"
+    editstring	= "say_name=>301 say_description=>302"
+  END
+
+
+  // mh#potn7 - Flask of Acid
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn6"
+    location	= "items"
+    editstring	= "say_name=>303 say_description=>304"
   END
 
 
