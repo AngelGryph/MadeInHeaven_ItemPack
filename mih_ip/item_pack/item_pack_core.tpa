@@ -7,22 +7,22 @@ BEGIN
     visible_ioun_stones	= value
   END
 
+  OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
+  OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
+  OUTER_SET race_kobold = IDS_OF_SYMBOL("race" "kobold")
+  OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
+  OUTER_SET race_slime = IDS_OF_SYMBOL("race" "slime")
+  OUTER_SET race_spider = IDS_OF_SYMBOL("race" "spider")
+
 
   // mh#amul1 - Amulet against Undead
 
   MAKE_PATCH
     say_name=>0
     say_description=>1
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>323 target=>1 timing=>2 parameter1=>2~
   END
 
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      add_effect_global_inline=>~opcode=>323 target=>1 timing=>2 parameter1=>2~
-    END
-  END
-    
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
     item	= "mh#amul1"
@@ -307,27 +307,7 @@ BEGIN
   MAKE_PATCH
     say_name=>71
     say_description=>72
-  END
-
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
-    OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
-    OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
-
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      add_effect_global_inline'1=>"opcode=>344 target=>1 timing=>2 parameter1=>%general_undead% parameter2=>3 mode=>4"
-      add_effect_global_inline'2=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4"
-      add_effect_global_inline'3=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_demonic% parameter2=>4 mode=>4"
-    END
-  END
-  ELSE
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      enchantment=>4
-    END
+    add_effect_global_inline=>~match=>"%enhanced_edition%" number_to_add=>3 opcode=>344 target=>1 timing=>2 parameter1=>"entry_index from [%general_undead% %race_lycanthrope% %race_demonic%]" parameter2=>"entry_index from [3 4 4]" mode=>4~
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -343,25 +323,7 @@ BEGIN
   MAKE_PATCH
     say_name=>179
     say_description=>180
-  END
-
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    OUTER_SET race_slime = IDS_OF_SYMBOL("race" "slime")
-
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      say_name=>179
-      say_description=>180
-      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_slime% parameter2=>4 mode=>4"
-    END
-  END
-  ELSE
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      enchantment=>4
-    END
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_slime% parameter2=>4 mode=>4~
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -378,14 +340,7 @@ BEGIN
     say_name=>242
     say_description=>243
     cd_immunity=>"hold"
-  END
-
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      add_effect_global_inline=>"opcode=>346 target=>1 timing=>2 parameter1=>4 mode=>4"
-    END
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>346 target=>1 timing=>2 parameter1=>4 mode=>4~
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -689,21 +644,11 @@ BEGIN
 
   // mh#comp4 - Rusty Katana
 
-  ACTION_IF GAME_IS "bgee"
-  BEGIN
-    MAKE_PATCH
-      name1_string=>26711
-      description1_string=>26713
-      say_name=>181
-      say_description=>182
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>181
-      say_description=>182
-    END
+  MAKE_PATCH
+    name1_string=>~if %is_bg1% and %enhanced_edition% and not %is_eet% then 26711 else no_change~
+    description1_string=>~if %is_bg1% and %enhanced_edition% and not %is_eet% then 26713 else no_change~
+    say_name=>181
+    say_description=>182
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -786,22 +731,10 @@ BEGIN
 
   // mh#dart4 - Silver Dart of Selune +2
 
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
-
-    MAKE_PATCH
-      say_name=>238
-      say_description=>239
-      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4"
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>238
-      say_description=>238
-    END
+  MAKE_PATCH
+    say_name=>238
+    say_description=>239
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4~
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1125,24 +1058,24 @@ BEGIN
 
   // mh#potn5 - Potion of Wizardry
 
-  ACTION_IF ENGINE_IS "iwd1 how totlm"
+  ACTION_IF is_iwd
   BEGIN
     MAKE_PATCH
       add_effect_inline=>"opcode=>254 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"
     END
   END
 
-  ACTION_IF ENGINE_IS "bgee bg2ee"
+  ACTION_IF enhanced_edition
   BEGIN
     MAKE_PATCH
       add_effect_inline=>"opcode=>321 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"
     END
   END
 
-  ACTION_IF ENGINE_IS "bg2 tob"
+  ACTION_IF is_bg2 AND NOT enhanced_edition
   BEGIN
     MAKE_PATCH
-       clone_effect_inline=>"match=>opcode=142 opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 at_end=>1"
+       clone_effect_inline=>~match=>"opcode = 142" opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 at_end=>1~
     END
   END
 
@@ -1583,23 +1516,7 @@ BEGIN
   MAKE_PATCH
     say_name=>38
     say_description=>39
-  END
-
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    OUTER_SET race_spider = IDS_OF_SYMBOL("race" "spider")
-
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_spider% parameter2=>4 mode=>3"
-    END
-  END
-  ELSE
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      enchantment=>3
-    END
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_spider% parameter2=>4 mode=>3~
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1636,7 +1553,7 @@ BEGIN
     editstring	= "say_name=>112 say_description=>113"
   END
 
-  ACTION_IF ENGINE_IS "bgee bg2ee"
+  ACTION_IF enhanced_edition
   BEGIN
     LAUNCH_ACTION_FUNCTION extend
       STR_VAR
@@ -1691,23 +1608,7 @@ BEGIN
   MAKE_PATCH
     say_name=>208
     say_description=>209
-  END
-
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    OUTER_SET race_kobold = IDS_OF_SYMBOL("race" "kobold")
-
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      add_effect_global_inline=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_kobold% parameter2=>4 mode=>2"
-    END
-  END
-  ELSE
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      enchantment=>2
-    END
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_kobold% parameter2=>4 mode=>2~
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1720,21 +1621,11 @@ BEGIN
 
   // mh#swrd8 - Golden Sky +2
 
-  ACTION_IF GAME_IS "bgee"
-  BEGIN
-    MAKE_PATCH
-      name1_string=>26711
-      description1_string=>26713
+  MAKE_PATCH
+      name1_string=>~if %is_bg1% and %enhanced_edition% and not %is_eet% then 26711 else no_change~
+      description1_string=>~if %is_bg1% and %enhanced_edition% and not %is_eet% then 26713 else no_change~
       say_name=>210
       say_description=>211
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      say_name=>210
-      say_description=>211
-    END
   END
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1760,25 +1651,7 @@ BEGIN
   MAKE_PATCH
     say_name=>297
     say_description=>298
-  END
-
-  ACTION_IF ENGINE_IS "bgee bg2ee iwdee"
-  BEGIN
-    OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
-    OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
-
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      add_effect_global_inline'1=>"opcode=>344 target=>1 timing=>2 parameter1=>%general_undead% parameter2=>3 mode=>4"
-      add_effect_global_inline'2=>"opcode=>344 target=>1 timing=>2 parameter1=>%race_demonic% parameter2=>4 mode=>4"
-    END
-  END
-  ELSE
-  BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-    BEGIN
-      enchantment=>4
-    END
+    add_effect_global_inline=>~number_to_add=>2 opcode=>344 target=>1 timing=>2 parameter1=>"entry_index from [%general_undead% %race_demonic%]" parameter2=>"entry_index from [3 4]" mode=>4~
   END
 
   LAUNCH_ACTION_FUNCTION install_item

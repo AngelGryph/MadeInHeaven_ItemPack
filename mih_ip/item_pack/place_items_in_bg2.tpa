@@ -2,11 +2,6 @@ DEFINE_ACTION_FUNCTION place_items_in_bg2
 BEGIN
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "import_bg1_items"
-  END
-
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
     file	= "vaelasas_reward"
     tra		= "vaelasas_reward"
   END
@@ -19,7 +14,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "other_bg2_locations"
+    file	= "import_bg1_items other_bg2_locations"
   END
 END	// place_items_in_bg2
 

@@ -11,7 +11,7 @@ BEGIN
 
   // Wand of Lightning
 
-  ACTION_IF ENGINE_IS "bgee"
+  ACTION_IF is_bg1 AND enhanced_edition AND NOT eet
   BEGIN
     MAKE_PATCH
       patch_ability_inline=>~ability_target_count=>0~

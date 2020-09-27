@@ -64,7 +64,7 @@ BEGIN
   END
 
 
-  ACTION_IF GAME_INCLUDES "bg2" AND baldurans_cloak_in_bg2
+  ACTION_IF is_bg2 AND baldurans_cloak_in_bg2
   BEGIN
     MAKE_PATCH
       literal=>~ADD_STORE_ITEM "clck05" AFTER "chan11" #0 #0 #0 "identified" #1~
@@ -143,7 +143,7 @@ BEGIN
   // Items that are in BG2/SoA only
   // ==============================
 
-  ACTION_IF GAME_INCLUDES "soa"
+  ACTION_IF is_bg2
   BEGIN
     // helm17 - Skull of Death
     //
@@ -188,7 +188,7 @@ BEGIN
   // Items that are in BG2/ToB only
   // ==============================
 
-  ACTION_IF GAME_INCLUDES "tob"
+  ACTION_IF has_tob
   BEGIN
     // helm31 - Helm of the Rock
     // helm32

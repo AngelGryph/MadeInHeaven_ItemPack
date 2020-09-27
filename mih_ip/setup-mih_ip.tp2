@@ -28,7 +28,7 @@ LANGUAGE ~English~
 
 // Item Pack
 
-BEGIN @1 /* Made in Heaven: Item Pack */
+BEGIN @1 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -39,10 +39,10 @@ END
 
 // BG1-style wands
 
-BEGIN @2 /* BG1-style Wands of Frost & -Lightning */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @2 
+GROUP @3 
 
-REQUIRE_PREDICATE NOT GAME_IS "bgee" @4 /* This component is not applicable to your game. */
+REQUIRE_PREDICATE NOT GAME_INCLUDES "bg1" OR NOT enhanced_edition @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -53,9 +53,9 @@ END
 
 // Alternative Healing Potions
 
-BEGIN @5 /* Healing potions work as in Pen & Paper */
-SUBCOMPONENT @6 /* Alternative Healing Potions */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @5 
+SUBCOMPONENT @6 
+GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -64,9 +64,9 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-BEGIN @7 /* Healing Potions work as in Icewind Dale */
-SUBCOMPONENT @6 /* Alternative Healing Potions */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @7 
+SUBCOMPONENT @6 
+GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -75,9 +75,9 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-BEGIN @8 /* Healing Potions work as in Baldur's Gate */
-SUBCOMPONENT @6 /* Alternative Healing Potions */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @8 
+SUBCOMPONENT @6 
+GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -88,8 +88,8 @@ END
 
 // Cap charges of wands and staves
 
-BEGIN @10 /* Cap charges of Wands and Staves */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @10 
+GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -100,11 +100,11 @@ END
 
 // Change item type of holy symbols
 
-BEGIN @17 /* Holy Symbols are Amulets */
-SUBCOMPONENT @16 /* Change item type of holy symbols */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @17 
+SUBCOMPONENT @16 
+GROUP @3 
 
-REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 /* This component is not applicable to your game. */
+REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -112,11 +112,11 @@ LAUNCH_ACTION_FUNCTION run
   location	= "tweaks"
 END
 
-BEGIN @18 /* Holy Symbols are Belts */
-SUBCOMPONENT @16 /* Change item type of holy symbols */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @18 
+SUBCOMPONENT @16 
+GROUP @3 
 
-REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 /* This component is not applicable to your game. */
+REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -127,8 +127,8 @@ END
 
 // Miscellaneous Item Improvements
 
-BEGIN @11 /* Miscellaneous Item Improvements (see readme) */
-GROUP @3 /* Item Functionality Tweaks */
+BEGIN @11 
+GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -139,10 +139,10 @@ END
 
 // Potions of Extra Healing in BG1
 
-BEGIN @12 /* Add Potions of Extra Healing in BG1 */
-GROUP @13 /* Item Availability Tweaks */
+BEGIN @12 
+GROUP @13 
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 /* This component is not applicable to your game. */
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -153,10 +153,10 @@ END
 
 // Nerf BG1 easter egg items
 
-BEGIN @14 /* Nerf BG1 easter egg items */
-GROUP @13 /* Item Availability Tweaks */
+BEGIN @14 
+GROUP @13 
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 /* This component is not applicable to your game. */
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -167,8 +167,8 @@ END
 
 // Sensible Shops (see readme)
 
-BEGIN @15 /* Sensible Shops (see readme) */
-GROUP @13 /* Item Availability Tweaks */
+BEGIN @15 
+GROUP @13 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR

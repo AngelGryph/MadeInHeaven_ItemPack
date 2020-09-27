@@ -25,7 +25,7 @@ BEGIN
 
   // Adjust prices of Staff of Air +2 and Staff of Fire +2 for consistency
 
-  ACTION_IF GAME_INCLUDES "bg2"
+  ACTION_IF is_bg2
   BEGIN
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
