@@ -35,7 +35,7 @@ BEGIN
   ACTION_IF FILE_EXISTS_IN_GAME "k#import.2da"
   BEGIN
     COPY_EXISTING "k#import.2da" "override"
-      APPEND_FILE TEXT "%mod_root%/%component_loc%/tables/eet_import.2da"
+      APPEND_FILE TEXT "%MOD_FOLDER%/%component_loc%/tables/eet_import.2da"
   END
 END	// import_bg1_items
 

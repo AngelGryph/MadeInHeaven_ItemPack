@@ -109,7 +109,7 @@ BEGIN
     editstring		= "opcode=>146 target=>1 timing=>1 parameter1=>1 parameter2=>1 resource=>mh#amul9"
   END
 
-  ADD_PROJECTILE "%mod_root%/%component_loc%/projectiles/mh#amul9.pro"
+  ADD_PROJECTILE "%MOD_FOLDER%/%component_loc%/projectiles/mh#amul9.pro"
 
   LAUNCH_ACTION_FUNCTION install_spell
     STR_VAR

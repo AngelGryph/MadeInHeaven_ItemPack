@@ -12,12 +12,12 @@ BEGIN
   COPY_EXISTING "itemexcl.2da" "override"
     PATCH_IF update_itemexcl_2da & BIT1
     BEGIN
-      APPEND_FILE TEXT "%mod_root%/%component_loc%/tables/exclude_armor.2da"
+      APPEND_FILE TEXT "%MOD_FOLDER%/%component_loc%/tables/exclude_armor.2da"
     END
 
     PATCH_IF update_itemexcl_2da & BIT0
     BEGIN
-      APPEND_FILE TEXT "%mod_root%/%component_loc%/tables/exclude_other.2da"
+      APPEND_FILE TEXT "%MOD_FOLDER%/%component_loc%/tables/exclude_other.2da"
     END
 
     BUT_ONLY_IF_IT_CHANGES

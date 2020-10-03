@@ -192,7 +192,7 @@ BEGIN
     END
 
 
-  COPY "%mod_root%/%component_loc%/spells/mh#mtome.spl" "override"
+  COPY "%MOD_FOLDER%/%component_loc%/spells/mh#mtome.spl" "override"
     LAUNCH_PATCH_FUNCTION CD_EXTEND-O-MATIC
       INT_VAR
       step_size		= 1
@@ -212,7 +212,7 @@ BEGIN
     END
 
 
-  COPY "%mod_root%/%component_loc%/spells/mh#ctome.spl" "override"
+  COPY "%MOD_FOLDER%/%component_loc%/spells/mh#ctome.spl" "override"
     LAUNCH_PATCH_FUNCTION CD_EXTEND-O-MATIC
       INT_VAR
       step_size		= 1
