@@ -8,10 +8,10 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
-Version 5 - October ?? 2020
+Version 5 - October 03 2020
 - Fixes to make mod work with WeiDU 247
 - Added Alchemist's Fire and Flask of Acid for all your troll-killing needs
-- Scimitar of the Seven now has its own unique icon
+- Scimitar of the Seven now has its own unique icon imported from BotW
 - Miscellaneous Item Improvements now makes the Helm of the Rock usable by paladins and rangers, and the Bard's Gloves by rogue/mages (that's you, Imoen!)
 - A few new and changed items to play with
 - Added new tweak to change the item type of holy symbols to amulets or belts
