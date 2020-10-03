@@ -5,7 +5,7 @@
 BACKUP "weidu_external/backup/mih_ip"
 
 SUPPORT "https://www.gibberlings3.net/forums/topic/29992-my-new-made-in-heaven-mods/"
-VERSION @0
+VERSION "v5"
 
 //MODDER missing_eval none missing_resref none
 ASK_EVERY_COMPONENT
@@ -13,17 +13,14 @@ NO_IF_EVAL_BUG
 AUTO_EVAL_STRINGS
 
 ALWAYS
-  OUTER_TEXT_SPRINT MOD_NAME "mih_ip"
-  OUTER_SPRINT MOD_VERSION @0
-
-  INCLUDE "mih_ip/lib/always.tph"
+  INCLUDE "mih_ip/lib/always.tpa"
 END
 
 
 LANGUAGE ~English~
          ~english~
 	 ~mih_ip/language/english/setup-mih_ip.tra~
-	 ~weidu-external/lang/mih_ip/english/setup-mih_ip.tra~
+	 //~weidu-external/lang/mih_ip/english/setup-mih_ip.tra~
 
 
 // Item Pack
