@@ -1,0 +1,126 @@
+debug_variable=0
+================
+
+Set to non-zero for debugging output.  Higher is more output.  Meant for
+development/debugging purposes.
+
+
+max_stack_ammo=0
+================
+
+Stack size of arrows, bolts and bullets.
+If set to zero, use game default (80 on EE, 40 on old BG2/BGT).
+
+
+max_stack_potions=0
+================
+
+Stack size of potions and oils.
+If set to zero, use game default (24 on EE, 5 on old BG2/BGT).
+
+
+place_items_in_bg1=1
+place_items_in_sod=1
+place_items_in_bg2=1
+place_items_in_tob=1
+====================
+
+Toggle whether to install item pack items in the respective games.
+
+
+update_itemexcl_2da=1
+=====================
+
+Controls whether or not new protective items can be combined.
+0 = Freely combine everything.
+1 = Exclude amulets, cloaks and rings but not magical armor.
+2 = Exclude magical armor but not amulets, cloaks and rings.
+3 = Exclude amulets, cloaks, rings and magical armor. (strict P&P)
+
+
+visible_ioun_stones=1
+=====================
+
+Toggle to turn the visual ioun stone effect on or off for new ioun stones.
+
+
+brokk_buying_markup=70
+brokk_selling_markup=130
+phendra_buying_markup=50
+phendra_selling_markup=150
+==========================
+
+Set buying and selling rates for the two new stores introduced in BG1.  When
+setting these, note that buying markup should be below 100 and selling should
+be above 100, unless you want to cheat.
+
+
+charge_cap_wands=6
+charge_cap_staves=12
+====================
+
+Maximum number of charges to use for wands and staves respectively.
+
+
+baldurans_cloak_magic_resistance=10
+===================================
+
+Percentage of magic resistance the Cloak of Balduran should give.
+
+
+baldurans_cloak_in_bg2=1
+========================
+
+Toggle on whether or not the cloak appears in the Adventurer's Market in
+chapter 6 of Shadows of Amn.
+
+
+extra_healing_minimum=2
+extra_healing_maximum=5
+=======================
+
+Lower and upper bound of number of extra healing potions to add.  The amount
+will be chosen randomly per shop at install time between these bounds
+(inclusive).
+
+
+extra_healing_shops=1
+=====================
+
+Toggle whether or not to add extra healing potions to shops.
+
+
+extra_healing_durlag=1
+======================
+
+Toggle whether or not to replace healing potions in Durlag's Tower.
+
+
+bg1_fix_large_shields=1
+=======================
+
+Toggle whether or not to replace the unrealistically large stacks of magical
+large shields in BG1 shops.
+
+
+bg1_add_obscure_items=1
+=======================
+
+Toggle whether or not to add the Longbow +1, Spear +1, Warhammer +1, and Splint
+Mail +1 to BG1 shops.
+
+
+bg1_move_thieving_stuff=1
+=========================
+
+Toggle whether or not to move the Shadow Armor +3 and Dagger of Venom to Black
+Lily's shop in BG1.
+
+
+bg2_swap_hammers=1
+==================
+
+Toggle whether or not to swap the locations of Aishideena and Borok's Fist in
+BG2.
+
+

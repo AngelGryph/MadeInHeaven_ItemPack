@@ -2,6 +2,30 @@ DEFINE_ACTION_FUNCTION item_pack_core
 BEGIN
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
+    ini		= "max_stack_ammo"
+    RET
+    max_stack_ammo	= value
+  END
+
+  ACTION_IF (max_stack_ammo == 0)
+  BEGIN
+    OUTER_SET max_stack_ammo = enhanced_edition ? 80 : 40
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "max_stack_potions"
+    RET
+    max_stack_potions	= value
+  END
+
+  ACTION_IF (max_stack_potions == 0)
+  BEGIN
+    OUTER_SET max_stack_potions = enhanced_edition ? 24 : 5
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
     ini		= "visible_ioun_stones"
     RET
     visible_ioun_stones	= value
@@ -519,7 +543,7 @@ BEGIN
     STR_VAR
     item	= "mh#bull1"
     location	= "items"
-    editstring	= "say_name=>293 say_description=>294"
+    editstring	= "say_name=>293 say_description=>294 max_in_stack=>%max_stack_ammo%"
   END
 
 
@@ -1022,7 +1046,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn1"
     location	= "items"
-    editstring	= "say_name=>59 say_description=>60"
+    editstring	= "say_name=>59 say_description=>60 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1032,7 +1056,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn2"
     location	= "items"
-    editstring	= "say_name=>141 say_description=>142"
+    editstring	= "say_name=>141 say_description=>142 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1042,7 +1066,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn3"
     location	= "items"
-    editstring	= "say_name=>230 say_description=>231"
+    editstring	= "say_name=>230 say_description=>231 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1052,7 +1076,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn4"
     location	= "items"
-    editstring	= "say_name=>232 say_description=>233"
+    editstring	= "say_name=>232 say_description=>233 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1090,7 +1114,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn5"
     location	= "items"
-    editstring	= "say_name=>247 say_description=>248"
+    editstring	= "say_name=>247 say_description=>248 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1100,7 +1124,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn6"
     location	= "items"
-    editstring	= "say_name=>301 say_description=>302"
+    editstring	= "say_name=>301 say_description=>302 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1110,7 +1134,7 @@ BEGIN
     STR_VAR
     item	= "mh#potn6"
     location	= "items"
-    editstring	= "say_name=>303 say_description=>304"
+    editstring	= "say_name=>303 say_description=>304 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1656,7 +1680,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item	= "mh#swrd2"
+    item	= "mh#swrda"
     location	= "items"
     edits	= "patch_data"
   END

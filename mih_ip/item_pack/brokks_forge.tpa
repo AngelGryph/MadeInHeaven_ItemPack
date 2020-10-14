@@ -1,10 +1,24 @@
 DEFINE_ACTION_FUNCTION brokks_forge
 BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "brokk_buying_markup"
+    RET
+    brokk_buying_markup 	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "brokk_selling_markup"
+    RET
+    brokk_selling_markup	= value
+  END
+
   LAUNCH_ACTION_FUNCTION install_store
     STR_VAR
     store	= "mh#brokk"
     location	= "stores"
-    editstring	= "say_name=>90"
+    editstring	= "say_name=>90 buy_markup=>%brokk_buying_markup% sell_markup=>%brokk_selling_markup%"
   END
 
   ADD_JOURNAL @5 @16 @20 @26 @28 @30 @36 @38 @40 @60 @63 @70 @72 @74 @81 @84 @87

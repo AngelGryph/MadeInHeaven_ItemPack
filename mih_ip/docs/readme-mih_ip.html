@@ -13,7 +13,7 @@
   <p><strong><a href="http://www.gibberlings3.net/">A Gibberlings Three Mod</a></strong> <br />
     <strong>Author</strong>: <a href="http://gibberlings3.net/forums/index.php?showuser=6180">Angel</a> </p>
 <!--  <p><strong>On the web: </strong><a href="http://www.gibberlings3.net/npcstrongholds/"><strong>Home page</strong></a> and <a href="http://gibberlings3.net/forums/index.php?showforum=77"><strong>discussion forum</strong></a></p> -->
-  <p><strong> Version 3 - <a href="http://https://github.com/AngelGryph/MadeInHeaven_ItemPack/releases">Check for the most recent version</a></strong> <br />
+  <p><strong> Version 6 - <a href="http://https://github.com/AngelGryph/MadeInHeaven_ItemPack/releases">Check for the most recent version</a></strong> <br />
     <strong>Languages: </strong>English <br />
     <strong>Platforms: </strong>Windows, Mac OS X, and Linux </p>
 </div>
@@ -75,30 +75,11 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
     <tr><td>Potion of Superior Healing</td><td>6d8+2 (8-50)</td><td>27</td><td>40</td></tr>
   </table>
 
-  <p><strong>3e-style Girdles of Strength (and similar items)</strong><br />
-  <p>This alters the various girdles of giant strength and similar items like the gauntlets of ogre power and gauntlets of dexterity to instead give a bonus of +2 to +6 to strength (or other appropriate stat), making them more useful to characters that already have high stats.</p>
-  <p>In an unmodded game, the following items are affected:</p>
-  <table>
-  <tr><th colspan=2>Baldur's Gate 1 (and -2)</th></tr>
-  <tr><td>Gauntlets of Ogre Power</td><td>+2 Strength</tr>
-  <tr><td>Gauntlets of Dexterity</td><td>+2 Dexterity</tr>
-  <tr><td>Big-Fisted Belt (EE)</td><td>+3 Strength</tr>
-
-  <tr><th colspan=2>Baldur's Gate 2</th></tr>
-  <tr><td>Girdle of Hill Giant Strength</td><td>+3 Strength</td></tr>
-  <tr><td>Girdle of Stone Giant Strength</td><td>+4 Strength</td></tr>
-  <tr><td>Girdle of Frost Giant Strength</td><td>+5 Strength</td></tr>
-  <tr><td>Girdle of Fire Giant Strength</td><td>+6 Strength</td></tr>
-  <tr><td>Ring of Human Influence</td><td>+2 Charisma</td></tr>
-  <tr><td>Enforcer Bracers (EE)</td><td>+4 Strength</td></tr>
-
-  <tr><th colspan=2>Icewind Dale</th></tr>
-  <tr><td>Gauntlets of Elven Might</td><td>+2 Strength</td></tr>
-  <tr><td>Girdle of Stromnos</td><td>+3 Strength</td></tr>
-  </table>
-
   <p><strong>Cap Charges of Wands and Staves</strong></p>
   <p>This modification caps the number of available charges in wands and staves, to a default of 6 for wands and 12 for staves, this can be altered in the .ini file.</p>
+
+  <p><strong>Change item Type of Holy Symbols</strong></p>
+  <p>This small tweak changes the item type of the holy symbols received by high-level clerics.  Normally they are rings, with this tweak you can turn them into either amulets (makes the most sense IMHO) or belts (what was originally planned, judging by the file name of the items).  This tweak covers the symbols in the vanilla game, those introduced by the Fixpack/EE (Aerie's and Viconia's), and Yeslick's if the Yeslick NPC mod is installed.  If any others should be covered, let me know!</p>
 
   <p><strong>Miscellaneous Item Improvements</strong><br />
   This is a collection of small tweaks that makes a couple of items more powerful, less overpowered, or less of a hassle to use.</p>
@@ -138,35 +119,6 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
 <h2>The .ini File</h2>
 <div class="section">
   <p>Within the mod folder, there is a file called mih_ip.ini.  This file can be used to fine-tune certain aspects of this mod.  It is meant as an expert option, for normal installation you can leave this file as it is.  If you do edit this file, you must reinstall the mod, or at least the components whose settings you changed.</p>
-  <table>
-    <tr><th colspan=2>Item Pack</th></tr>
-    <tr><td>place_items_in_bg1</td><td>If set to 0, new items will not be added to BG1 (including TotSC) and Brokk will not appear.</td></tr>
-    <tr><td>place_items_in_sod</td><td>If set to 0, new items will not be added to Siege of Dragonspear (EE).</td><tr>
-    <tr><td>place_items_in_bg2</td><td>If set to 0, new items will not be added to the Shadows of Amn part of BG2.</td></tr>
-    <tr><td>place_items_in_tob</td><td>If set to 0, new items will not be added to Throne of Bhaal, including Watcher's Keep.</td></tr>
-    <tr><td>update_itemexcl_2da</td><td>If set to 0, itemexcl.2da will not be updated with the new items, removing some restrictions.</td></tr>
-    <tr><td>visible_ioun_stones</td><td>If set to 0, the new ioun stones will not be visible on the characters.</td></tr>
-
-    <tr><th colspan=2>Cap Charges of Wands and Staves</th></tr>
-    <tr><td>charge_cap_wands</td><td>Maximum # of charges in a wand.</td>
-    <tr><td>charge_cap_staves</td><td>Maximum # of charges in a staff.</td>
-
-    <tr><th colspan=2>Miscellaneous Item Improvements</th></tr>
-    <tr><td>baldur_cloak_mres</td><td>New MR value for the cloak (10).  Yes, you can set it higher than 25%, you cheater...</td></tr>
-    <tr><td>baldur_cloak_in_bg2</td><td>If set to 0, the cloak will not be added to BG2, useful if another mod already has it.</td></tr>
-
-    <tr><th colspan=2>Potions of Extra Healing in BG1</th></tr>
-    <tr><td>extra_healing_minimum</td><td>Minimum # of potions to add to a shop.</td>
-    <tr><td>extra_healing_maximum</td><td>Maximum # of potions to add to a shop.</td>
-    <tr><td>extra_healing_shops</td><td>If set to 0, adding potions to shops will be skipped.</td>
-    <tr><td>extra_healing_durlag</td><td>If set to 0, replacing potions in Durlag's Tower will be skipped.</td>
-
-    <tr><th colspan=2>Sensible Item Shop</th></tr>
-    <tr><td>bg1_fix_large_shields</td><td>If set to 0, the large stacks of Large Shields +1 won't be removed from shops.</td></tr>
-    <tr><td>bg1_add_obscure_items</td><td>If set to 0, obscure items won't be added to shops.</td></tr>
-    <tr><td>bg1_move_thieving_stuff</td><td>If set to 0, the Shadow Thief Armor and Dagger of Venom won't be moved to Black Lily's.</td></tr>
-    <tr><td>bg2_swap_hammers</td><td>If set to 0, the location swap of Aishideena +2 and Borok's Fist +2 won't be done.</td></tr>
-  </table>
 </div>
 <h2>Contact Information</h2>
 <div class="section">

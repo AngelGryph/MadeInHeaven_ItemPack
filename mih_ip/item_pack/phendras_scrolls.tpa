@@ -1,10 +1,24 @@
 DEFINE_ACTION_FUNCTION phendras_scrolls
 BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "phendra_buying_markup"
+    RET
+    phendra_buying_markup 	= value
+  END
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "phendra_selling_markup"
+    RET
+    phendra_selling_markup	= value
+  END
+
   LAUNCH_ACTION_FUNCTION install_store
     STR_VAR
     store	= "mh#phend"
     location	= "stores"
-    editstring	= "say_name=>30"
+    editstring	= "say_name=>30 buy_markup=>%phendra_buying_markup% sell_markup=>%phendra_selling_markup%"
   END
 
   ADD_JOURNAL @15 @17 @20
