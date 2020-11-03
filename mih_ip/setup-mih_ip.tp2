@@ -175,3 +175,16 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// Turn generic Full Plate into Field Plate
+
+BEGIN @9
+GROUP @13
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "full_to_field_plate"
+  tra		= "item_tweaks"
+  location	= "tweaks"
+END
+
+
