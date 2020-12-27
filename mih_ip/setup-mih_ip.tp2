@@ -84,18 +84,6 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Cap charges of wands and staves
-
-BEGIN @10 
-GROUP @3 
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file			= "cap_charges"
-  location		= "tweaks"
-END
-
-
 // Change item type of holy symbols
 
 BEGIN @17 
