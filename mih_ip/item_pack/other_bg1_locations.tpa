@@ -49,7 +49,7 @@ BEGIN
   // mh#potn1 - Oil of Acid Resistance
   // mh#potn2 - Potion of Clairvoyance
   // mh#potn4 - Oil of Disenchantment
-  // mh#potn5 - Potion of Wizardry
+  // mh#potn5 - Potion of Longevity
   // mh#potn6 - Alchemist's Fire
   // mh#potn7 - Flask of Acid
   // clck20   - Cloak of the Shield (from Durlag's Tower)
@@ -59,7 +59,7 @@ BEGIN
     literal'02=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3~
     literal'03=>~ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3~
     literal'04=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
-    literal'05=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #3~
+    literal'05=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #1~
     literal'06=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #5~
     literal'07=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
     literal'08=>~ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1~
@@ -322,7 +322,7 @@ BEGIN
   // mh#dart3 - Zilzanzer's Magnificent Darts +1
   // mh#potn1 - Oil of Acid Resistance
   // mh#potn4 - Oil of Disenchantment
-  // mh#potn5 - Potion of Wizardry
+  // mh#potn5 - Potion of Longevity
   // mh#potn6 - Alchemist's Fire
   // mh#potn7 - Flask of Acid
   // mh#ringe - Ring of Anti-Venom
@@ -335,7 +335,7 @@ BEGIN
     literal'04=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
     literal'05=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3~
     literal'06=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
-    literal'07=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #3~
+    literal'07=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1~
     literal'08=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
     literal'09=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
     literal'10=>~ADD_STORE_ITEM "mh#ringe" AFTER "mh#amula" #0 #0 #0 "identified" #1~

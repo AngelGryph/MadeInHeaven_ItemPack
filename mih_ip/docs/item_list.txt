@@ -18,6 +18,10 @@ mh#armr4 Celestial Chain +2
 mh#armr5 Dwarven Plate +1
 mh#armr6 Black Swan Armor +2			Icewind Dale 1 (2e)
 mh#armr7 Black Dragon Scale
+mh#armr8 Laeral's Storm Armor +2		Encyclopedia Magica (2e)
+mh#armr9 Plate of Solamnus +5			Encyclopedia Magica (2e)
+
+*mh#band1 Dark Crown				Lords of Darkness (2e)
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2e)
 mh#belt2 Sunite Sash				Magic of Faerun (3e)
@@ -51,6 +55,7 @@ mh#btax2 Trollkiller +2
 mh#btax3 Redethemar +4				Elves of Evermeet (2e)
 
 mh#bull1 Priest's Bullet			Libris Mortis (3.5e)
+*mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2e)
 
 mh#clck1 Mutamin's Cloak
 mh#clck2 Varazdin's Cloak of Protection
@@ -71,6 +76,7 @@ mh#comp6 Black Dragon Scales
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Spinesheath +1				Icewind Dale 1 (2e)
+mh#dagg3 Golemblight +2				Encyclopedia Magica (2e)
 
 mh#dart1 Lein's Fiery Darts +2			Pages from the Mages (2e)
 mh#dart2 Chandler's Icy Darts +2		Pages from the Mages (2e)
@@ -104,9 +110,10 @@ mh#potn1 Oil of Acid Resistance			DMG (2e)
 mh#potn2 Potion of Clairvoyance			DMG (2e)
 mh#potn3 Philter of Purification		Icewind Dale 1 (2e)
 mh#potn4 Oil of Disenchantment			DMG (2e)
-mh#potn5 Potion of Wizardry			Encyclopedia Magica (2e)
+mh#potn5 Potion of Longevity			DMG (2e)
 mh#potn6 Alchemist's Fire			PHB (2e)
 mh#potn7 Acid Flask				PHB (2e)
+mh#potn8 Elixir of Life				Unearthed Arcana (2e)
 
 mh#quiv1 Quiver of Ehlonna (BG1)		DMG (2e)
 mh#quiv2 Quiver of Ehlonna (BG2)		DMG (2e)
@@ -143,6 +150,9 @@ mh#shld5 Shield of the Revenant +2		Icewind Dale 1 (2e)
 mh#shld6 Mystery of the Dead +3			Icewind Dale 1 (2e)
 mh#shld7 Waukeen's Defender +2			Icewind Dale 1 (2e)
 mh#shld8 White Shield +4			Encyclopedia Magica (2e)
+mh#shld9 Shield of the Dragonslayer +3		Encyclopedia Magica (2e)
+
+*mh#slng1 Edley's Sling +2			Icewind Dale 1 (2e)
 
 mh#sper1 Alicorn Spear +2
 

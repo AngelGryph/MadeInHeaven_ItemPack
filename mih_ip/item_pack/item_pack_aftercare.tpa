@@ -1,28 +1,5 @@
 DEFINE_ACTION_FUNCTION item_pack_aftercare
 BEGIN
-  // Update itemexcl.2da
-
-  LAUNCH_ACTION_FUNCTION check_ini
-    STR_VAR
-    ini			= "update_itemexcl_2da"
-    RET
-    update_itemexcl_2da	= value
-  END
-
-  COPY_EXISTING "itemexcl.2da" "override"
-    PATCH_IF update_itemexcl_2da & BIT1
-    BEGIN
-      APPEND_FILE TEXT "%MOD_FOLDER%/%component_loc%/tables/exclude_armor.2da"
-    END
-
-    PATCH_IF update_itemexcl_2da & BIT0
-    BEGIN
-      APPEND_FILE TEXT "%MOD_FOLDER%/%component_loc%/tables/exclude_other.2da"
-    END
-
-    BUT_ONLY_IF_IT_CHANGES
-
-
   // Adjust prices of Staff of Air +2 and Staff of Fire +2 for consistency
 
   ACTION_IF is_bg2

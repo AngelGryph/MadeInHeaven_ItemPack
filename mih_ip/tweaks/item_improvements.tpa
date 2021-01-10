@@ -4,7 +4,27 @@ BEGIN
   // Items that are both in BG1 and BG2
   // ==================================
 
+  // brac07 - Gloves of Dexterity
+  //
+  // - Functions closer to its description in the DMG:
+  //   +4 dex, +10 to pick pockets and open locks
+
+  MAKE_PATCH
+    patch_effect_global_inline=>~match=>"opcode = 15" parameter1=>4 parameter2=>0~
+    add_effect_global_inline=>~number_to_add=>2 opcode=>"entry_index from [90 92]" target=>1 timing=>2 parameter1=>10~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "brac07"
+    edits	= "patch_data"
+  END
+
+
   // clck04 - Cloak of the Wolf
+  //
+  // - The wolf transformed into is a winter wolf.
+  // - The cloak gives cold resistance.
 
   MAKE_PATCH
     add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>100 parameter2=>1~

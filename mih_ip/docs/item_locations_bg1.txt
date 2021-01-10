@@ -68,9 +68,10 @@ mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 mh#potn2 Potion of Clairvoyance			High Hedge (shop)
 mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			High Hedge (shop)
-mh#potn5 Potion of Wizardry			High Hedge (shop)
+mh#potn5 Potion of Longevity			High Hedge (shop)
 mh#potn6 Alchemist's Fire			High Hedge (shop)
 mh#potn7 Acid Flask				High Hedge (shop)
+*mh#potn8 Elixir of Life				???
 
 mh#quiv1 Quiver of Ehlonna			Feldepost's Inn (shop)
 

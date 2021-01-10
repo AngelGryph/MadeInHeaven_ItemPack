@@ -75,15 +75,25 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
     <tr><td>Potion of Superior Healing</td><td>6d8+2 (8-50)</td><td>27</td><td>40</td></tr>
   </table>
 
-  <p><strong>Cap Charges of Wands and Staves</strong></p>
-  <p>This modification caps the number of available charges in wands and staves, to a default of 6 for wands and 12 for staves, this can be altered in the .ini file.</p>
-
   <p><strong>Change item Type of Holy Symbols</strong></p>
   <p>This small tweak changes the item type of the holy symbols received by high-level clerics.  Normally they are rings, with this tweak you can turn them into either amulets (makes the most sense IMHO) or belts (what was originally planned, judging by the file name of the items).  This tweak covers the symbols in the vanilla game, those introduced by the Fixpack/EE (Aerie's and Viconia's), and Yeslick's if the Yeslick NPC mod is installed.  If any others should be covered, let me know!</p>
+
+  <p><strong>Turn generic Full Plate into Field Plate</strong></p>
+  <p>Full plate mail is a rare and precious item normally custom-made for the wearer and not usable by anyone else, so you should not be able to just walk into a shop and buy some off of the shelf.  This tweak turns all generic full plate into the slightly less powerful field plate.  All named- or otherwise special armors are unchanged, including the suit created by Limited Wish.  (Specifically, the items affected are plat04, plat14 and plat23.)</p>
+  <p>This modification probably has the biggest effect on Baldur's Gate 1, where full plate is normally the best armor available.  It will now be less powerful (especially versus slashing and piercing/missiles), making the various enchanted armors you find a more interesting alternative.  With the abundance of magical armors available in Baldur's Gate 2 it will probably not make much of a difference, except maybe when you have just left Chateau Irenicus.</p>
+  <table>
+  <tr><th></th><th>base AC</th><th>AC vs. slashing</th><th>AC vs. piercing and missile</th></tr>
+  <tr><td>Field Plate</td><td>2</td><td>-1</td><td>1</td><tr>
+  <tr><td>Full Plate</td><td>1</td><td>-3</td><td>-2</td><tr>
+  </table>
+
+  <p><strong>Consistent Dragon Scale Armor</strong></p>
+  <p>Dragon scale armor in the game is a bit all over the place.  Some are considered to be leather armor, some are plate mail, some are in between somewhere.  This tweak converts all dragon scale armor in the game to leather/hide armor (-2 vs. piercing/missile) that weighs 25 pounds and has no penalty on thieving skills, based on the description in the Monstrous Manual (2E).  This means that all dragon scale armors can be used by all classes except single-class mages and monks.  Base armor class and all abilities are unchanged.</p>
 
   <p><strong>Miscellaneous Item Improvements</strong><br />
   This is a collection of small tweaks that makes a couple of items more powerful, less overpowered, or less of a hassle to use.</p>
   <ul>
+    <li>Gloves of Dexterity: Made a closer match to its P&amp;P version: +4 Dex, +10 pick pockets, +10 open locks.</li>
     <li>Cloak of the Wolf: The wolf polymorphed into is now a winter wolf.  The cloak now also gives infravision and some cold resistance.</li>
     <li>Cloak of Balduran: Magic resistance reduced from 25% to 10%, but in exchange it is now available in chapter 6 of BG2 (from Ribald's special shop).</li>
     <li>Cloak of the Shield: It no longer uses charges, effects are permanent while worn.</li>
@@ -94,6 +104,7 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
     <li>Helm of the Rock: This item can now be worn by paladin and rangers.</li>
     <li>Bard's Gloves: This item can now be worn by thief/mages and fighter/thief/mages.</li>
   </ul>
+  <p><strong>TODO: </strong>This tweak currently does not update item descriptions.</p>
 
   <h3>Item Availability Tweaks</h3>
   <p><strong>Add Potions of Extra Healing in BG1</strong><br />
@@ -115,15 +126,6 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
   <li>Aishideena +2: Moved from Lower Reaches to Adventurer's Market.</li>
   <li>Borok's Fist +2: Moved from Adventurer's Market to Lower Reaches.</li>
   </ul>
-
-  <p><strong>Turn generic Full Plate into Field Plate</strong></p>
-  <p>Full plate mail is a rare and precious item normally custom-made for the wearer and not usable by anyone else, so you should not be able to just walk into a shop and buy some off of the shelf.  This tweak turns all generic full plate into the slightly less powerful field plate.  All named- or otherwise special armors are unchanged, including the suit created by Limited Wish.  (Specifically, the items affected are plat04, plat14 and plat23.)</p>
-  <p>This modification probably has the biggest effect on Baldur's Gate 1, where full plate is normally the best armor available.  It will now be less powerful (especially versus slashing and piercing/missiles), making the various enchanted armors you find a more interesting alternative.  With the abundance of magical armors available in Baldur's Gate 2 it will probably not make much of a difference, except maybe when you have just left Chateau Irenicus.</p>
-  <table>
-  <tr><th></th><th>base AC</th><th>AC vs. slashing</th><th>AC vs. piercing and missile</th></tr>
-  <tr><td>Field Plate</td><td>2</td><td>-1</td><td>1</td><tr>
-  <tr><td>Full Plate</td><td>1</td><td>-3</td><td>-2</td><tr>
-  </table>
 </div>
 <h2>The .ini File</h2>
 <div class="section">

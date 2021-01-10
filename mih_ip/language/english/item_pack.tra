@@ -86,9 +86,9 @@ Weight: 1~
 
 STATISTICS:
 
-Combat abilities:
-- Strikes as a +3 weapon
-- Critical hit on 19-20
+Equipped abilities:
+- Counts as a +3 weapon for purposes of what it can hit
+- Chance to score a critical hit: +5% (with this weapon only)
 
 THAC0: +1
 Damage: 1d10+1 (slashing)
@@ -1567,15 +1567,8 @@ Equipped abilities:
 
 Weight: 2~
 @246  = ~Jade Snakes~
-@247  = ~Potion of Wizardry~
-@248  = ~This potent brew temporarily increases arcane powers.  The wizard functions as if <PRO_HESHE> were three levels higher than normal, although this does not grant any extra hit points or additional spells.  The effects last for an hour.
-
-STATISTICS:
-
-THAC0: +2
-Saving Throws: +2
-Caster Level: +3 (arcane)
-Duration: 1 hour
+@247  = ~Potion of Longevity~
+@248  = ~This foul-tasting but very potent elixer permanently enhances the imbiber's health and hardiness.  Their maximum HP total is raised by 10.  However, repeated drinks carry a risk; there is a 5% change that another draught of this elixer will undo the effects of all previous drinks.
 
 Weight: 1~
 @249  = ~Quiver of Ehlonna~
@@ -1868,5 +1861,76 @@ STATISTICS:
 Damage: 2d6 initially, plus 1d6 after a round (Save vs. Breath halves the initial damage and negates the secondary damage)
 
 Weight: 1~
+@305  = ~Laeral's Storm Armor +2~
+@306  = ~Named after the wizard who devised it, Laeral Stormhand of the Seven Sisters, this is an unusual armor.  It is entirely constructed out of a peculiar non-metallic material that does not conduct electricity or heat.  As such it renders the wearer completely immune to Fireball, Lightning Bolt, Cone of Cold and similar spells.
+
+STATISTICS:
+
+Equipped abilities:
+- Immune to fire, cold and lightning
+
+Armor Class: 1 (-2 vs. slashing)
+
+Weight: 25~
+@307   = ~Field Plate~
+@308   = ~Field plate dispenses with the chain backing of plate mail and full plate to save weight.  Instead a light suit of padding, or aketon, is worn beneath field plate.  The considerable weight of this armor is distributed over the wearer's body, and a trained knight can lie down, stand up, or vault into the saddle while wearing this armor.
+
+STATISTICS:
+
+Armor Class: 2 (-1 vs. slashing, 1 vs. piercing and missile)
+Requires:
+ 14 Strength
+
+Weight: 60~
+@309  = ~Plate of Solamnus +5~
+@310  = ~This beautiful suit of field plate has been decorated with the markings of all three Solamnic orders.  The sigil of the Order of the Rose is displayed most prominently.  Armor of this quality is not made anymore and therefor exeedingly rare.
+
+The enchantment on this armor only allows good characters to equip it, and if <PRO_HESHE> is not strictly lawful good the +5 enchantment does not work, making the armor non-magical.
+
+STATISTICS:
+
+Armor Class: -3 (-6 vs. slashing, -4 vs. piercing and missile)
+ not lawful:  2 (-1 vs. slashing,  1 vs. piercing and missile)
+Requires:
+ 14 Strength
+
+Weight: 60~
+@311  = ~Shield of the Dragonslayer +3~
+@312  = ~This was the personal shield of Lady Aleida, a knight of the Order of the Radiant Heart who lived half a century ago.  Having lost most of her family to a red dragon attack, she dedicated her life to hunting down and slaying evil dragons.  She is assumed to eventually have met her demise at the claws of just such a creature, although her body was never found.
+
+STATISTICS:
+
+Charge abilities:
+- Protection from the Elements (1/day, wearer only)
+
+Equipped abilities:
+- Saving Throws: +5 vs. breath
+
+Armor Class: +4, extra +1 vs. missile attacks, +2 vs. dragons
+Requires:
+ 15 Strength
+
+Weight: 10~
+@313  = ~Golemblight +2~
+@314  = ~This strange dagger has been carved entirely from a strange red crystal that is harder than steel.  It is particularly effective against golems.
+
+STATISTICS:
+
+Equipped abilities:
+- Chance to score a critical hit: +5% (with this weapon only)
+
+THAC0: +2, +4 vs. golems
+Damage: 1d4+2, +2d8 vs. golems (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@315  = ~Elixir of Life~
+@316  = ~This extremely rare and potent fluid can actually restore the dead to life.  Creating this elixir is the pinnacle of alchemy and requires several rare ingredients including the tail feather of a phoenix, tears of a solar, water from the river Oceanus and more.
+
+Although the elixir does indeed restore life, the patient will be frail and sickly, in no condition to fight with only one hitpoint and a -5 to all ability scores.  The sickness passes in a turn, but the remaining hitpoints must be recovered by other means.~
 
 

@@ -111,6 +111,34 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// Turn generic Full Plate into Field Plate
+
+BEGIN @9
+GROUP @3
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "full_to_field_plate"
+  tra		= "item_tweaks"
+  location	= "tweaks"
+END
+
+
+// Constent Dragon Scale Armor
+
+BEGIN @10
+GROUP @3
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg2" OR GAME_INCLUDES "sod" @4 
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "consistent_dragon_scale"
+  tra		= "consistent_dragon_scale"
+  location	= "tweaks"
+END
+
+
 // Miscellaneous Item Improvements
 
 BEGIN @11 
@@ -159,19 +187,6 @@ GROUP @13
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "sensible_shops"
-  location	= "tweaks"
-END
-
-
-// Turn generic Full Plate into Field Plate
-
-BEGIN @9
-GROUP @13
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "full_to_field_plate"
-  tra		= "item_tweaks"
   location	= "tweaks"
 END
 

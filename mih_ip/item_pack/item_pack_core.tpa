@@ -33,6 +33,7 @@ BEGIN
 
   OUTER_SET general_undead = IDS_OF_SYMBOL("general" "undead")
   OUTER_SET race_demonic = IDS_OF_SYMBOL("race" "demonic")
+  OUTER_SET race_golem = IDS_OF_SYMBOL("race" "golem")
   OUTER_SET race_kobold = IDS_OF_SYMBOL("race" "kobold")
   OUTER_SET race_lycanthrope = IDS_OF_SYMBOL("race" "lycanthrope")
   OUTER_SET race_slime = IDS_OF_SYMBOL("race" "slime")
@@ -149,6 +150,13 @@ BEGIN
     editstring	= "say_name=>217 say_description=>218"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#amul9"
+  END
+
 
   // mh#amula - Amulet of 5% Magic Resistance
 
@@ -189,6 +197,13 @@ BEGIN
     editstring	= "say_name=>42 say_description=>43"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr1"
+  END
+
 
   // mh#armr2 - Eversing +2
 
@@ -197,6 +212,13 @@ BEGIN
     item	= "mh#armr2"
     location	= "items"
     editstring	= ~say_name=>44 say_description=>45 cd_immunity=>"petrification"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr2"
   END
 
 
@@ -215,6 +237,13 @@ BEGIN
     editstring	= "say_name=>69 say_description=>70"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr3"
+  END
+
 
   // mh#armr4 - Celestial Chain +2
 
@@ -223,6 +252,13 @@ BEGIN
     item	= "mh#armr4"
     location	= "items"
     editstring	= "say_name=>87 say_description=>88"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr4"
   END
 
 
@@ -235,6 +271,13 @@ BEGIN
     editstring	= "say_name=>89 say_description=>90"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr5"
+  END
+
 
   // mh#armr6 - Black Swan Armor +2
 
@@ -245,6 +288,13 @@ BEGIN
     editstring	= "say_name=>125 say_description=>126"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr6"
+  END
+
 
   // mh#armr7 - Black Dragon Scale
 
@@ -253,6 +303,53 @@ BEGIN
     item	= "mh#armr7"
     location	= "items"
     editstring	= "say_name=>287 say_description=>288"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr7"
+  END
+
+
+  // mh#armr8 - Laeral's Storm Armor +2
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr8"
+    location	= "items"
+    editstring	= "say_name=>305 say_description=>306"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr8"
+  END
+
+
+  // mh#armr9 - Plate of Solamnus +5
+
+  LAUNCH_ACTION_FUNCTION make_effect
+    STR_VAR
+    effect		= "mh#armr9"
+    editstring		= "parameter1=>5"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#armr9"
+    location	= "items"
+    editstring	= "say_unidentified_name=>307 say_unidentified_description=>308 say_name=>309 say_description=>310"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#armr9"
   END
 
 
@@ -329,6 +426,7 @@ BEGIN
   // mh#blun1 - Radiant Star +1
 
   MAKE_PATCH
+    enchantment=>"if %enhanced_edition% then 1 else 4"
     say_name=>71
     say_description=>72
     add_effect_global_inline=>~match=>"%enhanced_edition%" number_to_add=>3 opcode=>344 target=>1 timing=>2 parameter1=>"entry_index from [%general_undead% %race_lycanthrope% %race_demonic%]" parameter2=>"entry_index from [3 4 4]" mode=>4~
@@ -345,6 +443,7 @@ BEGIN
   // mh#blun2 - Slimecrusher +1
 
   MAKE_PATCH
+    enchantment=>"if %enhanced_edition% then 1 else 4"
     say_name=>179
     say_description=>180
     add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_slime% parameter2=>4 mode=>4~
@@ -566,6 +665,13 @@ BEGIN
     editstring	= ~say_name=>289 say_description=>290~
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#clck2"
+  END
+
 
   // mh#clck3 - Cloak of Arachnida
 
@@ -576,6 +682,7 @@ BEGIN
     editstring	= ~say_name=>79 say_description=>80 cd_immunity=>"web"~
   END
 
+
   // mh#clck4 - Cloak of the Night Sky
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -583,6 +690,13 @@ BEGIN
     item	= "mh#clck4"
     location	= "items"
     editstring	= "say_name=>216 say_description=>116"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#clck4"
   END
 
 
@@ -593,6 +707,13 @@ BEGIN
     item	= "mh#clck5"
     location	= "items"
     editstring	= "say_name=>220 say_description=>221"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#clck5"
   END
 
 
@@ -625,6 +746,13 @@ BEGIN
     editstring	= "say_name=>279 say_description=>280"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#clck8"
+  END
+
 
   // mh#clck9 - Battlecloak of Vycaena
 
@@ -633,6 +761,13 @@ BEGIN
     item	= "mh#clck9"
     location	= "items"
     editstring	= "say_name=>18 say_description=>19"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#clck9"
   END
 
 
@@ -723,6 +858,29 @@ BEGIN
   END
 
 
+  // mh#dagg3 - Golemblight +2
+
+  LAUNCH_ACTION_FUNCTION make_effect
+    STR_VAR
+    effect	= "mh#dagg3"
+    editstring	= "opcode=>12 target=>2 timing=>1 parameter2=>0x00100000 dicenum=>2 dicesize=>8"
+  END
+
+  MAKE_PATCH
+    enchantment=>"if %enhanced_edition% then 2 else 4"
+    say_name=>313
+    say_description=>314
+    add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_golem% parameter2=>4 mode=>4~
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#dagg3"
+    location	= "items"
+    edits	= "patch_data"
+  END
+
+
   // mh#dart1 - Lein's Fiery Darts +1
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -756,6 +914,7 @@ BEGIN
   // mh#dart4 - Silver Dart of Selune +2
 
   MAKE_PATCH
+    enchantment=>"if %enhanced_edition% then 2 else 4"
     say_name=>238
     say_description=>239
     add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_lycanthrope% parameter2=>4 mode=>4~
@@ -1080,35 +1239,7 @@ BEGIN
   END
 
 
-  // mh#potn5 - Potion of Wizardry
-
-  ACTION_IF is_iwd
-  BEGIN
-    MAKE_PATCH
-      add_effect_inline=>"opcode=>254 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"
-    END
-  END
-
-  ACTION_IF enhanced_edition
-  BEGIN
-    MAKE_PATCH
-      add_effect_inline=>"opcode=>321 target=>2 parameter2=>2 resource=>mh#potn5 insert_point=>0"
-    END
-  END
-
-  ACTION_IF is_bg2 AND NOT enhanced_edition
-  BEGIN
-    MAKE_PATCH
-       clone_effect_inline=>~match=>"opcode = 142" opcode=>206 parameter1=>0 parameter2=>0 resource=>mh#potn5 at_end=>1~
-    END
-  END
-
-  LAUNCH_ACTION_FUNCTION install_spell
-    STR_VAR
-    spell	= "mh#potn5"
-    location	= "spells"
-    edits	= "patch_data"
-  END
+  // mh#potn5 - Potion of Longevity
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
@@ -1132,9 +1263,19 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION install_item
     STR_VAR
-    item	= "mh#potn6"
+    item	= "mh#potn7"
     location	= "items"
     editstring	= "say_name=>303 say_description=>304 max_in_stack=>%max_stack_potions%"
+  END
+
+
+  // mh#potn8 - Elixir of Life
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#potn8"
+    location	= "items"
+    editstring	= "say_name=>315 say_description=>316 max_in_stack=>%max_stack_potions%"
   END
 
 
@@ -1162,6 +1303,13 @@ BEGIN
     item	= "mh#ring1"
     location	= "items"
     editstring	= "say_name=>291 say_description=>292"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#ring1"
   END
 
 
@@ -1244,6 +1392,13 @@ BEGIN
     editstring	= "say_name=>119 say_description=>120"
   END
 
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#ring9"
+  END
+
 
   // mh#ringa - Shield Ring
 
@@ -1302,6 +1457,13 @@ BEGIN
     item	= "mh#ringf"
     location	= "items"
     editstring	= "say_name=>26 say_description=>27"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT0
+    STR_VAR
+    item	= "mh#ringf"
   END
 
 
@@ -1455,6 +1617,16 @@ BEGIN
   END
 
 
+  // mh#shld9 - Shield of the Dragonslayer +3
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#shld9"
+    location	= "items"
+    editstring	= "say_name=>311 say_description=>312"
+  END
+
+
   // mh#sper1 - Alicorn Spear +2
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -1538,6 +1710,7 @@ BEGIN
   // mh#swrd2 - Smythe's Slicer +1
 
   MAKE_PATCH
+    enchantment=>"if %enhanced_edition% then 1 else 4"
     say_name=>38
     say_description=>39
     add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_spider% parameter2=>4 mode=>3~
@@ -1630,6 +1803,7 @@ BEGIN
   // mh#swrd7 - Mirthal +1
 
   MAKE_PATCH
+    enchantment=>"if %enhanced_edition% then 1 else 2"
     say_name=>208
     say_description=>209
     add_effect_global_inline=>~match=>"%enhanced_edition%" opcode=>344 target=>1 timing=>2 parameter1=>%race_kobold% parameter2=>4 mode=>2~
