@@ -11,16 +11,6 @@ mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2e)
 mh#amulb Phylactery of Bravery			Encyclopedia Magica (2e)
 mh#amulc Medallion of Faith			Encyclopedia Magica (2e)
 
-mh#armr1 Winter Wolf Hide +1
-mh#armr2 Eversing +2				Castlevania Aria of Sorrow
-mh#armr3 White Skin of Umpluutu			Arms & Equipment Guide (2e)
-mh#armr4 Celestial Chain +2
-mh#armr5 Dwarven Plate +1
-mh#armr6 Black Swan Armor +2			Icewind Dale 1 (2e)
-mh#armr7 Black Dragon Scale
-mh#armr8 Laeral's Storm Armor +2		Encyclopedia Magica (2e)
-mh#armr9 Plate of Solamnus +5			Encyclopedia Magica (2e)
-
 *mh#band1 Dark Crown				Lords of Darkness (2e)
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2e)
@@ -57,6 +47,9 @@ mh#btax3 Redethemar +4				Elves of Evermeet (2e)
 mh#bull1 Priest's Bullet			Libris Mortis (3.5e)
 *mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2e)
 
+mh#chan1 Eversing +2				Castlevania Aria of Sorrow
+mh#chan2 Celestial Chain +2
+
 mh#clck1 Mutamin's Cloak
 mh#clck2 Varazdin's Cloak of Protection
 mh#clck3 Cloak of Arachnida			DMG (2e)
@@ -66,6 +59,8 @@ mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2e)
 mh#clck7 Cloak of Lathander			Encyclopedia Magica (2e)
 mh#clck8 Cloak of Flame				Encyclopedia Magica (2e)
 mh#clck9 Battlecloak of Vycaena			Lost Empires of Faerun (3e)
+
+mh#drag1 Black Dragon Scale
 
 mh#comp1 Meteoric Iron
 mh#comp2 Arandur Ore
@@ -89,6 +84,9 @@ mh#helm1 Helm of Valor				Complete Elves (2e)
 mh#helm2 Helm of the Dwarven Lords
 mh#helm3 Blessed Helm of Lathander		Icewind Dale 1 (2e)
 
+mh#hide1 Winter Wolf Hide +1
+mh#hide2 White Skin of Umpluutu			Arms & Equipment Guide (2e)
+
 mh#ioun1 Pale Blue Ioun Stone			DMG (2e)
 mh#ioun2 Crystal Clear Ioun Stone		DMG (2e)
 mh#ioun3 Bright Orange Ioun Stone		DMG (3e)
@@ -105,6 +103,11 @@ mh#misc3 Crystal Ball				DMG (2e)
 mh#misc4 Gem of Seeing				DMG (2e)
 mh#misc5 Jade Snakes				Encyclopedia Magica (2e)
 mh#misc6 Bottle of Pleasant Odors		Encyclopedia Magica (2e)
+
+mh#plat1 Dwarven Plate +1
+mh#plat2 Black Swan Armor +2			Icewind Dale 1 (2e)
+mh#plat3 Laeral's Storm Armor +2		Encyclopedia Magica (2e)
+mh#plat4 Plate of Solamnus +5			Encyclopedia Magica (2e)
 
 mh#potn1 Oil of Acid Resistance			DMG (2e)
 mh#potn2 Potion of Clairvoyance			DMG (2e)

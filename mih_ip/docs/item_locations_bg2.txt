@@ -5,14 +5,6 @@ mh#amul5 Brooch of Shielding			Druid Grove (battle)
 mh#amul6 Scarab versus Golems			Adventurer's Market (shop)
 mh#amulc Medallion of Faith			Chateau Irenicus (import)
 
-mh#armr1 Winter Wolf Hide +1			Chateau Irenicus (battle)
-mh#armr2 Eversing +2				Arnolinus the dwarf (shop)
-mh#armr3 White Skin of Umpluutu			Windspear Hills (battle)
-mh#armr6 Black Swan Armor +2			Arnolinus the dwarf (shop)
-mh#armr7 Black Dragon Scale			Cromwell (forging)
-mh#armr8 Laeral's Storm Armor +2		Adventurer's Market (ch6)
-mh#armr9 Plate of Solamnus +5			Adventurer's Market (ch6)
-
 mh#belt1 Girdle of Dwarvenkind			Chateau Irenicus (chest)
 mh#belt2 Sunite Sash				Vaelasa (event or battle)
 mh#belt3 Storm's Garter				Harper Hold (battle)
@@ -37,6 +29,8 @@ mh#btax3 Redethemar +4				Tree of Life (container)
 
 mh#bull1 Priest's Bullet			Various Temples (shop)
 
+mh#chan1 Eversing +2				Arnolinus the dwarf (shop)
+
 mh#clck1 Mutamin's Cloak			Trademeet Merchant (shop)
 mh#clck3 Cloak of Arachnida			Ust Natha (shop)
 mh#clck5 Bolder's Cloak of the Rogue		Twisted Rune (battle)
@@ -56,9 +50,14 @@ mh#dart2 Chandler's Icy Darts +2		Planar Sphere (chest)
 mh#dart3 Zilzanzer's Magnificent Darts +1	Adventurer's Market (shop)
 mh#dart4 Silver Dart of Selune +2		Trademeet (shop)
 
+mh#drag1 Black Dragon Scale			Cromwell (forging)
+
 mh#helm1 Helm of Valor				D'Arnise Keep (chest)
 mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)
 mh#helm3 Blessed Helm of Lathander		Temple of Lathander (shop)
+
+mh#hide1 Winter Wolf Hide +1			Chateau Irenicus (battle)
+mh#hide1 White Skin of Umpluutu			Windspear Hills (battle)
 
 mh#ioun3 Bright Orange Ioun Stone		Adventurer's Market (shop)
 mh#ioun4 Telkiira				Suldanessenar (battle)
@@ -72,6 +71,10 @@ mh#misc1 Pearl of Power				Trademeet Merchant (shop)
 mh#misc2 Bag of Tricks				Druid Grove (battle)
 mh#misc3 Crystal Ball				Adventurer's Market (shop)
 mh#misc6 Bottle of Pleasant Odors		Mira (shop)
+
+mh#plat2 Black Swan Armor +2			Arnolinus the dwarf (shop)
+mh#plat3 Laeral's Storm Armor +2		Adventurer's Market (ch6)
+mh#plat4 Plate of Solamnus +5			Adventurer's Market (ch6)
 
 mh#potn1 Oil of Acid Resistance			(various potion shops)
 mh#potn2 Potion of Clairvoyance			(various potion shops)

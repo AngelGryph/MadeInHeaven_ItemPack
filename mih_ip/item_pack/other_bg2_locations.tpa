@@ -6,7 +6,7 @@ BEGIN
 
   // Stolen by Irenicus
   //
-  // mh#armr1 - Winter Wolf Hide +1
+  // mh#hide1 - Winter Wolf Hide +1
   // mh#belt1 - Girdle of Dwarvenkind
 
   COPY_EXISTING "ar0602.are" "override"
@@ -20,7 +20,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "duergar1"
-    editstring	= ~remove_items=>"leat01" add_items=>"mh#armr1(armor)"~
+    editstring	= ~remove_items=>"leat01" add_items=>"mh#hide1(armor)"~
   END
 
 
@@ -30,12 +30,12 @@ BEGIN
 
   // Arnolius the Dwarf
   //
-  // mh#armr2 - Eversing +2
-  // mh#armr6 - Black Swan Armor +2
+  // mh#chan1 - Eversing +2
+  // mh#plat2 - Black Swan Armor +2
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#armr6" AFTER "plat10" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#armr2" AFTER "plat10" #0 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#plat2" AFTER "plat10" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#chan1" AFTER "plat10" #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -104,8 +104,8 @@ BEGIN
   // mh#ioun3 - Orange Ioun Stone
   // ring40   - Ring of Acquity (moved from Lavok)
   //
-  // mh#armr8 - Laeral's Storm Armor +2
-  // mh#armr9 - Plate of Solamnus +5
+  // mh#plat3 - Laeral's Storm Armor +2
+  // mh#plat4 - Plate of Solamnus +5
   // mh#clck6 - Cloak of Blackflame
   // mh#dart1 - Lein's Fiery Darts +2
   // mh#dart2 - Chandler's Icy Darts +2
@@ -132,8 +132,8 @@ BEGIN
   END
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#armr8" AFTER "plat14" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#armr9" AFTER "plat17" #0 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#plat3" AFTER "plat14" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#plat4" AFTER "plat17" #0 #0 #0 "identified" #1~
     literal'3=>~ADD_STORE_ITEM "mh#dart2" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'4=>~ADD_STORE_ITEM "mh#dart1" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'5=>~ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1~
@@ -501,7 +501,7 @@ BEGIN
 
   // Firkraag's Lair
   //
-  // mh#armr3 - White Hide of Umpluutu +2 (on Plath Rededge)
+  // mh#hide2 - White Hide of Umpluutu +2 (on Plath Rededge)
   // mh#boot2 - Boots of Striding & Springing (on Conster)
   // mh#robe1 - Robe of the Elements (on Conster)
   // mh#clck9 - Battlecloak of Vycaena (on Firkraag, replaces Cloak of the Shield)
@@ -509,7 +509,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "firban02"
-    editstring	= ~add_items=>"mh#armr3(armor,x1)~
+    editstring	= ~add_items=>"mh#hide2(armor,x1)~
   END
 
   LAUNCH_ACTION_FUNCTION edit_creature

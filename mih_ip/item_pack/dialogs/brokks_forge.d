@@ -343,7 +343,7 @@ BEGIN arandur3
         DestroyItem("mh#com2")
 	TakePartyGold(20000)
 	DestroyGold(20000)
-	GiveItemCreate("mh#armr5", LastTalkedToBy(Myself), 0, 0, 0)
+	GiveItemCreate("mh#plat1", LastTalkedToBy(Myself), 0, 0, 0)
 	EraseJournalEntry(@81)
 	DayNight(MIDNIGHT)
 	SetGlobal("mh#BrokkArandur", "GLOBAL", 2)~
@@ -363,7 +363,7 @@ BEGIN arandur4
         DestroyItem("mh#com2")
 	TakePartyGold(20000)
 	DestroyGold(20000)
-	GiveItemCreate("mh#armr4", LastTalkedToBy(Myself), 0, 0, 0)
+	GiveItemCreate("mh#chan2", LastTalkedToBy(Myself), 0, 0, 0)
 	EraseJournalEntry(@81)
 	DayNight(MIDNIGHT)
 	SetGlobal("mh#BrokkArandur", "GLOBAL", 2)~

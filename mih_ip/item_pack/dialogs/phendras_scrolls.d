@@ -83,7 +83,7 @@ IF ~~
 BEGIN hide5
   SAY @19
   IF ~~
-    DO ~GiveItemCreate("mh#armr1", LastTalkedToBy(Myself), 0, 0, 0)
+    DO ~GiveItemCreate("mh#hide1", LastTalkedToBy(Myself), 0, 0, 0)
         EraseJournalEntry(@15)
         EraseJournalEntry(@17)
         SetGlobal("mh#PhendraHide", "GLOBAL", 3)~

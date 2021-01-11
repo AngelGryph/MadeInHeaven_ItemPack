@@ -7,11 +7,6 @@ mh#amul8 Periapt of Health			Gullykin (shop)
 mh#amula Amulet of 5% Magic Resistance		Sorcerous Sundries (shop)
 mh#amulc Medallion of Faith			High House of Wonders (shop)
 
-mh#armr1 Winter Wolf Hide +1			Phendra's Scrolls (event)
-mh#armr2 Eversing +2				Brokk's Forge (shop)
-mh#armr4 Celestial Chain +2			Brokk's Forge (event)
-mh#armr5 Dwarven Full Plate +2			Brokk's Forge (event)
-
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
 mh#belt3 Storm's Garter				Centeol's Lair
 mh#belt4 Girdle of Beatification		Song of the Morning (shop)
@@ -33,6 +28,9 @@ mh#btax1 Foesplitter +1				Brokk's Forge (shop)
 mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
 
 mh#bull1 Priest's Bullet			(various temples)
+
+mh#chan1 Eversing +2				Brokk's Forge (shop)
+mh#chan2 Celestial Chain +2			Brokk's Forge (event)
 
 mh#clck1 Mutamin's Cloak			Mutamin's Garden (event)
 mh#clck2 Varazdin's Cloak of Protection		Durlag's Tower D4 (chest)
@@ -56,6 +54,8 @@ mh#hamm1 Final Strike +3			Ulgoth's Beard (event)
 
 mh#helm1 Helm of Valor				Brokk's Forge (shop)
 
+mh#hide1 Winter Wolf Hide +1			Phendra's Scrolls (event)
+
 mh#ioun3 Bright Orange Ioun Stone		Ulgoth's Beard (battle)
 mh#ioun5 Mottled Green Ioun Stone		Candlekeep Catacombs (battle)
 
@@ -63,6 +63,8 @@ mh#misc2 Bag of Tricks				Cloakwood (battle)
 mh#misc3 Crystal Ball				High Hedge (shop)
 mh#misc4 Gem of Seeing				Gullykin (event)
 mh#misc6 Bottle of Pleasant Odors		High House of Wonders (shop)
+
+mh#plat1 Dwarven Full Plate +2			Brokk's Forge (event)
 
 mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 mh#potn2 Potion of Clairvoyance			High Hedge (shop)

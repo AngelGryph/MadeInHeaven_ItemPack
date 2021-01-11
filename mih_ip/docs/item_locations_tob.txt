@@ -1,7 +1,7 @@
 mh#amul7 Dragon's Tear Amulet			Arcana Archives (shop)
 mh#amulb Phylactery of Bravery			Watcher's Keep (maze)
 
-mh#armr7 Black Dragon Scale			Cespenar (forging)
+mh#drag1 Black Dragon Scale			Cespenar (forging)
 
 mh#blun3 Battle Star +4				Sister Garlena (shop)
 

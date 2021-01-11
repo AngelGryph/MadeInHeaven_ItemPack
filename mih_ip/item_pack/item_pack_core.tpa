@@ -188,171 +188,6 @@ BEGIN
   END
 
 
-  // mh#armr1 - Winter Wolf Hide +1
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr1"
-    location	= "items"
-    editstring	= "say_name=>42 say_description=>43"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr1"
-  END
-
-
-  // mh#armr2 - Eversing +2
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr2"
-    location	= "items"
-    editstring	= ~say_name=>44 say_description=>45 cd_immunity=>"petrification"~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr2"
-  END
-
-
-  // mh#armr3 - White Hide of Umpluutu
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#pbpaw"
-    location	= "items"
-  END
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr3"
-    location	= "items"
-    editstring	= "say_name=>69 say_description=>70"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr3"
-  END
-
-
-  // mh#armr4 - Celestial Chain +2
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr4"
-    location	= "items"
-    editstring	= "say_name=>87 say_description=>88"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr4"
-  END
-
-
-  // mh#armr5 - Dwarven Full Plate +2
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr5"
-    location	= "items"
-    editstring	= "say_name=>89 say_description=>90"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr5"
-  END
-
-
-  // mh#armr6 - Black Swan Armor +2
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr6"
-    location	= "items"
-    editstring	= "say_name=>125 say_description=>126"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr6"
-  END
-
-
-  // mh#armr7 - Black Dragon Scale
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr7"
-    location	= "items"
-    editstring	= "say_name=>287 say_description=>288"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr7"
-  END
-
-
-  // mh#armr8 - Laeral's Storm Armor +2
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr8"
-    location	= "items"
-    editstring	= "say_name=>305 say_description=>306"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr8"
-  END
-
-
-  // mh#armr9 - Plate of Solamnus +5
-
-  LAUNCH_ACTION_FUNCTION make_effect
-    STR_VAR
-    effect		= "mh#armr9"
-    editstring		= "parameter1=>5"
-  END
-
-  LAUNCH_ACTION_FUNCTION install_item
-    STR_VAR
-    item	= "mh#armr9"
-    location	= "items"
-    editstring	= "say_unidentified_name=>307 say_unidentified_description=>308 say_name=>309 say_description=>310"
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_itemexcl
-    INT_VAR
-    mask	= BIT1
-    STR_VAR
-    item	= "mh#armr9"
-  END
-
-
   // mh#belt1 - Girdle of Dwarvenkind
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -646,6 +481,40 @@ BEGIN
   END
 
 
+  // mh#chan1 - Eversing +2
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#chan1"
+    location	= "items"
+    editstring	= ~say_name=>44 say_description=>45 cd_immunity=>"petrification"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#chan1"
+  END
+
+
+  // mh#chan2 - Celestial Chain +2
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#chan2"
+    location	= "items"
+    editstring	= "say_name=>87 say_description=>88"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#chan2"
+  END
+
+
   // mh#clck1 - Mutamin's Cloak
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -928,6 +797,23 @@ BEGIN
   END
 
 
+  // mh#drag1 - Black Dragon Scale
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#drag1"
+    location	= "items"
+    editstring	= "say_name=>287 say_description=>288"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#drag1"
+  END
+
+
   // mh#hamm1 - Final Strike +3
 
   LAUNCH_ACTION_FUNCTION install_item
@@ -965,6 +851,46 @@ BEGIN
     item	= "mh#helm3"
     location	= "items"
     editstring	= "say_name=>137 say_description=>138"
+  END
+
+
+  // mh#hide1 - Winter Wolf Hide +1
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#hide1"
+    location	= "items"
+    editstring	= "say_name=>42 say_description=>43"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#hide1"
+  END
+
+
+  // mh#hide2 - White Hide of Umpluutu
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#pbpaw"
+    location	= "items"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#hide2"
+    location	= "items"
+    editstring	= "say_name=>69 say_description=>70"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#hide2"
   END
 
 
@@ -1196,6 +1122,80 @@ BEGIN
     item	= "mh#misc6"
     location	= "items"
     editstring	= "say_name=>283 say_description=>284"
+  END
+
+
+  // mh#plat1 - Dwarven Full Plate +2
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#plat1"
+    location	= "items"
+    editstring	= "say_name=>89 say_description=>90"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#plat1"
+  END
+
+
+  // mh#plat2 - Black Swan Armor +2
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#plat2"
+    location	= "items"
+    editstring	= "say_name=>125 say_description=>126"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#plat2"
+  END
+
+
+  // mh#plat3 - Laeral's Storm Armor +2
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#plat3"
+    location	= "items"
+    editstring	= "say_name=>305 say_description=>306"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#plat3"
+  END
+
+
+  // mh#plat4 - Plate of Solamnus +5
+
+  LAUNCH_ACTION_FUNCTION make_effect
+    STR_VAR
+    effect		= "mh#plat4"
+    editstring		= "parameter1=>5"
+  END
+
+  LAUNCH_ACTION_FUNCTION install_item
+    STR_VAR
+    item	= "mh#plat4"
+    location	= "items"
+    editstring	= "say_unidentified_name=>307 say_unidentified_description=>308 say_name=>309 say_description=>310"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_itemexcl
+    INT_VAR
+    mask	= BIT1
+    STR_VAR
+    item	= "mh#plat4"
   END
 
 
