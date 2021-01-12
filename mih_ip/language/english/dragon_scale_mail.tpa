@@ -1,0 +1,147 @@
+@0   = ~Scale Mail~
+@1   = ~This suit of armor has been crafted from the hide of some sort of scaled monster, like a dragon.  Depending on what monster it came from, it may have a superior armor class, and some special powers or resistances.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+
+Armor Class: 6 (5 vs. piercing and missile)
+Requires:
+ 5 Strength
+
+Weight: 25~
+@2   = ~Ashen Scale~
+@3   = ~Instead of metal strips, this armor uses wyvern scales bound to a chain backing by means of a magical fire. The resulting armor is ash-gray in color and more flexible than standard splint mail. A ranger, Usher Skacan, made this armor after slaying several wyverns that were killing all the deer and elk in his forest.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+
+Armor Class: 2 (1 vs. piercing and missile)
+Requires:
+ 5 Strength
+
+Weight: 25~
+@4   = ~White Dragon Scale~
+@5   = ~Not surprisingly, this armor created from the scales of a white dragon provides the wearer with protection from cold and ice.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Cold Resistance: +50%
+
+Charge abilities:
+- Cone of Cold three times per day
+  Damage: 10d4+10 cold (Save vs. Spell for half)
+  Range: 8 ft.
+  Area of Effect: 18-ft. cone with 90-deg. arc
+
+Armor Class: -2 (-3 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 25~
+@6   = ~Shadow Dragon Scale~
+@7   = ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer extra protection from acid.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Acid Resistance: +50%
+
+Armor Class: 1 (0 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 25~
+@8   = ~Red Dragon Scale~
+@9   = ~Dragon scale armor is light of weight, strong, and resistant to fire. Because of these properties, it is much sought after, but finding, let alone slaying, a powerful ancient dragon is near impossible. It is usually easier to search for an existing suit, such as this one. One should be careful wearing it near dragons, however, particularly red ones.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Fire Resistance: +50%
+
+Armor Class: -1 (-2 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 25~
+@10  = ~Blue Dragon Scale~
+@11  = ~The light but durable scales of the blue dragon provide excellent protection against weapons and all forms of electricity.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Electrical Resistance: +90%
+
+Armor Class: -1 (-2 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 25~
+@12  = ~Green Dragon Scale~
+@13  = ~This shimmering viridian suit of leather armor is soft and supple despite the strength in the plates of green dragon scale. The wearer of this armor is protected from even the heaviest blows as well as from poison.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Immunity to poison
+
+Armor Class: 4 (3 vs. piercing and missile)
+Requires:
+ 4 Strength
+
+Weight: 25~
+@14  = ~Silver Dragon Scale~
+@15  = ~This armor, forged from the scales of a silver dragon, is a dead giveaway of wrongdoing on the part of the wearer. While the protection it offers is impressive, one cannot ignore the fact that a creature of incredible grace and beauty had to be destroyed in order for this armor to be made.
+
+STATISTICS:
+
+Equipped Abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Charisma: -2
+- Magic Resistance: +15%
+- Movement rate increased by 3
+
+Combat abilities:
+- Heals wearer 2 Hit Points each time damage is taken
+
+Armor Class: -2 (-3 vs. piercing and missile)
+Requires:
+ 8 Strength
+
+Weight: 25~
+
+

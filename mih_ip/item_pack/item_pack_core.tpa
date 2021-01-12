@@ -803,7 +803,7 @@ BEGIN
     STR_VAR
     item	= "mh#drag1"
     location	= "items"
-    editstring	= "say_name=>287 say_description=>288"
+    editstring	= "say_unidentified_name=>317 say_name=>287 say_unidentified_description=>318 say_description=>288"
   END
 
   LAUNCH_ACTION_FUNCTION edit_itemexcl

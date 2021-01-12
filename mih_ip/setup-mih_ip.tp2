@@ -124,7 +124,7 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Constent Dragon Scale Armor
+// Turn all Dragon Scale Armor into Scale Mail
 
 BEGIN @10
 GROUP @3
@@ -133,8 +133,8 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg2" OR GAME_INCLUDES "sod" @4
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file		= "consistent_dragon_scale"
-  tra		= "consistent_dragon_scale"
+  file		= "dragon_scale_mail"
+  tra		= "dragon_scale_mail"
   location	= "tweaks"
 END
 

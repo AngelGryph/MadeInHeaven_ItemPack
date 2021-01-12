@@ -1765,12 +1765,17 @@ Weight: 2~
 
 STATISTICS:
 
-- Equipped Abilities:
-  Armor Class: 0 (1 vs. crushing, -1 vs. slashing, piercing and missile)
-  Acid Resistance: +25%
-  Saving Throws: +2 vs. Spell
+Equipped Abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+- Acid Resistance: +25%
+- Saving Throws: +2 vs. Spell
 
-Weight: 10~
+Armor Class: 0 (-1 vs. piercing and missile)
+
+Weight: 25~
 @289  = ~Varazdin's Cloak of Protection~
 @290  = ~Cloak of Protection +1/+3: 'Varazdin's Cloak'
 
@@ -1932,5 +1937,21 @@ Weight: 1~
 @316  = ~This extremely rare and potent fluid can actually restore the dead to life.  Creating this elixir is the pinnacle of alchemy and requires several rare ingredients including the tail feather of a phoenix, tears of a solar, water from the river Oceanus and more.
 
 Although the elixir does indeed restore life, the patient will be frail and sickly, in no condition to fight with only one hitpoint and a -5 to all ability scores.  The sickness passes in a turn, but the remaining hitpoints must be recovered by other means.~
+@317   = ~Scale Mail~
+@318   = ~This suit of armor has been crafted from the hide of some sort of scaled monster, like a dragon.  Depending on what monster it came from, it may have a superior armor class, and some special powers or resistances.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -10%
+- Find Traps: -10%
+- Pick Pockets: -25%
+- Move Silently: -15%
+
+Armor Class: 6 (5 vs. piercing and missile)
+Requires:
+ 5 Strength
+
+Weight: 25~
 
 
