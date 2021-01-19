@@ -6,6 +6,8 @@ BEGIN
     delete_effect_global'3=>~opcode is_in [59 90 91 92]~
     add_effect_global_inline'1=>~number_to_add=>2 opcode=>0 target=>1 timing=>2 parameter1=>1 parameter2=>"entry_index from [2 4]"~
     add_effect_global_inline'2=>~number_to_add=>4 opcode=>"entry_index from [59 90 91 92]" target=>1 timing=>2 parameter1=>"entry_index from [-15 -10 -10 -25]"~
+    weight=>25
+    minimum_strength=>5
     unusable_bard=>0
     unusable_cleric=>0
     unusable_cleric=>0
@@ -45,8 +47,6 @@ BEGIN
     unusable_cavalier=>0
     unusable_inquisitor=>0
     unusable_undead_hunter=>0
-    weight=>25
-    minimum_strength=>5
     name1_string=>0
     description1_string=>1
     say_name=>"object_index from [2 4 6 8 10 12 14]"
