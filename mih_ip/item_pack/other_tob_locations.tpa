@@ -89,14 +89,15 @@ BEGIN
   // mh#ringg - Ring of the Hierophant (on Nyalee)
   // mh#robe5 - Nyalee's Robe of Stone (guess)
 
-  COPY_EXISTING "ar5202.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      charges1			= 1
-      STR_VAR
-      item_to_add		= "mh#tome2"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 1" item_resource=>"mh#tome2" item_charges_1=>1~
+  END
+  
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar5202"
+    edits	= "patch_data"
+  END
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
@@ -108,15 +109,15 @@ BEGIN
   //
   // mh#tome4 - Libram of Gainful Conjuration
 
-  COPY_EXISTING "ar5204.are" "override"
-    // Libram of Gainful Conjuration
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      charges1			= 1
-      STR_VAR
-      item_to_add		= "mh#tome4"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 1" item_resource=>"mh#tome4" item_charges_1=>1~
+  END
+  
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar5204"
+    edits	= "patch_data"
+  END
 
 
   // =========

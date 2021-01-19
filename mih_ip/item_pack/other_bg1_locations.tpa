@@ -89,35 +89,32 @@ BEGIN
   //
   // mh#boot3 - Boots of Balance
 
-  COPY_EXISTING "%Lighthouse_BlackAlaricsCave%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 1
-      STR_VAR
-      item_to_add		= "mh#boot3"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 0" item_resource=>"mh#boot3"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%Lighthouse_BlackAlaricsCave%"
+    edits	= "patch_data"
+  END
 
 
   // Ulcaster Ruins
+  //
+  // mh#dart1 - Lein's Fiery Darts
+  // mh#dart2 - Chandler's Icy Darts
 
-  COPY_EXISTING "%UlcasterRuins%.are" "override"
-    // Chandler's Icy Darts
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      charges1		= 6
-      STR_VAR
-      item_to_add		= "mh#dart2"
-    END
+  MAKE_PATCH
+    add_item_inline'1=>~match=>"parent_index = 3" item_resource=>"mh#dart1" item_charges_1=>6~
+    add_item_inline'2=>~match=>"parent_index = 1" item_resource=>"mh#dart2" item_charges_1=>6~
+  END
 
-    // Lein's Fiery Darts
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 4
-      charges1		= 6
-      STR_VAR
-      item_to_add		= "mh#dart1"
-    END
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%UlcasterRuins%"
+    edits	= "patch_data"
+  END
 
 
   // ==================
@@ -229,13 +226,15 @@ BEGIN
   //
   // mh#comp5 - Unicorn Horn
 
-  COPY_EXISTING "%BanditCamp_Tent1%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 3
-      STR_VAR
-      item_to_add		= "mh#comp5"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#comp5"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%BanditCamp_Tent1%"
+    edits	= "patch_data"
+  END
 
 
   // =========
@@ -246,16 +245,16 @@ BEGIN
   //
   // mh#belt3 - Storm's Garter
 
-  COPY_EXISTING "%CloakwoodNestSpiderNest%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 1
-      charges1			= 1
-      charges2			= 1
-      charges3			= 1
-      STR_VAR
-      item_to_add		= "mh#belt3"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 0" item_resource=>"mh#belt3" item_charges_1=>1 item_charges_2=>1 item_charges_3=>1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%CloakwoodNestSpiderNest%"
+    edits	= "patch_data"
+  END
+
 
   // Shadow Druids
   //
@@ -266,6 +265,7 @@ BEGIN
     creature	= "coksmth"
     editstring	= ~add_items=>"mh#misc2(qitem)~
   END
+
 
   // Orothiar Mines
   //
@@ -373,15 +373,17 @@ BEGIN
 
   // Catacombs L1
   //
-  // mh#ring1 - Ring of the Lich +3
+  // mh#ring1 - Ring of the Elven Mage
 
-  COPY_EXISTING "%Candlekeep_Catacombs_L1%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 4
-      STR_VAR
-      item_to_add		= "mh#ring1"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 3" item_resource=>"mh#ring1"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%Candlekeep_Catacombs_L1%"
+    edits	= "patch_data"
+  END
 
 
   // ==============
@@ -423,13 +425,16 @@ BEGIN
   //
   // mh#ring5 - Ring of Protection from Silence
 
-  COPY_EXISTING "%DurlagsTower_D1%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      STR_VAR
-      item_to_add		= "mh#ring5"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 1" item_resource=>"mh#ring5"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%DurlagsTower_D1%"
+    edits	= "patch_data"
+  END
+
 
   // Durlag's Dungeon D3
   //
@@ -441,51 +446,30 @@ BEGIN
     editstring	= ~remove_items=>"sw1h05" add_items=>"mh#swrd1(weapon1)~
   END
 
+
   // Durlag's Dungeon D4
   //
   // mh#btax2 - Trollkiller +2
   // mh#brac3 - Bracers of Winter's Chill
   // mh#brac5 - Gauntlets of Smiting
-  // mh#clck2 - Battlecloak of Vycaena (replaces Cloak of the Shield)
+  // mh#clck2 - Veldrin's Cloak (replaces Cloak of the Shield)
   // mh#comp2 - Arandur Ore
   // mh#comp4 - Rusty Katana
 
-  COPY_EXISTING "%DurlagsTower_D4%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 7
-      STR_VAR
-      item_to_add		= "mh#btax2"
-    END
+  MAKE_PATCH
+    add_item_inline'1=>~match=>"parent_index = 6" item_resource=>"mh#btax2"~
+    add_item_inline'2=>~match=>"parent_index = 2" item_resource=>"mh#clck2"~
+    add_item_inline'3=>~match=>"parent_index = 5" item_resource=>"mh#comp2"~
+    add_item_inline'4=>~match=>"parent_index = 21" item_resource=>"mh#comp4"~
+    add_item_inline'5=>~match=>"parent_index = 32" item_resource=>"mh#brac3" item_charges_1=>1 item_charges_2=>1~
+    delete_item=>~item_resource = clck20~
+  END
 
-    LAUNCH_PATCH_FUNCTION REPLACE_AREA_ITEM
-      STR_VAR
-      old_item			= "clck20"
-      new_item			= "mh#clck2"
-    END
-
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 6
-      STR_VAR
-      item_to_add		= "mh#comp2"
-    END
-
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 22
-      STR_VAR
-      item_to_add		= "mh#comp4"
-    END
-
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 33
-      charges1			= 1
-      charges2			= 1
-      STR_VAR
-      item_to_add		= "mh#brac3"
-    END
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%DurlagsTower_D4%"
+    edits	= "patch_data"
+  END
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
@@ -503,34 +487,31 @@ BEGIN
   // mh#dart4 - Silver Dart of Selune +2
   // mh#robe1 - Robe of the Elements
 
-  COPY_EXISTING "%IsleofBalduranNDradeelsHouse%.are" "override"
-    // Robe of the Elements
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 1
-      STR_VAR
-      item_to_add		= "mh#robe1"
-    END
+  MAKE_PATCH
+    add_item_inline'1=>~match=>"parent_index = 0" item_resource=>"mh#robe1"~
+    add_item_inline'2=>~match=>"parent_index = 1" item_resource=>"mh#dart4"~
+  END
 
-    // Silver Dart of Selune +2
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      STR_VAR
-      item_to_add		= "mh#dart4"
-    END
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%IsleofBalduranNDradeelsHouse%"
+    edits	= "patch_data"
+  END
+
 
   // Shipwreck L1
   //
   // mh#comp1 - Meteoric iron
 
-  COPY_EXISTING "%IsleofBalduranNShip_D2%.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 3
-      STR_VAR
-      item_to_add		= "mh#comp1"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#comp1"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "%IsleofBalduranNShip_D2%"
+    edits	= "patch_data"
+  END
 END	// other_bg1_locations
 
 

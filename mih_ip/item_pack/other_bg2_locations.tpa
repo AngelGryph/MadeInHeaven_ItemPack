@@ -9,13 +9,15 @@ BEGIN
   // mh#hide1 - Winter Wolf Hide +1
   // mh#belt1 - Girdle of Dwarvenkind
 
-  COPY_EXISTING "ar0602.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 26
-      STR_VAR
-      item_to_add		= "mh#belt1"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 25" item_resource=>"mh#belt1"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar0602"
+    edits	= "patch_data"
+  END
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
@@ -176,42 +178,37 @@ BEGIN
   // mh#swrd4 - Sword of the Planes +1
   // mh#wand1 - Wand of Illusions
 
-  COPY_EXISTING "ar0410.are" "override"
-    // Sword of the Planes +1
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 1
-      STR_VAR
-      item_to_add		= "mh#swrd4"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 0" item_resource=>"mh#swrd4"~
+  END
 
-  COPY_EXISTING "ar0411.are" "override"
-    // Wand of Illusions
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 5
-      charges1		= 12
-      charges2		= 12
-      STR_VAR
-      item_to_add		= "mh#wand1"
-    END
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar0410"
+    edits	= "patch_data"
+  END
 
-  COPY_EXISTING "ar0412.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 1
-      charges1		= 12
-      STR_VAR
-      item_to_add		= "mh#dart2"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 4" item_resource=>"mh#wand1" item_charges_1=>12 item_charges_2=>12~
+  END
 
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      charges1		= 12
-      STR_VAR
-      item_to_add		= "mh#dart1"
-    END
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar0411"
+    edits	= "patch_data"
+  END
+
+  MAKE_PATCH
+    add_item_inline'1=>~match=>"parent_index = 1" item_resource=>"mh#dart1" item_charges_1=>12~
+    add_item_inline'2=>~match=>"parent_index = 0" item_resource=>"mh#dart2" item_charges_1=>12~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar0412"
+    edits	= "patch_data"
+  END
+
 
   // Stolen by Necre
   //
@@ -223,6 +220,7 @@ BEGIN
     editstring	= ~add_items=>"mh#clck8(cloak)"~
   END
 
+
   // Stolen by Tolgerias
   //
   // mh#staf1 - Staff of Rumathil +2
@@ -233,6 +231,7 @@ BEGIN
     creature	= "tolger tolger2"
     editstring	= ~remove_items=>"staf01" add_items=>"mh#staf1(weapon1) mh#ring5(lring)"~
   END
+
 
   // Stolen by Lavok
   //
@@ -259,6 +258,7 @@ BEGIN
     creature	= "kaypal01"
     editstring	= ~add_items=>"mh#brac5(gloves)"~
   END
+
 
   // Neb the Child-killer gets his due
   //
@@ -320,13 +320,15 @@ BEGIN
   //
   // mh#dagg2 - Spinesheath +1
 
-  COPY_EXISTING "ar0206.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 3
-      STR_VAR
-      item_to_add		= "mh#dagg2"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#dagg2"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar0206"
+    edits	= "patch_data"
+  END
 
 
   // ==============
@@ -393,14 +395,15 @@ BEGIN
   //
   // mh#shld3 - Shield of the Phoenix +2
 
-  COPY_EXISTING "ar1301.are" "override"
-    // Shield of the Phoenix +2
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 5
-      STR_VAR
-      item_to_add		= "mh#shld3"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 4" item_resource=>"mh#shld3"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar1301"
+    edits	= "patch_data"
+  END
 
 
   // =========
@@ -476,23 +479,25 @@ BEGIN
   // mh#swrd5 - Amaunator's Legacy +3
   // mh#ring6 - Ring of White Bone
 
-  COPY_EXISTING "ar1401.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 4
-      charges2			= 1
-      STR_VAR
-      item_to_add		= "mh#swrd5"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 3" item_resource=>"mh#swrd5" item_charges_2=>1~
+  END
 
-  COPY_EXISTING "ar1403.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 2
-      charges1			= 12
-      STR_VAR
-      item_to_add		= "mh#ring6"
-    END
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar1401"
+    edits	= "patch_data"
+  END
+
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 1" item_resource=>"mh#ring6" item_charges_1=>12~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar1403"
+    edits	= "patch_data"
+  END
 
 
   // ===============
@@ -540,6 +545,7 @@ BEGIN
       // so no further edits are needed to make this work.
       REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~brac14~ ~mh#brac3~
     END
+
 
   // Ust Natha
   //
@@ -631,30 +637,35 @@ BEGIN
     editstring	= ~add_items=>"mh#comp6(qitem) mh#swrd6(qitem)"~
   END
 
+
   // House of the Priest
   //
   // mh#ioun4 - Telkiira
 
-  COPY_EXISTING "ar2810.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 5
-      STR_VAR
-      item_to_add		= "mh#ioun4"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 4" item_resource=>"mh#ioun4"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar2810"
+    edits	= "patch_data"
+  END
+
 
   // Tree of Life
   //
   // mh#btax3 - Redthemar +4
 
-  COPY_EXISTING "ar2806.are" "override"
-    LAUNCH_PATCH_FUNCTION ADD_AREA_ITEM
-      INT_VAR
-      container_to_add_to	= 1
-      charges2			= 1
-      STR_VAR
-      item_to_add		= "mh#btax3"
-    END
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 0" item_resource=>"mh#btax3" item_charges_2=>1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar2806"
+    edits	= "patch_data"
+  END
 END	// other_bg2_locations
 
 
