@@ -136,7 +136,9 @@ Weight: 4
 Speed Factor: 1
 Proficiency Type: War Hammer
 Type: 1-handed
-Requires: 9 Strength~
+Requires: 9 Strength
+
+Weight: 4~
 @22   = ~Helm of Valor~
 @23   = ~Also known as the "commander's helm", these golden helmets are often worn by elven generals and other high-ranking officials.  Their enchantment serves to enable the commander to stay upright even in the face of enemy fire, inspiring both <PRO_HISHER> men and allowing <PRO_HISHER> to keep oversight of the battlefield.
 
@@ -1877,8 +1879,8 @@ Equipped abilities:
 Armor Class: 1 (-2 vs. slashing)
 
 Weight: 25~
-@307   = ~Field Plate~
-@308   = ~Field plate dispenses with the chain backing of plate mail and full plate to save weight.  Instead a light suit of padding, or aketon, is worn beneath field plate.  The considerable weight of this armor is distributed over the wearer's body, and a trained knight can lie down, stand up, or vault into the saddle while wearing this armor.
+@307  = ~Field Plate~
+@308  = ~Field plate dispenses with the chain backing of plate mail and full plate to save weight.  Instead a light suit of padding, or aketon, is worn beneath field plate.  The considerable weight of this armor is distributed over the wearer's body, and a trained knight can lie down, stand up, or vault into the saddle while wearing this armor.
 
 STATISTICS:
 
@@ -1937,8 +1939,8 @@ Weight: 1~
 @316  = ~This extremely rare and potent fluid can actually restore the dead to life.  Creating this elixir is the pinnacle of alchemy and requires several rare ingredients including the tail feather of a phoenix, tears of a solar, water from the river Oceanus and more.
 
 Although the elixir does indeed restore life, the patient will be frail and sickly, in no condition to fight with only one hitpoint and a -5 to all ability scores.  The sickness passes in a turn, but the remaining hitpoints must be recovered by other means.~
-@317   = ~Scale Mail~
-@318   = ~This suit of armor has been crafted from the hide of some sort of scaled monster, like a dragon.  Depending on what monster it came from, it may have a superior armor class, and some special powers or resistances.
+@317  = ~Scale Mail~
+@318  = ~This suit of armor has been crafted from the hide of some sort of scaled monster, like a dragon.  Depending on what monster it came from, it may have a superior armor class, and some special powers or resistances.
 
 STATISTICS:
 
@@ -1953,5 +1955,44 @@ Requires:
  5 Strength
 
 Weight: 25~
+@319  = ~Green Dragon Scales~
+@320  = ~Bright green dragon scales from the wyrm who challenged you in Watcher's Keep.  They may be used to create something new if you show them to the right person.~
+@321  = ~Green Dragon Scale~
+@322  = ~This scale mail was crafted from the scales of a great green wyrm.  In addition to a superior armor class, it also makes the wearer completely immune to poison and disease.
+
+STATISTICS:
+
+Equipped abilities:
+- Immunity to poison and disease
+
+Charge abilities:
+- Poison (3/day, 12th level)
+
+Armor Class: -2 (-3 vs. piercing and missile)
+Requires:
+ 5 Strength
+
+Weight: 25~
+@323  = ~Maul of the Titans~
+@324  = ~This is a massive, immensely heavy and utterly unwieldy hammer that can only be used by giants and other creatures of similar strength.  Should anyone be able to lift it though, a single blow would surely send an opponent flying.
+
+Combat abilities:
+- Counts as a +5 weapon for purposes of what it can hit
+- Target is knocked prone and send flying away from the user (save vs. breath at -6 avoids)
+
+THAC0: +2
+Damage: 4d10 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: 1-handed
+Requires: 21 Strength
+
+Weight: 150~
+@325  = ~Ruby~
+@326  = ~This clear to deep crimson red corundum stone is highly valued because of its sparkling shine and vivid hues.  Folklore generally holds rubies to be lucky objects.~
+@327  = ~Sapphire~
+@328  = ~Sapphire is a brilliant blue, translucent corundum mineral.  Sapphires vary from a clearm pale blue to a radiant azure.~
+@329  = ~Katana~
+@330  = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.~
 
 
