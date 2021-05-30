@@ -35,7 +35,7 @@ BEGIN
     END
 
     MAKE_PATCH
-      add_effect_global_inline=>~opcode=>215 target=>1 timing=>2 resource=>"object_index from [mh#vsio1 mh#vsio2 mh#vsio3 mh#vsio4 mh#vsio4 mh#vsio3 mh#vsio5]"~
+      add_effect_global_inline=>~opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>"object_index from [mh#vsio1 mh#vsio2 mh#vsio3 mh#vsio4 mh#vsio4 mh#vsio3 mh#vsio5]"~
     END
 
     LAUNCH_ACTION_FUNCTION edit_item
@@ -43,6 +43,17 @@ BEGIN
       item	= "mh#ioun1 mh#ioun2 mh#ioun3 mh#ioun4 mh#ioun5 mh#ioun6 mh#ioun7"
       edits	= "patch_data"
     END
+  END
+
+
+  // Three White Doves
+
+  INCLUDE "%MOD_FOLDER%/shared/disrupt/setup_disrupt.tpa"
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "mh#mace2"
+    edits	= "disrupt"
   END
 END	// item_pack_postproc
 

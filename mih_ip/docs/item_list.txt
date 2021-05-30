@@ -1,66 +1,66 @@
-mh#amul1 Amulet against Undead			DMG (2e)
-mh#amul2 Necklace of Prayer Beads		DMG (2e)
-mh#amul3 Gem of Insight				DMG (2e)
+mh#amul1 Amulet against Undead			DMG (2E)
+mh#amul2 Necklace of Prayer Beads		DMG (2E)
+mh#amul3 Gem of Insight				DMG (2E)
 mh#amul4 Mirror of Illusions
-mh#amul5 Brooch of Shielding			DMG (2e)
-mh#amul6 Scarab versus Golems			DMG (2e)
+mh#amul5 Brooch of Shielding			DMG (2E)
+mh#amul6 Scarab versus Golems			DMG (2E)
 mh#amul7 Dragon's Tear Amulet
-mh#amul8 Periapt of Health			DMG (2e)
-mh#amul9 Medallion of the Arctic		Encyclopedia Magica (2e)
-mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2e)
-mh#amulb Phylactery of Bravery			Encyclopedia Magica (2e)
-mh#amulc Medallion of Faith			Encyclopedia Magica (2e)
+mh#amul8 Periapt of Health			DMG (2E)
+mh#amul9 Medallion of the Arctic		Encyclopedia Magica (2E)
+mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2E)
+mh#amulb Phylactery of Bravery			Encyclopedia Magica (2E)
+mh#amulc Medallion of Faith			Encyclopedia Magica (2E)
 
-*mh#band1 Dark Crown				Lords of Darkness (2e)
+*mh#band1 Dark Crown				Lords of Darkness (2E)
 
-mh#belt1 Girdle of Dwarvenkind			DMG (2e)
+mh#belt1 Girdle of Dwarvenkind			DMG (2E)
 mh#belt2 Sunite Sash				Magic of Faerun (3e)
-mh#belt3 Storm's Garter				Heroes' Lorebook (2e)
-mh#belt4 Girdle of Beatification		Icewind Dale 1 (2e)
-mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2e)
-mh#belt6 Girdle of Cloud Giant Strength		DMG (2e)
-mh#belt7 Girdle of Storm Giant Strength		DMG (2e)
+mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
+mh#belt4 Girdle of Beatification		Icewind Dale 1 (2E)
+mh#belt5 Girdle of Ogre Blood			Icewind Dale 1 (2E)
+mh#belt6 Girdle of Cloud Giant Strength		DMG (2E)
+mh#belt7 Girdle of Storm Giant Strength		DMG (2E)
 
-mh#blun1 Radiant Star +1
-mh#blun2 Slimecrusher +1
-mh#blun3 Battle Star +4				Encyclopedia Magica (2e)
-mh#blun4 Blackblood +3				Baldur's Gate 2 (2e)
+mh#boot1 Boots of the Master Ninja		Complete Ninja (2E)
+mh#boot2 Boots of Striding and Springing	DMG (2E)
+mh#boot3 Boots of Balance			Complete Thieves (2E)
 
-mh#boot1 Boots of the Master Ninja		Complete Ninja (2e)
-mh#boot2 Boots of Striding and Springing	DMG (2e)
-mh#boot3 Boots of Balance			Complete Thieves (2e)
-
-mh#brac1 Vambraces of Evil's Warding		Warriors of Heaven (2e)
+mh#brac1 Vambraces of Evil's Warding		Warriors of Heaven (2E)
 mh#brac2 Gauntlets of the Dwarven King
 mh#brac3 Bracers of Winter's Chill
-mh#brac4 Bracers of the Wind			Legends & Lore (2e)
+mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 mh#brac5 Gauntlets of Smiting
-mh#brac6 Silver Bracers of Kedl			Icewind Dale 1 (2e)
-mh#brac7 Gloves of Evasion			Complete Thieves (2e)
-mh#brac8 Gloves of Missile Snaring		Baldur's Gate 2 (2e)
-mh#brac9 Gloves of Thievery			Unearthed Arcana (2e)
+mh#brac6 Silver Bracers of Kedl			Icewind Dale 1 (2E)
+mh#brac7 Gloves of Evasion			Complete Thieves (2E)
+mh#brac8 Gloves of Missile Snaring		Baldur's Gate 2 (2E)
+mh#brac9 Gloves of Thievery			Unearthed Arcana (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3e)
 mh#btax2 Trollkiller +2
-mh#btax3 Redethemar +4				Elves of Evermeet (2e)
+mh#btax3 Redethemar +4				Elves of Evermeet (2E)
+*mh#btax4 Might of Heroes +3			Encyclopedia Magica (2E)
 
 mh#bull1 Priest's Bullet			Libris Mortis (3.5e)
-*mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2e)
+mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2E)
 
 mh#chan1 Eversing +2				Castlevania Aria of Sorrow
 mh#chan2 Celestial Chain +2
+*mh#chan3 Mail of Thalaera +5			Elves of Evermeet (2E)
 
 mh#clck1 Mutamin's Cloak
 mh#clck2 Varazdin's Cloak of Protection
-mh#clck3 Cloak of Arachnida			DMG (2e)
-mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2e)
-mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2e)
-mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2e)
-mh#clck7 Cloak of Lathander			Encyclopedia Magica (2e)
-mh#clck8 Cloak of Flame				Encyclopedia Magica (2e)
+mh#clck3 Cloak of Arachnida			DMG (2E)
+mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
+mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2E)
+mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2E)
+mh#clck7 Cloak of Lathander			Encyclopedia Magica (2E)
+mh#clck8 Cloak of Flame				Encyclopedia Magica (2E)
 mh#clck9 Battlecloak of Vycaena			Lost Empires of Faerun (3e)
 
+mh#club1 Blackblood +3				Baldur's Gate 2 (2E)
+
 mh#drag1 Black Dragon Scale
+mh#drag2 Green Dragon Scale
 
 mh#comp1 Meteoric Iron
 mh#comp2 Arandur Ore
@@ -68,122 +68,137 @@ mh#comp3 Lux Veritatis
 mh#comp4 Rusty Katana
 mh#comp5 Unicorn Horn
 mh#comp6 Black Dragon Scales
+mh#comp7 Green Dragon Scales
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
-mh#dagg2 Spinesheath +1				Icewind Dale 1 (2e)
-mh#dagg3 Golemblight +2				Encyclopedia Magica (2e)
+mh#dagg2 Spinesheath +1				Icewind Dale 1 (2E)
+mh#dagg3 Golemblight +2				Encyclopedia Magica (2E)
 
-mh#dart1 Lein's Fiery Darts +2			Pages from the Mages (2e)
-mh#dart2 Chandler's Icy Darts +2		Pages from the Mages (2e)
-mh#dart3 Zilzanzer's Magnificent Darts +1	Icewind Dale 1 (2e)
+mh#dart1 Lein's Fiery Darts +2			Pages from the Mages (2E)
+mh#dart2 Chandler's Icy Darts +2		Pages from the Mages (2E)
+mh#dart3 Zilzanzer's Magnificent Darts +1	Icewind Dale 1 (2E)
 mh#dart4 Silver Dart of Selune +2
 
-mh#hamm1 Final Strike +3
+mh#flai1 Slimecrusher +1
+mh#flai2 Battle Star +4				Encyclopedia Magica (2E)
 
-mh#helm1 Helm of Valor				Complete Elves (2e)
+*mh#gem01 Ruby					DMG (2E)
+*mh#gem02 Sapphire				DMG (2E)
+
+mh#hamm1 Final Strike +3
+mh#hamm2 Maul of the Titans			DMG (2E)
+
+mh#helm1 Helm of Valor				Complete Elves (2E)
 mh#helm2 Helm of the Dwarven Lords
-mh#helm3 Blessed Helm of Lathander		Icewind Dale 1 (2e)
+mh#helm3 Blessed Helm of Lathander		Icewind Dale 1 (2E)
 
 mh#hide1 Winter Wolf Hide +1
-mh#hide2 White Skin of Umpluutu			Arms & Equipment Guide (2e)
+mh#hide2 White Skin of Umpluutu			Arms & Equipment Guide (2E)
 
-mh#ioun1 Pale Blue Ioun Stone			DMG (2e)
-mh#ioun2 Crystal Clear Ioun Stone		DMG (2e)
+mh#ioun1 Pale Blue Ioun Stone			DMG (2E)
+mh#ioun2 Crystal Clear Ioun Stone		DMG (2E)
 mh#ioun3 Bright Orange Ioun Stone		DMG (3e)
 mh#ioun4 Telkiira				Fallen Empires of Faerun (3e)
 mh#ioun5 Mottled Green Ioun Stone
-mh#ioun6 Maroon Star Ioun Stone			Encyclopedia Magica (2e)
+mh#ioun6 Maroon Star Ioun Stone			Encyclopedia Magica (2E)
 mh#ioun7 Dark Indigo Ioun Stone
 
-mh#lbow1 Bow of Eletha				Elves of Evermeet (2e)
+mh#lbow1 Bow of Eletha				Elves of Evermeet (2E)
 
-mh#misc1 Pearl of Power				DMG (2e)
-mh#misc2 Bag of Tricks				DMG (2e)
-mh#misc3 Crystal Ball				DMG (2e)
-mh#misc4 Gem of Seeing				DMG (2e)
-mh#misc5 Jade Snakes				Encyclopedia Magica (2e)
-mh#misc6 Bottle of Pleasant Odors		Encyclopedia Magica (2e)
+mh#mace1 Radiant Star +1
+mh#mace2 Three White Doves +3			Icewind Dale 1 (2E)
+*mh#mace3 Skull Mace +2				Encyclopedia Magica (2E)
+
+mh#misc1 Pearl of Power				DMG (2E)
+mh#misc2 Bag of Tricks				DMG (2E)
+mh#misc3 Crystal Ball				DMG (2E)
+mh#misc4 Gem of Seeing				DMG (2E)
+mh#misc5 Horn of Goodness/Evil			DMG (2E)
+mh#misc6 Bottle of Pleasant Odors		Encyclopedia Magica (2E)
 
 mh#plat1 Dwarven Plate +1
-mh#plat2 Black Swan Armor +2			Icewind Dale 1 (2e)
-mh#plat3 Laeral's Storm Armor +2		Encyclopedia Magica (2e)
-mh#plat4 Plate of Solamnus +5			Encyclopedia Magica (2e)
+mh#plat2 Black Swan Armor +2			Icewind Dale 1 (2E)
+mh#plat3 Laeral's Storm Armor +2		Encyclopedia Magica (2E)
+mh#plat4 Plate of Solamnus +5			Encyclopedia Magica (2E)
+*mh#plat5 Crimson Armor +2			Sword of Vermilion
 
-mh#potn1 Oil of Acid Resistance			DMG (2e)
-mh#potn2 Potion of Clairvoyance			DMG (2e)
-mh#potn3 Philter of Purification		Icewind Dale 1 (2e)
-mh#potn4 Oil of Disenchantment			DMG (2e)
-mh#potn5 Potion of Longevity			DMG (2e)
-mh#potn6 Alchemist's Fire			PHB (2e)
-mh#potn7 Acid Flask				PHB (2e)
-mh#potn8 Elixir of Life				Unearthed Arcana (2e)
+mh#potn1 Oil of Acid Resistance			DMG (2E)
+mh#potn2 Potion of Clairvoyance			DMG (2E)
+mh#potn3 Philter of Purification		Icewind Dale 1 (2E)
+mh#potn4 Oil of Disenchantment			DMG (2E)
+mh#potn5 Potion of Longevity			DMG (2E)
+mh#potn6 Alchemist's Fire			PHB (2E)
+mh#potn7 Acid Flask				PHB (2E)
+mh#potn8 Elixir of Life				Unearthed Arcana (2E)
 
-mh#quiv1 Quiver of Ehlonna (BG1)		DMG (2e)
-mh#quiv2 Quiver of Ehlonna (BG2)		DMG (2e)
-
-mh#ring1 Ring of the Elven Mage			DMG (2e)
-mh#ring2 Ring of Warmth				DMG (2e)
-mh#ring3 Ring of the Neophyte			DMG (2e)
-mh#ring4 Ring of Shocking Grasp			DMG (2e)
-mh#ring5 Ring of Protection from Silence	Pages from the Mages (2e)
-mh#ring6 Ring of White Bone			Complete Necromancer (2e)
-mh#ring7 Ring of Mind Shielding			DMG (2e)
-mh#ring8 Ring of Shooting Stars			DMG (2e)
-mh#ring9 Ring of Thex				Planescape Torment (2e)
-mh#ringa Shield Ring				Icewind Dale 1 (2e)
-mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2e)
-mh#ringc Ring of Water Control			DMG (2e)
-mh#ringd Ring of Three Wishes			DMG (2e)
-mh#ringe Ring of Anti-Venom			Baldur's Gate 2 (2e)
-mh#ringf Ring of the Lich			DMG (2e)
-mh#ringg Ring of the Hierophant			Complete Druid (2e)
+mh#ring1 Ring of the Elven Mage			DMG (2E)
+mh#ring2 Ring of Warmth				DMG (2E)
+mh#ring3 Ring of the Neophyte			DMG (2E)
+mh#ring4 Ring of Shocking Grasp			DMG (2E)
+mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
+mh#ring6 Ring of White Bone			Complete Necromancer (2E)
+mh#ring7 Ring of Mind Shielding			DMG (2E)
+mh#ring8 Ring of Shooting Stars			DMG (2E)
+mh#ring9 Ring of Thex				Planescape Torment (2E)
+mh#ringa Shield Ring				Icewind Dale 1 (2E)
+mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
+mh#ringc Ring of Water Control			DMG (2E)
+mh#ringd Ring of Three Wishes			DMG (2E)
+mh#ringe Ring of Anti-Venom			Baldur's Gate 2 (2E)
+mh#ringf Ring of the Lich			DMG (2E)
+mh#ringg Ring of the Hierophant			Complete Druid (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
 mh#robe3 Robe of the Pure Heart
 mh#robe4 Shadow Dancer's Robe
 mh#robe5 Nyalee's Robe of Stone
-mh#robe6 Ogi-Luc's Great Robe			Icewind Dale 1 (2e)
+mh#robe6 Ogi-Luc's Great Robe			Icewind Dale 1 (2E)
 
 mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1
 mh#shld3 Shield of the Phoenix +2
 mh#shld4 Shield of the Three Kings +5
-mh#shld5 Shield of the Revenant +2		Icewind Dale 1 (2e)
-mh#shld6 Mystery of the Dead +3			Icewind Dale 1 (2e)
-mh#shld7 Waukeen's Defender +2			Icewind Dale 1 (2e)
-mh#shld8 White Shield +4			Encyclopedia Magica (2e)
-mh#shld9 Shield of the Dragonslayer +3		Encyclopedia Magica (2e)
+mh#shld5 Shield of the Revenant +2		Icewind Dale 1 (2E)
+mh#shld6 Mystery of the Dead +3			Icewind Dale 1 (2E)
+mh#shld7 Waukeen's Defender +2			Icewind Dale 1 (2E)
+mh#shld8 White Shield +4			Encyclopedia Magica (2E)
+mh#shld9 Shield of the Dragonslayer +3		Encyclopedia Magica (2E)
+*mh#shlda Crimson Shield +2			Sword of Vermilion
 
-*mh#slng1 Edley's Sling +2			Icewind Dale 1 (2e)
+mh#slng1 Edley's Sling +2			Icewind Dale 1 (2E)
 
 mh#sper1 Alicorn Spear +2
+mh#sper2 Hadrion's Spear +3			Encyclopedia Magica (2E)
 
-mh#staf1 Staff of Rumathil +2			Elves of Evermeet (2e)
-mh#staf2 Spendelard's Protector +1		Icewind Dale 1 (2e)
-mh#staf3 Staff of Moradin's Breath +2		Icewind Dale 1 (2e)
-mh#staf4 Staff of the Legion +5			Undead (2e)
+mh#staf1 Staff of Rumathil +2			Elves of Evermeet (2E)
+mh#staf2 Spendelard's Protector +1		Icewind Dale 1 (2E)
+mh#staf3 Staff of Moradin's Breath +2		Icewind Dale 1 (2E)
+mh#staf4 Staff of the Legion +5			Undead (2E)
 mh#staf5 Staff of Water +2
-mh#staf6 Staff of Swarming Insects +2		DMG (2e)
+mh#staf6 Staff of Swarming Insects +2		DMG (2E)
+*mh#staf7 Staff of the White Well +5		Hall of Heroes (2E)
 
 mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
 mh#swrd2 Smythe's Slicer +1
 mh#swrd3 Scimitar of the Seven +4		LoZ: Breath of the Wild
-mh#swrd4 Sword of the Planes +1			DMG (2e)
-mh#swrd5 Amaunator's Legacy +3			Icewind Dale 1 (2e)
-mh#swrd6 Pale Justice +4			Icewind Dale 1 (2e)
+mh#swrd4 Sword of the Planes +1			DMG (2E)
+mh#swrd5 Amaunator's Legacy +3			Icewind Dale 1 (2E)
+mh#swrd6 Pale Justice +4			Icewind Dale 1 (2E)
 mh#swrd7 Mirthal +1
 mh#swrd8 Golden Sky +2
 mh#swrd9 Cold Flame +3
 mh#swrda Holy Sword +2
+mh#swrdb Kanalruil +4				Elves of Evermeet (2E)
+*mh#swrdc Sword of Vermilion +1			Sword of Vermillion
 
-mh#tome1 Book of Exalted Deeds			DMG (2e)
-mh#tome2 Book of Vile Darkness			DMG (2e)
-mh#tome3 Libram of Silver Magic			DMG (2e)
-mh#tome4 Libram of Gainful Conjuration		DMG (2e)
-mh#tome5 Libram of Ineffable Damnation		DMG (2e)
+mh#tome1 Book of Exalted Deeds			DMG (2E)
+mh#tome2 Book of Vile Darkness			DMG (2E)
+mh#tome3 Libram of Silver Magic			DMG (2E)
+mh#tome4 Libram of Gainful Conjuration		DMG (2E)
+mh#tome5 Libram of Ineffable Damnation		DMG (2E)
 
-mh#wand1 Wand of Illusions			DMG (2e)
+mh#wand1 Wand of Illusions			DMG (2E)
 mh#wand2 Elmira's Wand of Blasting
 
 

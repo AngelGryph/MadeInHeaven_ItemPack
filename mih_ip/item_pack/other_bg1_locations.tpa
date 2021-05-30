@@ -4,20 +4,6 @@ BEGIN
   // Beregost
   // ========
 
-  // Feldepost's Inn
-  //
-  // mh#quiv1 - Quiver of Ehlonna
-
-  MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#quiv1" AFTER "bow02" #0 #0 #0 "identified" #1~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_store
-    STR_VAR
-    store	= "inn3351"
-    edits	= "patch_data"
-  END
-
   // Song of the Morning Temple
   //
   // mh#amul1 - Amulet against Undead
@@ -320,6 +306,7 @@ BEGIN
   // mh#amula - Amulet of 5% Magic Resistance
   // mh#clck8 - Cloak of Flame
   // mh#dart3 - Zilzanzer's Magnificent Darts +1
+  // mh#misc5 - Horn of Goodness/Evil
   // mh#potn1 - Oil of Acid Resistance
   // mh#potn4 - Oil of Disenchantment
   // mh#potn5 - Potion of Longevity
@@ -333,13 +320,14 @@ BEGIN
     literal'02=>~ADD_STORE_ITEM "mh#amula" AFTER "mh#amul4" #0 #0 #0 "identified" #1~
     literal'03=>~ADD_STORE_ITEM "mh#clck8" AFTER "leat10" #1 #0 #0 "identified" #1~
     literal'04=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
-    literal'05=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3~
-    literal'06=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
-    literal'07=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1~
-    literal'08=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
-    literal'09=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
-    literal'10=>~ADD_STORE_ITEM "mh#ringe" AFTER "mh#amula" #0 #0 #0 "identified" #1~
-    literal'11=>~ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1~
+    literal'05=>~ADD_STORE_ITEM "mh#misc5" AFTER "wand11" #5 #0 #0 "identified" #12~
+    literal'06=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3~
+    literal'07=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
+    literal'08=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1~
+    literal'09=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
+    literal'10=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
+    literal'11=>~ADD_STORE_ITEM "mh#ringe" AFTER "mh#amula" #0 #0 #0 "identified" #1~
+    literal'12=>~ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

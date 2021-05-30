@@ -1,0 +1,38 @@
+  ACTION_CLEAR_ARRAY disrupt
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY disrupt
+  BEGIN
+    delete_effect=>"opcode = 177 and resource is_in [die mesdie]"
+  END
+
+  COPY - "%MOD_FOLDER%/shared/disrupt/disrupt.2da" "%workspace%"
+    COUNT_2DA_COLS cols
+    COUNT_2DA_ROWS cols rows
+    FOR (SET i = 0; i < rows; ++i)
+    BEGIN
+      READ_2DA_ENTRY i 0 cols serial
+      READ_2DA_ENTRY i 1 cols race
+      READ_2DA_ENTRY i 2 cols chance
+
+      SET race_num = IDS_OF_SYMBOL("race" "%race%")
+
+      PATCH_IF race_num >= 0
+      BEGIN
+        DEFINE_ASSOCIATIVE_ARRAY disrupt
+        BEGIN
+	  "add_effect_inline'%serial%" => ~opcode=>177 parameter1=>%race_num% parameter2=>4 probability1=>"%chance% - 1" resource=>"DIE"~
+        END
+      END
+    END
+
+  DEFINE_ASSOCIATIVE_ARRAY disrupt
+  BEGIN
+    clone_effect_inline=>~match=>"opcode = 177 and resource = DIE" resource=>"MESDIE"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_effect
+    STR_VAR
+    effect	= "die"
+    editstring	= "parameter2=>8"
+  END
+
+

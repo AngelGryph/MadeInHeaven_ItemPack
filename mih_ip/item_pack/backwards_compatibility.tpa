@@ -11,10 +11,10 @@ BEGIN
   END
 
 
-  // mh#blun1 - Radiant Star +1
-  // mh#blun2 - Slime Crusher +1
   // mh#dagg3 - Golemblight +2
   // mh#dart4 - Dart of Selune +2
+  // mh#flai1 - Slime Crusher +1
+  // mh#mace1 - Radiant Star +1
   // mh#swrd2 - Smythe's Slicer +1
   // mh#swrda - Holy Sword +2
   // 
@@ -23,18 +23,18 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item	= "mh#blun1 mh#blun2 mh#dagg3 mh#dart4 mh#swrd2 mh#swrda"
+    item	= "mh#dagg3 mh#dart4 mh#flai1 mh#mace1 mh#swrd2 mh#swrda"
     editstring	= ~enchantment=>4 delete_effect_global=>"opcode = 344"~
   END
 
 
-  // mh#blun3 - Battlestar +4
+  // mh#flai2 - Battlestar +4
   //
   // Opcode #346 (Save vs. Spell School) does not exist in classic.
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item	= "mh#blun3"
+    item	= "mh#flai2"
     editstring	= ~delete_effect_global=>"opcode = 346"~
   END
 
@@ -51,10 +51,33 @@ BEGIN
   END
 
 
+  // mh#swrd4 - Sword of the Planes
+  //
+  // Action TransformItem() is not available in classic, script uses
+  // TakeItemReplace() instead.  Set lore to 0 to avoid the swapped item
+  // from being unidentified all the time.
+
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
     item              = "mh#swrd4 mh#swd4a"
     editstring        = "lore=>0"
+  END
+
+
+  // mh#mace3 - Skull Mace +2
+  //
+  // Opcode #341 (Spell Effect: Change Critical Hit Effect) does not exist
+  // in classic.  Replace with flat 5% chance for insta-death.
+
+  MAKE_PATCH
+    delete_effect_global=>"opcode = 341"
+    add_effect=>~opcode=>13 target=>2 timing=>1 parameter1=>1 parameter2=>4 probability1=>4 saving_vs_death=>1 save_bonus=>"-2"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "mh#mace3"
+    edits	= "patch_data"
   END
 END	// backwards_compatibility
 

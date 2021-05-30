@@ -3,8 +3,6 @@ mh#amulb Phylactery of Bravery			Watcher's Keep (maze)
 
 mh#drag1 Black Dragon Scale			Cespenar (forging)
 
-mh#blun3 Battle Star +4				Sister Garlena (shop)
-
 mh#brac4 Bracers of the Wind			Ancient Grove (battle)
 mh#brac6 Silver Bracers of Kedl			Saradush (battle)
 mh#brac7 Gloves of Evasion			Watcher's Keep (maze)
@@ -13,12 +11,24 @@ mh#belt7 Girdle of Storm Giant Strength		Sendai's Enclave (battle)
 
 mh#bull1 Priest's Bullet			(various temples)
 
+mh#chan3 Mail of Thalaera +5			Sendai's Enclave (battle)
+
 mh#clck4 Cloak of the Night Sky			Sendai's Enclave (battle)
+
+mh#comp7 Green Dragon Scales			Watcher's Keep (battle)
 
 mh#dart3 Zilzanzer's Magnificent Darts +1	Sister Garlena (shop)
 
+mh#drag2 Green Dragon Scale			Cespenar (forging)
+
+mh#flai2 Battle Star +4				Sister Garlena (shop)
+
+mh#hamm2 Maul of the Titans			Yaga-Shura (battle)
+
 mh#ioun1 Pale Blue Ioun Stone			Sister Garlena (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Sister Garlena (shop)
+
+*mh#mace2 Three White Doves +3			???
 
 mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
 mh#potn3 Philter of Purification		(various temples)
@@ -36,11 +46,12 @@ mh#robe5 Nyalee's Robe of Stone			Forest of Mir (battle)
 mh#shld4 Shield of the Three Kings +5		Watcher's Keep (battle)
 mh#shld6 Mystery of the Dead +3			Sister Garlena (shop)
 mh#shld7 Waukeen's Defender +2			Temple of Waukeen (shop)
-mh#swrd8 White Shield +4			Amkethran Smugglers (shop)
+mh#shld8 White Shield +4			Amkethran Smugglers (shop)
 
 mh#staf4 Staff of the Legion +5			Saradush (battle)
 
 mh#swrd3 Scimitar of the Seven +4		Sister Garlena (shop)
+mh#swrdb Kanalruil +4				Sendai's Enclave (battle)
 
 mh#tome1 Book of Exalted Deeds			Watcher's Keep (safe)
 mh#tome2 Book of Vile Darkness			Forest of Mir (tiles)

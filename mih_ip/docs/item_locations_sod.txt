@@ -7,14 +7,14 @@ mh#belt2 Sunite Sash				Ziatar (battle)
 mh#belt5 Girdle of Ogre Blood			Nazramu (shop)
 mh#belt6 Girdle of Cloud Giant Strength		Avernus (event)
 
-mh#blun4 Blackblood +3				Underground River (event)
-
 mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
 
 mh#brac2 Gauntlets of the Dwarven King		Underground River (cache)
 mh#brac4 Bracers of the Wind			Morentherene's Lair (nest)
 
 mh#bull1 Priest's Bullet			Waizahb (shop)
+
+mh#club1 Blackblood +3				Underground River (event)
 
 mh#dagg1 Catclaw +3				Nazramu (shop)
 
@@ -43,6 +43,8 @@ mh#robe4 Shadow Dancer's Robe			Nazramu (shop)
 mh#robe6 Ogi-Luc's Great Robe			Nazramu (shop)
 
 mh#shld3 Shield of the Phoenix +2		Temple of Cyric (chest)
+
+mh#sper2 Hadrion's Spear +3			Morentherene (battle)
 
 mh#staf1 Staff of Rumathil			Korlasz (battle)
 mh#staf3 Staff of Moradin's Breath		Kanaglym (chest)

@@ -1,12 +1,12 @@
 IF Global("mh#ImportItemsMaheer", "GLOBAL", 0)
-   PartyHasItem("mh#blun1")  
+   PartyHasItem("mh#mace1")  
 THEN
   RESPONSE #100
   SetGlobal("mh#ImportItemsMaheer", "GLOBAL", 1)
 END
 
 IF Global("mh#ImportItemsMaheer", "GLOBAL", 0)
-   PartyHasItem("mh#blun2")  
+   PartyHasItem("mh#flai1")  
 THEN
   RESPONSE #100
   SetGlobal("mh#ImportItemsMaheer", "GLOBAL", 2)

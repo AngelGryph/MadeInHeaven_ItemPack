@@ -139,6 +139,20 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// P&P Mace of Disruption (and similar items)
+
+BEGIN @19
+GROUP @3 
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4 
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file			= "disrupting_weapons"
+  location		= "tweaks"
+END
+
+
 // Miscellaneous Item Improvements
 
 BEGIN @11 

@@ -48,16 +48,16 @@ BEGIN
 
   // Maheer from Rasheman
   //
-  // mh#blun2 - Slimecrusher +1
-  // mh#blun6 - Shining Star +1
+  // mh#flai1 - Slimecrusher +1
   // mh#btax1 - Foesplitter +1
+  // mh#mace1 - Radiant Star +1
   // mh#swrd2 - Smyte's Slicer +1
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#blun1" AFTER "blun06" #0 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#mace1" AFTER "blun06" #0 #0 #0 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#btax1" AFTER "ax1h04" #0 #0 #0 "identified" #1~
     literal'3=>~ADD_STORE_ITEM "mh#swrd2" AFTER "sw1h20" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#blun2" AFTER "blun02" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#flai1" AFTER "blun02" #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -77,20 +77,6 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_store
     STR_VAR
     store	= "shop01"
-    edits	= "patch_data"
-  END
-
-  // Perter the Fletcher
-  //
-  // mh#quiv2 - Quiver of Ehlonna
-
-  MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#quiv2" FIRST #0 #0 #0 "identified" #1~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_store
-    STR_VAR
-    store	= "shop05"
     edits	= "patch_data"
   END
 
@@ -123,7 +109,7 @@ BEGIN
     literal'5=>~ADD_STORE_ITEM "mh#staf5" AFTER "staf18" #0 #30 #30 "identified" #1~
     literal'6=>~ADD_STORE_ITEM "mh#misc3" AFTER "rods03" #7 #0 #0 "identified" #1~
     literal'7=>~ADD_STORE_ITEM "mh#ioun3" AFTER "clck12" #0 #0 #0 "identified" #1~
-    literal'8=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #10~
+    literal'8=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10~
     literal'9=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
   END
 
@@ -170,6 +156,26 @@ BEGIN
   // =============
   // Planar Sphere
   // =============
+
+  // Transformation script for Sword of the Planes
+
+  ACTION_IF enhanced_edition
+  BEGIN
+    LAUNCH_ACTION_FUNCTION extend
+      STR_VAR
+      script    = "baldur baldur25"
+      bottom    = "scripts/planar_sword_ee"
+    END
+  END
+  ELSE
+  BEGIN
+    LAUNCH_ACTION_FUNCTION extend
+      STR_VAR
+      script    = "baldur baldur25"
+      bottom    = "scripts/planar_sword"
+    END
+  END
+
 
   // Treasures of the Sphere
   //
@@ -437,14 +443,14 @@ BEGIN
   // Temple of Waukeen
   //
   // mh#bull1 - Priest's Bullet
-  // mh#misc5 - Jade Snakes
+  // mh#misc5 - Horn of Goodness/Evil
   // mh#potn3 - Philter of Purification
   // mh#shld7 - Waukeen's Defender +2
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #10~
     literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6~
-    literal'3=>~ADD_STORE_ITEM "mh#misc5" AFTER "ring03" #1 #1 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#misc5" AFTER "ring03" #1 #0 #0 "identified" #1~
     literal'4=>~ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1~
   END
 

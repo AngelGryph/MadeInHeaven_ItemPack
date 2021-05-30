@@ -15,9 +15,6 @@ mh#boot1 Boots of the Master Ninja		Mae'var Guildhouse (battle)
 mh#boot2 Boots of Striding and Springing	Firkraag's Lair (battle)
 mh#boot3 Boots of Balance			Slaver Stockade (battle)
 
-mh#blun1 Radiant Star +1			Maheer (shop)
-mh#blun2 Slimecrusher +1			Maheer (shop)
-
 mh#brac1 Vambraces of Evil's Warding		Chateau Irenicus (import)
 mh#brac2 Gauntlets of the Dwarven King		Chateau Irenicus (import)
 mh#brac3 Bracers of Winter's Chill		Therndle Daglefodd (event)
@@ -28,6 +25,7 @@ mh#btax1 Foesplitter +1				Maheer (shop)
 mh#btax3 Redethemar +4				Tree of Life (container)
 
 mh#bull1 Priest's Bullet			Various Temples (shop)
+*mh#bull2 Bullet of Pulverizing +1		???
 
 mh#chan1 Eversing +2				Arnolinus the dwarf (shop)
 
@@ -52,6 +50,8 @@ mh#dart4 Silver Dart of Selune +2		Trademeet (shop)
 
 mh#drag1 Black Dragon Scale			Cromwell (forging)
 
+mh#flai1 Slimecrusher +1			Maheer (shop)
+
 mh#helm1 Helm of Valor				D'Arnise Keep (chest)
 mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)
 mh#helm3 Blessed Helm of Lathander		Temple of Lathander (shop)
@@ -67,9 +67,13 @@ mh#ioun6 Maroon Star Ioun Stone			Bridge District (battle)
 
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 
+mh#mace1 Radiant Star +1			Maheer (shop)
+*mh#mace3 Skull Mace +2				???
+
 mh#misc1 Pearl of Power				Trademeet Merchant (shop)
 mh#misc2 Bag of Tricks				Druid Grove (battle)
 mh#misc3 Crystal Ball				Adventurer's Market (shop)
+mh#misc5 Horn of Goodness/Evil			Temple of Waukeen (shop)
 mh#misc6 Bottle of Pleasant Odors		Mira (shop)
 
 mh#plat2 Black Swan Armor +2			Arnolinus the dwarf (shop)
@@ -84,8 +88,6 @@ mh#potn5 Potion of Longevity			(various potion shops)
 mh#potn6 Alchemist's Fire			Adventurer's Market (shop)
 mh#potn7 Acid Flask				Adventurer's Market (shop)
 *mh#potn8 Elixir of Life				???
-
-mh#quiv2 Quiver of Ehlonna			Bowyer/Fletcher (shop)
 
 mh#ring2 Ring of Warmth				Chateau Irenicus (import)
 mh#ring3 Ring of the Neophyte			Chateau Irenicus (import)

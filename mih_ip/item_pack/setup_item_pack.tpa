@@ -8,7 +8,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "fix_water_elementals"
+    file	= "fix_race_class"
     locbase	= "shared"
   END
 

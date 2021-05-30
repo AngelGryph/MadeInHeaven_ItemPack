@@ -4,6 +4,12 @@ EXTEND_BOTTOM "botsmith" 4
     GOTO mh#PartyHasBlackDragonScale
 END
 
+EXTEND_BOTTOM "botsmith" 4
+  IF ~PartyHasItem("mh#comp7")~
+  THEN
+    GOTO mh#PartyHasGreenDragonScale
+END
+
 
 APPEND "botsmith"
 
@@ -32,6 +38,36 @@ IF ~~
 BEGIN mh#NotInterestedBlackDragonScale
   SAY @1
   COPY_TRANS "botsmith" 4
+END
+
+IF ~~
+BEGIN mh#PartyHasGreenDragonScale
+  SAY #66903
+  = @2
+  IF ~PartyGoldLT(5000)~
+    REPLY #66908
+    GOTO 10
+  IF ~PartyGoldGT(4999)~
+    REPLY #66909
+    DO ~SetGlobal("mh#CespenarForgeItem", "GLOBAL", 2)
+        SetGlobal("ImpForgeStuff", "GLOBAL", 1)
+	TakePartyItem("mh#comp7")
+	DestroyItem("mh#comp7")
+	TakePartyGold(5000)
+	DestroyGold(5000)~
+    GOTO 11
+  IF ~~
+    REPLY #66913
+    GOTO mh#NotInterestedGreenDragonScale
+END
+
+IF ~~
+BEGIN mh#NotInterestedGreenDragonScale
+  SAY @3
+  COPY_TRANS "botsmith" 4
+  IF ~PartyHasItem("mh#comp6")~
+  THEN
+    GOTO mh#PartyHasBlackDragonScale
 END
 
 END	// APPEND

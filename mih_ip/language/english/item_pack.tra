@@ -1414,7 +1414,7 @@ Equipped abilities:
 - Cold Resistance: +35% (wearer only)
 
 Weight: 1~
-@219  = ~Girdle of Cloud Giant Strength~
+//@219  = ~~
 @220  = ~Bolder's Cloak of the Rogue~
 @221  = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentarim.
 
@@ -1568,24 +1568,21 @@ Equipped abilities:
 - Non-Detection
 
 Weight: 2~
-@246  = ~Jade Snakes~
+//@246  = ~~
 @247  = ~Potion of Longevity~
 @248  = ~This foul-tasting but very potent elixer permanently enhances the imbiber's health and hardiness.  Their maximum HP total is raised by 10.  However, repeated drinks carry a risk; there is a 5% change that another draught of this elixer will undo the effects of all previous drinks.
 
 Weight: 1~
-@249  = ~Quiver of Ehlonna~
-@250  = ~At first glance, this seems to be a normal leather quiver for storing arrows and similar ammunition.  However, this quiver has properties similar to a Bag of Holding and can store many objects provided they are the general shape of an unstringed bow.  Arrows, wands, spears, swords and even polearms will all fit, but not crossbows and other objects whose shape does not allow fitting them through a narrow opening, or that are too small to be retrieved easily.  No matter how many objects are stowed away, the quiver will not bulge and its weight will not change.
-
-Weight: 4~
-@251  = ~These are two small figurines of snakes, one made of green jade and the other of white jade, both entwined around a golden staff.  It looks quite old and was probably crafted by a druid or nature priest now forgotten to history.  Once per day either snake can come to life at the owner's command.  The green snake attacks enemies while the white snake cures allies.
+@249  = ~Horn of Goodness/Evil~
+@250  = ~The effect of this magical horn depends on the alignment of the user.  if the user is good, it protects <PRO_HISHER> party against evil.  If the user is evil it protects <PRO_HISHER> party against good.  If the user is neither evil nor good the horn doesn't work at all.  The horn can be blown once per day.
 
 STATISTICS:
 
 Charge abilities:
-- Summon Giant Snake (1/day)
-- Cure Critical Wounds (1/day)
+- Protection from Evil/Good, 10' Radius (1/day)
 
-Weight: 2~
+Weight: 3~
+@251  = ~Girdle of Cloud Giant Strength~
 @252  = ~This mighty enchanted belt grants the wearer the equivalent strength of a cloud giant.  It was once the property of the paladin Hardan of Waterdeep, who brought it back from an expedition into the Undermountain.  Hardan himself disappeared during the second Dragonspear war, and is assumed to have been dragged into hell by the devils like so many others.
 
 STATISTICS:
@@ -1994,5 +1991,107 @@ Weight: 150~
 @328  = ~Sapphire is a brilliant blue, translucent corundum mineral.  Sapphires vary from a clearm pale blue to a radiant azure.~
 @329  = ~Katana~
 @330  = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.~
+@331  = ~Edley's Sling~
+@332  = ~The halfling warrior-rogue Edley Bramble was the owner of this fine weapon.  Edley was a villain to some, but a hero to many more.  Despite the fact that most halflings publicly regard Edley as a scoundrel and bad influence on halfling culture, many secretly revere and admire him.  Edley's pranks and adventures among humans and elves are recorded in some of the folksongs created by Waren Blackbird.
+
+STATISTICS:
+
+THAC0: +2
+Damage: +3 (missile)
+Speed Factor: 4
+Proficiency Type: Sling
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+@333  = ~Bullet of Pulverizing +1~
+@334  = ~After being thrown, these sling bullets magically enlarge in mid-air, impacting their target like a rock thrown by a catapult or giant.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 4d4+4 (missile)
+Launcher: Sling
+
+Weight: 0~
+@335  = ~Hadrion's Spear +3~
+@336  = ~Hadrion, a minor warlord, purchased this magical spear at great cost and then had wizards further enchant it with additional powers.  Hadrion used the spear in all his campains and it is said to have been buried with him in his familiy vaults.  How it came to its current location is not known.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Strength: +1
+- Immunity to backstab
+
+THAC0: +3
+Damage: 1d6+3 (piercing)
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@337  = ~Three White Doves +3~
+@338  = ~An extremely unusual mace, Three White Doves was created by an Ilmaterian priest named Alledec in 850 DR.  Alledec had been a fighting priest for the order for twenty years, and he decided it was time to leave a legacy for the church to use after he had passed away.  This ivory-headed mace was the result.  The shaft of the weapon is made from black-enameled steel, with the handle being crafted of carved ivory.  Gold bands lock the head and the handle into place.  The head itself is the most unusual part of the mace.  It is carved from pure ivory and it resembles three white doves facing the center of the weapon.  The flared wings of the doves form the flanges.
+
+Alledec died in his sleep three years after completing the mace.  It was given to a traveling fighter in service of the church of Ilmater.  The fighter later passed the weapon on to a priest of Ilmater named Recken the Bold.  Recken lost the weapon when he was fighting a powerful vampire near Trollbark Forest.  Recken was eventually victorious over the vampire, but he never recovered the mace.
+
+Combat abilities:
+- Has a chance to instantly destroy certain creatures when hit:
+   Skeleton:	100%
+   Zombie:	100%
+   Ghoul/Ghast:	100%
+   Shadow:	100%
+   Wraith:	95%
+   Mummy:	80%
+   Spectre:	65%
+   Vampire:	50%
+   Lich:	20%
+   Demilich:	5%
+   Fiend:	5%
+  The target can attempt a saving throw versus death at -4 to avoid destruction.
+
+THAC0: +3
+Damage: 1d6+4, 2d6+8 vs. undead (crushing)
+Speed Factor: 4
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5~
+@339  = ~Skull Mace +2~
+@340  = ~Skull Mace +2~
+@341  = ~Kanalruil +4~
+@342  = ~This enchanted blade one belonged to the elven heroine Ytharra, who is said to have slain a great wolf who threatened to devour the sun.  Exactly what happned to Ytharra and how her sword came to be in its current location is not known.
+
+Mystical elven runes flow along the glowing blade, spelling out the names of all the elven gods.  The elves would no doubt go to great lengths to see this treasure returned to them, and would likely take a dim view of anyone using it for evil purposes.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +4
+
+Charge abilities:
+- Spell Turning (1/day)
+
+THAC0: +4
+Damage: 2d4+4 (slashing)
+Speed Factor: 4
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 6~
+@343  = ~Mail of Thalaera +5~
+@344  = ~Mail of Thalaera +5~
+@345  = ~Staff of the White Well +5~
+@346  = ~Staff of the White Well +5~
+@347  = ~Might of Heroes +3~
+@348  = ~Might of Heroes +3~
 
 

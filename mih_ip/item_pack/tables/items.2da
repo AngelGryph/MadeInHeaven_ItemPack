@@ -19,13 +19,8 @@ mh#belt2	46	47	*	*	0x0	*		*
 mh#belt3	77	78	*	*	0x0	*		*
 mh#belt4	127	128	*	*	0x0	*		*
 mh#belt5	129	130	*	*	0x0	*		*
-mh#belt6	219	252	*	*	0x0	*		*
+mh#belt6	251	252	*	*	0x0	*		*
 mh#belt7	240	241	*	*	0x0	*		*
-
-mh#blun1	71	72	*	*	0x0	*		*
-mh#blun2	179	180	*	*	0x0	*		*
-mh#blun3	242	243	*	*	0x0	*		*
-mh#blun4	263	264	*	*	0x0	*		*
 
 mh#boot1	10	11	*	*	0x0	*		*
 mh#boot2	48	49	*	*	0x0	*		*
@@ -43,11 +38,14 @@ mh#brac8	269	270	*	*	0x0	*		*
 mh#btax1	14	15	*	*	0x0	*		*
 mh#btax2	123	124	*	*	0x0	*		*
 mh#btax3	133	134	*	*	0x0	*		*
+mh#btax4	347	348	*	*	0x0	*		*
 
 mh#bull1	293	294	*	*	0x0	*		*
+mh#bull2	333	334	*	*	0x0	*		*
 
 mh#chan1	44	45	*	*	0x2	*		*
 mh#chan2	87	88	*	*	0x2	*		*
+mh#chan3	343	344	*	*	0x2	*		*
 
 mh#clck1	16	17	*	*	0x0	*		petrification
 mh#clck2	289	290	*	*	0x1	*		*
@@ -58,6 +56,8 @@ mh#clck6	277	278	*	*	0x0	*		hold,level_drain
 mh#clck7	281	282	*	*	0x0	*		*
 mh#clck8	279	280	*	*	0x1	*		*
 mh#clck9	18	19	*	*	0x1	*		*
+
+mh#club1	263	264	*	*	0x0	*		*
 
 mh#comp1	24	25	*	*	0x0	*		*
 mh#comp2	81	82	*	*	0x0	*		*
@@ -78,6 +78,9 @@ mh#dart4	238	239	*	*	0x0	*		*
 
 mh#drag1	287	288	317	318	0x2	*		*
 mh#drag2	321	322	317	318	0x2	*		poison,disease,poison_resistance
+
+mh#flai1	179	180	*	*	0x0	*		*
+mh#flai2	242	243	*	*	0x0	*		*
 
 mh#gem01	325	326	*	*	0x0	*		*
 mh#gem02	327	328	*	*	0x0	*		*
@@ -102,11 +105,15 @@ mh#ioun7	299	300	*	*	0x0	*		*
 
 mh#lbow1	57	58	*	*	0x0	*		*
 
+mh#mace1	71	72	*	*	0x0	*		*
+mh#mace2	337	338	*	*	0x0	*		*
+mh#mace3	339	340	*	*	0x0	*		*
+
 mh#misc1	139	140	*	*	0x0	*		*
 mh#misc2	192	193	*	*	0x0	*		*
 mh#misc3	194	196	194	195	0x0	*		*
 mh#misc4	6	7	*	*	0x0	*		*
-mh#misc5	246	251	*	*	0x0	*		*
+mh#misc5	249	250	*	*	0x0	*		*
 mh#misc6	283	284	*	*	0x0	*		*
 
 mh#plat1	89	90	*	*	0x2	*		*
@@ -157,7 +164,10 @@ mh#shld7	153	154	*	*	0x0	*		*
 mh#shld8	261	262	*	*	0x0	*		*
 mh#shld9	311	312	*	*	0x0	*		*
 
+mh#slng1	331	332	*	*	0x0	*		*
+
 mh#sper1	199	200	*	*	0x0	*		poison
+mh#sper2	335	336	*	*	0x0	*		*
 
 mh#staf1	65	66	*	*	0x0	*		*
 mh#staf2	155	156	*	*	0x0	*		*
@@ -165,6 +175,7 @@ mh#staf3	157	158	*	*	0x0	*		*
 mh#staf4	201	202	*	*	0x0	*		level_drain
 mh#staf5	204	205	*	*	0x0	*		*
 mh#staf6	206	207	*	*	0x0	*		*
+mh#staf7	345	346	*	*	0x0	*		*
 
 mh#swrd1	36	37	*	*	0x0	*		*
 mh#swrd2	38	39	*	*	0x0	*		*
@@ -177,6 +188,7 @@ mh#swrd7	208	209	*	*	0x0	*		*
 mh#swrd8	210	211	329	330	0x0	*		*
 mh#swrd9	212	213	*	*	0x0	*		*
 mh#swrda	297	298	*	*	0x0	*		*
+mh#swrdb	341	342	*	*	0x0	*		*
 
 mh#tome1	163	164	*	*	0x0	*		*
 mh#tome2	165	166	*	*	0x0	*		*

@@ -68,7 +68,7 @@ BEGIN
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #15~
     literal'2=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn22" #1 #0 #0 "identified" #15~
-    literal'3=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #15~
+    literal'3=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn41" #1 #0 #0 "identified" #15~
     literal'4=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #15~
   END
   
@@ -145,6 +145,7 @@ BEGIN
   // Morentherene's Lair
   //
   // mh#brac4 - Bracers of the Wind
+  // mh#sper2 - Hadrion's Spear +3
   
   MAKE_PATCH
     add_item_inline=>~match=>"parent_index = 0" item_resource=>"mh#brac4"~
@@ -156,6 +157,12 @@ BEGIN
     edits	= "patch_data"
   END
   
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdmorent"
+    editstring	= ~add_items=>"mh#sper2(inv)"~
+  END
+
   
   // Temple of Bhaal/Cyric
   //
@@ -196,18 +203,18 @@ BEGIN
 
   // Underground River entrance
   //
-  // mh#blun4 - Blackblood +3 (replaces The Root of the Problem)
+  // mh#club1 - Blackblood +3 (replaces The Root of the Problem)
   
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "bdjamven"
-    editstring	= ~add_items=>"mh#blun4(weapon1)" remove_items=>"blun10"~
+    editstring	= ~add_items=>"mh#club1(weapon1)" remove_items=>"blun10"~
   END
   
   COPY_EXISTING "bdjamven.dlg" "override"
     DECOMPILE_AND_PATCH
     BEGIN
-      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#blun4"
+      REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#club1"
     END
 
 

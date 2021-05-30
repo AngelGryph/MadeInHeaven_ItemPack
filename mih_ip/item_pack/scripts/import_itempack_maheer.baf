@@ -1,14 +1,14 @@
 IF Global("mh#ImportItemsMaheer", "GLOBAL", 1)
 THEN
   RESPONSE #100
-  RemoveStoreItem("shop03", "mh#blun1", 1)
+  RemoveStoreItem("shop03", "mh#mace1", 1)
   SetGlobal("mh#ImportItemsMaheer", "GLOBAL", 99)
 END
 
 IF Global("mh#ImportItemsMaheer", "GLOBAL", 2)
 THEN
   RESPONSE #100
-  RemoveStoreItem("shop03", "mh#blun2", 1)
+  RemoveStoreItem("shop03", "mh#flai1", 1)
   SetGlobal("mh#ImportItemsMaheer", "GLOBAL", 99)
 END
 

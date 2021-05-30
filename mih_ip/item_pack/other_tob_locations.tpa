@@ -108,6 +108,7 @@ BEGIN
   // Fire Giant Temple
   //
   // mh#tome4 - Libram of Gainful Conjuration
+  // hamm10   - Rune Hammer +4 (moved from Yaga-Shura)
 
   MAKE_PATCH
     add_item_inline=>~match=>"parent_index = 1" item_resource=>"mh#tome4" item_charges_1=>1~
@@ -117,6 +118,23 @@ BEGIN
     STR_VAR
     area	= "ar5204"
     edits	= "patch_data"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "hgber01"
+    editstring	= ~add_items=>"hamm10(inv)"~
+  END
+
+
+  // Yaga-Shura Battlefield
+  //
+  // mh#hamm2 - Maul of the Titans
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "yaga01"
+    editstring	= ~add_items=>"mh#hamm1(weapon1)" remove_items=>"giafir hammr10"~
   END
 
 
@@ -173,13 +191,20 @@ BEGIN
 
   // Duelling a Bhaalspawn
   //
-  // mh#belt7 - Girdle of Storm Giant Strength (on Captain Egeissag)
-  // mh#clck4 - Cloak of the Night Sky +3 (on Captain Egeissag)
+  // mh#belt7 - Girdle of Storm Giant Strength
+  // mh#chan3 - Mail of Thalaera +5
+  // mh#clck4 - Cloak of the Night Sky +3
+  // mh#swrdb - Kanalruil +4
+
+  MAKE_PATCH
+    add_items=>"mh#chan3(armor) mh#swrdb(weapon1) mh#clck4(cloak) mh#belt7(belt)"
+    add_proficiencies=>"bastardsword=>5"
+  END
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "sengua03"
-    editstring	= ~add_items=>"mh#clck4(cloak) mh#belt7(belt)"~
+    edits	= "patch_data"
   END
 END	// other_tob_locations
 

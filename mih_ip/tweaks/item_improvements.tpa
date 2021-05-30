@@ -219,14 +219,14 @@ BEGIN
       unusable_paladin=>0
       unusable_ranger=>0
     END
-    
+
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
       item	= "helm31 helm32"
       edits	= "patch_data"
     END
 
-    
+
     // brac24 - Bard's Gloves
     // brac25 - Wondrous Gloves
     //
@@ -236,10 +236,23 @@ BEGIN
       unusable_mage_thief=>0
       unusable_fighter_mage_thief=>0
     END
-    
+
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
       item	= "brac24 brac25"
+      edits	= "patch_data"
+    END
+
+
+    // clck25 - Cloak of Stars
+
+    MAKE_PATCH
+      add_effect_global_inline=>~number_to_add=>5 opcode=>"entry_index from [33 34 35 36 37]" target=>1 timing=>2 parameter1=>1~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "clck25"
       edits	= "patch_data"
     END
   END
