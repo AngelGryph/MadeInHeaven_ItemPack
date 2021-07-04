@@ -11,8 +11,6 @@ mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2E)
 mh#amulb Phylactery of Bravery			Encyclopedia Magica (2E)
 mh#amulc Medallion of Faith			Encyclopedia Magica (2E)
 
-*mh#band1 Dark Crown				Lords of Darkness (2E)
-
 mh#belt1 Girdle of Dwarvenkind			DMG (2E)
 mh#belt2 Sunite Sash				Magic of Faerun (3e)
 mh#belt3 Storm's Garter				Heroes' Lorebook (2E)
@@ -32,7 +30,7 @@ mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 mh#brac5 Gauntlets of Smiting
 mh#brac6 Silver Bracers of Kedl			Icewind Dale 1 (2E)
 mh#brac7 Gloves of Evasion			Complete Thieves (2E)
-mh#brac8 Gloves of Missile Snaring		Baldur's Gate 2 (2E)
+
 mh#brac9 Gloves of Thievery			Unearthed Arcana (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3e)

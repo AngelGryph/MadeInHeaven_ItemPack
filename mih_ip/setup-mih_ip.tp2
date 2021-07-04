@@ -21,7 +21,7 @@ END
 LANGUAGE ~English~
          ~english~
 	 ~mih_ip/language/english/setup-mih_ip.tra~
-	 //~weidu-external/lang/mih_ip/english/setup-mih_ip.tra~
+	 ~weidu_external/lang/mih_ip/english/setup-mih_ip.tra~
 
 
 // Item Pack

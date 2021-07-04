@@ -1669,13 +1669,14 @@ Equipped abilities:
 - Immunity to poison
 
 Weight: 0~
-@269  = ~Gloves of Missile Snaring~
-@270  = ~Foik Morur demonstrated the effectiveness of these gloves at a community fair near Beregost several years back.  He paid a local archer to fire arrows at him.  As the arrows approached, Foik's hands would move of their own accord, either knocking the arrow away or catching it.  He earned more than a few pieces of gold for his troubles, and these earnings attracted some shadowy figures to Foik's tent that evening.  The next morning Foik was found dead and the gloves missing.
+@269  = ~Gloves of Thievery~
+@270  = ~These enchanted gloves are popular with thieves, as they aid the wearer in obtaining items that aren't theirs.
 
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +2 vs. Missiles
+- Pick Pockets: +5%
+- Open Locks: +5%
 
 Weight: 2~
 @271  = ~Phylactery of Bravery~
@@ -2092,6 +2093,18 @@ Weight: 6~
 @345  = ~Staff of the White Well +5~
 @346  = ~Staff of the White Well +5~
 @347  = ~Might of Heroes +3~
-@348  = ~Might of Heroes +3~
+@348  = ~
+
+STATISTICS:
+
+THAC0: +3
+Damage: 2d8+3 (slashing)
+Speed Factor: 4
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~
 
 

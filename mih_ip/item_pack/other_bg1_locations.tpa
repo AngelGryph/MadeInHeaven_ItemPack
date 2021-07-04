@@ -133,16 +133,6 @@ BEGIN
     editstring	= ~remove_items=>"sw1h06" add_items=>"mh#swrd7(weapon1)"~
   END
 
-  // Fisherman's Lake
-  //
-  // mh#brac8 - Gloves of Missile Snaring
-
-  LAUNCH_ACTION_FUNCTION edit_creature
-    STR_VAR
-    creature	= "zekar"
-    editstring	= ~add_items=>"mh#brac8(gloves)"~
-  END
-
 
   // ========
   // Gullykin
@@ -320,7 +310,7 @@ BEGIN
     literal'02=>~ADD_STORE_ITEM "mh#amula" AFTER "mh#amul4" #0 #0 #0 "identified" #1~
     literal'03=>~ADD_STORE_ITEM "mh#clck8" AFTER "leat10" #1 #0 #0 "identified" #1~
     literal'04=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
-    literal'05=>~ADD_STORE_ITEM "mh#misc5" AFTER "wand11" #5 #0 #0 "identified" #12~
+    literal'05=>~ADD_STORE_ITEM "mh#misc5" AFTER "wand11" #1 #0 #0 "identified" #12~
     literal'06=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3~
     literal'07=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
     literal'08=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1~
