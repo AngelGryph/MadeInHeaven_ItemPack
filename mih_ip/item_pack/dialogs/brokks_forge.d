@@ -1,6 +1,6 @@
 BEGIN "mh#brokk"
 
-IF ~GlobalLT("Chapter", "GLOBAL", %tutu_chapter_3%)
+IF ~GlobalLT("Chapter", "GLOBAL", %bg1_chapter_3%)
     NumTimesTalkedTo(0)~
 BEGIN nosell1
   SAY @0
@@ -31,7 +31,7 @@ BEGIN nosell3
     EXIT
 END
 
-IF ~GlobalLT("Chapter", "GLOBAL", %tutu_chapter_3%)
+IF ~GlobalLT("Chapter", "GLOBAL", %bg1_chapter_3%)
     NumTimesTalkedToGT(0)~
 BEGIN nosell4
   SAY @7
@@ -39,7 +39,7 @@ BEGIN nosell4
     EXIT
 END
 
-IF ~GlobalGT("Chapter", "GLOBAL", %tutu_chapter_2%)
+IF ~GlobalGT("Chapter", "GLOBAL", %bg1_chapter_2%)
     Global("mh#BrokkVambrace", "GLOBAL", 0)~
 BEGIN vambrace1
   SAY @8
@@ -77,7 +77,7 @@ BEGIN vambrace4
     EXIT
 END
 
-IF ~GlobalGT("Chapter", "GLOBAL", %tutu_chapter_3%)
+IF ~GlobalGT("Chapter", "GLOBAL", %bg1_chapter_3%)
     Global("mh#BrokkGirdle", "GLOBAL", 0)~
 BEGIN girdle1
   SAY @17
@@ -92,7 +92,7 @@ BEGIN girdle1
     EXIT
 END
 
-IF ~GlobalGT("Chapter", "GLOBAL", %tutu_chapter_5%)
+IF ~GlobalGT("Chapter", "GLOBAL", %bg1_chapter_5%)
     Reputation(Player1, 20)
     Or(6)
       Class(Player1, PALADIN)
