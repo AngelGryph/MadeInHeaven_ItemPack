@@ -45,7 +45,7 @@ COPY - "%MOD_FOLDER%/%component_loc%/resource/missing/cre_strref.2da" "%workspac
     BEGIN
       LAUNCH_ACTION_FUNCTION install_creature
         INT_VAR
-        overwite	= 0
+        overwrite	= 0
         STR_VAR
         creature
         editstring	= "name1_string=>%strref% name2_string=>%strref%"

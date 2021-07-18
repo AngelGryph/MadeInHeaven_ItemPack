@@ -32,5 +32,101 @@ Requires:
  14 Strength
 
 Weight: 40~
+@6   = ~Gauntlets of Dexterity: The Brawling Hands
+This pair of gauntlets was likely developed in Kara-Tur to aid masters of the martial arts. Legends speak of such masters from the Far East bringing these items with them on their journeys, though details remain sketchy. 
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +4
+- Pick Pockets: +10%
+- Open Locks: +10%
+
+Weight: 2~
+@7   = ~Cloak of the Wolf: Relair's Mistake 
+A great amount of irony surrounds the creation of this magical cloak. Relair was a mage who overestimated the amount of control he had over magic, and in the course of creating this garment, he apparently inflicted lycanthropy upon himself. The wearer can change form whenever <PRO_HESHE> wishes. Relair was not so lucky.
+
+STATISTICS:
+
+Equipped abilities:
+- Infravision
+- Cold Resistance: +25%
+- Polymorph into a winter wolf at will
+  Duration: 2 turns
+
+Weight: 3~
+@8   = ~This cloak projects a sphere of energy that protects the wearer from missile weapons. It also slows melee weapons somewhat.
+
+STATISTICS:
+
+Equipped abilities: 
+- Armor Class: +5 vs. missile weapons, +1 vs. melee weapons
+
+Weight: 4~
+@9   = ~This potion confers very high resistance to all attacks while giving bonuses to all Saving Throws. It can only be used by those trained in the martial arts.
+
+STATISTICS:
+
+Armor Class: +2
+Saving Throws: +2
+Immunity to normal weapons
+Duration: 1 turn
+
+Weight: 1~
+@10  = ~The elixir of health is a powerful healing mixture designed to cleanse the body of all impurities. First, it cures all poisons and diseases; then, once the system has been purged, the imbibed is cured by 10 Hit Points to speed the recovery process.
+
+STATISTICS:
+
+Special: Cures poison, disease, blindess and deafness, and heals 10 Hit Points
+
+Weight: 1~
+@11  = ~This is the buckler of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. Its light weight and excellent craftsmanship increase the Dexterity of all who bear it by a single point.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+- Armor Class: +3
+- No protection against missile and piercing attacks
+
+Requires:
+ 4 Strength~
+@12  = ~The mad necromancer-lich N'Ashtar Nikadeemus forged this helmet from the bones of his own parents. His highest ranked general would wear it when he rode into battle, using it to instantly slay the commanders of the opposing army. After that, the skeletal armies of N'Ashtar would overrun their demoralized enemies. When N'Ashtar finally fell, the Skull of Death was supposedly destroyed.
+
+STATISTICS:
+
+Equipped abilities:
+- Protects against critical hits
+- Regenerates 1 hp/turn
+
+Charge abilities:
+- Animate Dead (1/day)
+- Finger of Death (1/day)
+- Control Undead (1/day)
+
+Weight: 2~
+@13  = ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer extra protection against life-draining attacks.
+
+STATISTICS:
+
+Equipped abilities:
+- Negative Plane Protection
+
+Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 10~
+@14  = ~Thalanta the Fair created many types of cloaks, all known as Cloaks of the Stars. This particular version is simple, with three stars down each sleeve. Once per day, each star can be removed and thrown as a dart. The star disappears, only to return the next day.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +1
+
+Charge abilities:
+- Create six +5 darts once per day
+
+Weight: 3~
 
 
