@@ -71,7 +71,7 @@ BEGIN
 
   MAKE_PATCH
     delete_effect_global=>"opcode = 341"
-    add_effect=>~opcode=>13 target=>2 timing=>1 parameter1=>1 parameter2=>4 probability1=>4 saving_vs_death=>1 save_bonus=>"-2"~
+    add_effect_inline=>~opcode=>13 target=>2 timing=>1 parameter1=>1 parameter2=>4 probability1=>4 save_vs_death=>1 save_bonus=>"-2"~
   END
 
   LAUNCH_ACTION_FUNCTION edit_item

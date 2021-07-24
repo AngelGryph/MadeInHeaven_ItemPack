@@ -44,8 +44,9 @@ REQUIRE_PREDICATE NOT GAME_IS "bgee" @4
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "bg1_wands"
-  location		= "tweaks"
+  file		= "bg1_wands"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -57,8 +58,9 @@ GROUP @3
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "pnp_healing_potions"
-  location		= "tweaks"
+  file		= "pnp_healing_potions"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -68,8 +70,9 @@ GROUP @3
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "iwd_healing_potions"
-  location		= "tweaks"
+  file		= "iwd_healing_potions"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -79,8 +82,9 @@ GROUP @3
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "bg2_healing_potions"
-  location		= "tweaks"
+  file		= "bg2_healing_potions"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -96,6 +100,7 @@ LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "holy_symbols_are_amulets"
   location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 BEGIN @18 
@@ -108,6 +113,7 @@ LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "holy_symbols_are_belts"
   location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -136,6 +142,7 @@ LAUNCH_ACTION_FUNCTION run
   file		= "dragon_scale_mail"
   tra		= "dragon_scale_mail"
   location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -148,8 +155,9 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "disrupting_weapons"
-  location		= "tweaks"
+  file		= "disrupting_weapons"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -160,8 +168,9 @@ GROUP @3
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file			= "item_improvements"
-  location		= "tweaks"
+  file		= "item_improvements"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -176,6 +185,7 @@ LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "extra_healing_in_bg1"
   location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -190,6 +200,7 @@ LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "nerf_bg1_easter_eggs"
   location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
@@ -202,6 +213,7 @@ LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "sensible_shops"
   location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 
