@@ -18,7 +18,7 @@ BEGIN
     tra		= "item_pack"
   END
 
-  LAUNCH_ACTION_FUNCTION install_item_pack
+  LAUNCH_ACTION_FUNCTION grand_unified_installer
     STR_VAR
     tra		= "item_pack"
   END
