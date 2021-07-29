@@ -18,6 +18,7 @@ mh#brac1 Vambraces of Evil's Warding		Brokk's Forge (event)
 mh#brac3 Bracers of Winter's Chill		Durlag's Tower D4 (mushrooms)
 mh#brac5 Gauntlets of Smiting			Durlag's Tower L4 (battle)
 mh#brac7 Gloves of Evasion			Black Lily (shop)
+mh#brac8 Hand of Fury				Balduran's Ship (chest)
 mh#brac9 Gloves of Thievery			Phendra's Scrolls (shop)
 
 mh#btax1 Foesplitter +1				Brokk's Forge (shop)

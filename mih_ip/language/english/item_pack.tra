@@ -1785,7 +1785,7 @@ STATISTICS:
 
 Equipped abilities:
 - Armor Class: +1
-- Saving Throws: +2 (all)
+- Saving Throws: +3 (all)
 
 Weight: 3~
 @291  = ~Ring of the Elven Mage~
@@ -2106,5 +2106,19 @@ Requires:
  10 Strength
 
 Weight: 4~
+@349  = ~Hand of Fury~
+@350  = ~This heavy gauntlet has been enchanted with some offensive and defensive dweomers.  It seems to be quite old, but is rather non-descript.  It may be the early work of a now long forgotten Netherese arcanist.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+
+Charge abilities:
+- Magic Missile (2/day, 5th level/3 missiles)
+- Forceblow (1/day)
+A strike with the gauntlet deals 6d4 crushing damage and the target must save vs. breath to avoid being stunned and hurled away from the bearer of the gauntlet.
+
+Weight: 3~
 
 

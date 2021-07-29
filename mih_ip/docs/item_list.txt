@@ -30,7 +30,7 @@ mh#brac4 Bracers of the Wind			Legends & Lore (2E)
 mh#brac5 Gauntlets of Smiting
 mh#brac6 Silver Bracers of Kedl			Icewind Dale 1 (2E)
 mh#brac7 Gloves of Evasion			Complete Thieves (2E)
-
+mh#brac8 Hand of Fury				Volo's Guide to the SC (2E)
 mh#brac9 Gloves of Thievery			Unearthed Arcana (2E)
 
 mh#btax1 Foesplitter +1				Races of Faerun (3e)
@@ -54,6 +54,7 @@ mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2E)
 mh#clck7 Cloak of Lathander			Encyclopedia Magica (2E)
 mh#clck8 Cloak of Flame				Encyclopedia Magica (2E)
 mh#clck9 Battlecloak of Vycaena			Lost Empires of Faerun (3e)
+*mh#clcka Succubus Cloak
 
 mh#club1 Blackblood +3				Baldur's Gate 2 (2E)
 

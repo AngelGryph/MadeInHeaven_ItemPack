@@ -479,9 +479,11 @@ BEGIN
 
   // Shipwreck L1
   //
+  // mh#brac8 - Hand of Fury
   // mh#comp1 - Meteoric iron
 
   MAKE_PATCH
+    patch_item_inline=>~match=>"item_resource = brac11" item_resource=>"mh#brac8" item_charges_1=>2 item_charges_2=>1~
     add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#comp1"~
   END
 
