@@ -8,7 +8,15 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
-Version 5 - October 03 2020
+Version 6 - August 4 2021
+- Replaced or removed a couple of items that proved unbalanced or just didn't
+  work out too well.
+- Massive behind-the-scenes code restructuring.
+- Misc. Item Improvements now makes Kiel's Buckler a +2 buckler, and gives the
+  Cloak of Stars a +1 bonus to saves as per its P&P description.
+- Several bug fixes as usual.
+
+Version 5 - October 3 2020
 - Fixes to make mod work with WeiDU 247
 - Added Alchemist's Fire and Flask of Acid for all your troll-killing needs
 - Scimitar of the Seven now has its own unique icon imported from BotW

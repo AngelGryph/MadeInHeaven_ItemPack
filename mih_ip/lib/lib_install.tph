@@ -10,22 +10,22 @@ BEGIN
       patch_ability_inline'2=>~projectile=>"%pronum%"~
     END
 
-    ACTION_IF FILE_EXISTS "%file_loc%/graphics/%projectile%.bam"
+    ACTION_IF FILE_EXISTS "%file_loc%/%graphics_loc%/%projectile%.bam"
     BEGIN
       LAUNCH_ACTION_FUNCTION install
         STR_VAR
         file		= "%projectile%.bam"
-        location	= "graphics"
+        location	= "%graphics_loc%"
 	locbase
       END
     END
 
-    ACTION_IF FILE_EXISTS "%file_loc%/graphics/%projectile%.vvc"
+    ACTION_IF FILE_EXISTS "%file_loc%/%graphics_loc%/%projectile%.vvc"
     BEGIN
       LAUNCH_ACTION_FUNCTION install
         STR_VAR
         file		= "%projectile%.vvc"
-        location	= "graphics"
+        location	= "%graphics_loc%"
 	locbase
       END
     END
@@ -257,22 +257,19 @@ BEGIN
     FOR (SET i = 1; i < rows; ++i)
     BEGIN
       READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 0 idsname
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 1 name_tra
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 2 desc_tra
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 3 spell_type
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 4 idsnum
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 5 scrollname
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 6 half_damage
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 7 projectile
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 8 allow_sequencer
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 9 cd_immunity_csv
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 1 level
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 2 name_tra
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 3 desc_tra
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 4 type
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 5 idsnum
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 6 scrollname
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 7 half_damage
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 8 projectile
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 9 allow_sequencer
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_main_spells i 10 cd_immunity_csv
         
       INNER_ACTION
       BEGIN
-        OUTER_TEXT_SPRINT filename "%idsname%"
-	ACTION_TO_LOWER filename
-
-
         // Obtain a slot in spell.ids
 
 	ACTION_IF IS_AN_INT idsnum
@@ -283,11 +280,10 @@ BEGIN
 
         LAUNCH_ACTION_FUNCTION add_spell_to_ids
 	  INT_VAR
-	  type		= spell_type
+	  type
+	  level
           STR_VAR
           idsname
-	  filename
-	  location	= "%spells_loc%"
           RET
           newname
         END
@@ -353,7 +349,7 @@ BEGIN
 
         // Install and patch the actual spell file.
 
-        COPY + "%file_loc%/%spells_loc%/%filename%.spl" "%workspace%/%newname%.spl"
+        COPY + "%file_loc%/%spells_loc%/%idsname%.spl" "%workspace%/%newname%.spl"
 
 	LAUNCH_ACTION_FUNCTION install_spell
 	  STR_VAR
