@@ -186,18 +186,8 @@ Equipped abilities:
 Arcane Spells: +1 first level spell
 
 Weight: 0~
-@32   = ~Ring of Shocking Grasp~
-@33   = ~The gnome tinkerer whom first created this ring insisted on calling it 'The Buzzer' and would often use it to shock someone as part of a prank.  He met a messy end when he pulled this trick once too often on a dwarven battlerager with no sense of humor.
-
-STATISTICS:
-
-Equipped abilities:
-- Electrical Resistance: +10%
-
-Charge abilities:
-- Shocking Grasp (3/day)
-
-Weight: 0~
+//@32   = ~~
+//@33   = ~~
 @34   = ~Meteoric Shield +2~
 @35   = ~Forged for <CHARNAME> by the dwarven smith Brokk, this shield is quite a work of art.  The tough meteoric iron not only provides excellent physical protection, but also seems to dampen bursts of magical energy, protecting the wielder from raw magical damage like that inflicted by the Magic Missile spell.  This shield is a bit heavier than a regular one though.
 
@@ -534,15 +524,8 @@ Weight: 75~
 @84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.
 
 Weight: 2~
-@85   = ~Ring of Protection from Silence~
-@86   = ~This ring was created more than two centuries ago by an unnamed student of the enchanter Myrl, who lived on the southern shore of the Vilhon Reach.  Sages claim Myrl and his students created hundreds of enchanted items, which ended up in treasure hordes all across Faerun.  Among these items were a number of unusual rings, including this one.  Myrl himself is believed to have perished in the conflagration that destroyed his wizard school after a heated spell battle among the students, but his legacy still survives.
-
-STATISTICS:
-
-Equipped abilities:
-- Immunity to Silence
-
-Weight: 0~
+//@85   = ~~
+//@86   = ~~
 @87   = ~Celestial Chain +2~
 @88   = ~Forged by the dwarven smith Brokk for <CHARNAME>, this suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously woven from precisely crafted arandur rings by the old dwarf, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a small price to their abilities.
 
@@ -1110,20 +1093,8 @@ Charge abilities:
 - Detect Illusion (1/day)
 
 Weight: 1~
-@175  = ~Dragon's Tear Amulet~
-@176  = ~A dragon's tear is a rare jewel of extraplanar origin.  This alone would make it worth a small fortune, but dragon's tears have the ability to block all involuntary interplanar travel, including teleportation.  This makes it useful for royalty, nobles and others who are wary of interplanar abduction, as well as anyone who might have to face a powerful spellcaster with access to spells like Maze or Imprisonment.
-
-The wearer can still initiate planar travel themselves, in fact this particular amulet also lets <PRO_HIMHER> use the spell Dimension Door a few times per day.
-
-STATISTICS:
-
-Equipped abilities:
-- Immunity to Teleport Field, Maze, Imprisonment and similar effects.
-
-Charge abilities:
-- Dimension Door (2/day)
-
-Weight: 3~
+//@175  = ~~
+//@176  = ~~
 @177  = ~Periapt of Health~
 @178  = ~This peculiar pendant was forged by the clergy of Ilmater, most likely to protect any priests that are sent to combat plagues.  Wearing it renders the user immune to most diseases both normal and magical.  This includes the dreaded mummy rot, but does not cover lycanthropy which is more like a curse than a disease.
 
@@ -1491,13 +1462,8 @@ STATISTICS:
 Special: Dispels all spells and effects of the Enchantment school.
 
 Weight: 1~
-@234  = ~Ring of Three Wishes~
-@235  = ~This powerful ring houses a noble genie who will fulfill three of the owner's spoken wishes.  After the third wish, the genie is freed from service and the ring crumbles to powder.  The owner is well advised to be careful what <PRO_HESHE> wishes for, as unwise wishes will likely result in disaster.
-
-STATISTICS:
-
-Charge abilities:
-- Limited Wish~
+@234  = ~~
+@235  = ~~
 @236  = ~Zilzanzer's Magnificent Darts +1~
 @237  = ~The eccentric master wizard Zilzanzer, well known for his Ring of the Gorgon, was also the creator of a number of small magical missile weapons.  "Zilzanzer's Magnificent Darts" were sold to many of the wizards' colleagues.  Unlike many of Zilzanzer's other creations, his darts actually performed as he intended them to.  He created a great number of the darts before his untimely demise.
 
@@ -1651,24 +1617,10 @@ Requires:
  5 Strength
 
 Weight: 3~
-@265  = ~Amulet of 5% Magic Resistance~
-@266  = ~Commissioners working for the Athkatla city council often wear these amulets while searching for spell users. The amulet provides some small protection against devious mages who resist any efforts at being imprisoned or killed.
-
-STATISTICS:
-
-Equipped abilities:
-- Magic Resistance: +5%
-
-Weight: 3~
-@267  = ~Ring of Anti-Venom~
-@268  = ~This ring is an unadorned silver band. However, its plain appearance belies the powerful magic within. A Ring of Anti-Venom is eagerly sought after by royalty, influential political figures, and other potential assassination targets. 
-
-STATISTICS:
-
-Equipped abilities:
-- Immunity to poison
-
-Weight: 0~
+//@265  = ~~
+//@266  = ~~
+//@267  = ~~
+//@268  = ~~
 @269  = ~Gloves of Thievery~
 @270  = ~These enchanted gloves are popular with thieves, as they aid the wearer in obtaining items that aren't theirs.
 
@@ -1679,16 +1631,8 @@ Equipped abilities:
 - Open Locks: +5%
 
 Weight: 2~
-@271  = ~Phylactery of Bravery~
-@272  = ~The name of this item is actually a bit of a misnomer, as it was the product of cowardice, not bravery.  Almost two hundred years ago the warrior Kerian the Bold lived the life of an adventurer, but always found himself suffering from a crippling fear whenever the party had to face undead foes, making him run at the mere sight of even a lowly skeleton.  Eventually a wizard crafted this medallion for him.  Now free of his crippling fear, Kerian took a habit of charging every undead he saw, a tactic that proved most unwise when the party encountered a group of skeleton warriors.  Kerian died before the rest of his party could catch up with him.  Nowadays, the Tale of Kerian the Bold is often sung by bards in the Realms as an example of why it is important not to confuse courage with recklessness.
-
-STATISTICS:
-
-Equipped abilities:
-- THAC0: +1 bonus
-- Immunity to fear
-
-Weight: 1~
+//@271  = ~~
+//@272  = ~~
 @273  = ~Medallion of Faith~
 @274  = ~When worn by a devout priest or paladin of good alignment, this medallion shows the holy symbol of their chosen patron and enables them to cast several useful spells.  To anyone else it is merely a pretty bauble.
 
@@ -1710,18 +1654,8 @@ Equipped abilities:
 - Move Silently: +10%
 
 Weight: 4~
-@277  = ~Cloak of Blackflame~
-@278  = ~This purple-black cloak was specifically designed to protect the wearer from the Negative Energy plane, that bleak dimension which eternally hungers for life force and souls to devour and gives many undead like wights and vampires their horrid powers.
-
-Exactly who made it is not known, the cloak pre-dates written history in Faerun and may even be of divine origin.  It was worn by several heroes through the ages, most of whom met a gruesome end at the claws and fangs of the abominations they tried to fight.
-
-STATISTICS:
-
-Equipped abilities:
-- Immunity to paralysis and level drain.
-- Cold Resistance: 100%
-
-Weight: 3~
+//@277  = ~~
+//@278  = ~~
 @279  = ~Cloak of Flame~
 @280  = ~This strange cloak can only be worn by mages.  It functions as a basic cloak of protection but has additional powers over fire.  According to some tales it was once a normal cloak of protection until the wizard who wore it at the time died in the hellish blaze of a meteor swarm cast by a jealous rival.  Partially infused with both the spirit of the departed wizard and the arcane fire that ended his life it became what it is now, or so the story goes.
 

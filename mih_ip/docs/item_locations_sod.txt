@@ -1,5 +1,4 @@
-mh#amul9 Medallion of the Arctic		Nazramu (shop)
-mh#amulb Phylactery of Bravery			Kazzrem (shop)
+mh#amul7 Medallion of the Arctic		Nazramu (shop)
 
 mh#hide2 White Skin of Umpluutu +3		Waizahb (shop)
 
@@ -35,8 +34,7 @@ mh#potn3 Philter of Purification		Sorcerous Sundries (shop)
 mh#potn6 Alchemist's Fire			Sorcerous Sundries (shop)
 mh#potn7 Acid Flask				Sorcerous Sundries (shop)
 
-mh#ringa Shield Ring				Lich Outpost (mage remains)
-mh#ringb Edion's Ring of Wizardry		Nazramu (shop)
+mh#ring8 Shield Ring				Lich Outpost (mage remains)
 
 mh#robe2 Robe of the Necromancer		Waizahb (shop)
 mh#robe4 Shadow Dancer's Robe			Nazramu (shop)

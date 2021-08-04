@@ -4,12 +4,8 @@ mh#amul3 Gem of Insight				DMG (2E)
 mh#amul4 Mirror of Illusions
 mh#amul5 Brooch of Shielding			DMG (2E)
 mh#amul6 Scarab versus Golems			DMG (2E)
-mh#amul7 Dragon's Tear Amulet
-mh#amul8 Periapt of Health			DMG (2E)
-mh#amul9 Medallion of the Arctic		Encyclopedia Magica (2E)
-mh#amula Amulet of 5% Magic Resistance		Baldur's Gate 2 (2E)
-mh#amulb Phylactery of Bravery			Encyclopedia Magica (2E)
-mh#amulc Medallion of Faith			Encyclopedia Magica (2E)
+mh#amul7 Medallion of the Arctic		Encyclopedia Magica (2E)
+mh#amul8 Medallion of Faith			Encyclopedia Magica (2E)
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2E)
 mh#belt2 Sunite Sash				Magic of Faerun (3e)
@@ -50,11 +46,9 @@ mh#clck2 Varazdin's Cloak of Protection
 mh#clck3 Cloak of Arachnida			DMG (2E)
 mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2E)
 mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2E)
-mh#clck6 Cloak of Blackflame			Encyclopedia Magica (2E)
 mh#clck7 Cloak of Lathander			Encyclopedia Magica (2E)
 mh#clck8 Cloak of Flame				Encyclopedia Magica (2E)
 mh#clck9 Battlecloak of Vycaena			Lost Empires of Faerun (3e)
-*mh#clcka Succubus Cloak
 
 mh#club1 Blackblood +3				Baldur's Gate 2 (2E)
 
@@ -119,7 +113,6 @@ mh#plat1 Dwarven Plate +1
 mh#plat2 Black Swan Armor +2			Icewind Dale 1 (2E)
 mh#plat3 Laeral's Storm Armor +2		Encyclopedia Magica (2E)
 mh#plat4 Plate of Solamnus +5			Encyclopedia Magica (2E)
-*mh#plat5 Crimson Armor +2			Sword of Vermilion
 
 mh#potn1 Oil of Acid Resistance			DMG (2E)
 mh#potn2 Potion of Clairvoyance			DMG (2E)
@@ -133,19 +126,14 @@ mh#potn8 Elixir of Life				Unearthed Arcana (2E)
 mh#ring1 Ring of the Elven Mage			DMG (2E)
 mh#ring2 Ring of Warmth				DMG (2E)
 mh#ring3 Ring of the Neophyte			DMG (2E)
-mh#ring4 Ring of Shocking Grasp			DMG (2E)
-mh#ring5 Ring of Protection from Silence	Pages from the Mages (2E)
-mh#ring6 Ring of White Bone			Complete Necromancer (2E)
-mh#ring7 Ring of Mind Shielding			DMG (2E)
-mh#ring8 Ring of Shooting Stars			DMG (2E)
-mh#ring9 Ring of Thex				Planescape Torment (2E)
-mh#ringa Shield Ring				Icewind Dale 1 (2E)
-mh#ringb Edion's Ring of Wizardry		Icewind Dale 1 (2E)
-mh#ringc Ring of Water Control			DMG (2E)
-mh#ringd Ring of Three Wishes			DMG (2E)
-mh#ringe Ring of Anti-Venom			Baldur's Gate 2 (2E)
-mh#ringf Ring of the Lich			DMG (2E)
-mh#ringg Ring of the Hierophant			Complete Druid (2E)
+mh#ring4 Ring of White Bone			Complete Necromancer (2E)
+mh#ring5 Ring of Mind Shielding			DMG (2E)
+mh#ring6 Ring of Shooting Stars			DMG (2E)
+mh#ring7 Ring of Thex				Planescape Torment (2E)
+mh#ring8 Shield Ring				Icewind Dale 1 (2E)
+mh#ring9 Ring of Water Control			DMG (2E)
+mh#ringa Ring of the Lich			DMG (2E)
+mh#ringb Ring of the Hierophant			Complete Druid (2E)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
@@ -163,7 +151,6 @@ mh#shld6 Mystery of the Dead +3			Icewind Dale 1 (2E)
 mh#shld7 Waukeen's Defender +2			Icewind Dale 1 (2E)
 mh#shld8 White Shield +4			Encyclopedia Magica (2E)
 mh#shld9 Shield of the Dragonslayer +3		Encyclopedia Magica (2E)
-*mh#shlda Crimson Shield +2			Sword of Vermilion
 
 mh#slng1 Edley's Sling +2			Icewind Dale 1 (2E)
 
@@ -189,7 +176,6 @@ mh#swrd8 Golden Sky +2
 mh#swrd9 Cold Flame +3
 mh#swrda Holy Sword +2
 mh#swrdb Kanalruil +4				Elves of Evermeet (2E)
-*mh#swrdc Sword of Vermilion +1			Sword of Vermillion
 
 mh#tome1 Book of Exalted Deeds			DMG (2E)
 mh#tome2 Book of Vile Darkness			DMG (2E)

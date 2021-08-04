@@ -1,6 +1,3 @@
-mh#amul7 Dragon's Tear Amulet			Arcana Archives (shop)
-mh#amulb Phylactery of Bravery			Watcher's Keep (maze)
-
 mh#drag1 Black Dragon Scale			Cespenar (forging)
 
 mh#brac4 Bracers of the Wind			Ancient Grove (battle)
@@ -36,10 +33,10 @@ mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 mh#potn6 Alchemist's Fire			Arcana Archives (shop)
 mh#potn7 Acid Flask				Arcana Archives (shop)
 
-mh#ring6 Ring of White Bone			Arcana Archives (shop)
+mh#ring4 Ring of White Bone			Arcana Archives (shop)
 mh#ring9 Ring of Thex				Arcana Archives (shop)
-mh#ringf Ring of the Lich			Vongoethe (battle)
-mh#ringg Ring of the Hierophant			Forest of Mir (battle)
+mh#ringa Ring of the Lich			Vongoethe (battle)
+mh#ringb Ring of the Hierophant			Forest of Mir (battle)
 
 mh#robe5 Nyalee's Robe of Stone			Forest of Mir (battle)
 

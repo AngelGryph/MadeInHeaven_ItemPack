@@ -7,12 +7,8 @@ mh#amul3	4	5	*	*	0x0	*		*
 mh#amul4	173	174	*	*	0x0	*		*
 mh#amul5	40	41	*	*	0x0	*		*
 mh#amul6	114	115	*	*	0x0	*		*
-mh#amul7	175	176	*	*	0x0	*		*
-mh#amul8	177	178	*	*	0x0	*		disease
-mh#amul9	217	218	*	*	0x1	*		*
-mh#amula	265	266	*	*	0x0	*		*
-mh#amulb	271	272	*	*	0x0	*		fear
-mh#amulc	273	274	*	*	0x0	*		*
+mh#amul7	217	218	*	*	0x1	*		*
+mh#amul8	273	274	*	*	0x0	*		*
 
 mh#belt1	8	9	*	*	0x0	*		*
 mh#belt2	46	47	*	*	0x0	*		*
@@ -53,7 +49,6 @@ mh#clck2	289	290	*	*	0x1	*		*
 mh#clck3	79	80	*	*	0x0	*		web
 mh#clck4	216	116	*	*	0x1	*		*
 mh#clck5	220	221	*	*	0x1	*		*
-mh#clck6	277	278	*	*	0x0	*		hold,level_drain
 mh#clck7	281	282	*	*	0x0	*		*
 mh#clck8	279	280	*	*	0x1	*		*
 mh#clck9	18	19	*	*	0x1	*		*
@@ -134,19 +129,14 @@ mh#potn8	315	316	*	*	0x0	*		*
 mh#ring1	291	292	*	*	0x1	*		*
 mh#ring2	28	29	*	*	0x0	*		*
 mh#ring3	30	31	*	*	0x0	*		*
-mh#ring4	32	33	*	*	0x0	*		*
-mh#ring5	85	86	*	*	0x0	*		silence
-mh#ring6	92	93	*	*	0x0	*		*
-mh#ring7	94	95	*	*	0x0	*		charm,confusion,feeblemind,psionics,stun
-mh#ring8	96	97	*	*	0x0	*		*
+mh#ring4	92	93	*	*	0x0	*		*
+mh#ring5	94	95	*	*	0x0	*		charm,confusion,feeblemind,psionics,stun
+mh#ring6	96	97	*	*	0x0	*		*
 mh#ring9	119	120	*	*	0x1	*		*
-mh#ringa	143	144	*	*	0x0	*		magic_missile
-mh#ringb	145	146	*	*	0x0	*		*
-mh#ringc	197	198	*	*	0x0	*		*
-mh#ringd	234	235	*	*	0x0	*		*
-mh#ringe	267	268	*	*	0x0	*		poison
-mh#ringf	26	27	*	*	0x1	*		*
-mh#ringg	295	296	*	*	0x0	*		*
+mh#ring8	143	144	*	*	0x0	*		magic_missile
+mh#ring9	197	198	*	*	0x0	*		*
+mh#ringa	26	27	*	*	0x1	*		*
+mh#ringb	295	296	*	*	0x0	*		*
 
 mh#robe1	98	99	*	*	0x0	*		*
 mh#robe2	100	101	*	*	0x0	*		level_drain

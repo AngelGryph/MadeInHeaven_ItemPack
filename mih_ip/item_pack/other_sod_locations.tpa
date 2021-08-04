@@ -37,14 +37,12 @@ BEGIN
   
   // Kazzrem the Calishite
   //
-  // mh#amulb - Phylactery of Bravery
   // mh#boot2 - Boots of Striding and Springing
   // mh#ioun1 - Pale Blue Ioun Stone
   // mh#dart1 - Lein's Fiery Darts
   // mh#dart2 - Chandler's Icy Darts
   
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#amulb" AFTER "bdamul24" #0 #0 #0 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1~
     literal'3=>~ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1~
     literal'4=>~ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4~
@@ -80,22 +78,20 @@ BEGIN
   
   // Nazramu's Store
   //
-  // mh#amul9 - Medallion of the Arctic
+  // mh#amul7 - Medallion of the Arctic
   // mh#belt5 - Girdle of Ogre's Blood
   // mh#dagg1 - Catclaw +3
   // mh#ioun2 - Crystal Clear Ioun Stone
-  // mh#ringb - Edion's Ring of Wizardry
   // mh#robe4 - Shadow Dancer's Robe
   // mh#robe6 - Ogi-Luc's Great Robe
   
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#belt5" AFTER "bdbelt01" #1 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#ringb" AFTER "bdring10" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#amul9" AFTER "bdamul25" #0 #0 #0 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1~
-    literal'7=>~ADD_STORE_ITEM "mh#robe6" LAST #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#amul7" AFTER "bdamul25" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#robe6" LAST #0 #0 #0 "identified" #1~
   END
   
   LAUNCH_ACTION_FUNCTION edit_store
@@ -127,12 +123,12 @@ BEGIN
   //
   // mh#wand1 - Wand of Illusions
   // mh#misc1 - Pearl of Power
-  // mh#ringa - Shield Ring
+  // mh#ring8 - Shield Ring
   
   MAKE_PATCH
     add_item_inline'1=>~match=>"parent_index = 0" item_resource=>"mh#wand1" item_charges_1=>12 item_charges_2=>12~
     add_item_inline'2=>~match=>"parent_index = 5" item_resource=>"mh#misc1" item_charges_1=>1~
-    add_item_inline'3=>~match=>"parent_index = 8" item_resource=>"mh#ringa"~
+    add_item_inline'3=>~match=>"parent_index = 8" item_resource=>"mh#ring8"~
   END
 
   LAUNCH_ACTION_FUNCTION edit_area

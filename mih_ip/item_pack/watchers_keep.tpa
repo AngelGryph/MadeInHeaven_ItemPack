@@ -38,11 +38,9 @@ BEGIN
 
   // L3 - Portal Maze - Demon Wraith's lair
   //
-  // mh#amulb - Phylactery of Bravery (on Demon Wraith's victims)
   // mh#brac7 - Gloves of Evasion (on Demon Wraith's victims)
 
   MAKE_PATCH
-    add_item_inline'1=>~match=>"parent_index = 2" item_resource=>"mh#amulb"~
     add_item_inline'2=>~match=>"parent_index = 1" item_resource=>"mh#brac7"~
   END
 
