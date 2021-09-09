@@ -13,8 +13,6 @@ mh#amul8	273	274	*	*	0x0	*		*
 mh#belt1	8	9	*	*	0x0	*		*
 mh#belt2	46	47	*	*	0x0	*		*
 mh#belt3	77	78	*	*	0x0	*		*
-mh#belt4	127	128	*	*	0x0	*		*
-mh#belt5	129	130	*	*	0x0	*		*
 mh#belt6	251	252	*	*	0x0	*		*
 mh#belt7	240	241	*	*	0x0	*		*
 
@@ -27,7 +25,6 @@ mh#brac2	12	13	*	*	0x0	*		*
 mh#brac3	73	74	*	*	0x0	*		*
 mh#brac4	75	76	*	*	0x0	*		*
 mh#brac5	121	122	*	*	0x0	*		*
-mh#brac6	131	132	*	*	0x0	*		*
 mh#brac7	244	245	*	*	0x0	*		*
 mh#brac8	349	350	*	*	0x0	*		*
 mh#brac9	269	270	*	*	0x0	*		*
@@ -47,7 +44,7 @@ mh#chan3	343	344	*	*	0x2	*		*
 mh#clck1	16	17	*	*	0x0	*		petrification
 mh#clck2	289	290	*	*	0x1	*		*
 mh#clck3	79	80	*	*	0x0	*		web
-mh#clck4	216	116	*	*	0x1	*		*
+mh#clck4	32	33	*	*	0x1	*		*
 mh#clck5	220	221	*	*	0x1	*		*
 mh#clck7	281	282	*	*	0x0	*		*
 mh#clck8	279	280	*	*	0x1	*		*
@@ -64,12 +61,10 @@ mh#comp6	285	286	*	*	0x0	*		*
 mh#comp7	319	320	*	*	0x0	*		*
 
 mh#dagg1	52	53	*	*	0x0	*		*
-mh#dagg2	135	136	*	*	0x0	*		*
 mh#dagg3	313	314	*	*	0x0	*		*
 
 mh#dart1	222	223	*	*	0x0	*		*
 mh#dart2	224	225	*	*	0x0	*		*
-mh#dart3	236	237	*	*	0x0	*		*
 mh#dart4	238	239	*	*	0x0	*		*
 
 mh#drag1	287	288	317	318	0x2	*		*
@@ -86,7 +81,6 @@ mh#hamm2	323	324	*	*	0x0	*		*
 
 mh#helm1	22	23	*	*	0x0	*		*
 mh#helm2	117	118	*	*	0x0	*		spell_level_1,spell_level_2,spell_level_3
-mh#helm3	137	138	*	*	0x0	*		*
 
 mh#hide1	42	43	*	*	0x2	*		*
 mh#hide2	69	70	*	*	0x2	*		*
@@ -102,7 +96,6 @@ mh#ioun7	299	300	*	*	0x0	*		*
 mh#lbow1	57	58	*	*	0x0	*		*
 
 mh#mace1	71	72	*	*	0x0	*		*
-mh#mace2	337	338	*	*	0x0	*		*
 mh#mace3	339	340	*	*	0x0	*		*
 
 mh#misc1	139	140	*	*	0x0	*		*
@@ -113,13 +106,11 @@ mh#misc5	249	250	*	*	0x0	*		*
 mh#misc6	283	284	*	*	0x0	*		*
 
 mh#plat1	89	90	*	*	0x2	*		*
-mh#plat2	125	126	*	*	0x2	*		*
 mh#plat3	305	306	*	*	0x2	*		*
 mh#plat4	309	310	307	308	0x2	*		*
 
 mh#potn1	59	60	*	*	0x0	*		*
 mh#potn2	141	142	*	*	0x0	*		*
-mh#potn3	230	231	*	*	0x0	*		*
 mh#potn4	232	233	*	*	0x0	*		*
 mh#potn5	247	248	*	*	0x0	*		*
 mh#potn6	301	302	*	*	0x0	*		*
@@ -132,8 +123,6 @@ mh#ring3	30	31	*	*	0x0	*		*
 mh#ring4	92	93	*	*	0x0	*		*
 mh#ring5	94	95	*	*	0x0	*		charm,confusion,feeblemind,psionics,stun
 mh#ring6	96	97	*	*	0x0	*		*
-mh#ring9	119	120	*	*	0x1	*		*
-mh#ring8	143	144	*	*	0x0	*		magic_missile
 mh#ring9	197	198	*	*	0x0	*		*
 mh#ringa	26	27	*	*	0x1	*		*
 mh#ringb	295	296	*	*	0x0	*		*
@@ -143,26 +132,18 @@ mh#robe2	100	101	*	*	0x0	*		level_drain
 mh#robe3	104	105	102	103	0x0	*		*
 mh#robe4	106	107	102	103	0x0	*		*
 mh#robe5	257	258	255	256	0x0	*		*
-mh#robe6	259	260	*	*	0x0	*		*
 
 mh#shld1	34	35	*	*	0x0	*		*
 mh#shld2	61	62	*	*	0x0	*		*
 mh#shld3	63	64	*	*	0x0	*		*
 mh#shld4	147	148	*	*	0x0	*		*
-mh#shld5	149	150	*	*	0x0	*		*
-mh#shld6	151	152	*	*	0x0	*		kill_target,slay
-mh#shld7	153	154	*	*	0x0	*		*
 mh#shld8	261	262	*	*	0x0	*		*
 mh#shld9	311	312	*	*	0x0	*		*
-
-mh#slng1	331	332	*	*	0x0	*		*
 
 mh#sper1	199	200	*	*	0x0	*		poison
 mh#sper2	335	336	*	*	0x0	*		*
 
 mh#staf1	65	66	*	*	0x0	*		*
-mh#staf2	155	156	*	*	0x0	*		*
-mh#staf3	157	158	*	*	0x0	*		*
 mh#staf4	201	202	*	*	0x0	*		level_drain
 mh#staf5	204	205	*	*	0x0	*		*
 mh#staf6	206	207	*	*	0x0	*		*
@@ -173,8 +154,6 @@ mh#swrd2	38	39	*	*	0x0	*		*
 mh#swrd3	108	109	*	*	0x0	*		*
 mh#swrd4	110	111	*	*	0x0	*		*
 mh#swd4a	112	113	*	*	0x0	*		*
-mh#swrd5	159	160	*	*	0x0	*		*
-mh#swrd6	161	162	*	*	0x0	*		charm,fear
 mh#swrd7	208	209	*	*	0x0	*		*
 mh#swrd8	210	211	329	330	0x0	*		*
 mh#swrd9	212	213	*	*	0x0	*		*
@@ -189,3 +168,5 @@ mh#tome5	171	172	*	*	0x0	*		*
 
 mh#wand1	67	68	*	*	0x0	*		*
 mh#wand2	214	215	*	*	0x0	*		*
+
+

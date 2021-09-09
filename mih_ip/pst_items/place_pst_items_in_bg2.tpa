@@ -1,0 +1,36 @@
+DEFINE_ACTION_FUNCTION place_pst_items_in_bg2
+BEGIN
+  // ===================
+  // Waukeen's Promenade
+  // ===================
+
+  // Adventurer's Market
+  //
+  // xbow10   Necaradan's Crossbow +3 (moved from Adalon)
+
+  MAKE_PATCH
+    clone_item_inline=>~match=>"item_resource = xbow09" item_resource=>"xbow10"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "ribald3"
+    edits	= "patch_data"
+  END
+
+  // =========
+  // Underdark
+  // =========
+
+  // Adalon's Reward
+  //
+  // mh#pst02 Heaven and Earth +3 (replaces Necardan's Crossbow +3)
+
+  LAUNCH_ACTION_FUNCTION swap_text
+    STR_VAR
+    file	= "udsilver.dlg"
+    swaps	= ~"xbow10" => "mh#pst02"~
+  END
+END	// place_pst_items_in_bg2
+
+

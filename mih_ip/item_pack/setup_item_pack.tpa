@@ -23,12 +23,6 @@ BEGIN
     tra		= "item_pack"
   END
 
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "item_pack_postproc"
-    tra		= "item_pack"
-  END
-
   ACTION_IF NOT enhanced_edition
   BEGIN
     LAUNCH_ACTION_FUNCTION run
@@ -37,11 +31,35 @@ BEGIN
     END
   END
 
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "item_pack_postproc place_item_pack_stuff_in_stores"
+    tra		= "item_pack"
+  END
+
   ACTION_IF is_bg1
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
-      file	= "place_items_in_bg1"
+      file	= "brokks_forge"
+      tra	= "brokks_forge"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "phendras_scrolls"
+      tra	= "phendras_scrolls"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "gem_of_seeing"
+      tra	= "gem_of_seeing"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "other_bg1_locations"
     END
   END
 
@@ -49,7 +67,13 @@ BEGIN
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
-      file	= "place_items_in_sod"
+      file	= "thrix_wager"
+      tra		= "thrix_wager"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "other_sod_locations"
     END
   END
 
@@ -57,7 +81,19 @@ BEGIN
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
-      file	= "place_items_in_bg2"
+      file	= "vaelasas_reward"
+      tra	= "vaelasas_reward"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "cromwell_forge"
+      tra	= "cromwell_forge"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "import_bg1_items other_bg2_locations"
     END
   END
 
@@ -65,7 +101,18 @@ BEGIN
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
-      file	= "place_items_in_tob"
+      file	= "cespenar_forge"
+      tra	= "cespenar_forge"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "watchers_keep"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "other_tob_locations"
     END
   END
 END	// setup_item_pack

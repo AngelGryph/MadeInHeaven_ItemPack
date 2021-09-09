@@ -83,7 +83,6 @@ BEGIN
   // Adventurer's Market
   //
   // mh#amul6 - Scarab versus Golems
-  // mh#dart3 - Zilzanzer's Magnificent Darts +1
   // mh#misc3 - Crystal Ball
   // mh#potn6 - Alchemist's Fire
   // mh#potn7 - Flask of Acid
@@ -99,14 +98,13 @@ BEGIN
   // mh#shld9 - Shield of the Dragonslayer +3
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #12 #0 #0 "identified" #5~
-    literal'2=>~ADD_STORE_ITEM "mh#amul6" AFTER "amul14" #0 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#ring9" AFTER "ring28" #1 #1 #1 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#staf5" AFTER "staf18" #0 #30 #30 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#misc3" AFTER "rods03" #7 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#ioun3" AFTER "clck12" #0 #0 #0 "identified" #1~
-    literal'7=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10~
-    literal'8=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
+    literal'1=>~ADD_STORE_ITEM "mh#amul6" AFTER "amul14" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#ring9" AFTER "ring28" #1 #1 #1 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#staf5" AFTER "staf18" #0 #30 #30 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#misc3" AFTER "rods03" #7 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#ioun3" AFTER "clck12" #0 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10~
+    literal'7=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -121,8 +119,7 @@ BEGIN
     literal'3=>~ADD_STORE_ITEM "mh#dart2" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'4=>~ADD_STORE_ITEM "mh#dart1" AFTER "dart05" #12 #0 #0 "identified" #5~
     literal'5=>~ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#robe6" AFTER "chan11" #0 #0 #0 "identified" #1~
-    literal'7=>~ADD_STORE_ITEM "mh#shld9" AFTER "shld30" #0 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#shld9" AFTER "shld30" #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -232,17 +229,6 @@ BEGIN
   END
 
 
-  // Stolen by Lavok
-  //
-  // mh#ring8 - Shield Ring
-
-  LAUNCH_ACTION_FUNCTION edit_creature
-    STR_VAR
-    creature	= "lavok01 lavok02"
-    editstring	= ~add_items=>"mh#ring8(rring)"~
-  END
-
-
   // ===============
   // Bridge District
   // ===============
@@ -288,43 +274,20 @@ BEGIN
   // mh#amul1 - Amulet against Undead
   // mh#amul2 - Necklace of Prayer Beads
   // mh#bull1 - Priest's Bullet
-  // mh#belt4 - Girdle of Beatification
   // mh#clck7 - Cloak of Lathander
-  // mh#helm3 - Blessed Helm of Lathander
-  // mh#potn3 - Philter of Purification
   // mh#robe3 - Robe of the Pure Heart
-  // mh#shld5 - Shield of the Revenant +2
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#bull1" AFTER "staf05" #5 #0 #0 "identified" #10~
-    literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6~
-    literal'3=>~ADD_STORE_ITEM "mh#clck7" AFTER "boot05" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#shld5" AFTER "staf05" #0 #1 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#helm3" AFTER "helm06" #1 #1 #1 "identified" #1~
-    literal'7=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
-    literal'8=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
-    literal'9=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#clck7" AFTER "boot05" #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
     STR_VAR
     store	= "temlath"
-    edits	= "patch_data"
-  END
-
-
-  // Undead City in Lower Reaches (Cult of the Eyeless)
-  //
-  // mh#dagg2 - Spinesheath +1
-
-  MAKE_PATCH
-    add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#dagg2"~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_area
-    STR_VAR
-    area	= "ar0206"
     edits	= "patch_data"
   END
 
@@ -429,14 +392,10 @@ BEGIN
   //
   // mh#bull1 - Priest's Bullet
   // mh#misc5 - Horn of Goodness/Evil
-  // mh#potn3 - Philter of Purification
-  // mh#shld7 - Waukeen's Defender +2
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #10~
-    literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6~
-    literal'3=>~ADD_STORE_ITEM "mh#misc5" AFTER "ring03" #1 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#misc5" AFTER "ring03" #1 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -467,18 +426,7 @@ BEGIN
 
   // Blessings of Amaunator
   //
-  // mh#swrd5 - Amaunator's Legacy +3
   // mh#ring4 - Ring of White Bone
-
-  MAKE_PATCH
-    add_item_inline=>~match=>"parent_index = 3" item_resource=>"mh#swrd5" item_charges_2=>1~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_area
-    STR_VAR
-    area	= "ar1401"
-    edits	= "patch_data"
-  END
 
   MAKE_PATCH
     add_item_inline=>~match=>"parent_index = 1" item_resource=>"mh#ring4" item_charges_1=>12~
@@ -540,34 +488,21 @@ BEGIN
 
   // Ust Natha
   //
-  // mh#belt5 - Girdle of Ogre Blood
   // mh#clck3 - Cloak of Arachnida
-  // mh#potn3 - Philter of Purification
   // mh#ring5 - Ring of Mind Shielding
   // mh#robe2 - Robe of the Necromancer
   // mh#robe4 - Shadow Dancer's Robe
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#ring5" AFTER "amul10" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#belt5" AFTER "shld22" #0 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#clck3" AFTER "clck17" #2 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#robe4" AFTER "clck17" #0 #0 #0 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#robe2" AFTER "clck17" #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#clck3" AFTER "clck17" #2 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#robe4" AFTER "clck17" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#robe2" AFTER "clck17" #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
     STR_VAR
     store	= "uddrow23"
-    edits	= "patch_data"
-  END
-
-  MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_store
-    STR_VAR
-    store	= "uddrow24"
     edits	= "patch_data"
   END
 
@@ -578,16 +513,14 @@ BEGIN
 
   // Distribute potions to several shops
   //
-  // mh#potn1 - Oil of Acid Resistance
   // mh#potn2 - Potion of Clairvoyance
   // mh#potn4 - Oil of Disenchantment
   // mh#potn5 - Potion of Longevity
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3~
-    literal'2=>~ADD_STORE_ITEM "mh#potn2" AFTER "potn36" #1 #0 #0 "identified" #3~
-    literal'3=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn10 potn19" #1 #0 #0 "identified" #3~
-    literal'4=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn36" #1 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#potn2" AFTER "potn36" #1 #0 #0 "identified" #3~
+    literal'2=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn10 potn19" #1 #0 #0 "identified" #3~
+    literal'3=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn36" #1 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

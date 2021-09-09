@@ -1,0 +1,22 @@
+mh#iwd01 Girdle of Beatification
+mh#iwd02 Girdle of Ogre Blood
+mh#iwd03 Silver Bracers of Kedl
+mh#iwd04 Spinesheath +1
+mh#iwd05 Zilzanzer's Magnificent Darts +1
+mh#iwd06 Blessed Helm of Lathander
+mh#iwd07 Three White Doves +3
+mh#iwd08 Black Swan Armor +2
+mh#iwd09 Philter of Purification
+mh#iwd10 Shield Ring
+mh#iwd11 Edion's Ring of Wizardry
+mh#iwd12 Ogi-Luc's Great Robe
+mh#iwd13 Shield of the Revenant +2
+mh#iwd14 Mystery of the Dead +3
+mh#iwd15 Waukeen's Defender +2
+mh#iwd16 Edley's Sling +2
+mh#iwd17 Spendelard's Protector +1
+mh#iwd18 Staff of Moradin's Breath +2
+mh#iwd19 Amaunator's Legacy +3
+mh#iwd20 Pale Justice +4
+
+

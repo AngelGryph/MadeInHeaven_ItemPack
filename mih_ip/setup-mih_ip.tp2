@@ -35,6 +35,28 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// IWD Items for BG
+
+BEGIN @20
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "setup_iwd_items"
+  location	= "iwd_items"
+END
+
+
+// PST Items for BG
+
+BEGIN @21
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "setup_pst_items"
+  location	= "pst_items"
+END
+
+
 // BG1-style wands
 
 BEGIN @2 

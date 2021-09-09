@@ -1,0 +1,7 @@
+mh#iwd01 Girdle of Beatification		Song of the Morning (shop)
+mh#iwd04 Spinesheath +1				Cloakwood Mine (battle)
+mh#iwd05 Zilzanzer's Magnificent Darts +1	Various places (shops)
+mh#iwd09 Philter of Purification		(various temples)
+mh#iwd17 Spendelard's Protector +1		Bandit Camp (battle)
+
+

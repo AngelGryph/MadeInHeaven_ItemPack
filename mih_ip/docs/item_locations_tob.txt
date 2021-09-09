@@ -34,7 +34,6 @@ mh#potn6 Alchemist's Fire			Arcana Archives (shop)
 mh#potn7 Acid Flask				Arcana Archives (shop)
 
 mh#ring4 Ring of White Bone			Arcana Archives (shop)
-mh#ring9 Ring of Thex				Arcana Archives (shop)
 mh#ringa Ring of the Lich			Vongoethe (battle)
 mh#ringb Ring of the Hierophant			Forest of Mir (battle)
 

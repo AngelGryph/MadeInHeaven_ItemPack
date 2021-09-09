@@ -13,19 +13,13 @@ BEGIN
   
   // Sorcerous Sundries
   //
-  // mh#dart3 - Zilzander's Magnificent Darts +1
-  // mh#potn1 - Oil of Acid Resistance
-  // mh#potn3 - Philter of Purification
   // mh#potn6 - Alchemist's Fire
   // mh#potn7 - Flask of Acid
   
   COPY_EXISTING "bdsorcsc.sto" "override"
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart04" #5 #0 #0 "identified" #20~
-    literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #10~
-    literal'3=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #5~
-    literal'4=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
-    literal'5=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
+    literal'1=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
+    literal'2=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -58,16 +52,12 @@ BEGIN
 
   // Bellowgulp & the Concocter
   //
-  // mh#potn1 - Oil of Acid Resistance
-  // mh#potn3 - Philter of Purification
   // mh#potn6 - Alchemist's Fire
   // mh#potn7 - Flask of Acid
   
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #15~
-    literal'2=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn22" #1 #0 #0 "identified" #15~
-    literal'3=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn41" #1 #0 #0 "identified" #15~
-    literal'4=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #15~
+    literal'1=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn41" #1 #0 #0 "identified" #15~
+    literal'2=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #15~
   END
   
   LAUNCH_ACTION_FUNCTION edit_store
@@ -79,19 +69,15 @@ BEGIN
   // Nazramu's Store
   //
   // mh#amul7 - Medallion of the Arctic
-  // mh#belt5 - Girdle of Ogre's Blood
   // mh#dagg1 - Catclaw +3
   // mh#ioun2 - Crystal Clear Ioun Stone
   // mh#robe4 - Shadow Dancer's Robe
-  // mh#robe6 - Ogi-Luc's Great Robe
   
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#belt5" AFTER "bdbelt01" #1 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#amul7" AFTER "bdamul25" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#robe6" LAST #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#amul7" AFTER "bdamul25" #0 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1~
   END
   
   LAUNCH_ACTION_FUNCTION edit_store
@@ -123,12 +109,10 @@ BEGIN
   //
   // mh#wand1 - Wand of Illusions
   // mh#misc1 - Pearl of Power
-  // mh#ring8 - Shield Ring
   
   MAKE_PATCH
     add_item_inline'1=>~match=>"parent_index = 0" item_resource=>"mh#wand1" item_charges_1=>12 item_charges_2=>12~
     add_item_inline'2=>~match=>"parent_index = 5" item_resource=>"mh#misc1" item_charges_1=>1~
-    add_item_inline'3=>~match=>"parent_index = 8" item_resource=>"mh#ring8"~
   END
 
   LAUNCH_ACTION_FUNCTION edit_area

@@ -1,0 +1,8 @@
+mh#iwd03 Silver Bracers of Kedl			Saradush (battle)
+mh#iwd05 Zilzanzer's Magnificent Darts +1	Sister Garlena (shop)
+*mh#iwd07 Three White Doves +3			???
+mh#iwd09 Philter of Purification		(various temples)
+mh#iwd14 Mystery of the Dead +3			Sister Garlena (shop)
+mh#iwd15 Waukeen's Defender +2			Temple of Waukeen (shop)
+
+

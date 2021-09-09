@@ -1,0 +1,96 @@
+DEFINE_ACTION_FUNCTION watchers_keep
+BEGIN
+  // Sister Garlena
+  //
+  // mh#flai2 - Battle Star +4
+  // mh#bull1 - Priest's Bullet
+  // mh#dart3 - Zilzanzer's Magnificent Darts +1
+  // mh#ioun1 - Sky Blue Ioun Stone
+  // mh#ioun2 - Crystal Clear Ioun Stone
+  // mh#potn3 - Philter of Purification
+  // mh#potn6 - Alchemist's Fire
+  // mh#potn7 - Flask of Acid
+  // mh#swrd3 - Scimitar of the Seven +4
+  // mh#shld6 - Mystery of the Dead +3
+  // mh#wand2 - Elmira's Wand of Blasting
+  // ring46   - Ring of Anti-Venom (from Vongoethe)
+
+  MAKE_PATCH
+    literal'01=>~ADD_STORE_ITEM "mh#flai2" AFTER "xbow15" #0 #0 #0 "identified" #1~
+    literal'02=>~ADD_STORE_ITEM "mh#bull1" AFTER "bull02" #5 #0 #0 "identified" #10~
+    literal'03=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #12 #0 #0 "identified" #5~
+    literal'04=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn52" #1 #0 #0 "identified" #2~
+    literal'05=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn44" #1 #0 #0 "identified" #5~
+    literal'06=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
+    literal'07=>~ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1~
+    literal'08=>~ADD_STORE_ITEM "mh#shld6" LAST #0 #0 #0 "identified" #1~
+    literal'09=>~ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1~
+    literal'10=>~ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1~
+    literal'11=>~ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1~
+    literal'12=>~ADD_STORE_ITEM "mh#wand2" LAST #12 #0 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "garlena"
+    edits	= "patch_data"
+  END
+
+  // L3 - Portal Maze - Demon Wraith's lair
+  //
+  // mh#brac7 - Gloves of Evasion (on Demon Wraith's victims)
+
+  MAKE_PATCH
+    add_item_inline'2=>~match=>"parent_index = 1" item_resource=>"mh#brac7"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar3014"
+    edits	= "patch_data"
+  END
+
+
+  // L4 - Machine of Lum the Mad
+  // 
+  // mh#tome1 - Book of Exalted Deeds
+
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#tome1" item_charges_1=>1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar3017"
+    edits	= "patch_data"
+  END
+
+
+  // L4 - Demilich's Lair
+  //
+  // mh#tome5 - Libram of Ineffable Damnation
+
+  MAKE_PATCH
+    add_item_inline=>~match=>"parent_index = 2" item_resource=>"mh#tome5" item_charges_1=>1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar3027"
+    edits	= "patch_data"
+  END
+
+
+  // L5 - Dragon's Lair
+  //
+  // mh#shld4 - Shield of the Three Kings +5
+  // mh#comp7 - Green Dragon Scales
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "fsdragon"
+    editstring	= ~add_items=>"mh#shld4(inv) mh#comp7(inv)"~
+  END
+END	// watchers_keep
+
+

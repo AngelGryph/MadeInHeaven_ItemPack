@@ -21,26 +21,20 @@ BEGIN
 
   // Arcana Archives
   //
-  // mh#dart3 - Zilzanzer's Magnificent Darts +1
-  // mh#potn1 - Oil of Acid Resistance
   // mh#potn4 - Oil of Disenchantment
   // mh#potn6 - Alchemist's Fire
   // mh#potn7 - Flask of Acid
   // mh#ring4 - Ring of White Bone
-  // mh#ring9 - Ring of Thex
   // mh#tome3 - Libram of Silver Magic
   // mh#wand1 - Wand of Illusions
 
   MAKE_PATCH
-    literal'01=>~ADD_STORE_ITEM "mh#dart3" AFTER "helm23" #12 #0 #0 "identified" #12~
-    literal'02=>~ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1~
-    literal'03=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #9~
-    literal'04=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5~
-    literal'05=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10~
-    literal'06=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
-    literal'07=>~ADD_STORE_ITEM "mh#ring9" AFTER "ring02" #0 #0 #0 "identified" #1~
-    literal'08=>~ADD_STORE_ITEM "mh#ring4" AFTER "ring02" #12 #0 #0 "identified" #1~
-    literal'09=>~ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn55" #1 #0 #0 "identified" #5~
+    literal'3=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10~
+    literal'4=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10~
+    literal'5=>~ADD_STORE_ITEM "mh#ring4" AFTER "ring02" #12 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -52,11 +46,9 @@ BEGIN
   // Temple of Waukeen
   //
   // mh#bull1 - Priest's Bullet
-  // mh#potn3 - Philter of Purification
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #10~
-    literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6~
+    literal=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #10~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -67,13 +59,12 @@ BEGIN
 
   // Castle Saradush
   //
-  // mh#brac6 - Silver Bracers of Kedl (on Karun the Black)
   // mh#staf4 - Staff of the Legion +5 (on Karun the Black)
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "gromg08"
-    editstring	= ~remove_items=>"staf18" add_items=>"mh#brac6(gloves) mh#staf4(weapon1)"~
+    editstring	= ~remove_items=>"staf18" add_items=>"mh#staf4(weapon1)"~
   END
 
 
@@ -143,13 +134,9 @@ BEGIN
   // Temple of Waukeen
   //
   // mh#bull1 - Priest's Bullet
-  // mh#potn3 - Philter of Purification
-  // mh#shld7 - Waukeen's Defender +2
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #10~
-    literal'2=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #6~
-    literal'3=>~ADD_STORE_ITEM "mh#shld7" LAST #0 #0 #0 "identified" #1~
+    literal=>~ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #10~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

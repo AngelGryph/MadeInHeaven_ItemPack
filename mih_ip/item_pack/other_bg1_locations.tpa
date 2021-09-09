@@ -8,16 +8,10 @@ BEGIN
   //
   // mh#amul1 - Amulet against Undead
   // mh#bull1 - Priest's Bullet
-  // mh#belt4 - Girdle of Beatification
-  // mh#potn3 - Philter of Purification
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
-
-    literal'2=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
-
-    literal'3=>~ADD_STORE_ITEM "mh#belt4" LAST #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3~
+    literal'1=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -30,9 +24,7 @@ BEGIN
   //
   // mh#amul3 - Gem of Insight
   // mh#amul5 - Brooch of Shielding
-  // mh#dart3 - Zilzanzer's Magnificent Darts +1
   // mh#misc3 - Crystal Ball
-  // mh#potn1 - Oil of Acid Resistance
   // mh#potn2 - Potion of Clairvoyance
   // mh#potn4 - Oil of Disenchantment
   // mh#potn5 - Potion of Longevity
@@ -41,17 +33,15 @@ BEGIN
   // clck20   - Cloak of the Shield (from Durlag's Tower)
 
   MAKE_PATCH
-    literal'01=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
-    literal'02=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3~
-    literal'03=>~ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3~
-    literal'04=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
-    literal'05=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #1~
-    literal'06=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #5~
-    literal'07=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
-    literal'08=>~ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1~
-    literal'09=>~ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1~
-    literal'10=>~ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1~
-    literal'11=>~ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3~
+    literal'2=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
+    literal'3=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #5~
+    literal'5=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
+    literal'6=>~ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1~
+    literal'7=>~ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1~
+    literal'8=>~ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1~
+    literal'9=>~ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -107,22 +97,6 @@ BEGIN
   // Nashkel / Carnival
   // ==================
 
-  // The "Badass Merchant" (may need BG1UB to encounter)
-  //
-  // Oil of Acid Resistance
-  // Philter of Purification
-
-  MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
-    literal'2=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn45" #1 #0 #0 "identified" #3~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_store
-    STR_VAR
-    store	= "sto4905"
-    edits	= "patch_data"
-  END
-
   // Nashkel Mine Entrance
   //
   // mh#swrd7 - Mirthal +1 (equipped on Greywolf, replaces Varscona +2)
@@ -141,13 +115,11 @@ BEGIN
   // Temple of Yondala
   //
   // mh#bull1 - Priest's Bullet
-  // mh#potn3 - Philter of Purification
   // mh#robe3 - Robe of the Pure Heart
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
-    literal'2=>~ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3~
+    literal'1=>~ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -173,7 +145,6 @@ BEGIN
 
   // Stolen by the Bandits
   //
-  // mh#staf2 - Spendelard's Protector (equipped by Venkt)
   // hamm03   - Aishideena +2 (equipped on Taugosh, from Bassilus)
   // sw1h06   - Varscona +2 (equipped on Raemon, from Greywolf)
 
@@ -190,11 +161,6 @@ BEGIN
     editstring	= ~remove_items=>"sw1h04" add_items=>"sw1h06(weapon1)~
   END
 
-  LAUNCH_ACTION_FUNCTION edit_creature
-    STR_VAR
-    creature	= "venkt"
-    editstring	= ~remove_items=>"staf02" add_items=>"mh#staf2(weapon1)~
-  END
 
   // Hidden in the Tents
   //
@@ -241,17 +207,6 @@ BEGIN
   END
 
 
-  // Orothiar Mines
-  //
-  // mh#dagg2 - Spinesheath +1 (on Natasha)
-
-  LAUNCH_ACTION_FUNCTION edit_creature
-    STR_VAR
-    creature	= "natash"
-    editstring	= ~remove_items=>"dagg01" add_items=>"mh#dagg2(weapon1)~
-  END
-
-
   // =============
   // Baldur's Gate
   // =============
@@ -260,12 +215,10 @@ BEGIN
   //
   // mh#amul8 - Medallion of Faith
   // mh#bull1 - Priest's Bullet
-  // mh#potn3 - Philter of Purification
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #5~
-    literal'2=>~ADD_STORE_ITEM "mh#amul8" LAST #1 #1 #1 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
+    literal'1=>~ADD_STORE_ITEM "mh#amul8" LAST #1 #1 #1 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
   END
 
 
@@ -273,12 +226,10 @@ BEGIN
   //
   // mh#amul2 - Necklace of Prayer Beads
   // mh#bull1 - Priest's Bullet
-  // mh#potn3 - Philter of Purification
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#potn3" AFTER "potn20" #1 #0 #0 "identified" #3~
-    literal'2=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
+    literal'1=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -292,9 +243,7 @@ BEGIN
   //
   // mh#amul4 - Mirror Amulet
   // mh#clck8 - Cloak of Flame
-  // mh#dart3 - Zilzanzer's Magnificent Darts +1
   // mh#misc5 - Horn of Goodness/Evil
-  // mh#potn1 - Oil of Acid Resistance
   // mh#potn4 - Oil of Disenchantment
   // mh#potn5 - Potion of Longevity
   // mh#potn6 - Alchemist's Fire
@@ -302,16 +251,14 @@ BEGIN
   // mh#staf6 - Staff of Swarming Insects
 
   MAKE_PATCH
-    literal'01=>~ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1~
-    literal'03=>~ADD_STORE_ITEM "mh#clck8" AFTER "leat10" #1 #0 #0 "identified" #1~
-    literal'04=>~ADD_STORE_ITEM "mh#dart3" AFTER "dart02" #5 #0 #0 "identified" #12~
-    literal'05=>~ADD_STORE_ITEM "mh#misc5" AFTER "wand11" #1 #0 #0 "identified" #12~
-    literal'06=>~ADD_STORE_ITEM "mh#potn1" AFTER "potn02" #1 #0 #0 "identified" #3~
-    literal'07=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
-    literal'08=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1~
-    literal'09=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
-    literal'10=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
-    literal'12=>~ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#clck8" AFTER "leat10" #1 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#misc5" AFTER "wand11" #1 #0 #0 "identified" #12~
+    literal'4=>~ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3~
+    literal'5=>~ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1~
+    literal'6=>~ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5~
+    literal'7=>~ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5~
+    literal'8=>~ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

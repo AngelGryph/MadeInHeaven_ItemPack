@@ -1,0 +1,58 @@
+@0    = ~Ring of Thex~
+@1    = ~This ornate silver ring is set with a single red stone of an unknown type. The ring is believed to have been created by an adventuring mage named Thex. Thex claimed she was tired of sitting back and flinging spells at enemies while the rest of her adventuring party was able to get into the thick of battle. She felt that the ring would allow her to become what she chose to call a Battlemage. The Ring of Thex was the crowning achievement of her short career.
+
+STATISTICS:
+
+Equipped abilities:
+- Hit Points: +20
+- Armor Class: +4
+- Saving Throws: +2
+
+Weight: 0~
+@2    = ~Heaven and Earth +3~
+@3    = ~Mace +3: 'Heaven and Earth'
+
+A fearsome aura of power emanates from this massive weapon. Sharp, powerful lines adorn the shaft of this mace, which streak directly to a perfect sphere that serves as this weapon's contact point. Perfectly curved spikes emanate from the perfectly-shaped sphere, yielding an image that is at once both arresting, yet awe-inspiring. A vibrant, royal purple hue surrounds this weapon of power.
+
+Upon holding the weapon it is instantly apparent that only those that are pure of heart can truly wield it.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 2d10+3 (crushing)
+Speed Factor: 2
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 12 Strength
+
+Weight: 10~
+@4    = ~Deionarra's Wedding Ring~
+@5    = ~You received this ivory ring from the strange scarred man you encountered in the Abyss.  It radiates a slight glow, and though it is cold to the touch, the chill is strangely comforting. The ivory band stretches to fit the width of any finger.
+
+Among the many secrets of the Society of Sensation is the ability to shape a peculiar stone from Elysium, dubbed "soulstone".  While this stone is not as powerful as the sensory stones, the soul stone is said to carry an imprint of the shaper's feelings.  These rings are often used in Sensate marriage ceremonies, each ring inscribed with the feelings of the other.
+
+When wearing Deionarra's ring, you gain added protection from all attacks, and additional protection from any piercing attacks... presumably, the ring's purpose is to shield the heart from shock and trauma, and this extends to any physical pain the wearer suffers as well.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1, additional +3 vs. Piercing
+- Saving Throws: +1
+
+Weight: 0~
+@6    = ~Cespenar's modifications to Deionarra's ring have greatly increased its power.  It now burns with a cold white flame that does no harm, in fact it feels strangely comforting.
+
+Among the many secrets of the Society of Sensation is the ability to shape a peculiar stone from Elysium, dubbed "soulstone".  While this stone is not as powerful as the sensory stones, the soul stone is said to carry an imprint of the shaper's feelings.  These rings are often used in Sensate marriage ceremonies, each ring inscribed with the feelings of the other.
+
+When wearing Deionarra's ring, you gain added protection from all attacks, and additional protection from any piercing attacks... presumably, the ring's purpose is to shield the heart from shock and trauma, and this extends to any physical pain the wearer suffers as well.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +3, additional +3 vs. Piercing
+- Saving Throws: +3
+
+Weight: 0~
+
+

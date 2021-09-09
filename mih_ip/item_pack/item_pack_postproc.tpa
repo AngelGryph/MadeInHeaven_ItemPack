@@ -44,17 +44,6 @@ BEGIN
       edits	= "patch_data"
     END
   END
-
-
-  // Three White Doves
-
-  INCLUDE "%MOD_FOLDER%/shared/disrupt/setup_disrupt.tpa"
-
-  LAUNCH_ACTION_FUNCTION edit_item
-    STR_VAR
-    item	= "mh#mace2"
-    edits	= "disrupt"
-  END
 END	// item_pack_postproc
 
 
