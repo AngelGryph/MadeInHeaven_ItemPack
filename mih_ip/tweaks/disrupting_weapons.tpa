@@ -1,11 +1,5 @@
 DEFINE_ACTION_FUNCTION disrupting_weapons
 BEGIN
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "fix_race_class"
-    locbase	= "shared"
-  END
-
   INCLUDE "%MOD_FOLDER%/shared/disrupt/setup_disrupt.tpa"
 
   LAUNCH_ACTION_FUNCTION edit_item

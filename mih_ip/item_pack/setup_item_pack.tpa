@@ -8,12 +8,6 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "fix_race_class"
-    locbase	= "shared"
-  END
-
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
     file	= "item_pack_preproc"
     tra		= "item_pack"
   END
