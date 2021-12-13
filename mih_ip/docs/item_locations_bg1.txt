@@ -1,13 +1,12 @@
 mh#amul1 Amulet against Undead			Song of the Morning (shop)
 mh#amul2 Necklace of Prayer Beads		The Lady's Hall (shop)
 mh#amul3 Gem of Insight				High Hedge (shop)
-mh#amul4 Mirror Amulet				Sorcerous Sundries (shop)
+mh#amul4 Mirror of Illusions			Sorcerous Sundries (shop)
 mh#amul5 Brooch of Shielding			High Hedge (shop)
 mh#amul8 Medallion of Faith			High House of Wonders (shop)
 
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
 mh#belt3 Storm's Garter				Centeol's Lair
-mh#belt4 Girdle of Beatification		Song of the Morning (shop)
 
 mh#boot1 Boots of the Master Ninja		Black Lily (shop)
 mh#boot3 Boots of Balance			Black Alaric's Cave (treasure)
@@ -34,17 +33,13 @@ mh#clck3 Cloak of Arachnida			Black Lily (shop)
 mh#clck8 Cloak of Flame				Sorcerous Sundries (shop)
 
 mh#comp1 Meteoric Iron				Balduran's Ship (chest)
-mh#comp2 Mithral Ore				Durlag's Tower D4 (sack)
+mh#comp2 Arandur Ore				Durlag's Tower D4 (sack)
 mh#comp3 Lux Veritatis				Gullykin (event)
 mh#comp4 Rusty Katana				Durlag's Tower D4 (slime)
 mh#comp5 Unicorn Horn				Bandit Camp (sack)
 
-mh#dagg2 Spinesheath +1				Cloakwood Mine (battle)
-
 mh#dart1 Lein's Fiery Darts			Ulcaster Ruins (body)
 mh#dart2 Chandler's Icy Darts			Ulcaster Ruins (body)
-mh#dart3 Zilzanzer's Magnificent Darts +1	High Hedge (shop)
-mh#dart4 Silver Dart of Selune +2		Dradeel's House (table)
 
 mh#flai1 Slimecrusher +1			Brokk's Forge (shop)
 
@@ -70,7 +65,6 @@ mh#plat1 Dwarven Full Plate +2			Brokk's Forge (event)
 
 mh#potn1 Oil of Acid Resistance			High Hedge (shop)
 mh#potn2 Potion of Clairvoyance			High Hedge (shop)
-mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			High Hedge (shop)
 mh#potn5 Potion of Longevity			High Hedge (shop)
 mh#potn6 Alchemist's Fire			High Hedge (shop)
@@ -86,7 +80,6 @@ mh#robe3 Robe of the Pure Heart			Gullykin (shop)
 
 mh#sper1 Alicorn Spear +2			Brokk's Forge (event)
 
-mh#staf2 Spendelard's Protector +1		Bandit Camp (battle)
 mh#staf6 Staff of Swarming Insects +2		Sorcerous Sundries (shop)
 
 mh#shld1 Meteoric Shield +2			Brokk's Forge (event)

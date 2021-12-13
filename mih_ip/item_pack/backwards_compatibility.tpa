@@ -12,7 +12,6 @@ BEGIN
 
 
   // mh#dagg3 - Golemblight +2
-  // mh#dart4 - Dart of Selune +2
   // mh#flai1 - Slime Crusher +1
   // mh#mace1 - Radiant Star +1
   // mh#swrd2 - Smythe's Slicer +1
@@ -23,7 +22,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    item	= "mh#dagg3 mh#dart4 mh#flai1 mh#mace1 mh#swrd2 mh#swrda"
+    item	= "mh#dagg3 mh#flai1 mh#mace1 mh#swrd2 mh#swrda"
     editstring	= ~enchantment=>4 delete_effect_global=>"opcode = 344"~
   END
 

@@ -40,7 +40,7 @@ BEGIN
 
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
-      item	= "mh#ioun1 mh#ioun2 mh#ioun3 mh#ioun4 mh#ioun5 mh#ioun6 mh#ioun7"
+      item	= "mh#ioun1 mh#ioun2 mh#ioun3 mh#ioun4 mh#ioun5 mh#ioun6"
       edits	= "patch_data"
     END
   END

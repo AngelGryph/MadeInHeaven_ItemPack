@@ -368,18 +368,16 @@ BEGIN
   //
   // mh#clck1 - Mutamin's Cloak
   // mh#dagg3 - Golemblight +2
-  // mh#dart4 - Silver Dart of Selune +2
   // mh#lbow1 - Bow of Eletha
   // mh#misc1 - Pearl of Power
   // mh#swrd1 - Terminus Est +2
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#dart4" AFTER "dart01" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#clck1" AFTER "clck03" #0 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#clck1" AFTER "clck03" #0 #0 #0 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#dagg3" AFTER "dagg15" #0 #0 #0 "identified" #1~
-    literal'4=>~ADD_STORE_ITEM "mh#lbow1" AFTER "bow04" #0 #0 #0 "identified" #1~
-    literal'5=>~ADD_STORE_ITEM "mh#swrd1" AFTER "sw1h02" #0 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#misc1" AFTER "belt10" #1 #0 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#lbow1" AFTER "bow04" #0 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#swrd1" AFTER "sw1h02" #0 #0 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#misc1" AFTER "belt10" #1 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

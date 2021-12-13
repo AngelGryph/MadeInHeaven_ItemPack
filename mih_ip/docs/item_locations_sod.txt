@@ -23,7 +23,6 @@ mh#dart3 Zilzanzer's Magnificent Darts +1	Sorcerous Sundries (shop)
 
 mh#ioun1 Pale Blue Ioun Stone			Kazzrem (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
-*mh#ioun7 Dark Indigo Ioun Stone		???
 
 mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 

@@ -1262,21 +1262,8 @@ Weight: 1~
 //@235  = ~~
 //@236  = ~~
 //@237  = ~~
-@238  = ~Silver Dart of Selune +2~
-@239  = ~This small but deadly weapon has been blessed by Selune, the Moon Maiden, and as such has certain powers over werewolves and other creatures affected by the moon.
-
-STATISTICS:
-
-Combat abilities:
-- Returns to the wielder's hand when thrown
-
-THAC0: +2, +4 vs. lycanthropes
-Damage: 1d3+2, +4 vs. lycanthropes (missile)
-Speed Factor: 0
-Proficiency Type: Dart
-Type: One-handed
-
-Weight: 0~
+//@238  = ~~
+//@239  = ~~
 @240  = ~Girdle of Storm Giant Strength~
 @241  = ~This incredibly powerful belt grants the wearer the immense strength of a storm giant, the physically strongest mortal beings to walk Faerun except for dragons.  Exactly who made it and why is not known, but some suspect the touch of the divine in it.  This is further supported by its tendency to show up whenever there is an event of divine significance playing out, only to mysteriously disappear soon afterwards.
 
@@ -1550,15 +1537,8 @@ Requires:
  11 Strength
 
 Weight: 8~
-@299  = ~Dark Indigo Ioun Stone~
-@300  = ~This deep blue ioun stone resembles the darkening sky during twilight.  It has a rather serene feel about it.
-
-STATISTICS:
-
-Equipped abilities:
-- Immune to critical hits and backstabs
-
-Weight: 2~
+//@299  = ~~
+//@300  = ~~
 @301  = ~Alchemist's Fire~
 @302  = ~This is a bottle of alchemist's fire, a secret mixture of oils and volatile substances that ignites on contact with the air.  While it is not explosive like an Oil of Fiery burning, the substance still burns with a very hot flame, inclicting fire damage on whatever the bottle is thrown at.  It also has the advantage of being a completely non-magical effect, so it can damage even things that resist magic.
 

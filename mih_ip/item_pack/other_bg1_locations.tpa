@@ -388,12 +388,10 @@ BEGIN
 
   // Dradeel's Cabin
   //
-  // mh#dart4 - Silver Dart of Selune +2
   // mh#robe1 - Robe of the Elements
 
   MAKE_PATCH
     add_item_inline'1=>~match=>"parent_index = 0" item_resource=>"mh#robe1"~
-    add_item_inline'2=>~match=>"parent_index = 1" item_resource=>"mh#dart4"~
   END
 
   LAUNCH_ACTION_FUNCTION edit_area

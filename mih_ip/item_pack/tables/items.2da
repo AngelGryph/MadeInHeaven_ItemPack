@@ -65,7 +65,6 @@ mh#dagg3	313	314	*	*	0x0	*		*
 
 mh#dart1	222	223	*	*	0x0	*		*
 mh#dart2	224	225	*	*	0x0	*		*
-mh#dart4	238	239	*	*	0x0	*		*
 
 mh#drag1	287	288	317	318	0x2	*		*
 mh#drag2	321	322	317	318	0x2	*		poison,disease,poison_resistance
@@ -91,7 +90,6 @@ mh#ioun3	187	188	*	*	0x0	*		*
 mh#ioun4	189	190	*	*	0x0	*		*
 mh#ioun5	226	227	*	*	0x0	*		*
 mh#ioun6	228	229	*	*	0x0	*		*
-mh#ioun7	299	300	*	*	0x0	*		*
 
 mh#lbow1	57	58	*	*	0x0	*		*
 
