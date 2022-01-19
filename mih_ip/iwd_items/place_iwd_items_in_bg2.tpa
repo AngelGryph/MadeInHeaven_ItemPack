@@ -45,7 +45,7 @@ BEGIN
   // mh#iwd13 - Shield of the Revenant +2
 
   MAKE_PATCH
-    literal'5=>~ADD_STORE_ITEM "mh#iwd13" AFTER "staf05" #0 #1 #0 "identified" #1~
+    literal'5=>~ADD_STORE_ITEM "mh#iwd13" AFTER "staf05" #1 #0 #0 "identified" #1~
     literal'6=>~ADD_STORE_ITEM "mh#iwd06" AFTER "helm06" #1 #1 #1 "identified" #1~
     literal'9=>~ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1~
   END
@@ -119,7 +119,7 @@ BEGIN
   // mh#iwd02 - Girdle of Ogre Blood
 
   MAKE_PATCH
-    literal=>~ADD_STORE_ITEM "mh#iwd02" AFTER "shld22" #0 #0 #0 "identified" #1~
+    literal=>~ADD_STORE_ITEM "mh#iwd02" AFTER "shld22" #1 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

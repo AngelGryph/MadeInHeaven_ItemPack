@@ -3,7 +3,6 @@ mh#amul7 Medallion of the Arctic		Nazramu (shop)
 mh#hide2 White Skin of Umpluutu +3		Waizahb (shop)
 
 mh#belt2 Sunite Sash				Ziatar (battle)
-mh#belt5 Girdle of Ogre Blood			Nazramu (shop)
 mh#belt6 Girdle of Cloud Giant Strength		Avernus (event)
 
 mh#boot2 Boots of Striding and Springing	Kazzrem (shop)
@@ -19,7 +18,6 @@ mh#dagg1 Catclaw +3				Nazramu (shop)
 
 mh#dart1 Lein's Fiery Darts			Kazzrem (shop)
 mh#dart2 Chandler's Icy Darts			Kazzrem (shop)
-mh#dart3 Zilzanzer's Magnificent Darts +1	Sorcerous Sundries (shop)
 
 mh#ioun1 Pale Blue Ioun Stone			Kazzrem (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
@@ -33,18 +31,14 @@ mh#potn3 Philter of Purification		Sorcerous Sundries (shop)
 mh#potn6 Alchemist's Fire			Sorcerous Sundries (shop)
 mh#potn7 Acid Flask				Sorcerous Sundries (shop)
 
-mh#ring8 Shield Ring				Lich Outpost (mage remains)
-
 mh#robe2 Robe of the Necromancer		Waizahb (shop)
 mh#robe4 Shadow Dancer's Robe			Nazramu (shop)
-mh#robe6 Ogi-Luc's Great Robe			Nazramu (shop)
 
 mh#shld3 Shield of the Phoenix +2		Temple of Cyric (chest)
 
 mh#sper2 Hadrion's Spear +3			Morentherene (battle)
 
 mh#staf1 Staff of Rumathil			Korlasz (battle)
-mh#staf3 Staff of Moradin's Breath		Kanaglym (chest)
 
 mh#swrd9 Cold Flame +3				Avernus (battle)
 

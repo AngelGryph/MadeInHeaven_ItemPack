@@ -7,11 +7,18 @@ BEGIN
   // Castle Saradush
   //
   // mh#iwd03 - Silver Bracers of Kedl (on Karun the Black)
+  // mh#iwd21 - Girdle of Labelas (on Gromnir Il-Khan)
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "gromg08"
     editstring	= ~add_items=>"mh#iwd03(gloves)"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "gromnir"
+    editstring	= ~add_items=>"mh#iwd21(belt,x1)"~
   END
 
 

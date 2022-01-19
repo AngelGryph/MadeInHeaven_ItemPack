@@ -18,5 +18,6 @@ mh#iwd17 Spendelard's Protector +1
 mh#iwd18 Staff of Moradin's Breath +2
 mh#iwd19 Amaunator's Legacy +3
 mh#iwd20 Pale Justice +4
+mh#iwd21 Girdle of Labelas
 
 

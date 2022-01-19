@@ -1,0 +1,9 @@
+mh#iwd02 Girdle of Ogre Blood			Nazramu (shop)
+mh#iwd05 Zilzanzer's Magnificent Darts +1	Sorcerous Sundries (shop)
+mh#iwd09 Philter of Purification		Sorcerous Sundries (shop)
+mh#iwd10 Shield Ring				Lich Outpost (mage remains)
+mh#iwd11 Edion's Ring of Wizardry		Naramu (shop)
+mh#iwd12 Ogi-Luc's Great Robe			Nazramu (shop)
+mh#iwd18 Staff of Moradin's Breath		Kanaglym (chest)
+
+

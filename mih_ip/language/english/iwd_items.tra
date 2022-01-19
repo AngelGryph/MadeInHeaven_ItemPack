@@ -293,5 +293,15 @@ Requires:
  6 Strength
 
 Weight: 5~
+@40   = ~Girdle of Labelas~
+@41   = ~A remnant from the holy shrine of Star Mausoleum in Myth Glaurach, this girdle was blessed by the avatar of Labelas Enoreth, elven god of time and longevity.  The high priest of Labelas typically wore the girdle in day-to-day activities as well as battle.  Made of alternating bands of bronze and gold, the fine belt was a prize even without its magical properties.  When orcs sacked Myth Glaurach, this girdle was one of the most prominent items stolen.
 
+STATISTICS:
 
+Equipped abilities:
+- Free Action
+
+Charge abilities:
+- Improved Haste (1/day, self only)
+
+Weight: 2~
