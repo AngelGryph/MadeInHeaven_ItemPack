@@ -4,6 +4,7 @@ BEGIN
     delete_effect_global'1=>~opcode = 0 and paramater2 != 16~
     delete_effect_global'2=>~opcode = 144 and paramater2 = 1~
     delete_effect_global'3=>~opcode is_in [59 90 91 92]~
+    patch_effect_inline=>~match=>"opcode = 0 and parameter2 = 16" parmeter2=>"parameter2 - 2"~
     add_effect_global_inline'1=>~number_to_add=>2 opcode=>0 target=>1 timing=>2 parameter1=>1 parameter2=>"entry_index from [2 4]"~
     add_effect_global_inline'2=>~number_to_add=>4 opcode=>"entry_index from [59 90 91 92]" target=>1 timing=>2 parameter1=>"entry_index from [-15 -10 -10 -25]"~
     weight=>25

@@ -212,12 +212,7 @@ BEGIN
     edits	= "patch_data"
   END
   
-  LAUNCH_ACTION_FUNCTION edit_creature
-    STR_VAR
-    creature	= "bdziatar"
-    editstring	= ~add_items=>"mh#belt2(belt)"~
-  END
-  
+
   // Kanaglym
   //
   // mh#staf3 - Staff of Moradin's Breath

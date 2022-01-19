@@ -162,9 +162,8 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg2" OR GAME_INCLUDES "sod" @4
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "dragon_scale_mail"
-  tra		= "dragon_scale_mail"
   location	= "tweaks"
-  tra		= "item_tweaks"
+  tra		= "dragon_scale_mail"
 END
 
 
