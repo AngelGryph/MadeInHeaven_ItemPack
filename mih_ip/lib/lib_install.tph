@@ -474,15 +474,24 @@ BEGIN
 
       INNER_ACTION
       BEGIN
+        ACTION_IF IS_AN_INT "%name_tra%"
+	BEGIN
+	  OUTER_TEXT_SPRINT editstring "say_both_names=>%name_tra%"
+	END
+	ELSE
+	BEGIN
+	  OUTER_TEXT_SPRINT editstring ""
+	END
+
         LAUNCH_ACTION_FUNCTION install_creature
 	  STR_VAR
 	  creature	= "%resref%"
 	  location	= "%creatures_loc%"
-	  editstring	= "say_both_names=>%name_tra%"
+	  editstring
 	  locbase
 	END
 	
-      ACTION_IF "%vvc%" STRING_COMPARE_CASE "*"
+	ACTION_IF "%vvc%" STRING_COMPARE_CASE "*"
 	BEGIN
 	  LAUNCH_ACTION_FUNCTION make_effect
 	    STR_VAR
@@ -511,14 +520,14 @@ BEGIN
       READ_2DA_ENTRY_FORMER __MH_RESERVED_effects i 4 parameter3
       READ_2DA_ENTRY_FORMER __MH_RESERVED_effects i 5 dicenum
       READ_2DA_ENTRY_FORMER __MH_RESERVED_effects i 6 dicesize
-      READ_2DA_ENTRY_FORMER __MH_RESERVED_effects i 7 resource
+      READ_2DA_ENTRY_FORMER __MH_RESERVED_effects i 7 summon
 
       INNER_ACTION
       BEGIN
         LAUNCH_ACTION_FUNCTION make_effect
           STR_VAR
 	  effect	= "%resref%"
-	  editstring	= ~opcode=>%opcode% timing=>1 parameter1=>%parameter1% parameter2=>%parameter2% dicenum=>%dicenum% dicesize=>%dicesize% resource=>"{literal:%resource%}"~
+	  editstring	= ~litvar_summon=>%summon% opcode=>%opcode% timing=>1 parameter1=>%parameter1% parameter2=>%parameter2% dicenum=>%dicenum% dicesize=>%dicesize% resource=>summon~
         END
       END
     END
