@@ -34,3 +34,12 @@ mh#swrd5	12	3		0x00080000	0		2	4	*
 mh#msc5g	146	0		1		0		0	0	mh#msc5g
 mh#msc5e	146	0		1		0		0	0	mh#msc5e
 mh#mace2	12	4		0x00000000	0		1	6	*	
+bearcasu	67	5		0		0		0	0	bearcasu
+bearbrsu	67	5		0		0		0	0	bearbrsu
+bearposu	67	5		0		0		0	0	bearposu
+catjagsu	67	5		0		0		0	0	catjagsu
+catliosu	67	5		0		0		0	0	catliosu
+wolfdisu	67	5		0		0		0	0	wolfdisu
+wolfwisu	67	5		0		0		0	0	wolfwisu
+
+
