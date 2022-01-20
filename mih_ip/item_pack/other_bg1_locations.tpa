@@ -97,6 +97,22 @@ BEGIN
   // Nashkel / Carnival
   // ==================
 
+  // The Northern Light (Ries Kensiddar)
+  //
+
+  MAKE_PATCH
+    literal'1=>~ADD_STORE_ITEM "mh#ring2" LAST #1 #1 #0 "identified" #1~
+    literal'2=>~ADD_STORE_ITEM "mh#ring3" LAST #1 #1 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#brac9" LAST #1 #1 #0 "identified" #1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store       = "%tutu_var%inn4801"
+    edits       = "patch_data"
+  END
+
+
   // Nashkel Mine Entrance
   //
   // mh#swrd7 - Mirthal +1 (equipped on Greywolf, replaces Varscona +2)

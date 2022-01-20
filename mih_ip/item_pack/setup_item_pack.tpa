@@ -35,8 +35,8 @@ BEGIN
 
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
-      file	= "phendras_scrolls"
-      tra	= "phendras_scrolls"
+      file	= "ries_kensiddar"
+      tra	= "ries_kensiddar"
     END
 
     LAUNCH_ACTION_FUNCTION run
@@ -56,7 +56,7 @@ BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
       file	= "thrix_wager"
-      tra		= "thrix_wager"
+      tra	= "thrix_wager"
     END
 
     LAUNCH_ACTION_FUNCTION run
