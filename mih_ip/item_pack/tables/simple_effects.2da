@@ -1,45 +1,45 @@
 2DA V1.0
-*
-REFRES		OPCODE	PARAMETER1	PARAMETER2	PARAMETER3	DICENUM	DICESZ	RESOURCE
-mh#undh1	178	4		3		1		0	0	*
-mh#undh2	178	4		3		2		0	0	*
-mh#undd2	179	4		3		2		0	0	*
-mh#undh3	178	4		3		3		0	0	*
-mh#undd3	179	4		3		3		0	0	*
-mh#kbdh1	178	112		4		1		0	0	*
-mh#lych2	178	122		4		2		0	0	*
-mh#demh2	178	121		4		2		0	0	*
-mh#demh3	178	121		4		3		0	0	*
-mh#spdh2	178	116		4		2		0	0	*
-mh#slmh3	178	119		4		3		0	0	*
-mh#elmh2	178	145		4		2		0	0	*
-mh#golh2	178	144		4		2		0	0	*
-mh#golh3	178	144		4		3		0	0	*
-mh#gold3	179	144		4		3		0	0	*
-mh#evlh2	178	3		8		2		0	0	*
-mh#evlh3	178	3		8		3		0	0	*
-mh#evld3	179	3		8		3		0	0	*
-mh#slsh1	12	1		0x01000000	0		0	0	*
-mh#slsh2	12	2		0x01000000	0		0	0	*
-mh#slsh3	12	3		0x01000000	0		0	0	*
-mh#prce2	12	2		0x00100000	0		0	0	*
-mh#crsh3	12	3		0x00000000	0		0	0	*
-mh#vphit	13	0		8		0		0	0	*
-mh#vpmsg	139	64285		0		0		0	0	*
-mh#amul7	146	1		1		0		0	0	mh#amul7
-mh#bull1	12	2		0x00400000	0		2	4	*
-mh#dagg3	12	0		0x00100000	0		2	8	*
-mh#plat4	0	5		0		0		0	0	*
-mh#swrd5	12	3		0x00080000	0		2	4	*
-mh#msc5g	146	0		1		0		0	0	mh#msc5g
-mh#msc5e	146	0		1		0		0	0	mh#msc5e
-mh#mace2	12	4		0x00000000	0		1	6	*	
-bearcasu	67	5		0		0		0	0	bearcasu
-bearbrsu	67	5		0		0		0	0	bearbrsu
-bearposu	67	5		0		0		0	0	bearposu
-catjagsu	67	5		0		0		0	0	catjagsu
-catliosu	67	5		0		0		0	0	catliosu
-wolfdisu	67	5		0		0		0	0	wolfdisu
-wolfwisu	67	5		0		0		0	0	wolfwisu
+$
+REFRES		OPCODE	PARAMETER1	PARAMETER2	PARAMETER3	PARAMETER4	DICENUM	DICESZ	RESOURCE	VVC
+mh#undh1	178	4		3		1		0		0	0	$		$
+mh#undh2	178	4		3		2		0		0	0	$		$
+mh#undd2	179	4		3		2		0		0	0	$		$
+mh#undh3	178	4		3		3		0		0	0	$		$
+mh#undd3	179	4		3		3		0		0	0	$		$
+mh#kbdh1	178	112		4		1		0		0	0	$		$
+mh#lych2	178	122		4		2		0		0	0	$		$
+mh#demh2	178	121		4		2		0		0	0	$		$
+mh#demh3	178	121		4		3		0		0	0	$		$
+mh#spdh2	178	116		4		2		0		0	0	$		$
+mh#slmh3	178	119		4		3		0		0	0	$		$
+mh#elmh2	178	145		4		2		0		0	0	$		$
+mh#golh2	178	144		4		2		0		0	0	$		$
+mh#golh3	178	144		4		3		0		0	0	$		$
+mh#gold3	179	144		4		3		0		0	0	$		$
+mh#evlh2	178	3		8		2		0		0	0	$		$
+mh#evlh3	178	3		8		3		0		0	0	$		$
+mh#evld3	179	3		8		3		0		0	0	$		$
+mh#slsh1	12	1		0x01000000	0		0		0	0	$		$
+mh#slsh2	12	2		0x01000000	0		0		0	0	$		$
+mh#slsh3	12	3		0x01000000	0		0		0	0	$		$
+mh#prce2	12	2		0x00100000	0		0		0	0	$		$
+mh#crsh3	12	3		0x00000000	0		0		0	0	$		$
+mh#vphit	13	0		8		0		0		0	0	$		$
+mh#vpmsg	139	64285		0		0		0		0	0	$		$
+mh#amul7	146	1		1		0		0		0	0	mh#amul7	$
+mh#bull1	12	2		0x00400000	0		0		2	4	$		$
+mh#dagg3	12	0		0x00100000	0		0		2	8	$		$
+mh#plat4	0	5		0		0		0		0	0	$		$
+mh#swrd5	12	3		0x00080000	0		0		2	4	$		$
+mh#msc5g	146	0		1		0		0		0	0	mh#msc5g	$
+mh#msc5e	146	0		1		0		0		0	0	mh#msc5e	$
+mh#mace2	12	4		0x00000000	0		0		1	6	$		$
+bearcasu	67	5		0		0		0		0	0	bearcasu	spanisum
+bearbrsu	67	5		0		0		0		0	0	bearbrsu	spanisum
+bearposu	67	5		0		0		0		0	0	bearposu	spanisum
+catjagsu	67	5		0		0		0		0	0	catjagsu	spanisum
+catliosu	67	5		0		0		0		0	0	catliosu	spanisum
+wolfdisu	67	5		0		0		0		0	0	wolfdisu	spanisum
+wolfwisu	67	5		0		0		0		0	0	wolfwisu	spanisum
 
 
