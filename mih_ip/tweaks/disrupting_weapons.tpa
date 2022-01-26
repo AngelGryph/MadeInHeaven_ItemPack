@@ -1,11 +1,14 @@
 DEFINE_ACTION_FUNCTION disrupting_weapons
 BEGIN
-  INCLUDE "%MOD_FOLDER%/shared/disrupt/setup_disrupt.tpa"
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "setup_disrupt"
+    locbase	= "shared/disrupt"
+  END
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION pnp_disrupt
     STR_VAR
     item	= "ax1h10 blun12 blun25 deva hamm10 hamm11"
-    edits	= "disrupt"
   END
 END	// disrupting_weapons
 

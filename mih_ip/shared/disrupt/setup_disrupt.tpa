@@ -1,3 +1,17 @@
+DEFINE_ACTION_FUNCTION setup_disrupt
+BEGIN
+  LAUNCH_ACTION_FUNCTION edit_effect
+    STR_VAR
+    effect	= "die"
+    editstring	= "parameter2=>8"
+  END
+END	// setup_disrupt
+
+
+DEFINE_ACTION_FUNCTION pnp_disrupt
+  STR_VAR
+  item		= ""
+BEGIN
   ACTION_CLEAR_ARRAY disrupt
   ACTION_DEFINE_ASSOCIATIVE_ARRAY disrupt
   BEGIN
@@ -29,10 +43,11 @@
     clone_effect_inline=>~match=>"opcode = 177 and resource = DIE" resource=>"MESDIE"~
   END
 
-  LAUNCH_ACTION_FUNCTION edit_effect
+  LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
-    effect	= "die"
-    editstring	= "parameter2=>8"
+    item
+    edits	= disrupt
   END
+END	// pnp_disrupt
 
 

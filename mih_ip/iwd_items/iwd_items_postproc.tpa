@@ -17,12 +17,15 @@ BEGIN
 
   // Three White Doves
 
-  INCLUDE "%MOD_FOLDER%/shared/disrupt/setup_disrupt.tpa"
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "setup_disrupt"
+    locbase	= "shared/disrupt"
+  END
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION pnp_disrupt
     STR_VAR
     item	= "mh#iwd07"
-    edits	= "disrupt"
   END
 END	// iwd_items_postproc
 
