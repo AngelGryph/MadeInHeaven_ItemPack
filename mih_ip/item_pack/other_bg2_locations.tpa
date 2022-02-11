@@ -33,11 +33,9 @@ BEGIN
   // Arnolius the Dwarf
   //
   // mh#chan1 - Eversing +2
-  // mh#plat2 - Black Swan Armor +2
 
   MAKE_PATCH
-    literal'1=>~ADD_STORE_ITEM "mh#plat2" AFTER "plat10" #0 #0 #0 "identified" #1~
-    literal'2=>~ADD_STORE_ITEM "mh#chan1" AFTER "plat10" #0 #0 #0 "identified" #1~
+    literal'1=>~ADD_STORE_ITEM "mh#chan1" AFTER "plat10" #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

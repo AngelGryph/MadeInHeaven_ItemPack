@@ -59,7 +59,6 @@ BEGIN
   // clck05 - Cloak of Balduran
   //
   // - Nerf the overpowered magic resistance
-  // - Make it available in chapter 6 of BG2
 
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
@@ -68,12 +67,6 @@ BEGIN
     baldurans_cloak_magic_resistance	= value
   END
 
-  LAUNCH_ACTION_FUNCTION check_ini
-    STR_VAR
-    ini		= "baldurans_cloak_in_bg2"
-    RET
-    baldurans_cloak_in_bg2	= value
-  END
   MAKE_PATCH
     patch_effect_global_inline=>~match=>opcode=166 parameter1=>%baldurans_cloak_magic_resistance%~
     substitute_description=>~25\%=>%baldurans_cloak_magic_resistance%\%~
@@ -83,20 +76,6 @@ BEGIN
     STR_VAR
     item	= "clck05"
     edits	= "patch_data"
-  END
-
-
-  ACTION_IF is_bg2 AND baldurans_cloak_in_bg2
-  BEGIN
-    MAKE_PATCH
-      literal=>~ADD_STORE_ITEM "clck05" AFTER "chan11" #0 #0 #0 "identified" #1~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_store
-      STR_VAR
-      store	= "ribald3"
-      edits	= "patch_data"
-    END
   END
 
 

@@ -70,31 +70,6 @@ END
 OUTER_SPRINT $SFO_do_not_parse_arguments("STO_swap_items") ""
 
 
-DEFINE_PATCH_FUNCTION SPL_substitute_name
-   STR_VAR
-   arguments=""
-BEGIN
-   LAUNCH_PATCH_FUNCTION patch_text_entry
-     INT_VAR
-     loc=0x08
-     STR_VAR
-     function=substitute_string
-     arguments= "%arguments%"
-   END
-END
-OUTER_SPRINT $SFO_do_not_parse_arguments("SPL_substitute_name") ""
-
-
-DEFINE_PATCH_FUNCTION SPL_prepend_name
-  STR_VAR
-  arguments=""
-BEGIN
-  READ_STRREF NAME1 old_name
-  SAY_EVALUATED NAME1 ~%arguments% %old_name%~
-END
-OUTER_SPRINT $SFO_do_not_parse_arguments("SPL_prepend_name") ""
-
-
 DEFINE_ACTION_FUNCTION edit_itemexcl
   INT_VAR
   mask		= 0
@@ -262,6 +237,8 @@ BEGIN
   END
 
   LAUNCH_ACTION_FUNCTION edit_spell
+    INT_VAR
+    allow_missing	= 1
     STR_VAR
     spell	= "%spell_list%"
     edits	= "no_stacking"
