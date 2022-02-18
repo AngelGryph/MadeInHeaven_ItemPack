@@ -11,5 +11,6 @@ mh#iwd13 Shield of the Revenant +2		Temple of Lathander (shop)
 mh#iwd14 Waukeen's Defender +2			Temple of Waukeen (shop)
 mh#iwd15 Amaunator's Legacy +3			Temple Ruins (statue)
 mh#iwd20 Pale Justice +4			Suldanessenar (battle)
+mh#iwd23 Mace of Weal and Woe +1		Docks District (battle)
 
 

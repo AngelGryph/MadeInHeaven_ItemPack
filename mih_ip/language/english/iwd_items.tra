@@ -305,3 +305,33 @@ Charge abilities:
 - Improved Haste (1/day, self only)
 
 Weight: 2~
+@42   = ~Robe of Armory~
+@43   = ~There are a small number of these valuable gold and crimson robes floating around the realms, and all of them are the creation of an abjurer named Delgam of the Many Handsâ€”so called for his extensive use of the expression "on the other hand..." Delgam eschewed imbuing his items with offensive powers or other miscellaneous magic effects. Instead, he focused on what abjurers tend to focus on: defense. His robes were extremely popular, so much so that mages were coming to him from all over the world to demand that he make more for them. Delgam decided to fade into obscurity rather than cater to packs of power-hungry wizards. His robes are his most well-known legacy.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: 3
+- Physical Damage Resistance: +10%
+
+Weight: 5~
+@44   = ~The Mace of Weal and Woe +1~
+@45   = ~Even without magical enchantment, this particular piece of weaponry could fetch a healthy price for its exquisite craftsmanship. The shaft of the mace is a bronze cylinder reinforced with a steel bar down the center and six thin bands of polished steel, three above the haft and three below the head. The head itself is egg-shaped and made of red-stained cherry wood reinforced by decorative arcing bronze bands. Steel flanges stick out from the head in an asymmetrical pattern. The two largest flanges bear extensive etching. One is a classical image of Tymora with the word "WEAL" in Thorass. The other is an image of Beshaba with the word "WOE." Despite the delicate materials used in the mace's construction, it is exceptionally sturdy. The history of the mace is largely a mystery.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +1
+
+Combat abilities:
+- 13% chance hit target is cursed for 6 rounds (-1 penalty to THAC0; lowered morale)
+
+THAC0: +1, +2 vs. lawful creatures
+Damage: 1d6+2, +3 vs. lawful creatures (crushing)
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~

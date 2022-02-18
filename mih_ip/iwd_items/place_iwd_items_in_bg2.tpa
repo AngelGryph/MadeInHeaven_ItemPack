@@ -19,6 +19,40 @@ BEGIN
   END
 
 
+  // Adventurer's Market
+  //
+  // mh#iwd12 - Ogi-Luc's Great Robe
+
+  MAKE_PATCH
+    clone_item_inline=>~match=>"item_resource = chan11" item_resource=>"mh#iwd12" item_num_in_stock=>1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "ribald3"
+    edits	= "patch_data"
+  END
+
+
+  // ==============
+  // Docks District
+  // ==============
+
+  // Mad Cleric of Cyric
+
+  MAKE_PATCH
+    remove_items=>"staf01"
+    add_items=>"mh#iwd23(weapon1) shld04(shield)"
+    add_proficiencies=>"mace=>2 swordandshield=>2"
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "dcleric"
+    edits	= "patch_data"
+  END
+
+
   // =============
   // Planar Sphere
   // =============
@@ -45,9 +79,9 @@ BEGIN
   // mh#iwd13 - Shield of the Revenant +2
 
   MAKE_PATCH
-    literal'5=>~ADD_STORE_ITEM "mh#iwd13" AFTER "staf05" #1 #0 #0 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#iwd06" AFTER "helm06" #1 #1 #1 "identified" #1~
-    literal'9=>~ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1~
+    clone_item_inline'1=>~match=>"item_resource = staf05" item_resource=>"mh#iwd13" item_num_in_stock=>1~
+    clone_item_inline'2=>~match=>"item_resource = helm06" item_resource=>"mh#iwd06" item_num_in_stock=>1 item_charges_1=>1 item_charges_2=>1 item_charges_3=>1~
+    literal=>~ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

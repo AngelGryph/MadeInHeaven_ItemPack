@@ -3,5 +3,6 @@ mh#iwd04 Spinesheath +1				Cloakwood Mine (battle)
 mh#iwd05 Zilzanzer's Magnificent Darts +1	Various places (shops)
 mh#iwd09 Philter of Purification		(various temples)
 mh#iwd17 Spendelard's Protector +1		Bandit Camp (battle)
+mh#iwd23 Mace of Weal and Woe +1		Thunderhammer Smithy (shop)
 
 

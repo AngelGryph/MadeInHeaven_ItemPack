@@ -2,7 +2,9 @@
 $
 RESREF		OPCODE	PARAMETER1	PARAMETER2	PARAMETER3	PARAMETER4	DICENUM	DICESZ	RESOURCE	VVC
 mh#evlh3	178	3		8		3		0		0	0	$		$
+mh#lawh1	178	16		8		1		0		0	0	$		$
 mh#slsh3	12	3		0x01000000	0		0		0	0	$		$
+mh#crsh1	12	1		0x00000000	0		0		0	0	$		$
 mh#mace2	12	4		0x00000000	0		0		1	6	$		$
 mh#swrd5	12	3		0x00080000	0		0		2	4	$		$
 ogresu		67	5		0		0		0		0	0	ogresu		spmonsum

@@ -4,6 +4,21 @@ BEGIN
   // Beregost
   // ========
 
+  // Thunderhammer Smithy
+  //
+  // mh#iwd23 - Mace of Weal and Woe +1
+
+  MAKE_PATCH
+    clone_item_inline=>~match=>"item_resource = blun05" item_resource=>"mh#iwd23" number_in_stock=>1~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    STR_VAR
+    store	= "taerum"
+    edits	= "patch_data"
+  END
+
+
   // Song of the Morning Temple
   //
   // mh#iwd01 - Girdle of Beatification

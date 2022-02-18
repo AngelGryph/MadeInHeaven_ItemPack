@@ -1,0 +1,12 @@
+DEFINE_ACTION_FUNCTION mutual_excludes
+BEGIN
+  // Curse (divine) and Curse (item effect)
+
+  LAUNCH_ACTION_FUNCTION prevent_mutual_stacking
+    STR_VAR
+    ids_list	= "CLERIC_CURSE"
+    spell_list	= "mh#iwd23"
+  END
+END	// mutual_excludes
+
+

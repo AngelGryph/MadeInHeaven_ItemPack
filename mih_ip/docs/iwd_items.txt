@@ -19,5 +19,7 @@ mh#iwd18 Staff of Moradin's Breath +2
 mh#iwd19 Amaunator's Legacy +3
 mh#iwd20 Pale Justice +4
 mh#iwd21 Girdle of Labelas
+mh#iwd22 Robe of Armory
+mh#iwd23 Mace of Weal and Woe +1
 
 

@@ -5,5 +5,6 @@ mh#iwd09 Philter of Purification		(various temples)
 mh#iwd14 Mystery of the Dead +3			Sister Garlena (shop)
 mh#iwd15 Waukeen's Defender +2			Temple of Waukeen (shop)
 mh#iwd21 Girdle of Labelas			Saradush (battle)
+mh#iwd22 Robe of Armory				Vongoethe (battle)
 
 

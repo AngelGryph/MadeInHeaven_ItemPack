@@ -22,5 +22,7 @@ mh#iwd18	34	35	*	*	0x0	*		*
 mh#iwd19	36	37	*	*	0x0	*		*
 mh#iwd20	38	39	*	*	0x0	*		charm,fear
 mh#iwd21	40	41	*	*	0x0	*		entangle,grease,hold,slow,web,free_action
+mh#iwd22	42	43	*	*	0x0	*		*
+mh#iwd23	44	45	*	*	0x0	*		*
 
 
