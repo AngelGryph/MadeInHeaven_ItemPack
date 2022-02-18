@@ -3,7 +3,7 @@ BEGIN
   // Potion of Healing: 2d4+2
   // (as described in 2e DMG)
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
     STR_VAR
     item		= "potn08 ipotn08 potn25"
     editstring		= ~patch_effect_inline=>"match=>opcode=17 dicenum=>2 dicesize=>4 parameter1=>2" substitute_description=>"9=>2d4+2"~
@@ -13,7 +13,7 @@ BEGIN
   // Potion of Extra Healing: 3d8+3
   // (as described in 2e DMG)
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
     INT_VAR
     allow_missing	= 1
     STR_VAR
@@ -25,7 +25,7 @@ BEGIN
   // Potion of Superior Healing/Spirit Essence: 6d8+2
   // (as described in Encyclopedia Arcana)
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
     INT_VAR
     allow_missing	= 1
     STR_VAR

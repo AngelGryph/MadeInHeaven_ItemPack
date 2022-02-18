@@ -108,9 +108,14 @@ BEGIN
     editstring	= "say_description=>9"
   END
 
-  LAUNCH_ACTION_FUNCTION externalise_item_ability
-    STR_VAR
-    item	= "potn11"
+  // Be nice to IR users, only create the external spell if IR
+  // has not already done so.
+  ACTION_IF NOT FILE_EXISTS_IN_GAME "potn11.spl"
+  BEGIN
+    LAUNCH_ACTION_FUNCTION externalise_item_ability
+      STR_VAR
+      item	= "potn11"
+    END
   END
 
   MAKE_PATCH
@@ -140,7 +145,7 @@ BEGIN
     add_effect_inline'4=>~opcode=>240 timing=>1 target=>2 parameter2=>112 at_end=>1~
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
     STR_VAR
     item	= "potn17"
     edits	= "patch_data"
@@ -165,6 +170,17 @@ BEGIN
     STR_VAR
     item	= "shld20"
     edits	= "patch_data"
+  END
+
+
+  // wand03 - Wand of Magic Missile
+  //
+  // Wand generates two Magic Missiles, as per P&P.
+
+  LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
+    STR_VAR
+    item	= "wand03"
+    editstring	= ~patch_ability_inline=>"projectile=>69"~
   END
 
 

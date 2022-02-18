@@ -2,7 +2,7 @@ DEFINE_ACTION_FUNCTION iwd_healing_potions
 BEGIN
   // Potion of Extra Healing: 16
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
     INT_VAR
     allow_missing	= 1
     STR_VAR
@@ -13,7 +13,7 @@ BEGIN
 
   // Potion of Superior Healing/Spirit Essence: 25
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
     INT_VAR
     allow_missing	= 1
     STR_VAR

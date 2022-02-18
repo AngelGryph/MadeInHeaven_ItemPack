@@ -2,7 +2,7 @@ DEFINE_ACTION_FUNCTION bg1_wands
 BEGIN
   // Wand of Frost
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
     STR_VAR
     item	= "wand06"
     editstring	= ~patch_ability_inline=>"projectile=>191"~
@@ -26,7 +26,7 @@ BEGIN
     END
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
     STR_VAR
     item	= "wand07"
     edits	= "patch_data"
