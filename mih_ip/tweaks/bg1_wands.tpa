@@ -11,19 +11,9 @@ BEGIN
 
   // Wand of Lightning
 
-  ACTION_IF is_bg1 AND enhanced_edition AND NOT eet
-  BEGIN
-    MAKE_PATCH
-      patch_ability_inline=>~ability_target_count=>0~
-      patch_effect_inline=>~match=>"opcode = 12" dicenum=>6~
-    END
-  END
-  ELSE
-  BEGIN
-    MAKE_PATCH
-      patch_ability_inline=>~ability_target_count=>0~
-      patch_effect_inline=>~match=>"opcode = 12" dicenum=>3~
-    END
+  MAKE_PATCH
+    patch_ability_inline=>~ability_target_count=>0~
+    patch_effect_inline=>~match=>"opcode = 12" dicenum=>"if enhanced_edition then 6 else 3~
   END
 
   LAUNCH_ACTION_FUNCTION edit_item_or_external_spell

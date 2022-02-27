@@ -33,7 +33,7 @@ BEGIN
       BEGIN
         DEFINE_ASSOCIATIVE_ARRAY disrupt
         BEGIN
-	  "add_effect_inline'%serial%" => ~opcode=>177 parameter1=>%race_num% parameter2=>4 probability1=>"%chance% - 1" resource=>"DIE"~
+	  "add_effect_inline'%serial%" => ~opcode=>177 target=>2 timing=>1 parameter1=>%race_num% parameter2=>4 probability1=>"%chance% - 1" resist_dispel=>2 resource=>"DIE"~
         END
       END
     END
