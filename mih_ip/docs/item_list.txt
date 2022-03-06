@@ -30,14 +30,14 @@ mh#brac9 Gloves of Thievery			Unearthed Arcana (2e)
 mh#btax1 Foesplitter +1				Races of Faerun (3e)
 mh#btax2 Trollkiller +2
 mh#btax3 Redethemar +4				Elves of Evermeet (2e)
-*mh#btax4 Might of Heroes +3			Encyclopedia Magica (2e)
+mh#btax4 Might of Heroes +3			Encyclopedia Magica (2e)
 
 mh#bull1 Priest's Bullet			Libris Mortis (3.5e)
 mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2e)
 
 mh#chan1 Eversing +2				Castlevania Aria of Sorrow
 mh#chan2 Celestial Chain +2
-*mh#chan3 Mail of Thalaera +5			Elves of Evermeet (2e)
+mh#chan3 Mail of Thalaera +5			Elves of Evermeet (2e)
 
 mh#clck1 Mutamin's Cloak
 mh#clck2 Varazdin's Cloak of Protection
@@ -88,10 +88,12 @@ mh#ioun3 Bright Orange Ioun Stone		DMG (3e)
 mh#ioun4 Telkiira				Fallen Empires of Faerun (3e)
 mh#ioun5 Mottled Green Ioun Stone
 mh#ioun6 Maroon Star Ioun Stone			Encyclopedia Magica (2e)
+mh#ioun7 Blood of Lathander			Volo's Guide to the Dales (2e)
 
 mh#lbow1 Bow of Eletha				Elves of Evermeet (2e)
 
 mh#mace1 Radiant Star +1
+mh#mace2 Heaven's Wrath +4
 *mh#mace3 Skull Mace +2				Encyclopedia Magica (2e)
 
 mh#misc1 Pearl of Power				DMG (2e)
@@ -120,6 +122,7 @@ mh#ring4 Ring of White Bone			Complete Necromancer (2e)
 mh#ring5 Ring of Mind Shielding			DMG (2e)
 mh#ring6 Ring of Shooting Stars			DMG (2e)
 *mh#ring7 Spellbattle Ring			Volo's Guide to the North (2e)
+mh#ring8 Ring of Armory				Tome of Magic (2e)
 mh#ring9 Ring of Water Control			DMG (2e)
 mh#ringa Ring of the Lich			DMG (2e)
 mh#ringb Ring of the Hierophant			Complete Druid (2e)
@@ -129,6 +132,9 @@ mh#robe2 Robe of the Necromancer
 mh#robe3 Robe of the Pure Heart
 mh#robe4 Shadow Dancer's Robe
 mh#robe5 Nyalee's Robe of Stone
+
+mh#scrl1 Scroll of Heal				DMG (2e)
+mh#scrl2 Scroll of Resurrection			DMG (2e)
 
 mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1

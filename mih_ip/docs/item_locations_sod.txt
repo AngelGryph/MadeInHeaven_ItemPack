@@ -1,6 +1,6 @@
 mh#amul7 Medallion of the Arctic		Nazramu (shop)
 
-mh#hide2 White Skin of Umpluutu +3		Waizahb (shop)
+mh#btax4 Might of Heroes			Temple of Cyric (battle)
 
 mh#belt2 Sunite Sash				Ziatar (battle)
 mh#belt6 Girdle of Cloud Giant Strength		Avernus (event)
@@ -21,6 +21,8 @@ mh#dart2 Chandler's Icy Darts			Kazzrem (shop)
 
 mh#ioun1 Pale Blue Ioun Stone			Kazzrem (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Nazramu (shop)
+
+mh#hide2 White Skin of Umpluutu +3		Waizahb (shop)
 
 mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 

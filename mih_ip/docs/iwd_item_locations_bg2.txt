@@ -8,9 +8,10 @@ mh#iwd09 Philter of Purification		(various temples)
 mh#iwd10 Shield Ring				Planar Sphere (event)
 mh#iwd12 Ogi-Luc's Great Robe			Adventurer's Market (ch6)
 mh#iwd13 Shield of the Revenant +2		Temple of Lathander (shop)
-mh#iwd14 Waukeen's Defender +2			Temple of Waukeen (shop)
+mh#iwd14 Waukeen's Defender +2			Waukeen's Wares (shop)
 mh#iwd15 Amaunator's Legacy +3			Temple Ruins (statue)
 mh#iwd20 Pale Justice +4			Suldanessenar (battle)
 mh#iwd23 Mace of Weal and Woe +1		Docks District (battle)
+mh#iwd24 Oil of Second Chances			Waukeen's Wares (shop)
 
 

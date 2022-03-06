@@ -146,6 +146,7 @@ BEGIN
   
   // Temple of Bhaal/Cyric
   //
+  // mh#btax4 - Might of Heroes +3 (equipped on Mohad Flintborn)
   // mh#belt2 - Sunite Sash (equipped on Ziatar)
   // mh#shld3 - Shield of the Phoenix +2
   
@@ -163,6 +164,12 @@ BEGIN
     STR_VAR
     creature	= "bdziatar"
     editstring	= ~add_items=>"mh#belt2(belt)"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "bdcult44"
+    editstring	= ~add_items=>"mh#btax4(weapon1)" remove_items=>"ax1h02"~
   END
 
   

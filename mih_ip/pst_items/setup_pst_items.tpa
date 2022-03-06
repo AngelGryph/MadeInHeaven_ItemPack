@@ -27,7 +27,6 @@ BEGIN
       file	= "place_pst_items_in_sod"
     END
   END
-  */
 
   ACTION_IF is_bg2
   BEGIN
@@ -36,6 +35,7 @@ BEGIN
       file	= "place_pst_items_in_bg2"
     END
   END
+  */
 
   ACTION_IF has_tob
   BEGIN

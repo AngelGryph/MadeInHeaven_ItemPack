@@ -1,0 +1,14 @@
+@0    = ~I can offer you a magical crossbow, an enchanted mace, a scroll of resurrection, an elixir of longevity, or 7,000 gold.~
+@1    = ~I will take the crossbow.~
+@2    = ~The mace sounds good.~
+@3    = ~I would like the scroll.~
+@4    = ~The elixir would be nice.~
+@5    = ~I can always use more gold.~
+@6    = ~A fine choice.  This is one of the most powerful weapons of its kind.  You may not find a more reliable crossbow anywhere.~
+@7    = ~I'm sure it will be useful, thank you.~
+@8    = ~I reconsider.  What are my other options again?~
+@9    = ~A fine choice.  This is one of the most powerful weapons of its kind.  It has powers over fire and will shield you from biting cold.~
+@10   = ~With this, you may undo the death of a friend, but only once.  Many a mortal has wished for the power to bring back a loved one.  I know that I have...~
+@11   = ~This powerful draught will extend your mortal life.  My own life has been long enough already, I don't need it.~
+@12   = ~Very well, then here is your reward.~
+@13   = ~If it's gold you want, I can offer you 7,000 gold pieces.~

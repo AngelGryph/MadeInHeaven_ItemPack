@@ -99,11 +99,16 @@ BEGIN
 
   // The Northern Light (Ries Kensiddar)
   //
+  // mh#ring2 - Ring of Warmth
+  // mh#ring3 - Ring of the Neophyte
+  // mh#ring8 - Ring of Armory
+  // mh#brac9 - Gloves of Thievery
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#ring2" LAST #1 #1 #0 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#ring3" LAST #1 #1 #0 "identified" #1~
-    literal'3=>~ADD_STORE_ITEM "mh#brac9" LAST #1 #1 #0 "identified" #1~
+    literal'3=>~ADD_STORE_ITEM "mh#ring8" LAST #1 #1 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#brac9" LAST #1 #1 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
@@ -242,10 +247,14 @@ BEGIN
   //
   // mh#amul2 - Necklace of Prayer Beads
   // mh#bull1 - Priest's Bullet
+  // mh#scrl1 - Scroll of Heal
+  // mh#scrl2 - Scroll of Resurrection
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
     literal'2=>~ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5~
+    literal'3=>~ADD_STORE_ITEM "mh#scrl1" AFTER "scrlpet" #1 #0 #0 "identified" #1~
+    literal'4=>~ADD_STORE_ITEM "mh#scrl2" AFTER "scrlpet" #1 #0 #0 "identified" #1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

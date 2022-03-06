@@ -228,6 +228,22 @@ BEGIN
       item	= "leat19"
       edits	= "patch_data"
     END
+
+
+    // ring34 - Ring of Spell Turning
+    //
+    // - Casts level 7 Spell Turning instead of level 5 Minor Spell Turning
+
+    MAKE_PATCH
+      patch_ability_inline=>~ability_icon=>"spwi701b"~
+      patch_effect_inline=>~match=>"opcode = 146" resource=>"spwi701"~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "ring34"
+      edits	= "patch_data"
+    END
   END
 
 

@@ -335,3 +335,13 @@ Requires:
  10 Strength
 
 Weight: 7~
+@46   = ~Oil of Second Chances~
+@47   = ~Priests of Tymora produce this unique type of oil in abundance, but often sell it so quickly that adventurers become furious when they cannot procure it.  Priests of other faiths often keep such potions in reserve if they cannot use their magic to remove a curse.  Enemies of the Tymoran faith, such as the ill-willed Beshabans, are searching for a way to make a similar potion that compounds the effects of a magical curse.  
+
+STATISTICS:
+
+Casts Bless, Luck and Remove Curse on the user.  Takes a full round to use.
+
+Weight: 1~
+
+

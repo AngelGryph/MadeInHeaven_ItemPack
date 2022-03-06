@@ -90,10 +90,12 @@ mh#ioun3	187	188	*	*	0x0	*		*
 mh#ioun4	189	190	*	*	0x0	*		*
 mh#ioun5	226	227	*	*	0x0	*		*
 mh#ioun6	228	229	*	*	0x0	*		*
+mh#ioun7	119	120	*	*	0x0	*		*
 
 mh#lbow1	57	58	*	*	0x0	*		*
 
 mh#mace1	71	72	*	*	0x0	*		*
+mh#mace2	143	144	*	*	0x0	*		*
 mh#mace3	339	340	*	*	0x0	*		*
 
 mh#misc1	139	140	*	*	0x0	*		*
@@ -121,6 +123,8 @@ mh#ring3	30	31	*	*	0x0	*		*
 mh#ring4	92	93	*	*	0x0	*		*
 mh#ring5	94	95	*	*	0x0	*		charm,confusion,feeblemind,psionics,stun
 mh#ring6	96	97	*	*	0x0	*		*
+mh#ring7	145	146	*	*	0x0	*		*
+mh#ring8	85	86	*	*	0x0	*		*
 mh#ring9	197	198	*	*	0x0	*		*
 mh#ringa	26	27	*	*	0x1	*		*
 mh#ringb	295	296	*	*	0x0	*		*
@@ -130,6 +134,9 @@ mh#robe2	100	101	*	*	0x0	*		level_drain
 mh#robe3	104	105	102	103	0x0	*		*
 mh#robe4	106	107	102	103	0x0	*		*
 mh#robe5	257	258	255	256	0x0	*		*
+
+mh#scrl1	135	136	*	*	0x0	*		*
+mh#scrl2	137	138	*	*	0x0	*		*
 
 mh#shld1	34	35	*	*	0x0	*		*
 mh#shld2	61	62	*	*	0x0	*		*

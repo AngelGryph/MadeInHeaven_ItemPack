@@ -535,8 +535,19 @@ Weight: 75~
 @84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.
 
 Weight: 2~
-//@85   = ~~
-//@86   = ~~
+@85   = ~Ring of Armory~
+@86   = ~This ring is a creation of an abjurer named Delgam of the Many Hands - so called for his extensive use of the expression "on the other hand..."  Delgam eschewed imbuing his items with offensive powers or other miscellaneous magic effects.  Instead, he focused on what abjurers tend to focus on: defense.  Unlike his popular Robes of Armory, this ring is somewhat obscure as most powerful mages consider the basic defensive spells in it beneath them.  To a neophyte it is an extremely useful item though, providing basic defense spells so that the fledgling wizard can concentrate on memorizing other incantations without having to worry about <PRO_HISHER> safety.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+
+Charge abilities:
+- Armor (1/day)
+- Shield (1/day)
+
+Weight: 0~
 @87   = ~Celestial Chain +2~
 @88   = ~Forged by the dwarven smith Brokk for <CHARNAME>, this suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously woven from precisely crafted arandur rings by the old dwarf, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a small price to their abilities.
 
@@ -719,8 +730,24 @@ Equipped abilities:
 - Minor Globe of Invulnerability
 
 Weight: 5~
-//@119  = ~~
-//@120  = ~~
+@119  = ~Blood of Lathander~
+@120  = ~Centuries ago Mystra selected the archmage Sammaster as one of her Chosen.  Overwhelmed by the power invested in him, he developed delusions of godhood and set himself up as a seer.  His teachings that "dead dragons shall rule the world entire" started the Cult of the Dragon.  Sammaster and the cultists then set out to fulfill this prophesy by creating dracoliches and serving them by bringing them treasure.
+
+The Harpers tracked down the corrupted archmage and destroyed many of his followers.  Unable to defeat one of Mystra's Chosen, Harper priests of the Morninglord called upon their god.  An avatar of Lathander appeared and challenged Mystra's fallen Chosen to battle, outraged by the thought of the unchanging eternity of tyranny the archmage promised.  The Morninglord's avatar destroyed Sammaster, but not before the wizard delivered a severe wound.
+
+Four drops of Lathander's blood fell to the ground, where they were gathered up by a priest of the Morninglord and placed in an amber flask for safe-keeping.  Their magical nature fused the flask into a seamless form.  During the battle, almost all of the cultists and many Harpers were slain, and in the chaos the newly created relic was largely overlooked.  It normally sits quietly in the village of Hap in Battledale, forgotten by most of the clergy until the Morninglord determines it is needed elsewhere.
+
+STATISTICS:
+
+Equipped abilities:
+- Regeneration (3 hp/round)
+
+Charge abilities:
+- Cure Critical Wounds (4/day)
+- Raise Dead (1/day)
+- Greater Restoration (1/day)
+
+Weight: 1~
 @121  = ~Gauntlets of Smiting~
 @122  = ~These iron gauntlets were created nearly twenty centuries ago when the human empire of Narfell practiced fiend summoning on a large scale.  Exactly whom created these is not known, but likely it was the clergy of a benevolent deity at the time.  Since then they have been worn by many a champion of good in an attempt to remove this fell taint from the Realms, a task that will never truly be complete as long as foolish mages are still willing to risk their life and soul for the promise of dark power.
 
@@ -777,10 +804,32 @@ Requires:
  10 Strength
 
 Weight: 4~
-//@135  = ~~
-//@136  = ~~
-//@137  = ~~
-//@138  = ~~
+@135  = ~Heal~
+@136  = ~Heal
+(Necromancy)
+
+Level: 6
+Sphere: Healing 
+Range: Touch
+Duration: Permanent
+Casting Time: 9
+Area of Effect: 1 creature
+Saving Throw: None
+
+The very potent Heal spell enables the priest to wipe away disease and injury in the creature who receives the benefits of the spell. It completely cures all disease and blindness in the recipient and heals all points of damage suffered due to wounds or injury. It also dispels a Feeblemind spell and cures those mental disorders caused by spells or injury to the brain. Naturally, the effects can be negated by later wounds, injuries, and diseases.~
+@137  = ~Resurrection~
+@138  = ~Resurrection
+(Necromancy)
+
+Level: 7
+Sphere: Necromantic
+Range: Touch
+Duration: Permanent
+Casting Time: 9
+Area of Effect: 1 creature
+Saving Throw: None
+
+Like the 5th-level spell Raise Dead, Resurrection will return a character back to life. However, Resurrection also heals the character so that they are ready for the adventuring life right away.~
 @139  = ~Pearl of Power~
 @140  = ~This beautiful black pearl would fetch a nice price for its rarity alone, but its enchantment makes it even more valuable.  Many a less scrupulous sorcerer would kill to get hold of an item like this, and even those who do have morals will often go to great lengths to obtain one.
 
@@ -794,10 +843,40 @@ Weight: 0~
 @142  = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.
 
 Weight: 1~
-//@143  = ~~
-//@144  = ~~
-//@145  = ~~
-//@146  = ~~
+@143  = ~Heaven's Wrath +4~
+@144  = ~This powerful mace was crafted by the clergy of the Netherese sun god Amaunator many centuries ago, but there are no records of it ever having been used against any foes of the empire.  It is known that a deep dragon found it in the buried rubble of a Netherese enclave and added it to its hoard.  The fact that Adalon has now given it to you hints that she dispatched the deep dragon at some point.
+
+STATISTICS:
+
+Charge abilities:
+- Flame Strike (1/day)
+
+Combat abilities:
+- 5% chance per hit of casting Flame Strike on the target
+
+Equipped abilities:
+- Cold Resistance: +30%
+
+THAC0: +4
+Damage: 1d6+5 (crushing), +1d4 (fire)
+Speed Factor: 3
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 6~
+@145  = ~Spellbattle Ring~
+@146  = ~The first ring of this type was crafted by an unknown mage who was tired of having to memorize spells for wizard duels every day because younger mages kept challenging them.  Several other mages followed his example and there are now more than a dozen magical rings of this type known to be around.  This particular one bears no identifying marks but is whispered to have originated from the Dalelands, hinting that the famous old mage of Shadowdale may have been involved in its creation.
+
+STATISTICS:
+
+Charge abilities:
+- Breach (1/day)
+- Globe of Invulnerability (1/day)
+- Ruby Ray of Reversal (1/day)
+
+Weight: 0~
 @147  = ~Shield of the Three Kings +5~
 @148  = ~The name of this masterwork golden shield is derived from the three crowns engraved in its front, for it hasn't been associated with any known king.  It was forged by the shield dwarves of the North to be used in one of their many skirmishes with the orc hordes that regular plague that area of Faerun.  It is not known whom exactly placed the massive enchantment on it, although the style used is typical for the Netherese arcanists of the past.  If the dwarves truly traded for this shield with the Netherese, the price demanded must have been mind boggling.  This is possibly the most strongly enchanted shield in the Realms.
 
@@ -1739,11 +1818,31 @@ Requires:
 
 Weight: 6~
 @343  = ~Mail of Thalaera +5~
-@344  = ~Mail of Thalaera +5~
+@344  = ~Chain Mail +5: 'Mail of Thalaera'
+Crafted of shining silver and matte black links, this suit of elven chain is one of the finest ever created.  It used to stored in queen Amlaruil's palace on distant Evermeet but was stolen during an incident known as the Elshadow affair and considered lost until now.  The elves will likely take a dim view of anyone using it for evil purposes.  As with all other elven chain, this suit can be worm by Thieves and Fighter/Mages with few restrictions.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: -5%
+- Find Traps: -5%
+- Pick Pockets: -20%
+- Move Silently: -10%
+- Spellcasting is not disabled
+- Saving Throws: +3 vs. Breath
+- Acid Resistance: +50%
+- Fire Resistance: +50%
+- Magic Resistance: +25%
+
+Armor Class: 0 (-2 vs. slashing, 2 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 7~
 @345  = ~Staff of the White Well +5~
 @346  = ~Staff of the White Well +5~
 @347  = ~Might of Heroes +3~
-@348  = ~
+@348  = ~This finely crafted enchanted war axe is obviously of dwarven make, but exactly where and when it was forged is not exactly known even to dwarven sages.  Most likely it belonged to a dwarven clan now lost to history, perhaps wiped out by one of the all too frequent orc raids in the north.  Likely discovered in some forgotten dwarven hall by adventurers, this axe has now seen many battles and has been wielded by several heroes of various races.  This latter fact gave it its current name.
 
 STATISTICS:
 

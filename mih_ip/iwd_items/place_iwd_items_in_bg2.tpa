@@ -115,7 +115,8 @@ BEGIN
   // mh#iwd15 - Waukeen's Defender +2
 
   MAKE_PATCH
-    literal=>~ADD_STORE_ITEM "mh#iwd15" LAST #0 #0 #0 "identified" #1~
+    litvar_items=>"[mh#iwd15]"
+    add_item_inline=>~number_to_add=>"length items" at_end=>1 item_resource=>"entry_index from items" item_num_in_stock=>1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

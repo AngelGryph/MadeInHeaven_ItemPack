@@ -1,5 +1,10 @@
 DEFINE_ACTION_FUNCTION place_iwd_items_in_stores
 BEGIN
+  // All stores
+  //
+  // mh#iwd09 - Periapt of Health
+  // mh#iwd05 - Zilzanzer's Magnificent Darts
+
   MAKE_PATCH
     clone_item_inline'1=>~match=>"item_resource = potn20" item_resource=>"mh#iwd09" state_identified=>1~
     clone_item_inline'2=>~match=>"item_resource = dart02" item_resource=>"mh#iwd05" state_identified=>1~
@@ -7,6 +12,23 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION edit_all_stores
     STR_VAR
+    edits	= "patch_data"
+  END
+
+
+  // Temples of Tymora and Waukeen
+  //
+  // mh#iwd24 - Oil of Second Chances
+
+  MAKE_PATCH
+    add_item_inline=>~at_end=>1 item_resource=>"mh#iwd24" item_charges_1=>1 item_num_in_stock=>"filename in [tem0132->5 default->3]"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_store
+    INT_VAR
+    allow_missing	= 1
+    STR_VAR
+    store	= "tem0132 amcler02 govwau01 sartem01 temsup"
     edits	= "patch_data"
   END
 END	// place_iwd_items_in_stores

@@ -69,6 +69,18 @@ BEGIN
   BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
+      file	= "adalons_hoard"
+      tra	= "adalons_hoard"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file	= "blood_of_lathander"
+      tra	= "blood_of_lathander"
+    END
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
       file	= "vaelasas_reward"
       tra	= "vaelasas_reward"
     END

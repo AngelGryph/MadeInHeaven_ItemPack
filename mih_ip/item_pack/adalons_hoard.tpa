@@ -1,0 +1,10 @@
+DEFINE_ACTION_FUNCTION adalons_hoard
+BEGIN
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    file	= "adalons_hoard.d"
+    location	= "dialogs"
+  END
+END	// adalons_hoard
+
+

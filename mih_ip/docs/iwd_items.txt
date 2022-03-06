@@ -21,5 +21,6 @@ mh#iwd20 Pale Justice +4
 mh#iwd21 Girdle of Labelas
 mh#iwd22 Robe of Armory
 mh#iwd23 Mace of Weal and Woe +1
+mh#iwd24 Oil of Second Chances
 
 
