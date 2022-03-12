@@ -29,7 +29,6 @@ mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 mh#misc1 Pearl of Power				Lich Outpost (shelf)
 
 mh#potn1 Oil of Acid Resistance			Sorcerous Sundries (shop)
-mh#potn3 Philter of Purification		Sorcerous Sundries (shop)
 mh#potn6 Alchemist's Fire			Sorcerous Sundries (shop)
 mh#potn7 Acid Flask				Sorcerous Sundries (shop)
 

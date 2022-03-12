@@ -35,7 +35,7 @@ END
 
 APPEND "scsain"
 
-IF WEIGHT #-1 ~InPartySlot(LastTalkedToBy(Myself), 0) Global("SculptorDone", "GLOBAL", 1) Global("StealingPlot", "GLOBAL", 4) Global("Chapter", "GLOBAL", 6) !Dead("c6bodhi") Global("mh#ObtainedBlood", "LOCALS", 0) Global("Stripped", "GLOBAL", 0)~
+IF WEIGHT #-1 ~InPartySlot(LastTalkedToBy(Myself), 0) Global("SculptorDone", "GLOBAL", 1) Global("StealingPlot", "GLOBAL", 4) Global("Chapter", "GLOBAL", %bg2_chapter_6%) !Dead("c6bodhi") Global("mh#ObtainedBlood", "LOCALS", 0) Global("Stripped", "GLOBAL", 0)~
 BEGIN show_blood
   SAY @3
   = @4

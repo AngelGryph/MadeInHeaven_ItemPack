@@ -77,7 +77,6 @@ mh#plat4 Plate of Solamnus +5			Adventurer's Market (ch6)
 
 mh#potn1 Oil of Acid Resistance			(various potion shops)
 mh#potn2 Potion of Clairvoyance			(various potion shops)
-mh#potn3 Philter of Purification		(various temples)
 mh#potn4 Oil of Disenchantment			(various potion shops)
 mh#potn5 Potion of Longevity			(various potion shops)
 mh#potn6 Alchemist's Fire			Adventurer's Market (shop)
