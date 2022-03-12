@@ -1,0 +1,61 @@
+IF
+  Global("mh#TomePages", "GLOBAL", 0)
+  Global("mh#CreatePage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(False)
+    ActionOverride("%container%", CreateItem("tome01", 1, 0, 0))
+    IncrementGlobal("mh#TomePages", "GLOBAL", 1)
+    SetGlobal("mh#CreatePage", "MYAREA", 1)
+    SetInterrupt(True)
+END
+
+IF
+  Global("mh#TomePages", "GLOBAL", 1)
+  Global("mh#CreatePage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(False)
+    ActionOverride("%container%", CreateItem("tome02a", 0, 0, 0))
+    IncrementGlobal("mh#TomePages", "GLOBAL", 1)
+    SetGlobal("mh#CreatePage", "MYAREA", 1)
+    SetInterrupt(True)
+END
+
+IF
+  Global("mh#TomePages", "GLOBAL", 2)
+  Global("mh#CreatePage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(False)
+    ActionOverride("%container%", CreateItem("tome03a", 0, 0, 0))
+    IncrementGlobal("mh#TomePages", "GLOBAL", 1)
+    SetGlobal("mh#CreatePage", "MYAREA", 1)
+    SetInterrupt(True)
+END
+
+IF
+  Global("mh#TomePages", "GLOBAL", 3)
+  Global("mh#CreatePage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(False)
+    ActionOverride("%container%", CreateItem("tome04a", 0, 0, 0))
+    IncrementGlobal("mh#TomePages", "GLOBAL", 1)
+    SetGlobal("mh#CreatePage", "MYAREA", 1)
+    SetInterrupt(True)
+END
+
+IF
+  Global("mh#TomePages", "GLOBAL", 4)
+  Global("mh#CreatePage", "MYAREA", 0)
+THEN
+  RESPONSE #100
+    SetInterrupt(False)
+    ActionOverride("%container%", CreateItem("tome05a", 0, 0, 0))
+    IncrementGlobal("mh#TomePages", "GLOBAL", 1)
+    SetGlobal("mh#CreatePage", "MYAREA", 1)
+    SetInterrupt(True)
+END
+
+

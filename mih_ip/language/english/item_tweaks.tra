@@ -128,5 +128,37 @@ Charge abilities:
 - Create six +5 darts once per day
 
 Weight: 3~
+@15  = ~Sand Golem Manual~
+@16  = ~Combining the strength of a stone golem and the resilience of a clay golem is the sand golem. The new pages added to the manual have enhanced its magical properties significantly. The user needs an Intelligence of 16 or better to understand the contents.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Sand Golem once per day
+  Range: 30 ft.
+  Duration: 1 turn
+
+Requires:
+ 16 Intelligence
+
+Weight: 5~
+@17  = ~Sand Golem Page~
+@18  = ~This page appears to be torn from a larger work.  Although incomplete, it seems to describe how to summon a golem made of sand.~
+@19  = ~Iron Golem Manual~
+@20  = ~The ultimate golem this tome can summon is contructed entirely from iron, giving it both great strength and durability. The new pages added to the manual have enhanced its magical properties significantly. The user needs an Intelligence of 16 or better to understand the contents.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Iron Golem once per day
+  Range: 30 ft.
+  Duration: 1 turn
+
+Requires:
+ 16 Intelligence
+
+Weight: 5~
+@21  = ~Iron Golem Page~
+@22  = ~This page appears to be torn from a larger work.  Although incomplete, it seems to describe how to summon a golem made of iron.~
 
 

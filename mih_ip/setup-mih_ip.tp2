@@ -182,6 +182,21 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// Improved Tome of Golems
+
+BEGIN @22
+GROUP @3 
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4 
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "tome_of_golems"
+  location	= "tweaks"
+  tra		= "item_tweaks"
+END
+
+
 // Miscellaneous Item Improvements
 
 BEGIN @11 

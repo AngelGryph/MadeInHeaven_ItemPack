@@ -1,0 +1,72 @@
+DEFINE_ACTION_FUNCTION tome_of_golems
+BEGIN
+  // Patch and add golem pages/tomes.
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "tome04"
+    editstring	= ~say_both_names=>15 say_both_descriptions=>16 delete_effect=>"opcode is_in [314 50 215]"~
+  END
+
+  LAUNCH_ACTION_FUNCTION edit_item
+    STR_VAR
+    item	= "tome04a"
+    editstring	= "say_both_names=>17 say_both_descriptions=>18"
+  END
+
+  LAUNCH_ACTION_FUNCTION clone_item
+    STR_VAR
+    item	= "tome02=>tome05"
+    editstring	= %say_both_names=>19 say_both_descriptions=>20 patch_effect_inline=>~match=>"opcode = 177" resource=>"tome05"~%	// %-signs are string delimiters here!
+  END
+
+  LAUNCH_ACTION_FUNCTION clone_item
+    STR_VAR
+    item	= "tome02a=>tome05a"
+    editstring	= "say_both_names=>21 say_both_descriptions=>22"
+  END
+
+  LAUNCH_ACTION_FUNCTION clone_creature
+    STR_VAR
+    creature	= "golsan01=>tomegol4 goliro01=>tomegol5"
+    editstring	= "allegiance=>controlled xp_value=>0"
+  END
+
+  LAUNCH_ACTION_FUNCTION clone_effect
+    STR_VAR
+    effect	= "tome01=>tome05"
+    editstring	= ~resource=>"tomegol5"~
+  END
+
+
+  // Change acquisation order
+
+  LAUNCH_ACTION_FUNCTION edit_area
+    STR_VAR
+    area	= "ar3001 ar3017 ar5204 ar6003"
+    editstring	= ~delete_item=>"item_resource is_in [tome01 tome02a tome03a tome04a]"~
+  END
+
+
+  ACTION_CLEAR_ARRAY tome_locations
+
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY tome_locations
+  BEGIN
+    "ar3001"	=> "Shelf5"
+    "ar3017"	=> "Container 2"
+    "ar5204"	=> "Container 2"
+    "ar6003"	=> "Table 2"
+    "ar6110"	=> "Container 3"
+  END
+
+  ACTION_PHP_EACH tome_locations AS area => container
+  BEGIN
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area
+      bottom	= "tome_script_template"
+    END
+  END
+END	// tome_of_golems
+
+
