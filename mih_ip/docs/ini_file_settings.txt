@@ -1,126 +1,102 @@
-debug_variable=0
-================
+===
+General
 
-Set to non-zero for debugging output.  Higher is more output.  Meant for
-development/debugging purposes.
+- debug_variable=0
+- use_perl_natively=0
+- disable_ssl=0
+- hitpoint_percentage=100
+- use_ee_half_damage=1
 
+Used for debugging.  You should probably not touch these.
 
-max_stack_ammo=0
-================
+===
 
-Stack size of arrows, bolts and bullets.
-If set to zero, use game default (80 on EE, 40 on old BG2/BGT).
+FR lore
 
+- implement_lore_changes=1
 
-max_stack_potions=0
-================
+Set to zero to not implement lore-friendly changes to the games.  This may
+lead to strange results as all components are written from the perspective
+that the lore-friendly changes have been implemented.
 
-Stack size of potions and oils.
-If set to zero, use game default (24 on EE, 5 on old BG2/BGT).
+===
 
+MiH Item Pack
 
-place_items_in_bg1=1
-place_items_in_sod=1
-place_items_in_bg2=1
-place_items_in_tob=1
-====================
+- max_stack_ammo=0
+- max_stack_thrown=0
+- max_stack_potions=0
+- max_stack_jewels=0
 
-Toggle whether to install item pack items in the respective games.
+The maximum stack amount for various stackable item types.  Using zero will
+use the game default.
 
+- update_itemexcl_2da=1
 
-update_itemexcl_2da=1
-=====================
+Controls whether or not to update itemexcl.2da with mutually exclusive items.
+0 = no change, 1 = add amulets/rings/cloaks only, 2 = add magical armors only,
+3 = add both.
 
-Controls whether or not new protective items can be combined.
-0 = Freely combine everything.
-1 = Exclude amulets, cloaks and rings but not magical armor.
-2 = Exclude magical armor but not amulets, cloaks and rings.
-3 = Exclude amulets, cloaks, rings and magical armor. (strict P&P)
+- visible_ioun_stones=1
 
+Set to zero skip making ioun stones added by this mod visible on characters.
 
-visible_ioun_stones=1
-=====================
+- brokk_buying_markup=70
+- brokk_selling_markup=130
 
-Toggle to turn the visual ioun stone effect on or off for new ioun stones.
+Sets the buying- and selling markups of Brokk's smithy at the Friendly Arm
+Inn.  This has no effect on the prices Brokk asks for item crafting.
 
+===
 
-brokk_buying_markup=70
-brokk_selling_markup=130
-phendra_buying_markup=50
-phendra_selling_markup=150
-==========================
+Icewind Dale items in BG1/BG2
 
-Set buying and selling rates for the two new stores introduced in BG1.  When
-setting these, note that buying markup should be below 100 and selling should
-be above 100, unless you want to cheat.
+- iwd_to_bg_price_conversion=50
 
+Conversion rate of Icewind Dale item prices to Baldur's Gate item prices.
+Magical items are cheaper in BG, possibly making imported IWD items overpriced
+for their power in BG.
 
-charge_cap_wands=6
-charge_cap_staves=12
-====================
+===
 
-Maximum number of charges to use for wands and staves respectively.
+Item Improvements
 
+- baldurans_cloak_magic_resistance=10
 
-baldurans_cloak_magic_resistance=10
-===================================
+Sets the magic resistance granted by the Cloak of Balduran.
 
-Percentage of magic resistance the Cloak of Balduran should give.
+===
 
+Potions of Extra Healing in BG1
 
-baldurans_cloak_in_bg2=1
-========================
+- extra_healing_minimum=2
+- extra_healing_maximum=5
+- extra_healing_shops=1
+- extra_healing_durlag=1
 
-Toggle on whether or not the cloak appears in the Adventurer's Market in
-chapter 6 of Shadows of Amn.
+Controls how and where Potions of Extra Healing are added to BG1 shops and
+areas.
 
+===
 
-extra_healing_minimum=2
-extra_healing_maximum=5
-=======================
+Shop Improvements
 
-Lower and upper bound of number of extra healing potions to add.  The amount
-will be chosen randomly per shop at install time between these bounds
-(inclusive).
+- bg1_fix_large_shields=1
 
+Set to zero not fix the strange overabundance of magical large shields in BG1
+shops.
 
-extra_healing_shops=1
-=====================
+- bg1_add_obscure_items=1
 
-Toggle whether or not to add extra healing potions to shops.
+Set to zero not add some obscure or hard to get items to selected shops.
 
+- bg1_move_thieving_stuff=1
 
-extra_healing_durlag=1
-======================
+Set to zero not move thieving items from Taerom to Black Lily.
 
-Toggle whether or not to replace healing potions in Durlag's Tower.
+- bg2_swap_hammers=1
 
+Set to zero not swap the locations of Aishedeena +2 and Borok's Fist +2 in
+Shadows of Amn.
 
-bg1_fix_large_shields=1
-=======================
-
-Toggle whether or not to replace the unrealistically large stacks of magical
-large shields in BG1 shops.
-
-
-bg1_add_obscure_items=1
-=======================
-
-Toggle whether or not to add the Longbow +1, Spear +1, Warhammer +1, and Splint
-Mail +1 to BG1 shops.
-
-
-bg1_move_thieving_stuff=1
-=========================
-
-Toggle whether or not to move the Shadow Armor +3 and Dagger of Venom to Black
-Lily's shop in BG1.
-
-
-bg2_swap_hammers=1
-==================
-
-Toggle whether or not to swap the locations of Aishideena and Borok's Fist in
-BG2.
-
-
+===

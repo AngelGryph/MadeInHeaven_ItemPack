@@ -1,5 +1,13 @@
 DEFINE_ACTION_FUNCTION iwd_items_postproc
 BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "iwd_to_bg_price_conversion"
+    RET
+    iwd_to_bg_price_conversion	= value
+  END
+
+
   // Edion's Ring of Wizardry
 
   MAKE_PATCH
@@ -27,6 +35,14 @@ BEGIN
     STR_VAR
     item	= "mh#iwd07"
   END
+
+
+  // Adjust item prices
+
+  COPY_EXISTING_REGEXP "^mh#iwd[0-9][0-9]\.itm$" "override"
+    LPF ITM_read_price RET price = value END
+    SET price = (price * iwd_to_bg_price_conversion) / 100
+    LPF ITM_price STR_VAR arguments = "%price%" END
 END	// iwd_items_postproc
 
 
