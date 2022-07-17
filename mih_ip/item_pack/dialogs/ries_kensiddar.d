@@ -16,7 +16,7 @@ END
 IF ~~
 BEGIN hide_requirements
   SAY @4
-  IF ~NumItemsParty("misc01", 2) PartyGoldGT(699)~
+  IF ~NumItemsPartyGT("misc01", 2) PartyGoldGT(699)~
     REPLY @5
     GOTO hide_crafting
   IF ~~
@@ -39,7 +39,7 @@ IF ~~
 BEGIN hide_finished
   SAY @9
   IF ~~
-    DO ~SetGlobal("mh#RiesWinterWolfHide", "GLOBAL", 3) GiveItemCreate("mh#hide1", LastTalkedToBy(Myself), 0, 0, 0)~
+    DO ~SetGlobal("mh#RiesWinterWolfHide", "GLOBAL", 3) GiveItemCreate("mh#hide1", LastTalkedToBy(Myself), 0, 0, 0) EraseJournalEntry(@3) EraseJournalEntry(@8)~
     SOLVED_JOURNAL @10
     EXIT
 END
@@ -48,6 +48,9 @@ END	// APPEND "%tutu_var%innkn2"
 
 
 EXTEND_TOP "%tutu_var%innkn2" 0
+  IF ~Global("mh#RiesWinterWolfHide", "GLOBAL", 1) NumItemsPartyGT("misc01", 1)~
+    REPLY @12
+    GOTO hide_requirements
   IF ~Global("mh#RiesWinterWolfHide", "GLOBAL", 2) GlobalTimerExpired("mh#RiesWinterWolfHideWait", "GLOBAL")~
     REPLY @11
     GOTO hide_finished
