@@ -9,7 +9,7 @@ BEGIN
   // mh#iwd23 - Mace of Weal and Woe +1
 
   MAKE_PATCH
-    clone_item_inline=>~match=>"item_resource = blun05" item_resource=>"mh#iwd23" number_in_stock=>1~
+    clone_item_inline=>~match=>"item_resource = blun05" item_resource=>"mh#iwd23" item_num_in_stock=>1~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store
