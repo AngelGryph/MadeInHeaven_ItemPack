@@ -4,13 +4,6 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
-    ini			= "bg1_fix_large_shields"
-    RET
-    bg1_fix_large_shields	= value
-  END
-
-  LAUNCH_ACTION_FUNCTION check_ini
-    STR_VAR
     ini			= "bg1_move_thieving_stuff"
     RET
     bg1_move_thieving_stuff	= value
@@ -35,27 +28,14 @@ BEGIN
 
   ACTION_IF is_bg1
   BEGIN
-    // Fix illogical overabundance of large shields in BG1 shops
-
-    ACTION_IF bg1_fix_large_shields
-    BEGIN
-      LAUNCH_ACTION_FUNCTION edit_store
-        INT_VAR
-        allow_missing	= 1	// Some are not in BGT
-        STR_VAR
-        store		= "friend sto1112 sto1320 sto2606 sto4803 ulgoth"
-        editstring	= ~swap_items=>"shld06=>shld05"~
-      END
-    END
-
-
     // Move thieving stuff to Black Lily
 
     ACTION_IF bg1_move_thieving_stuff
     BEGIN
       MAKE_PATCH
-        literal'1=>~ADD_STORE_ITEM "leat08" AFTER "leat05" #0 #0 #0 "identified" #1~
-        literal'2=>~ADD_STORE_ITEM "misc75" AFTER "dagg01" #0 #0 #0 "identified" #1~
+        litvar_after_these=>"[leat05 dagg01]"
+        litvar_item_list=>"[leat08 misc75]"
+	clone_item_inline=>~match=>"item_resource is_in after_these" item_resource=>"entry_index from item_list" item_num_in_stock=>1~
       END
   
       LAUNCH_ACTION_FUNCTION edit_store
@@ -70,14 +50,6 @@ BEGIN
 
     ACTION_CLEAR_ARRAY patch_data
 
-    ACTION_IF bg1_fix_large_shields
-    BEGIN
-      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-      BEGIN
-        literal'1=>~ADD_STORE_ITEM "shld06" AFTER "shld05" #0 #0 #0 "identified" #1~
-      END
-    END
-
     ACTION_IF bg1_move_thieving_stuff
     BEGIN
       ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
@@ -90,9 +62,9 @@ BEGIN
     BEGIN
       ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
       BEGIN
-        literal'2=>~ADD_STORE_ITEM "hamm02" AFTER "hamm01" #0 #0 #0 "identified" #1~
-        literal'3=>~ADD_STORE_ITEM "chan05" AFTER "chan04" #0 #0 #0 "identified" #1~
-        literal'4=>~ADD_STORE_ITEM "sper02" AFTER "sper01" #0 #0 #0 "identified" #1~
+        litvar_after_these=>"[hamm01 chan04 sper01]"
+        litvar_item_list=>"[hamm02 chan05 sper02]"
+	clone_item_inline=>~match=>"item_resource is_in after_these" item_resource=>"entry_index from item_list" item_num_in_stock=>1~
       END
     END
 
@@ -107,19 +79,11 @@ BEGIN
 
     ACTION_CLEAR_ARRAY patch_data
 
-    ACTION_IF bg1_fix_large_shields
-    BEGIN
-      ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
-      BEGIN
-        literal'1=>~ADD_STORE_ITEM "shld06" AFTER "shld05" #0 #0 #0 "identified" #1~
-      END
-    END
-
     ACTION_IF bg1_add_obscure_items
     BEGIN
       ACTION_DEFINE_ASSOCIATIVE_ARRAY patch_data
       BEGIN
-        literal'2=>~ADD_STORE_ITEM "bow04" AFTER "bow02" #0 #0 #0 "identified" #1~
+	clone_item_inline=>~match=>"item_resource = bow02" item_resource=>"bow04" item_num_in_stock=>1~
       END
     END
 

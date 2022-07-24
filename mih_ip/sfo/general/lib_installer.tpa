@@ -198,7 +198,7 @@ BEGIN
   BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY object_data
     BEGIN
-      say_unidentified_description=>"%DESC%"
+      say_unidentified_description=>"%UNDESC%"
     END
   END
 
