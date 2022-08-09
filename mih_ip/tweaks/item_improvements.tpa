@@ -1,24 +1,30 @@
 DEFINE_ACTION_FUNCTION item_improvements
 BEGIN
-  // ==================================
-  // Items that are both in BG1 and BG2
-  // ==================================
-
   // brac07 - Gloves of Dexterity
   //
   // - Functions closer to its description in the DMG:
   //   +4 dex, +10 to pick pockets and open locks
 
-  MAKE_PATCH
-    say_description=>6
-    patch_effect_global_inline=>~match=>"opcode = 15" parameter1=>4 parameter2=>0~
-    add_effect_global_inline=>~number_to_add=>2 opcode=>"entry_index from [90 92]" target=>1 timing=>2 parameter1=>10~
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_gloves_of_dexterity"
+    RET
+    improve_gloves_of_dexterity	= value
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item
-    STR_VAR
-    item	= "brac07"
-    edits	= "patch_data"
+  ACTION_IF improve_gloves_of_dexterity
+  BEGIN
+    MAKE_PATCH
+      say_description=>6
+      patch_effect_global_inline=>~match=>"opcode = 15" parameter1=>4 parameter2=>0~
+      add_effect_global_inline=>~number_to_add=>2 opcode=>"entry_index from [90 92]" target=>1 timing=>2 parameter1=>10~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "brac07"
+      edits	= "patch_data"
+    END
   END
 
 
@@ -27,38 +33,54 @@ BEGIN
   // - The wolf transformed into is a winter wolf.
   // - The cloak gives cold resistance.
 
-  MAKE_PATCH
-    add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>100 parameter2=>1~
-    add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
-    patch_effect_global_inline=>~match=>opcode=53 parameter1=>0x7b03~
-    add_effect_inline=>~opcode=>12 target=>2 timing=>1 parameter2=>0x00020000 dicenum=>2 dicesize=>4~
-  END
-
-  LAUNCH_ACTION_FUNCTION clone_item
+  LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
-    item		= "cdwolfm=>mh#wlfck"
-    edits		= "patch_data"
+    ini		= "improve_cloak_of_the_wolf"
+    RET
+    improve_cloak_of_the_wolf	= value
+  END
+
+  ACTION_IF improve_cloak_of_the_wolf
+  BEGIN
+    MAKE_PATCH
+      add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>100 parameter2=>1~
+      add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
+      patch_effect_global_inline=>~match=>opcode=53 parameter1=>0x7b03~
+      add_effect_inline=>~opcode=>12 target=>2 timing=>1 parameter2=>0x00020000 dicenum=>2 dicesize=>4~
+    END
+
+    LAUNCH_ACTION_FUNCTION clone_item
+      STR_VAR
+      item		= "cdwolfm=>mh#wlfck"
+      edits		= "patch_data"
+    END
+
+    MAKE_PATCH
+      say_description=>7
+      add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>25~
+      add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
+      add_effect_global_inline'3=>~opcode=>63 target=>1 timing=>2~
+      patch_effect_inline=>~match=>opcode=111 resource=>mh#wlfck~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "clck04"
+      edits	= "patch_data"
+    END
   END
 
 
-  MAKE_PATCH
-    say_description=>7
-    add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>25~
-    add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
-    add_effect_global_inline'3=>~opcode=>63 target=>1 timing=>2~
-    patch_effect_inline=>~match=>opcode=111 resource=>mh#wlfck~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_item
-    STR_VAR
-    item	= "clck04"
-    edits	= "patch_data"
-  END
-
-
-  // clck05 - Cloak of Balduran
+  // clck05 - Balduran's Cloak
   //
   // - Nerf the overpowered magic resistance
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_baldurans_cloak"
+    RET
+    improve_baldurans_cloak	= value
+  END
 
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
@@ -67,69 +89,91 @@ BEGIN
     baldurans_cloak_magic_resistance	= value
   END
 
-  MAKE_PATCH
-    patch_effect_global_inline=>~match=>opcode=166 parameter1=>%baldurans_cloak_magic_resistance%~
-    substitute_description=>~25\%=>%baldurans_cloak_magic_resistance%\%~
+  ACTION_IF improve_baldurans_cloak
+  BEGIN
+    MAKE_PATCH
+      patch_effect_global_inline=>~match=>opcode=166 parameter1=>%baldurans_cloak_magic_resistance%~
+      substitute_description=>~25\%=>%baldurans_cloak_magic_resistance%\%~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "clck05"
+      edits	= "patch_data"
+    END
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item
-    STR_VAR
-    item	= "clck05"
-    edits	= "patch_data"
-  END
 
-
-  // clck20 - Cloak of the Shield
+  // clck20 - Shield Cloak
   //
   // - Effects are permanent while worn (+1 base AC, +4 vs. missiles)
 
-  MAKE_PATCH
-    say_description=>8
-    add_effect_global_inline'1=>~opcode=>0 target=>1 timing=>2 parameter1=>1 parameter2=>0~
-    add_effect_global_inline'2=>~opcode=>0 target=>1 timing=>2 parameter1=>4 parameter2=>2~
-    delete_ability=>~~
-  END
-
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
-    item	= "clck20"
-    edits	= "patch_data"
+    ini		= "improve_shield_cloak"
+    RET
+    improve_shield_cloak	= value
   END
 
+  ACTION_IF improve_shield_cloak
+  BEGIN
+    MAKE_PATCH
+      say_description=>8
+      add_effect_global_inline'1=>~opcode=>0 target=>1 timing=>2 parameter1=>1 parameter2=>0~
+      add_effect_global_inline'2=>~opcode=>0 target=>1 timing=>2 parameter1=>4 parameter2=>2~
+      delete_ability=>~~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "clck20"
+      edits	= "patch_data"
+    END
+  END
 
 
   // potn11 - Potion of Invulnerability
   //
   // - Grants +2 AC, +2 saves and immunity to normal weapons, as in P&P
 
-  LAUNCH_ACTION_FUNCTION edit_item
+  LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
-    item	= "potn11"
-    editstring	= "say_description=>9"
+    ini		= "improve_potion_of_invulnerability"
+    RET
+    improve_potion_of_invulnerability	= value
   END
 
-  // Be nice to IR users, only create the external spell if IR
-  // has not already done so.
-  ACTION_IF NOT FILE_EXISTS_IN_GAME "potn11.spl"
+  ACTION_IF improve_potion_of_invulnerability
   BEGIN
-    LAUNCH_ACTION_FUNCTION externalise_item_ability
+    LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
       item	= "potn11"
+      editstring	= "say_description=>9"
     END
-  END
 
-  MAKE_PATCH
-    patch_effect_inline'1=>~duration_if_variable=>60~
-    patch_effect_inline'2=>~match=>"opcode is_in [0 33 34 35 36 37]" parameter1=>2 parameter2=>0~
-    add_effect_inline'1=>~opcode=>120 duration=>60 target=>2 parameter2=>2 resist_dispel=>3~
-    add_effect_inline'2=>~opcode=>142 duration=>60 target=>2 parameter2=>70 resist_dispel=>3~
-    add_effect_inline'3=>~opcode=>206 duration=>60 target=>2 parameter1=>0 parameter2=>0 resist_dispel=>3 resource=>potn11~
-  END
+    // Be nice to IR users, only create the external spell if IR
+    // has not already done so.
+    ACTION_IF NOT FILE_EXISTS_IN_GAME "potn11.spl"
+    BEGIN
+      LAUNCH_ACTION_FUNCTION externalise_item_ability
+        STR_VAR
+        item	= "potn11"
+      END
+    END
 
-  LAUNCH_ACTION_FUNCTION edit_spell
-    STR_VAR
-    spell	= "potn11"
-    edits	= "patch_data"
+    MAKE_PATCH
+      patch_effect_inline'1=>~duration_if_variable=>60~
+      patch_effect_inline'2=>~match=>"opcode is_in [0 33 34 35 36 37]" parameter1=>2 parameter2=>0~
+      add_effect_inline'1=>~opcode=>120 duration=>60 target=>2 parameter2=>2 resist_dispel=>3~
+      add_effect_inline'2=>~opcode=>142 duration=>60 target=>2 parameter2=>70 resist_dispel=>3~
+      add_effect_inline'3=>~opcode=>206 duration=>60 target=>2 parameter1=>0 parameter2=>0 resist_dispel=>3 resource=>potn11~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_spell
+      STR_VAR
+      spell	= "potn11"
+      edits	= "patch_data"
+    END
   END
 
 
@@ -137,18 +181,28 @@ BEGIN
   //
   // - Also cures blindness & deafness
 
-  MAKE_PATCH
-    say_description=>10
-    add_effect_inline'1=>~opcode=>75 timing=>1 target=>2 at_end=>1~
-    add_effect_inline'2=>~opcode=>240 timing=>1 target=>2 parameter2=>8 at_end=>1~
-    add_effect_inline'3=>~opcode=>81 timing=>1 target=>2 at_end=>1~
-    add_effect_inline'4=>~opcode=>240 timing=>1 target=>2 parameter2=>112 at_end=>1~
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_elixir_of_health"
+    RET
+    improve_elixir_of_health	= value
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
-    STR_VAR
-    item	= "potn17"
-    edits	= "patch_data"
+  ACTION_IF improve_elixir_of_health
+  BEGIN
+    MAKE_PATCH
+      say_description=>10
+      add_effect_inline'1=>~opcode=>75 timing=>1 target=>2 at_end=>1~
+      add_effect_inline'2=>~opcode=>240 timing=>1 target=>2 parameter2=>8 at_end=>1~
+      add_effect_inline'3=>~opcode=>81 timing=>1 target=>2 at_end=>1~
+      add_effect_inline'4=>~opcode=>240 timing=>1 target=>2 parameter2=>112 at_end=>1~
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
+      STR_VAR
+      item	= "potn17"
+      edits	= "patch_data"
+    END
   END
 
 
@@ -156,20 +210,30 @@ BEGIN
   //
   // Turn it into a +2 buckler.  Also correct icons on BG2.
 
-  MAKE_PATCH
-    say_description=>11
-    price=>7000
-    enchantment=>2
-    patch_effect_inline=>~match=>"opcode = 0" parameter1=>"if parameter2 = 0 then 3 else -3"~
-    icon=>"ishld20"
-    icon_ground=>"gshld08"
-    icon_carried=>"cshld20"
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_kiels_buckler"
+    RET
+    improve_kiels_buckler	= value
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item
-    STR_VAR
-    item	= "shld20"
-    edits	= "patch_data"
+  ACTION_IF improve_kiels_buckler
+  BEGIN
+    MAKE_PATCH
+      say_description=>11
+      price=>7000
+      enchantment=>2
+      patch_effect_inline=>~match=>"opcode = 0" parameter1=>"if parameter2 = 0 then 3 else -3"~
+      icon=>"ishld20"
+      icon_ground=>"gshld08"
+      icon_carried=>"cshld20"
+    END
+
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "shld20"
+      edits	= "patch_data"
+    END
   END
 
 
@@ -177,25 +241,64 @@ BEGIN
   //
   // Wand generates two Magic Missiles, as per P&P.
 
-  LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
+  LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
-    item	= "wand03"
-    editstring	= ~patch_ability_inline=>"projectile=>69"~
+    ini		= "improve_wand_of_magic_missile"
+    RET
+    improve_wand_of_magic_missile	= value
+  END
+
+  ACTION_IF improve_wand_of_magic_missile
+  BEGIN
+    LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
+      STR_VAR
+      item	= "wand03"
+      editstring	= ~patch_ability_inline=>"projectile=>69"~
+    END
   END
 
 
-  // ==============================
-  // Items that are in BG2/SoA only
-  // ==============================
+  // clck25 - Cloak of Stars
+  //
+  // Add +1 to saving throws as per P&P.
 
-  ACTION_IF is_bg2
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_cloak_of_stars"
+    RET
+    improve_cloak_of_stars	= value
+  END
+
+  ACTION_IF is_bg2 AND improve_cloak_of_stars
   BEGIN
-    // helm17 - Skull of Death
-    //
-    // This item will be made as described in Encyclopedia Arcana:
-    // - Regenerates 1 HP/turn
-    // - Casts Animate Dead, Finger of Death and Control undead 1/day each
+    MAKE_PATCH
+      say_description=>14
+      add_effect_global_inline=>~number_to_add=>5 opcode=>"entry_index from [33 34 35 36 37]" target=>1 timing=>2 parameter1=>1~
+    END
 
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "clck25"
+      edits	= "patch_data"
+    END
+  END
+
+
+  // helm17 - Skull of Death
+  //
+  // This item will be made as described in Encyclopedia Arcana:
+  // - Regenerates 1 HP/turn
+  // - Casts Animate Dead, Finger of Death and Control undead 1/day each
+
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_skull_of_death"
+    RET
+    improve_skull_of_death	= value
+  END
+
+  ACTION_IF is_bg2 AND improve_skull_of_death
+  BEGIN
     MAKE_PATCH
       say_description=>12
       add_effect_global_inline'1=>~opcode=>98 target=>1 timing=>2 parameter1=>60 parameter2=>3~
@@ -210,13 +313,23 @@ BEGIN
       item	= "helm17"
       edits	= "patch_data"
     END
+  END
 
 
-    // leat19 - Shadow Dragon Scale
-    //
-    // - Change acid resistance to negative plane protection.
-    //   (This fits it better thematically.)
+  // leat19 - Shadow Dragon Scale
+  //
+  // - Change acid resistance to negative plane protection.
+  //   (This fits it better thematically.)
 
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_shadow_dragon_scale"
+    RET
+    improve_shadow_dragon_scale	= value
+  END
+
+  ACTION_IF is_bg2 AND improve_shadow_dragon_scale
+  BEGIN
     MAKE_PATCH
       say_description=>13
       patch_effect_global_inline'1=>~match=>"opcode = 27" opcode=>101 parameter1=>0 parameter2=>216~
@@ -228,12 +341,22 @@ BEGIN
       item	= "leat19"
       edits	= "patch_data"
     END
+  END
 
 
-    // ring34 - Ring of Spell Turning
-    //
-    // - Casts level 7 Spell Turning instead of level 5 Minor Spell Turning
+  // ring34 - Ring of Spell Turning
+  //
+  // - Casts level 7 Spell Turning instead of level 5 Minor Spell Turning
 
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_ring_of_spell_turning"
+    RET
+    improve_ring_of_spell_turning	= value
+  END
+
+  ACTION_IF is_bg2 AND improve_ring_of_spell_turning
+  BEGIN
     MAKE_PATCH
       patch_ability_inline=>~ability_icon=>"spwi701b"~
       patch_effect_inline=>~match=>"opcode = 146" resource=>"spwi701"~
@@ -247,17 +370,20 @@ BEGIN
   END
 
 
-  // ==============================
-  // Items that are in BG2/ToB only
-  // ==============================
+  // helm31 - Helm of the Rock
+  // helm32
+  //
+  // - This item will be usable by paladins and rangers.
 
-  ACTION_IF has_tob
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_helm_of_the_rock"
+    RET
+    improve_helm_of_the_rock	= value
+  END
+
+  ACTION_IF has_tob AND improve_helm_of_the_rock
   BEGIN
-    // helm31 - Helm of the Rock
-    // helm32
-    //
-    // - This item will be usable by paladins and rangers.
-
     MAKE_PATCH
       unusable_paladin=>0
       unusable_ranger=>0
@@ -268,13 +394,23 @@ BEGIN
       item	= "helm31 helm32"
       edits	= "patch_data"
     END
+  END
 
 
-    // brac24 - Bard's Gloves
-    // brac25 - Wondrous Gloves
-    //
-    // - This item will be usable by thief/mages and fighter/thief/mages.
+  // brac24 - Bard's Gloves
+  // brac25 - Wondrous Gloves
+  //
+  // - This item will be usable by thief/mages and fighter/thief/mages.
 
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_bards_gloves"
+    RET
+    improve_bards_gloves	= value
+  END
+
+  ACTION_IF has_tob AND improve_bards_gloves
+  BEGIN
     MAKE_PATCH
       unusable_mage_thief=>0
       unusable_fighter_mage_thief=>0
@@ -285,20 +421,29 @@ BEGIN
       item	= "brac24 brac25"
       edits	= "patch_data"
     END
+  END
 
 
-    // clck25 - Cloak of Stars
-    //
-    // Add +1 to saving throws as per P&P.
+  // wa2robe - Robe of Vecna
 
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "improve_robe_of_vecna"
+    RET
+    improve_robe_of_vecna	= value
+  END
+
+  ACTION_IF has_tob AND improve_robe_of_vecna
+  BEGIN
     MAKE_PATCH
-      say_description=>14
-      add_effect_global_inline=>~number_to_add=>5 opcode=>"entry_index from [33 34 35 36 37]" target=>1 timing=>2 parameter1=>1~
+      cursed=>1
+      patch_effect_global_inline=>~match=>"opcode = 0 and parameter2 = 16" parameter1=>1~
+      clone_effect_global_inline=>~match=>"opcode = 0 and parameter2 = 16" number_to_add=>6 opcode=>"entry_index from [22 33 34 35 36 37]" parameter1=>-2 parameter2=>0~
     END
 
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
-      item	= "clck25"
+      item	= "wa2robe"
       edits	= "patch_data"
     END
   END
