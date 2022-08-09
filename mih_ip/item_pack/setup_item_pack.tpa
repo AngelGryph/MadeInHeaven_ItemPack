@@ -2,6 +2,12 @@ DEFINE_ACTION_FUNCTION setup_item_pack
 BEGIN
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
+    file	= "setup_lore"
+    locbase	= "shared/lore"
+  END
+
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
     file	= "item_pack_preproc"
     tra		= "item_pack"
   END
