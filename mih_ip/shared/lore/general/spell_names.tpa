@@ -4,11 +4,6 @@ DEFINE_ACTION_FUNCTION spell_names_helper
   item		= ~~
   dev_name	= ~~
 BEGIN
-  OUTER_PATCH_SAVE dev_name_space "%dev_name%"
-  BEGIN
-    REPLACE_TEXTUALLY CASE_SENSITIVE EXACT_MATCH "_" " "
-  END
-
   COPY_EXISTING - "%spell%.spl" "%work_dir%"
     LAUNCH_PATCH_FUNCTION SPL_read_name1_string
       RET
