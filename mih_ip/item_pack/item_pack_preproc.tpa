@@ -73,6 +73,18 @@ BEGIN
         parameter1	= xp_gain
       END
     END
+
+
+  // Make sure BG2's greater water elementals actually are
+  // marked as water elementals for Staff- and Ring of Water.
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    INT_VAR
+    allow_missing       = 1
+    STR_VAR
+    creature    = "elemhydr elwatg01 ohbwat01"
+    editstring  = "class=>elemental_water"
+  END
 END	// item_pack_preproc
 
 

@@ -190,12 +190,20 @@ BEGIN
 
   ACTION_IF improve_elixir_of_health
   BEGIN
-    MAKE_PATCH
-      say_description=>10
-      add_effect_inline'1=>~opcode=>75 timing=>1 target=>2 at_end=>1~
-      add_effect_inline'2=>~opcode=>240 timing=>1 target=>2 parameter2=>8 at_end=>1~
-      add_effect_inline'3=>~opcode=>81 timing=>1 target=>2 at_end=>1~
-      add_effect_inline'4=>~opcode=>240 timing=>1 target=>2 parameter2=>112 at_end=>1~
+    ACTION_IF FILE_EXISTS_IN_GAME "#curebld.spl"
+    BEGIN
+      MAKE_PATCH
+        say_description=>10
+	add_effect_inline=>~number_to_add=>2 opcode=>146 target=>1 timing=>1 parameter2=>1 resource=>"entry_index from [#curebld #curedef]"~
+      END
+    END
+    ELSE
+    BEGIN
+      MAKE_PATCH
+        say_description=>10
+	add_effect_inline'1=>~number_to_add=>2 opcode=>"entry_index from [75 81]" target=>1 timing=>1~
+	add_effect_inline'2=>~number_to_add=>2 opcode=>240 target=>1 timing=>1 parameter2=>"entry_index from [8 112]"~
+      END
     END
 
     LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
