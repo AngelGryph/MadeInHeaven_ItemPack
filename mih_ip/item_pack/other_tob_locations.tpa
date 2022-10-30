@@ -60,11 +60,12 @@ BEGIN
   // Castle Saradush
   //
   // mh#staf4 - Staff of the Legion +5 (on Karun the Black)
+  // mh#belt5 - Adriyana's Garter (on Karun the Black)
 
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "gromg08"
-    editstring	= ~remove_items=>"staf18" add_items=>"mh#staf4(weapon1)"~
+    editstring	= ~remove_items=>"staf18" add_items=>"mh#staf4(weapon1) mh#belt5(belt,x3)"~
   END
 
 

@@ -1,6 +1,7 @@
 mh#brac4 Bracers of the Wind			Ancient Grove (battle)
 mh#brac7 Gloves of Evasion			Watcher's Keep (maze)
 
+mh#belt5 Adriana's Garter			Saradush (battle)
 mh#belt7 Girdle of Storm Giant Strength		Sendai's Enclave (battle)
 
 mh#bull1 Priest's Bullet			(various temples)
