@@ -1107,7 +1107,7 @@ Charge abilities:
 - Neutralize Poison (1/day)
 
 THAC0: +2
-Damage: 1d6+2 (piercing)
+Damage: 1d6+3 (piercing)
 Speed Factor: 4
 Proficiency Type: Spear
 Type: Two-handed
@@ -1798,7 +1798,7 @@ Equipped abilities:
 - Immunity to backstab
 
 THAC0: +3
-Damage: 1d6+3 (piercing)
+Damage: 1d6+4 (piercing)
 Speed Factor: 3
 Proficiency Type: Spear
 Type: Two-handed

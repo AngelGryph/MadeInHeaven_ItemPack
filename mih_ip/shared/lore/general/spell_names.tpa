@@ -19,8 +19,8 @@ BEGIN
   ACTION_GET_STRREF name_strref old_name
   ACTION_GET_STRREF desc_strref old_desc
 
-  OUTER_TEXT_SPRINT new_name ~%dev_name_space%'s %old_name%~
-  OUTER_TEXT_SPRINT new_desc ~%dev_name_space%'s %old_desc%~
+  OUTER_TEXT_SPRINT new_name ~%dev_name%'s %old_name%~
+  OUTER_TEXT_SPRINT new_desc ~%dev_name%'s %old_desc%~
 
   STRING_SET_EVALUATE name_strref ~%new_name%~ desc_strref ~%new_desc%~
 

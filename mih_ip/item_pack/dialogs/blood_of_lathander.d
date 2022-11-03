@@ -70,3 +70,22 @@ END
 END	// APPEND "scsain"
 
 
+EXTEND_TOP "orphan1" 3 #3
+  IF ~HasItemEquiped("mh#ioun7", LastTalkedToBy(Myself))~
+    REPLY @14
+    DO ~ClearAllActions()
+        StartCutSceneMode()
+        FadeToColor([20.0], 0)
+        Wait(2)
+        MoveViewPoint([2402.1482], INSTANT)
+        ActionOverride(LastTalkedToBy(Myself), JumpToPoint([2386.1386]))
+        ActionOverride(LastTalkedToBy(Myself), Face(S))
+        FadeFromColor([20.0], 0)
+        Wait(1)
+        ActionOverride(LastTalkedToBy(Myself), ForceSpellRES("jworphan","orphan2"))
+        Wait(5)
+        EndCutSceneMode()~
+    EXIT
+END	// EXTEND_TOP "orphan1"
+
+
