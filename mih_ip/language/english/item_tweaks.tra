@@ -73,13 +73,7 @@ Immunity to normal weapons
 Duration: 1 turn
 
 Weight: 1~
-@10  = ~The elixir of health is a powerful healing mixture designed to cleanse the body of all impurities. First, it cures all poisons and diseases; then, once the system has been purged, the imbibed is cured by 10 Hit Points to speed the recovery process.
-
-STATISTICS:
-
-Special: Cures poison, disease, blindess and deafness, and heals 10 Hit Points
-
-Weight: 1~
+//@10  = ~~
 @11  = ~This is the buckler of Kiel the Legion Killer, firstborn son of Durlag Trollkiller and Clan-prince of his father's ill-fated tower. Its light weight and excellent craftsmanship increase the Dexterity of all who bear it by a single point.
 
 STATISTICS:
@@ -117,17 +111,7 @@ Requires:
  6 Strength
 
 Weight: 10~
-@14  = ~Thalanta the Fair created many types of cloaks, all known as Cloaks of the Stars. This particular version is simple, with three stars down each sleeve. Once per day, each star can be removed and thrown as a dart. The star disappears, only to return the next day.
-
-STATISTICS:
-
-Equipped abilities:
-- Saving Throws: +1
-
-Charge abilities:
-- Create six +5 darts once per day
-
-Weight: 3~
+//@14  = ~~
 @15  = ~Sand Golem Manual~
 @16  = ~Combining the strength of a stone golem and the resilience of a clay golem is the sand golem. The new pages added to the manual have enhanced its magical properties significantly. The user needs an Intelligence of 16 or better to understand the contents.
 

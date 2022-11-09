@@ -177,43 +177,6 @@ BEGIN
   END
 
 
-  // potn17 - Elixir of Health
-  //
-  // - Also cures blindness & deafness
-
-  LAUNCH_ACTION_FUNCTION check_ini
-    STR_VAR
-    ini		= "improve_elixir_of_health"
-    RET
-    improve_elixir_of_health	= value
-  END
-
-  ACTION_IF improve_elixir_of_health
-  BEGIN
-    ACTION_IF FILE_EXISTS_IN_GAME "#curebld.spl"
-    BEGIN
-      MAKE_PATCH
-        say_description=>10
-	add_effect_inline=>~number_to_add=>2 opcode=>146 target=>1 timing=>1 parameter2=>1 resource=>"entry_index from [#curebld #curedef]"~
-      END
-    END
-    ELSE
-    BEGIN
-      MAKE_PATCH
-        say_description=>10
-	add_effect_inline'1=>~number_to_add=>2 opcode=>"entry_index from [75 81]" target=>1 timing=>1~
-	add_effect_inline'2=>~number_to_add=>2 opcode=>240 target=>1 timing=>1 parameter2=>"entry_index from [8 112]"~
-      END
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item_and_external_spell
-      STR_VAR
-      item	= "potn17"
-      edits	= "patch_data"
-    END
-  END
-
-
   // shld20 - Kiel's Buckler
   //
   // Turn it into a +2 buckler.  Also correct icons on BG2.
@@ -241,27 +204,6 @@ BEGIN
       STR_VAR
       item	= "shld20"
       edits	= "patch_data"
-    END
-  END
-
-
-  // wand03 - Wand of Magic Missile
-  //
-  // Wand generates two Magic Missiles, as per P&P.
-
-  LAUNCH_ACTION_FUNCTION check_ini
-    STR_VAR
-    ini		= "improve_wand_of_magic_missile"
-    RET
-    improve_wand_of_magic_missile	= value
-  END
-
-  ACTION_IF improve_wand_of_magic_missile
-  BEGIN
-    LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
-      STR_VAR
-      item	= "wand03"
-      editstring	= ~patch_ability_inline=>"projectile=>69"~
     END
   END
 
