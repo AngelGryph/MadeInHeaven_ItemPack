@@ -124,7 +124,7 @@ BEGIN
   LAUNCH_ACTION_FUNCTION edit_creature
     STR_VAR
     creature	= "yaga01"
-    editstring	= ~add_items=>"mh#hamm1(weapon1)" remove_items=>"giafir hammr10"~
+    editstring	= ~add_items=>"mh#hamm2(weapon1)" remove_items=>"giafir hamm10"~
   END
 
 
