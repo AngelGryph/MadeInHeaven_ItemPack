@@ -2,10 +2,25 @@ DEFINE_ACTION_FUNCTION bg1_wands
 BEGIN
   // Wand of Frost
 
-  LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
-    STR_VAR
-    item	= "wand06"
-    editstring	= ~patch_ability_inline=>"projectile=>191"~
+  MAKE_PATCH
+    patch_ability_inline=>"projectile=>191"
+  END
+
+  ACTION_IF FILE_EXISTS_IN_GAME "wand06.spl"
+  BEGIN
+    LAUNCH_ACTION_FUNCTION edit_spell
+      STR_VAR
+      item	= "wand06"
+      edits	= "patch_data"
+    END
+  END
+  ELSE
+  BEGIN
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "wand06"
+      edits	= "patch_data"
+    END
   END
 
 
@@ -16,10 +31,21 @@ BEGIN
     patch_effect_inline=>~match=>"opcode = 12" dicenum=>"if enhanced_edition then 6 else 3~
   END
 
-  LAUNCH_ACTION_FUNCTION edit_item_or_external_spell
-    STR_VAR
-    item	= "wand07"
-    edits	= "patch_data"
+  ACTION_IF FILE_EXISTS_IN_GAME "wand07.spl"
+  BEGIN
+    LAUNCH_ACTION_FUNCTION edit_spell
+      STR_VAR
+      item	= "wand07"
+      edits	= "patch_data"
+    END
+  END
+  ELSE
+  BEGIN
+    LAUNCH_ACTION_FUNCTION edit_item
+      STR_VAR
+      item	= "wand07"
+      edits	= "patch_data"
+    END
   END
 END	// bg1_wands
 

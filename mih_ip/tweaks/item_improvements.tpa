@@ -147,7 +147,7 @@ BEGIN
   BEGIN
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
-      item	= "potn11"
+      item		= "potn11"
       editstring	= "say_description=>9"
     END
 
@@ -203,32 +203,6 @@ BEGIN
     LAUNCH_ACTION_FUNCTION edit_item
       STR_VAR
       item	= "shld20"
-      edits	= "patch_data"
-    END
-  END
-
-
-  // clck25 - Cloak of Stars
-  //
-  // Add +1 to saving throws as per P&P.
-
-  LAUNCH_ACTION_FUNCTION check_ini
-    STR_VAR
-    ini		= "improve_cloak_of_stars"
-    RET
-    improve_cloak_of_stars	= value
-  END
-
-  ACTION_IF is_bg2 AND improve_cloak_of_stars
-  BEGIN
-    MAKE_PATCH
-      say_description=>14
-      add_effect_global_inline=>~number_to_add=>5 opcode=>"entry_index from [33 34 35 36 37]" target=>1 timing=>2 parameter1=>1~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "clck25"
       edits	= "patch_data"
     END
   END
@@ -375,6 +349,8 @@ BEGIN
 
 
   // wa2robe - Robe of Vecna
+  //
+  // - The robe is now cursed with bad luck.
 
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
