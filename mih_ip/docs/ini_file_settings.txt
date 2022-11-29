@@ -79,24 +79,4 @@ areas.
 
 ===
 
-Shop Improvements
 
-- bg1_fix_large_shields=1
-
-Set to zero not fix the strange overabundance of magical large shields in BG1
-shops.
-
-- bg1_add_obscure_items=1
-
-Set to zero not add some obscure or hard to get items to selected shops.
-
-- bg1_move_thieving_stuff=1
-
-Set to zero not move thieving items from Taerom to Black Lily.
-
-- bg2_swap_hammers=1
-
-Set to zero not swap the locations of Aishedeena +2 and Borok's Fist +2 in
-Shadows of Amn.
-
-===
