@@ -1,29 +1,29 @@
-DEFINE_ACTION_FUNCTION tome_of_golems
+DEFINE_ACTION_FUNCTION setup_tome_of_golems
 BEGIN
   // Patch and add golem pages/tomes.
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
     item	= "tome04"
-    editstring	= ~say_both_names=>15 say_both_descriptions=>16 delete_effect=>"opcode is_in [314 50 215]"~
+    editstring	= ~say_both_names=>0 say_both_descriptions=>1 delete_effect=>"opcode is_in [314 50 215]"~
   END
 
   LAUNCH_ACTION_FUNCTION edit_item
     STR_VAR
     item	= "tome04a"
-    editstring	= "say_both_names=>17 say_both_descriptions=>18"
+    editstring	= "say_both_names=>2 say_both_descriptions=>3"
   END
 
   LAUNCH_ACTION_FUNCTION clone_item
     STR_VAR
     item	= "tome02=>tome05"
-    editstring	= %say_both_names=>19 say_both_descriptions=>20 patch_effect_inline=>~match=>"opcode = 177" resource=>"tome05"~%	// %-signs are string delimiters here!
+    editstring	= %say_both_names=>4 say_both_descriptions=>5 patch_effect_inline=>~match=>"opcode = 177" resource=>"tome05"~%	// %-signs are string delimiters here!
   END
 
   LAUNCH_ACTION_FUNCTION clone_item
     STR_VAR
     item	= "tome02a=>tome05a"
-    editstring	= "say_both_names=>21 say_both_descriptions=>22"
+    editstring	= "say_both_names=>6 say_both_descriptions=>7"
   END
 
   LAUNCH_ACTION_FUNCTION clone_creature
@@ -64,9 +64,23 @@ BEGIN
     LAUNCH_ACTION_FUNCTION extend_area_script
       STR_VAR
       area
-      bottom	= "tome_script_template"
+      bottom	= "place_tome_script"
     END
   END
-END	// tome_of_golems
+
+
+  // Update Cespenar dialog/forging
+
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    file	= "cespenar_tome.d"
+  END
+
+  LAUNCH_ACTION_FUNCTION extend
+    STR_VAR
+    script	= "botsmith"
+    bottom	= "cespenar_tome"
+  END
+END	// setup_tome_of_golems
 
 

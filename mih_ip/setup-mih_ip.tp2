@@ -35,6 +35,17 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// NPC Personal Items
+
+BEGIN @23
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "setup_npc_items"
+  location	= "npc_items"
+END
+
+
 // IWD Items for BG
 
 BEGIN @20
@@ -191,9 +202,9 @@ REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file		= "tome_of_golems"
-  location	= "tweaks"
-  tra		= "item_tweaks"
+  file		= "setup_tome_of_golems"
+  location	= "tome_of_golems"
+  tra		= "tome_of_golems"
 END
 
 
