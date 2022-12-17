@@ -14,7 +14,7 @@ Weight: 3~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Bless (3/day)
 - Cure Serious Wounds (1/day)
 - Neutralize Poison (1/day)
@@ -27,7 +27,7 @@ Many a person in Faerun has wished for a dozen or so of these gems to put on les
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Gain +1 intelligence permanently
 
 Equipped abilities:
@@ -42,7 +42,7 @@ An old legend tells of a wizard who invented a more powerful version of this ite
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - True Seeing (1/day)
 
 Weight: 1~
@@ -195,7 +195,7 @@ Equipped abilities:
 - Armor Class: +3
 - Saving Throws: +3
 
-Charge abilities:
+Charged abilities:
 - Improved Invisibility (1/day)
 
 Weight: 3~
@@ -358,7 +358,7 @@ Weight: 2~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Magic Missile (3/day, 12th level caster)
 
 Combat abilities:
@@ -428,7 +428,7 @@ Weight: 3~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Invisibility (self only)
 - Mirror Image
 
@@ -450,7 +450,7 @@ Equipped abilities:
 - Move Silently: -20%
 - Cold Resistance: +50%
 
-Charge abilities:
+Charged abilities:
 - Polymorph Self (1/day, polar bear)
 
 Armor Class: 4 (6 vs. piercing and missile)
@@ -484,7 +484,7 @@ Equipped abilities:
 - Fire Resistance: +30%
 - Cold Resistance: +30%
 
-Charge abilities:
+Charged abilities:
 - Ice Storm (1/day)
 - Cone of Cold (1/day)
 
@@ -508,7 +508,7 @@ Equipped abilities:
 - Infravision 60'
 - Dexterity: +1
 
-Charge abilities:
+Charged abilities:
 - Silence (1/day)
 - Cure Disease (1/day)
 - Neutralize Poison (1/day)
@@ -523,7 +523,7 @@ Equipped abilities:
 - Save vs. Death: +5
 - Immunity to Web
 
-Charge abilities:
+Charged abilities:
 - Web (2/day, 10th level caster)
 
 Weight: 3~
@@ -543,7 +543,7 @@ STATISTICS:
 Equipped abilities:
 - Armor Class: +1
 
-Charge abilities:
+Charged abilities:
 - Armor (1/day)
 - Shield (1/day)
 
@@ -584,7 +584,7 @@ As the name suggests, this ring is carved entirely from bone, preferably from an
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Negative Plane Protection (12th level caster)
 
 Weight: 0~
@@ -603,7 +603,7 @@ Weight: 0~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Melf's Minute Meteors (3/day)
 - Chain Lightning (2/day)
 - Meteor Swarm (1/day)
@@ -742,7 +742,7 @@ STATISTICS:
 Equipped abilities:
 - Regeneration (3 hp/round)
 
-Charge abilities:
+Charged abilities:
 - Cure Critical Wounds (4/day)
 - Raise Dead (1/day)
 - Greater Restoration (1/day)
@@ -791,7 +791,7 @@ STATISTICS:
 Combat abilities:
 - 10% chance of vorpal hit on evil enemies (no save)
 
-Charge abilities:
+Charged abilities:
 - Earthquake (1/day)
   5d10 damage to all enemies in target area (no save)
 
@@ -835,7 +835,7 @@ Like the 5th-level spell Raise Dead, Resurrection will return a character back t
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Recall Spell (1/day, 4th level)
 
 Weight: 0~
@@ -848,7 +848,7 @@ Weight: 1~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Flame Strike (1/day)
 
 Combat abilities:
@@ -871,7 +871,7 @@ Weight: 6~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Breach (1/day)
 - Globe of Invulnerability (1/day)
 - Ruby Ray of Reversal (1/day)
@@ -969,7 +969,7 @@ Weight: 25~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Mirror Image (2/day)
 - Detect Illusion (1/day)
 
@@ -987,7 +987,7 @@ Equipped abilities:
 - Armor Class: +5 bonus
 - Fire Resistance: 100%
 
-Charge abilities:
+Charged abilities:
 - Globe of Invulnerability (3/day)
 
 Weight: 2~
@@ -1062,7 +1062,7 @@ Weight: 2~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Once per day, summons a random animal for one hour.
   Possible animals are: cave bear, phase spider, dire wolf, brown bear, jaguar, polar bear, giant snake, sword spider, lion and winter wolf.
 
@@ -1073,7 +1073,7 @@ Weight: 3~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Clairvoyance
 
 Weight: 2~
@@ -1086,7 +1086,7 @@ Equipped abilities:
 - Acid Resistance: +50%
 - Cold Resistance: +50%
 
-Charge abilities:
+Charged abilities:
 - Charm Water Elemental once per day (Save vs. Spell at +2 negates)
   Range: Touch
   Duration: 45 seconds
@@ -1103,7 +1103,7 @@ STATISTICS:
 Equipped abilities:
 - Immunity to poison
 
-Charge abilities:
+Charged abilities:
 - Neutralize Poison (1/day)
 
 THAC0: +2
@@ -1122,7 +1122,7 @@ Ahksar himself thankfully no longer exists, apparently his power and depravity k
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Animate Dead (3/day, caster level 20th)
 - Abi-Dalzim's Horrid Wilting (1/day)
 
@@ -1151,7 +1151,7 @@ STATISTICS:
 Combat abilities:
 - Struck water elementals must save vs. Spell or be destroyed
 
-Charge abilities:
+Charged abilities:
 - Summon 8-HD Lesser Water Elemental
   Range: 20 ft.
   Duration: 1 hour
@@ -1176,7 +1176,7 @@ Weight: 3~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Summon Insects
 
 THAC0: +2
@@ -1259,7 +1259,7 @@ Unlike most wands, this wand will recharge overnight.
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Magic Missile (6/day)
   Creates 5 missiles, each inflicting 1d4+1 magic damage
   Range: 70 ft.
@@ -1409,7 +1409,7 @@ Weight: 1~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Protection from Evil/Good, 10' Radius (1/day)
 
 Weight: 3~
@@ -1438,13 +1438,24 @@ Equipped abilities:
 - Saving Throws: +2 (all)
 - Missile Resistance: 90%
 
-Charge abilities:
+Charged abilities:
 - Stone Skin (1/day)
 - Conjure Earth Elemental (1/day)
 
 Weight: 6~
-//@259  = ~~
-//@260  = ~~
+@259  = ~Orb of Dragonkind~
+@260  = ~This fabled artifact has many myths and legends surrounding it, and seprating the facts from the fables has lead to many scholary debates among the sages.  It is generally accepted that the Orbs of Dragonkind were the result of some sort of truce between the ancient dragons and early humanoids, but the humans, elves, dwarves and dragons all have their own versions of how this came to be.
+
+The only thing that is certain is that possessing just one of these grants the bearer great power over dragonkind.  Most likely this is how Abazigal managed to gather his army of dragons, as normally chromatic dragons hate each other and are not inclined to cooperate.
+
+Unlocking the full potential of this artifact will most likely take months if not years of study.  Right now, it can only be used to bring the wrath of an ancient red dragon down upon one's foes.
+
+STATISTICS:
+
+Charged abilities:
+- Dragon's Breath (1/day)
+
+Weight: 5~
 @261  = ~White Shield +4~
 @262  = ~This shield was crafted from a single scale of a great wyrm white dragon and strongly enchanted.  Another relic from the ancient elven conflict known as Crown Wars, its exact history is a riddle elven sages do not wish to discuss and those of other races may only guess at.
 
@@ -1494,7 +1505,7 @@ Weight: 2~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Bless (1/day)
 - Protection from Evil, 10' radius (1/day)
 - Slow Poison (1/day)
@@ -1523,7 +1534,7 @@ Equipped abilities:
 - Cold Resistance: +25%
 - Fire Resistance: -25%
 
-Charge abilities:
+Charged abilities:
 - Fire Shield (1/day, red only)
 
 Weight: 3~
@@ -1535,7 +1546,7 @@ STATISTICS:
 Equipped abilities:
 - Armor Class: +2 vs. Undead
 
-Charge abilities:
+Charged abilities:
 - False Dawn (1/day as a 14th level priest)
 
 Weight: 3~
@@ -1544,7 +1555,7 @@ Weight: 3~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Zone of Sweet Air (1/day)
 
 Weight: 2~
@@ -1618,7 +1629,7 @@ In addition to dealing extra damage to undead and fiends, this sword can heal th
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Cure Critical Wounds (1/day, self only)
 - Flame Strike (1/day)
 
@@ -1688,7 +1699,7 @@ Weight: 60~
 
 STATISTICS:
 
-Charge abilities:
+Charged abilities:
 - Protection from the Elements (1/day, wearer only)
 
 Equipped abilities:
@@ -1746,7 +1757,7 @@ STATISTICS:
 Equipped abilities:
 - Immunity to poison and disease
 
-Charge abilities:
+Charged abilities:
 - Poison (3/day, 12th level)
 
 Armor Class: -2 (-3 vs. piercing and missile)
@@ -1820,7 +1831,7 @@ STATISTICS:
 Equipped abilities:
 - Armor Class: +4
 
-Charge abilities:
+Charged abilities:
 - Spell Turning (1/day)
 
 THAC0: +4
@@ -1878,7 +1889,7 @@ STATISTICS:
 Equipped abilities:
 - Armor Class: +1
 
-Charge abilities:
+Charged abilities:
 - Magic Missile (2/day, 5th level/3 missiles)
 - Forceblow (1/day)
 A strike with the gauntlet deals 6d4 crushing damage and the target must save vs. breath to avoid being stunned and hurled away from the bearer of the gauntlet.

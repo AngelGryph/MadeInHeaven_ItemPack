@@ -22,6 +22,8 @@ mh#hamm2 Maul of the Titans			Yaga-Shura (battle)
 mh#ioun1 Pale Blue Ioun Stone			Sister Garlena (shop)
 mh#ioun2 Crystal Clear Ioun Stone		Sister Garlena (shop)
 
+mh#misc7 Orb of Dragonkind			Abazigal's Lair (battle)
+
 mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
 mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
 mh#potn6 Alchemist's Fire			Arcana Archives (shop)

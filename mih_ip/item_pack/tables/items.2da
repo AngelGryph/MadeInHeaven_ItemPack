@@ -105,6 +105,7 @@ mh#misc3	194	196	194	195	0x0	*		*
 mh#misc4	6	7	*	*	0x0	*		*
 mh#misc5	249	250	*	*	0x0	*		*
 mh#misc6	283	284	*	*	0x0	*		*
+mh#misc7	259	260	*	*	0x0	*		*
 
 mh#plat1	89	90	*	*	0x2	*		*
 mh#plat3	305	306	*	*	0x2	*		*

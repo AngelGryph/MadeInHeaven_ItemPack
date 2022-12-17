@@ -192,6 +192,19 @@ BEGIN
     creature	= "sengua03"
     edits	= "patch_data"
   END
+
+
+  // ===============
+  // Abazigal's Lair
+  // ===============
+
+  // mh#misc7 - Orb of Dragonkind
+
+  LAUNCH_ACTION_FUNCTION edit_creature
+    STR_VAR
+    creature	= "dragblue"
+    editstring	= ~add_items=>"mh#misc7(inv,x1)"~
+  END
 END	// other_tob_locations
 
 

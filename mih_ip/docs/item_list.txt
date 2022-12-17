@@ -103,6 +103,7 @@ mh#misc3 Crystal Ball				DMG (2e)
 mh#misc4 Gem of Seeing				DMG (2e)
 mh#misc5 Horn of Goodness/Evil			DMG (2e)
 mh#misc6 Bottle of Pleasant Odors		Encyclopedia Magica (2e)
+mh#misc7 Orb of Dragonkind			Book of Artifacts (2e)
 
 mh#plat1 Dwarven Plate +1
 mh#plat3 Laeral's Storm Armor +2		Encyclopedia Magica (2e)
