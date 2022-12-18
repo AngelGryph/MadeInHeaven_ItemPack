@@ -8,7 +8,10 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
-Version 7 - ???
+Version 7 - December 18 2022
+- Many bug fixes.
+- Several new items.
+- Separated IWD- and PST items from main component.
 
 Version 6 - August 4 2021
 - Replaced or removed a couple of items that proved unbalanced or just didn't
