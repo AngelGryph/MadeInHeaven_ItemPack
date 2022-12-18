@@ -1,0 +1,24 @@
+Imoen
+=====
+
+mh#npirg	Ring of Projection		Code of the Harpers (2e)
+
+
+Jaheira
+=======
+
+mh#npjbr	Jhannyl's Bracelet		Code of the Harpers (2e)
+
+
+Khalid
+======
+
+mh#npksw	Khalid's Sword			Code of the Harpers (2e)
+
+
+Minsc
+=====
+
+mh#mfw		Minsc's Jhuild			Spellbound (2e)
+
+
