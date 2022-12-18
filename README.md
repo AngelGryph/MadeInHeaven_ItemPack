@@ -8,6 +8,8 @@ An item pack for Baldur's Gate 1 and Baldur's Gate 2.
 
 ## Version History
 
+Version 8 - ???
+
 Version 7 - December 18 2022
 - Many bug fixes.
 - Several new items.
