@@ -1,4 +1,47 @@
-@0    = ~Ring of Projection~
-@1    = ~Ring of Projection~
-@2    = ~Jhannyl's Bracelet~
-@3    = ~Jhannyl's Bracelet~
+@0    = ~Mask~
+@1    = ~An elegant face mask which partially obscures the wearer's features.
+
+Weight: 2~
+@2    = ~Mask of Infravision~
+@3    = ~The witches of Rasheman always go masked in their home country, and often choose to do so while abroad as well.  These masks usually bear some sort of minor enchantment of them.
+
+STATISTICS:
+
+Equipped abilities:
+- Infravision
+
+Weight: 2~
+@4    = ~Ring of Projection~
+@5    = ~Imoen never told you where she got this minor magical ring, but she has had it for many years.  Not to be confused with a ring of protection, this ring merely adds a little force to launched projectiles.
+
+STATISTICS:
+
+Equipped abilities:
+- Missile Damage: +3
+
+Weight: 0~
+@6    = ~Jhannyl's Bracelet~
+@7    = ~This enchanted silver bracelet has tiny charms attached to it, two of which represent a moon and a harp.   When asked where she got this minor magical trinket, Jaheira just smiles and remains silent.
+
+STATISTICS:
+
+Equipped abilities:
+- Saving Throws: +1, +2 vs. Poison/Paralyze/Death and Petrification/Polymorph
+
+Weight: 1~
+@8    = ~Khalid's Singing Sword~
+@9    = ~While Khalid's sword looks unremarkable at first glance, there is a subtle magic to it.  While its minor magical properties are no doubt useful, at present its greatest value is likely that it is not affected by the iron plague.
+
+STATISTICS:
+
+Combat abilities:
+- Counts as a +3 weapon for purposes of what it can hit.
+
+Charge abilities:
+- Singing (1/day)
+  One per day the blade can sing, which has the effect of a triple-strength
+  Bless spell, but only upon its wielder.  The effect lasts for three rounds.
+
+Weight: 4~
+@10   = ~Bottle of Jhuild~
+@11   = ~Bottle of Jhuild~

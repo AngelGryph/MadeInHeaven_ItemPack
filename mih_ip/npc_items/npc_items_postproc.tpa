@@ -1,0 +1,19 @@
+DEFINE_ACTION_FUNCTION npc_items_postproc
+BEGIN
+  // Add new use restrictions to item_use.2da
+
+  LAUNCH_ACTION_FUNCTION get_directory
+    STR_VAR
+    location
+    locbase
+    locabs
+    RET
+    directory
+  END
+
+  COPY_EXISTING "item_use.2da" "override"
+    APPEND_FILE "%directory%/tables/item_use.2da"
+    PRETTY_PRINT_2DA
+END	// npc_items_postproc
+
+

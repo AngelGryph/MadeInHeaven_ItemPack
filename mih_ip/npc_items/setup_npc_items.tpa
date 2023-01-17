@@ -13,13 +13,11 @@ BEGIN
     tra		= "npc_items"
   END
 
-/*
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
     file	= "npc_items_postproc"
     tra		= "npc_items"
   END
-*/
 END	// setup_npc_items
 
 
