@@ -39,9 +39,20 @@ Combat abilities:
 
 Charge abilities:
 - Singing (1/day)
-  One per day the blade can sing, which has the effect of a triple-strength
-  Bless spell, but only upon its wielder.  The effect lasts for three rounds.
+  One per day the blade can sing, which has the effect of a triple-strength Bless spell, but only upon its wielder.  The effect lasts for three rounds.
 
 Weight: 4~
 @10   = ~Bottle of Jhuild~
-@11   = ~Bottle of Jhuild~
+@11   = ~This is a bottle of jhuild, also known as firewine though it should not be confused with the Old Empires firewine commonly served in the bars of the Sword Coast.  This incredibly potent dark reddish brew is made by the witches of Rasheman from grapes, fruits and various herbs and is considered the national brew of Rasheman.
+
+Rasheman berserkers are known to consume vast quantities before battle to increase ferocity and bolster morale.  The considerable hangover afterwards is considered part of the price for the Rashemaar being the fiercest warriors in Faerun and nobody complains, at least not much.
+
+STATISTICS:
+
+Each drink grants:
+- Wisdom: -1 penalty
+- Immunity to fear and morale loss
+- +3 damage to all attacks
+The effects last for one hour.  Afterwards, the imbiber must save versus poison or fall in coma for an hour.
+
+Weight: 1~

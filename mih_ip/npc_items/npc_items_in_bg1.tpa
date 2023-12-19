@@ -1,0 +1,19 @@
+DEFINE_ACTION_FUNCTION npc_items_in_bg1
+BEGIN
+  COPY_EXISTING_REGEXP "^dynahe[0-9]*\.cre$" "override"
+    ADD_CRE_ITEM "mh#npdm1" #0 #0 #0 "identified" "helmet"
+
+  COPY_EXISTING_REGEXP "^imoen[0-9]*\.cre$" "override"
+    ADD_CRE_ITEM "mh#npirg" #0 #0 #0 "identified" "ring"
+
+  COPY_EXISTING_REGEXP "^jaheir[0-9]*\.cre$" "override"
+    ADD_CRE_ITEM "mh#npjbr" #0 #0 #0 "identified" "gloves"
+
+  COPY_EXISTING_REGEXP "^khalid[0-9]*\.cre$" "override"
+      ADD_CRE_ITEM "mh#npksw" #0 #1 #0 "identified" "weapon" EQUIP
+
+  COPY_EXISTING_REGEXP "^minsc[0-9]*\.cre$" "override"
+    ADD_CRE_ITEM "mh#npmfw" #6 #0 #0 "identified" "qitem2 qitem3"
+END	// npc_items_in_bg1
+
+

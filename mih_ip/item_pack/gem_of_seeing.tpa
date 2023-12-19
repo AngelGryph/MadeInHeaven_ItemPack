@@ -1,12 +1,12 @@
 DEFINE_ACTION_FUNCTION gem_of_seeing
 BEGIN
-  ADD_JOURNAL @10 @19 @27 @29 @36 @38
-
   LAUNCH_ACTION_FUNCTION install
     STR_VAR
     file	= "gem_of_seeing.d"
     location	= "dialogs"
   END
+
+  ADD_JOURNAL @10 @19 @27 @29 @36 @38
 
   LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
     STR_VAR

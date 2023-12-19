@@ -1,0 +1,5 @@
+DEFINE_ACTION_FUNCTION npc_items_in_bg2
+BEGIN
+END	// npc_items_in_bg2
+
+
