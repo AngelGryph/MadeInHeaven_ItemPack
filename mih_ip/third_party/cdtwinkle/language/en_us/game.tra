@@ -1,0 +1,120 @@
+@100 = ~This is the magical scimitar +5 Defender that bears the name "Twinkle."  It is one of the personal weapons of Drizzt.  Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Can vary between +0 AC/+5 THAC0/Damage to +5 AC/+0 THAC0/Damage at will
+
+Damage:  1d8
+Special:  +5  Armor Class bonus
+Damage type:  Slashing
+Weight:  4
+Proficiency type:  Scimitar
+Speed Factor:  5
+Type:  1-handed
+Requires: 8 Strength
+Not usable by:
+ Evil or Neutral Alignment
+ Mage
+ Cleric~
+@101 = ~This is the magical scimitar +5 Defender that bears the name "Twinkle."  It is one of the personal weapons of Drizzt.  Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Can vary between +0 AC/+5 THAC0/Damage to +5 AC/+0 THAC0/Damage at will
+
+Damage:  1d8 + 1
+THAC0:  +1 bonus
+Special:  +4  Armor Class bonus
+Damage type:  Slashing
+Weight:  4
+Proficiency type:  Scimitar
+Speed Factor:  4
+Type:  1-handed
+Requires: 8 Strength
+Not usable by:
+ Evil or Neutral Alignment
+ Mage
+ Cleric~
+@102 = ~This is the magical scimitar +5 Defender that bears the name "Twinkle."  It is one of the personal weapons of Drizzt.  Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Can vary between +0 AC/+5 THAC0/Damage to +5 AC/+0 THAC0/Damage at will
+
+Damage:  1d8 + 2
+THAC0:  +2 bonus
+Special:  +3  Armor Class bonus
+Damage type:  Slashing
+Weight:  4
+Proficiency type:  Scimitar
+Speed Factor:  3
+Type:  1-handed
+Requires: 8 Strength
+Not usable by:
+ Evil or Neutral Alignment
+ Mage
+ Cleric~
+@103 = ~This is the magical scimitar +5 Defender that bears the name "Twinkle."  It is one of the personal weapons of Drizzt.  Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Can vary between +0 AC/+5 THAC0/Damage to +5 AC/+0 THAC0/Damage at will
+
+Damage:  1d8 + 3
+THAC0:  +3 bonus
+Special:  +2  Armor Class bonus
+Damage type:  Slashing
+Weight:  4
+Proficiency type:  Scimitar
+Speed Factor:  2
+Type:  1-handed
+Requires: 8 Strength
+Not usable by:
+ Evil or Neutral Alignment
+ Mage
+ Cleric~
+@104 = ~This is the magical scimitar +5 Defender that bears the name "Twinkle."  It is one of the personal weapons of Drizzt.  Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Can vary between +0 AC/+5 THAC0/Damage to +5 AC/+0 THAC0/Damage at will
+
+Damage:  1d8 + 4
+THAC0:  +4 bonus
+Special:  +1  Armor Class bonus
+Damage type:  Slashing
+Weight:  4
+Proficiency type:  Scimitar
+Speed Factor:  1
+Type:  1-handed
+Requires: 8 Strength
+Not usable by:
+ Evil or Neutral Alignment
+ Mage
+ Cleric~
+@105 = ~This is the magical scimitar +5 Defender that bears the name "Twinkle."  It is one of the personal weapons of Drizzt.  Due to its magical nature, only those pure of heart can use it.
+
+STATISTICS:
+
+Can vary between +0 AC/+5 THAC0/Damage to +5 AC/+0 THAC0/Damage at will
+
+Damage:  1d8 + 5
+THAC0:  +5 bonus
+Damage type:  Slashing
+Weight:  4
+Proficiency type:  Scimitar
+Speed Factor:  0
+Type:  1-handed
+Requires: 8 Strength
+Not usable by:
+ Evil or Neutral Alignment
+ Mage
+ Cleric~
+@106 = ~Twinkle~
+@107 = ~Change Twinkle's AC/THAC0/Damage Bonuses~
+@108 = ~No AC Bonus, +5 THAC0 and Damage Bonuses~
+@109 = ~+1 AC Bonus, +4 THAC0 and Damage Bonuses~
+@110 = ~+2 AC Bonus, +3 THAC0 and Damage Bonuses~
+@111 = ~+3 AC Bonus, +2 THAC0 and Damage Bonuses~
+@112 = ~+4 AC Bonus, +1 THAC0 and Damage Bonuses~
+@113 = ~+5 AC Bonus, No THAC0 and Damage Bonuses~

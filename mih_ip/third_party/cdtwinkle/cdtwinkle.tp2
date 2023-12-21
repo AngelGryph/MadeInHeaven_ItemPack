@@ -1,0 +1,222 @@
+BACKUP ~weidu_external/cdtwinkle/backup~ // location to store files for
+SUPPORT ~https://www.gibberlings3.net/forums/forum/28-miscellaneous-released-mods/~ // URL displayed if install fails
+
+ALWAYS
+
+  ACTION_IF GAME_IS ~bgee bg2ee eet~ BEGIN // ee games
+  
+    ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @1 END // DLC Merger check
+
+    OUTER_SET enhanced_edition = 1 // re-using David's variables
+    OUTER_SPRINT ~tra_location~ ~cdtwinkle/language~
+    
+    LOAD_TRA ~cdtwinkle/language/%LANGUAGE%/game_ee.tra~
+
+  END ELSE BEGIN
+
+    OUTER_SET enhanced_edition = 0
+    OUTER_SPRINT ~tra_location~ ~weidu_external/cdtwinkle/language~
+
+    // convert strings from UTF-8 for originals  
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN weidu game_ee END
+    ACTION_DEFINE_ARRAY cdreload BEGIN game END
+    LAF HANDLE_CHARSETS INT_VAR from_utf8 = 1 infer_charsets = 1 
+                        STR_VAR default_language = ~en_us~ tra_path = ~cdtwinkle/language~ out_path = ~weidu_external/cdtwinkle/language~ noconvert_array = cdnoconvert reload_array = cdreload END
+
+  END  
+
+END // end always
+
+VERSION ~v1~
+
+README ~cdtwinkle/readme-cdtwinkle-%LANGUAGE%.html~ ~cdtwinkle/readme-cdtwinkle.html~
+
+LANGUAGE ~English~  ~en_us~ ~cdtwinkle/language/en_us/weidu.tra~ ~cdtwinkle/language/en_us/game.tra~
+
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////                                                  \\\\\
+///// make twinkle a defender weapon                   \\\\\
+/////                                                  \\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
+
+BEGIN @0 DESIGNATED 0
+REQUIRE_PREDICATE GAME_IS ~bgee bg2ee eet soa tob tutu bgt~ @2 
+LABEL ~cd_make_twinkle_a_defender~
+
+/////                                                  \\\\\
+///// make the various twinkles                        \\\\\
+/////                                                  \\\\\
+
+COPY_EXISTING ~sw1h16.itm~ ~override~
+  READ_SHORT  0x68 abil_num
+  PATCH_IF !abil_num BEGIN PATCH_FAIL @3 END // sanity check
+  SAY 0x0c @106
+  READ_LONG 0x0c name // just in case, for tooltips
+  SAY 0x54 @103 // default is the +3 model
+  WRITE_LONG 0x60 3 // set enchantment, just in case
+  LPF ALTER_EFFECT INT_VAR check_headers = 0 match_opcode = 0 parameter1 = 2 END // set +AC, just in case
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 speed = 2 thac0_bonus = 3 damage_bonus = 3 END // set ws/thac0/+damage, just in case
+  WRITE_SHORT 0x68 (abil_num + 1)
+  READ_LONG   0x6a fx_off
+  WRITE_LONG  0x6a (fx_off + 0x38)
+  PATCH_IF (abil_num > 0) BEGIN
+    READ_LONG   0x64 abil_off
+    READ_SHORT (abil_off + 0x1e + ((abil_num - 1) * 0x38)) last_fx_num
+    READ_SHORT (abil_off + 0x20 + ((abil_num - 1) * 0x38)) last_fx_idx
+    SET new_fx = (last_fx_idx + last_fx_num)
+  END ELSE BEGIN
+    READ_SHORT  0x70 new_fx
+  END
+  // because create inventory item doesn't have a way to set charges, create new and delete current
+  INSERT_BYTES   (fx_off +        (new_fx * 0x30)) 0x30 // new effect
+    WRITE_SHORT  (fx_off +        (new_fx * 0x30)) 214  // select spell
+    WRITE_BYTE   (fx_off + 0x02 + (new_fx * 0x30)) 1    // target: self
+    WRITE_BYTE   (fx_off + 0x0c + (new_fx * 0x30)) 1    // instant/permanent till death
+    WRITE_BYTE   (fx_off + 0x12 + (new_fx * 0x30)) 100  // probability
+    WRITE_ASCIIE (fx_off + 0x14 + (new_fx * 0x30)) ~cdtwnk~ #8
+  INSERT_BYTES   (fx_off       ) 0x38          // new ability
+    WRITE_BYTE   (fx_off       ) 3             // magical
+    WRITE_BYTE   (fx_off + 0x01) 1             // ID to use
+    WRITE_SHORT  (fx_off + 0x02) 3             // in item slots
+    WRITE_ASCIIE (fx_off + 0x04) ~cdtwnkl3~ #8 // item bam
+    WRITE_SHORT  (fx_off + 0x0c) 5             // target: caster
+    WRITE_SHORT  (fx_off + 0x0e) 1             // range: 1
+    WRITE_SHORT  (fx_off + 0x1e) 1             // num effects: 1
+    WRITE_SHORT  (fx_off + 0x20) new_fx        // fx index
+    WRITE_SHORT  (fx_off + 0x22) 1             // num charges
+    WRITE_BYTE   (fx_off + 0x24) 1             // vanishes when drained
+    WRITE_LONG   (fx_off + 0x26) BIT11         // recharge after resting
+    WRITE_SHORT  (fx_off + 0x2a) 1             // projectile: none
+  BUT_ONLY
+
+COPY ~cdtwinkle/files/cdtwnk.2da~ ~override~ // table for op214
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_twinkles BEGIN
+  100, 113 => 0
+  101, 112 => 1
+  102, 111 => 2
+  103, 110 => 3
+  104, 109 => 4
+  105, 108 => 5
+END
+
+ACTION_PHP_EACH cd_twinkles AS params => enchantment BEGIN
+
+  COPY ~cdtwinkle/files/twinkle.tph~ ~weidu_external/cdtwinkle/working.tph~ EVALUATE_BUFFER
+  REINCLUDE ~weidu_external/cdtwinkle/working.tph~
+
+END
+
+/////                                                  \\\\\
+///// wrapping up                                      \\\\\
+/////                                                  \\\\\
+
+// for new swapping ability, need to ensure any instance of Twinkle has a charge for it
+ACTION_IF ((abil_num = 1) OR (abil_num = 2)) BEGIN // however, don't both bother if new ability is #4 or later
+
+  COPY_EXISTING_REGEXP GLOB ~^.+\.[ac]re$~ ~override~
+    PATCH_IF ("%SOURCE_FILE%" STRING_COMPARE_REGEXP "^.+\.cre$" = 0) BEGIN // if creature
+      READ_LONG 0x2bc itm_off ELSE 0
+      READ_LONG 0x2c0 itm_num ELSE 0
+    END ELSE BEGIN
+      READ_LONG  0x78 itm_off ELSE 0
+      READ_SHORT 0x76 itm_num ELSE 0
+    END
+    FOR (index = 0 ; index < itm_num ; ++index) BEGIN
+      READ_ASCII (itm_off +        (0x14 * index)) item ELSE ""
+      PATCH_IF ("%item%" STRING_COMPARE_CASE "sw1h16" = 0) BEGIN
+        WRITE_SHORT (itm_off + 0x0a + (abil_num * 0x02) + (0x14 * index)) 1 // add charge
+      END
+    END
+    BUT_ONLY
+  
+  // add charges to items being sold
+  COPY_EXISTING_REGEXP GLOB ~^.+\.sto$~ ~override~
+    READ_LONG 0x34 sale_off  ELSE 0
+    READ_LONG 0x38 sale_num  ELSE 0
+    FOR (index = 0 ; index < sale_num ; ++index) BEGIN
+      READ_ASCII (sale_off +        (index * 0x1c)) item
+      PATCH_IF ("%item%" STRING_COMPARE_CASE "sw1h16" = 0) BEGIN
+        WRITE_SHORT (sale_off + 0x0a + (abil_num * 0x02) + (0x1c * index)) 1 // add charge
+      END
+    END
+    BUT_ONLY
+
+  // now add tooltip for new ability
+  OUTER_SET tooltip = RESOLVE_STR_REF (@107)
+  ACTION_IF FILE_CONTAINS_EVALUATED (~tooltip.2da~ ~^[Ss][Ww]1[Hh]16[ %TAB%]~) BEGIN // if twinkle already listed under tooltips
+
+    COPY_EXISTING ~tooltip.2da~ ~override~
+      REPLACE_EVALUATE ~^[Ss][Ww]1[Hh]16\([ %TAB%]+[^ %TAB%]+[ %TAB%]+\)\([^ %TAB%]+\)\([ %TAB%]+\)\([^ %TAB%]+\)~ BEGIN
+        PATCH_IF (abil_num = 1) BEGIN
+          SPRINT output 
+ ~sw1h16%MATCH1%%tooltip%%MATCH3%%MATCH4%
+cdtwnkl0%MATCH1%%tooltip%%MATCH3%%MATCH4%
+cdtwnkl1%MATCH1%%tooltip%%MATCH3%%MATCH4%
+cdtwnkl2%MATCH1%%tooltip%%MATCH3%%MATCH4%
+cdtwnkl3%MATCH1%%tooltip%%MATCH3%%MATCH4%
+cdtwnkl4%MATCH1%%tooltip%%MATCH3%%MATCH4%
+cdtwnkl5%MATCH1%%tooltip%%MATCH3%%MATCH4%~
+        END ELSE BEGIN  
+          SPRINT output 
+ ~sw1h16%MATCH1%%MATCH2%%MATCH3%%tooltip%
+cdtwnkl0%MATCH1%%MATCH2%%MATCH3%%tooltip%
+cdtwnkl1%MATCH1%%MATCH2%%MATCH3%%tooltip%
+cdtwnkl2%MATCH1%%MATCH2%%MATCH3%%tooltip%
+cdtwnkl3%MATCH1%%MATCH2%%MATCH3%%tooltip%
+cdtwnkl4%MATCH1%%MATCH2%%MATCH3%%tooltip%
+cdtwnkl5%MATCH1%%MATCH2%%MATCH3%%tooltip%~
+        END
+      END ~%output%~
+      BUT_ONLY    
+  
+  END ELSE BEGIN // if twinkle not listed    
+    ACTION_IF (abil_num = 1) BEGIN
+      APPEND ~tooltip.2da~ 
+~sw1h16   15529 %tooltip% -1
+cdtwnkl0 15529 %tooltip% -1
+cdtwnkl1 15529 %tooltip% -1
+cdtwnkl2 15529 %tooltip% -1
+cdtwnkl3 15529 %tooltip% -1
+cdtwnkl4 15529 %tooltip% -1
+cdtwnkl5 15529 %tooltip% -1~
+
+    END ELSE BEGIN
+      APPEND ~tooltip.2da~ 
+~sw1h16   15529 %name% %tooltip%
+cdtwnkl0 15529 %name% %tooltip%
+cdtwnkl1 15529 %name% %tooltip%
+cdtwnkl2 15529 %name% %tooltip%
+cdtwnkl3 15529 %name% %tooltip%
+cdtwnkl4 15529 %name% %tooltip%
+cdtwnkl5 15529 %name% %tooltip%~
+
+    END
+  END  
+END 
+
+ACTION_IF GAME_IS ~eet bg2ee soa tob bgt~ BEGIN // malchor harpell junk
+
+  COPY_EXISTING ~ar0602.bcs~ ~override~
+                ~baldur.bcs~ ~override~
+                ~c6harp.bcs~ ~override~
+                ~c6harp.dlg~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_EVALUATE ~OR(\([0-9]+\))\(\([ %TAB%%LNL%%MNL%%WNL%]+PartyHasItem("[Cc][Hh][Aa][Nn]06")\)?[ %TAB%%LNL%%MNL%%WNL%]+PartyHasItem("[Ss][Ww]1[Hh]15")[ %TAB%%LNL%%MNL%%WNL%]+PartyHasItem("[Ss][Ww]1[Hh]16")\)~ BEGIN
+        SET trig = MATCH1 + 6
+      END ~OR(%trig%) %MATCH2% PartyHasItem("cdtwnkl0") PartyHasItem("cdtwnkl1") PartyHasItem("cdtwnkl2") PartyHasItem("cdtwnkl3") PartyHasItem("cdtwnkl4") PartyHasItem("cdtwnkl5")~
+    END
+    BUT_ONLY    
+
+  COPY_EXISTING ~c6harp.dlg~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      REPLACE_TEXTUALLY ~!PartyHasItem("[Ss][Ww]1[Hh]16")~ 
+        ~!PartyHasItem("sw1h16") !PartyHasItem("cdtwnkl0") !PartyHasItem("cdtwnkl1") !PartyHasItem("cdtwnkl2") !PartyHasItem("cdtwnkl3") !PartyHasItem("cdtwnkl4") !PartyHasItem("cdtwnkl5")~
+      REPLACE_TEXTUALLY ~TakePartyItem("[Ss][Ww]1[Hh]16")~ 
+        ~TakePartyItem("sw1h16") TakePartyItem("cdtwnkl0") TakePartyItem("cdtwnkl1") TakePartyItem("cdtwnkl2") TakePartyItem("cdtwnkl3") TakePartyItem("cdtwnkl4") TakePartyItem("cdtwnkl5")~
+    END
+    BUT_ONLY    
+ 
+END 

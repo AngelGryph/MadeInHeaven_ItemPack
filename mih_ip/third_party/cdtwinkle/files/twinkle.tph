@@ -1,0 +1,19 @@
+COPY ~cdtwinkle/files/cdtwnkl%enchantment%.bam~ ~override~ // copy bams as long as we're here
+
+COPY_EXISTING ~sw1h16.itm~ ~override/cdtwnkl%enchantment%.itm~ // clone into zero-lore +x
+  WRITE_SHORT 0x42 0 // lore to ID
+  SAY 0x54 @%params_0%
+  WRITE_LONG 0x60 enchantment // enchantment
+  WRITE_ASCIIE (fx_off + 0x04) ~cdtwnkl%enchantment%~ #8 // taking advantage that the offsets haven't changed from initial patch
+  PATCH_IF enchantment != 5 BEGIN
+    LPF ALTER_EFFECT INT_VAR check_headers = 0 match_opcode = 0 parameter1 = (5 - enchantment) END // +AC
+  END ELSE BEGIN   
+    LPF DELETE_EFFECT INT_VAR check_headers = 0 match_opcode = 0 END // +AC
+  END  
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 speed = (5 - enchantment) thac0_bonus = enchantment damage_bonus = enchantment END
+  
+COPY ~cdtwinkle/files/cdtwnkl0.spl~ ~override/cdtwnkl%enchantment%.spl~ // create spell to make specific +x item
+  SAY          0x08 @%params_1%
+  WRITE_ASCIIE 0x3a ~cdtwnkl%enchantment%~ #8 
+  WRITE_ASCIIE 0x76 ~cdtwnkl%enchantment%~ #8 
+  LPF ALTER_EFFECT INT_VAR match_opcode = 122 STR_VAR resource = EVAL ~cdtwnkl%enchantment%~ END
