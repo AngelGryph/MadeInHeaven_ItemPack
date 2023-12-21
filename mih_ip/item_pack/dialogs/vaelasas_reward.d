@@ -1,5 +1,5 @@
 REPLACE_SAY "vaelasa" 8
-  @0
+  @5200
 
 ADD_TRANS_ACTION "vaelasa"
 BEGIN 8 END	// State list

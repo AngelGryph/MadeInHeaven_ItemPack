@@ -6,39 +6,42 @@ BEGIN
     locbase	= "shared/lore"
   END
 
+
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
     file	= "item_pack_preproc"
     tra		= "item_pack"
   END
 
+
   LAUNCH_ACTION_FUNCTION grand_unified_installer
     STR_VAR
     tra		= "item_pack"
   END
 
-  ACTION_IF NOT enhanced_edition
-  BEGIN
-    LAUNCH_ACTION_FUNCTION run
-      STR_VAR
-      file	= "backwards_compatibility"
-    END
-  END
-
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "item_pack_postproc place_item_pack_stuff_in_stores"
+    file	= "item_pack_postproc item_pack_compat"
     tra		= "item_pack"
   END
 
-  ACTION_IF is_bg1
+
+  ACTION_BASH_FOR "%MOD_FOLDER%/%component_loc%/include" "^.*\.tpa$"
   BEGIN
+    OUTER_TEXT_SPRINT file "%BASH_FOR_RES%"
+    ACTION_TO_LOWER file
+
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
-      file	= "brokks_forge"
-      tra	= "brokks_forge"
+      file
+      location	= "include"
+      tra	= "item_pack"
     END
+  END
 
+/*
+  ACTION_IF is_bg1
+  BEGIN
     LAUNCH_ACTION_FUNCTION run
       STR_VAR
       file	= "ries_kensiddar"
@@ -121,6 +124,7 @@ BEGIN
       file	= "other_tob_locations"
     END
   END
+*/
 END	// setup_item_pack
 
 

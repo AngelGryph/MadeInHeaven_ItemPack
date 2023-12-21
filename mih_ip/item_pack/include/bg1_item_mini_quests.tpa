@@ -1,0 +1,71 @@
+DEFINE_ACTION_FUNCTION bg1_item_mini_quests
+BEGIN
+  ACTION_IF is_bg1
+  BEGIN
+    // Ries Kensiddar and the Winter Wolf Hide
+    //
+    // NB: This assumes the shared/lore changes have been applied and the
+    // owner of the Northern Light Inn in Nashkel is a wizard named
+    // Ries Kensiddar.
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file        = "ries_kensiddar.d"
+      location    = "dialogs"
+    END
+
+    ADD_JOURNAL @2003 @2008
+
+    LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
+      STR_VAR
+      dialog      = "%tutu_var%innkn2"
+    END
+
+
+    // Furret and the Gem of Seeing
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "gem_of_seeing.d"
+      location	= "dialogs"
+    END
+
+    ADD_JOURNAL @2110 @2119 @2127 @2129 @2136 @2138
+
+    LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
+      STR_VAR
+      dialog	= "mh#hlftr"
+    END
+
+    LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
+      STR_VAR
+      dialog	= "thalan"
+    END
+
+    cre.edit[halftr]
+    [
+      m_dv:="mh#Furret"
+    ]
+
+    cre.copy[halftr=>mh#hlftr]
+    [
+      m_script_default:="wtrunsgt"
+      m_dialog:="mh#hlftr"
+      m.cre_add_items{mh#comp3(qitem1)|replace:i=1}
+    ]
+
+    cre.copy[mh#bobas|source_location="actors"]
+    [
+      m_both_names:=@2152
+    ]
+
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area	= "%Gullykin%"
+      bottom	= "gemquest_gullykin"
+      location	= "scripts"
+    END
+  END	// is_bg1
+END	// bg1_item_mini_quests
+
+

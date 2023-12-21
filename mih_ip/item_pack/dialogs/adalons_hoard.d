@@ -8,87 +8,72 @@ APPEND "udsilver"
 
 IF ~~
 BEGIN choose_reward
-  SAY @0
+  SAY @5000
   IF ~~
-    REPLY @1
+    REPLY @5001
     GOTO reward_crossbow
   IF ~~
-    REPLY @2
+    REPLY @5002
     GOTO reward_mace
   IF ~~
-    REPLY @3
-    GOTO reward_scroll
-  IF ~~
-    REPLY @4
+    REPLY @5004
     GOTO reward_elixir
   IF ~~
-    REPLY @5
+    REPLY @5005
     GOTO reward_gold
 END
 
 IF ~~
 BEGIN reward_crossbow
-  SAY @6
+  SAY @5006
   IF ~~
-    REPLY @7
+    REPLY @5007
     DO ~GiveItemCreate("xbow10", LastTalkedToBy(Myself), 0, 0, 0)~
     GOTO reward_given
   IF ~~
-    REPLY @8
+    REPLY @5008
     GOTO choose_reward
 END
 
 IF ~~
 BEGIN reward_mace
-  SAY @9
+  SAY @5009
   IF ~~
-    REPLY @7
+    REPLY @5007
     DO ~GiveItemCreate("mh#mace2", LastTalkedToBy(Myself), 0, 1, 0)~
     GOTO reward_given
   IF ~~
-    REPLY @8
-    GOTO choose_reward
-END
-
-IF ~~
-BEGIN reward_scroll
-  SAY @10
-  IF ~~
-    REPLY @7
-    DO ~GiveItemCreate("mh#scrl2", LastTalkedToBy(Myself), 1, 0, 0)~
-    GOTO reward_given
-  IF ~~
-    REPLY @8
+    REPLY @5008
     GOTO choose_reward
 END
 
 IF ~~
 BEGIN reward_elixir
-  SAY @11
+  SAY @5011
   IF ~~
-    REPLY @7
+    REPLY @5007
     DO ~GiveItemCreate("mh#potn5", LastTalkedToBy(Myself), 1, 0, 0)~
     GOTO reward_given
   IF ~~
-    REPLY @8
+    REPLY @5008
     GOTO choose_reward
 END
 
 IF ~~
 BEGIN reward_gold
-  SAY @13
+  SAY @5013
   IF ~~
-    REPLY @7
+    REPLY @5007
     DO ~GiveGoldForce(7000)~
     GOTO reward_given
   IF ~~
-    REPLY @8
+    REPLY @5008
     GOTO choose_reward
 END
 
 IF ~~
 BEGIN reward_given
-  SAY @12
+  SAY @5012
   COPY_TRANS "udsilver" 41
 END
 

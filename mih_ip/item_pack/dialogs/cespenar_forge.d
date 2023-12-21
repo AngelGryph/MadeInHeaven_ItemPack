@@ -16,7 +16,7 @@ APPEND "botsmith"
 IF ~~
 BEGIN mh#PartyHasBlackDragonScale
   SAY #66903
-  = @0
+  = @4500
   IF ~PartyGoldLT(5000)~
     REPLY #66908
     GOTO 10
@@ -36,14 +36,14 @@ END
 
 IF ~~
 BEGIN mh#NotInterestedBlackDragonScale
-  SAY @1
+  SAY @4501
   COPY_TRANS "botsmith" 4
 END
 
 IF ~~
 BEGIN mh#PartyHasGreenDragonScale
   SAY #66903
-  = @2
+  = @4502
   IF ~PartyGoldLT(5000)~
     REPLY #66908
     GOTO 10
@@ -63,7 +63,7 @@ END
 
 IF ~~
 BEGIN mh#NotInterestedGreenDragonScale
-  SAY @3
+  SAY @4503
   COPY_TRANS "botsmith" 4
   IF ~PartyHasItem("mh#comp6")~
   THEN

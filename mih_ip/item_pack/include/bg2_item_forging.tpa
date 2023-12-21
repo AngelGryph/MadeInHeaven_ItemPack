@@ -1,0 +1,34 @@
+DEFINE_ACTION_FUNCTION bg2_item_forging
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "cromwell_forge.d"
+      location	= "dialogs"
+    END
+
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area	= "ar0334"
+      bottom	= "cromwell_forge"
+      location	= "scripts"
+    END
+
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "cespenar_forge.d"
+      location	= "dialogs"
+    END
+
+    LAUNCH_ACTION_FUNCTION extend
+      STR_VAR
+      file	= "botsmith"
+      bottom	= "cespenar_forge"
+      location	= "scripts"
+    END
+  END	// is_bg2
+END	// bg2_item_forging
+
+

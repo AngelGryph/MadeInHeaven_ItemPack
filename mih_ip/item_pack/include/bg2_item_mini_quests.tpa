@@ -1,0 +1,38 @@
+DEFINE_ACTION_FUNCTION bg2_item_mini_quests
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    // Adalon's Hoard
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "adalons_hoard.d"
+      location	= "dialogs"
+    END
+
+
+    // The Blood of Lathander
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "blood_of_lathander.d"
+      location	= "dialogs"
+    END
+
+
+    // Vaelasa's Reward
+
+    cre.edit[vaelasa]
+    [
+      m.cre_add_items{mh#belt2(belt)}
+    ]
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "vaelasas_reward.d"
+      location	= "dialogs"
+    END
+  END	// is_bg2
+END	// bg2_item_mini_quests
+
+

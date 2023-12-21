@@ -1,0 +1,700 @@
+DEFINE_ACTION_FUNCTION bg2_item_pack
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    // ================
+    // Chateau Irenicus
+    // ================
+
+    // Stolen by Irenicus
+    //
+    // mh#hide1 - Winter Wolf Hide +1
+    // mh#belt1 - Girdle of Dwarvenkind
+
+    are.edit[ar0602]
+    [
+      m.container_item.add{s_resref:="mh#belt1"|match_parent=~"%p_name%" == "Chest 5"~}
+    ]
+
+    cre.edit[duergar1]
+    [
+      m.cre_remove_items{leat01}
+      m.cre_add_items{mh#hide1(armor)}
+    ]
+
+
+    // ===================
+    // Waukeen's Promenade
+    // ===================
+
+    // Arnolius the Dwarf
+    //
+    // mh#chan1 - Eversing +2
+
+    sto.edit[shop02]
+    [
+      ADD_STORE_ITEM "mh#chan1" AFTER "plat10" #0 #0 #0 "identified" #1
+    ]
+
+
+    // Maheer from Rasheman
+    //
+    // mh#flai1 - Slimecrusher +1
+    // mh#btax1 - Foesplitter +1
+    // mh#mace1 - Radiant Star +1
+    // mh#swrd2 - Smyte's Slicer +1
+
+    sto.edit[shop03]
+    [
+      ADD_STORE_ITEM "mh#mace1" AFTER "blun06" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#btax1" AFTER "ax1h04" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#swrd2" AFTER "sw1h20" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#flai1" AFTER "blun02" #0 #0 #0 "identified" #1
+    ]
+
+
+    // Mira
+    //
+    // mh#misc6 - Bottle of Pleasant Odors
+
+    sto.edit[shop01]
+    [
+      ADD_STORE_ITEM "mh#misc6" LAST #1 #0 #0 "identified" #1
+    ]
+
+
+    // Adventurer's Market
+    //
+    // mh#amul6 - Scarab versus Golems
+    // mh#misc3 - Crystal Ball
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    // mh#ring9 - Ring of Water Control
+    // mh#staf5 - Staff of Water +2
+    // mh#ioun3 - Orange Ioun Stone
+    //
+    // mh#plat3 - Laeral's Storm Armor +2
+    // mh#plat4 - Plate of Solamnus +5
+    // mh#dart1 - Lein's Fiery Darts +2
+    // mh#dart2 - Chandler's Icy Darts +2
+    // mh#helm2 - Helm of the Dwarven Lords
+    // mh#shld9 - Shield of the Dragonslayer +3
+
+    sto.edit[ribald]
+    [
+      ADD_STORE_ITEM "mh#amul6" AFTER "amul14" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#ring9" AFTER "ring28" #1 #1 #1 "identified" #1
+      ADD_STORE_ITEM "mh#staf5" AFTER "staf18" #0 #30 #30 "identified" #1
+      ADD_STORE_ITEM "mh#misc3" AFTER "rods03" #7 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#ioun3" AFTER "clck12" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10
+    ]
+
+    sto.edit[ribald3]
+    [
+      ADD_STORE_ITEM "mh#plat3" AFTER "plat14" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#plat4" AFTER "plat17" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#dart2" AFTER "dart05" #12 #0 #0 "identified" #5
+      ADD_STORE_ITEM "mh#dart1" AFTER "dart05" #12 #0 #0 "identified" #5
+      ADD_STORE_ITEM "mh#helm2" AFTER "helm16" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#shld9" AFTER "shld30" #0 #0 #0 "identified" #1
+    ]
+
+
+    // ==============
+    // Copper Coronet
+    // ==============
+
+    // Stolen by Captain Haegan
+    //
+    // mh#boot3 - Boots of Balance
+
+    cre.edit[haegan]
+    [
+      m.cre_add_items{mh#boot3(boots)}
+    ]
+
+
+    // =============
+    // Planar Sphere
+    // =============
+    //
+    // mh#dart1 - Lein's Fiery Darts +2
+    // mh#dart2 - Chandler's Icy Darts +2
+    // mh#swrd4 - Sword of the Planes +1
+    // mh#wand1 - Wand of Illusions
+
+    are.edit[ar0410]
+    [
+      m.container_item.add{s_resref:="mh#swrd4"|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+    are.edit[ar0411]
+    [
+      m.container_item.add{s_resref:="mh#wand1" s_charges_1=12 s_charges_2=12|match_parent=~"%p_name%" == "Tool CT 3"~}
+    ]
+
+    are.edit[ar0412]
+    [
+      m.container_item.add{s_resref:="mh#dart1" s_charges_1=12|match_parent=~"%p_name%" == "Container 2"~}
+      m.container_item.add{s_resref:="mh#dart2" s_charges_1=12|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+
+    // Stolen by Necre
+    //
+    // mh#clck8 - Cloak of Flame
+
+    cre.edit[obshal03]
+    [
+      m.cre_add_items{mh#clck8(cloak)}
+    ]
+
+
+    // Stolen by Tolgerias
+    //
+    // mh#staf1 - Staff of Rumathil +2
+
+    cre.edit[tolger tolger2]
+    [
+      m.cre_add_items{mh#staf1(weapon1)}
+    ]
+
+
+    // ===============
+    // Bridge District
+    // ===============
+
+    // Fallen Paladins encounter
+    //
+    // mh#brac5 - Gauntlets of Smiting
+
+    cre.edit[kaypal01]
+    [
+      m.cre_add_items{mh#brac5(gloves)}
+    ]
+
+
+    // Neb the Child-killer gets his due
+    //
+    // mh#ioun6 - Maroon Star Ioun Stone
+
+    cre.edit[neb]
+    [
+      m.cre_add_items{mh#ioun6(helmet)}
+    ]
+
+
+    // Twisted Rune encounter
+    //
+    // mh#clck5 - Bolder's Cloak of the Rogue
+
+    cre.edit[hlshyr]
+    [
+      m.cre_add_items{mh#clck5(cloak)}
+    ]
+
+
+    // ===============
+    // Temple District
+    // ===============
+
+    // Temple of Lathander
+    //
+    // mh#amul1 - Amulet against Undead
+    // mh#amul2 - Necklace of Prayer Beads
+    // mh#bull1 - Priest's Bullet
+    // mh#clck7 - Cloak of Lathander
+    // mh#robe3 - Robe of the Pure Heart
+
+    sto.edit[temlath]
+    [
+      ADD_STORE_ITEM "mh#bull1" AFTER "staf05" #5 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#clck7" AFTER "boot05" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
+    ]
+
+
+    // ==============
+    // Docks District
+    // ==============
+
+    // Temple of Oghma
+    //
+    // mh#amul3 - Gem of Insight
+    // mh#bull1 - Priest's Bullet
+
+    sto.edit[doghma]
+    [
+      ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
+    ]
+
+
+    // Harper Stronghold
+    //
+    // mh#belt3 - Storm's Garter
+    // mh#ioun5 - Mottled Green Ioun Stone
+
+    cre.edit[jagalvar]
+    [
+      m.cre_add_items{mh#belt3(belt,x1.1.1)}
+    ]
+
+
+    // Mae'var Guildhouse
+    //
+    // mh#dagg1 - Catclaw +3 (on Maevar)
+    // mh#boot1 - Boots of the Master Ninja (on Anishai)
+
+    cre.edit[maevar]
+    [
+      m.cre_add_items{mh#dagg1(weapon1)}
+    ]
+
+    cre.edit[thief7]
+    [
+      m.cre_add_items{mh#boot1(boots)}
+    ]
+
+
+    // =============
+    // D'Arnise Keep
+    // =============
+
+    // In the Dunge- er, Cellar
+    //
+    // mh#shld3 - Shield of the Phoenix +2
+
+    are.edit[ar1301]
+    [
+      m.container_item.add{s_resref:="mh#shld3"|match_parent=~"%p_name%" == "Container 5"~}
+    ]
+
+
+    // =========
+    // Trademeet
+    // =========
+
+    // Nobleman Merchant
+    //
+    // mh#btax4 - Might of Heroes +3
+    // mh#clck1 - Mutamin's Cloak
+    // mh#dagg3 - Golemblight +2
+    // mh#lbow1 - Bow of Eletha
+    // mh#misc1 - Pearl of Power
+
+    sto.edit[trmer02]
+    [
+      ADD_STORE_ITEM "mh#btax4" AFTER "ax1h02" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#clck1" AFTER "clck03" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#dagg3" AFTER "dagg15" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#lbow1" AFTER "bow04" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#swrd1" AFTER "sw1h02" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#misc1" AFTER "belt10" #1 #0 #0 "identified" #1
+    ]
+
+
+    // Temple of Waukeen
+    //
+    // mh#bull1 - Priest's Bullet
+    // mh#misc5 - Horn of Goodness/Evil
+
+    sto.edit[temsup]
+    [
+      ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#misc5" AFTER "ring03" #1 #0 #0 "identified" #1
+    ]
+
+
+    // ===========
+    // Druid Grove
+    // ===========
+
+    // Stolen by the Shadow Druids
+    //
+    // mh#amul5 - Brooch of Shielding
+    // mh#misc2 - Bag of Tricks
+
+    cre.edit[cedruid2]
+    [
+      m.cre_add_items{mh#amul5(amulet) mh#misc2(qitem,x3)}
+    ]
+
+
+    // ============
+    // Temple Ruins
+    // ============
+
+    // Blessings of Amaunator
+    //
+    // mh#ring4 - Ring of White Bone
+
+    are.edit[ar1403]
+    [
+      m.container_item.add{s_resref:="mh#ring4" s_charges_1=12|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+
+
+    // ===============
+    // Windspear Hills
+    // ===============
+
+    // Firkraag's Lair
+    //
+    // mh#hide2 - White Hide of Umpluutu +2 (on Plath Rededge)
+    // mh#boot2 - Boots of Striding & Springing (on Conster)
+    // mh#robe1 - Robe of the Elements (on Conster)
+    // mh#clck9 - Battlecloak of Vycaena (on Firkraag, replaces Cloak of the Shield)
+
+    cre.edit[firban02]
+    [
+      m.cre_add_items{mh#hide2(armor,x1)}
+    ]
+
+    cre.edit[firmag01]
+    [
+      m.cre_add_items{mh#robe1(armor) mh#boot2(boots)}
+    ]
+
+    cre.edit[firkra02]
+    [
+      m.cre_add_items{mh#clck9(inv)}
+    ]
+
+
+    // =========
+    // Underdark
+    // =========
+
+    // Deep Gnome Village
+    //
+    // mh#brac3 - Bracers of Winter's Chill
+
+    COPY_EXISTING "udsvir05.dlg" "override"
+      DECOMPILE_AND_PATCH
+      BEGIN
+        // Note: Dialog uses GiveItemCreate() and with the correct # of charges,
+        // so no further edits are needed to make this work.
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~brac14~ ~mh#brac3~
+      END
+
+
+    // Ust Natha
+    //
+    // mh#clck3 - Cloak of Arachnida
+    // mh#ring5 - Ring of Mind Shielding
+    // mh#robe2 - Robe of the Necromancer
+    // mh#robe4 - Shadow Dancer's Robe
+
+    sto.edit[uddrow23]
+    [
+      ADD_STORE_ITEM "mh#ring5" AFTER "amul10" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#clck3" AFTER "clck17" #2 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#robe4" AFTER "clck17" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#robe2" AFTER "clck17" #0 #0 #0 "identified" #1
+    ]
+
+
+    // ============
+    // Other Places
+    // ============
+
+    // Distribute potions to several shops
+    //
+    // mh#potn5 - Potion of Longevity
+
+    sto.edit[gorch murcrag roger uhmer02]
+    [
+      ADD_STORE_ITEM "mh#potn5" AFTER "potn36" #1 #0 #0 "identified" #1
+    ]
+
+
+    // =============
+    // Suldanessenar
+    // =============
+
+    // Reirra's Store
+    //
+    // mh#ring6 - Ring of Shooting Stars
+
+    sto.edit[suelf10]
+    [
+      ADD_STORE_ITEM "mh#ring6" FIRST #3 #2 #1 "identified" #1
+    ]
+
+
+    // Nizidramanii'yt Hoard
+    //
+    // mh#comp6 - Black Dragon Scales
+
+    cre.edit[dragblac]
+    [
+      m.cre_add_items{mh#comp6(qitem)}
+    ]
+
+
+    // House of the Priest
+    //
+    // mh#ioun4 - Telkiira
+
+    are.edit[ar2810]
+    [
+      m.container_item.add{s_resref:="mh#ioun4"|match_parent=~"%p_name%" == "Table 1"~}
+    ]
+
+
+    // Tree of Life
+    //
+    // mh#btax3 - Redthemar +4
+
+    are.edit[ar2806]
+    [
+      m.container_item.add{s_resref:="mh#btax3" s_charges_2=1|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+
+    // Sister Garlena
+    //
+    // mh#flai2 - Battle Star +4
+    // mh#bull1 - Priest's Bullet
+    // mh#ioun1 - Sky Blue Ioun Stone
+    // mh#ioun2 - Crystal Clear Ioun Stone
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    // mh#swrd3 - Scimitar of the Seven +4
+    // mh#wand2 - Elmira's Wand of Blasting
+    // ring46   - Ring of Anti-Venom (from Vongoethe)
+
+    sto.edit[garlena]
+    [
+      ADD_STORE_ITEM "mh#flai2" AFTER "xbow15" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#bull1" AFTER "bull02" #5 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#potn6" AFTER "potn44" #1 #0 #0 "identified" #5
+      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5
+      ADD_STORE_ITEM "mh#swrd3" AFTER "sw1h58" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "ring46" LAST #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#ioun1" LAST #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#ioun2" LAST #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#wand2" LAST #12 #0 #0 "identified" #1
+    ]
+
+
+    // L3 - Portal Maze - Demon Wraith's lair
+    //
+    // mh#brac7 - Gloves of Evasion (on Demon Wraith's victims)
+
+    are.edit[ar3014]
+    [
+      m.container_item.add{s_resref:="mh#brac7"|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+
+
+    // L4 - Machine of Lum the Mad
+    // 
+    // mh#tome1 - Book of Exalted Deeds
+
+    are.edit[ar3017]
+    [
+      m.container_item.add{s_resref:="mh#tome1" s_charges_1=1|match_parent=~"%p_name%" == "Container 3"~}
+    ]
+
+
+    // L4 - Demilich's Lair
+    //
+    // mh#tome5 - Libram of Ineffable Damnation
+
+    are.edit[ar3027]
+    [
+      m.container_item.add{s_resref:="mh#tome5" s_charges_1=1|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+
+    // L5 - Dragon's Lair
+    //
+    // mh#shld4 - Shield of the Three Kings +5
+    // mh#comp7 - Green Dragon Scales
+
+    cre.edit[fsdragon]
+    [
+      m.cre_add_items{mh#shld4(inv) mh#comp7(inv)}
+    ]
+
+
+
+    // =============
+    // Ancient Grove
+    // =============
+
+    // Illesara's Ambush
+    //
+    // mh#brac4 - Bracers of the Wind
+
+    cre.edit[illasera]
+    [
+      m.cre_add_items{mh#brac4(gloves)}
+    ]
+
+
+    // ========
+    // Saradush
+    // ========
+
+    // Arcana Archives
+    //
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    // mh#ring4 - Ring of White Bone
+    // mh#tome3 - Libram of Silver Magic
+    // mh#wand1 - Wand of Illusions
+
+    sto.edit[25spell]
+    [
+      ADD_STORE_ITEM "mh#tome3" AFTER "restore" #1 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#ring4" AFTER "ring02" #12 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#wand1" LAST #12 #12 #0 "identified" #1
+    ]
+
+
+    // Temple of Waukeen
+    //
+    // mh#bull1 - Priest's Bullet
+
+    sto.edit[sartem01]
+    [
+      ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #10
+    ]
+
+
+    // Castle Saradush
+    //
+    // mh#staf4 - Staff of the Legion +5 (on Karun the Black)
+    // mh#belt5 - Adriyana's Garter (on Karun the Black)
+
+    cre.edit[gromg08]
+    [
+      m.cre_add_items{mh#staf4(weapon1) mh#belt5(belt,x3)}
+    ]
+
+
+    // ==================================
+    // Forest of Mir / Marching Mountains
+    // ==================================
+
+    // Abandoned Temple of Bhaal
+    //
+    // mh#tome2 - Book of Vile Darkness
+    // mh#ringb - Ring of the Hierophant (on Nyalee)
+    // mh#robe5 - Nyalee's Robe of Stone (guess)
+
+    are.edit[ar5202]
+    [
+      m.container_item.add{s_resref:="mh#tome2" s_charges_1=1|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+    
+    cre.edit[hgnya01]
+    [
+      m.cre_remove_items{brac15 ring03}
+      m.cre_add_items{mh#robe5(armor,x1) mh#ringb(ring)}
+    ]
+
+
+    // Fire Giant Temple
+    //
+    // mh#tome4 - Libram of Gainful Conjuration
+    // hamm10   - Rune Hammer +4 (moved from Yaga-Shura)
+
+    are.edit[ar5204]
+    [
+      m.container_item.add{s_resref:="mh#tome4" s_charges_1=1|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+    
+    cre.edit[hgber01]
+    [
+      m.cre_add_items{hamm10(inv)}
+    ]
+
+
+    // Yaga-Shura Battlefield
+    //
+    // mh#hamm2 - Maul of the Titans
+
+    cre.edit[yaga01]
+    [
+      m.cre_remove_items{giafir hamm10}
+      m.cre_add_items{mh#hamm2(weapon1)}
+    ]
+
+
+    // =========
+    // Amkethran
+    // =========
+
+    // Temple of Waukeen
+    //
+    // mh#bull1 - Priest's Bullet
+
+    sto.edit[amcler02]
+    [
+      ADD_STORE_ITEM "mh#bull1" FIRST #5 #0 #0 "identified" #10
+    ]
+
+
+    // Amkethran Smugglers
+    //
+    // mh#shld8 - White Shield +4
+
+    sto.edit[amsmug02]
+    [
+      ADD_STORE_ITEM "mh#shld8" AFTER "plat21" #0 #0 #0 "identified" #1
+    ]
+
+
+    // Sealed Cave
+    //
+    // mh#ringa - Ring of the Lich +3 (on Vongoethe, replaces Ring of Anti-Venom)
+
+    cre.edit[amlich01]
+    [
+      m.cre_remove_items{ring46}
+      m.cre_add_items{mh#ringa(ring)}
+    ]
+
+
+    // ================
+    // Sendai's Enclave
+    // ================
+
+    // Duelling a Bhaalspawn
+    //
+    // mh#belt7 - Girdle of Storm Giant Strength
+    // mh#chan3 - Mail of Thalaera +5
+    // mh#clck4 - Cloak of the Night Sky +3
+    // mh#swrdb - Kanalruil +4
+
+    cre.edit[sengua03]
+    [
+      m.cre_add_items{mh#chan3(armor) mh#swrdb(weapon1) mh#clck4(cloak) mh#belt7(belt)|replace:i=1}
+      m.fx.clone{s_parameter2=89|match="s_opcode = 233 AND s_parameter2 = 94"}
+    ]
+
+
+    // ===============
+    // Abazigal's Lair
+    // ===============
+
+    // mh#misc7 - Orb of Dragonkind
+
+    cre.edit[dragblue]
+    [
+      m.cre_add_items{mh#misc7(inv,x1)}
+    ]
+  END	// is_bg2
+END	// other_tob_locations
+
+

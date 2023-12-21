@@ -2,8 +2,8 @@ APPEND "bharval"
 
 IF ~~
 BEGIN blood_hint_lathander
-  SAY @0
-  = @1
+  SAY @5100
+  = @5101
   COPY_TRANS "bharval" 57
 END
 
@@ -20,7 +20,7 @@ APPEND "bhoisig"
 
 IF ~~
 BEGIN blood_hint_helm
-  SAY @2
+  SAY @5102
   COPY_TRANS "bhoisig" 61
 END
 
@@ -37,32 +37,32 @@ APPEND "scsain"
 
 IF WEIGHT #-1 ~InPartySlot(LastTalkedToBy(Myself), 0) Global("SculptorDone", "GLOBAL", 1) Global("StealingPlot", "GLOBAL", 4) Global("Chapter", "GLOBAL", %bg2_chapter_6%) !Dead("c6bodhi") Global("mh#ObtainedBlood", "LOCALS", 0) Global("Stripped", "GLOBAL", 0)~
 BEGIN show_blood
-  SAY @3
-  = @4
+  SAY @5103
+  = @5104
   IF ~~
-    REPLY @5
+    REPLY @5105
     GOTO the_blood
   IF ~~
-    REPLY @6
+    REPLY @5106
     GOTO the_blood
 END
 
 IF ~~
 BEGIN the_blood
-  SAY @7
-  = @8
-  = @9
-  = @10
-  = @11
+  SAY @5107
+  = @5108
+  = @5109
+  = @5110
+  = @5111
   IF ~~
     DO ~GiveItemCreate("mh#ioun7", Player1, 4, 1, 1) SetGlobal("mh#ObtainedBlood", "LOCALS", 1) AddexperienceParty(10000)~
-    JOURNAL @13
+    JOURNAL @5113
     GOTO good_luck
 END
 
 IF ~~
 BEGIN good_luck
-  SAY @12
+  SAY @5112
   IF ~~
     EXIT
 END
@@ -72,7 +72,7 @@ END	// APPEND "scsain"
 
 EXTEND_TOP "orphan1" 3 #3
   IF ~HasItemEquiped("mh#ioun7", LastTalkedToBy(Myself))~
-    REPLY @14
+    REPLY @5114
     DO ~ClearAllActions()
         StartCutSceneMode()
         FadeToColor([20.0], 0)

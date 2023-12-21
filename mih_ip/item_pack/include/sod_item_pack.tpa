@@ -1,0 +1,187 @@
+DEFINE_ACTION_FUNCTION sod_item_pack
+BEGIN
+  ACTION_IF is_sod
+  BEGIN
+    // Korlasz's Crypt
+    //
+    // mh#staf1 - Staff of Rumathil (equipped on Korlasz)
+    
+    cre.edit[bdshkorl]
+    [
+      m.cre_remove_items{staf02}
+      m.cre_add_items{mh#staf1(weapon1)}
+    ]
+
+    
+    // Sorcerous Sundries
+    //
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    
+    sto.edit[bdsorcsc]
+    [
+      ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5
+      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5
+    ]
+
+    
+    // Kazzrem the Calishite
+    //
+    // mh#boot2 - Boots of Striding and Springing
+    // mh#ioun1 - Pale Blue Ioun Stone
+    // mh#dart1 - Lein's Fiery Darts
+    // mh#dart2 - Chandler's Icy Darts
+    
+    sto.edit[bdkazzre]
+    [
+      ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4
+      ADD_STORE_ITEM "mh#dart2" LAST #3 #0 #0 "identified" #4
+    ]
+    
+
+    // Bellowgulp & the Concocter
+    //
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    
+    sto.edit[bdbellow]
+    [
+      ADD_STORE_ITEM "mh#potn6" AFTER "potn41" #1 #0 #0 "identified" #15
+      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #15
+    ]
+    
+    
+    // Nazramu's Store
+    //
+    // mh#amul7 - Medallion of the Arctic
+    // mh#dagg1 - Catclaw +3
+    // mh#ioun2 - Crystal Clear Ioun Stone
+    // mh#robe4 - Shadow Dancer's Robe
+    
+    sto.edit[bdnazram]
+    [
+      ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#amul7" AFTER "bdamul25" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1
+    ]
+    
+    
+    // Waizahb's Store
+    //
+    // mh#hide2 - White Hide of Umpluutu +2
+    // mh#bull1 - Priest's Bullet
+    // mh#robe2 - Robe of the Necromancer
+    
+    sto.edit[bdwaizah]
+    [
+      ADD_STORE_ITEM "mh#hide2" AFTER "bdleat03" #1 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#bull1" AFTER "bull04" #5 #0 #0 "identified" #10
+      ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1
+    ]
+    
+    
+    // Lich Outpost
+    //
+    // mh#wand1 - Wand of Illusions
+    // mh#misc1 - Pearl of Power
+    
+    are.edit[bd1200]
+    [
+      m.container_item.add{s_resref:="mh#wand1" s_charges_1=12 s_charges_2=12|match_parent=~"%p_name%" == "Table01"~}
+      m.container_item.add{s_resref:="mh#misc1" s_charges_1=1|match_parent=~"%p_name%" == "Shelf"~}
+    ]
+
+    
+    // Morentherene's Lair
+    //
+    // mh#brac4 - Bracers of the Wind
+    // mh#sper2 - Hadrion's Spear +3
+    
+    are.edit[bd7210]
+    [
+      m.container_item.add{s_resref:="mh#brac4"|match_parent=~"%p_name%" == "Corpse"~}
+    ]
+
+    cre.edit[bdmorent]
+    [
+      m.cre_add_items{mh#sper2(inv)}
+    ]
+
+    
+    // Temple of Bhaal/Cyric
+    //
+    // mh#btax4 - Might of Heroes +3 (equipped on Mohad Flintborn)
+    // mh#belt2 - Sunite Sash (equipped on Ziatar)
+    // mh#shld3 - Shield of the Phoenix +2
+    
+    are.edit[bd7230]
+    [
+      m.container_item.add{s_resref:="mh#shld3"|match_parent=~"%p_name%" == "Chest_05"~}
+    ]
+
+    cre.edit[bdziatar]
+    [
+      m.cre_add_items{mh#belt2(belt)}
+    ]
+
+    cre.edit[bdcult44]
+    [
+      m.cre_remove_items{ax1h02}
+      m.cre_add_items{mh#btax4(weapon1)}
+    ]
+
+    
+    // Vampire Hideout (in Trollbark forest)
+    //
+    // mh#lbow1 - Bow of Elathil +2
+    
+    are.edit[bd7410]
+    [
+      m.container_item.add{s_resref:="mh#lbow1" s_charges_2=3|match_parent=~"%p_name%" == "Chest_01"~}
+    ]
+    
+
+    // Underground River entrance
+    //
+    // mh#club1 - Blackblood +3 (replaces The Root of the Problem)
+    
+    cre.edit[bdjamven]
+    [
+      m.cre_remove_items{blun10}
+      m.cre_add_items{mh#club1(weapon1)}
+    ]
+    
+    COPY_EXISTING "bdjamven.dlg" "override"
+      DECOMPILE_AND_PATCH
+      BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#club1"
+      END
+
+
+    // Underground River
+    //
+    // mh#brac2 - Gauntlets of the Dwarven King
+    
+    are.edit[bd5100]
+    [
+      m.container_item.add{s_resref:="mh#brac2"|match_parent=~"%p_name%" == "Ogre_cache"~}
+    ]
+
+
+    // Avernus
+    //
+    // mh#swrd9 - Cold Flame +3 (equipped on Illaruel)
+    
+    cre.edit[bdillaru]
+    [
+      m.cre_remove_items{sw1h41}
+      m.cre_add_items{mh#swrd9(weapon2)}
+      m.fx.alter{s_parameter2=89|match="s_opcode = 233 AND s_parameter2 = 90"}
+    ]
+  END	// is_sod
+END	// sod_item_pack
+  
+

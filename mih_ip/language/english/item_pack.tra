@@ -1,3 +1,5 @@
+// Item names, descriptions and additional strings.
+
 @0    = ~Amulet against Undead~
 @1    = ~As long as the dead have been walking the land of the living, the clergy of all good deities have been creating enchanted items to help destroy these foul abominations.  This particular amulet was created by the clergy of Lathander to aid a brave adventurer willing to take the fight to these cursed foes of all life.
 
@@ -1895,5 +1897,300 @@ Charged abilities:
 A strike with the gauntlet deals 6d4 crushing damage and the target must save vs. breath to avoid being stunned and hurled away from the bearer of the gauntlet.
 
 Weight: 3~
+
+
+// Strings for Brokk's Forge
+
+
+@1000 = ~Eh, who be ye?  No matter, <RACE>.  I have nothing ta sell t' ye.~
+@1001 = ~What's the matter, sir?  Can I help you in some way?~
+@1002 = ~I'm sorry to interrupt.  I'll leave you be.~
+@1003  = ~Eh, whatever.~
+@1004  = ~Mm, yer sum kind o' paladin or sumthin'?  Whatever.  Unless you can get that blasted mine down south started up again and deal with all the bandits, ya cannae help me.  Now be off with ye.~
+@1005  = ~Brokk's Forge
+
+A dwarf I met at the Friendly Arm Inn seems to be in some sort of trouble due to the current bandit plague and the mine down south shutting down.  If I want to help him, maybe I should go south and see what the trouble is.~
+@1006  = ~If yer bored or sumthin', go kick sum bandit arses, or go south and tell them to start that blasted mine back up.  Now leave me be!~
+@1007  = ~I already told ye, I got nuthin' t' sell!  Now be off with ye!~
+@1008  = ~Ah, ye be <GABBER>, be ye not?  Me name's Brokk, and I be runnin' this forge and weapon shop.  I recognize ye from the stories folks have been telling.  Cleansed them mines down south pretty good, aye?~
+@1009  = ~It warms me old dwarven heart ta hear the mine be running again.  Now maybe I can finally start me forge back up.  But, until them pesky bandits be dealt with, I can still nae get sum good ore in.~
+@1010 = ~Fear not, I will deal with those bandits.~
+@1011 = ~Yeah, looks like it's up to me again.  Oh well.~
+@1012 = ~Heh, rushing headlong into danger, aye?  I like yer attitude, m'<GIRLBOY>.  Ye be reminding me of meself when I were younger.~
+@1013 = ~Ye'd be helping a lot of good folk if ye take them out, m'<GIRLBOY>.~
+@1014 = ~Here, let old Brokk give ye a hand.  Take these with ye, they will keep ye safe.  Now, go give them bandits what they deserve!~
+@1015 = ~Come see me if ye be needing any weapons or armor, I'll give y'all a good deal!~
+@1016 = ~Brokk's Forge
+
+My cleansing of the Nashkel mines has given the old dwarven smith Brokk some hope.  He has reopened his store, but until the bandits are dealt with he still can't get any good ore.  He gave me a pair of bracers with strange runes on them, saying they would keep me safe.  I wonder what they'll do?~
+@1017 = ~<GABBER>!  Ye did it, m'<GIRLBOY>!  Them bandits be running like ye set their asses on fire!~
+@1018 = ~Ye be making quite the name fer yerself with all this hero's business.  This dwarf will ferever be in yer debt!~
+@1019 = ~Here, take this with ye, and wear it with pride, hero!~
+@1020 = ~Brokk's Forge
+
+My actions at the bandit camp have not gone unnoticed, and some are starting to call me a hero.  The dwarven smith Brokk was very grateful for saving his business and gave me a strange belt, telling me to wear it with pride.~
+@1021 = ~Mm, ye got sumthin' very interesting there, <GIRLBOY>.  Meteoric iron, if I be nae mistaken?~
+@1022 = ~If ye be interested, I can forge ye a mighty fine shield from that.  I'll give ye a special price, only 3000 gold, but I'll be needin' a star sapphire as well.~
+@1023 = ~An excellent idea!  I got all of that right here, so let's do it!~
+@1024 = ~Sorry, I cannot afford that right now.  Maybe later.~
+@1025 = ~A pity, that.  Well, if ya do get the gem and the funds, ye know where t' find me.~
+@1026 = ~Brokk's Meteoric Shield
+
+The smith Brokk offered to make a shield from the meteoric iron I found in Balduran's ship for 3000 gold and a star sapphire.  I should go see him when I have the funds and the gem.~
+@1027 = ~Ye won't regret this, m'<GIRLBOY>.  Well, I be havin' no other open jobs fer now, so I kin get t' it right away.  Come back tomorrow, yeah?~
+@1028 = ~Brokk's Meteoric Shield
+
+The dwarf Brokk is forging a shield from the meteoric iron I found.  It should be ready within a day.~
+@1029 = ~Ah, <GABBER>!  Yer shield be done, m'<GIRLBOY>.  Ain't she a beauty?  Here ye go!~
+@1030 = ~Brokk's Meteoric Shield
+
+The dwarven smith Brokk crafted a fine new shield from the meteoric iron I found in the wreck of Balduran's ship.  I guess that whole journey was not so invain after all, at least for me.~
+@1031 = ~Mm?  That be sum armor y'got yerself there, m'<GIRLBOY>.  Ankheg, if I be nae mistaken?  Must be Taerom's work, yes?~
+@1032 = ~Y'know, this be givin' me an idea.  Y'think ye could fetch me another of them ankheg shells?  Then fer, let's say 2000 gold I could make ye a matchin' shield.~
+@1033 = ~Sure, I got another shell right here in fact, and the gold.  Let's do this!~
+@1034 = ~Not right now I'm afraid.  Maybe later.~
+@1035 = ~If ye get yerself another shell and the gold, come see me!  Good hunting, <GABBER>!~
+@1036 = ~Brokk's Ankheg Shield
+
+Impressed by Taerom's ankheg armor, the dwarf Brokk has offered me to make a matching shield if I can get him another ankheg shell and 2000 gold.~
+@1037 = ~Making armor outta ankhegs, why dinnae I think of that meself.  Alright, <GABBER>, I be workin' on this right away.  Come see me tomorrow, aye?~
+@1038 = ~Brokk's Ankheg Shield
+
+Inspired by Taerom's ankheg plate, the dwarf Brokk is crafting a matching shield from another ankheg shell I obtained.  It should be ready in a day.~
+@1039 = ~Good timing, <GABBER>, I be just done with yer new shield!  Some fine work, if I do say so meself.~
+@1040 = ~Brokk's Ankheg Shield
+
+As promised, Brokk created a matching shield for my ankheg plate.  I cannot help but feel the dwarf was trying to prove himself no less than Taerom though...~
+@1041 = ~Ah, <GABBER>!  Welcome back t' me forge.  What can this old dwarf do fer ye today?~
+@1042 = ~Here's 3000 gold and a star sapphire, can you forge me that meteoric iron shield now?~
+@1043 = ~I have another ankheg shell and 2000 gold, can you make me a shield?~
+@1044 = ~Could you show me what you have for sale?~
+@1045 = ~Nothing right now.  Good day, Brokk.~
+@1046 = ~Do you do any custom work, Brokk?~
+@1047 = ~I have a question.  You seem to be neither a priest nor wizard, yet you craft weapons that are inherently magical.  How is that possible?~
+@1048 = ~Ye'll find no finer than these anywhere on the Sword Coast!~
+@1049 = ~Take care, m'<GIRLBOY>.~
+@1050 = ~Aye, sometimes I do, if the job be interesting enough.  Ye be an adventurer, aye?  Why don't ye stop by now and then and show this old dwarf any strange stuff ye found?  Who knows, I might be able ta make ye somethin' nice.~
+@1051 = ~Sure, I will do that.  See you later, Brokk!~
+@1052 = ~Prying int' me secrets, are ye?  Har har, d'nae be givin' me that look, it be fine.~
+@1053 = ~It be the blessing of Moradin, me lad.  Sum dwarves, like meself, be born with the gift t' craft items beyond the normal.  I cannae explain it more than that.~
+@1054 = ~Fair enough, I suppose magic is by its nature not always easily explained.  Be well, Brokk.~
+@1055 = ~Hey <GIRLBOY>, show me tha' sword fer a minute...~
+@1056 = ~Aye, it be in bad shape.  Found her a dark 'n damp dungeon somewhere, aye?  Mm, I can clear this rust fer ya, give her a good sharpening and do sum minor repairs.  I'll be needin' a diamond and 1,000 gold fer the job though.~
+@1057 = ~Sounds good, let's do it!~
+@1058 = ~Mm, maybe later.~
+@1059 = ~Suit yerself, m'<GIRLBOY>.  I'll be here.~
+@1060 = ~Treasure in the Rust
+
+The smith Brokk can fix the rusty katana I found in Durlag's tower.  He needs a diamond and 1,000 gold for the job, though.~
+@1061 = ~This will nae be takin' long, ye can wait around fer it...~
+@1062 = ~And here ye be, all cleaned up 'n repaired.  An interesting blade this be.  All the way from the far east, one wonders how it got ta be here, aye?  Use her well, m'<GIRLBOY>!~
+@1063 = ~Treasure in the Rust
+
+Brokk has restored the katana I found in Durlag's Tower to its former glory.~
+@1064 = ~I have the diamond and gold, can you restore this katana for me?~
+@1065 = ~Mm, what's that horn there, m'<GIRLBOY>?~
+@1066 = ~Ah, this be da horn of a magnificent woodland creature.  A shame t'kill one really, but it seems ye be nae ta blame fer this.  If ye like, I kin be puttin' it on a spear head fer ya.  It'll cost ye, oh, 2,000 gold.~
+@1067 = ~A splendid idea, let's do it!~
+@1068 = ~Mm, not right now I'm afraid.~
+@1069 = ~As ye wish, m'<GIRLBOY>.  I'll be here when ye'r ready.~
+@1070 = ~Brokk's Alicorn Spear
+
+The smith Brokk can use the unicorn horn I found in the bandit camp to make a magical spear.  If I want it, I should give him the horn and 2,000 gold.~
+@1071 = ~Alright, this will nae take long.  Come back tomorrow fer it, aye?~
+@1072 = ~Brokk's Alicorn Spear
+
+The smith Brokk is making a spear out of the unicorn horn I found in the bandit camp.  He told me to come back for it the next day.~
+@1073 = ~Ah, <GABBER>.  Yer spear be ready fer ya.  Use it well, aye?~
+@1074 = ~Brokk's Alicorn Spear
+
+Brokk made a magical spear for me out of the unicorn horn I found in the bandit camp.~
+@1075 = ~I've got the horn and gold, let's make that spear.~
+@1076 = ~Oh-ho?  Ye got yerself a real prize there, m'<GIRLBOY>!  Arandur ore, aye?  I've nae seen this in a hundred years!  Oh, I be itching t'forge this into a magnificent suit of armor fer ye!  Still gonna cost ye though, I'll nae do it fer less than 20,000 gold.~
+@1077 = ~Forge me a suit of dwarven plate then!~
+@1078 = ~Can you make me some real quality chain mail?~
+@1079 = ~Not right now, I'm afraid.  Maybe later.~
+@1080 = ~Oh?  A shame that, it will be grand.  Well, I'll be here whenever ye be ready.~
+@1081 = ~The Arandur Ore
+
+The smith Brokk can forge me some magnificent armor from the arandur ore I found in Durlag's Tower.  It will cost me a massive 20,000 gold pieces though.  When I am ready I should see him at his house near the Friendly Arm Inn.~
+@1082 = ~That's da words I wanted t'hear, m'<GIRLBOY>!  I cannae be doing this alone though, I will be needin' all yer help.~
+@1083 = ~And that be that, then.  Wear it in pride, m'<GIRLBOY>!~
+@1084 = ~The Arandur Ore
+
+It was a lot of work for everyone, but Brokk crafted me a magnificent suit of dwarven plate from the arandur ore I found in Durlag's Tower.  I'll be virtually invincible it it!~
+@1085 = ~Heh!  Well, I be nae a fey-elf, so if ye were hopin' fer some elf chain, yer outta luck!~
+@1086 = ~Eh, d'nae give me that look, m'<GIRLBOY>.  Old Brokk knows a few tricks even them pointy-ears don't.  I can set ye up with somethin' good, but I'll be needin' all yer help for it.~
+@1087 = ~The Arandur Ore
+
+It took a lot of patience, but we helped Brokk forge a splendid suit of chain mail from the arandur ore I found in Durlag's Tower.  I bet even elves will envy me for this one!~
+@1088 = ~Can you make me something from this arandur ore?~
+@1089 = ~Brokk~
+@1090 = ~Brokk's Forge~
+@1091 = ~<CHARNAME>!  Sum of them Flamin' Fists were here lookin' fer ya.  Said ye'd committed murder!  I d'nae believe them, ye're a hero my <PRO_GIRLBOY>!~
+@1092 = ~Mark this old dwarf's words, young one, sumthin' very foul is goin' on in that city.  Ye should be on yer toes if y' plan ta investigate.~
+@1093 = ~I got sumthin' special fer ya.  Took many days t' make, so I hope it's sumthin' ya can use.  I nae made one like these before, and I may nae make one evah again.~
+@1094 = ~This be a holy blade, m'<PRO_GIRLBOY>, and only a holy warrior may wield.  And nay, ya don't haf ta pay fer it, this one's all on me.  Ya be a good one, y' earned it and much more!~
+@1095 = ~Brokk's Forge
+
+Brokk was so impressed with me, he forged a holy sword for me!  I wonder if I will even be able to use it?~
+
+
+// BG1 Item Mini Quests: Ries Kensiddar and the Winter Wolf Hide
+
+@2000    = ~Mm, is that a winter wolf pelt you have there, young <LADYLORD>?  If you are interested, I could make you a strong hide armor from some of those.~
+@2001    = ~That sounds interesting.  What would that require?~
+@2002    = ~Maybe later.  What about some service?~
+@2003    = ~Winter Wolf Hide
+
+Ries Kensiddar, the wizard proprietor of the Nothern Light Inn in Nashkel, has offered to make a hide armor out of winter wolf pelts.  I should talk to him again when I have some of those if I want it.~
+@2004    = ~That is a good quality pelt.  How many do you have?  It will take at least three of them, and 700 gold to cover the spell components needed.~
+@2005    = ~Sure, I can afford that.  Let's do it!~
+@2006    = ~Not right now I'm afraid.  Perhaps later?~
+@2007    = ~Excellent!  Now this will take me some time.  Could you come back in a day or two?~
+@2008    = ~Winter Wolf Hide
+
+Ries Kensiddar, the wizard proprietor of the Nothern Light Inn in Nashkel, is crafting a hide armor out of some winter wolf pelts I obtained.  I should check back on him in a day or two.~
+@2009    = ~Indeed it is!  Here you go!  Please don't ask for another, I will be cleaning my workshop of hair for the rest of the week.~
+@2010   = ~Winter Wolf Hide
+
+Ries Kensiddar has crafted the winter wolf hide as promised, but it seems he's not looking forward to creating another anytime soon.  Oh well, at least I should be nicely warm in these cold mountains now.~
+@2011   = ~I am back for my winter wolf hide.  Is it finished?~
+@2012   = ~Can you make a hide armor out of these winter wolf pelts?~
+
+
+// BG1 Item Mini Quests: Furret and the Gem of Seeing
+
+@2100    = ~Hello, can I help y-  AAAIEE, it's YOU!~
+@2101    = ~That Gem of Seeing you sold me does not work.  I'm afraid I will have to ask a refund.~
+@2102    = ~You're the scum that sold me that fake Gem of Seeing!  Die!~
+@2103    = ~I...  I cannot.  Please, listen!~
+@2104    = ~Very well, but you'd better make this good!~
+@2105    = ~No!  My gold, or I will take it out of your hide!~
+@2106    = ~No wait, please!  I- I can compensate you, just listen!~
+@2107    = ~Alright, you've got one minute!  Make your words count!~
+@2108    = ~I'm through talking, now die!~
+@2109    = ~H-Help!~
+@2110   = ~The Gem of Seeing
+
+I killed the scum halfling who sold me a fake Gem of Seeing.  He did however have an interesting book in his meagre possessions.  Perhaps there is after all a way to obtain a real one?~
+@2111   = ~I... I was trying to make a real Gem of Seeing, using this book I inherited from my late grandfather.  But I botched the process and ended up with a cursed gem that gave me bad luck!~
+@2112   = ~By the time I figured the curse out, my business was in shambles and I was deep in debt with the Merchant's league.  I had to get rid of the gem to break the curse, and I needed the gold to pay my debts!~
+@2113   = ~Y-you don't have to worry, it's just an ordinary bauble now.  Obviously, I'm not cut out for item crafting.  I will give you the book, if you take it to a competent wizard with a proper laboratory they can make the gem for you!~
+@2114   = ~Mm, fair enough.  I will take the book and we'll call it even.~
+@2115   = ~An interesting offer, but where will I find such a wizard?~
+@2116   = ~Bah, you're just trying to weasel out.  Now die!~
+@2117   = ~M-Master Thalantyr lives just west of Beregost.  And old Halbazzer runs the Sorcerous Sundries in Baldur's Gate.  Either one of those could help you, I think!~
+@2118   = ~H-here is the book.  I'm so very sorry!~
+@2119   = ~The Gem of Seeing
+
+Furret, the halfling trader who tried to peddle a fake Gem of Seeing gave me a book describing the process to create a real one.  Apparently he attemped it himself and ended up with a cursed gem that brought him bad luck until he sold it to somone.  If I want a real one, I should ask either Thalantyr in Beregost or Halbazzer in Baldur's Gate to help me out, although likely they will not do it for free.~
+@2120   = ~Sorry to bother you again, but I have this book you might want to take a look at.~
+@2121   = ~Show me that...  Ah, "Lux Veritatis", most interesting.  Mm, this is an outdated technique...~
+@2122   = ~You did well to bring this here.  The procedure is outdated and lacks certain key elements.  Had you tried this yourself you'd probably have made nothing but a spectacular crater.  But I think I can fill in the gaps...~
+@2123   = ~If you have a diamond and, say, 5,000 gold, I can attempt to make you a Gem of Seeing.~
+@2124   = ~Fair enough, I have all that right here.~
+@2125   = ~I'm afraid I don't have that right now.~
+@2126   = ~If you don't have the goods, then don't bother me.  Take your book and go!~
+@2127   = ~The Gem of Seeing
+
+Thalantyr could make the Gem of Seeing for me, but I need to obtain 5,000 gold and find a diamond first.~
+@2128   = ~Very well, could you come back in...  Oh, forget it, let's just get this over with right now.  Don't need you walking in and out of my place any more than you already do, just to ask if it's done yet!~
+@2129   = ~The Gem of Seeing
+
+Using the arcane book I obtained and a diamond I found, Thalantyr was able to create a real Gem of Seeing for me.~
+@2130   = ~Oh, you found some magic from the olden days?  Let me see that...  Mm-mm... aha...~
+@2131   = ~You did well to bring that here instead of experimenting with it yourself.  This was written in the olden days, and the rules of magic are no longer the same.  You could have turned yourself into a chicken or worse.~
+@2132   = ~I think I can help you, but you will need a diamond and 5,000 gold, no less.  Take it or leave it.~
+@2133   = ~I'll take it.~
+@2134   = ~I'll leave it.~
+@2135   = ~Well, if you're not going to pay I have nothing else to say.  Next!~
+@2136   = ~The Gem of Seeing
+
+Halbazzer Drin of the Sorcerous Sundries can help me make a gem of seeing, but not for less than a diamond and 5,000 gold.~
+@2137   = ~Wonderful.  As it happens, I have a Gem of Seeing of my own here.  I'll give it to you now that I have the means to create another.  Good day.~
+@2138   = ~The Gem of Seeing
+
+Halbazzer Drin of the Sorcerous Sundries gave me a Gem of Seeing in exchange for the means of creating another.  Fair enough, I guess.~
+@2139   = ~Aaaaiiieee!~
+@2140   = ~Please!  I'll give you the real thing!  Don't hurt me!~
+@2141   = ~H-help me!  Someone!  Anyone!~
+@2142   = ~You there, please!  Help me, I don't wanna die!~
+@2143   = ~Watch out, he'll kill us all!~
+@2144   = ~Eh, t-thanks, you saved my life!~
+@2145   = ~Aren't you that halfling I met near Ulcaster earlier?~
+@2146   = ~What was that all about?~
+@2147   = ~Any reward for saving your hide?~
+@2148   = ~Finally got ya, ye little runt!  Nobody scams Bobas the dwarf!~
+@2149   = ~Me axe will permanently cure ye of your scamming ways!~
+@2150   = ~Too late, ye little runt!  Say yer prayers!~
+@2151   = ~Eh?  Who be ye!?  Bah, no matter.  Ye're all dead!~
+@2152   = ~Bobas~
+
+
+// SoD Item Mini Quest: Thrix's Wager
+
+@3000    = ~This old belt, which makes you strong as a giant.  It once belonged to one so full of righteousness.  So delicious his screams and pleads for mercy were.~
+@3001    = ~Very well.  It should help you survive what comes next.  Maybe.~
+@3002    = ~Thrix has several items that might be of use to one who would storm the basalt tower. This blade, sharper than the loudest shriek. This helm that cradles the head more softly than a mother does her newborn babe.~
+@3003    = ~I'll take that belt.~
+@3004    = ~Mm, you have a point.  I'll take that belt.~
+
+
+// BG2 Forging: Cromwell
+
+@4000    = ~Scales of a black dragon, aye?  It must have been a grand battle to take it down.  They will make an incredible armor, my friend.~
+
+
+// BG2 Forging: Cespenar
+
+@4500  = ~Ooh, black dragon scales!  So sour, make nice vinegar you know.  But Cespenar thinks, you much more interested in making armor than cooking, yes?  5000 gold and Cespenar will make stylish black armor for you!~
+@4501  = ~Okay, you loss.  Cespenar will just let black scales stink up your backpack some more.~
+@4502  = ~Mm, these are green dragon scales!  Very stinky, green dragons belch worse than they fart!  Heh.  Cespenar has recipe though.  Just 5000 gold and Cespenar can make shiny green armor for you!  Won't even stink as bad, probably.~
+@4503  = ~Okay then, if great one wants stinky scales fouling up <PRO_HISHER> backback, who is Cespernar to tell <PRO_HISHER> no?~
+
+
+// BG2 Item Mini Quests: Adalon's Reward
+
+@5000  = ~I can offer you a magical crossbow, an enchanted mace, an elixir of longevity, or 7,000 gold.~
+@5001  = ~I will take the crossbow.~
+@5002  = ~The mace sounds good.~
+//@5003  = ~~
+@5004  = ~The elixir would be nice.~
+@5005  = ~I can always use more gold.~
+@5006  = ~A fine choice.  This is one of the most powerful weapons of its kind.  You may not find a more reliable crossbow anywhere.~
+@5007  = ~I'm sure it will be useful, thank you.~
+@5008  = ~I reconsider.  What are my other options again?~
+@5009  = ~A fine choice.  This is one of the most powerful weapons of its kind.  It has powers over fire and will shield you from biting cold.~
+//@5010  = ~~
+@5011  = ~This powerful draught will extend your mortal life.  My own life has been long enough already, I don't need it.~
+@5012  = ~Very well, then here is your reward.~
+@5013  = ~If it's gold you want, I can offer you 7,000 gold pieces.~
+
+
+// BG2 Item Mini Quests: The Blood of Lathander
+
+@5100  = ~By the divine will of the Morninglord, one of his holy relics has recently been brought to this temple.  This cannot be a mere coincidence, I believe the relic was meant to help you.~
+@5101  = ~Obtain it from Dawnbringer Sain if you haven't already.  It will no doubt be very useful in this perilous quest.~
+@5102  = ~Also, Helm knows that the Lathanderites have recently acquired a powerful relic from their god.  They might lend it to one such as you.~
+@5103  = ~Ah, <CHARNAME>!  You are right in time, I have something important to show you.~
+@5104  = ~Watch this divine relic.  By the will of the Morninglord, a faithful brought it here all the way from Battledale.  Beautiful, is it not?~
+@5105  = ~Indeed.  What is it?~
+@5106  = ~Looks like a piece of amber.  Why does it float like that?~
+@5107  = ~This, my friend, is the Blood of Lathander, a relic created by the faithful of old when the avatar of Lathander did battle with the corrupted archmage Sammaster.~
+@5108  = ~The Morninglord foresees a great conflict on the horizon, one that might affect all of Amn and possibly all of Faerun.  That is why the blood was brought here.~
+@5109  = ~It seems you are to play an important role in this conflict.  You are about to face terrible foes like the master vampire Bodhi, and the insane mage that destroyed Waukeen's promenade, correct?~
+@5110  = ~The Blood of Lathander would be a great boon in such a conflict, <CHARNAME>.  And you have already proven that you can be trusted with our relics.~
+@5111  = ~Therefor, the blood is now yours to use, until the Morninglord deems its task complete.~
+@5112  = ~May the Morninglord always enlighten your path, <CHARNAME>!~
+@5113  = ~Allies against Bodhi - The Blood of Lathander
+
+While the temples could not directly help me against Bodhi, the clergy of Lathander did allow me to use a blessed relic known as the Blood of Lathander.  This did come with the dire prophecy that I apparently am to play an important role in a battle that may chance the fate of Amn and possibly all of Faerun.  They must be referring to Alaundo's prophecy, which even the gods are apparently watching closely...~
+@5114  = ~Don't worry, the blood of Lathander will surely save your father!~
+
+
+// BG2 Item Mini Quests: Vaesala's Reward
+
+@5200  = ~Thank you, <CHARNAME>. The forest welcomes you. There has been evil near here, so I will give you this to keep you safe as you travel. Goodbye!~
 
 

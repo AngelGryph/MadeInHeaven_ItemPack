@@ -1,0 +1,79 @@
+DEFINE_ACTION_FUNCTION item_pack_compat
+BEGIN
+  // Stuff that doesn't work on the oBG2 engine.
+
+  ACTION_IF NOT enhanced_edition
+  BEGIN
+    // mh#amul1 - Amulet of the Planes
+    //
+    // Opcode #323 (Turn Undead Level) does not exist in classic.
+
+    itm.edit[mh#amul1]
+    [
+      m.fx.delete{s_opcode = 323}
+    ]
+
+
+    // mh#dagg3 - Golemblight +2
+    // mh#flai1 - Slime Crusher +1
+    // mh#mace1 - Radiant Star +1
+    // mh#swrd2 - Smythe's Slicer +1
+    // mh#swrda - Holy Sword +2
+    // 
+    // Opcode #344 (Enchantment vs. Creature Type) does not exist in classic.
+    // Adjust generic enchantment level to compensate.
+
+    itm.edit[mh#dagg3 mh#flai1 mh#mace1 mh#swrd2 mh#swrda]
+    [
+      m_enchantment=4
+      m.fx.delete{s_opcode = 344}
+    ]
+
+
+    // mh#flai2 - Battlestar +4
+    //
+    // Opcode #346 (Save vs. Spell School) does not exist in classic.
+
+    itm.edit[mh#flai2]
+    [
+      m.fx.delete{s_opcode = 346}
+    ]
+
+
+    // mh#swrd7 - Mirthal +1
+    // 
+    // Opcode #344 (Enchantment vs. Creature Type) does not exist in classic.
+    // Adjust generic enchantment level to compensate.
+
+    itm.edit[mh#swrd7]
+    [
+      m_enchantment=2
+      m.fx.delete{s_opcode = 344}
+    ]
+
+    // mh#swrd4 - Sword of the Planes
+    //
+    // Action TransformItem() is not available in classic, script uses
+    // TakeItemReplace() instead.  Set lore to 0 to avoid the swapped item
+    // from being unidentified all the time.
+
+    itm.edit[mh#swrd4 mh#swd4a]
+    [
+      m_lore=0"
+    ]
+
+
+    // mh#mace3 - Skull Mace +2
+    //
+    // Opcode #341 (Spell Effect: Change Critical Hit Effect) does not exist
+    // in classic.  Replace with flat 5% chance for insta-death.
+
+    itm.copy[mh#mace3]
+    [
+      m.fx.delete{s_opcode = 341}
+      m.ab_fx.add{s_opcode=13 s_target=2 s_timing=1 s_parameter1=1 s_parameter2=4 s_probability1=4 s_save_vs_death=1 s_save_bonus="-2"}
+    ]
+  END	// NOT enhanced_edition
+END	// item_pack_compat
+
+

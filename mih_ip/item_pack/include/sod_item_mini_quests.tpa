@@ -1,0 +1,15 @@
+DEFINE_ACTION_FUNCTION sod_item_mini_quests
+BEGIN
+  ACTION_IF is_sod
+  BEGIN
+    // Add a new reward option to Thrix's Wager
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "thrix_wager.d"
+      location	= "dialogs"
+    END
+  END	// is_sod
+END	// sod_item_mini_quests
+
+

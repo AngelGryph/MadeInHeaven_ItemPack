@@ -1,5 +1,6 @@
 DEFINE_ACTION_FUNCTION item_pack_preproc
 BEGIN
+/*
   // Construct XP-gaining pseudo-spells for the Tomes
   // (Leave as is for now.  Not sure if this can be done at all in SFO.)
 
@@ -73,18 +74,16 @@ BEGIN
         parameter1	= xp_gain
       END
     END
+*/
 
 
   // Make sure BG2's greater water elementals actually are
   // marked as water elementals for Staff- and Ring of Water.
 
-  LAUNCH_ACTION_FUNCTION edit_creature
-    INT_VAR
-    allow_missing       = 1
-    STR_VAR
-    creature    = "elemhydr elwatg01 ohbwat01"
-    editstring  = "class=>elemental_water"
-  END
+  cre.edit[elemhydr elwatg01 ohbwat01|allow_missing:i=1]
+  [
+    m_class:=elemental_water
+  ]
 END	// item_pack_preproc
 
 

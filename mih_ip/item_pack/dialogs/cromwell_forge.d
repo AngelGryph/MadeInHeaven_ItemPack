@@ -10,7 +10,7 @@ APPEND "wsmith01"
 IF ~~
 BEGIN mh#PartyHasBlackDragonScale
   SAY #59709
-  = @0
+  = @4000
   IF ~~
     REPLY #59717
     GOTO mh#InterestedBlackDragonScale

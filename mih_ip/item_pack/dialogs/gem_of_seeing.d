@@ -17,94 +17,94 @@ BEGIN "mh#hlftr"
 
 IF ~Global("mh#GemOfSeeing", "GLOBAL", 2)~
 BEGIN caught_you
-  SAY @0
+  SAY @2100
   IF ~~
-    REPLY @1
+    REPLY @2101
     GOTO friendly
   IF ~~
-    REPLY @2
+    REPLY @2102
     GOTO hostile
 END
 
 IF ~~
 BEGIN friendly
-  SAY @3
+  SAY @2103
   IF ~~
-    REPLY @4
+    REPLY @2104
     GOTO story
   IF ~~
-    REPLY @5
+    REPLY @2105
     GOTO hostile
 END
 
 IF ~~
 BEGIN hostile
-  SAY @6
+  SAY @2106
   IF ~~
-    REPLY @7
+    REPLY @2107
     GOTO story
   IF ~~
-    REPLY @8
+    REPLY @2108
     GOTO violence
 END
 
 IF ~~
 BEGIN violence
-  SAY @9
+  SAY @2109
   IF ~~
     DO ~ReputationInc(-2)
         Kill(Myself)~
-    UNSOLVED_JOURNAL @10
+    UNSOLVED_JOURNAL @2110
     EXIT
 END
 
 IF ~~
 BEGIN story
-  SAY @11
-  = @12
-  = @13
+  SAY @2111
+  = @2112
+  = @2113
   IF ~~
-    REPLY @14
+    REPLY @2114
     GOTO wizards
   IF ~~
-    REPLY @15
+    REPLY @2115
     GOTO wizards
   IF ~~
-    REPLY @16
+    REPLY @2116
     GOTO violence
 END
 
 IF ~~
   BEGIN wizards
-  SAY @17
-  = @18
+  SAY @2117
+  = @2118
   IF ~~
     DO ~GiveItem("mh#comp3", LastTalkedToBy())
         EscapeArea()~
-    UNSOLVED_JOURNAL @19
+    UNSOLVED_JOURNAL @2119
     EXIT
 END
 
 
 IF ~~
 BEGIN panic1
-  SAY @39
+  SAY @2139
   IF ~~
     EXTERN "mh#bobas" intro2
 END
 
 IF ~~
 BEGIN panic2
-  SAY @40
+  SAY @2140
   IF ~~
     EXTERN "mh#bobas" intro3
 END
 
 IF ~~
 BEGIN panic3
-  SAY @41
+  SAY @2141
   =
-  @42
+  @2142
   IF ~~
     EXTERN "mh#bobas" intro4
 END
@@ -112,7 +112,7 @@ END
 IF ~Global("mh#GemOfSeeing", "GLOBAL", 1)
     !Dead("mh#bobas")~
 BEGIN watch_out
-  SAY @43
+  SAY @2143
   IF ~~
     EXIT
 END
@@ -120,15 +120,15 @@ END
 IF ~Global("mh#GemOfSeeing", "GLOBAL", 1)
     Dead("mh#bobas")~
 BEGIN thanks
-  SAY @44
+  SAY @2144
   IF ~~
-    REPLY @45
+    REPLY @2145
     GOTO story
   IF ~~
-    REPLY @46
+    REPLY @2146
     GOTO story
   IF ~~
-    REPLY @47
+    REPLY @2147
     GOTO story
 END
 
@@ -139,28 +139,28 @@ BEGIN "mh#bobas"
 
 IF ~NumTimesTalkedTo(0)~
 BEGIN intro1
-  SAY @48
+  SAY @2148
   IF ~~
     EXTERN "mh#hlftr" panic1
 END
 
 IF ~~
 BEGIN intro2
-  SAY @49
+  SAY @2149
   IF ~~
     EXTERN "mh#hlftr" panic2
 END
 
 IF ~~
 BEGIN intro3
-  SAY @50
+  SAY @2150
   IF ~~
     EXTERN "mh#hlftr" panic3
 END
 
 IF ~~
 BEGIN intro4
-  SAY @51
+  SAY @2151
   IF ~~
     DO ~Enemy()~
     EXIT
@@ -171,7 +171,7 @@ END
 
 EXTEND_BOTTOM "thalan" 1
   IF ~PartyHasItem("mh#comp3")~
-    REPLY @20
+    REPLY @2120
     GOTO gem1
 END
 
@@ -180,29 +180,29 @@ APPEND "thalan"
 
 IF ~~
 BEGIN gem1
-  SAY @21
-  = @22
-  = @23
+  SAY @2121
+  = @2122
+  = @2123
   IF ~PartyHasItem("misc42")
       PartyGoldGT(4999)~
-    REPLY @24
+    REPLY @2124
     GOTO gem3
   IF ~~
-    REPLY @25
+    REPLY @2125
     GOTO gem2
 END
 
 IF ~~
 BEGIN gem2
-  SAY @26
+  SAY @2126
   IF ~~
-    UNSOLVED_JOURNAL @27
+    UNSOLVED_JOURNAL @2127
     EXIT
 END
 
 IF ~~
 BEGIN gem3
-  SAY @28
+  SAY @2128
   IF ~~
     DO ~TakePartyItem("mh#comp3")
         DestroyItem("mh#comp3")
@@ -210,12 +210,12 @@ BEGIN gem3
         DestroyItem("misc42")
 	TakePartyGold(5000)
 	DestroyGold(5000)
-	EraseJournalEntry(@10)
-	EraseJournalEntry(@19)
-	EraseJournalEntry(@27)
-	EraseJournalEntry(@36)
+	EraseJournalEntry(@2110)
+	EraseJournalEntry(@2119)
+	EraseJournalEntry(@2127)
+	EraseJournalEntry(@2136)
 	GiveItemCreate("mh#misc4", LastTalkedToBy(Myself), 1, 0, 0)~
-    SOLVED_JOURNAL @29
+    SOLVED_JOURNAL @2129
     EXIT
 END
 
@@ -226,7 +226,7 @@ END	// APPEND Thalantyr
 
 EXTEND_BOTTOM "halbaz" 0
   IF ~PartyHasItem("mh#comp3")~
-    REPLY @20
+    REPLY @2120
     GOTO gem1
 END
 
@@ -235,29 +235,29 @@ APPEND "halbaz"
 
 IF ~~
 BEGIN gem1
-  SAY @30
-  = @31
-  = @32
+  SAY @2130
+  = @2131
+  = @2132
   IF ~PartyHasItem("misc42")
       PartyGoldGT(4999)~
-    REPLY @33
+    REPLY @2133
     GOTO gem3
   IF ~~
-    REPLY @34
+    REPLY @2134
     GOTO gem2
 END
 
 IF ~~
 BEGIN gem2
-  SAY @35
+  SAY @2135
   IF ~~
-    UNSOLVED_JOURNAL @36
+    UNSOLVED_JOURNAL @2136
     EXIT
 END
 
 IF ~~
 BEGIN gem3
-  SAY @37
+  SAY @2137
   IF ~~
     DO ~TakePartyItem("mh#comp3")
         DestroyItem("mh#comp3")
@@ -265,12 +265,12 @@ BEGIN gem3
         DestroyItem("misc42")
 	TakePartyGold(5000)
 	DestroyGold(5000)
-	EraseJournalEntry(@10)
-	EraseJournalEntry(@19)
-	EraseJournalEntry(@27)
-	EraseJournalEntry(@36)
+	EraseJournalEntry(@2110)
+	EraseJournalEntry(@2119)
+	EraseJournalEntry(@2127)
+	EraseJournalEntry(@2136)
 	GiveItemCreate("mh#misc4", LastTalkedToBy(Myself), 1, 0, 0)~
-    SOLVED_JOURNAL @38
+    SOLVED_JOURNAL @2138
     EXIT
 END
 

@@ -274,8 +274,6 @@ BEGIN
   // mh#bull1 - Priest's Bullet
   // mh#clck7 - Cloak of Lathander
   // mh#robe3 - Robe of the Pure Heart
-  // mh#scrl1 - Scroll of Heal
-  // mh#scrl2 - Scroll of Resurrection
 
   MAKE_PATCH
     literal'1=>~ADD_STORE_ITEM "mh#bull1" AFTER "staf05" #5 #0 #0 "identified" #10~
@@ -283,8 +281,6 @@ BEGIN
     literal'3=>~ADD_STORE_ITEM "mh#robe3" AFTER "boot05" #0 #0 #0 "identified" #1~
     literal'4=>~ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1~
     literal'5=>~ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1~
-    literal'6=>~ADD_STORE_ITEM "mh#scrl1" AFTER "restore" #1 #0 #0 "identified" #4~
-    literal'7=>~ADD_STORE_ITEM "mh#scrl2" AFTER "scrl63" #1 #0 #0 "identified" #3~
   END
 
   LAUNCH_ACTION_FUNCTION edit_store

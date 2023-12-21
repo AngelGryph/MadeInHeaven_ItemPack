@@ -1,0 +1,57 @@
+DEFINE_ACTION_FUNCTION brokks_forge
+BEGIN
+  ACTION_IF is_bg1
+  BEGIN
+    LAUNCH_ACTION_FUNCTION check_ini
+      STR_VAR
+      ini		= "brokk_buying_markup"
+      RET
+      brokk_buying_markup 	= value
+    END
+
+    LAUNCH_ACTION_FUNCTION check_ini
+      STR_VAR
+      ini		= "brokk_selling_markup"
+      RET
+      brokk_selling_markup	= value
+    END
+
+    sto.copy[mh#brokk|source_location="stores"]
+    [
+      m_name:=@1090
+      m_buy_markup=%brokk_buying_markup%
+      m_sell_markup=%brokk_selling_markup%
+    ]
+
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "brokks_forge.d"
+      location	= "dialogs"
+    END
+
+    ADD_JOURNAL @1005 @1016 @1020 @1026 @1028 @1030 @1036 @1038 @1040 @1060 @1063 @1070 @1072 @1074 @1081 @1084 @1087
+
+    LAUNCH_ACTION_FUNCTION erase_journal_entries_on_bg2_transition
+      STR_VAR
+      dialog	= "mh#brokk"
+    END
+
+    cre.copy[mh#brokk|source_location="actors"]
+    [
+      m_both_names:=@1089
+    ]
+
+    are.edit[%FriendlyArmInn_House%]
+    [
+      m.actor.delete{}
+      m.actor.add{s_name:="Brokk" s_resref:="mh#brokk" s_x=450 s_y=300 s_face:="SW"}
+    ]
+
+    are.edit[%FriendlyArmInn%]
+    [
+      m.mapnote.add{s_text:=@1090 s_color=0 s_x=1500 s_y=1900}
+    ]
+  END	// is_bg1
+END	// brokks_forge
+
+

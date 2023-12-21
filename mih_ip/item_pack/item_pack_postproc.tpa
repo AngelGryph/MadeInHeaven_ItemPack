@@ -12,38 +12,67 @@ BEGIN
 
   ACTION_IF is_bg2
   BEGIN
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item		= "staf15 staf17"
-      editstring	= "price=>15000"
-    END
+    itm.edit[staf15 staf17]
+    [
+      m_price=15000
+    ]
   END
 
 
+  // Apply CamDawg's patches to certain items
+
+  COPY_EXISTING "mh#clck1.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_petrification_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#clck2.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_web_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#drag2.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_poison_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_disease_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_poison_resistance_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#helm2.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_spell_level_1_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_spell_level_2_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_spell_level_3_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#ring5.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_charm_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_confusion_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_feeblemind_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_psionics_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_stun_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#robe2.itm" "override"
+                "mh#staf4.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_level_drain_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#sper1.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_poison_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+  
+  
+/*
   // Visible Ioun Stones
 
   ACTION_IF visible_ioun_stones
   BEGIN
     ACTION_BASH_FOR "override" "mh#vsio.\.bam"
     BEGIN
-      LAUNCH_ACTION_FUNCTION install_vvc
-        STR_VAR
-        vvc		= "sporbit=>%BASH_FOR_RES%"
-        location	= "graphics"
-        editstring	= "anim=>%BASH_FOR_RES%"
-      END
-    END
-
-    MAKE_PATCH
-      add_effect_global_inline=>~opcode=>215 target=>1 timing=>2 parameter2=>1 resource=>"object_index from [mh#vsio1 mh#vsio2 mh#vsio3 mh#vsio4 mh#vsio4 mh#vsio3 mh#vsio5 mh#vsio6]"~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "mh#ioun1 mh#ioun2 mh#ioun3 mh#ioun4 mh#ioun5 mh#ioun6 mh#ioun7"
-      edits	= "patch_data"
+      vvc.copy[sporbit=>%BASH_FOR_RES%|source_location="graphics"]
+      [
+        m_animation_resref:=%BASH_FOR_RES%"
+      ]
     END
   END
+*/
 END	// item_pack_postproc
 
 

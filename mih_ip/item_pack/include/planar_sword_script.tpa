@@ -1,0 +1,26 @@
+DEFINE_ACTION_FUNCTION planar_sword_script
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    ACTION_IF enhanced_edition
+    BEGIN
+      LAUNCH_ACTION_FUNCTION extend
+        STR_VAR
+        script		= "baldur baldur25"
+        bottom		= "planar_sword_ee"
+	location	= "scripts"
+      END
+    END
+    ELSE
+    BEGIN
+      LAUNCH_ACTION_FUNCTION extend
+        STR_VAR
+        script		= "baldur baldur25"
+        bottom		= "planar_sword"
+	location	= "scripts"
+      END
+    END
+  END
+END	// planar_sword_script
+
+

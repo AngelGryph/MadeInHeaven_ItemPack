@@ -1,179 +1,174 @@
-2DA V1.0
-*
-RESREF		NAME	DESC	UNNAME	UNDESC	EXCL	PROJ		CD_IMMUNITY
-mh#amul1	0	1	*	*	0x0	*		*
-mh#amul2	2	3	*	*	0x0	*		*
-mh#amul3	4	5	*	*	0x0	*		*
-mh#amul4	173	174	*	*	0x0	*		*
-mh#amul5	40	41	*	*	0x0	*		*
-mh#amul6	114	115	*	*	0x0	*		*
-mh#amul7	217	218	*	*	0x1	*		*
-mh#amul8	273	274	*	*	0x0	*		*
+resref		name	desc	unname	undesc	exclude	projectile
+mh#amul1	0	1	*	*	0x0	*
+mh#amul2	2	3	*	*	0x0	*
+mh#amul3	4	5	*	*	0x0	*
+mh#amul4	173	174	*	*	0x0	*
+mh#amul5	40	41	*	*	0x0	*
+mh#amul6	114	115	*	*	0x0	*
+mh#amul7	217	218	*	*	0x1	*
+mh#amul8	273	274	*	*	0x0	*
 
-mh#belt1	8	9	*	*	0x0	*		*
-mh#belt2	46	47	*	*	0x0	*		*
-mh#belt3	77	78	*	*	0x0	*		*
-mh#belt5	175	176	*	*	0x0	*		*
-mh#belt6	251	252	*	*	0x0	*		*
-mh#belt7	240	241	*	*	0x0	*		*
+mh#belt1	8	9	*	*	0x0	*
+mh#belt2	46	47	*	*	0x0	*
+mh#belt3	77	78	*	*	0x0	*
+mh#belt5	175	176	*	*	0x0	*
+mh#belt6	251	252	*	*	0x0	*
+mh#belt7	240	241	*	*	0x0	*
 
-mh#boot1	10	11	*	*	0x0	*		*
-mh#boot2	48	49	*	*	0x0	*		*
-mh#boot3	275	276	*	*	0x0	*		*
+mh#boot1	10	11	*	*	0x0	*
+mh#boot2	48	49	*	*	0x0	*
+mh#boot3	275	276	*	*	0x0	*
 
-mh#brac1	50	51	*	*	0x0	*		*
-mh#brac2	12	13	*	*	0x0	*		*
-mh#brac3	73	74	*	*	0x0	*		*
-mh#brac4	75	76	*	*	0x0	*		*
-mh#brac5	121	122	*	*	0x0	*		*
-mh#brac7	244	245	*	*	0x0	*		*
-mh#brac8	349	350	*	*	0x0	*		*
-mh#brac9	269	270	*	*	0x0	*		*
+mh#brac1	50	51	*	*	0x0	*
+mh#brac2	12	13	*	*	0x0	*
+mh#brac3	73	74	*	*	0x0	*
+mh#brac4	75	76	*	*	0x0	*
+mh#brac5	121	122	*	*	0x0	*
+mh#brac7	244	245	*	*	0x0	*
+mh#brac8	349	350	*	*	0x0	*
+mh#brac9	269	270	*	*	0x0	*
 
-mh#btax1	14	15	*	*	0x0	*		*
-mh#btax2	123	124	*	*	0x0	*		*
-mh#btax3	133	134	*	*	0x0	*		*
-mh#btax4	347	348	*	*	0x0	*		*
+mh#btax1	14	15	*	*	0x0	*
+mh#btax2	123	124	*	*	0x0	*
+mh#btax3	133	134	*	*	0x0	*
+mh#btax4	347	348	*	*	0x0	*
 
-mh#bull1	293	294	*	*	0x0	*		*
-mh#bull2	333	334	*	*	0x0	*		*
+mh#bull1	293	294	*	*	0x0	*
+mh#bull2	333	334	*	*	0x0	*
 
-mh#chan1	44	45	*	*	0x2	*		*
-mh#chan2	87	88	*	*	0x2	*		*
-mh#chan3	343	344	*	*	0x2	*		*
+mh#chan1	44	45	*	*	0x2	*
+mh#chan2	87	88	*	*	0x2	*
+mh#chan3	343	344	*	*	0x2	*
 
-mh#clck1	16	17	*	*	0x0	*		petrification
-mh#clck2	289	290	*	*	0x1	*		*
-mh#clck3	79	80	*	*	0x0	*		web
-mh#clck4	32	33	*	*	0x1	*		*
-mh#clck5	220	221	*	*	0x1	*		*
-mh#clck7	281	282	*	*	0x0	*		*
-mh#clck8	279	280	*	*	0x1	*		*
-mh#clck9	18	19	*	*	0x1	*		*
+mh#clck1	16	17	*	*	0x0	*
+mh#clck2	289	290	*	*	0x1	*
+mh#clck3	79	80	*	*	0x0	*
+mh#clck4	32	33	*	*	0x1	*
+mh#clck5	220	221	*	*	0x1	*
+mh#clck7	281	282	*	*	0x0	*
+mh#clck8	279	280	*	*	0x1	*
+mh#clck9	18	19	*	*	0x1	*
 
-mh#club1	263	264	*	*	0x0	*		*
+mh#club1	263	264	*	*	0x0	*
 
-mh#comp1	24	25	*	*	0x0	*		*
-mh#comp2	81	82	*	*	0x0	*		*
-mh#comp3	83	84	*	*	0x0	*		*
-mh#comp4	181	182	329	330	0x0	*		*
-mh#comp5	184	186	183	185	0x0	*		*
-mh#comp6	285	286	*	*	0x0	*		*
-mh#comp7	319	320	*	*	0x0	*		*
+mh#comp1	24	25	*	*	0x0	*
+mh#comp2	81	82	*	*	0x0	*
+mh#comp3	83	84	*	*	0x0	*
+mh#comp4	181	182	329	330	0x0	*
+mh#comp5	184	186	183	185	0x0	*
+mh#comp6	285	286	*	*	0x0	*
+mh#comp7	319	320	*	*	0x0	*
 
-mh#dagg1	52	53	*	*	0x0	*		*
-mh#dagg3	313	314	*	*	0x0	*		*
+mh#dagg1	52	53	*	*	0x0	*
+mh#dagg3	313	314	*	*	0x0	*
 
-mh#dart1	222	223	*	*	0x0	*		*
-mh#dart2	224	225	*	*	0x0	*		*
+mh#dart1	222	223	*	*	0x0	*
+mh#dart2	224	225	*	*	0x0	*
 
-mh#drag1	287	288	317	318	0x2	*		*
-mh#drag2	321	322	317	318	0x2	*		poison,disease,poison_resistance
+mh#drag1	287	288	317	318	0x2	*
+mh#drag2	321	322	317	318	0x2	*
 
-mh#flai1	179	180	*	*	0x0	*		*
-mh#flai2	242	243	*	*	0x0	*		*
+mh#flai1	179	180	*	*	0x0	*
+mh#flai2	242	243	*	*	0x0	*
 
-mh#gem01	325	326	*	*	0x0	*		*
-mh#gem02	327	328	*	*	0x0	*		*
+mh#gem01	325	326	*	*	0x0	*
+mh#gem02	327	328	*	*	0x0	*
 
-mh#hamm1	20	21	*	*	0x0	*		*
-mh#hamm2	323	324	*	*	0x0	*		*
+mh#hamm1	20	21	*	*	0x0	*
+mh#hamm2	323	324	*	*	0x0	*
 
-mh#helm1	22	23	*	*	0x0	*		*
-mh#helm2	117	118	*	*	0x0	*		spell_level_1,spell_level_2,spell_level_3
+mh#helm1	22	23	*	*	0x0	*
+mh#helm2	117	118	*	*	0x0	*
 
-mh#hide1	42	43	*	*	0x2	*		*
-mh#hide2	69	70	*	*	0x2	*		*
+mh#hide1	42	43	*	*	0x2	*
+mh#hide2	69	70	*	*	0x2	*
 
-mh#ioun1	54	55	*	*	0x0	*		*
-mh#ioun2	91	56	*	*	0x0	*		*
-mh#ioun3	187	188	*	*	0x0	*		*
-mh#ioun4	189	190	*	*	0x0	*		*
-mh#ioun5	226	227	*	*	0x0	*		*
-mh#ioun6	228	229	*	*	0x0	*		*
-mh#ioun7	119	120	*	*	0x0	*		*
+mh#ioun1	54	55	*	*	0x0	*
+mh#ioun2	91	56	*	*	0x0	*
+mh#ioun3	187	188	*	*	0x0	*
+mh#ioun4	189	190	*	*	0x0	*
+mh#ioun5	226	227	*	*	0x0	*
+mh#ioun6	228	229	*	*	0x0	*
+mh#ioun7	119	120	*	*	0x0	*
 
-mh#lbow1	57	58	*	*	0x0	*		*
+mh#lbow1	57	58	*	*	0x0	*
 
-mh#mace1	71	72	*	*	0x0	*		*
-mh#mace2	143	144	*	*	0x0	*		*
-mh#mace3	339	340	*	*	0x0	*		*
+mh#mace1	71	72	*	*	0x0	*
+mh#mace2	143	144	*	*	0x0	*
+mh#mace3	339	340	*	*	0x0	*
 
-mh#misc1	139	140	*	*	0x0	*		*
-mh#misc2	192	193	*	*	0x0	*		*
-mh#misc3	194	196	194	195	0x0	*		*
-mh#misc4	6	7	*	*	0x0	*		*
-mh#misc5	249	250	*	*	0x0	*		*
-mh#misc6	283	284	*	*	0x0	*		*
-mh#misc7	259	260	*	*	0x0	*		*
+mh#misc1	139	140	*	*	0x0	*
+mh#misc2	192	193	*	*	0x0	*
+mh#misc3	194	196	194	195	0x0	*
+mh#misc4	6	7	*	*	0x0	*
+mh#misc5	249	250	*	*	0x0	*
+mh#misc6	283	284	*	*	0x0	*
+mh#misc7	259	260	*	*	0x0	*
 
-mh#plat1	89	90	*	*	0x2	*		*
-mh#plat3	305	306	*	*	0x2	*		*
-mh#plat4	309	310	307	308	0x2	*		*
+mh#plat1	89	90	*	*	0x2	*
+mh#plat3	305	306	*	*	0x2	*
+mh#plat4	309	310	307	308	0x2	*
 
-mh#potn1	59	60	*	*	0x0	*		*
-mh#potn2	141	142	*	*	0x0	*		*
-mh#potn4	232	233	*	*	0x0	*		*
-mh#potn5	247	248	*	*	0x0	*		*
-mh#potn6	301	302	*	*	0x0	*		*
-mh#potn7	303	304	*	*	0x0	*		*
-mh#potn8	315	316	*	*	0x0	*		*
+mh#potn1	59	60	*	*	0x0	*
+mh#potn2	141	142	*	*	0x0	*
+mh#potn4	232	233	*	*	0x0	*
+mh#potn5	247	248	*	*	0x0	*
+mh#potn6	301	302	*	*	0x0	*
+mh#potn7	303	304	*	*	0x0	*
+mh#potn8	315	316	*	*	0x0	*
 
-mh#ring1	291	292	*	*	0x1	*		*
-mh#ring2	28	29	*	*	0x0	*		*
-mh#ring3	30	31	*	*	0x0	*		*
-mh#ring4	92	93	*	*	0x0	*		*
-mh#ring5	94	95	*	*	0x0	*		charm,confusion,feeblemind,psionics,stun
-mh#ring6	96	97	*	*	0x0	*		*
-mh#ring7	145	146	*	*	0x0	*		*
-mh#ring8	85	86	*	*	0x0	*		*
-mh#ring9	197	198	*	*	0x0	*		*
-mh#ringa	26	27	*	*	0x1	*		*
-mh#ringb	295	296	*	*	0x0	*		*
+mh#ring1	291	292	*	*	0x1	*
+mh#ring2	28	29	*	*	0x0	*
+mh#ring3	30	31	*	*	0x0	*
+mh#ring4	92	93	*	*	0x0	*
+mh#ring5	94	95	*	*	0x0	*
+mh#ring6	96	97	*	*	0x0	*
+mh#ring7	145	146	*	*	0x0	*
+mh#ring8	85	86	*	*	0x0	*
+mh#ring9	197	198	*	*	0x0	*
+mh#ringa	26	27	*	*	0x1	*
+mh#ringb	295	296	*	*	0x0	*
 
-mh#robe1	98	99	*	*	0x0	*		*
-mh#robe2	100	101	*	*	0x0	*		level_drain
-mh#robe3	104	105	102	103	0x0	*		*
-mh#robe4	106	107	102	103	0x0	*		*
-mh#robe5	257	258	255	256	0x0	*		*
+mh#robe1	98	99	*	*	0x0	*
+mh#robe2	100	101	*	*	0x0	*
+mh#robe3	104	105	102	103	0x0	*
+mh#robe4	106	107	102	103	0x0	*
+mh#robe5	257	258	255	256	0x0	*
 
-mh#scrl1	135	136	*	*	0x0	*		*
-mh#scrl2	137	138	*	*	0x0	*		*
+mh#shld1	34	35	*	*	0x0	*
+mh#shld2	61	62	*	*	0x0	*
+mh#shld3	63	64	*	*	0x0	*
+mh#shld4	147	148	*	*	0x0	*
+mh#shld8	261	262	*	*	0x0	*
+mh#shld9	311	312	*	*	0x0	*
 
-mh#shld1	34	35	*	*	0x0	*		*
-mh#shld2	61	62	*	*	0x0	*		*
-mh#shld3	63	64	*	*	0x0	*		*
-mh#shld4	147	148	*	*	0x0	*		*
-mh#shld8	261	262	*	*	0x0	*		*
-mh#shld9	311	312	*	*	0x0	*		*
+mh#sper1	199	200	*	*	0x0	*
+mh#sper2	335	336	*	*	0x0	*
 
-mh#sper1	199	200	*	*	0x0	*		poison
-mh#sper2	335	336	*	*	0x0	*		*
+mh#staf1	65	66	*	*	0x0	*
+mh#staf4	201	202	*	*	0x0	*
+mh#staf5	204	205	*	*	0x0	*
+mh#staf6	206	207	*	*	0x0	*
+mh#staf7	345	346	*	*	0x0	*
 
-mh#staf1	65	66	*	*	0x0	*		*
-mh#staf4	201	202	*	*	0x0	*		level_drain
-mh#staf5	204	205	*	*	0x0	*		*
-mh#staf6	206	207	*	*	0x0	*		*
-mh#staf7	345	346	*	*	0x0	*		*
+mh#swrd1	36	37	*	*	0x0	*
+mh#swrd2	38	39	*	*	0x0	*
+mh#swrd3	108	109	*	*	0x0	*
+mh#swrd4	110	111	*	*	0x0	*
+mh#swd4a	112	113	*	*	0x0	*
+mh#swrd7	208	209	*	*	0x0	*
+mh#swrd8	210	211	329	330	0x0	*
+mh#swrd9	212	213	*	*	0x0	*
+mh#swrda	297	298	*	*	0x0	*
+mh#swrdb	341	342	*	*	0x0	*
 
-mh#swrd1	36	37	*	*	0x0	*		*
-mh#swrd2	38	39	*	*	0x0	*		*
-mh#swrd3	108	109	*	*	0x0	*		*
-mh#swrd4	110	111	*	*	0x0	*		*
-mh#swd4a	112	113	*	*	0x0	*		*
-mh#swrd7	208	209	*	*	0x0	*		*
-mh#swrd8	210	211	329	330	0x0	*		*
-mh#swrd9	212	213	*	*	0x0	*		*
-mh#swrda	297	298	*	*	0x0	*		*
-mh#swrdb	341	342	*	*	0x0	*		*
+mh#tome1	163	164	*	*	0x0	*
+mh#tome2	165	166	*	*	0x0	*
+mh#tome3	167	168	*	*	0x0	*
+mh#tome4	169	170	*	*	0x0	*
+mh#tome5	171	172	*	*	0x0	*
 
-mh#tome1	163	164	*	*	0x0	*		*
-mh#tome2	165	166	*	*	0x0	*		*
-mh#tome3	167	168	*	*	0x0	*		*
-mh#tome4	169	170	*	*	0x0	*		*
-mh#tome5	171	172	*	*	0x0	*		*
-
-mh#wand1	67	68	*	*	0x0	*		*
-mh#wand2	214	215	*	*	0x0	*		*
+mh#wand1	67	68	*	*	0x0	*
+mh#wand2	214	215	*	*	0x0	*
 
 

@@ -1,6 +1,6 @@
 IF
   HasItem("mh#swrd4", PLAYER1)
-  Or(18)
+  Or(17)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -14,7 +14,6 @@ IF
     AreaCheck("AR2903")
     AreaCheck("AR2904")
     AreaCheck("AR2905")
-    AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
     AreaCheck("OH4230")
@@ -40,7 +39,6 @@ IF
   !AreaCheck("AR2903")
   !AreaCheck("AR2904")
   !AreaCheck("AR2905")
-  !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
   !AreaCheck("OH4230")
@@ -54,7 +52,7 @@ END
 
 IF
   HasItem("mh#swrd4", PLAYER2)
-  Or(18)
+  Or(17)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -68,7 +66,6 @@ IF
     AreaCheck("AR2903")
     AreaCheck("AR2904")
     AreaCheck("AR2905")
-    AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
     AreaCheck("OH4230")
@@ -94,7 +91,6 @@ IF
   !AreaCheck("AR2903")
   !AreaCheck("AR2904")
   !AreaCheck("AR2905")
-  !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
   !AreaCheck("OH4230")
@@ -108,7 +104,7 @@ END
 
 IF
   HasItem("mh#swrd4", PLAYER3)
-  Or(18)
+  Or(17)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -122,7 +118,6 @@ IF
     AreaCheck("AR2903")
     AreaCheck("AR2904")
     AreaCheck("AR2905")
-    AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
     AreaCheck("OH4230")
@@ -148,7 +143,6 @@ IF
   !AreaCheck("AR2903")
   !AreaCheck("AR2904")
   !AreaCheck("AR2905")
-  !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
   !AreaCheck("OH4230")
@@ -162,7 +156,7 @@ END
 
 IF
   HasItem("mh#swrd4", PLAYER4)
-  Or(18)
+  Or(17)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -176,7 +170,6 @@ IF
     AreaCheck("AR2903")
     AreaCheck("AR2904")
     AreaCheck("AR2905")
-    AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
     AreaCheck("OH4230")
@@ -202,7 +195,6 @@ IF
   !AreaCheck("AR2903")
   !AreaCheck("AR2904")
   !AreaCheck("AR2905")
-  !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
   !AreaCheck("OH4230")
@@ -216,7 +208,7 @@ END
 
 IF
   HasItem("mh#swrd4", PLAYER5)
-  Or(18)
+  Or(17)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -230,7 +222,6 @@ IF
     AreaCheck("AR2903")
     AreaCheck("AR2904")
     AreaCheck("AR2905")
-    AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
     AreaCheck("OH4230")
@@ -256,7 +247,6 @@ IF
   !AreaCheck("AR2903")
   !AreaCheck("AR2904")
   !AreaCheck("AR2905")
-  !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
   !AreaCheck("OH4230")
@@ -270,7 +260,7 @@ END
 
 IF
   HasItem("mh#swrd4", PLAYER6)
-  Or(18)
+  Or(17)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
     AreaCheck("AR0517")
@@ -284,7 +274,6 @@ IF
     AreaCheck("AR2903")
     AreaCheck("AR2904")
     AreaCheck("AR2905")
-    AreaCheck("AR2906")
     AreaCheck("AR4500")
     AreaCheck("AR6200")
     AreaCheck("OH4230")
@@ -310,7 +299,6 @@ IF
   !AreaCheck("AR2903")
   !AreaCheck("AR2904")
   !AreaCheck("AR2905")
-  !AreaCheck("AR2906")
   !AreaCheck("AR4500")
   !AreaCheck("AR6200")
   !AreaCheck("OH4230")
