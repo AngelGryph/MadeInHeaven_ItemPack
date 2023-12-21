@@ -1,0 +1,47 @@
+DEFINE_ACTION_FUNCTION visual_ioun_stones
+BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini         = "visible_ioun_stones"
+    RET
+    visible_ioun_stones = value
+  END
+
+  ACTION_IF visible_ioun_stones
+  BEGIN
+    LAUNCH_ACTION_FUNCTION array_read
+      INT_VAR
+      firstrow	= 1
+      STR_VAR
+      file	= "ioun_stones.2da"
+      location	= "tables"
+      RET_ARRAY
+      ioun_stones	= array
+    END
+
+    ACTION_PHP_EACH ioun_stones AS item=>vvc
+    BEGIN
+      ACTION_IF NOT FILE_EXISTS_IN_GAME "%vvc%.vvc"
+      BEGIN
+        install[%vvc%.bam|location="graphics"]
+
+        LAUNCH_ACTION_FUNCTION vvc_copy
+	  STR_VAR
+ 	  vvc			= "sporbit=>%vvc%"
+	  source_location	= "graphics"
+          edits			= ~m_animation_resref:="%vvc%"~
+        END
+      END
+
+      ACTION_IF FILE_EXISTS_IN_GAME "%item%.itm"
+      BEGIN
+        itm.edit[%item%]
+	[
+	  m.fx.add{s_opcode=215 s_target=1 s_timing=2 s_parameter2=1 s_resource:="%vvc%"}
+	]
+      END
+    END
+  END
+END	// visual_ioun_stones
+
+
