@@ -1,0 +1,60 @@
+DEFINE_ACTION_FUNCTION bg1_iwd_items
+BEGIN
+  ACTION_IF is_bg1
+  BEGIN
+    // ========
+    // Beregost
+    // ========
+
+    // Thunderhammer Smithy
+    //
+    // mh#iwd23 - Mace of Weal and Woe +1
+
+    sto.edit[taerum]
+    [
+      ADD_STORE_ITEM "mh#iwd23" AFTER "blun05" #0 #0 #0 "identified" #1
+    ]
+
+
+    // Song of the Morning Temple
+    //
+    // mh#iwd01 - Girdle of Beatification
+
+    sto.edit[tem3402]
+    [
+      ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1
+    ]
+
+
+    // ===========
+    // Bandit Camp
+    // ===========
+
+    // Stolen by the Bandits
+    //
+    // mh#iwd17 - Spendelard's Protector (equipped by Venkt)
+
+    cre.edit[venkt]
+    [
+      m.cre_remove_items{staf02}
+      m.cre_add_items{mh#iwd17(weapon1)}
+    ]
+
+
+    // =========
+    // Cloakwood
+    // =========
+
+    // Orothiar Mines
+    //
+    // mh#iwd04 - Spinesheath +1 (on Natasha)
+
+    cre.edit[natash]
+    [
+      m.cre_remove_items{dagg01}
+      m.cre_add_items{mh#iwd04(weapon1)}
+    ]
+  END	// is_bg1
+END	// bg1_iwd_items
+
+

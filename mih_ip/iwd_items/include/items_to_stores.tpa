@@ -1,0 +1,21 @@
+DEFINE_ACTION_FUNCTION items_to_stores
+BEGIN
+  ACTION_CLEAR_ARRAY item_map
+
+  LAUNCH_ACTION_FUNCTION array_read
+    INT_VAR
+    firstrow	= 1
+    STR_VAR
+    file	= "item_map.2da"
+    location	= "tables"
+    RET_ARRAY
+    item_map	= array
+  END
+
+  LAUNCH_ACTION_FUNCTION map_items_into_stores
+    STR_VAR
+    shadow_map	= "item_map"
+  END
+END	// items_to_stores
+
+

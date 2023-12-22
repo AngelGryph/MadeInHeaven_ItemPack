@@ -1,0 +1,200 @@
+DEFINE_ACTION_FUNCTION bg2_iwd_items
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    // ===================
+    // Waukeen's Promenade
+    // ===================
+
+    // Arnolius the Dwarf
+    //
+    // mh#iwd08 - Black Swan Armor +2
+
+    sto.edit[shop02]
+    [
+      ADD_STORE_ITEM "mh#iwd08" AFTER "plat10" #0 #0 #0 "identified" #1
+    ]
+
+
+    // Adventurer's Market
+    //
+    // mh#iwd12 - Ogi-Luc's Great Robe
+
+    sto.edit[ribald3]
+    [
+      ADD_STORE_ITEM "mh#iwd12" AFTER "chan11" #0 #0 #0 "identified" #1
+    ]
+
+
+    // ==============
+    // Docks District
+    // ==============
+
+    // Mad Cleric of Cyric
+
+    cre.edit[dcleric]
+    [
+      m.cre_remove_items{staf01}
+      m.cre_add_items{mh#iwd23(weapon1) shld04(shield)}
+      m.cre_set_proficiencies{mace=>2 swordandshield=>2}
+    ]
+
+
+    // =============
+    // Planar Sphere
+    // =============
+
+    // Stolen by Lavok
+    //
+    // mh#iwd10 - Shield Ring
+
+    cre.edit[lavok01 lavok02]
+    [
+      m.cre_add_items{mh#iwd10(ring)}
+    ]
+
+
+    // ===============
+    // Temple District
+    // ===============
+
+    // Temple of Lathander
+    //
+    // mh#iwd01 - Girdle of Beatification
+    // mh#iwd06 - Blessed Helm of Lathander
+    // mh#iwd13 - Shield of the Revenant +2
+
+    sto.edit[temlath]
+    [
+      ADD_STORE_ITEM "mh#iwd13" AFTER "staf05" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#iwd06" AFTER "helm05" #1 #1 #1 "identified" #1
+      ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1
+    ]
+
+
+    // Undead City in Lower Reaches (Cult of the Eyeless)
+    //
+    // mh#iwd04 - Spinesheath +1
+
+    are.edit[ar0206]
+    [
+      m.container_item.add{s_resref:="mh#iwd04"|match_parent=~"%p_name%" == "Bones 3"~}
+    ]
+
+
+    // =========
+    // Trademeet
+    // =========
+
+    // Temple of Waukeen
+    //
+    // mh#iwd15 - Waukeen's Defender +2
+
+    sto.edit[temsup]
+    [
+      ADD_STORE_ITEM "mh#iwd15" LAST #0 #0 #0 "identified" #1
+    ]
+
+
+    // ============
+    // Temple Ruins
+    // ============
+
+    // Blessings of Amaunator
+    //
+    // mh#iwd19 - Amaunator's Legacy +3
+
+    are.edit[ar1401]
+    [
+      m.container_item.add{s_resref:="mh#iwd19" s_charges_2=1|match_parent=~"%p_name%" == "Container 7"~}
+    ]
+
+
+    // =========
+    // Underdark
+    // =========
+
+    // Ust Natha
+    //
+    // mh#iwd02 - Girdle of Ogre Blood
+
+    sto.edit[uddrow23]
+    [
+      ADD_STORE_ITEM "mh#iwd02" AFTER "shld22" #1 #0 #0 "identified" #1
+    ]
+
+
+    // =============
+    // Suldanessenar
+    // =============
+
+    // Nizidramanii'yt Hoard
+    //
+    // mh#iwd20 - Pale Justice +4
+
+    cre.edit[dragblac]
+    [
+      m.cre_add_items{mh#iwd20(qitem)}
+    ]
+
+
+    // ========
+    // Saradush
+    // ========
+
+    // Castle Saradush
+    //
+    // mh#iwd03 - Silver Bracers of Kedl (on Karun the Black)
+    // mh#iwd21 - Girdle of Labelas (on Gromnir Il-Khan)
+
+    cre.edit[gromg08]
+    [
+      m.cre_add_items{mh#iwd03(gloves)}
+    ]
+
+    cre.edit[gromnir]
+    [
+      m.cre_add_items{mh#iwd21(belt,x1)}
+    ]
+
+
+    // =========
+    // Amkethran
+    // =========
+
+    // Temple of Waukeen
+    //
+    // mh#iwd15 - Waukeen's Defender +2
+
+    sto.edit[amcler02]
+    [
+      ADD_STORE_ITEM "mh#iwd15" LAST #0 #0 #0 "identified" #1
+    ]
+
+
+    // Sealed Cave
+    //
+    // mh#iwd22 - Robe of Armory (on Vongoethe)
+
+    cre.edit[amlich01]
+    [
+      m.cre_add_items{mh#iwd22(armor)}
+    ]
+
+
+    // ==============
+    // Watcher's Keep
+    // ==============
+
+    // Sister Garlena
+    //
+    // mh#iwd14 - Mystery of the Dead +3
+
+    sto.edit[garlena]
+    [
+      ADD_STORE_ITEM "mh#iwd14" LAST #0 #0 #0 "identified" #1
+    ]
+  END	// is_bg2
+END	// bg2_iwd_items
+
+

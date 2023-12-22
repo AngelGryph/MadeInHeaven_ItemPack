@@ -1,29 +1,27 @@
-2DA V1.0
-*
-RESREF		NAME	DESC	UNNAME	UNDESC	EXCL	PROJ		CD_IMMUNITY
-mh#iwd01	0	1	*	*	0x0	*		*
-mh#iwd02	2	3	*	*	0x0	*		*
-mh#iwd03	4	5	*	*	0x0	*		*
-mh#iwd04	6	7	*	*	0x0	*		*
-mh#iwd05	8	9	*	*	0x0	*		*
-mh#iwd06	10	11	*	*	0x0	*		*
-mh#iwd07	12	13	*	*	0x0	*		*
-mh#iwd08	14	15	*	*	0x2	*		*
-mh#iwd09	16	17	*	*	0x0	*		*
-mh#iwd10	18	19	*	*	0x0	*		magic_missile
-mh#iwd11	20	21	*	*	0x0	*		*
-mh#iwd12	22	23	*	*	0x0	*		*
-mh#iwd13	24	25	*	*	0x0	*		*
-mh#iwd14	26	27	*	*	0x0	*		kill_target,slay
-mh#iwd15	28	29	*	*	0x0	*		*
-mh#iwd16	30	31	*	*	0x0	*		*
-mh#iwd17	32	33	*	*	0x0	*		*
-mh#iwd18	34	35	*	*	0x0	*		*
-mh#iwd19	36	37	*	*	0x0	*		*
-mh#iwd20	38	39	*	*	0x0	*		charm,fear
-mh#iwd21	40	41	*	*	0x0	*		entangle,grease,hold,slow,web,free_action
-mh#iwd22	42	43	*	*	0x0	*		*
-mh#iwd23	44	45	*	*	0x0	*		*
-mh#iwd24	46	47	*	*	0x0	*		*
+resref		name	desc	unname	undesc	exclude	projectile
+mh#iwd01	0	1	*	*	0x0	*
+mh#iwd02	2	3	*	*	0x0	*
+mh#iwd03	4	5	*	*	0x0	*
+mh#iwd04	6	7	*	*	0x0	*
+mh#iwd05	8	9	*	*	0x0	*
+mh#iwd06	10	11	*	*	0x0	*
+mh#iwd07	12	13	*	*	0x0	*
+mh#iwd08	14	15	*	*	0x2	*
+mh#iwd09	16	17	*	*	0x0	*
+mh#iwd10	18	19	*	*	0x0	*
+mh#iwd11	20	21	*	*	0x0	*
+mh#iwd12	22	23	*	*	0x0	*
+mh#iwd13	24	25	*	*	0x0	*
+mh#iwd14	26	27	*	*	0x0	*
+mh#iwd15	28	29	*	*	0x0	*
+mh#iwd16	30	31	*	*	0x0	*
+mh#iwd17	32	33	*	*	0x0	*
+mh#iwd18	34	35	*	*	0x0	*
+mh#iwd19	36	37	*	*	0x0	*
+mh#iwd20	38	39	*	*	0x0	*
+mh#iwd21	40	41	*	*	0x0	*
+mh#iwd22	42	43	*	*	0x0	*
+mh#iwd23	44	45	*	*	0x0	*
+mh#iwd24	46	47	*	*	0x0	*
 
 

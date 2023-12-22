@@ -1,5 +1,17 @@
 DEFINE_ACTION_FUNCTION iwd_items_postproc
 BEGIN
+  // Edion's Ring of Wizardry
+  //
+  // Make this one exclusive with other Rings of Wizardry.
+
+  itm.edit[ring08 bdring08 ohringwi|allow_missing:i=1]
+  [
+    m.fx.clone{s_resource:="mh#iwd11"|match="s_opcode = 180" multi_match:i=1}
+  ]
+  
+
+  // Adjust item prices to BG rates
+
   LAUNCH_ACTION_FUNCTION check_ini
     STR_VAR
     ini		= "iwd_to_bg_price_conversion"
@@ -7,42 +19,37 @@ BEGIN
     iwd_to_bg_price_conversion	= value
   END
 
-
-  // Edion's Ring of Wizardry
-
-  MAKE_PATCH
-    clone_effect_inline=>~only_once=>1 match=>"opcode = 180" resource=>"mh#iwd11"~
-  END
-  
-  LAUNCH_ACTION_FUNCTION edit_item
-    INT_VAR
-    allow_missing	= 1
-    STR_VAR
-    item		= "ring08 bdring08 ohringwi"
-    edits		= "patch_data"
-  END
-
-
-  // Three White Doves
-
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "setup_disrupt"
-    locbase	= "shared/disrupt"
-  END
-
-  LAUNCH_ACTION_FUNCTION pnp_disrupt
-    STR_VAR
-    item	= "mh#iwd07"
-  END
-
-
-  // Adjust item prices
-
   COPY_EXISTING_REGEXP "^mh#iwd[0-9][0-9]\.itm$" "override"
-    LPF ITM_read_price RET price = value END
+    READ_LONG 0x0034 price
     SET price = (price * iwd_to_bg_price_conversion) / 100
-    LPF ITM_price STR_VAR arguments = "%price%" END
+    WRITE_LONG 0x0034 price
+    BUT_ONLY_IF_IT_CHANGES
+
+
+  // Apply CamDawg's patches to certain items
+
+  COPY_EXISTING "mh#iwd10.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_magic_missile_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#iwd14.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_kill_target_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_slay_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#iwd20.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_charm_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_fear_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
+
+  COPY_EXISTING "mh#iwd21.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_entangle_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_grease_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_hold_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_slow_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_web_arrays" END
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_free_action_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
 END	// iwd_items_postproc
 
 

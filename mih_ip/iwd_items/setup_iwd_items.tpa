@@ -7,16 +7,25 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "iwd_items_postproc place_iwd_items_in_stores"
+    file	= "iwd_items_postproc"
     tra		= "iwd_items"
   END
 
-  LAUNCH_ACTION_FUNCTION run
-    STR_VAR
-    file	= "mutual_excludes"
-    locbase	= "shared/spells"
+
+  ACTION_BASH_FOR "%MOD_FOLDER%/%component_loc%/include" "^.*\.tpa$"
+  BEGIN
+    OUTER_TEXT_SPRINT file "%BASH_FOR_RES%"
+    ACTION_TO_LOWER file
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file
+      location	= "include"
+      tra	= "item_pack"
+    END
   END
 
+/*
   ACTION_IF is_bg1
   BEGIN
     LAUNCH_ACTION_FUNCTION run
@@ -48,6 +57,7 @@ BEGIN
       file	= "place_iwd_items_in_tob"
     END
   END
+*/
 END	// setup_iwd_items
 
 

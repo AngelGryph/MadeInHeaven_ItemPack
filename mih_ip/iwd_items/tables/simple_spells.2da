@@ -1,7 +1,5 @@
-2DA V1.0
-*
-RESREF		PROJ		HALF
-mh#iwd23	*		n
-mh#iwd24	*		n
+resref		projectile
+mh#iwd23	*
+mh#iwd24	*
 
 

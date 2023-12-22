@@ -1,0 +1,40 @@
+DEFINE_ACTION_FUNCTION sod_iwd_items
+BEGIN
+  ACTION_IF is_sod
+  BEGIN
+    // Nazramu's Store
+    //
+    // mh#iwd02 - Girdle of Ogre's Blood
+    // mh#iwd11 - Edion's Ring of Wizardry
+    // mh#iwd12 - Ogi-Luc's Great Robe
+    
+    sto.edit[bdnazram]
+    [
+      ADD_STORE_ITEM "mh#iwd02" AFTER "bdbelt01" #1 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#iwd11" AFTER "bdring10" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#iwd12" LAST #0 #0 #0 "identified" #1
+    ]
+
+    
+    // Dwarven Outpost
+    //
+    // mh#iwd10 - Shield Ring
+    
+    are.edit[bd1200]
+    [
+      m.container_item.add{s_resref:="mh#iwd10"|match_parent=~"%p_name%" == "Remains_mage"~}
+    ]
+
+
+    // Kanaglym
+    //
+    // mh#iwd18 - Staff of Moradin's Breath
+    
+    are.edit[bd5300]
+    [
+      m.container_item.add{s_resref:="mh#iwd18" s_charges_2=3|match_parent=~"%p_name%" == "Hephnotes"~}
+    ]
+  END	// is_sod
+END	// sod_iwd_items
+  
+
