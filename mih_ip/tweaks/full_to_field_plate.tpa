@@ -1,24 +1,46 @@
 DEFINE_ACTION_FUNCTION full_to_field_plate
 BEGIN
-  MAKE_PATCH
-    patch_effect_global_inline'1=>~match=>"opcode = 0 and parameter1 < 2 and parameter2 = 16" parameter1=>"parameter1 + 1"~
-    patch_effect_global_inline'2=>~match=>"opcode = 0 and parameter1 = 4 and parameter2 = 8" parameter1=>3~
-    patch_effect_global_inline'3=>~match=>"opcode = 0 and parameter1 = 3 and parameter2 is_in [2 4]" parameter1=>1~
-    minimum_strengthLT=>14
-    price=>"object_index from [4000 6000 12000]"
-    weight=>"object_index from [60 50 40]"
-    say_unidentified_name=>0
-    say_unidentified_description=>1
-    say_name=>"object_index from [0 2 4]"
-    say_description=>"object_index from [1 3 5]"
-  END
+  itm.edit[plat04]
+  [
+    m_both_names:=@0
+    m_unidentified_description:=@1
+    m_min_str=14
+    m_price=4000
+    m_weight=60
+    m.fx.alter{s_parameter1 = 2|match="s_opcode = 0 AND s_parameter2 = 16"}
+    m.fx.alter{s_parameter1 = 3|match="s_opcode = 0 AND s_parameter2 = 8"}
+    m.fx.alter{s_parameter1 = 1|match="s_opcode = 0 AND (s_parameter2 = 2 OR s_parameter2 = 4)"}
+  ]
 
-  LAUNCH_ACTION_FUNCTION edit_item
-    INT_VAR
-    allow_missing	= 1
-    STR_VAR
-    item		= "plat04 plat14 plat23"
-    edits		= "patch_data"
+  itm.edit[plat14]
+  [
+    m_unidentified_name:=@0
+    m_unidentified_description:=@1
+    m_identified_name:=@2
+    m_identified_description:=@3
+    m_min_str=14
+    m_price=6000
+    m_weight=50
+    m.fx.alter{s_parameter1 = 1|match="s_opcode = 0 AND s_parameter2 = 16"}
+    m.fx.alter{s_parameter1 = 3|match="s_opcode = 0 AND s_parameter2 = 8"}
+    m.fx.alter{s_parameter1 = 1|match="s_opcode = 0 AND (s_parameter2 = 2 OR s_parameter2 = 4)"}
+  ]
+
+  ACTION_IF FILE_EXISTS_IN_GAME "plat23.itm"
+  BEGIN
+    itm.edit[plat23]
+    [
+      m_unidentified_name:=@0
+      m_unidentified_description:=@1
+      m_identified_name:=@4
+      m_identified_description:=@5
+      m_min_str=14
+      m_price=12000
+      m_weight=40
+      m.fx.alter{s_parameter1 = 0|match="s_opcode = 0 AND s_parameter2 = 16"}
+      m.fx.alter{s_parameter1 = 3|match="s_opcode = 0 AND s_parameter2 = 8"}
+      m.fx.alter{s_parameter1 = 1|match="s_opcode = 0 AND (s_parameter2 = 2 OR s_parameter2 = 4)"}
+    ]
   END
 END
 

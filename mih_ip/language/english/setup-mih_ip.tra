@@ -3,12 +3,12 @@
 @2    = ~BG1-style Wands of Frost & -Lightning~
 @3    = ~Item Functionality Tweaks~
 @4    = ~This component is not applicable to your game.~
-@5    = ~Healing potions work as in Pen & Paper~
-@6    = ~Alternative Healing Potions~
-@7    = ~Healing Potions work as in Icewind Dale~
-@8    = ~Healing Potions work as in Baldur's Gate~
+@5    = ~P&P Healing Potions~
+//@6    = ~~
+//@7    = ~~
+//@8    = ~~
 @9    = ~Turn generic Full Plate into Field Plate~
-@10   = ~Turn all Dragon Scale Armor into Scale Mail~
+//@10   = ~~
 @11   = ~Miscellaneous Item Improvements (see readme)~
 @12   = ~Add Potions of Extra Healing in BG1~
 @13   = ~Item Availability Tweaks~
@@ -17,7 +17,7 @@
 @16   = ~Change item type of Holy Symbols~
 @17   = ~Holy Symbols are Amulets~
 @18   = ~Holy Symbols are Belts~
-@19   = ~P&P Mace of Disruption (and similar items)~
+//@19   = ~~
 @20   = ~Icewind Dale items for Baldur's Gate 1 & 2~
 @21   = ~Planescape Torment items for Baldur's Gate 1 & 2~
 @22   = ~Improved Tome of Golems~

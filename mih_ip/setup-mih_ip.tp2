@@ -7,7 +7,7 @@ BACKUP "weidu_external/backup/mih_ip"
 SUPPORT "https://www.gibberlings3.net/forums/topic/29992-my-new-made-in-heaven-mods/"
 VERSION "v8"
 
-//MODDER setup_tra none area_variables warn missing_extern warn missing_resref warn ict2_actions none missing_eval none overwriting_file none fun_args warn
+MODDER setup_tra none area_variables warn missing_extern warn missing_resref warn ict2_actions none missing_eval none overwriting_file none fun_args warn
 
 ASK_EVERY_COMPONENT
 NO_IF_EVAL_BUG
@@ -27,7 +27,6 @@ LANGUAGE ~English~
 // Item Pack
 
 BEGIN @1 
-DESIGNATED 101
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -39,7 +38,6 @@ END
 // NPC Personal Items
 
 BEGIN @23
-DESIGNATED 123
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -51,7 +49,6 @@ END
 // IWD Items for BG
 
 BEGIN @20
-DESIGNATED 120
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -63,7 +60,6 @@ END
 // PST Items for BG
 
 BEGIN @21
-DESIGNATED 121
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -75,7 +71,6 @@ END
 // BG1-style wands
 
 BEGIN @2 
-DESIGNATED 102
 GROUP @3 
 
 REQUIRE_PREDICATE NOT GAME_IS "bgee" @4 
@@ -88,44 +83,15 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Alternative Healing Potions
+// P&P Healing Potions
 
 BEGIN @5 
-SUBCOMPONENT @6 
-DESIGNATED 105
 GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "pnp_healing_potions"
   location	= "tweaks"
-  tra		= "item_tweaks"
-END
-
-
-BEGIN @7 
-SUBCOMPONENT @6 
-DESIGNATED 107
-GROUP @3 
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "iwd_healing_potions"
-  location	= "tweaks"
-  tra		= "item_tweaks"
-END
-
-
-BEGIN @8 
-SUBCOMPONENT @6 
-DESIGNATED 108
-GROUP @3 
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "bg2_healing_potions"
-  location	= "tweaks"
-  tra		= "item_tweaks"
 END
 
 
@@ -133,7 +99,6 @@ END
 
 BEGIN @17 
 SUBCOMPONENT @16 
-DESIGNATED 117
 GROUP @3 
 
 REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
@@ -147,7 +112,6 @@ END
 
 BEGIN @18 
 SUBCOMPONENT @16 
-DESIGNATED 118
 GROUP @3 
 
 REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
@@ -163,7 +127,6 @@ END
 // Turn generic Full Plate into Field Plate
 
 BEGIN @9
-DESIGNATED 109
 GROUP @3
 
 LAUNCH_ACTION_FUNCTION run
@@ -174,42 +137,9 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// Turn all Dragon Scale Armor into Scale Mail
-
-BEGIN @10
-DESIGNATED 110
-GROUP @3
-
-REQUIRE_PREDICATE GAME_INCLUDES "bg2" OR GAME_INCLUDES "sod" @4 
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "dragon_scale_mail"
-  location	= "tweaks"
-  tra		= "dragon_scale_mail"
-END
-
-
-// P&P Mace of Disruption (and similar items)
-
-BEGIN @19
-DESIGNATED 119
-GROUP @3 
-
-REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4 
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "disrupting_weapons"
-  location	= "tweaks"
-  tra		= "item_tweaks"
-END
-
-
 // Improved Tome of Golems
 
 BEGIN @22
-DESIGNATED 122
 GROUP @3 
 
 REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4 
@@ -225,7 +155,6 @@ END
 // Miscellaneous Item Improvements
 
 BEGIN @11 
-DESIGNATED 111
 GROUP @3 
 
 LAUNCH_ACTION_FUNCTION run
@@ -239,7 +168,6 @@ END
 // Potions of Extra Healing in BG1
 
 BEGIN @12 
-DESIGNATED 112
 GROUP @13 
 
 REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
@@ -255,7 +183,6 @@ END
 // Nerf BG1 easter egg items
 
 BEGIN @14 
-DESIGNATED 114
 GROUP @13 
 
 REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
@@ -271,7 +198,6 @@ END
 // Sensible Shops (see readme)
 
 BEGIN @15 
-DESIGNATED 115
 GROUP @13 
 
 LAUNCH_ACTION_FUNCTION run

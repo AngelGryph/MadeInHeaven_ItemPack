@@ -14,17 +14,13 @@ BEGIN
 
   ACTION_IF improve_gloves_of_dexterity
   BEGIN
-    MAKE_PATCH
-      say_description=>6
-      patch_effect_global_inline=>~match=>"opcode = 15" parameter1=>4 parameter2=>0~
-      add_effect_global_inline=>~number_to_add=>2 opcode=>"entry_index from [90 92]" target=>1 timing=>2 parameter1=>10~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "brac07"
-      edits	= "patch_data"
-    END
+    itm.edit[brac07]
+    [
+      m_identified_description := @6
+      m.fx.alter{s_parameter1 = 4;;s_parameter2 = 0|match="s_opcode = 15"}
+      m.fx.add{s_opcode = 90;;s_target = 1;;s_timing = 2;;s_parameter1 = 10}
+      m.fx.add{s_opcode = 92;;s_target = 1;;s_timing = 2;;s_parameter1 = 10}
+    ]
   END
 
 
@@ -42,32 +38,23 @@ BEGIN
 
   ACTION_IF improve_cloak_of_the_wolf
   BEGIN
-    MAKE_PATCH
-      add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>100 parameter2=>1~
-      add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
-      patch_effect_global_inline=>~match=>opcode=53 parameter1=>0x7b03~
-      add_effect_inline=>~opcode=>12 target=>2 timing=>1 parameter2=>0x00020000 dicenum=>2 dicesize=>4~
-    END
+    itm.copy[cdwolfm=>mh#wlfck]
+    [
+      m.fx.add{s_opcode = 28;;s_target = 1;;s_timing = 2;;s_parameter1 = 100;;s_parameter2 = 1}
+      //m.fx.add{s_opcode = 142;;s_target = 1;;s_timing = 2;;s_parameter2 = 25}
+      m.fx.add{s_opcode = 63;;s_target = 1;;s_timing = 2}
+      m.fx.alter{s_parameter1 = 0x7b03|match="s_opcode = 53"}
+      m.ab_fx.add{s_opcode = 12;;s_target = 2;;s_timing = 1;;s_parameter2 = 0x00020000;;s_dicenumber = 2;;s_dicesize = 4}
+    ]
 
-    LAUNCH_ACTION_FUNCTION clone_item
-      STR_VAR
-      item		= "cdwolfm=>mh#wlfck"
-      edits		= "patch_data"
-    END
-
-    MAKE_PATCH
-      say_description=>7
-      add_effect_global_inline'1=>~opcode=>28 target=>1 timing=>2 parameter1=>25~
-      add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>25~
-      add_effect_global_inline'3=>~opcode=>63 target=>1 timing=>2~
-      patch_effect_inline=>~match=>opcode=111 resource=>mh#wlfck~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "clck04"
-      edits	= "patch_data"
-    END
+    itm.edit[clck04]
+    [
+      m_identified_description := @7
+      m.fx.add{s_opcode = 28;;s_target = 1;;s_timing = 2;;s_parameter1 = 25}
+      m.fx.add{s_opcode = 142;;s_target = 1;;s_timing = 2;;s_parameter2 = 25}
+      m.fx.add{s_opcode = 63;;s_target = 1;;s_timing = 2}
+      m.fx.alter{s_resource:="mh#wlfck"|match="s_opcode = 111"}
+    ]
   END
 
 
@@ -91,16 +78,11 @@ BEGIN
 
   ACTION_IF improve_baldurans_cloak
   BEGIN
-    MAKE_PATCH
-      patch_effect_global_inline=>~match=>opcode=166 parameter1=>%baldurans_cloak_magic_resistance%~
-      substitute_description=>~25\%=>%baldurans_cloak_magic_resistance%\%~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "clck05"
-      edits	= "patch_data"
-    END
+    itm.edit[clck05]
+    [
+      m.fx.alter{s_parameter1 = %baldurans_cloak_magic_resistance%|match="s_opcode = 166"}
+      //substitute_description=>~25\%=>%baldurans_cloak_magic_resistance%\%~
+    ]
   END
 
 
@@ -117,18 +99,13 @@ BEGIN
 
   ACTION_IF improve_shield_cloak
   BEGIN
-    MAKE_PATCH
-      say_description=>8
-      add_effect_global_inline'1=>~opcode=>0 target=>1 timing=>2 parameter1=>1 parameter2=>0~
-      add_effect_global_inline'2=>~opcode=>0 target=>1 timing=>2 parameter1=>4 parameter2=>2~
-      delete_ability=>~~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "clck20"
-      edits	= "patch_data"
-    END
+    itm.edit[clck20]
+    [
+      m_identified_description := @8
+      m.fx.add{s_opcode = 0;;s_target = 1;;s_timing = 2;;s_parameter1 = 1;;s_parameter2 = 0}
+      m.fx.add{s_opcode = 0;;s_target = 1;;s_timing = 2;;s_parameter1 = 4;;s_parameter2 = 0}
+      m.ab.delete{}
+    ]
   END
 
 
@@ -145,33 +122,28 @@ BEGIN
 
   ACTION_IF improve_potion_of_invulnerability
   BEGIN
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item		= "potn11"
-      editstring	= "say_description=>9"
-    END
+    itm.edit[potn11]
+    [
+      m_identified_description := @9
+    ]
 
     ACTION_IF NOT FILE_EXISTS_IN_GAME "potn11.spl"
     BEGIN
-      LAUNCH_ACTION_FUNCTION externalise_item_ability
+      LAUNCH_ACTION_FUNCTION copy_item_to_spell
         STR_VAR
         item	= "potn11"
+	spell	= "potn11"
       END
     END
 
-    MAKE_PATCH
-      patch_effect_inline'1=>~duration_if_variable=>60~
-      patch_effect_inline'2=>~match=>"opcode is_in [0 33 34 35 36 37]" parameter1=>2 parameter2=>0~
-      add_effect_inline'1=>~opcode=>120 duration=>60 target=>2 parameter2=>2 resist_dispel=>3~
-      add_effect_inline'2=>~opcode=>142 duration=>60 target=>2 parameter2=>70 resist_dispel=>3~
-      add_effect_inline'3=>~opcode=>206 duration=>60 target=>2 parameter1=>0 parameter2=>0 resist_dispel=>3 resource=>potn11~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_spell
-      STR_VAR
-      spell	= "potn11"
-      edits	= "patch_data"
-    END
+    spl.edit[potn11]
+    [
+      m.ab_fx.alter{s_duration = (s_duration > 5) ? 60 : s_duration}
+      m.ab_fx.alter{s_parameter1 = 2;;s_parameter2 = 0|match=~INDEX(EXACT_MATCH "%s_opcode%" "0 33 34 35 36 37") != "-1"~}
+      m.ab_fx.add{s_opcode = 120;;s_duration = 60;;s_target = 2;;s_parameter2 = 2;;s_dispel_resist = 3}
+      m.ab_fx.add{s_opcode = 142;;s_duration = 60;;s_target = 2;;s_parameter2 = 70;;s_dispel_resist = 3}
+      m.ab_fx.add{s_opcode = 206;;s_duration = 60;;s_target = 2;;s_dispel_resist = 3;;s_resource := "potn11"}
+    ]
   END
 
 
@@ -188,21 +160,16 @@ BEGIN
 
   ACTION_IF improve_kiels_buckler
   BEGIN
-    MAKE_PATCH
-      say_description=>11
-      price=>7000
-      enchantment=>2
-      patch_effect_inline=>~match=>"opcode = 0" parameter1=>"if parameter2 = 0 then 3 else -3"~
-      icon=>"ishld20"
-      icon_ground=>"gshld08"
-      icon_carried=>"cshld20"
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "shld20"
-      edits	= "patch_data"
-    END
+    itm.edit[shld20]
+    [
+      m_identified_description := @11
+      m_price = 7000
+      m_enchantment = 2
+      m.fx.alter{s_parameter1 = (s_parameter2 = 0) ? 3 : "-3"|match="s_opcode = 0"}
+      m_icon := "ishld20"
+      m_ground_icon := "gshld08"
+      m_desc_image := "cshld20"
+    ]
   END
 
 
@@ -221,20 +188,20 @@ BEGIN
 
   ACTION_IF is_bg2 AND improve_skull_of_death
   BEGIN
-    MAKE_PATCH
-      say_description=>12
-      add_effect_global_inline'1=>~opcode=>98 target=>1 timing=>2 parameter1=>60 parameter2=>3~
-      add_effect_global_inline'2=>~opcode=>142 target=>1 timing=>2 parameter2=>87~
-      clone_ability_inline=>~number_to_add=>2 at_end=>1~
-      patch_ability_inline=>~ability_icon=>"entry_index from [spwi501b spwi713b spwi720b]" ability_target=>"entry_index from [4 1 1]" ability_range=>"entry_index from [20 40 40]"~
-      patch_effect_inline=>~opcode=>"parent_index from [148 146 146]" target=>"parent_index from [1 2 2]" parameter1=>15 resource=>"parent_index from [spwi501b spwi713b spwi720b]"~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "helm17"
-      edits	= "patch_data"
-    END
+    itm.edit[helm17]
+    [
+      m_identified_description := @12
+      m.fx.add{s_opcode = 98;;s_target = 1;;s_timing = 2;;s_parameter1 = 60;;s_parameter2 = 3}
+      m.fx.add{s_opcode = 142;;s_target = 1;;s_timing = 2;;s_parameter2 = 87}
+      m.ab.delete{}
+      m.ab.add{s_type = 3;;s_location = 3;;s_number_charges = 1;;s_when_drained = 3;;s_usable_after_id = 1;;s_recharge_after_resting = 1;;s_projectile = 1|number:i=3}
+      m.ab.alter{s_icon := "spwi501b";;s_target = 4;;s_range = 20|match="entry_index = 0"}
+      m.ab.alter{s_icon := "spwi713b";;s_target = 1;;s_range = 40|match="entry_index = 1"}
+      m.ab.alter{s_icon := "spwi720b";;s_target = 1;;s_range = 40|match="entry_index = 2"}
+      m.ab_fx.add{s_opcode = 148;;s_target = 1;;s_timing = 1;;s_parameter1 = 15;;s_resource := spwi501|match_parent="parent_index = 0"}
+      m.ab_fx.add{s_opcode = 146;;s_target = 2;;s_timing = 1;;s_parameter1 = 15;;s_resource := spwi713|match_parent="parent_index = 1"}
+      m.ab_fx.add{s_opcode = 146;;s_target = 2;;s_timing = 1;;s_parameter1 = 15;;s_resource := spwi720|match_parent="parent_index = 2"}
+    ]
   END
 
 
@@ -252,17 +219,12 @@ BEGIN
 
   ACTION_IF is_bg2 AND improve_shadow_dragon_scale
   BEGIN
-    MAKE_PATCH
-      say_description=>13
-      patch_effect_global_inline'1=>~match=>"opcode = 27" opcode=>101 parameter1=>0 parameter2=>216~
-      patch_effect_global_inline'2=>~match=>"opcode = 142" parameter2=>90~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "leat19"
-      edits	= "patch_data"
-    END
+    itm.edit[leat19]
+    [
+      m_identified_description := @13
+      m.fx.alter{s_opcode = 101;;s_parameter1 = 0;;s_parameter2 = 216|match="s_opcode = 27"}
+      m.fx.alter{s_parameter2 = 90|match="s_opcode = 142"}
+    ]
   END
 
 
@@ -279,16 +241,11 @@ BEGIN
 
   ACTION_IF is_bg2 AND improve_ring_of_spell_turning
   BEGIN
-    MAKE_PATCH
-      patch_ability_inline=>~ability_icon=>"spwi701b"~
-      patch_effect_inline=>~match=>"opcode = 146" resource=>"spwi701"~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "ring34"
-      edits	= "patch_data"
-    END
+    itm.edit[ring34]
+    [
+      m.ab.alter{icon := "spwi701b"}
+      m.ab_fx.alter{s_resource := "spwi701"|match="s_opcode = 146"}
+    ]
   END
 
 
@@ -304,18 +261,13 @@ BEGIN
     improve_helm_of_the_rock	= value
   END
 
-  ACTION_IF has_tob AND improve_helm_of_the_rock
+  ACTION_IF is_bg2 AND improve_helm_of_the_rock
   BEGIN
-    MAKE_PATCH
-      unusable_paladin=>0
-      unusable_ranger=>0
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "helm31 helm32"
-      edits	= "patch_data"
-    END
+    itm.edit[helm31 helm32]
+    [
+      m_unusable_paladin = 0
+      m_unusable_ranger = 0
+    ]
   END
 
 
@@ -331,18 +283,13 @@ BEGIN
     improve_bards_gloves	= value
   END
 
-  ACTION_IF has_tob AND improve_bards_gloves
+  ACTION_IF is_bg2 AND improve_bards_gloves
   BEGIN
-    MAKE_PATCH
-      unusable_mage_thief=>0
-      unusable_fighter_mage_thief=>0
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "brac24 brac25"
-      edits	= "patch_data"
-    END
+    itm.edit[brac24 brac25]
+    [
+      m_unusable_mage_thief = 0
+      m_unusable_fighter_mage_thief = 0
+    ]
   END
 
 
@@ -357,19 +304,14 @@ BEGIN
     improve_robe_of_vecna	= value
   END
 
-  ACTION_IF has_tob AND improve_robe_of_vecna
+  ACTION_IF is_bg2 AND improve_robe_of_vecna
   BEGIN
-    MAKE_PATCH
-      cursed=>1
-      patch_effect_global_inline=>~match=>"opcode = 0 and parameter2 = 16" parameter1=>1~
-      clone_effect_global_inline=>~match=>"opcode = 0 and parameter2 = 16" number_to_add=>6 opcode=>"entry_index from [22 33 34 35 36 37]" parameter1=>-2 parameter2=>0~
-    END
-
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "wa2robe"
-      edits	= "patch_data"
-    END
+    itm.edit[wa2robe]
+    [
+      m_cursed = 1
+      m.fx.alter{s_parameter1 = 1|match="s_opcode = 1 AND s_parameter2 = 16"}
+      m.fx.clone{s_opcode = (entry_index = 0) ? 22 : entry_index + 32;;s_parameter1 = "-2";;s_parameter2 = 0|number:i=6;;match="s_opcode = 0 AND s_parameter2 = 16"}
+    ]
   END
 END	// item_improvements
 
