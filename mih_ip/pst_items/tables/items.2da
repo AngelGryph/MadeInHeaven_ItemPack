@@ -1,9 +1,7 @@
-2DA V1.0
-*
-RESREF		NAME	DESC	UNNAME	UNDESC	EXCL	PROJ		CD_IMMUNITY
-mh#pst01	0	1	*	*	0x1	*		*
-mh#pst02	2	3	*	*	0x0	*		*
-mh#pst03	4	5	*	*	0x1	*		*
-mh#pst3a	4	6	*	*	0x1	*		*
+resref		name	desc	unname	undesc	exclude	projectile
+mh#pst01	0	1	*	*	0x1	*
+mh#pst02	2	3	*	*	0x0	*
+mh#pst03	4	5	*	*	0x1	*
+mh#pst3a	4	6	*	*	0x1	*
 
 

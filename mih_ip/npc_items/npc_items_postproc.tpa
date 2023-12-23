@@ -2,18 +2,16 @@ DEFINE_ACTION_FUNCTION npc_items_postproc
 BEGIN
   // Add new use restrictions to item_use.2da
 
-  LAUNCH_ACTION_FUNCTION get_directory
-    STR_VAR
-    location
-    locbase
-    locabs
-    RET
-    directory
-  END
-
   COPY_EXISTING "item_use.2da" "override"
-    APPEND_FILE "%directory%/tables/item_use.2da"
+    APPEND_FILE "%MOD_FOLDER%/%component_loc%/tables/item_use.2da"
     PRETTY_PRINT_2DA
+
+
+  // Apply CamDawg's patches to certain items
+
+  COPY_EXISTING "mh#npmfw.itm" "override"
+    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_fear_arrays" END
+    BUT_ONLY_IF_IT_CHANGES
 END	// npc_items_postproc
 
 

@@ -1,0 +1,8 @@
+DEFINE_ACTION_FUNCTION bg2_npc_items
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+  END	// is_bg2
+END	// bg2_npc_items
+
+

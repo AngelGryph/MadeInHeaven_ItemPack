@@ -1,0 +1,20 @@
+DEFINE_ACTION_FUNCTION bg2_pst_items
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    // ========
+    // Saradush
+    // ========
+
+    // Arcana Archives
+    //
+    // mh#pst01 - Ring of Thex
+
+    sto.edit[25spell]
+    [
+      ADD_STORE_ITEM "mh#pst01" AFTER "ring02" #0 #0 #0 "identified" #1
+    ]
+  END	// is_bg2
+END	// bg2_pst_items
+
+
