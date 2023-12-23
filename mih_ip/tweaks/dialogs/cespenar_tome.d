@@ -1,4 +1,4 @@
-REPLACE_SAY "botsmith" 114 @8
+REPLACE_SAY "botsmith" 114 @1008
 
 ALTER_TRANS "botsmith"
 BEGIN 4 9 15 19 23 27 31 35 39 43 47 51 55 59 63 67 72 76 82 86 89 92 96 100 105 109 END	// State(s)
@@ -27,7 +27,7 @@ APPEND "botsmith"
 
 IF ~~
 BEGIN mh#PartyHasIronGolemPage
-  SAY @9
+  SAY @1009
   IF ~PartyGoldLT(20000)~
     REPLY #66961
     GOTO 10

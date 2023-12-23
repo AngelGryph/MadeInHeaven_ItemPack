@@ -97,28 +97,14 @@ END
 
 // Change item type of holy symbols
 
-BEGIN @17 
-SUBCOMPONENT @16 
+BEGIN @16 
 GROUP @3 
 
 REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file		= "holy_symbols_are_amulets"
-  location	= "tweaks"
-  tra		= "item_tweaks"
-END
-
-BEGIN @18 
-SUBCOMPONENT @16 
-GROUP @3 
-
-REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
-
-LAUNCH_ACTION_FUNCTION run
-  STR_VAR
-  file		= "holy_symbols_are_belts"
+  file		= "holy_symbol_item_type"
   location	= "tweaks"
   tra		= "item_tweaks"
 END
@@ -142,13 +128,13 @@ END
 BEGIN @22
 GROUP @3 
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg2" @4 
+REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
-  file		= "setup_tome_of_golems"
-  location	= "tome_of_golems"
-  tra		= "tome_of_golems"
+  file		= "improved_tome_of_golems"
+  location	= "tweaks"
+  tra		= "item_tweaks"
 END
 
 

@@ -1,3 +1,5 @@
+// Item Tweaks
+
 @0   = ~Field Plate~
 @1   = ~Field plate dispenses with the chain backing of plate mail and full plate to save weight.  Instead a light suit of padding, or aketon, is worn beneath field plate.  The considerable weight of this armor is distributed over the wearer's body, and a trained knight can lie down, stand up, or vault into the saddle while wearing this armor.
 
@@ -111,5 +113,43 @@ Requires:
  6 Strength
 
 Weight: 10~
+
+
+// Improved Tome of Golems
+
+@1000 = ~Sand Golem Manual~
+@1001 = ~Combining the strength of a stone golem and the resilience of a clay golem is the sand golem. The new pages added to the manual have enhanced its magical properties significantly. The user needs an Intelligence of 16 or better to understand the contents.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Sand Golem once per day
+  Range: 30 ft.
+  Duration: 1 turn
+
+Requires:
+ 16 Intelligence
+
+Weight: 5~
+@1002 = ~Sand Golem Page~
+@1003 = ~This page appears to be torn from a larger work.  Although incomplete, it seems to describe how to summon a golem made of sand.~
+@1004 = ~Iron Golem Manual~
+@1005 = ~The ultimate golem this tome can summon is contructed entirely from iron, giving it both great strength and durability. The new pages added to the manual have enhanced its magical properties significantly. The user needs an Intelligence of 16 or better to understand the contents.
+
+STATISTICS:
+
+Charge abilities:
+- Summon Iron Golem once per day
+  Range: 30 ft.
+  Duration: 1 turn
+
+Requires:
+ 16 Intelligence
+
+Weight: 5~
+@1006 = ~Iron Golem Page~
+@1007 = ~This page appears to be torn from a larger work.  Although incomplete, it seems to describe how to summon a golem made of iron.~
+@1008 = ~You haves a sand golem page, which makes tome better, oh yes. Just uses 15,000 gp and then you can makes all sand golems you wants, in fact. Scary.~
+@1009 = ~Oh, you haves iron golem page, you do!  Cespenar can make tome even better now!  Just 20,000 gp and iron golem will smash your foes flat!  You wants?~
 
 

@@ -1,0 +1,92 @@
+DEFINE_ACTION_FUNCTION improved_tome_of_golems
+BEGIN
+  // Patch and add golem pages/tomes.
+
+  itm.edit[tome04]
+  [
+    m_both_names := @1000
+    m_identified_description := @1001
+    m.ab_fx.delete{INDEX(EXACT_MATCH "%s_opcode%" "314 50 215") != "-1"}
+  ]
+
+  itm.edit[tome04a]
+  [
+    m_both_names := @1002
+    m_unidentified_description := @1003
+    m_identified_description := @1003
+  ]
+
+  itm.copy[tome02=>tome05]
+  [
+    m_both_names := @1004
+    m_unidentified_description := @1005
+    m_identified_description := @1005
+    m.ab_fx.alter{s_resource := "tome05"|match="s_opcode = 177"}
+  ]
+
+  itm.copy[tome02a=>tome05a]
+  [
+    m_both_names := @1006
+    m_unidentified_description := @1007
+    m_identified_description := @1007
+  ]
+
+  cre.copy[golsan01=>tomegol4 goliro01=>tomegol5]
+  [
+    m_allegiance := controlled
+    m_xp_value = 0
+  ]
+
+  eff.copy[tome01=>tome05]
+  [
+    s_resource := "tomegol5"
+  ]
+
+
+  // Change acquisation order
+
+  are.edit[ar3001 ar3017 ar5204 ar6003]
+  [
+    m.container_item.delete{INDEX (CASE_INSENSITIVE EXACT_MATCH "%s_resref%" "tome01 tome02a tome03a tome04a") != "-1"}
+  ]
+
+
+  ACTION_CLEAR_ARRAY tome_locations
+
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY tome_locations
+  BEGIN
+    "ar3001"	=> "Shelf5"
+    "ar3017"	=> "Container 2"
+    "ar5204"	=> "Container 2"
+    "ar6003"	=> "Table 2"
+    "ar6110"	=> "Container 3"
+  END
+
+  ACTION_PHP_EACH tome_locations AS area => container
+  BEGIN
+    LAUNCH_ACTION_FUNCTION extend_area_script
+      STR_VAR
+      area
+      bottom	= "place_tome_script"
+      location	= "scripts"
+    END
+  END
+
+
+  // Update Cespenar dialog/forging
+
+  LAUNCH_ACTION_FUNCTION install
+    STR_VAR
+    file	= "cespenar_tome.d"
+    location	= "dialogs"
+  END
+
+  LAUNCH_ACTION_FUNCTION extend
+    STR_VAR
+    script	= "botsmith"
+    bottom	= "cespenar_tome"
+    location	= "scripts"
+  END
+END	// improved_tome_of_golems
+
+

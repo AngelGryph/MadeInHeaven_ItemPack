@@ -1,52 +1,36 @@
 DEFINE_ACTION_FUNCTION bg1_wands
 BEGIN
+  // Create corresponding item spells if needed.
+
+  ACTION_FOR_EACH wand IN "wand06" "wand07"
+  BEGIN
+    ACTION_IF NOT FILE_EXISTS_IN_GAME "%wand%.spl"
+    BEGIN
+      LAUNCH_ACTION_FUNCTION copy_item_to_spell
+        STR_VAR
+        item	= "%wand%"
+        spell	= "%wand%"
+      END
+  END
+
+  END
+
+
   // Wand of Frost
 
-  MAKE_PATCH
-    patch_ability_inline=>"projectile=>191"
-  END
-
-  ACTION_IF FILE_EXISTS_IN_GAME "wand06.spl"
-  BEGIN
-    LAUNCH_ACTION_FUNCTION edit_spell
-      STR_VAR
-      item	= "wand06"
-      edits	= "patch_data"
-    END
-  END
-  ELSE
-  BEGIN
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "wand06"
-      edits	= "patch_data"
-    END
-  END
+  spl.edit[wand06]
+  [
+    m.ab.alter{s_projectile = 191}
+  ]
 
 
   // Wand of Lightning
 
-  MAKE_PATCH
-    patch_ability_inline=>~ability_target_count=>0~
-    patch_effect_inline=>~match=>"opcode = 12" dicenum=>"if enhanced_edition then 6 else 3~
-  END
-
-  ACTION_IF FILE_EXISTS_IN_GAME "wand07.spl"
-  BEGIN
-    LAUNCH_ACTION_FUNCTION edit_spell
-      STR_VAR
-      item	= "wand07"
-      edits	= "patch_data"
-    END
-  END
-  ELSE
-  BEGIN
-    LAUNCH_ACTION_FUNCTION edit_item
-      STR_VAR
-      item	= "wand07"
-      edits	= "patch_data"
-    END
-  END
+  spl.edit[wand07]
+  [
+    m.ab.alter{s_target_count = 0}
+    m.ab_fx.alter{s_dicenumber = enhanced_edition ? 6 : 3|match="s_opcode = 12"}
+  ]
 END	// bg1_wands
 
 

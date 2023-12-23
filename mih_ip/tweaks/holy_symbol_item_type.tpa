@@ -1,0 +1,18 @@
+DEFINE_ACTION_FUNCTION holy_symbol_item_type
+BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "holy_symbol_item_type"
+    RET
+    holy_symbol_item_type	= value
+  END
+
+  itm.edit[belt12 belt13 belt14 beltbw beltsh beltty ohtempus j#belt12 j#belt14 lk#ysy1i|allow_missing:i=1]
+  [
+    m_unidentified_name-strref = 6852
+    m_unidentified_description-strref = 6900
+    m_category = %holy_symbol_item_type%
+  ]
+END	// holy_symbol_item_type
+
+
