@@ -72,17 +72,13 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
   <p><strong>BG1-style Wands in BG2</strong><br/>
   <p>This alters wands in BG2 and games based on it like BGT to work like they did in BG1; the Wand of Frost is a single beam of frost, and the Wand of Lightning projects one 6d6 lightning bolt per use.</p>
 
-  <p><strong>Alternative Healing Potions</strong><br/>
-  This modification will change the way healing potions work.  You can choose between Pen &amp; Paper rules, Icewind Dale Rules or Baldur's Gate 2 rules.  That last one will obviously not change anything on BG2, but will effect any games that include Icewind Dale.  The P&amp;P option tends to make the game slightly harder as healing is more random and less reliable.  The Icewind Dale option tends to make the late game harder as well.</p>
-  <table>
-    <tr><th /><th>Pen &amp; Paper</th><th>Icewind Dale</th><th>Baldur's Gate 2</th></tr>
-    <tr><td>Potion of Healing</td><td>2d4+2 (4-10)</td><td>9</td><td>9</td></tr>
-    <tr><td>Potion of Extra Healing</td><td>3d8+3 (6-27)</td><td>18</td><td>27</td></tr>
-    <tr><td>Potion of Superior Healing</td><td>6d8+2 (8-50)</td><td>27</td><td>40</td></tr>
-  </table>
+  <p><strong>P&P Healing Potions</strong><br/>
+  This modification will change the way healing potions work to more closely match their P&amp;P versions.  This will make them more random and less reliable, likely resulting in a slightly harder game.</p>
+  <p>A Potion of Healing heals 2d4+2 (4-10) hit points, a Potion of Extra Healing heals 3d8+3 (6-27) hit points and Potion of Superior Healing heals 6d8+2 (8-50) hit points.</p>
+  <p>In P&amp;P, a potion of Extra Healing can be drunk in three parts instead of all at once and Potion of Superior Healing can backfire if they are drunk too often, but this is tricky to implement in the engine and probably not much fun.</p>
 
-  <p><strong>Change item Type of Holy Symbols</strong><br/>
-  This small tweak changes the item type of the holy symbols received by high-level clerics.  Normally they are rings, with this tweak you can turn them into either amulets (makes the most sense IMHO) or belts (what was originally planned, judging by the file name of the items).  This tweak covers the symbols in the vanilla game, those introduced by the Fixpack/EE (Aerie's and Viconia's), and Yeslick's if the Yeslick NPC mod is installed.  If any others should be covered, let me know!</p>
+  <p><strong>Change item type of Holy Symbols</strong><br/>
+  This small tweak changes the item type of the holy symbols received by high-level clerics.  Normally they are rings, this tweak by default turns them into amulets but the item type can be configured in the ini file.  Their in-game name suggest they were originally belts.  This tweak covers the symbols in the vanilla game, those introduced by the Fixpack/EE (Aerie's and Viconia's), and Yeslick's if the Yeslick NPC mod is installed.  If any others should be covered, let me know and I'll see what I can do.</p>
 
   <p><strong>Turn generic Full Plate into Field Plate</strong><br/>
   Full plate mail is a rare and precious item normally custom-made for the wearer and not usable by anyone else, so you should not be able to just walk into a shop and buy some off of the shelf.  This tweak turns all generic full plate into the slightly less powerful field plate.  All named- or otherwise special armors are unchanged, including the suit created by Limited Wish.  (Specifically, the items affected are plat04, plat14 and plat23.)</p>
@@ -91,22 +87,6 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
   <tr><th></th><th>base AC</th><th>AC vs. slashing</th><th>AC vs. piercing and missile</th></tr>
   <tr><td>Field Plate</td><td>2</td><td>-1</td><td>1</td><tr>
   <tr><td>Full Plate</td><td>1</td><td>-3</td><td>-2</td><tr>
-  </table>
-
-  <p><strong>Turn all Dragon Scale Armor into Scale Mail</strong><br/>
-  Dragon scale armor in the game is a bit all over the place.  Some are considered to be leather armor, some are plate mail, some are in between somewhere.  This tweak converts all dragon scale armor in the game to scale mail (+1 vs. piercing/missile) that weighs 25 pounds and has the following penalty on thieving skills: Open Locks -10%, Find Traps -10%, Pick Pockets -25%, Move Silently -15%.  This means that all dragon scale armors can be used by all classes except single-class mages and monks, and the kits shapeshifter- and avenger druid and kensai.  Base armor class and all abilities are unchanged.  Although technically not made from a dragon, this component alters the Ashen Scales too.</p>
-
-  <p><strong>P&amp;P Mace of Disruption (and similar items)</strong><br/>
-  This tweak changes the Mace of Disruption, Azure Edge, Runehammer and the maces of astral devas to work more like the P&amp;P version, and the Three White Doves mace in Icewind Dale.  Instead of having an equal chance to destroy any undead, it will now be more successful in destroying weaker undead than stronger ones.<p>
-  <table>
-    <tr><th>Type</th><th>Disruption %</th></tr>
-    <tr><td>ghoul/ghast<br/>shadow<br/>skeleton<br/>zombie</td><td>100 %</td></tr>
-    <tr><td>wraith</td><td>95 %</td></tr>
-    <tr><td>mummy</td><td>80 %</td></tr>
-    <tr><td>spectre</td><td>65 %</td></tr>
-    <tr><td>vampire</td><td>50 %</td></tr>
-    <tr><td>lich</td><td>20 %</td></tr>
-    <tr><td>demilich</td><td>5 %</td></tr>
   </table>
 
   <p><strong>Improved Tome of Golems</strong><br/>

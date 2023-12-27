@@ -1290,22 +1290,22 @@ BEGIN
 			// (note that we have to go through by parent entry so that repeated index entries to the same child in the same parent are sequential)
 			
 			
-			PHP_EACH "SFO_%strtype%_parent_list" AS parent=>discard BEGIN
+						PHP_EACH "SFO_%strtype%_parent_list" AS parent=>discard BEGIN
 				PATCH_IF "%parent%" STR_CMP "null" BEGIN
 					parent_count=$write_index("%parent%" "count")
 					FOR (parent_ind=0;parent_ind<parent_count;++parent_ind) BEGIN
 						PHP_EACH "SFO_%strtype%_parent_child_id" AS pc_id=>discard2 BEGIN
-							PATCH_IF $"SFO_%strtype%_parent_child_data"("%pc_id%" "parent") STR_EQ "%parent%" BEGIN		
+							PATCH_IF $"SFO_%strtype%_parent_child_data"("%pc_id%" "parent") STR_EQ "%parent%" BEGIN
 								SPRINT child $"SFO_%strtype%_parent_child_data"("%pc_id%" "child")
-								index=$working_index("%child%") 
+								index=$working_index("%child%")
 								SET $write_index("%parent%" "%parent_ind%" "%pc_id%" "index") = index
 								count=$write_index("%parent%" "%parent_ind%" "%pc_id%" "count")
 								PATCH_IF telemetry BEGIN
-									PATCH_PRINT "%parent% %pc_id% %parent_ind%: %index% %count%"  
+									PATCH_PRINT "%parent% %pc_id% %parent_ind%: %index% %count%"
 								END
 								index += count
+								SET $working_index("%child%") = index
 							END
-							SET $working_index("%child%") = index
 						END
 					END
 				END
