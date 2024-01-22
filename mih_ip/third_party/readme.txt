@@ -5,7 +5,7 @@ other than a bug fix or two which I reported back to the original authors.
 Currently included here are:
 
 
-From Sword Coast Stratagems v35.7, updated January 22th 2024:
+From Sword Coast Stratagems v35.8, updated January 22th 2024:
 
 sfo2e/		- SFO 2e function library, by DavidW.
 
