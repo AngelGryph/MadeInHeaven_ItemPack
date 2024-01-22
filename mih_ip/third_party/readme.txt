@@ -5,10 +5,9 @@ other than a bug fix or two which I reported back to the original authors.
 Currently included here are:
 
 
-From Sword Coast Stratagems v35.5, updated January 7th 2024:
+From Sword Coast Stratagems v35.7, updated January 22th 2024:
 
 sfo2e/		- SFO 2e function library, by DavidW.
-                  Fixed reference to undefined variable in struct_get.
 
 
 From G3 BG2 Fixpack v13, updated December 16th 2023:
