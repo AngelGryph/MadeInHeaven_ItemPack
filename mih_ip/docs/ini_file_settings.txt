@@ -4,8 +4,6 @@ General
 - debug_variable=0
 - use_perl_natively=0
 - disable_ssl=0
-- hitpoint_percentage=100
-- use_ee_half_damage=1
 
 Used for debugging.  You should probably not touch these.
 
@@ -22,14 +20,6 @@ that the lore-friendly changes have been implemented.
 ===
 
 MiH Item Pack
-
-- max_stack_ammo=0
-- max_stack_thrown=0
-- max_stack_potions=0
-- max_stack_jewels=0
-
-The maximum stack amount for various stackable item types.  Using zero will
-use the game default.
 
 - update_itemexcl_2da=1
 
