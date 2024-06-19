@@ -28,6 +28,8 @@ LANGUAGE ~English~
 
 BEGIN @1 
 
+LABEL MH#-MiH_IP-Item_Pack
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_item_pack"
@@ -38,6 +40,8 @@ END
 // NPC Personal Items
 
 BEGIN @23
+
+LABEL MH#-MiH_IP-NPC_Items
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -50,6 +54,8 @@ END
 
 BEGIN @20
 
+LABEL MH#-MiH_IP-IWD_Items
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_iwd_items"
@@ -60,6 +66,8 @@ END
 // PST Items for BG
 
 BEGIN @21
+
+LABEL MH#-MiH_IP-PST_Items
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -72,6 +80,8 @@ END
 
 BEGIN @2 
 GROUP @3 
+
+LABEL MH#-MiH_IP-BG1_Style_Wands
 
 REQUIRE_PREDICATE NOT GAME_IS "bgee" @4 
 
@@ -88,6 +98,8 @@ END
 BEGIN @5 
 GROUP @3 
 
+LABEL MH#-MiH_IP-PandP_Healing_Potions
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "pnp_healing_potions"
@@ -99,6 +111,8 @@ END
 
 BEGIN @16 
 GROUP @3 
+
+LABEL MH#-MiH_IP-Holy_Symbol_Item_Type
 
 REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
 
@@ -115,6 +129,8 @@ END
 BEGIN @9
 GROUP @3
 
+LABEL MH#-MiH_IP-Field_Plate
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "full_to_field_plate"
@@ -127,6 +143,8 @@ END
 
 BEGIN @22
 GROUP @3 
+
+LABEL MH#-MiH_IP-Improved_Tome_of_Golems
 
 REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
 
@@ -143,6 +161,8 @@ END
 BEGIN @11 
 GROUP @3 
 
+LABEL MH#-MiH_IP-Item_Improvements
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "item_improvements"
@@ -155,6 +175,8 @@ END
 
 BEGIN @12 
 GROUP @13 
+
+LABEL MH#-MiH_IP-Extra_Healing_BG1
 
 REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
 
@@ -171,6 +193,8 @@ END
 BEGIN @14 
 GROUP @13 
 
+LABEL MH#-MiH_IP-Nerf_Easter_Eggs
+
 REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
 
 LAUNCH_ACTION_FUNCTION run
@@ -185,6 +209,8 @@ END
 
 BEGIN @15 
 GROUP @13 
+
+LABEL MH#-MiH_IP-Sensible_Shops
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
