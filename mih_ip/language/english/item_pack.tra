@@ -1344,8 +1344,20 @@ Equipped abilities:
 - Immunity to normal weapons.
 
 Weight: 2~
-//@230  = ~~
-//@231  = ~~
+@230  = ~Giantbane +1~
+@231  = ~This beautifully crafted dagger was clearly made by elves.  Daggers like these are sometimes carried by elven commanders in the field of battle, especially if they expect to fight ogres, trolls or other giant humanoids.
+
+STATISTICS:
+
+THAC0: +1, +3 vs. giant humanoids
+Damage: 1d4+1, +3 vs. giant humanoids (piercing)
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
 @232  = ~Oil of Disenchantment~
 @233  = ~This light, ethereal oil quickly evaporates when exposed to air.  As it evaporates, it will dispel all enchantments, making this oil ideal for removing unwanted enchantments from party members.
 
@@ -1500,8 +1512,24 @@ Equipped abilities:
 - Open Locks: +5%
 
 Weight: 2~
-//@271  = ~~
-//@272  = ~~
+@271  = ~Ghoulbane +1~
+@272  = ~This magical halberd was forged with the specific purpose of slaying ghouls and ghasts.  Its exact origins have not been recorded, but it had been in the possession of the clergy of Helm for a long time and was wielded by various Watchmen.
+
+STATISTICS:
+
+Equipped abilities:
+- AC: +2 vs. ghouls and ghasts
+- Saving Throws: +2 vs. poison/paralyze/death
+
+THAC0: +1, +3 vs. ghouls and ghasts
+Damage: 1d10+1, +3 vs. ghouls and ghasts (slashing or piercing, whichever is better)
+Speed Factor: 8
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 14~
 @273  = ~Medallion of Faith~
 @274  = ~When worn by a devout priest or paladin of good alignment, this medallion shows the holy symbol of their chosen patron and enables them to cast several useful spells.  To anyone else it is merely a pretty bauble.
 
@@ -2043,7 +2071,7 @@ Brokk was so impressed with me, he forged a holy sword for me!  I wonder if I wi
 @2002    = ~Maybe later.  What about some service?~
 @2003    = ~Winter Wolf Hide
 
-Ries Kensiddar, the wizard proprietor of the Nothern Light Inn in Nashkel, has offered to make a hide armor out of winter wolf pelts.  I should talk to him again when I have some of those if I want it.~
+Ries Kensiddar, the wizard proprietor of the Northern Light Inn in Nashkel, has offered to make a hide armor out of winter wolf pelts.  I should talk to him again when I have some of those if I want it.~
 @2004    = ~That is a good quality pelt.  How many do you have?  It will take at least three of them, and 700 gold to cover the spell components needed.~
 @2005    = ~Sure, I can afford that.  Let's do it!~
 @2006    = ~Not right now I'm afraid.  Perhaps later?~

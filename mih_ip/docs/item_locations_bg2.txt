@@ -38,6 +38,7 @@ mh#clck9 Battlecloak of Vycaena			Firkraag (battle)
 mh#comp6 Black Dragon Scales			Suldanessenar (battle)
 
 mh#dagg1 Catclaw +3				Mae'var Guildhouse (battle)
+mh#dagg2 Giantbane +1				Maheer (shop)
 mh#dagg3 Golemblight +2				Trademeet Merchant (shop)
 
 mh#dart1 Lein's Fiery Darts +2			Planar Sphere (chest)
@@ -46,6 +47,8 @@ mh#dart2 Chandler's Icy Darts +2		Planar Sphere (chest)
 mh#drag1 Black Dragon Scale			Cromwell (forging)
 
 mh#flai1 Slimecrusher +1			Maheer (shop)
+
+mh#halb1 Ghoulbane +1				Maheer (shop)
 
 mh#helm1 Helm of Valor				D'Arnise Keep (chest)
 mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)

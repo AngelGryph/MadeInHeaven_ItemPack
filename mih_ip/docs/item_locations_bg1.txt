@@ -38,10 +38,14 @@ mh#comp3 Lux Veritatis				Gullykin (event)
 mh#comp4 Rusty Katana				Durlag's Tower D4 (slime)
 mh#comp5 Unicorn Horn				Bandit Camp (sack)
 
+mh#dagg2 Giantsbane +1				Brokk's Forge (shop)
+
 mh#dart1 Lein's Fiery Darts			Ulcaster Ruins (body)
 mh#dart2 Chandler's Icy Darts			Ulcaster Ruins (body)
 
 mh#flai1 Slimecrusher +1			Brokk's Forge (shop)
+
+mh#halb1 Ghoulbane +1				Brokk's Forge (shop)
 
 mh#hamm1 Final Strike +3			Ulgoth's Beard (event)
 

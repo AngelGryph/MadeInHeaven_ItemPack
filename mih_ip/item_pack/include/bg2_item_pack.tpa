@@ -39,17 +39,21 @@ BEGIN
 
     // Maheer from Rasheman
     //
-    // mh#flai1 - Slimecrusher +1
     // mh#btax1 - Foesplitter +1
+    // mh#dagg2 - Giantbane +1
+    // mh#flai1 - Slimecrusher +1
+    // mh#halb1 - Ghoulbane +1
     // mh#mace1 - Radiant Star +1
     // mh#swrd2 - Smyte's Slicer +1
 
     sto.edit[shop03]
     [
-      ADD_STORE_ITEM "mh#mace1" AFTER "blun06" #0 #0 #0 "identified" #1
       ADD_STORE_ITEM "mh#btax1" AFTER "ax1h04" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#swrd2" AFTER "sw1h20" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#dagg2" AFTER "dagg01" #0 #0 #0 "identified" #1
       ADD_STORE_ITEM "mh#flai1" AFTER "blun02" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#halb1" AFTER "halb01" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#mace1" AFTER "blun06" #0 #0 #0 "identified" #1
+      ADD_STORE_ITEM "mh#swrd2" AFTER "sw1h20" #0 #0 #0 "identified" #1
     ]
 
 

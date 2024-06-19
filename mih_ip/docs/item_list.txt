@@ -60,6 +60,7 @@ mh#comp6 Black Dragon Scales
 mh#comp7 Green Dragon Scales
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
+mh#dagg2 Giantsbane +1				Encyclopedia Magica (2e)
 mh#dagg3 Golemblight +2				Encyclopedia Magica (2e)
 
 mh#dart1 Lein's Fiery Darts +2			Pages from the Mages (2e)
@@ -73,6 +74,8 @@ mh#flai2 Battle Star +4				Encyclopedia Magica (2e)
 
 *mh#gem01 Ruby					DMG (2e)
 *mh#gem02 Sapphire				DMG (2e)
+
+mh#halb1 Ghoulbane +1
 
 mh#hamm1 Final Strike +3
 mh#hamm2 Maul of the Titans			DMG (2e)

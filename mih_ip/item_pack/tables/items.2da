@@ -60,6 +60,7 @@ mh#comp6	285	286	*	*	0x0	*
 mh#comp7	319	320	*	*	0x0	*
 
 mh#dagg1	52	53	*	*	0x0	*
+mh#dagg2	230	231	*	*	0x0	*
 mh#dagg3	313	314	*	*	0x0	*
 
 mh#dart1	222	223	*	*	0x0	*
@@ -73,6 +74,8 @@ mh#flai2	242	243	*	*	0x0	*
 
 mh#gem01	325	326	*	*	0x0	*
 mh#gem02	327	328	*	*	0x0	*
+
+mh#halb1	271	272	*	*	0x0	*
 
 mh#hamm1	20	21	*	*	0x0	*
 mh#hamm2	323	324	*	*	0x0	*
