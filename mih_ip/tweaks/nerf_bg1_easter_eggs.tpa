@@ -36,7 +36,7 @@ BEGIN
 
   are.edit[%GibberlingMountains%]
   [
-    //m.container_item.alter{s_resref := "ring17"|match=~"%s_resref%" == "ring02"~}
+    m.container_item.alter{s_resref := "ring17"|match=~"%s_resref%" == "ring02"~}
   ]
 //  COPY_EXISTING "%GibberlingMountains%.are" "override"
 //    LPF REPLACE_AREA_ITEM STR_VAR old_item = "ring02" new_item = "ring17" END
