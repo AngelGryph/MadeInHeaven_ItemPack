@@ -30,7 +30,7 @@ Equipped abilities:
 
 Weight: 1~
 @8    = ~Khalid's Singing Sword~
-@9    = ~While Khalid's sword looks unremarkable at first glance, there is a subtle magic to it.  While its minor magical properties are no doubt useful, at present its greatest value is likely that it is not affected by the iron plague.
+@9    = ~Although Khalid's sword looks unremarkable at first glance, there is a subtle magic to it.  While its minor magical properties are no doubt useful, at present its greatest value is likely that it is not affected by the iron plague.
 
 STATISTICS:
 
@@ -40,6 +40,13 @@ Combat abilities:
 Charge abilities:
 - Singing (1/day)
   One per day the blade can sing, which has the effect of a triple-strength Bless spell, but only upon its wielder.  The effect lasts for three rounds.
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
 
 Weight: 4~
 @10   = ~Bottle of Jhuild~
@@ -56,3 +63,13 @@ Each drink grants:
 The effects last for one hour.  Afterwards, the imbiber must save versus poison or fall in coma for an hour.
 
 Weight: 1~
+@12   = ~Yeslick's Gauntlets~
+@12   = ~Yeslick secretly forged these heavy iron gauntlets while being forced to do the Iron Throne's smithing work, hoping they would one day aid him in escaping.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Damage: +1
+
+Weight: 4~

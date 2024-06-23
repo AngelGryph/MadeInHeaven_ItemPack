@@ -12,10 +12,13 @@ BEGIN
       ADD_CRE_ITEM "mh#npjbr" #0 #0 #0 "identified" "gloves"
 
     COPY_EXISTING_REGEXP "^khalid[0-9]*\.cre$" "override"
-        ADD_CRE_ITEM "mh#npksw" #0 #1 #0 "identified" "weapon" EQUIP
+      REPLACE_CRE_ITEM "mh#npksw" #0 #1 #0 "identified" "weapon1" EQUIP
 
     COPY_EXISTING_REGEXP "^minsc[0-9]*\.cre$" "override"
-    ADD_CRE_ITEM "mh#npmfw" #6 #0 #0 "identified" "qitem2 qitem3"
+      ADD_CRE_ITEM "mh#npmfw" #6 #0 #0 "identified" "qitem2 qitem3"
+
+    COPY_EXISTING_REGEXP "^yeslic[0-9]*\.cre$" "override"
+      ADD_CRE_ITEM "mh#npysg" #0 #0 #0 "identified" "gloves"
   END	// is_bg1
 END	// bg1_npc_items
 
