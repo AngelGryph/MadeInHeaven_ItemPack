@@ -43,3 +43,23 @@ BEGIN
 END
 
 
+// Talents of Faerun priest sphere system compatibility
+
+DEFINE_ACTION_FUNCTION tof_spell_sphere
+  STR_VAR
+  spell		= ~dummy~
+  sphere	= ~dummy~
+BEGIN
+<<<<<<<< .../stratagems-inline/%MOD_FOLDER%.ini
+[spheres]
+>>>>>>>>
+
+  ACTION_IF NOT FILE_EXISTS "%data_loc_shared%/%MOD_FOLDER%.ini"
+  BEGIN
+    COPY ".../stratagems-inline/%MOD_FOLDER%.ini" "%data_loc_shared%"
+  END
+
+  APPEND_OUTER "%data_loc_shared%/%MOD_FOLDER%.ini" "%spell%=%sphere%" UNLESS "^%spell%"
+END
+
+

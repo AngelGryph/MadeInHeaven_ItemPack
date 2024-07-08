@@ -26,8 +26,6 @@ BEGIN
 
     sto.edit[highhedg]
     [
-      ADD_STORE_ITEM "mh#potn2" AFTER "potn43" #1 #0 #0 "identified" #3
-      ADD_STORE_ITEM "mh#potn4" AFTER "potn33" #1 #0 #0 "identified" #3
       ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #1
       ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #5
       ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5
