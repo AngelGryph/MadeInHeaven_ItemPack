@@ -59,7 +59,7 @@ BEGIN
 
     itm.edit[mh#swrd4 mh#swd4a]
     [
-      m_lore=0"
+      m_lore_to_identify = 0
     ]
 
 
@@ -71,7 +71,7 @@ BEGIN
     itm.copy[mh#mace3]
     [
       m.fx.delete{s_opcode = 341}
-      m.ab_fx.add{s_opcode=13 s_target=2 s_timing=1 s_parameter1=1 s_parameter2=4 s_probability1=4 s_save_vs_death=1 s_save_bonus="-2"}
+      m.ab_fx.add{s_opcode = 13;;s_target = 2;;s_timing = 1;;s_parameter1 = 1;;s_parameter2 = 4;;s_probability1 = 4;;s_save_vs_poison = 1;;s_savebonus = "-2"}
     ]
   END	// NOT enhanced_edition
 END	// item_pack_compat

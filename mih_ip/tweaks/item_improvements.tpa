@@ -122,11 +122,6 @@ BEGIN
 
   ACTION_IF improve_potion_of_invulnerability
   BEGIN
-    itm.edit[potn11]
-    [
-      m_identified_description := @9
-    ]
-
     ACTION_IF NOT FILE_EXISTS_IN_GAME "potn11.spl"
     BEGIN
       LAUNCH_ACTION_FUNCTION copy_item_to_spell
@@ -135,6 +130,13 @@ BEGIN
 	spell	= "potn11"
       END
     END
+
+    itm.edit[potn11]
+    [
+      m_identified_description := @9
+      m.ab_fx.delete{}
+      m.ab_fx.add{s_opcode = 146;;s_target := "Self";;s_timing := "InstantPermanent";;s_parameter2 = 1;;s_resource := "potn11"}
+    ]
 
     spl.edit[potn11]
     [
