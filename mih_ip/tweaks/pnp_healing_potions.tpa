@@ -11,32 +11,55 @@ BEGIN
         item	= "%potion%"
         spell	= "%potion%"
       END
-  END
 
+      itm.edit[%potion%]
+      [
+        m.ab_fx.delete{}
+        m.ab_fx.add{s_opcode = 146;;s_timing := "InstantPermanent";;s_target := "Self";;s_parameter2 = 1;;s_dispel_resist := "NoDispelIgnoreResist";;s_resource := "%potion%"}
+      ]
+    END
   END
 
 
   // Potion of Healing: 2d4+2
 
+  itm.edit[potn08|edit_strrefs_in_place:i=1]
+  [
+    m_identified_description = m_identified_description.patch{REPLACE_TEXTUALLY EXACT_MATCH "9" "2d4+2"}
+  ]
+
+  // Update illusionary potion of healing.
+  itm.copy[potn08=>ipotn08]
+
   spl.edit[potn08]
   [
-    m.ab_fx.alter{s_parameter1=2 s_dicenumber=2 s_dicesize=4}
+    m.ab_fx.alter{s_parameter1=2 s_dicenumber=2 s_dicesize=4|match="s_opcode = 17"}
   ]
 
 
   // Potion of Extra Healing: 3d8+3
 
+  itm.edit[potn52|edit_strrefs_in_place:i=1]
+  [
+    m_identified_description = m_identified_description.patch{REPLACE_TEXTUALLY EXACT_MATCH "27" "3d8+3"}
+  ]
+
   spl.edit[potn52]
   [
-    m.ab_fx.alter{s_parameter1=3 s_dicenumber=3 s_dicesize=8}
+    m.ab_fx.alter{s_parameter1=3 s_dicenumber=3 s_dicesize=8|match="s_opcode = 17"}
   ]
 
 
   // Potion of Superior Healing: 6d8+2
 
+  itm.edit[potn55|edit_strrefs_in_place:i=1]
+  [
+    m_identified_description = m_identified_description.patch{REPLACE_TEXTUALLY EXACT_MATCH "40" "6d8+2"}
+  ]
+
   spl.edit[potn55]
   [
-    m.ab_fx.alter{s_parameter1=2 s_dicenumber=6 s_dicesize=8}
+    m.ab_fx.alter{s_parameter1=2 s_dicenumber=6 s_dicesize=8|match="s_opcode = 17"}
   ]
 END	// pnp_healing_potions
 

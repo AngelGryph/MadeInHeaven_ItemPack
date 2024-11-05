@@ -129,13 +129,17 @@ BEGIN
         item	= "potn11"
 	spell	= "potn11"
       END
+
+      itm.edit[potn11]
+      [
+        m.ab_fx.delete{}
+        m.ab_fx.add{s_opcode = 146;;s_timing := "InstantPermanent";;s_target := "Self";;s_parameter2 = 1;;s_dispel_resist := "NoDispelIgnoreResist";;s_resource := "potn11"}
+      ]
     END
 
     itm.edit[potn11]
     [
       m_identified_description := @9
-      m.ab_fx.delete{}
-      m.ab_fx.add{s_opcode = 146;;s_target := "Self";;s_timing := "InstantPermanent";;s_parameter2 = 1;;s_resource := "potn11"}
     ]
 
     spl.edit[potn11]
