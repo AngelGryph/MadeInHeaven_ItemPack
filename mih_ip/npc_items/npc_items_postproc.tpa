@@ -7,11 +7,12 @@ BEGIN
     PRETTY_PRINT_2DA
 
 
-  // Apply CamDawg's patches to certain items
+  // Apply immunity effects to certain items
 
-  COPY_EXISTING "mh#npmfw.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_fear_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#npmfw]
+  [
+    m.immunity_effect{fear|permanent:i=0}
+  ]
 END	// npc_items_postproc
 
 

@@ -26,30 +26,17 @@ BEGIN
     BUT_ONLY_IF_IT_CHANGES
 
 
-  // Apply CamDawg's patches to certain items
+  // Apply immunity effects to certain items
 
-  COPY_EXISTING "mh#iwd10.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_magic_missile_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#iwd20]
+  [
+    m.immunity_effect{charm fear}
+  ]
 
-  COPY_EXISTING "mh#iwd14.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_kill_target_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_slay_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
-
-  COPY_EXISTING "mh#iwd20.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_charm_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_fear_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
-
-  COPY_EXISTING "mh#iwd21.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_entangle_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_grease_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_hold_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_slow_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_web_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_free_action_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#iwd20]
+  [
+    m.immunity_effect{hold}
+  ]
 END	// iwd_items_postproc
 
 

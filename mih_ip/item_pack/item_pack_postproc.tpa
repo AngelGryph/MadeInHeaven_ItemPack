@@ -11,44 +11,27 @@ BEGIN
   END
 
 
-  // Apply CamDawg's patches to certain items
+  // Apply immunity effects to certain items
 
-  COPY_EXISTING "mh#clck1.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_petrification_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#drag2]
+  [
+    m.immunity_effect{poison diseased}
+  ]
 
-  COPY_EXISTING "mh#clck2.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_web_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#ring5]
+  [
+    m.immunity_effect{charm confusion feeblemind stun}
+  ]
 
-  COPY_EXISTING "mh#drag2.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_poison_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_disease_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_poison_resistance_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#robe2 mh#staf4]
+  [
+    m.immunity_effect{energy_drain}
+  ]
 
-  COPY_EXISTING "mh#helm2.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_spell_level_1_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_spell_level_2_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_spell_level_3_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
-
-  COPY_EXISTING "mh#ring5.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_charm_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_confusion_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_feeblemind_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_psionics_arrays" END
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_stun_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
-
-  COPY_EXISTING "mh#robe2.itm" "override"
-                "mh#staf4.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_level_drain_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
-
-  COPY_EXISTING "mh#sper1.itm" "override"
-    LPF cd_apply_batch STR_VAR array_name = "cd_immunity_poison_arrays" END
-    BUT_ONLY_IF_IT_CHANGES
+  itm.edit[mh#sper1]
+  [
+    m.immunity_effect{poison}
+  ]
 END	// item_pack_postproc
 
 
