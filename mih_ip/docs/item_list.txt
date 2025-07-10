@@ -90,9 +90,10 @@ mh#ioun1 Pale Blue Ioun Stone			DMG (2e)
 mh#ioun2 Crystal Clear Ioun Stone		DMG (2e)
 mh#ioun3 Bright Orange Ioun Stone		DMG (3e)
 mh#ioun4 Telkiira				Fallen Empires of Faerun (3e)
-mh#ioun5 Mottled Green Ioun Stone
+mh#ioun5 Mottled Green Ioun Stone		DMG (2e)
 mh#ioun6 Maroon Star Ioun Stone			Encyclopedia Magica (2e)
 mh#ioun7 Blood of Lathander			Volo's Guide to the Dales (2e)
+mh#ioun8 Lovely Pink Ioun Stone			DMG (2e)
 
 mh#lbow1 Bow of Eletha				Elves of Evermeet (2e)
 

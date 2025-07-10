@@ -182,6 +182,16 @@ BEGIN
     ]
 
 
+    // Cloakwood Mine
+    //
+    // mh#ioun8 - Lovely Pink Ioun Stone (on Natasha)
+
+    cre.edit[natash]
+    [
+      m.cre_add_items{mh#ioun8(helmet)}
+    ]
+
+
     // =============
     // Baldur's Gate
     // =============

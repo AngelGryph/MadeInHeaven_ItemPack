@@ -55,6 +55,7 @@ mh#hide1 Winter Wolf Hide +1			Ries Kensiddar (event)
 
 mh#ioun3 Bright Orange Ioun Stone		Ulgoth's Beard (battle)
 mh#ioun5 Mottled Green Ioun Stone		Candlekeep Catacombs (battle)
+mh#ioun8 Lovely Pink Ioun Stone			Cloakwood Mine (battle)
 
 mh#mace1 Radiant Star +1			Brokk's Forge (shop)
 *mh#mace3 Skull Mace +2				???

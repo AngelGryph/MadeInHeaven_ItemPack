@@ -61,6 +61,7 @@ mh#ioun4 Telkiira				Suldanessenar (battle)
 mh#ioun5 Mottled Green Ioun Stone		Harper Stronghold (battle)
 mh#ioun6 Maroon Star Ioun Stone			Bridge District (battle)
 mh#ioun7 Blood of Lathander			Temple of Lathander (event)
+mh#ioun8 Lovely Pink Ioun Stone			Chateau Irenicus
 
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 

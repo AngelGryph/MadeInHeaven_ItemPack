@@ -10,10 +10,12 @@ BEGIN
     //
     // mh#hide1 - Winter Wolf Hide +1
     // mh#belt1 - Girdle of Dwarvenkind
+    // mh#ioun8 - Lovely Pink Ioun Stone
 
     are.edit[ar0602]
     [
       m.container_item.add{s_resref:="mh#belt1"|match_parent=~"%p_name%" == "Chest 5"~}
+      m.container_item.add{s_resref:="mh#ioun8"|match_parent=~"%p_name%" == "Table 5"~}
     ]
 
     cre.edit[duergar1]

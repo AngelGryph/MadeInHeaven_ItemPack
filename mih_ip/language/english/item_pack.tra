@@ -1551,8 +1551,15 @@ Equipped abilities:
 - Move Silently: +10%
 
 Weight: 4~
-//@277  = ~~
-//@278  = ~~
+@277  = ~Lovely Pink Ioun Stone~
+@278  = ~This cheerfully colored ioun stones makes its owner a little more charming.
+
+STATISTICS:
+
+Equipped abilities:
+- Charisma: +1
+
+Weight: 0~
 @279  = ~Cloak of Flame~
 @280  = ~This strange cloak can only be worn by mages.  It functions as a basic cloak of protection but has additional powers over fire.  According to some tales it was once a normal cloak of protection until the wizard who wore it at the time died in the hellish blaze of a meteor swarm cast by a jealous rival.  Partially infused with both the spirit of the departed wizard and the arcane fire that ended his life it became what it is now, or so the story goes.
 
