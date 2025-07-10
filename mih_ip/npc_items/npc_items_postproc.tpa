@@ -4,7 +4,7 @@ BEGIN
 
   COPY_EXISTING "item_use.2da" "override"
     APPEND_FILE "%MOD_FOLDER%/%component_loc%/tables/item_use.2da"
-    PRETTY_PRINT_2DA
+    LPF 2da_prettier_print END
 
 
   // Apply immunity effects to certain items

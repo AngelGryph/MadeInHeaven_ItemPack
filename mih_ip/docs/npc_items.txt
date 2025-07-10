@@ -1,3 +1,9 @@
+Dynaheir
+========
+
+mh#npdm1	Mask of Infravision		Spellbound (2e)
+
+
 Imoen
 =====
 
@@ -13,12 +19,18 @@ mh#npjbr	Jhannyl's Bracelet		Code of the Harpers (2e)
 Khalid
 ======
 
-mh#npksw	Khalid's Sword			Code of the Harpers (2e)
+mh#npksw	Khalid's Singing Sword		Code of the Harpers (2e)
 
 
 Minsc
 =====
 
-mh#mfw		Minsc's Jhuild			Spellbound (2e)
+mh#npmfw	Bottle of Jhuild		Spellbound (2e)
+
+
+Yeslick
+=======
+
+mh#npysg	Yeslick's Gauntlets		Encyclopedia Magica (2e)
 
 
