@@ -3,7 +3,7 @@
 
 Weight: 2~
 @2    = ~Mask of Infravision~
-@3    = ~The witches of Rasheman always go masked in their home country, and often choose to do so while abroad as well.  These masks usually bear some sort of minor enchantment of them.
+@3    = ~The witches of Rasheman always go masked in their home country, and often choose to do so while abroad as well.  These masks usually bear some sort of minor enchantment on them.
 
 STATISTICS:
 
@@ -64,7 +64,7 @@ The effects last for one hour.  Afterwards, the imbiber must save versus poison 
 
 Weight: 1~
 @12   = ~Yeslick's Gauntlets~
-@12   = ~Yeslick secretly forged these heavy iron gauntlets while being forced to do the Iron Throne's smithing work, hoping they would one day aid him in escaping.
+@13   = ~Yeslick secretly forged these heavy iron gauntlets while being forced to do the Iron Throne's smithing work, hoping they would one day aid him in escaping.
 
 STATISTICS:
 
