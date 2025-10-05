@@ -15,7 +15,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION run
     STR_VAR
-    file	= "npc_items_postproc"
+    file	= "npc_items_postproc npc_items_compat"
     tra		= "npc_items"
   END
 

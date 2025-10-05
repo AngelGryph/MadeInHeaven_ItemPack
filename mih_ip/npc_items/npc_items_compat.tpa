@@ -1,0 +1,17 @@
+DEFINE_ACTION_FUNCTION npc_items_compat
+BEGIN
+  // Stuff that doesn't work on the oBG2 engine.
+
+  ACTION_IF NOT enhanced_edition
+  BEGIN
+    // Headband animation (JB) does not work on oBG2.
+    // (Might work with 1pp installed?)
+
+    itm.edit[mh#npdm1]
+    [
+      m_equipped_appearance := ""
+    ]
+  END	// NOT enhanced_edition
+END	// npc_items_compat
+
+
