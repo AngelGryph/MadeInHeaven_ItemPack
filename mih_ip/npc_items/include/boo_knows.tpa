@@ -1,0 +1,10 @@
+DEFINE_ACTION_FUNCTION boo_knows
+BEGIN
+  // Allow Boo to cast Know Alignment 1/day
+
+  itm.edit[misc84]
+  [
+    m.ab.alter{s_target := "LivingActor";;s_range = 30;;s_speed = 3;;s_number_charges = 1;;s_when_drained := "Recharges";;s_recharge_after_resting = 1;;s_projectile = 1}
+    m.ab_fx.add{s_opcode = 146;;s_target := "PresetTarget";;s_timing := "InstantPermanent";;s_parameter2 = 1;;s_resource := "spwi208"}
+  ]
+END	// boo_knows

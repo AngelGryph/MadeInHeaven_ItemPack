@@ -2,6 +2,7 @@ Dynaheir
 ========
 
 mh#npdm1	Mask of Infravision		Spellbound (2e)
+mh#npdm2	Witch's Mask			Spellbound (2e)
 
 
 Imoen

@@ -1,5 +1,6 @@
 resref		name	desc	unname	undesc	exclude	projectile
 mh#npdm1	2	3	0	1	0x0	*
+mh#npdm2	14	15	0	1	0x0	*
 mh#npirg	4	5	*	*	0x0	*
 mh#npjbr	6	7	*	*	0x0	*
 mh#npksw	8	9	*	*	0x0	*

@@ -1,0 +1,11 @@
+IF InPartyAllowDead("dynaheir")
+   !HasItem("mh#npdm2", Myself)
+   Global("mh#DynaheirMask", "LOCALS", 0)
+THEN
+  RESPONSE #100
+    SetGlobal("mh#DynaheirMask", "LOCALS", 1)
+    CreateItem("mh#npdm2", 0, 0, 0)
+    Continue()
+END
+
+
