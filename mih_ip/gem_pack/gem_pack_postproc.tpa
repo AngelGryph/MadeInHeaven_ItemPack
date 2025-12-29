@@ -1,0 +1,23 @@
+DEFINE_ACTION_FUNCTION gem_pack_postproc
+BEGIN
+  ACTION_CLEAR_ARRAY new_treasures
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY new_treasures
+  BEGIN
+    // All BG versions
+    WEALTHY_8	=> "mh#gem02"
+    RICH_2	=> "mh#gem01"
+    RICH_3	=> "mh#gem02"
+    // These are for BGT
+    WEAL_BG1_8	=> "mh#gem02"
+    RICH_BG1_2	=> "mh#gem01"
+    RICH_BG1_3	=> "mh#gem02"
+  END
+
+  LAUNCH_ACTION_FUNCTION 2daq_inject
+    STR_VAR
+    array	= "new_treasures"
+    resref	= "rndtreas"
+  END
+END	// gem_pack_postproc
+
+

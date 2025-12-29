@@ -1,0 +1,38 @@
+DEFINE_ACTION_FUNCTION setup_gem_pack
+BEGIN
+/*
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "gem_pack_preproc"
+    tra		= "gem_pack"
+  END
+*/
+
+
+  LAUNCH_ACTION_FUNCTION grand_unified_installer
+    STR_VAR
+    tra		= "gem_pack"
+  END
+
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "gem_pack_postproc"
+    tra		= "gem_pack"
+  END
+
+
+  ACTION_BASH_FOR "%MOD_FOLDER%/%component_loc%/include" "^.*\.tpa$"
+  BEGIN
+    OUTER_TEXT_SPRINT file "%BASH_FOR_RES%"
+    ACTION_TO_LOWER file
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file
+      location	= "include"
+      tra	= "gem_pack"
+    END
+  END
+END	// setup_gem_pack
+
+
