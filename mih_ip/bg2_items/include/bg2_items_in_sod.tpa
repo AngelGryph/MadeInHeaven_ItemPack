@@ -1,0 +1,23 @@
+DEFINE_ACTION_FUNCTION bg2_items_in_sod
+BEGIN
+  ACTION_IF is_sod
+  BEGIN
+    // Underground River entrance
+    //
+    // mh#bg201 - Blackblood +3 (replaces The Root of the Problem)
+    
+    cre.edit[bdjamven]
+    [
+      m.cre_remove_items{blun10}
+      m.cre_add_items{mh#bg201(weapon1)}
+    ]
+    
+    COPY_EXISTING "bdjamven.dlg" "override"
+      DECOMPILE_AND_PATCH
+      BEGIN
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#bg201"
+      END
+  END	// is_sod
+END	// bg2_items_in_sod
+  
+

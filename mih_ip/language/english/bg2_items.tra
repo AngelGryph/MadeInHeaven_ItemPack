@@ -1,0 +1,19 @@
+@0    = ~Blackblood +3~
+@1    = ~This oak club is coated with darkened, dried globs of a tar-like substance. During battle, this substance glows black with an inner light and becomes thick and fluid. When the club strikes an opponent, it delivers additional acid damage from the liquid splashing over the victim.
+
+STATISTICS:
+
+Combat abilities:
+– +3 acid damage
+
+THAC0: +3
+Damage: 1d6+3 (crushing)
+Speed Factor: 4
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+
+

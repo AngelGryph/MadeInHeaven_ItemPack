@@ -1,0 +1,40 @@
+DEFINE_ACTION_FUNCTION setup_bg2_items
+BEGIN
+/*
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "bg2_items_preproc"
+    tra		= "bg2_items"
+  END
+*/
+
+
+  LAUNCH_ACTION_FUNCTION grand_unified_installer
+    STR_VAR
+    tra		= "bg2_items"
+  END
+
+/*
+  LAUNCH_ACTION_FUNCTION run
+    STR_VAR
+    file	= "bg2_items_postproc"
+    tra		= "bg2_items"
+  END
+*/
+
+
+  ACTION_BASH_FOR "%MOD_FOLDER%/%component_loc%/include" "^.*\.tpa$"
+  BEGIN
+    OUTER_TEXT_SPRINT file "%BASH_FOR_RES%"
+    ACTION_TO_LOWER file
+
+    LAUNCH_ACTION_FUNCTION run
+      STR_VAR
+      file
+      location	= "include"
+      tra	= "bg2_items"
+    END
+  END
+END	// setup_bg2_items
+
+

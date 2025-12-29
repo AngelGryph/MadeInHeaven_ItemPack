@@ -26,7 +26,7 @@ LANGUAGE ~English~
 
 // Item Pack
 
-BEGIN @1 
+BEGIN @1
 
 LABEL MH#-MiH_IP-Item_Pack
 
@@ -34,6 +34,19 @@ LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_item_pack"
   location	= "item_pack"
+END
+
+
+// Gem Pack
+
+BEGIN @10
+
+LABEL MH#-MiH_IP-Gem_Pack
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "setup_gem_pack"
+  location	= "gem_pack"
 END
 
 
@@ -50,7 +63,22 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// IWD Items for BG
+// BG2 Items for BG1
+
+BEGIN @8
+
+LABEL MH#-MiH_IP-BG2_Items
+
+REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "setup_bg2_items"
+  location	= "bg2_items"
+END
+
+
+// IWD Items for BG 1&2
 
 BEGIN @20
 
@@ -63,7 +91,7 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
-// PST Items for BG
+// PST Items for BG 1&2
 
 BEGIN @21
 
