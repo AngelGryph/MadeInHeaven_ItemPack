@@ -27,7 +27,7 @@ BEGIN
   BEGIN
     sto.edit[tem0002 tem0131 tem0132 tem3402 tem4003 stoblack ulgoth erdane]
     [
-      ADD_STORE_ITEM + "potn52" AFTER "potn08" #1 #0 #0 "identified" (RANDOM(%extra_healing_minimum% %extra_healing_maximum%))
+      m.item.clone{s_resref := "potn52";;s_number_in_stock = RANDOM(%extra_healing_minimum% %extra_healing_maximum%)|match=~"%s_resref%"=="potn08"~}
     ]
   END
 

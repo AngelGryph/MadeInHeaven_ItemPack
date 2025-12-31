@@ -6,8 +6,8 @@ BEGIN
   BEGIN
     sto.edit[stoblack]
     [
-      ADD_STORE_ITEM "leat08" AFTER "leat05" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "misc75" AFTER "dagg01" #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "leat08";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="leat05"~}
+      m.item.clone{s_resref := "misc75";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="dagg01"~}
     ]
   
 

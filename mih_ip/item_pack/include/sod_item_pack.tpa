@@ -20,8 +20,8 @@ BEGIN
     
     sto.edit[bdsorcsc]
     [
-      ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5
-      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="potn46"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="mh#potn6"~}
     ]
 
     
@@ -34,10 +34,10 @@ BEGIN
     
     sto.edit[bdkazzre]
     [
-      ADD_STORE_ITEM "mh#boot2" AFTER "bdboot12" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#ioun1" AFTER "bdhelm06" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#dart1" LAST #3 #0 #0 "identified" #4
-      ADD_STORE_ITEM "mh#dart2" LAST #3 #0 #0 "identified" #4
+      m.item.clone{s_resref := "mh#boot2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdboot12"~}
+      m.item.clone{s_resref := "mh#ioun1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdhelm06"~}
+      m.item.add{s_resref := "mh#dart1";;s_charges_1 = 3;;s_identified = 1;;s_number_in_stock = 4}
+      m.item.add{s_resref := "mh#dart2";;s_charges_1 = 3;;s_identified = 1;;s_number_in_stock = 4}
     ]
     
 
@@ -48,8 +48,8 @@ BEGIN
     
     sto.edit[bdbellow]
     [
-      ADD_STORE_ITEM "mh#potn6" AFTER "potn41" #1 #0 #0 "identified" #15
-      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #15
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 15|match=~"%s_resref%"=="potn41"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 15|match=~"%s_resref%"=="mh#potn6"~}
     ]
     
     
@@ -59,27 +59,31 @@ BEGIN
     // mh#dagg1 - Catclaw +3
     // mh#ioun2 - Crystal Clear Ioun Stone
     // mh#robe4 - Shadow Dancer's Robe
+    // mh#swrd5 - Greenswathe +3
     
     sto.edit[bdnazram]
     [
-      ADD_STORE_ITEM "mh#dagg1" AFTER "bdsw1h08" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#amul7" AFTER "bdamul25" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#ioun2" AFTER "helm19" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#robe4" LAST #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#dagg1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdsw1h08"~}
+      m.item.clone{s_resref := "mh#swrd5";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdsw1h08"~}
+      m.item.clone{s_resref := "mh#amul7";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdamul25"~}
+      m.item.clone{s_resref := "mh#ioun2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="helm19"~}
+      m.item.add{s_resref := "mh#robe4";;s_identified = 1;;s_number_in_stock = 1}
     ]
     
     
     // Waizahb's Store
     //
-    // mh#hide2 - White Hide of Umpluutu +2
     // mh#bull1 - Priest's Bullet
+    // mh#clck6 - Cloak of the Wastelands
+    // mh#hide2 - White Hide of Umpluutu +2
     // mh#robe2 - Robe of the Necromancer
     
     sto.edit[bdwaizah]
     [
-      ADD_STORE_ITEM "mh#hide2" AFTER "bdleat03" #1 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#bull1" AFTER "bull04" #5 #0 #0 "identified" #10
-      ADD_STORE_ITEM "mh#robe2" AFTER "bdbrac13" #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#bull1";;s_charges_1 = 5;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="bull04"~}
+      m.item.clone{s_resref := "mh#clck6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck01"~}
+      m.item.clone{s_resref := "mh#hide2";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdleat03"~}
+      m.item.clone{s_resref := "mh#robe2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdbrac13"~}
     ]
     
     
@@ -143,23 +147,6 @@ BEGIN
       m.container_item.add{s_resref:="mh#lbow1" s_charges_2=3|match_parent=~"%p_name%" == "Chest_01"~}
     ]
     
-
-    // Underground River entrance
-    //
-    // mh#club1 - Blackblood +3 (replaces The Root of the Problem)
-    
-    cre.edit[bdjamven]
-    [
-      m.cre_remove_items{blun10}
-      m.cre_add_items{mh#club1(weapon1)}
-    ]
-    
-    COPY_EXISTING "bdjamven.dlg" "override"
-      DECOMPILE_AND_PATCH
-      BEGIN
-        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH "blun10" "mh#club1"
-      END
-
 
     // Underground River
     //

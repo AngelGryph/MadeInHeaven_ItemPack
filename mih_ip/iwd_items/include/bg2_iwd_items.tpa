@@ -12,7 +12,7 @@ BEGIN
 
     sto.edit[shop02]
     [
-      ADD_STORE_ITEM "mh#iwd08" AFTER "plat10" #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#iwd08";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="plat10"~}
     ]
 
 
@@ -22,7 +22,7 @@ BEGIN
 
     sto.edit[ribald3]
     [
-      ADD_STORE_ITEM "mh#iwd12" AFTER "chan11" #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#iwd12";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="chan11"~}
     ]
 
 
@@ -66,9 +66,9 @@ BEGIN
 
     sto.edit[temlath]
     [
-      ADD_STORE_ITEM "mh#iwd13" AFTER "staf05" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#iwd06" AFTER "helm05" #1 #1 #1 "identified" #1
-      ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#iwd13";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="staf05"~}
+      m.item.clone{s_resref := "mh#iwd06";;s_charges_1 = 1;;s_charges_2 = 1;;s_charges_3 = 1;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="helm05"~}
+      m.item.add{s_resref := "mh#iwd01";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
 
@@ -92,7 +92,7 @@ BEGIN
 
     sto.edit[temsup]
     [
-      ADD_STORE_ITEM "mh#iwd15" LAST #0 #0 #0 "identified" #1
+      m.item.add{s_resref := "mh#iwd15";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
 
@@ -120,7 +120,7 @@ BEGIN
 
     sto.edit[uddrow23]
     [
-      ADD_STORE_ITEM "mh#iwd02" AFTER "shld22" #1 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#iwd02";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="shld22"~}
     ]
 
 
@@ -168,7 +168,7 @@ BEGIN
 
     sto.edit[amcler02]
     [
-      ADD_STORE_ITEM "mh#iwd15" LAST #0 #0 #0 "identified" #1
+      m.item.add{s_resref := "mh#iwd15";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
 
@@ -192,7 +192,7 @@ BEGIN
 
     sto.edit[garlena]
     [
-      ADD_STORE_ITEM "mh#iwd14" LAST #0 #0 #0 "identified" #1
+      m.item.add{s_resref := "mh#iwd14";;s_identified = 1;;s_number_in_stock = 1}
     ]
   END	// is_bg2
 END	// bg2_iwd_items

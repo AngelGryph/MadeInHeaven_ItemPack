@@ -12,7 +12,7 @@ BEGIN
 
     sto.edit[25spell]
     [
-      ADD_STORE_ITEM "mh#pst01" AFTER "ring02" #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#pst01";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ring02"~}
     ]
   END	// is_bg2
 END	// bg2_pst_items

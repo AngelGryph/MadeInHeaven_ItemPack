@@ -1,0 +1,493 @@
+DEFINE_ACTION_FUNCTION soa_item_pack
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    // ================
+    // Chateau Irenicus
+    // ================
+
+    // Stolen by Irenicus
+    //
+    // mh#hide1 - Winter Wolf Hide +1
+    // mh#belt1 - Girdle of Dwarvenkind
+    // mh#ioun8 - Lovely Pink Ioun Stone
+
+    are.edit[ar0602]
+    [
+      m.container_item.add{s_resref:="mh#belt1"|match_parent=~"%p_name%" == "Chest 5"~}
+      m.container_item.add{s_resref:="mh#ioun8"|match_parent=~"%p_name%" == "Table 5"~}
+    ]
+
+    cre.edit[duergar1]
+    [
+      m.cre_remove_items{leat01}
+      m.cre_add_items{mh#hide1(armor)}
+    ]
+
+
+    // ===================
+    // Waukeen's Promenade
+    // ===================
+
+    // Arnolius the Dwarf
+    //
+    // mh#chan1 - Eversing +2
+
+    sto.edit[shop02]
+    [
+      m.item.clone{s_resref := "mh#chan1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="plat10"~}
+    ]
+
+
+    // Maheer from Rasheman
+    //
+    // mh#btax1 - Foesplitter +1
+    // mh#dagg2 - Giantbane +1
+    // mh#flai1 - Slimecrusher +1
+    // mh#halb1 - Ghoulbane +1
+    // mh#mace1 - Radiant Star +1
+    // mh#swrd2 - Smyte's Slicer +1
+
+    sto.edit[shop03]
+    [
+      m.item.clone{s_resref := "mh#btax1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ax1h04"~}
+      m.item.clone{s_resref := "mh#dagg2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="dagg01"~}
+      m.item.clone{s_resref := "mh#flai1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="blun02"~}
+      m.item.clone{s_resref := "mh#halb1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="halb01"~}
+      m.item.clone{s_resref := "mh#mace1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="blun06"~}
+      m.item.clone{s_resref := "mh#swrd2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h20"~}
+    ]
+
+
+    // Mira
+    //
+    // mh#misc6 - Bottle of Pleasant Odors
+
+    sto.edit[shop01]
+    [
+      m.item.add{s_resref := "mh#misc6";;s_charges_1 = 1;;s_identified = 1;;s_number_in_stock = 1}
+    ]
+
+
+    // Adventurer's Market
+    //
+    // mh#amul6 - Scarab versus Golems
+    // mh#ioun3 - Orange Ioun Stone
+    // mh#misc3 - Crystal Ball
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    // mh#ring9 - Ring of Water Control
+    // mh#ringd - Ring of Fearlessness
+    // mh#staf3 - Staff of Water +2
+    // mh#wand3 - Wand of Earth and Stone
+    //
+    // mh#plat3 - Laeral's Storm Armor +2
+    // mh#plat4 - Plate of Solamnus +5
+    // mh#dart1 - Lein's Fiery Darts +2
+    // mh#dart2 - Chandler's Icy Darts +2
+    // mh#helm2 - Helm of the Dwarven Lords
+    // mh#helm4 - Helm of Darkness
+
+    sto.edit[ribald]
+    [
+      m.item.clone{s_resref := "mh#amul6";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="amul14"~}
+      m.item.clone{s_resref := "mh#ring9";;s_charges_1 = 1;;s_charges_2 = 1;;s_charges_3 = 1;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ring28"~}
+      m.item.clone{s_resref := "mh#ringd";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ring20"~}
+      m.item.clone{s_resref := "mh#staf3";;s_charges_1 = 0;;s_charges_2 = 30;;s_charges_3 = 30;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="staf18"~}
+      m.item.clone{s_resref := "mh#misc3";;s_charges_1 = 7;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="rods03"~}
+      m.item.clone{s_resref := "mh#ioun3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck12"~}
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="potn45"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="mh#potn6"~}
+      m.item.add{s_resref := "mh#wand3" s_charges_1 = 6;;s_charges_2 = 6;;s_identified = 1}
+    ]
+
+    sto.edit[ribald3]
+    [
+      m.item.clone{s_resref := "mh#plat3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="plat14"~}
+      m.item.clone{s_resref := "mh#plat4";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="plat17"~}
+      m.item.clone{s_resref := "mh#dart2";;s_charges_1 = 12;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="dart05"~}
+      m.item.clone{s_resref := "mh#dart1";;s_charges_1 = 12;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="dart05"~}
+      m.item.clone{s_resref := "mh#helm2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="helm16"~}
+      m.item.clone{s_resref := "mh#helm4";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="helm16"~}
+    ]
+
+
+    // ==============
+    // Copper Coronet
+    // ==============
+
+    // Stolen by Captain Haegan
+    //
+    // mh#boot3 - Boots of Balance
+
+    cre.edit[haegan]
+    [
+      m.cre_add_items{mh#boot3(boots)}
+    ]
+
+
+    // =============
+    // Planar Sphere
+    // =============
+    //
+    // mh#dart1 - Lein's Fiery Darts +2
+    // mh#dart2 - Chandler's Icy Darts +2
+    // mh#swrd4 - Sword of the Planes +1
+    // mh#wand1 - Wand of Illusions
+
+    are.edit[ar0410]
+    [
+      m.container_item.add{s_resref:="mh#swrd4"|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+    are.edit[ar0411]
+    [
+      m.container_item.add{s_resref:="mh#wand1" s_charges_1=12 s_charges_2=12|match_parent=~"%p_name%" == "Tool CT 3"~}
+    ]
+
+    are.edit[ar0412]
+    [
+      m.container_item.add{s_resref:="mh#dart1" s_charges_1=12|match_parent=~"%p_name%" == "Container 2"~}
+      m.container_item.add{s_resref:="mh#dart2" s_charges_1=12|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+
+    // Stolen by Necre
+    //
+    // mh#clck8 - Cloak of Flame
+
+    cre.edit[obshal03]
+    [
+      m.cre_add_items{mh#clck8(cloak)}
+    ]
+
+
+    // Stolen by Tolgerias
+    //
+    // mh#staf1 - Staff of Rumathil +2
+
+    cre.edit[tolger tolger2]
+    [
+      m.cre_add_items{mh#staf1(weapon1)}
+    ]
+
+
+    // ===============
+    // Bridge District
+    // ===============
+
+    // Fallen Paladins encounter
+    //
+    // mh#brac5 - Gauntlets of Smiting
+
+    cre.edit[kaypal01]
+    [
+      m.cre_add_items{mh#brac5(gloves)}
+    ]
+
+
+    // Neb the Child-killer gets his due
+    //
+    // mh#ioun6 - Maroon Star Ioun Stone
+
+    cre.edit[neb]
+    [
+      m.cre_add_items{mh#ioun6(helmet)}
+    ]
+
+
+    // Twisted Rune encounter
+    //
+    // mh#clck5 - Bolder's Cloak of the Rogue
+
+    cre.edit[hlshyr]
+    [
+      m.cre_add_items{mh#clck5(cloak)}
+    ]
+
+
+    // ===============
+    // Temple District
+    // ===============
+
+    // Temple of Helm
+    //
+    // mh#ringc - Browdow's Ring
+
+    sto.edit[temhelm]
+    [
+      m.item.add{s_resref := "mh#ringc";;s_charges_1 = 1;;s_charges_2 = 1;;s_identified = 1;;s_number_in_stock = 1}
+    ]
+
+
+    // Temple of Lathander
+    //
+    // mh#amul1 - Amulet against Undead
+    // mh#amul2 - Necklace of Prayer Beads
+    // mh#bull1 - Priest's Bullet
+    // mh#clck7 - Cloak of Lathander
+    // mh#robe3 - Robe of the Pure Heart
+
+    sto.edit[temlath]
+    [
+      m.item.clone{s_resref := "mh#bull1";;s_charges_1 = 5;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="staf05"~}
+      m.item.clone{s_resref := "mh#clck7";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="boot05"~}
+      m.item.clone{s_resref := "mh#robe3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="boot05"~}
+      m.item.add{s_resref := "mh#amul1";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#amul2";;s_identified = 1;;s_charges_1 = 3;;s_charges_2 = 1;;s_charges_3 = 1;;s_number_in_stock = 1}
+    ]
+
+
+    // Unseeing Eye lair
+    //
+    // mh#mace3- Skull Mace +2
+
+    cre.edit[gaal01 gaal02]
+    [
+      m.cre_remove_items{staf01}
+      m.cre_add_items{mh#mace3(weapon1)}
+    ]
+
+
+    // ==============
+    // Docks District
+    // ==============
+
+    // Temple of Oghma
+    //
+    // mh#amul3 - Gem of Insight
+    // mh#bull1 - Priest's Bullet
+
+    sto.edit[doghma]
+    [
+      m.item.add{s_resref := "mh#bull1";;s_identified = 1;;s_charges_1 = 5;;s_number_in_stock = 10|insert_point:i=0}
+      m.item.add{s_resref := "mh#amul3";;s_identified = 1;;s_number_in_stock = 1}
+    ]
+
+
+    // Harper Stronghold
+    //
+    // mh#belt3 - Storm's Garter
+    // mh#ioun5 - Mottled Green Ioun Stone
+
+    cre.edit[jagalvar]
+    [
+      m.cre_add_items{mh#belt3(belt,x1.1.1)}
+    ]
+
+
+    // Mae'var Guildhouse
+    //
+    // mh#dagg1 - Catclaw +3 (on Maevar)
+    // mh#boot1 - Boots of the Master Ninja (on Anishai)
+
+    cre.edit[maevar]
+    [
+      m.cre_add_items{mh#dagg1(weapon1)}
+    ]
+
+    cre.edit[thief7]
+    [
+      m.cre_add_items{mh#boot1(boots)}
+    ]
+
+
+    // =============
+    // D'Arnise Keep
+    // =============
+
+    // In the Dunge- er, Cellar
+    //
+    // mh#shld3 - Shield of the Phoenix +2
+
+    are.edit[ar1301]
+    [
+      m.container_item.add{s_resref:="mh#shld3"|match_parent=~"%p_name%" == "Container 5"~}
+    ]
+
+
+    // =========
+    // Trademeet
+    // =========
+
+    // Nobleman Merchant
+    //
+    // mh#btax4 - Might of Heroes +3
+    // mh#clck1 - Mutamin's Cloak
+    // mh#dagg3 - Golemblight +2
+    // mh#lbow1 - Bow of Eletha
+    // mh#misc1 - Pearl of Power
+    // mh#swrd1	- Terminus Est +2
+
+    sto.edit[trmer02]
+    [
+      m.item.clone{s_resref := "mh#btax4";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ax1h02"~}
+      m.item.clone{s_resref := "mh#clck1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck03"~}
+      m.item.clone{s_resref := "mh#dagg3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="dagg15"~}
+      m.item.clone{s_resref := "mh#lbow1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bow04"~}
+      m.item.clone{s_resref := "mh#swrd1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h02"~}
+      m.item.clone{s_resref := "mh#misc1";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="belt10"~}
+    ]
+
+
+    // Temple of Waukeen
+    //
+    // mh#bull1 - Priest's Bullet
+    // mh#misc5 - Horn of Goodness/Evil
+
+    sto.edit[temsup]
+    [
+      m.item.add{s_resref := "mh#bull1";;s_identified = 1;;s_charges_1 = 5;;s_number_in_stock = 10|insert_point:i=0}
+      m.item.clone{s_resref := "mh#misc5";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ring03"~}
+    ]
+
+
+    // ===========
+    // Druid Grove
+    // ===========
+
+    // Stolen by the Shadow Druids
+    //
+    // mh#amul5 - Brooch of Shielding
+    // mh#misc2 - Bag of Tricks
+
+    cre.edit[cedruid2]
+    [
+      m.cre_add_items{mh#amul5(amulet) mh#misc2(qitem,x3)}
+    ]
+
+
+    // ============
+    // Temple Ruins
+    // ============
+
+    // Blessings of Amaunator
+    //
+    // mh#ring4 - Ring of White Bone
+
+    are.edit[ar1403]
+    [
+      m.container_item.add{s_resref:="mh#ring4" s_charges_1=12|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+
+
+    // ===============
+    // Windspear Hills
+    // ===============
+
+    // Firkraag's Lair
+    //
+    // mh#hide2 - White Hide of Umpluutu +2 (on Plath Rededge)
+    // mh#boot2 - Boots of Striding & Springing (on Conster)
+    // mh#robe1 - Robe of the Elements (on Conster)
+    // mh#clck9 - Battlecloak of Vycaena (on Firkraag, replaces Cloak of the Shield)
+
+    cre.edit[firban02]
+    [
+      m.cre_add_items{mh#hide2(armor,x1)}
+    ]
+
+    cre.edit[firmag01]
+    [
+      m.cre_add_items{mh#robe1(armor) mh#boot2(boots)}
+    ]
+
+    cre.edit[firkra02]
+    [
+      m.cre_add_items{mh#clck9(inv)}
+    ]
+
+
+    // =========
+    // Underdark
+    // =========
+
+    // Deep Gnome Village
+    //
+    // mh#brac3 - Bracers of Winter's Chill
+
+    COPY_EXISTING "udsvir05.dlg" "override"
+      DECOMPILE_AND_PATCH
+      BEGIN
+        // Note: Dialog uses GiveItemCreate() and with the correct # of charges,
+        // so no further edits are needed to make this work.
+        REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~brac14~ ~mh#brac3~
+      END
+
+
+    // Ust Natha
+    //
+    // mh#clck3 - Cloak of Arachnida
+    // mh#ring5 - Ring of Mind Shielding
+    // mh#robe2 - Robe of the Necromancer
+    // mh#robe4 - Shadow Dancer's Robe
+
+    sto.edit[uddrow23]
+    [
+      m.item.clone{s_resref := "mh#ring5";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="amul10"~}
+      m.item.clone{s_resref := "mh#clck3";;s_charges_1 = 2;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck17"~}
+      m.item.clone{s_resref := "mh#robe4";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck17"~}
+      m.item.clone{s_resref := "mh#robe2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck17"~}
+    ]
+
+
+    // ============
+    // Other Places
+    // ============
+
+    // Distribute potions to several shops
+    //
+    // mh#potn5 - Potion of Longevity
+
+    sto.edit[gorch murcrag roger uhmer02]
+    [
+      m.item.clone{s_resref := "mh#potn5";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="potn36"~}
+    ]
+
+
+    // =============
+    // Suldanessenar
+    // =============
+
+    // Reirra's Store
+    //
+    // mh#ring6 - Ring of Shooting Stars
+
+    sto.edit[suelf10]
+    [
+      m.item.add{s_resref := "mh#ring6";;s_identified = 1;;s_charges_1 = 3;;s_charges_2 = 2;;s_charges_3 = 1;;s_number_in_stock = 1|insert_point:i=0}
+    ]
+
+
+    // Nizidramanii'yt Hoard
+    //
+    // mh#comp6 - Black Dragon Scales
+
+    cre.edit[dragblac]
+    [
+      m.cre_add_items{mh#comp6(qitem)}
+    ]
+
+
+    // House of the Priest
+    //
+    // mh#ioun4 - Telkiira
+
+    are.edit[ar2810]
+    [
+      m.container_item.add{s_resref:="mh#ioun4"|match_parent=~"%p_name%" == "Table 1"~}
+    ]
+
+
+    // Tree of Life
+    //
+    // mh#btax3 - Redthemar +4
+
+    are.edit[ar2806]
+    [
+      m.container_item.add{s_resref:="mh#btax3" s_charges_2=1|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+  END	// is_bg2
+END	// soa_item_pack
+
+

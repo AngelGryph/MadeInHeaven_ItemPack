@@ -1,4 +1,4 @@
-DEFINE_ACTION_FUNCTION bg1_item_pack
+DEFINE_ACTION_FUNCTION saga_item_pack
 BEGIN
   ACTION_IF is_bg1
   BEGIN
@@ -9,8 +9,8 @@ BEGIN
 
     sto.edit[tem3402]
     [
-      ADD_STORE_ITEM "mh#amul1" LAST #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3
+      m.item.add{s_resref := "mh#amul1";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#bull1";;s_charges_1 = 5;;s_identified = 1;;s_number_in_stock = 3}
     ]
 
 
@@ -22,28 +22,31 @@ BEGIN
     // mh#potn5 - Potion of Longevity
     // mh#potn6 - Alchemist's Fire
     // mh#potn7 - Flask of Acid
-    // clck20   - Cloak of the Shield (from Durlag's Tower)
+    // mh#ringd	- Ring of Fearlessness
+    // clck20   - Cloak of the Shield (moved from Durlag's Tower)
 
     sto.edit[highhedg]
     [
-      ADD_STORE_ITEM "mh#potn5" AFTER "potn39" #1 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#potn6" AFTER "potn45" #1 #0 #0 "identified" #5
-      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5
-      ADD_STORE_ITEM "clck20" AFTER "clck16" #12 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#misc3" AFTER "misc72" #7 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#amul3" LAST #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#amul5" LAST #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#potn5";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="potn39"~}
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="potn45"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="mh#potn6"~}
+      m.item.clone{s_resref := "clck20";;s_charges_1 = 12;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck16"~}
+      m.item.clone{s_resref := "mh#misc3";;s_charges_1 = 7;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="misc72"~}
+      m.item.add{s_resref := "mh#amul3";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#amul5";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#ringd";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
 
     // Bassilus the Mad Cleric
     //
-    // hamm04   - The Kneecapper (from Hurgan Stoneblade)
+    // mh#robe6	- Ghastrobe
+    // hamm04	- The Kneecapper (moved from Hurgan Stoneblade)
 
     cre.edit[bassil]
     [
-      m.cre_remove_items{hamm03}
-      m.cre_add_items{hamm04(weapon1)}
+      m.cre_remove_items{hamm03 chan01}
+      m.cre_add_items{hamm04(weapon1) mh#robe6(armor)}
     ]
 
 
@@ -82,10 +85,10 @@ BEGIN
 
     sto.edit[%tutu_var%inn4801]
     [
-      ADD_STORE_ITEM "mh#ring2" LAST #1 #1 #0 "identified" #1
-      ADD_STORE_ITEM "mh#ring3" LAST #1 #1 #0 "identified" #1
-      ADD_STORE_ITEM "mh#ring8" LAST #1 #1 #0 "identified" #1
-      ADD_STORE_ITEM "mh#brac9" LAST #1 #1 #0 "identified" #1
+      m.item.add{s_resref := "mh#ring2";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#ring3";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#ring3";;s_charges_1 = 1;;s_charges_2 = 1;;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#brac9";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
 
@@ -111,8 +114,8 @@ BEGIN
 
     sto.edit[tem4003]
     [
-      ADD_STORE_ITEM "mh#robe3" LAST #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #3
+      m.item.add{s_resref := "mh#robe3";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#bull1";;s_charges_1 = 5;;s_identified = 1;;s_number_in_stock = 3}
     ]
 
 
@@ -182,13 +185,19 @@ BEGIN
     ]
 
 
-    // Cloakwood Mine
+    // Cloakwood Mine L3
     //
     // mh#ioun8 - Lovely Pink Ioun Stone (on Natasha)
+    // mh#ringc - Browdow's Ring (desk in Natasha's room)
 
     cre.edit[natash]
     [
       m.cre_add_items{mh#ioun8(helmet)}
+    ]
+
+    are.edit[%CloakwoodMines_L3%]
+    [
+      m.container_item.add{s_resref := "mh#ringc";;s_charges_1 = 1;;s_charges_2 = 1|match_parent=~"%p_name%" == "Container 42"~}
     ]
 
 
@@ -203,8 +212,8 @@ BEGIN
 
     sto.edit[tem0131]
     [
-      ADD_STORE_ITEM "mh#amul8" LAST #1 #1 #1 "identified" #1
-      ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5
+      m.item.add{s_resref := "mh#amul8";;s_charges_1 = 1;;s_charges_2 = 1;;s_charges_3 = 1;;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#bull1";;s_charges_1 = 5;;s_identified = 1;;s_number_in_stock = 5}
     ]
 
 
@@ -215,8 +224,8 @@ BEGIN
 
     sto.edit[tem0132]
     [
-      ADD_STORE_ITEM "mh#amul2" LAST #3 #1 #1 "identified" #1
-      ADD_STORE_ITEM "mh#bull1" LAST #5 #0 #0 "identified" #5
+      m.item.add{s_resref := "mh#amul2";;s_charges_1 = 3;;s_charges_2 = 1;;s_charges_3 = 1;;s_identified = 1;;s_number_in_stock = 5}
+      m.item.add{s_resref := "mh#bull1";;s_charges_1 = 5;;s_identified = 1;;s_number_in_stock = 5}
     ]
 
 
@@ -228,17 +237,19 @@ BEGIN
     // mh#potn5 - Potion of Longevity
     // mh#potn6 - Alchemist's Fire
     // mh#potn7 - Flask of Acid
-    // mh#staf6 - Staff of Swarming Insects
+    // mh#staf2 - Staff of Swarming Insects
+    // mh#wand3 - Wand of Earth and Stone
 
     sto.edit[sto0703]
     [
-      ADD_STORE_ITEM "mh#amul4" FIRST #2 #1 #0 "identified" #1
-      ADD_STORE_ITEM "mh#clck8" AFTER "leat10" #1 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#misc5" AFTER "wand11" #1 #0 #0 "identified" #12
-      ADD_STORE_ITEM "mh#potn5" AFTER "potn09" #1 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#potn6" AFTER "potn46" #1 #0 #0 "identified" #5
-      ADD_STORE_ITEM "mh#potn7" AFTER "mh#potn6" #1 #0 #0 "identified" #5
-      ADD_STORE_ITEM "mh#staf6" AFTER "blun39 ax1h02" #0 #12 #0 "identified" #1
+      m.item.add{s_resref := "mh#amul4";;s_charges_1 = 2;;s_charges_2 = 1;;s_identified = 1;;s_number_in_stock = 1|insert_point:i=0}
+      m.item.clone{s_resref := "mh#clck8";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="leat10"~}
+      m.item.clone{s_resref := "mh#misc5";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 12|match=~"%s_resref%"=="wand11"~}
+      m.item.clone{s_resref := "mh#potn5";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="potn09"~}
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="potn46"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="mh#potn6"~}
+      m.item.clone{s_resref := "mh#staf2";;s_charges_1 = 0;;s_charges_2 = 12;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ax1h02"~}
+      m.item.clone{s_resref := "mh#wand3";;s_charges_1 = 6;;s_charges_2 = 6;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="wand11"~}
     ]
 
 
@@ -250,9 +261,20 @@ BEGIN
 
     sto.edit[stoblack]
     [
-      ADD_STORE_ITEM "mh#brac7" AFTER "clck01" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#boot1" AFTER "clck01" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#clck3" AFTER "clck01" #2 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#brac7";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck01"~}
+      m.item.clone{s_resref := "mh#boot1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck01"~}
+      m.item.clone{s_resref := "mh#clck3";;s_charges_1 = 2;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck01"~}
+    ]
+
+
+    // Iron Throne Building
+    //
+    // mh#mace3	- Skull Mace +2 (on Aasim)
+
+    cre.edit[aasim]
+    [
+      m.cre_remove_items{blun05}
+      m.cre_add_items{mh#mace3(weapon1)}
     ]
 
 
@@ -370,6 +392,6 @@ BEGIN
       m.container_item.add{item_resource:="mh#comp1"|match_parent=~"%p_name%" == "Container 1"~}
     ]
   END	// is_bg1
-END	// bg1_item_pack
+END	// saga_item_pack
 
 

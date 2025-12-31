@@ -10,9 +10,9 @@ BEGIN
     
     sto.edit[bdnazram]
     [
-      ADD_STORE_ITEM "mh#iwd02" AFTER "bdbelt01" #1 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#iwd11" AFTER "bdring10" #0 #0 #0 "identified" #1
-      ADD_STORE_ITEM "mh#iwd12" LAST #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#iwd02";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdbelt01"~}
+      m.item.clone{s_resref := "mh#iwd11";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdring10"~}
+      m.item.add{s_resref := "mh#iwd12";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
     

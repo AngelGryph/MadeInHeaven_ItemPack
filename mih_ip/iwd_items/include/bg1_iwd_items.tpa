@@ -12,7 +12,7 @@ BEGIN
 
     sto.edit[taerum]
     [
-      ADD_STORE_ITEM "mh#iwd23" AFTER "blun05" #0 #0 #0 "identified" #1
+      m.item.clone{s_resref := "mh#iwd23";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="blun05"~}
     ]
 
 
@@ -22,7 +22,7 @@ BEGIN
 
     sto.edit[tem3402]
     [
-      ADD_STORE_ITEM "mh#iwd01" LAST #0 #0 #0 "identified" #1
+      m.item.add{s_resref := "mh#iwd01";;s_identified = 1;;s_number_in_stock = 1}
     ]
 
 

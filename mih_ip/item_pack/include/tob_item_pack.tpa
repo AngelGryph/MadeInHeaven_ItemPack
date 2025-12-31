@@ -1,0 +1,245 @@
+DEFINE_ACTION_FUNCTION tob_item_pack
+BEGIN
+  ACTION_IF is_bg2
+  BEGIN
+    // ==============
+    // Watcher's Keep
+    // ==============
+
+    // Sister Garlena
+    //
+    // mh#flai2 - Battle Star +4
+    // mh#bull1 - Priest's Bullet
+    // mh#ioun1 - Sky Blue Ioun Stone
+    // mh#ioun2 - Crystal Clear Ioun Stone
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    // mh#swrd3 - Scimitar of the Seven +4
+    // mh#wand2 - Elmira's Wand of Blasting
+    // ring46   - Ring of Anti-Venom (from Vongoethe)
+
+    sto.edit[garlena]
+    [
+      m.item.clone{s_resref := "mh#flai2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="xbow15"~}
+      m.item.clone{s_resref := "mh#bull1";;s_charges_1 = 5;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="bull02"~}
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="potn44"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="mh#potn6"~}
+      m.item.clone{s_resref := "mh#swrd3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h58"~}
+      m.item.add{s_resref := "ring46";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#ioun1";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#ioun2";;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#ioun2";;s_charges_1 = 12;;s_identified = 1;;s_number_in_stock = 1}
+    ]
+
+
+    // L3 - Portal Maze - Demon Wraith's lair
+    //
+    // mh#brac7 - Gloves of Evasion (on Demon Wraith's victims)
+
+    are.edit[ar3014]
+    [
+      m.container_item.add{s_resref:="mh#brac7"|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+
+
+    // L4 - Machine of Lum the Mad
+    // 
+    // mh#tome1 - Book of Exalted Deeds
+
+    are.edit[ar3017]
+    [
+      m.container_item.add{s_resref:="mh#tome1" s_charges_1=1|match_parent=~"%p_name%" == "Container 3"~}
+    ]
+
+
+    // L4 - Demilich's Lair
+    //
+    // mh#tome5 - Libram of Ineffable Damnation
+
+    are.edit[ar3027]
+    [
+      m.container_item.add{s_resref:="mh#tome5" s_charges_1=1|match_parent=~"%p_name%" == "Container 1"~}
+    ]
+
+
+    // L5 - Dragon's Lair
+    //
+    // mh#shld4 - Shield of the Three Kings +5
+    // mh#comp7 - Green Dragon Scales
+
+    cre.edit[fsdragon]
+    [
+      m.cre_add_items{mh#shld4(inv) mh#comp7(inv)}
+    ]
+
+
+
+    // =============
+    // Ancient Grove
+    // =============
+
+    // Illesara's Ambush
+    //
+    // mh#brac4 - Bracers of the Wind
+    // mh#clck6 - Cloak of the Wastelands
+
+    cre.edit[illasera]
+    [
+      m.cre_add_items{mh#brac4(gloves)}
+      m.cre_add_items{mh#clck6(cloak)}
+    ]
+
+
+    // ========
+    // Saradush
+    // ========
+
+    // Arcana Archives
+    //
+    // mh#potn6 - Alchemist's Fire
+    // mh#potn7 - Flask of Acid
+    // mh#ring7 - Spellbattle Ring
+    // mh#tome3 - Libram of Silver Magic
+    // mh#wand1 - Wand of Illusions
+    // mh#wand3 - Wand of Earth and Stone
+
+    sto.edit[25spell]
+    [
+      m.item.clone{s_resref := "mh#tome3";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="restore"~}
+      m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="potn45"~}
+      m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="mh#potn6"~}
+      m.item.clone{s_resref := "mh#ring7";;s_charges_1 = 1;;s_charges_2 = 1;;s_charges_3 = 1;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ring02"~}
+      m.item.add{s_resref := "mh#wand1";;s_charges_1 = 12;;s_charges_2 = 12;;s_identified = 1;;s_number_in_stock = 1}
+      m.item.add{s_resref := "mh#wand3";;s_charges_1 = 6;;s_charges_2 = 6;;s_identified = 1;;s_number_in_stock = 1}
+    ]
+
+
+    // Temple of Waukeen
+    //
+    // mh#bull1 - Priest's Bullet
+    // mh#ring4 - Ring of White Bone
+
+    sto.edit[sartem01]
+    [
+      m.item.add{s_resref := "mh#bull1";;s_charges_1 = 5;;s_identified = 1;;s_number_in_stock = 10}
+      m.item.clone{s_resref := "mh#ring4";;s_charges_1 = 12;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="ring03"~}
+    ]
+
+
+    // Castle Saradush
+    //
+    // mh#staf4 - Staff of the Legion +5 (on Karun the Black)
+    // mh#belt5 - Adriyana's Garter (on Karun the Black)
+
+    cre.edit[gromg08]
+    [
+      m.cre_add_items{mh#staf4(weapon1) mh#belt5(belt,x3)}
+    ]
+
+
+    // ==================================
+    // Forest of Mir / Marching Mountains
+    // ==================================
+
+    // Abandoned Temple of Bhaal
+    //
+    // mh#tome2 - Book of Vile Darkness
+    // mh#ringb - Ring of the Hierophant (on Nyalee)
+    // mh#robe5 - Nyalee's Robe of Stone (guess)
+
+    are.edit[ar5202]
+    [
+      m.container_item.add{s_resref:="mh#tome2" s_charges_1=1|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+    
+    cre.edit[hgnya01]
+    [
+      m.cre_remove_items{brac15 ring03}
+      m.cre_add_items{mh#robe5(armor,x1) mh#ringb(ring)}
+    ]
+
+
+    // Fire Giant Temple
+    //
+    // mh#tome4 - Libram of Gainful Conjuration
+    // hamm10   - Rune Hammer +4 (moved from Yaga-Shura)
+
+    are.edit[ar5204]
+    [
+      m.container_item.add{s_resref:="mh#tome4" s_charges_1=1|match_parent=~"%p_name%" == "Container 2"~}
+    ]
+    
+    cre.edit[hgber01]
+    [
+      m.cre_add_items{hamm10(inv)}
+    ]
+
+
+    // Yaga-Shura Battlefield
+    //
+    // mh#hamm2 - Maul of the Titans
+
+    cre.edit[yaga01]
+    [
+      m.cre_remove_items{giafir hamm10}
+      m.cre_add_items{mh#hamm2(weapon1)}
+    ]
+
+
+    // =========
+    // Amkethran
+    // =========
+
+    // Temple of Waukeen
+    //
+    // mh#bull1 - Priest's Bullet
+
+    sto.edit[amcler02]
+    [
+      m.item.add{s_resref := "mh#bull1";;s_charges_1 = 5;;s_identified = 1;;s_number_in_stock = 10|insert_point:i=1}
+    ]
+
+
+    // Sealed Cave
+    //
+    // mh#ringa - Ring of the Lich +3 (on Vongoethe, replaces Ring of Anti-Venom)
+
+    cre.edit[amlich01]
+    [
+      m.cre_remove_items{ring46}
+      m.cre_add_items{mh#ringa(ring)}
+    ]
+
+
+    // ================
+    // Sendai's Enclave
+    // ================
+
+    // Duelling a Bhaalspawn
+    //
+    // mh#belt7 - Girdle of Storm Giant Strength
+    // mh#chan3 - Mail of Thalaera +5
+    // mh#clck4 - Cloak of the Night Sky +3
+    // mh#swrdb - Kanalruil +4
+
+    cre.edit[sengua03]
+    [
+      m.cre_add_items{mh#chan3(armor) mh#swrdb(weapon1) mh#clck4(cloak) mh#belt7(belt)|replace:i=1}
+      m.fx.clone{s_parameter2=89|match="s_opcode = 233 AND s_parameter2 = 94"}
+    ]
+
+
+    // ===============
+    // Abazigal's Lair
+    // ===============
+
+    // mh#misc7 - Orb of Dragonkind
+
+    cre.edit[dragblue]
+    [
+      m.cre_add_items{mh#misc7(inv,x1)}
+    ]
+  END	// is_bg2
+END	// tob_item_pack
+
+
