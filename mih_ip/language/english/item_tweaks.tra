@@ -40,9 +40,9 @@ This pair of gauntlets was likely developed in Kara-Tur to aid masters of the ma
 STATISTICS:
 
 Equipped abilities:
-- Dexterity: +4
-- Pick Pockets: +10%
-- Open Locks: +10%
+– Dexterity: +4
+– Pick Pockets: +10%
+– Open Locks: +10%
 
 Weight: 2~
 @7   = ~Cloak of the Wolf: Relair's Mistake 
@@ -51,9 +51,9 @@ A great amount of irony surrounds the creation of this magical cloak. Relair was
 STATISTICS:
 
 Equipped abilities:
-- Infravision
-- Cold Resistance: +25%
-- Polymorph into a winter wolf at will
+– Infravision
+– Cold Resistance: +25%
+– Polymorph into a winter wolf at will
   Duration: 2 turns
 
 Weight: 3~
@@ -62,7 +62,7 @@ Weight: 3~
 STATISTICS:
 
 Equipped abilities: 
-- Armor Class: +5 vs. missile weapons, +1 vs. melee weapons
+– Armor Class: +5 vs. missile weapons, +1 vs. melee weapons
 
 Weight: 4~
 @9   = ~This potion confers very high resistance to all attacks while giving bonuses to all Saving Throws. It can only be used by those trained in the martial arts.
@@ -81,9 +81,9 @@ Weight: 1~
 STATISTICS:
 
 Equipped abilities:
-- Dexterity: +1
-- Armor Class: +3
-- No protection against missile and piercing attacks
+– Dexterity: +1
+– Armor Class: +3
+– No protection against missile and piercing attacks
 
 Requires:
  4 Strength~
@@ -92,13 +92,13 @@ Requires:
 STATISTICS:
 
 Equipped abilities:
-- Protects against critical hits
-- Regenerates 1 hp/turn
+– Protects against critical hits
+– Regenerates 1 hp/turn
 
 Charge abilities:
-- Animate Dead (1/day)
-- Finger of Death (1/day)
-- Control Undead (1/day)
+– Animate Dead (1/day)
+– Finger of Death (1/day)
+– Control Undead (1/day)
 
 Weight: 2~
 @13  = ~This suit of armor is formed from interlocking shadow dragon scales. Elegant workmanship and practical considerations make this armor both beautiful and useful. The shadow dragon scales grant the wearer extra protection against life-draining attacks.
@@ -106,7 +106,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Negative Plane Protection
+– Negative Plane Protection
 
 Armor Class: 1 (-1 vs. slashing, 0 vs. piercing and missile)
 Requires:
@@ -123,7 +123,7 @@ Weight: 10~
 STATISTICS:
 
 Charge abilities:
-- Summon Sand Golem once per day
+– Summon Sand Golem once per day
   Range: 30 ft.
   Duration: 1 turn
 
@@ -139,7 +139,7 @@ Weight: 5~
 STATISTICS:
 
 Charge abilities:
-- Summon Iron Golem once per day
+– Summon Iron Golem once per day
   Range: 30 ft.
   Duration: 1 turn
 

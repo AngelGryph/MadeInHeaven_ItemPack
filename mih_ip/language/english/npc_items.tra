@@ -8,7 +8,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Infravision
+– Infravision
 
 Weight: 2~
 @4    = ~Ring of Projection~
@@ -17,7 +17,7 @@ Weight: 2~
 STATISTICS:
 
 Equipped abilities:
-- Missile Damage: +3
+– Missile Damage: +3
 
 Weight: 0~
 @6    = ~Jhannyl's Bracelet~
@@ -26,7 +26,7 @@ Weight: 0~
 STATISTICS:
 
 Equipped abilities:
-- Saving Throws: +1, +2 vs. Poison/Paralyze/Death and Petrification/Polymorph
+– Saving Throws: +1, +2 vs. Poison/Paralyze/Death and Petrification/Polymorph
 
 Weight: 1~
 @8    = ~Khalid's Singing Sword~
@@ -35,10 +35,10 @@ Weight: 1~
 STATISTICS:
 
 Combat abilities:
-- Counts as a +3 weapon for purposes of what it can hit.
+– Counts as a +3 weapon for purposes of what it can hit.
 
 Charge abilities:
-- Singing (1/day)
+– Singing (1/day)
   One per day the blade can sing, which has the effect of a triple-strength Bless spell, but only upon its wielder.  The effect lasts for three rounds.
 
 Damage: 1d8 (slashing)
@@ -57,9 +57,9 @@ Rasheman berserkers are known to consume vast quantities before battle to increa
 STATISTICS:
 
 Each drink grants:
-- Wisdom: -1 penalty
-- Immunity to fear and morale loss
-- +3 damage to all attacks
+– Wisdom: -1 penalty
+– Immunity to fear and morale loss
+– +3 damage to all attacks
 The effects last for one hour.  Afterwards, the imbiber must save versus poison or fall in coma for an hour.
 
 Weight: 1~
@@ -69,7 +69,17 @@ Weight: 1~
 STATISTICS:
 
 Equipped abilities:
-- Armor Class: +1
-- Damage: +1
+– Armor Class: +1
+– Damage: +1
 
 Weight: 4~
+@14   = ~Witch's Mask~
+@15   = ~You found this mask on the body of a hostile Red Wizard in the Wood of Sharp Teeth.  Dynaheir informed you that it used to belong to another witch of Rasheman, who most likely fell victim to the Red Wizard's machinations.
+
+STATISTICS:
+
+Equipped abilities:
+– Intelligence: +1 bonus
+– Can memorize one extra 1st- and 2nd level wizard spell 
+
+Weight: 0~
