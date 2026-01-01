@@ -23,6 +23,11 @@ BEGIN
     m.immunity_effect{charm confusion feeblemind stun}
   ]
 
+  itm.edit[mh#ringd]
+  [
+    m.immunity_effect{fear}
+  ]
+
   itm.edit[mh#robe2 mh#staf4]
   [
     m.immunity_effect{energy_drain}
