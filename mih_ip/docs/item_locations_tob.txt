@@ -9,6 +9,7 @@ mh#bull1 Priest's Bullet			(various temples)
 mh#chan3 Mail of Thalaera +5			Sendai's Enclave (battle)
 
 mh#clck4 Cloak of the Night Sky			Sendai's Enclave (battle)
+mh#clck6 Cloak of the Wastelands		Ancient Grove (battle)
 
 mh#comp7 Green Dragon Scales			Watcher's Keep (battle)
 
@@ -24,19 +25,21 @@ mh#ioun2 Crystal Clear Ioun Stone		Sister Garlena (shop)
 
 mh#misc7 Orb of Dragonkind			Abazigal's Lair (battle)
 
-mh#potn1 Oil of Acid Resistance			Arcana Archives (shop)
-mh#potn4 Oil of Disenchantment			Arcana Archives (shop)
+mh#potn1 Oil of Acid Resistance			(various shops)
+mh#potn2 Potion of Clairvoyance			(various shops)
+mh#potn3 Potion of Wizardy			(various shops)
+mh#potn4 Oil of Disenchantment			(various shops)
 mh#potn6 Alchemist's Fire			Arcana Archives (shop)
 mh#potn7 Acid Flask				Arcana Archives (shop)
 
-mh#ring4 Ring of White Bone			Arcana Archives (shop)
+mh#ring4 Ring of White Bone			Saradush Temple (shop)
+mh#ring7 Spellbattle Ring			Arcana Archives (shop)
 mh#ringa Ring of the Lich			Vongoethe (battle)
 mh#ringb Ring of the Hierophant			Forest of Mir (battle)
 
 mh#robe5 Nyalee's Robe of Stone			Forest of Mir (battle)
 
 mh#shld4 Shield of the Three Kings +5		Watcher's Keep (battle)
-mh#shld8 White Shield +4			Amkethran Smugglers (shop)
 
 mh#staf4 Staff of the Legion +5			Saradush (battle)
 
@@ -51,5 +54,6 @@ mh#tome5 Libram of Ineffable Damnation		Watcher's Keep (crypt)
 
 mh#wand1 Wand of Illusions			Arcana Archives (shop)
 mh#wand2 Elmira's Wand of Blasting		Sister Garlena (shop)
+mh#wand1 Wand of Earth and Stone		Arcana Archives (shop)
 
 

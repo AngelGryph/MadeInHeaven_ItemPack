@@ -12,7 +12,7 @@ mh#brac4 Bracers of the Wind			Morentherene's Lair (nest)
 
 mh#bull1 Priest's Bullet			Waizahb (shop)
 
-mh#club1 Blackblood +3				Underground River (event)
+mh#clck6 Cloak of the Wastelands		Waizahb (shop)
 
 mh#dagg1 Catclaw +3				Nazramu (shop)
 
@@ -28,7 +28,10 @@ mh#lbow1 Bow of Eletha				Vampire Hideout (chest)
 
 mh#misc1 Pearl of Power				Lich Outpost (shelf)
 
-mh#potn1 Oil of Acid Resistance			Sorcerous Sundries (shop)
+mh#potn1 Oil of Acid Resistance			(various shops)
+mh#potn2 Potion of Claivoyance			(various shops)
+mh#potn3 Potion of Wizardy			(various shops)
+mh#potn4 Oil of Disenchantment			(various shops)
 mh#potn6 Alchemist's Fire			Sorcerous Sundries (shop)
 mh#potn7 Acid Flask				Sorcerous Sundries (shop)
 
@@ -41,6 +44,7 @@ mh#sper2 Hadrion's Spear +3			Morentherene (battle)
 
 mh#staf1 Staff of Rumathil			Korlasz (battle)
 
+mh#swrd5 Greenswathe +3				Nazramu (shop)
 mh#swrd9 Cold Flame +3				Avernus (battle)
 
 mh#wand1 Wand of Illusions			Lich Outpost (table)

@@ -23,8 +23,8 @@ mh#btax1 Foesplitter +1				Maheer (shop)
 mh#btax3 Redethemar +4				Tree of Life (container)
 mh#btax4 Might of Heroes +3			Trademeet Merchant (shop)
 
-mh#bull1 Priest's Bullet			Various Temples (shop)
-*mh#bull2 Bullet of Pulverizing +1		???
+mh#bull1 Priest's Bullet			(various temples)
+mh#bull2 Bullet of Pulverizing +1		(various temples)
 
 mh#chan1 Eversing +2				Arnolinus the dwarf (shop)
 
@@ -52,6 +52,7 @@ mh#halb1 Ghoulbane +1				Maheer (shop)
 
 mh#helm1 Helm of Valor				D'Arnise Keep (chest)
 mh#helm2 Helm of the Dwarven Lords		Adventurer's Market (ch6)
+mh#helm4 Helm of Darkness			Adventurer's Market (ch6)
 
 mh#hide1 Winter Wolf Hide +1			Chateau Irenicus (battle)
 mh#hide1 White Skin of Umpluutu			Windspear Hills (battle)
@@ -66,8 +67,8 @@ mh#ioun8 Lovely Pink Ioun Stone			Chateau Irenicus
 mh#lbow1 Bow of Eletha				Trademeet Merchant (shop)
 
 mh#mace1 Radiant Star +1			Maheer (shop)
-*mh#mace2 Heaven's Wrath +4			Underdark (event)
-*mh#mace3 Skull Mace +2				???
+mh#mace2 Heaven's Wrath +4			Adalon's Lair (event)
+mh#mace3 Skull Mace +2				Temple District (battle)
 
 mh#misc1 Pearl of Power				Trademeet Merchant (shop)
 mh#misc2 Bag of Tricks				Druid Grove (battle)
@@ -80,11 +81,11 @@ mh#plat4 Plate of Solamnus +5			Adventurer's Market (ch6)
 
 mh#potn1 Oil of Acid Resistance			(various potion shops)
 mh#potn2 Potion of Clairvoyance			(various potion shops)
+mh#potn3 Potion of Wizardy			(various shops)
 mh#potn4 Oil of Disenchantment			(various potion shops)
 mh#potn5 Potion of Longevity			(various potion shops)
 mh#potn6 Alchemist's Fire			Adventurer's Market (shop)
 mh#potn7 Acid Flask				Adventurer's Market (shop)
-*mh#potn8 Elixir of Life				???
 
 mh#ring2 Ring of Warmth				Chateau Irenicus (import)
 mh#ring3 Ring of the Neophyte			Chateau Irenicus (import)
@@ -93,6 +94,8 @@ mh#ring5 Ring of Mind Shielding			Ust Natha (shop)
 mh#ring6 Ring of Shooting Stars			Suldanessenar (shop)
 mh#ring8 Ring of Armory				Chateau Irenicus (import)
 mh#ring9 Ring of Water Control			Adventurer's Market (shop)
+mh#ringc Browdow's Ring				Temple of Helm (shop)
+mh#ringd Ring of Fearlessness			Adventurer's Market (shop)
 
 mh#robe1 Robe of the Elements			Firkraag's Lair (battle)
 mh#robe2 Robe of the Necromancer		Ust Natha (shop)
@@ -103,10 +106,9 @@ mh#scrl1 Scroll of Heal				Temple of Lathander (shop)
 mh#scrl2 Scroll of Resurrection			Temple of Lathander (shop)
 
 mh#shld3 Shield of the Phoenix +2		D'Arnise Keep (chest)
-mh#shld9 Shield of the Dragonslayer +3		Adventurer's Market (ch6)
 
 mh#staf1 Staff of Rumathil			Planar Sphere (battle)
-mh#staf5 Staff of Water +2			Adventurers Market (shop)
+mh#staf3 Staff of Water +2			Adventurers Market (shop)
 
 mh#swrd1 Terminus Est +2			Trademeet Merchant (shop)
 mh#swrd2 Smythe's Slicer +1			Maheer (shop)
@@ -114,5 +116,6 @@ mh#swrd4 Planar Sword +1			Planar Sphere (controls)
 mh#swrd9 Holy Sword +2				Chateau Irenicus (import)
 
 mh#wand1 Wand of Illusions			Planar Sphere (chest)
+mh#wand3 Wand of Earth and Stone		Adventurer's Market (shop)
 
 

@@ -22,7 +22,7 @@ mh#btax1 Foesplitter +1				Brokk's Forge (shop)
 mh#btax2 Trollkiller +2				Durlag's Tower D4 (chest2)
 
 mh#bull1 Priest's Bullet			(various temples)
-*mh#bull2 Bullet of Pulverizing +1		???
+mh#bull2 Bullet of Pulverizing +1		(various shops)
 
 mh#chan1 Eversing +2				Brokk's Forge (shop)
 mh#chan2 Celestial Chain +2			Brokk's Forge (event)
@@ -58,7 +58,7 @@ mh#ioun5 Mottled Green Ioun Stone		Candlekeep Catacombs (battle)
 mh#ioun8 Lovely Pink Ioun Stone			Cloakwood Mine (battle)
 
 mh#mace1 Radiant Star +1			Brokk's Forge (shop)
-*mh#mace3 Skull Mace +2				???
+mh#mace3 Skull Mace +2				Iron Throne Building (battle)
 
 mh#misc2 Bag of Tricks				Cloakwood (battle)
 mh#misc3 Crystal Ball				High Hedge (shop)
@@ -68,21 +68,24 @@ mh#misc6 Bottle of Pleasant Odors		High House of Wonders (shop)
 
 mh#plat1 Dwarven Full Plate +2			Brokk's Forge (event)
 
-mh#potn1 Oil of Acid Resistance			High Hedge (shop)
-mh#potn2 Potion of Clairvoyance			High Hedge (shop)
-mh#potn4 Oil of Disenchantment			High Hedge (shop)
+mh#potn1 Oil of Acid Resistance			(various shops)
+mh#potn2 Potion of Clairvoyance			(various shops)
+mh#potn3 Potion of Wizardy			(various shops)
+mh#potn4 Oil of Disenchantment			(various shops)
 mh#potn5 Potion of Longevity			High Hedge (shop)
 mh#potn6 Alchemist's Fire			High Hedge (shop)
 mh#potn7 Acid Flask				High Hedge (shop)
-*mh#potn8 Elixir of Life				???
 
 mh#ring1 Ring of the Elven Mage			Candlekeep Catacombs (chest)
 mh#ring2 Ring of Warmth				Ries Kensiddar (shop)
 mh#ring3 Ring of the Neophyte			Ries Kensiddar (shop)
 mh#ring8 Ring of the Neophyte			Ries Kensiddar (shop)
+mh#ringc Ring of Fearlessness			Cloakwood Mines (desk)
+mh#ringd Ring of Fearlessness			High Hedge (shop)
 
 mh#robe1 Robe of the Elements			Dradeel's House (chest)
 mh#robe3 Robe of the Pure Heart			Gullykin (shop)
+mh#robe6 Ghastrobe				Bassilus (battle)
 
 mh#scrl1 Scroll of Heal				The Lady's Hall (shop)
 mh#scrl2 Scroll of Resurrection			The Lady's Hall (shop)
@@ -92,12 +95,14 @@ mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
 
 mh#sper1 Alicorn Spear +2			Brokk's Forge (event)
 
-mh#staf6 Staff of Swarming Insects +2		Sorcerous Sundries (shop)
+mh#staf2 Staff of Swarming Insects +2		Sorcerous Sundries (shop)
 
 mh#swrd1 Terminus Est +2			Durlag's Tower D3 (battle)
 mh#swrd2 Smythe's Slicer +1			Brokk's Forge (shop)
 mh#swrd7 Mirthal +1				Nashkel Mines (battle)
 mh#swrd8 Golden Sky +2				Brokk's Forge (event)
 mh#swrda Holy Sword +2				Brokk's Forge (event)
+
+mh#wand3 Wand of Earth and Stone		Sorcerous Sundries (shop)
 
 

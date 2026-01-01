@@ -6,11 +6,11 @@ mh#amul5 Brooch of Shielding			DMG (2e)
 mh#amul6 Scarab versus Golems			DMG (2e)
 mh#amul7 Medallion of the Arctic		Encyclopedia Magica (2e)
 mh#amul8 Medallion of Faith			Encyclopedia Magica (2e)
+mh#amul9 Amulet of the Sacred Fist
 
 mh#belt1 Girdle of Dwarvenkind			DMG (2e)
 mh#belt2 Sunite Sash				Magic of Faerun (3e)
 mh#belt3 Storm's Garter				Heroes' Lorebook (2e)
-*mh#belt4 The Belt of Stars			Volo's Guide to the Dales (2e)
 mh#belt5 Adriyana's Garter			Secrets of the Magister (2e)
 mh#belt6 Girdle of Cloud Giant Strength		DMG (2e)
 mh#belt7 Girdle of Storm Giant Strength		DMG (2e)
@@ -33,6 +33,10 @@ mh#btax2 Trollkiller +2
 mh#btax3 Redethemar +4				Elves of Evermeet (2e)
 mh#btax4 Might of Heroes +3			Encyclopedia Magica (2e)
 
+*mh#band1 Circlet of the Wilderness (v1)		Spellbound (2e)
+*mh#band2 Circlet of the Wilderness (v2)		Spellbound (2e)
+*mh#band3 Circlet of the Wilderness (v3)		Spellbound (2e)
+
 mh#bull1 Priest's Bullet			Libris Mortis (3.5e)
 mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2e)
 
@@ -45,11 +49,10 @@ mh#clck2 Varazdin's Cloak of Protection
 mh#clck3 Cloak of Arachnida			DMG (2e)
 mh#clck4 Cloak of the Night Sky			Elves of Evermeet (2e)
 mh#clck5 Bolder's Cloak of the Rogue		Encyclopedia Magica (2e)
+mh#clck6 Cloak of the Wastelands		Encyclopedia Magica (2e)
 mh#clck7 Cloak of Lathander			Encyclopedia Magica (2e)
 mh#clck8 Cloak of Flame				Encyclopedia Magica (2e)
 mh#clck9 Battlecloak of Vycaena			Lost Empires of Faerun (3e)
-
-mh#club1 Blackblood +3				Baldur's Gate 2 (2e)
 
 mh#comp1 Meteoric Iron
 mh#comp2 Arandur Ore
@@ -58,6 +61,7 @@ mh#comp4 Rusty Katana
 mh#comp5 Unicorn Horn
 mh#comp6 Black Dragon Scales
 mh#comp7 Green Dragon Scales
+*mh#comp8 Crown
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Giantsbane +1				Encyclopedia Magica (2e)
@@ -72,9 +76,6 @@ mh#drag2 Green Dragon Scale
 mh#flai1 Slimecrusher +1
 mh#flai2 Battle Star +4				Encyclopedia Magica (2e)
 
-*mh#gem01 Ruby					DMG (2e)
-*mh#gem02 Sapphire				DMG (2e)
-
 mh#halb1 Ghoulbane +1
 
 mh#hamm1 Final Strike +3
@@ -82,6 +83,8 @@ mh#hamm2 Maul of the Titans			DMG (2e)
 
 mh#helm1 Helm of Valor				Complete Elves (2e)
 mh#helm2 Helm of the Dwarven Lords
+*mh#helm3 Wyvern Crown of Cormyr		Volo's Guide to ATM (2e)
+mh#helm4 Helm of Darkness			Encyclopedia Magica (2e)
 
 mh#hide1 Winter Wolf Hide +1
 mh#hide2 White Skin of Umpluutu			Arms & Equipment Guide (2e)
@@ -99,7 +102,7 @@ mh#lbow1 Bow of Eletha				Elves of Evermeet (2e)
 
 mh#mace1 Radiant Star +1
 mh#mace2 Heaven's Wrath +4
-*mh#mace3 Skull Mace +2				Encyclopedia Magica (2e)
+mh#mace3 Skull Mace +2				Encyclopedia Magica (2e)
 
 mh#misc1 Pearl of Power				DMG (2e)
 mh#misc2 Bag of Tricks				DMG (2e)
@@ -115,11 +118,11 @@ mh#plat4 Plate of Solamnus +5			Encyclopedia Magica (2e)
 
 mh#potn1 Oil of Acid Resistance			DMG (2e)
 mh#potn2 Potion of Clairvoyance			DMG (2e)
+mh#potn3 Potion of Wizardry			Encyclopedia Magica (2e)
 mh#potn4 Oil of Disenchantment			DMG (2e)
 mh#potn5 Potion of Longevity			DMG (2e)
 mh#potn6 Alchemist's Fire			PHB (2e)
 mh#potn7 Acid Flask				PHB (2e)
-mh#potn8 Elixir of Life				Unearthed Arcana (2e)
 
 mh#ring1 Ring of the Elven Mage			DMG (2e)
 mh#ring2 Ring of Warmth				DMG (2e)
@@ -127,17 +130,20 @@ mh#ring3 Ring of the Neophyte			DMG (2e)
 mh#ring4 Ring of White Bone			Complete Necromancer (2e)
 mh#ring5 Ring of Mind Shielding			DMG (2e)
 mh#ring6 Ring of Shooting Stars			DMG (2e)
-*mh#ring7 Spellbattle Ring			Volo's Guide to the North (2e)
+mh#ring7 Spellbattle Ring			Volo's Guide to the North (2e)
 mh#ring8 Ring of Armory				Tome of Magic (2e)
 mh#ring9 Ring of Water Control			DMG (2e)
 mh#ringa Ring of the Lich			DMG (2e)
 mh#ringb Ring of the Hierophant			Complete Druid (2e)
+mh#ringc Browdow's Ring				Encyclopedia Magica (2e)
+mh#ringd Ring of Fearlessness			Encyclopedia Magica (2e)
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
 mh#robe3 Robe of the Pure Heart
 mh#robe4 Shadow Dancer's Robe
-mh#robe5 Nyalee's Robe of Stone
+mh#robe5 Nyalee's Robe of Stone			Encyclopedia Magica (2e)
+mh#robe6 Ghastrobe				Encyclopedia Magica (2e)
 
 mh#scrl1 Scroll of Heal				DMG (2e)
 mh#scrl2 Scroll of Resurrection			DMG (2e)
@@ -146,22 +152,21 @@ mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1
 mh#shld3 Shield of the Phoenix +2
 mh#shld4 Shield of the Three Kings +5
-mh#shld8 White Shield +4			Encyclopedia Magica (2e)
-mh#shld9 Shield of the Dragonslayer +3		Encyclopedia Magica (2e)
+*mh#shld5 Force Buckler +1
 
 mh#sper1 Alicorn Spear +2
 mh#sper2 Hadrion's Spear +3			Encyclopedia Magica (2e)
 
 mh#staf1 Staff of Rumathil +2			Elves of Evermeet (2e)
+mh#staf2 Staff of Swarming Insects +2		DMG (2e)
+mh#staf3 Staff of Water +2
 mh#staf4 Staff of the Legion +5			Undead (2e)
-mh#staf5 Staff of Water +2
-mh#staf6 Staff of Swarming Insects +2		DMG (2e)
-*mh#staf7 Staff of the White Well +5		Hall of Heroes (2e)
 
 mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
 mh#swrd2 Smythe's Slicer +1
 mh#swrd3 Scimitar of the Seven +4		LoZ: Breath of the Wild
 mh#swrd4 Sword of the Planes +1			DMG (2e)
+mh#swrd5 Greenswathe +3				Encyclopedia Magica (2e)
 mh#swrd7 Mirthal +1
 mh#swrd8 Golden Sky +2
 mh#swrd9 Cold Flame +3
@@ -176,5 +181,6 @@ mh#tome5 Libram of Ineffable Damnation		DMG (2e)
 
 mh#wand1 Wand of Illusions			DMG (2e)
 mh#wand2 Elmira's Wand of Blasting
+mh#wand3 Wand of Earth and Stone		DMG (2e)
 
 

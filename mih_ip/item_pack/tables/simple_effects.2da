@@ -29,7 +29,6 @@ mh#vpmsg	139	64285		0		0		0		0	0	none		none
 mh#amul7	146	1		1		0		0		0	0	mh#amul7	none
 mh#bull1	12	2		0x00400000	0		0		2	4	none		none
 mh#dagg3	12	0		0x00100000	0		0		2	8	none		none
-mh#plat4	0	5		0		0		0		0	0	none		none
 mh#msc5g	146	0		1		0		0		0	0	mh#msc5g	none
 mh#msc5e	146	0		1		0		0		0	0	mh#msc5e	none
 mh#mace2	12	4		0x00000000	0		0		1	6	none		none
