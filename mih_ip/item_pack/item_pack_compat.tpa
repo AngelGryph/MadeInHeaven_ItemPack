@@ -4,11 +4,21 @@ BEGIN
 
   ACTION_IF NOT enhanced_edition
   BEGIN
-    // mh#amul1 - Amulet of the Planes
+    // Headband animation (JB) does not work on oBG2.
+    // (Might work with 1pp installed?)
+
+    itm.edit[mh#band1 mh#band2 mh#band3]
+    [
+      m_equipped_appearance := ""
+    ]
+
+
+    // mh#amul1 - Amulet against Undead
+    // mh#robe6 - Ghastrobe
     //
     // Opcode #323 (Turn Undead Level) does not exist in classic.
 
-    itm.edit[mh#amul1]
+    itm.edit[mh#amul1 mh#robe6]
     [
       m.fx.delete{s_opcode = 323}
     ]
@@ -93,7 +103,7 @@ BEGIN
   BEGIN
     INCLUDE "eefixpack/files/lib/modder_mkhiin_animations.tph"
 
-    ACTION_FOR_EACH item IN "mh#hide1" "mh#hide2" "mh#staf1" "mh#staf4" "mh#staf5" "mh#staf6" "mh#staf7"
+    ACTION_FOR_EACH item IN "mh#hide1" "mh#hide2" "mh#staf1" "mh#staf4" "mh#staf3" "mh#staf2"
     BEGIN
       COPY_EXISTING ~%item%.itm~ ~override~
         LPF cd_eefp_mkhiin_animation END
