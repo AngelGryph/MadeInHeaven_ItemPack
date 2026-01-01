@@ -396,9 +396,14 @@ BEGIN default
       PartyGoldGT(1999)~
     REPLY @1075
     GOTO alicorn3
-  IF ~Global("mh#BrokkArandur", "GLOBAL", 1)~
+  IF ~Global("mh#BrokkArandur", "GLOBAL", 1)
+      PartyHasItem("mh#comp2")~
     REPLY @1088
     GOTO arandur1
+  IF ~PartyHasItem("mh#mace3")
+      Alignment(LastTalkedToBy(Myself), MASK_GOOD)~
+    REPLY @1096
+    GOTO skull_mace
   IF ~~
     REPLY @1044
     GOTO store
@@ -444,6 +449,17 @@ BEGIN chat2
   IF ~~
     REPLY @1054
     DO ~SetGlobal("mh#BrokkChat", "GLOBAL", 2)~
+    GOTO goodbye
+END
+
+IF ~~
+BEGIN skull_mace
+  SAY @1097
+  = @1098
+  IF ~~
+    DO ~TakePartyItem("mh#mace3")
+        DestroyItem("mh#mace3")
+	AddexperienceParty(1500)~
     GOTO goodbye
 END
 
