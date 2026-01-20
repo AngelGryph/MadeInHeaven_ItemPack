@@ -11,6 +11,7 @@ BEGIN
 
   LAUNCH_ACTION_FUNCTION grand_unified_installer
     STR_VAR
+    copy_files	= ""	// Nothing to copy (yet)
     tra		= "bg2_items"
   END
 
