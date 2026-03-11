@@ -167,6 +167,21 @@ LAUNCH_ACTION_FUNCTION run
 END
 
 
+// 3e-style Bracers of Defense
+
+BEGIN @6
+GROUP @3
+
+LABEL MH#-MiH_IP-3e_Bracers
+
+LAUNCH_ACTION_FUNCTION run
+  STR_VAR
+  file		= "3e_style_bracers_of_defense"
+  tra		= "item_tweaks"
+  location	= "tweaks"
+END
+
+
 // Improved Tome of Golems
 
 BEGIN @22

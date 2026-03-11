@@ -1,0 +1,33 @@
+DEFINE_ACTION_FUNCTION 3e_style_bracers_of_defense
+BEGIN
+  LAUNCH_ACTION_FUNCTION check_ini
+    STR_VAR
+    ini		= "monks_can_use_3e_bracers"
+    RET
+    monks_can_use_3e_bracers	= value
+  END
+
+  itm.edit[bdbrac13 bdbrac14 brac01 brac02 brac03 brac13 brac14 brac15 mh#brac3 mh#iwd03|allow_missing:i=1 edit_strrefs_in_place:i=1]
+  [
+    m.unusable_monk = BNOT monks_can_use_3e_bracers
+    m.fx.alter{s_parameter1 = 10 - s_parameter1;;s_parameter2 = 0|match="s_opcode = 0 && s_parameter2 = 16"}
+    m_identified_name = m_identified_name.patch{
+      REPLACE_TEXTUALLY "AC 8" "+2"
+      REPLACE_TEXTUALLY "AC 7" "+3"
+      REPLACE_TEXTUALLY "AC 5" "+5"
+      REPLACE_TEXTUALLY "AC 4" "+6"
+      REPLACE_TEXTUALLY "AC 3" "+7"
+    }
+    m_identified_description = m_identified_description.patch{
+      REPLACE_TEXTUALLY ": 8" ": +2"
+      REPLACE_TEXTUALLY ": 7" ": +3"
+      REPLACE_TEXTUALLY ": 6" ": +4"
+      REPLACE_TEXTUALLY ": 5" ": +5"
+      REPLACE_TEXTUALLY ": 4" ": +6"
+      REPLACE_TEXTUALLY ": 3" ": +7"
+      REPLACE_TEXTUALLY ": 2" ": +8"
+    }
+  ]
+END	// 3e_style_bracers_of_defense
+
+
