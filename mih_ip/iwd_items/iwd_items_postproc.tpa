@@ -28,15 +28,20 @@ BEGIN
 
   // Apply immunity effects to certain items
 
-  itm.edit[mh#iwd20]
-  [
-    m.immunity_effect{charm fear}
-  ]
+  ACTION_CLEAR_ARRAY item_immunities
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY item_immunities
+  BEGIN
+    "mh#iwd20" => "charm fear"
+    "mh#iwd21" => "hold"
+  END
 
-  itm.edit[mh#iwd20]
-  [
-    m.immunity_effect{hold}
-  ]
+  ACTION_PHP_EACH item_immunities AS item => immunities
+  BEGIN
+    itm.edit[%item%]
+    [
+      m.immunity_effect{%immunities%}
+    ]
+  END
 END	// iwd_items_postproc
 
 
