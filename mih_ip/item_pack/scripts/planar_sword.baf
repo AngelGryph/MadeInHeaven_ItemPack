@@ -1,5 +1,5 @@
 IF
-  HasItem("mh#swrd4", PLAYER1)
+  HasItem("mh#sw1h4", PLAYER1)
   Or(15)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
@@ -18,7 +18,7 @@ IF
     AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER1)
+    TakeItemReplace("mh#swd4a", "mh#sw1h4", PLAYER1)
     DisplayStringHead(PLAYER1, @253)
 END
 
@@ -41,13 +41,13 @@ IF
   !AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER1)
+    TakeItemReplace("mh#sw1h4", "mh#swd4a", PLAYER1)
     DisplayStringHead(PLAYER1, @254)
 END
 
 
 IF
-  HasItem("mh#swrd4", PLAYER2)
+  HasItem("mh#sw1h4", PLAYER2)
   Or(15)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
@@ -66,7 +66,7 @@ IF
     AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER2)
+    TakeItemReplace("mh#swd4a", "mh#sw1h4", PLAYER2)
     DisplayStringHead(PLAYER2, @253)
 END
 
@@ -89,13 +89,13 @@ IF
   !AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER2)
+    TakeItemReplace("mh#sw1h4", "mh#swd4a", PLAYER2)
     DisplayStringHead(PLAYER2, @254)
 END
 
 
 IF
-  HasItem("mh#swrd4", PLAYER3)
+  HasItem("mh#sw1h4", PLAYER3)
   Or(15)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
@@ -114,7 +114,7 @@ IF
     AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER3)
+    TakeItemReplace("mh#swd4a", "mh#sw1h4", PLAYER3)
     DisplayStringHead(PLAYER3, @253)
 END
 
@@ -137,13 +137,13 @@ IF
   !AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER3)
+    TakeItemReplace("mh#sw1h4", "mh#swd4a", PLAYER3)
     DisplayStringHead(PLAYER3, @254)
 END
 
 
 IF
-  HasItem("mh#swrd4", PLAYER4)
+  HasItem("mh#sw1h4", PLAYER4)
   Or(15)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
@@ -162,7 +162,7 @@ IF
     AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER4)
+    TakeItemReplace("mh#swd4a", "mh#sw1h4", PLAYER4)
     DisplayStringHead(PLAYER4, @253)
 END
 
@@ -185,13 +185,13 @@ IF
   !AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER4)
+    TakeItemReplace("mh#sw1h4", "mh#swd4a", PLAYER4)
     DisplayStringHead(PLAYER4, @254)
 END
 
 
 IF
-  HasItem("mh#swrd4", PLAYER5)
+  HasItem("mh#sw1h4", PLAYER5)
   Or(15)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
@@ -210,7 +210,7 @@ IF
     AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER5)
+    TakeItemReplace("mh#swd4a", "mh#sw1h4", PLAYER5)
     DisplayStringHead(PLAYER5, @253)
 END
 
@@ -233,13 +233,13 @@ IF
   !AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER5)
+    TakeItemReplace("mh#sw1h4", "mh#swd4a", PLAYER5)
     DisplayStringHead(PLAYER5, @254)
 END
 
 
 IF
-  HasItem("mh#swrd4", PLAYER6)
+  HasItem("mh#sw1h4", PLAYER6)
   Or(15)
     AreaCheck("AR0414")
     AreaCheck("AR0516")
@@ -258,7 +258,7 @@ IF
     AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swd4a", "mh#swrd4", PLAYER6)
+    TakeItemReplace("mh#swd4a", "mh#sw1h4", PLAYER6)
     DisplayStringHead(PLAYER6, @253)
 END
 
@@ -281,7 +281,7 @@ IF
   !AreaCheck("AR6200")
 THEN
   RESPONSE #100
-    TakeItemReplace("mh#swrd4", "mh#swd4a", PLAYER6)
+    TakeItemReplace("mh#sw1h4", "mh#swd4a", PLAYER6)
     DisplayStringHead(PLAYER6, @254)
 END
 

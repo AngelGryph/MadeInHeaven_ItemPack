@@ -16,6 +16,7 @@ mh#band3	155	156	*	*	0x0	*
 mh#belt1	8	9	*	*	0x0	*
 mh#belt2	46	47	*	*	0x0	*
 mh#belt3	77	78	*	*	0x0	*
+mh#belt4	315	316	*	*	0x0	*
 mh#belt5	175	176	*	*	0x0	*
 mh#belt6	251	252	*	*	0x0	*
 mh#belt7	240	241	*	*	0x0	*
@@ -29,6 +30,7 @@ mh#brac2	12	13	*	*	0x0	*
 mh#brac3	73	74	*	*	0x0	*
 mh#brac4	75	76	*	*	0x0	*
 mh#brac5	121	122	*	*	0x0	*
+mh#brac6	159	160	*	*	0x0	*
 mh#brac7	244	245	*	*	0x0	*
 mh#brac8	349	350	*	*	0x0	*
 mh#brac9	269	270	*	*	0x0	*
@@ -62,7 +64,6 @@ mh#comp4	181	182	329	330	0x0	*
 mh#comp5	184	186	183	185	0x0	*
 mh#comp6	285	286	*	*	0x0	*
 mh#comp7	319	320	*	*	0x0	*
-mh#comp8	125	126	*	*	0x0	*
 
 mh#dagg1	52	53	*	*	0x0	*
 mh#dagg2	230	231	*	*	0x0	*
@@ -138,6 +139,7 @@ mh#ringa	26	27	*	*	0x1	*
 mh#ringb	295	296	*	*	0x0	*
 mh#ringc	299	300	*	*	0x0	*
 mh#ringd	337	338	*	*	0x0	*
+mh#ringe	311	312	*	*	0x0	*
 
 mh#robe1	98	99	*	*	0x0	*
 mh#robe2	100	101	*	*	0x0	*
@@ -150,6 +152,7 @@ mh#shld1	34	35	*	*	0x0	*
 mh#shld2	61	62	*	*	0x0	*
 mh#shld3	63	64	*	*	0x0	*
 mh#shld4	147	148	*	*	0x0	*
+mh#shld5	157	158	*	*	0x0	*
 
 mh#sper1	199	200	*	*	0x0	*
 mh#sper2	335	336	*	*	0x0	*
@@ -159,17 +162,17 @@ mh#staf2	206	207	*	*	0x0	*
 mh#staf3	204	205	*	*	0x0	*
 mh#staf4	201	202	*	*	0x0	*
 
-mh#swrd1	36	37	*	*	0x0	*
-mh#swrd2	38	39	*	*	0x0	*
-mh#swrd3	108	109	*	*	0x0	*
-mh#swrd4	110	111	*	*	0x0	*
+mh#sw1h1	36	37	*	*	0x0	*
+mh#sw1h2	38	39	*	*	0x0	*
+mh#sw1h3	108	109	*	*	0x0	*
+mh#sw1h4	110	111	*	*	0x0	*
 mh#swd4a	112	113	*	*	0x0	*
-mh#swrd5	331	332	*	*	0x0	*
-mh#swrd7	208	209	*	*	0x0	*
-mh#swrd8	210	211	329	330	0x0	*
-mh#swrd9	212	213	*	*	0x0	*
-mh#swrda	297	298	*	*	0x0	*
-mh#swrdb	341	342	*	*	0x0	*
+mh#sw1h5	331	332	*	*	0x0	*
+mh#sw1h7	208	209	*	*	0x0	*
+mh#sw1h8	210	211	329	330	0x0	*
+mh#sw1h9	212	213	*	*	0x0	*
+mh#sw1ha	297	298	*	*	0x0	*
+mh#sw1hb	341	342	*	*	0x0	*
 
 mh#tome1	163	164	*	*	0x0	*
 mh#tome2	165	166	*	*	0x0	*

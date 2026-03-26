@@ -94,12 +94,12 @@ BEGIN
 
     // Nashkel Mine Entrance
     //
-    // mh#swrd7 - Mirthal +1 (equipped on Greywolf, replaces Varscona +2)
+    // mh#sw1h7 - Mirthal +1 (equipped on Greywolf, replaces Varscona +2)
 
     cre.edit[greywo]
     [
       m.cre_remove_items{sw1h06}
-      m.cre_add_items{mh#swrd7(weapon1)}
+      m.cre_add_items{mh#sw1h7(weapon1)}
     ]
 
 
@@ -126,6 +126,15 @@ BEGIN
     cre.edit[mutami]
     [
       m.cre_add_items{mh#clck1(cloak)}
+    ]
+
+    // Firewine Bridge
+    //
+    // mh#belt4 - Girdle of Many Pouches (on ogre mage)
+
+    cre.edit[ogrema02]
+    [
+      m.cre_add_items{mh#belt4(belt)}
     ]
 
 
@@ -329,12 +338,12 @@ BEGIN
 
     // Durlag's Dungeon D3
     //
-    // mh#swrd1 - Terminus Est +2
+    // mh#sw1h1 - Terminus Est +2
 
     cre.edit[moorlock]
     [
       m.cre_remove_items{sw1h05}
-      m.cre_add_items{mh#swrd1(weapon1)}
+      m.cre_add_items{mh#sw1h1(weapon1)}
     ]
 
 

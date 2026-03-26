@@ -10,6 +10,7 @@ BEGIN
     //
     // mh#hide1 - Winter Wolf Hide +1
     // mh#belt1 - Girdle of Dwarvenkind
+    // mh#belt4 - Ogre Mage (Aatagah's test)
     // mh#ioun8 - Lovely Pink Ioun Stone
 
     are.edit[ar0602]
@@ -22,6 +23,11 @@ BEGIN
     [
       m.cre_remove_items{leat01}
       m.cre_add_items{mh#hide1(armor)}
+    ]
+
+    cre.edit[iogremag]
+    [
+      m.cre_add_items{mh#belt4(belt)}
     ]
 
 
@@ -46,7 +52,7 @@ BEGIN
     // mh#flai1 - Slimecrusher +1
     // mh#halb1 - Ghoulbane +1
     // mh#mace1 - Radiant Star +1
-    // mh#swrd2 - Smyte's Slicer +1
+    // mh#sw1h2 - Smyte's Slicer +1
 
     sto.edit[shop03]
     [
@@ -55,7 +61,7 @@ BEGIN
       m.item.clone{s_resref := "mh#flai1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="blun02"~}
       m.item.clone{s_resref := "mh#halb1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="halb01"~}
       m.item.clone{s_resref := "mh#mace1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="blun06"~}
-      m.item.clone{s_resref := "mh#swrd2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h20"~}
+      m.item.clone{s_resref := "mh#sw1h2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h20"~}
     ]
 
 
@@ -132,12 +138,12 @@ BEGIN
     //
     // mh#dart1 - Lein's Fiery Darts +2
     // mh#dart2 - Chandler's Icy Darts +2
-    // mh#swrd4 - Sword of the Planes +1
+    // mh#sw1h4 - Sword of the Planes +1
     // mh#wand1 - Wand of Illusions
 
     are.edit[ar0410]
     [
-      m.container_item.add{s_resref:="mh#swrd4"|match_parent=~"%p_name%" == "Container 1"~}
+      m.container_item.add{s_resref:="mh#sw1h4"|match_parent=~"%p_name%" == "Container 1"~}
     ]
 
     are.edit[ar0411]
@@ -240,12 +246,14 @@ BEGIN
 
     // Unseeing Eye lair
     //
-    // mh#mace3- Skull Mace +2
+    // mh#mace3 - Skull Mace +2 (on Gaal)
+    // mh#shld5 - Force Buckler +1 (on Gaal)
 
     cre.edit[gaal01 gaal02]
     [
       m.cre_remove_items{staf01}
       m.cre_add_items{mh#mace3(weapon1)}
+      m.cre_add_items{mh#shld5(shield)}
     ]
 
 
@@ -283,6 +291,7 @@ BEGIN
 
     cre.edit[maevar]
     [
+      m.cre_remove_items{sw1h07}
       m.cre_add_items{mh#dagg1(weapon1)}
     ]
 
@@ -317,7 +326,7 @@ BEGIN
     // mh#dagg3 - Golemblight +2
     // mh#lbow1 - Bow of Eletha
     // mh#misc1 - Pearl of Power
-    // mh#swrd1	- Terminus Est +2
+    // mh#sw1h1	- Terminus Est +2
 
     sto.edit[trmer02]
     [
@@ -325,7 +334,7 @@ BEGIN
       m.item.clone{s_resref := "mh#clck1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="clck03"~}
       m.item.clone{s_resref := "mh#dagg3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="dagg15"~}
       m.item.clone{s_resref := "mh#lbow1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bow04"~}
-      m.item.clone{s_resref := "mh#swrd1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h02"~}
+      m.item.clone{s_resref := "mh#sw1h1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h02"~}
       m.item.clone{s_resref := "mh#misc1";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="belt10"~}
     ]
 

@@ -27,8 +27,9 @@ BEGIN
       m.item.clone{s_resref := "mh#flai1"|match=~"%s_resref%" == "blun03"~}
       m.item.clone{s_resref := "mh#halb1"|match=~"%s_resref%" == "halb02"~}
       m.item.clone{s_resref := "mh#helm1"|match=~"%s_resref%" == "helm12"~}
+      m.item.clone{s_resref := "mh#shld5"|match=~"%s_resref%" == "shld17"~}
       m.item.clone{s_resref := "mh#mace1"|match=~"%s_resref%" == "blun07"~}
-      m.item.clone{s_resref := "mh#swrd2"|match=~"%s_resref%" == "sw1h22"~}
+      m.item.clone{s_resref := "mh#sw1h2"|match=~"%s_resref%" == "sw1h22"~}
     ]
 
     LAUNCH_ACTION_FUNCTION install

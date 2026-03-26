@@ -59,12 +59,12 @@ BEGIN
     // mh#dagg1 - Catclaw +3
     // mh#ioun2 - Crystal Clear Ioun Stone
     // mh#robe4 - Shadow Dancer's Robe
-    // mh#swrd5 - Greenswathe +3
+    // mh#sw1h5 - Greenswathe +3
     
     sto.edit[bdnazram]
     [
       m.item.clone{s_resref := "mh#dagg1";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdsw1h08"~}
-      m.item.clone{s_resref := "mh#swrd5";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdsw1h08"~}
+      m.item.clone{s_resref := "mh#sw1h5";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdsw1h08"~}
       m.item.clone{s_resref := "mh#amul7";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="bdamul25"~}
       m.item.clone{s_resref := "mh#ioun2";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="helm19"~}
       m.item.add{s_resref := "mh#robe4";;s_identified = 1;;s_number_in_stock = 1}
@@ -160,12 +160,12 @@ BEGIN
 
     // Avernus
     //
-    // mh#swrd9 - Cold Flame +3 (equipped on Illaruel)
+    // mh#sw1h9 - Cold Flame +3 (equipped on Illaruel)
     
     cre.edit[bdillaru]
     [
       m.cre_remove_items{sw1h41}
-      m.cre_add_items{mh#swrd9(weapon2)}
+      m.cre_add_items{mh#sw1h9(weapon2)}
       m.fx.alter{s_parameter2=89|match="s_opcode = 233 AND s_parameter2 = 90"}
     ]
   END	// is_sod

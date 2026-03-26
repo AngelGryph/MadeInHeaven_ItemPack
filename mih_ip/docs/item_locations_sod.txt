@@ -44,8 +44,8 @@ mh#sper2 Hadrion's Spear +3			Morentherene (battle)
 
 mh#staf1 Staff of Rumathil			Korlasz (battle)
 
-mh#swrd5 Greenswathe +3				Nazramu (shop)
-mh#swrd9 Cold Flame +3				Avernus (battle)
+mh#sw1h5 Greenswathe +3				Nazramu (shop)
+mh#sw1h9 Cold Flame +3				Avernus (battle)
 
 mh#wand1 Wand of Illusions			Lich Outpost (table)
 

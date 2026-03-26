@@ -14,7 +14,7 @@ BEGIN
     // mh#ioun2 - Crystal Clear Ioun Stone
     // mh#potn6 - Alchemist's Fire
     // mh#potn7 - Flask of Acid
-    // mh#swrd3 - Scimitar of the Seven +4
+    // mh#sw1h3 - Scimitar of the Seven +4
     // mh#wand2 - Elmira's Wand of Blasting
     // ring46   - Ring of Anti-Venom (from Vongoethe)
 
@@ -24,7 +24,7 @@ BEGIN
       m.item.clone{s_resref := "mh#bull1";;s_charges_1 = 5;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 10|match=~"%s_resref%"=="bull02"~}
       m.item.clone{s_resref := "mh#potn6";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="potn44"~}
       m.item.clone{s_resref := "mh#potn7";;s_charges_1 = 1;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 5|match=~"%s_resref%"=="mh#potn6"~}
-      m.item.clone{s_resref := "mh#swrd3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h58"~}
+      m.item.clone{s_resref := "mh#sw1h3";;s_charges_1 = 0;;s_charges_2 = 0;;s_charges_3 = 0;;s_identified = 1;;s_number_in_stock = 1|match=~"%s_resref%"=="sw1h58"~}
       m.item.add{s_resref := "ring46";;s_identified = 1;;s_number_in_stock = 1}
       m.item.add{s_resref := "mh#ioun1";;s_identified = 1;;s_number_in_stock = 1}
       m.item.add{s_resref := "mh#ioun2";;s_identified = 1;;s_number_in_stock = 1}
@@ -211,6 +211,16 @@ BEGIN
     ]
 
 
+    // Smuggler's Cave
+    //
+    // mh#amul9 - Amulet of the Sacred First (on monk threatening Carras)
+
+    cre.edit[ammonk02]
+    [
+      m.cre_add_items{mh#amul9(amulet)}
+    ]
+
+
     // ================
     // Sendai's Enclave
     // ================
@@ -220,11 +230,11 @@ BEGIN
     // mh#belt7 - Girdle of Storm Giant Strength
     // mh#chan3 - Mail of Thalaera +5
     // mh#clck4 - Cloak of the Night Sky +3
-    // mh#swrdb - Kanalruil +4
+    // mh#sw1hb - Kanalruil +4
 
     cre.edit[sengua03]
     [
-      m.cre_add_items{mh#chan3(armor) mh#swrdb(weapon1) mh#clck4(cloak) mh#belt7(belt)|replace:i=1}
+      m.cre_add_items{mh#chan3(armor) mh#sw1hb(weapon1) mh#clck4(cloak) mh#belt7(belt)|replace:i=1}
       m.fx.clone{s_parameter2=89|match="s_opcode = 233 AND s_parameter2 = 94"}
     ]
 

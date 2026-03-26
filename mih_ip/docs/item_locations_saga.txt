@@ -5,8 +5,11 @@ mh#amul4 Mirror of Illusions			Sorcerous Sundries (shop)
 mh#amul5 Brooch of Shielding			High Hedge (shop)
 mh#amul8 Medallion of Faith			High House of Wonders (shop)
 
+mh#band1 Circlet of the Wilderness		Baldur's Gate (event)
+
 mh#belt1 Girdle of Dwarvenkind			Brokk's Forge (event)
 mh#belt3 Storm's Garter				Centeol's Lair
+mh#belt4 Girdle of Many Pouches			Firewine Bridge (battle)
 
 mh#boot1 Boots of the Master Ninja		Black Lily (shop)
 mh#boot3 Boots of Balance			Black Alaric's Cave (treasure)
@@ -92,16 +95,17 @@ mh#scrl2 Scroll of Resurrection			The Lady's Hall (shop)
 
 mh#shld1 Meteoric Shield +2			Brokk's Forge (event)
 mh#shld2 Ankheg Shield +1			Brokk's Forge (event)
+mh#shld5 Force Buckler +1			Brokk's Forge (shop)
 
 mh#sper1 Alicorn Spear +2			Brokk's Forge (event)
 
 mh#staf2 Staff of Swarming Insects +2		Sorcerous Sundries (shop)
 
-mh#swrd1 Terminus Est +2			Durlag's Tower D3 (battle)
-mh#swrd2 Smythe's Slicer +1			Brokk's Forge (shop)
-mh#swrd7 Mirthal +1				Nashkel Mines (battle)
-mh#swrd8 Golden Sky +2				Brokk's Forge (event)
-mh#swrda Holy Sword +2				Brokk's Forge (event)
+mh#sw1h1 Terminus Est +2			Durlag's Tower D3 (battle)
+mh#sw1h2 Smythe's Slicer +1			Brokk's Forge (shop)
+mh#sw1h7 Mirthal +1				Nashkel Mines (battle)
+mh#sw1h8 Golden Sky +2				Brokk's Forge (event)
+mh#sw1ha Holy Sword +2				Brokk's Forge (event)
 
 mh#wand3 Wand of Earth and Stone		Sorcerous Sundries (shop)
 

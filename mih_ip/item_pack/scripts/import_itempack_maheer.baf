@@ -22,7 +22,7 @@ END
 IF Global("mh#ImportItemsMaheer", "GLOBAL", 4)
 THEN
   RESPONSE #100
-  RemoveStoreItem("shop03", "mh#swrd2", 1)
+  RemoveStoreItem("shop03", "mh#sw1h2", 1)
   SetGlobal("mh#ImportItemsMaheer", "GLOBAL", 99)
 END
 

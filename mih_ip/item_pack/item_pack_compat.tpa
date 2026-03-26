@@ -27,13 +27,13 @@ BEGIN
     // mh#dagg3 - Golemblight +2
     // mh#flai1 - Slime Crusher +1
     // mh#mace1 - Radiant Star +1
-    // mh#swrd2 - Smythe's Slicer +1
-    // mh#swrda - Holy Sword +2
+    // mh#sw1h2 - Smythe's Slicer +1
+    // mh#sw1ha - Holy Sword +2
     // 
     // Opcode #344 (Enchantment vs. Creature Type) does not exist in classic.
     // Adjust generic enchantment level to compensate.
 
-    itm.edit[mh#dagg3 mh#flai1 mh#mace1 mh#swrd2 mh#swrda]
+    itm.edit[mh#dagg3 mh#flai1 mh#mace1 mh#sw1h2 mh#sw1ha]
     [
       m_enchantment=4
       m.fx.delete{s_opcode = 344}
@@ -50,24 +50,24 @@ BEGIN
     ]
 
 
-    // mh#swrd7 - Mirthal +1
+    // mh#sw1h7 - Mirthal +1
     // 
     // Opcode #344 (Enchantment vs. Creature Type) does not exist in classic.
     // Adjust generic enchantment level to compensate.
 
-    itm.edit[mh#swrd7]
+    itm.edit[mh#sw1h7]
     [
       m_enchantment=2
       m.fx.delete{s_opcode = 344}
     ]
 
-    // mh#swrd4 - Sword of the Planes
+    // mh#sw1h4 - Sword of the Planes
     //
     // Action TransformItem() is not available in classic, script uses
     // TakeItemReplace() instead.  Set lore to 0 to avoid the swapped item
     // from being unidentified all the time.
 
-    itm.edit[mh#swrd4 mh#swd4a]
+    itm.edit[mh#sw1h4 mh#swd4a]
     [
       m_lore_to_identify = 0
     ]

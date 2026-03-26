@@ -108,7 +108,7 @@ BEGIN holy_sword
   = @1093
   = @1094
   IF ~~
-    DO ~GiveItemCreate("mh#swrda", LastTalkedToBy(Myself), 0, 1, 1)
+    DO ~GiveItemCreate("mh#sw1ha", LastTalkedToBy(Myself), 0, 1, 1)
         SetGlobal("mh#BrokkHolySword", "GLOBAL", 1)~
     SOLVED_JOURNAL @1095
   EXIT
@@ -302,7 +302,7 @@ BEGIN katana3
         DestroyItem("mh#comp4")
 	TakePartyGold(1000)
 	DestroyGold(1000)
-	GiveItemCreate("mh#swrd8", LastTalkedToBy(Myself), 0, 0, 0)
+	GiveItemCreate("mh#sw1h8", LastTalkedToBy(Myself), 0, 0, 0)
         EraseJournalEntry(@1060)
         SetGlobal("mh#BrokkKatana", "GLOBAL", 2)~
     SOLVED_JOURNAL @1063

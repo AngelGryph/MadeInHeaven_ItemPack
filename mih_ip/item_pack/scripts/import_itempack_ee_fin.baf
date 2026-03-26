@@ -20,7 +20,7 @@ THEN
 END
 
 IF Global("mh#ImportItemsMaheer", "GLOBAL", 0)
-   PartyHasItem("mh#swrd2")  
+   PartyHasItem("mh#sw1h2")  
 THEN
   RESPONSE #100
   SetGlobal("mh#ImportItemsMaheer", "GLOBAL", 4)

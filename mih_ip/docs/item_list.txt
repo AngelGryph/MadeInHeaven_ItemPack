@@ -8,9 +8,14 @@ mh#amul7 Medallion of the Arctic		Encyclopedia Magica (2e)
 mh#amul8 Medallion of Faith			Encyclopedia Magica (2e)
 mh#amul9 Amulet of the Sacred Fist
 
+*mh#band1 Circlet of the Wilderness		Spellbound (2e)
+*mh#band2 Improved Circlet of the Wilderness	Spellbound (2e)
+*mh#band3 Ultimate Circlet of the Wilderness	Spellbound (2e)
+
 mh#belt1 Girdle of Dwarvenkind			DMG (2e)
 mh#belt2 Sunite Sash				Magic of Faerun (3e)
 mh#belt3 Storm's Garter				Heroes' Lorebook (2e)
+mh#belt4 Girdle of Many Pouches			DMG (2e)
 mh#belt5 Adriyana's Garter			Secrets of the Magister (2e)
 mh#belt6 Girdle of Cloud Giant Strength		DMG (2e)
 mh#belt7 Girdle of Storm Giant Strength		DMG (2e)
@@ -24,6 +29,7 @@ mh#brac2 Gauntlets of the Dwarven King
 mh#brac3 Bracers of Winter's Chill
 mh#brac4 Bracers of the Wind			Legends & Lore (2e)
 mh#brac5 Gauntlets of Smiting
+*mh#brac6 Galdaeryn's Gage			Volo's Guide to the SC (2e)
 mh#brac7 Gloves of Evasion			Complete Thieves (2e)
 mh#brac8 Hand of Fury				Volo's Guide to the SC (2e)
 mh#brac9 Gloves of Thievery			Unearthed Arcana (2e)
@@ -32,10 +38,6 @@ mh#btax1 Foesplitter +1				Races of Faerun (3e)
 mh#btax2 Trollkiller +2
 mh#btax3 Redethemar +4				Elves of Evermeet (2e)
 mh#btax4 Might of Heroes +3			Encyclopedia Magica (2e)
-
-*mh#band1 Circlet of the Wilderness (v1)		Spellbound (2e)
-*mh#band2 Circlet of the Wilderness (v2)		Spellbound (2e)
-*mh#band3 Circlet of the Wilderness (v3)		Spellbound (2e)
 
 mh#bull1 Priest's Bullet			Libris Mortis (3.5e)
 mh#bull2 Bullet of Pulverizing +1		Encyclopedia Magica (2e)
@@ -61,7 +63,6 @@ mh#comp4 Rusty Katana
 mh#comp5 Unicorn Horn
 mh#comp6 Black Dragon Scales
 mh#comp7 Green Dragon Scales
-*mh#comp8 Crown
 
 mh#dagg1 Catclaw +3				Fafhrd and the Gray Mouser
 mh#dagg2 Giantsbane +1				Encyclopedia Magica (2e)
@@ -83,7 +84,7 @@ mh#hamm2 Maul of the Titans			DMG (2e)
 
 mh#helm1 Helm of Valor				Complete Elves (2e)
 mh#helm2 Helm of the Dwarven Lords
-*mh#helm3 Wyvern Crown of Cormyr		Volo's Guide to ATM (2e)
+mh#helm3 Wyvern Crown of Cormyr			Volo's Guide to ATM (2e)
 mh#helm4 Helm of Darkness			Encyclopedia Magica (2e)
 
 mh#hide1 Winter Wolf Hide +1
@@ -137,6 +138,7 @@ mh#ringa Ring of the Lich			DMG (2e)
 mh#ringb Ring of the Hierophant			Complete Druid (2e)
 mh#ringc Browdow's Ring				Encyclopedia Magica (2e)
 mh#ringd Ring of Fearlessness			Encyclopedia Magica (2e)
+mh#ringe Ring of Izmur				Van Richten's Guide to the Lich
 
 mh#robe1 Robe of the Elements
 mh#robe2 Robe of the Necromancer
@@ -162,16 +164,16 @@ mh#staf2 Staff of Swarming Insects +2		DMG (2e)
 mh#staf3 Staff of Water +2
 mh#staf4 Staff of the Legion +5			Undead (2e)
 
-mh#swrd1 Terminus Est +2			Castlevania Symphony o/t Night
-mh#swrd2 Smythe's Slicer +1
-mh#swrd3 Scimitar of the Seven +4		LoZ: Breath of the Wild
-mh#swrd4 Sword of the Planes +1			DMG (2e)
-mh#swrd5 Greenswathe +3				Encyclopedia Magica (2e)
-mh#swrd7 Mirthal +1
-mh#swrd8 Golden Sky +2
-mh#swrd9 Cold Flame +3
-mh#swrda Holy Sword +2
-mh#swrdb Kanalruil +4				Elves of Evermeet (2e)
+mh#sw1h1 Terminus Est +2			Castlevania Symphony o/t Night
+mh#sw1h2 Smythe's Slicer +1
+mh#sw1h3 Scimitar of the Seven +4		LoZ: Breath of the Wild
+mh#sw1h4 Sword of the Planes +1			DMG (2e)
+mh#sw1h5 Greenswathe +3				Encyclopedia Magica (2e)
+mh#sw1h7 Mirthal +1
+mh#sw1h8 Golden Sky +2
+mh#sw1h9 Cold Flame +3
+mh#sw1ha Holy Sword +2
+mh#sw1hb Kanalruil +4				Elves of Evermeet (2e)
 
 mh#tome1 Book of Exalted Deeds			DMG (2e)
 mh#tome2 Book of Vile Darkness			DMG (2e)
