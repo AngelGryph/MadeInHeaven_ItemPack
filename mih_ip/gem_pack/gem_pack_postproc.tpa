@@ -18,6 +18,41 @@ BEGIN
     array	= "new_treasures"
     resref	= "rndtreas"
   END
+
+  ACTION_IF (MOD_IS_INSTALLED ~thecalling.tp2~ 0) BEGIN // mage calling - add gems to selection process
+
+    OUTER_SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/english/game.tra~ FROM ~thalan~)
+
+    ACTION_IF gem_state < 0 BEGIN // gem_state not found, probably because it's not installed in english
+
+      COPY - ~weidu.log~ ~weidu.log~ // use - so even if we do accidentally change something, no harm done
+        REPLACE_EVALUATE CASE_INSENSITIVE "\(~.+thecalling\.tp2~ #\)\([0-9]+\)" BEGIN // get installed language of the calling
+          PATCH_MATCH MATCH2 WITH // ones commented out don't have this dialogue translated
+            //1 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/czech/game.tra~ FROM ~thalan~) END
+            2 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/french/game.tra~ FROM ~thalan~) END
+            //3 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/german/game.tra~ FROM ~thalan~) END
+            //4 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/italian/game.tra~ FROM ~thalan~) END
+            //5 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/korean/game.tra~ FROM ~thalan~) END
+            6 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/polish/game.tra~ FROM ~thalan~) END
+            7 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/russian/game.tra~ FROM ~thalan~) END
+            8 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/spanish/game.tra~ FROM ~thalan~) END
+            9 BEGIN SET gem_state = (STATE_WHICH_SAYS 1037 IN ~thecalling/languages/schinese/game.tra~ FROM ~thalan~) END
+            DEFAULT
+          END
+        END ~%MATCH1%%MATCH2%~
+        BUT_ONLY
+
+    END
+
+    ACTION_IF gem_state >= 0 BEGIN // additional failsafe - if gem selection state not found, don't bother
+
+      OUTER_SET gem_q3 = gem_state + 3 // GOTO state for q3 gem is always three past the selection state
+      COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/gem_pack/thecalling.d~
+
+    END
+
+  END
+
 END	// gem_pack_postproc
 
 
