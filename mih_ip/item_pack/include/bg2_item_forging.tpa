@@ -2,6 +2,21 @@ DEFINE_ACTION_FUNCTION bg2_item_forging
 BEGIN
   ACTION_IF is_bg2
   BEGIN
+    LAUNCH_ACTION_FUNCTION check_ini
+      STR_VAR
+      ini		= "dexterity_ioun_stone"
+      RET
+      dexterity_ioun_stone 	= value
+    END
+
+    ACTION_IF NOT FILE_EXISTS_IN_GAME "%dexterity_ioun_stone%.itm"
+    BEGIN
+      itm.make[%dexterity_ioun_stone%]
+      [
+        m.fx.add{s_opcode = 6;;s_timing := "Equipped";;s_parameter1 = 1}
+      ]
+    END
+
     LAUNCH_ACTION_FUNCTION install
       STR_VAR
       file	= "cromwell_forge.d"

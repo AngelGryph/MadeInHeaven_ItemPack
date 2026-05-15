@@ -13,30 +13,25 @@ BEGIN
 
   // Apply immunity effects to certain items
 
-  itm.edit[mh#drag2]
-  [
-    m.immunity_effect{poison diseased}
-  ]
+  ACTION_CLEAR_ARRAY item_immunities
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY item_immunities
+  BEGIN
+    "mh#drag2" => "poison diseased"
+    "mh#ring5" => "charm confusion feeblemind stun"
+    "mh#ringd" => "fear"
+    "mh#ringe" => "hold paralyze"
+    "mh#robe2" => "energy_drain"
+    "mh#staf4" => "energy_drain"
+    "mh#sper1" => "poison"
+  END
 
-  itm.edit[mh#ring5]
-  [
-    m.immunity_effect{charm confusion feeblemind stun}
-  ]
-
-  itm.edit[mh#ringd]
-  [
-    m.immunity_effect{fear}
-  ]
-
-  itm.edit[mh#robe2 mh#staf4]
-  [
-    m.immunity_effect{energy_drain}
-  ]
-
-  itm.edit[mh#sper1]
-  [
-    m.immunity_effect{poison}
-  ]
+  ACTION_PHP_EACH item_immunities AS item => immunities
+  BEGIN
+    itm.edit[%item%]
+    [
+      m.immunity_effect{%immunities%}
+    ]
+  END
 END	// item_pack_postproc
 
 

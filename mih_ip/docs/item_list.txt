@@ -154,7 +154,7 @@ mh#shld1 Meteoric Shield +2
 mh#shld2 Ankheg Shield +1
 mh#shld3 Shield of the Phoenix +2
 mh#shld4 Shield of the Three Kings +5
-*mh#shld5 Force Buckler +1
+mh#shld5 Force Buckler +1
 
 mh#sper1 Alicorn Spear +2
 mh#sper2 Hadrion's Spear +3			Encyclopedia Magica (2e)

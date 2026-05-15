@@ -60,7 +60,7 @@ mh#clck9	18	19	*	*	0x1	*
 mh#comp1	24	25	*	*	0x0	*
 mh#comp2	81	82	*	*	0x0	*
 mh#comp3	83	84	*	*	0x0	*
-mh#comp4	181	182	329	330	0x0	*
+mh#comp4	181	182	*	*	0x0	*
 mh#comp5	184	186	183	185	0x0	*
 mh#comp6	285	286	*	*	0x0	*
 mh#comp7	319	320	*	*	0x0	*
@@ -169,7 +169,7 @@ mh#sw1h4	110	111	*	*	0x0	*
 mh#swd4a	112	113	*	*	0x0	*
 mh#sw1h5	331	332	*	*	0x0	*
 mh#sw1h7	208	209	*	*	0x0	*
-mh#sw1h8	210	211	329	330	0x0	*
+mh#sw1h8	210	211	*	*	0x0	*
 mh#sw1h9	212	213	*	*	0x0	*
 mh#sw1ha	297	298	*	*	0x0	*
 mh#sw1hb	341	342	*	*	0x0	*

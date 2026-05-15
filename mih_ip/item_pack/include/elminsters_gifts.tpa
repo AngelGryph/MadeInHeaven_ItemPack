@@ -1,0 +1,13 @@
+DEFINE_ACTION_FUNCTION elminsters_gifts
+BEGIN
+  ACTION_IF is_bg1
+  BEGIN
+    LAUNCH_ACTION_FUNCTION install
+      STR_VAR
+      file	= "elminster_bg1.d"
+      location	= "dialogs"
+    END
+  END	// is_bg1
+END	// elminsters_gifts
+
+

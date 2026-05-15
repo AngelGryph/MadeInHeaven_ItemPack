@@ -48,7 +48,7 @@ mh#dagg3 Golemblight +2				Trademeet Merchant (shop)
 mh#dart1 Lein's Fiery Darts +2			Planar Sphere (chest)
 mh#dart2 Chandler's Icy Darts +2		Planar Sphere (chest)
 
-mh#drag1 Black Dragon Scale			Cromwell (forging)
+mh#drag1 Black Dragon Scale			Cromwell (event)
 
 mh#flai1 Slimecrusher +1			Maheer (shop)
 

@@ -1,7 +1,7 @@
 // Item names, descriptions and additional strings.
 
-@0    = ~Amulet against Undead~
-@1    = ~As long as the dead have been walking the land of the living, the clergy of all good deities have been creating enchanted items to help destroy these foul abominations.  This particular amulet was created by the clergy of Lathander to aid a brave adventurer willing to take the fight to these cursed foes of all life.
+@0     = ~Amulet against Undead~
+@1     = ~As long as the dead have been walking the land of the living, the clergy of all good deities have been creating enchanted items to help destroy these foul abominations.  This particular amulet was created by the clergy of Lathander to aid a brave adventurer willing to take the fight to these cursed foes of all life.
 
 STATISTICS:
 
@@ -11,8 +11,8 @@ Equipped abilities:
 – Turn Undead Level: +2
 
 Weight: 3~
-@2    = ~Necklace of Prayer Beads~
-@3    = ~Attached to this enchanted necklace are several large gems with holy scriptures engraved in them.  Those versed in religion can use these to cast some beneficial spells a few times per day.
+@2     = ~Necklace of Prayer Beads~
+@3     = ~Attached to this enchanted necklace are several large gems with holy scriptures engraved in them.  Those versed in religion can use these to cast some beneficial spells a few times per day.
 
 STATISTICS:
 
@@ -22,8 +22,8 @@ Charged abilities:
 – Neutralize Poison (1/day)
 
 Weight: 3~
-@4    = ~Gem of Insight~
-@5    = ~The enchanted gem on this pendant bestows an unusual sharpness of wit and clarity of mind upon the wearer.  It can also be used to raise the wearer's intelligence permanently, but in this case the gem and the wisdom it bestows will be lost forever.
+@4     = ~Gem of Insight~
+@5     = ~The enchanted gem on this pendant bestows an unusual sharpness of wit and clarity of mind upon the wearer.  It can also be used to raise the wearer's intelligence permanently, but in this case the gem and the wisdom it bestows will be lost forever.
  
 Many a person in Faerun has wished for a dozen or so of these gems to put on less than bright employees, apprentices or minions, but as Thalantyr of Beregost once put it: "Even the dwarves' deepest gem mines will have run dry long before we have eliminated all the stupidity from Faerun."
 
@@ -37,8 +37,8 @@ Equipped abilities:
 – Wisdom: +1
 
 Weight: 3~
-@6    = ~Gem of Seeing~
-@7    = ~Peering through this magical gem allows the user to see the world around <PRO_HIMHER> as it truly is, piercing all kinds of invisibility and illusions.
+@6     = ~Gem of Seeing~
+@7     = ~Peering through this magical gem allows the user to see the world around <PRO_HIMHER> as it truly is, piercing all kinds of invisibility and illusions.
 
 An old legend tells of a wizard who invented a more powerful version of this item that always allowed him to see the truth.  In the end he went insane, as some things are hidden for a reason and there are things out there that no mortal was meant to see.  Perhaps it is a good thing then, that this gem will function but once a day.
 
@@ -48,8 +48,8 @@ Charged abilities:
 – True Seeing (1/day)
 
 Weight: 1~
-@8    = ~Girdle of Dwarvenkind~
-@9    = ~Dwarven priests of Moradin sometimes fashion these belts to bestow upon a non-dwarf who has done the clan a great service.  In addition to making the wearer an honorary clans-member, the girdle has a number of beneficial effects.
+@8     = ~Girdle of Dwarvenkind~
+@9     = ~Dwarven priests of Moradin sometimes fashion these belts to bestow upon a non-dwarf who has done the clan a great service.  In addition to making the wearer an honorary clans-member, the girdle has a number of beneficial effects.
 
 STATISTICS:
 
@@ -62,8 +62,8 @@ Equiped abilities:
 – Infravision 60'
 
 Weight: 2~
-@10   = ~Boots of the Master Ninja~
-@11   = ~These enchanted boots are more properly known as 'feather tabi' in their country of origin, faraway Kara-Tur.  Even in that mystical land they are rare enough, the secrets of their creation only known to few.  For even one pair to show up at the Sword Coast is a truly exceptional situation.
+@10    = ~Boots of the Master Ninja~
+@11    = ~These enchanted boots are more properly known as 'feather tabi' in their country of origin, faraway Kara-Tur.  Even in that mystical land they are rare enough, the secrets of their creation only known to few.  For even one pair to show up at the Sword Coast is a truly exceptional situation.
   
 When worn, they reduce the impact of the owner's weight on the surface underneath to almost nothing, preventing old wooden floors from creaking and traps operated by pressure plates from being triggered.
 
@@ -74,8 +74,8 @@ Equipped abilities:
 – Find Traps: +10%
 
 Weight: 4~
-@12   = ~Bracers of the Dwarven King~
-@13   = ~These golden gauntlets of dwarven make are quite old and have been worn by more than a few dwarven kings.  Their last known owner was Garumn Battlehammer of Mithral Hall, but when his grandson Bruenor discovered his body, the gauntlets were missing.  They appeared a few years later when a drow trader known as Nym sold them to a surfacer.
+@12    = ~Bracers of the Dwarven King~
+@13    = ~These golden gauntlets of dwarven make are quite old and have been worn by more than a few dwarven kings.  Their last known owner was Garumn Battlehammer of Mithral Hall, but when his grandson Bruenor discovered his body, the gauntlets were missing.  They appeared a few years later when a drow trader known as Nym sold them to a surfacer.
 
 STATISTICS:
 
@@ -83,8 +83,8 @@ Equipped abilities:
 – Hit Points: +5
 
 Weight: 1~
-@14   = ~Foesplitter +1~
-@15   = ~This mighty axe was forged by the shield dwarves of the North.  The blade is incredibly sharp and it has been known to cleave more than a few foes.
+@14    = ~Foesplitter +1~
+@15    = ~This mighty axe was forged by the shield dwarves of the North.  The blade is incredibly sharp and it has been known to cleave more than a few foes.
 
 STATISTICS:
 
@@ -101,8 +101,8 @@ Requires:
  10 Strength
 
 Weight: 7~
-@16   = ~Mutamin's Cloak~
-@17   = ~This cloak was taken from the mad wizard Mutamin's body when he was slain by <CHARNAME> in the fields east of Beregost.  No prior history is known, perhaps Mutamin himself created it in order to keep him safe from his own 'pets'.
+@16    = ~Mutamin's Cloak~
+@17    = ~This cloak was taken from the mad wizard Mutamin's body when he was slain by <CHARNAME> in the fields east of Beregost.  No prior history is known, perhaps Mutamin himself created it in order to keep him safe from his own 'pets'.
 
 STATISTICS:
 
@@ -110,8 +110,8 @@ Equipped abilities:
 – Immune to petrification
 
 Weight: 3~
-@18   = ~Battlecloak of Vycaena~
-@19   = ~Cloak of Protection +4/+1: 'Battlecloak of Vycaena'
+@18    = ~Battlecloak of Vycaena~
+@19    = ~Cloak of Protection +4/+1: 'Battlecloak of Vycaena'
 
 This voluminous, emerald-green cloak is trimmed and richly decorated with fine gold thread, and an emerald has been set in each of its two golden clasps.  This alone would make it worth a fortune, but in addition to that the cloak carries an enchantment that protects its wearer almost as well as chain mail.
 
@@ -124,8 +124,8 @@ Equipped abilities:
 – Saving Throws: +1
 
 Weight: 3~
-@20   = ~Final Strike +3~
-@21   = ~This mighty war hammer was forged for and wielded by the dwarven hero Vanik Caveborn.  A calm, calculated and methodical warrior, he would often say "It's not about who strikes first, but who strikes last!"  After a career as an adventurer and mercenary that spanned almost two centuries, Vanik died of old age while preparing for a raid on a lich's lair.
+@20    = ~Final Strike +3~
+@21    = ~This mighty war hammer was forged for and wielded by the dwarven hero Vanik Caveborn.  A calm, calculated and methodical warrior, he would often say "It's not about who strikes first, but who strikes last!"  After a career as an adventurer and mercenary that spanned almost two centuries, Vanik died of old age while preparing for a raid on a lich's lair.
 
 STATISTICS:
 
@@ -141,8 +141,8 @@ Type: 1-handed
 Requires: 9 Strength
 
 Weight: 4~
-@22   = ~Helm of Valor~
-@23   = ~Also known as the "commander's helm", these golden helmets are often worn by elven generals and other high-ranking officials.  Their enchantment serves to enable the commander to stay upright even in the face of enemy fire, inspiring both <PRO_HISHER> men and allowing <PRO_HISHER> to keep oversight of the battlefield.
+@22    = ~Helm of Valor~
+@23    = ~Also known as the "commander's helm", these golden helmets are often worn by elven generals and other high-ranking officials.  Their enchantment serves to enable the commander to stay upright even in the face of enemy fire, inspiring both <PRO_HISHER> men and allowing <PRO_HISHER> to keep oversight of the battlefield.
 
 STATISTICS:
 
@@ -152,12 +152,12 @@ Equipped abilities:
 – Protects against critical hits
 
 Weight: 2~
-@24   = ~Meteoric Iron~
-@25   = ~At first glance these seem to be worthless red rocks, but closer inspection reveals them to be fragments of an iron meteorite.  This is useful as a crafting material, and might be worth something to a skilled smith.
+@24    = ~Meteoric Iron~
+@25    = ~At first glance these seem to be worthless red rocks, but closer inspection reveals them to be fragments of an iron meteorite.  This is useful as a crafting material, and might be worth something to a skilled smith.
 
 Weight: 150~
-@26   = ~Ring of the Lich~
-@27   = ~Ring of Protection +6/+1: 'Ring of the Lich'
+@26    = ~Ring of the Lich~
+@27    = ~Ring of Protection +6/+1: 'Ring of the Lich'
 
 This magical ring was created centuries ago by Antares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Antares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
 
@@ -170,8 +170,8 @@ Equipped abilities:
 – Saving Throws: +1 (all)
 
 Weight: 0~
-@28   = ~Ring of Warmth~
-@29   = ~This type of magical ring is often sought by those who are regularly exposed to freezing conditions, like mountaineers, explorers and, of course, adventurers.  The ring keeps the wearer comfortably warm in all but the most extreme cold weather, and reduces the damage done by freezing attacks like the Ice Storm spell or the chilling breath of a winter wolf.
+@28    = ~Ring of Warmth~
+@29    = ~This type of magical ring is often sought by those who are regularly exposed to freezing conditions, like mountaineers, explorers and, of course, adventurers.  The ring keeps the wearer comfortably warm in all but the most extreme cold weather, and reduces the damage done by freezing attacks like the Ice Storm spell or the chilling breath of a winter wolf.
 
 STATISTICS:
 
@@ -179,8 +179,8 @@ Equipped abilities:
 – Cold Resistance: +25%
 
 Weight: 0~
-@30   = ~Ring of the Neophyte~
-@31   = ~Wizards sometimes create rings like these for very promising apprentices, both as a reward for their years of service and to provide their prize students with a small advantage on the hard and often dangerous road to arcane mastery.
+@30    = ~Ring of the Neophyte~
+@31    = ~Wizards sometimes create rings like these for very promising apprentices, both as a reward for their years of service and to provide their prize students with a small advantage on the hard and often dangerous road to arcane mastery.
 
 STATISTICS:
 
@@ -188,8 +188,8 @@ Equipped abilities:
 Arcane Spells: +1 first level spell
 
 Weight: 0~
-@32   = ~Cloak of the Night Sky~
-@33   = ~This enchanted blue-black cloak was fashioned in the near-mythical elven nation of Evermeet.  Crafted to resemble the night sky, glowing stars move across it in a flowing pattern whenever it is worn.  It bears a powerful protective enchantment, but that same enchantment also prevents it from being worn by those not of elven blood.
+@32    = ~Cloak of the Night Sky~
+@33    = ~This enchanted blue-black cloak was fashioned in the near-mythical elven nation of Evermeet.  Crafted to resemble the night sky, glowing stars move across it in a flowing pattern whenever it is worn.  It bears a powerful protective enchantment, but that same enchantment also prevents it from being worn by those not of elven blood.
 
 STATISTICS:
 
@@ -201,8 +201,8 @@ Charged abilities:
 – Improved Invisibility (1/day)
 
 Weight: 3~
-@34   = ~Meteoric Shield +2~
-@35   = ~Forged for <CHARNAME> by the dwarven smith Brokk, this shield is quite a work of art.  The tough meteoric iron not only provides excellent physical protection, but also seems to dampen bursts of magical energy, protecting the wielder from raw magical damage like that inflicted by the Magic Missile spell.  This shield is a bit heavier than a regular one though.
+@34    = ~Meteoric Shield +2~
+@35    = ~Forged for <CHARNAME> by the dwarven smith Brokk, this shield is quite a work of art.  The tough meteoric iron not only provides excellent physical protection, but also seems to dampen bursts of magical energy, protecting the wielder from raw magical damage like that inflicted by the Magic Missile spell.  This shield is a bit heavier than a regular one though.
 
 STATISTICS:
 
@@ -213,8 +213,8 @@ Magic Damage Resistance: +50%
 Requires: 14 Strength
 
 Weight: 8~
-@36   = ~Terminus Est +2~
-@37   = ~When lady Walraven was judged guilty of high treason and sentenced to death, she had but one last request, that her delicate neck be spared the crude executioner's axe.  The village smith then forged this sword, and a knight beheaded her with it.  The sword was placed in Walraven keep, but not for long.  A week later, both the keep and the village were razed to the ground by an orc horde, and the sword was among the many things pillaged.  The tribe's shaman enchanted it and for years it served as the weapon of the chieftain until he fell in a fight against a paladin from Waterdeep.
+@36    = ~Terminus Est +2~
+@37    = ~When lady Walraven was judged guilty of high treason and sentenced to death, she had but one last request, that her delicate neck be spared the crude executioner's axe.  The village smith then forged this sword, and a knight beheaded her with it.  The sword was placed in Walraven keep, but not for long.  A week later, both the keep and the village were razed to the ground by an orc horde, and the sword was among the many things pillaged.  The tribe's shaman enchanted it and for years it served as the weapon of the chieftain until he fell in a fight against a paladin from Waterdeep.
 
 STATISTICS:
 
@@ -230,8 +230,8 @@ Requires:
  11 Strength
 
 Weight: 7~
-@38   = ~Smythe's Slicer +1~
-@39   = ~Smythe Stonehollow forged this weapon almost two hundred years ago after the Stonehollow clan was forced to flee their ancestral home when it overrun by arachnids from the Underdark.  He gathered a band of human- and elven adventurers and tried to drive the creatures back.  The attempt was partially successful, but in the end Smythe fell in a battle with the drow behind the invasion.
+@38    = ~Smythe's Slicer +1~
+@39    = ~Smythe Stonehollow forged this weapon almost two hundred years ago after the Stonehollow clan was forced to flee their ancestral home when it overrun by arachnids from the Underdark.  He gathered a band of human- and elven adventurers and tried to drive the creatures back.  The attempt was partially successful, but in the end Smythe fell in a battle with the drow behind the invasion.
 
 STATISTICS:
 
@@ -244,8 +244,8 @@ Requires:
  10 Strength
 
 Weight: 3~
-@40   = ~Brooch of Shielding~
-@41   = ~This enchanted brooch has but one purpose, to harmlessly absorb the projectiles of the Magic Missile spell and similar effects.
+@40    = ~Brooch of Shielding~
+@41    = ~This enchanted brooch has but one purpose, to harmlessly absorb the projectiles of the Magic Missile spell and similar effects.
 
 There is no known history, and the near mint condition of the item suggests it was crafted quite recently, perhaps by Thalantyr of Beregost.
 
@@ -255,8 +255,8 @@ Equipped abilities:
 – Immunity to Magic Missile
 
 Weight: 2~
-@42   = ~Winter Wolf Hide +1~
-@43   = ~This hide armor was sewn together from the hides of several winter wolves.  Some of the latent magic of these majestic wolves remains, granting superior protection as well as insulation from cold.  The armor remains uncomfortable to wear and appalling to look at though, and it will not fetch a high price in shops.
+@42    = ~Winter Wolf Hide +1~
+@43    = ~This hide armor was sewn together from the hides of several winter wolves.  Some of the latent magic of these majestic wolves remains, granting superior protection as well as insulation from cold.  The armor remains uncomfortable to wear and appalling to look at though, and it will not fetch a high price in shops.
 
 STATISTICS:
 
@@ -273,8 +273,8 @@ Requires:
  6 Strength
 
 Weight: 20~
-@44   = ~Eversing +2~
-@45   = ~This beautiful, elven-crafted splint mail is a pure work of art.  Each metal strip has been individually silvered, polished and engraved with a single elven rune.  Although it is many centuries old, there is not a single scratch or speck of rust to be found, its beauty remains untarnished.
+@44    = ~Eversing +2~
+@45    = ~This beautiful, elven-crafted splint mail is a pure work of art.  Each metal strip has been individually silvered, polished and engraved with a single elven rune.  Although it is many centuries old, there is not a single scratch or speck of rust to be found, its beauty remains untarnished.
 
 Not much is known about the history of this armor.  It is known that it is a relic from the ancient Crown Wars, but elven sages invariably clam up when pressed for details and others find their knowledge coming short.  Possibly it was crafted by house Vishaan, a name forever associated with the blackest pages of elven history.
 
@@ -289,8 +289,8 @@ Requires:
  8 Strength
 
 Weight: 8~
-@46   = ~Sunite Sash~
-@47   = ~This beautiful scarlet sash has been woven from fine red thread and delicate gold wire.  Priests of Sune sometimes create these enchanted sashes as a gift to a loved one.
+@46    = ~Sunite Sash~
+@47    = ~This beautiful scarlet sash has been woven from fine red thread and delicate gold wire.  Priests of Sune sometimes create these enchanted sashes as a gift to a loved one.
 
 STATISTICS:
 
@@ -299,8 +299,8 @@ Equipped abilities:
 – Charisma: +2
 
 Weight: 2~
-@48   = ~Boots of Striding and Springing~
-@49   = ~The wearer of these enchanted boots becomes exceptionally light on <PRO_HISHER> feet and can easily make spectacular leaps in all directions.  In addition to an improved movement rate, this makes <PRO_HIMHER> harder to hit in combat.
+@48    = ~Boots of Striding and Springing~
+@49    = ~The wearer of these enchanted boots becomes exceptionally light on <PRO_HISHER> feet and can easily make spectacular leaps in all directions.  In addition to an improved movement rate, this makes <PRO_HIMHER> harder to hit in combat.
 
 STATISTICS:
 
@@ -309,8 +309,8 @@ Equipped abilities:
 – Movement Rate: +2
 
 Weight: 4~
-@50   = ~Vambraces of Evil's Warding~
-@51   = ~Legend has it that these bracers were forged on mount Celestia itself and given to the first champion of good, aeons ago.  Whether that is true remains to be seen, but the glowing blue celestial runes do suggest a divine origin of some sort.  Countless of mortal champions have worn these bracers in the everlasting battle against evil.
+@50    = ~Vambraces of Evil's Warding~
+@51    = ~Legend has it that these bracers were forged on mount Celestia itself and given to the first champion of good, aeons ago.  Whether that is true remains to be seen, but the glowing blue celestial runes do suggest a divine origin of some sort.  Countless of mortal champions have worn these bracers in the everlasting battle against evil.
 
 STATISTICS:
 
@@ -318,8 +318,8 @@ Equipped abilities:
 – Protection from Evil
 
 Weight: 2~
-@52   = ~Catclaw +3~
-@53   = ~This dagger was once the property of a rogue known only as 'The Gray Mouser'.  Details about this legendary rogue are vague at best.  Some sources claim he came from a city named Lankhmar, but no city by that name exists in Faerun.
+@52    = ~Catclaw +3~
+@53    = ~This dagger was once the property of a rogue known only as 'The Gray Mouser'.  Details about this legendary rogue are vague at best.  Some sources claim he came from a city named Lankhmar, but no city by that name exists in Faerun.
 
 Something in the enchantment of this dagger hints it may originate from another world where the rules of magic differ slightly from those of Faerun.  Such things are not unheard of in the Forgotten Realms.
 
@@ -338,8 +338,8 @@ Requires:
  3 Strength
 
 Weight: 1~
-@54   = ~Pale Blue Ioun Stone~
-@55   = ~The beautiful azure blue of this ioun stone resembles the sky on a warm summer day.
+@54    = ~Pale Blue Ioun Stone~
+@55    = ~The beautiful azure blue of this ioun stone resembles the sky on a warm summer day.
 
 STATISTICS:
 
@@ -347,7 +347,7 @@ Equipped abilities:
 Strength: +1 bonus
 
 Weight: 2~
-@56   = ~This ioun stone is so clear and transparent it becomes almost invisible.  Such ioun stones can supposedly absorb and nullify magical energy.
+@56    = ~This ioun stone is so clear and transparent it becomes almost invisible.  Such ioun stones can supposedly absorb and nullify magical energy.
 
 STATISTICS:
 
@@ -355,8 +355,8 @@ Equipped abilities:
 Magic Resistance: +5%
 
 Weight: 2~
-@57   = ~Bow of Eletha~
-@58   = ~This bow once belonged to the green elf Eletha, a legendary archer and hero.  How it came to leave elven lands is unknown, but the elves would certainly like it returned, and would no doubt take a dim view of anyone found using it for evil purposes.
+@57    = ~Bow of Eletha~
+@58    = ~This bow once belonged to the green elf Eletha, a legendary archer and hero.  How it came to leave elven lands is unknown, but the elves would certainly like it returned, and would no doubt take a dim view of anyone found using it for evil purposes.
 
 STATISTICS:
 
@@ -374,8 +374,8 @@ Requires:
  6 Strength
 
 Weight: 3~
-@59   = ~Oil of Acid Resistance~
-@60   = ~This ethereal oil, when applied to the skin and exposed equipment, bestows virtual immunity to all forms of acid, including ankheg spittle and the corrosive breath of black dragons.  All damage by acid is reduced by 90%.  The effect lasts for 10 turns or until dispelled.
+@59    = ~Oil of Acid Resistance~
+@60    = ~This ethereal oil, when applied to the skin and exposed equipment, bestows virtual immunity to all forms of acid, including ankheg spittle and the corrosive breath of black dragons.  All damage by acid is reduced by 90%.  The effect lasts for 10 turns or until dispelled.
 
 STATISTICS:
 
@@ -383,8 +383,8 @@ Acid Resistance: +90%
 Duration: 10 turns
 
 Weight: 1~
-@61   = ~Ankheg Shield +1~
-@62   = ~The dwarven smith Brokk created this shield for <CHARNAME> from the carapace of an ankheg.  Such material has several advantages over using steel, it cannot rust and weighs much less.  Druids can also use it without restriction.  The only drawback is in the inherent danger of procuring the base material.
+@61    = ~Ankheg Shield +1~
+@62    = ~The dwarven smith Brokk created this shield for <CHARNAME> from the carapace of an ankheg.  Such material has several advantages over using steel, it cannot rust and weighs much less.  Druids can also use it without restriction.  The only drawback is in the inherent danger of procuring the base material.
 
 STATISTICS:
 
@@ -395,8 +395,8 @@ Requires:
  9 Strength
 
 Weight: 3~
-@63   = ~Shield of the Phoenix +2~
-@64   = ~The Order of the Phoenix was a paladin order several hundred years ago.  The cause of the order's disappearance is unclear, some claim they fell to an orc horde, others say a clash of faith ripped them apart, and yet others whisper it was the work of dark forces.  Perhaps all of these are to blame to some degree.  Fact is that the order disappeared almost overnight, and only their iconic shields, occasionally found in an orc lair or dragon hoard, remain.
+@63    = ~Shield of the Phoenix +2~
+@64    = ~The Order of the Phoenix was a paladin order several hundred years ago.  The cause of the order's disappearance is unclear, some claim they fell to an orc horde, others say a clash of faith ripped them apart, and yet others whisper it was the work of dark forces.  Perhaps all of these are to blame to some degree.  Fact is that the order disappeared almost overnight, and only their iconic shields, occasionally found in an orc lair or dragon hoard, remain.
 
 STATISTICS:
 
@@ -409,8 +409,8 @@ Requires:
  12 Strength
 
 Weight: 5~
-@65   = ~Staff of Rumathil +2~
-@66   = ~This ancient staff of elven make is a boon to both wizards and clerics.  The exact origin is a mystery even to the elves themselves, but it is said to have been crafted in the secret elven nation of Evermeet.  How exactly it made its way to the mainland is not known either.
+@65    = ~Staff of Rumathil +2~
+@66    = ~This ancient staff of elven make is a boon to both wizards and clerics.  The exact origin is a mystery even to the elves themselves, but it is said to have been crafted in the secret elven nation of Evermeet.  How exactly it made its way to the mainland is not known either.
 
 STATISTICS:
 
@@ -426,8 +426,8 @@ Requires:
  5 Strength
 
 Weight: 3~
-@67   = ~Wand of Illusions~
-@68   = ~This wand is a powerful defensive tool, it can make a wizard invisible, or create illusionary copies of <PRO_HIMHER>.
+@67    = ~Wand of Illusions~
+@68    = ~This wand is a powerful defensive tool, it can make a wizard invisible, or create illusionary copies of <PRO_HIMHER>.
 
 STATISTICS:
 
@@ -439,8 +439,8 @@ Requires:
  9 Intelligence
 
 Weight: 1~
-@69   = ~White Hide of Umpluutu +2~
-@70   = ~Umpluutu was the name given to an unually large and strong polar bear that plagued the barbarian tribe of the Elk in the frozen tundras of the Spine of the World.  When the barbarians finally felled the great beast, the tribe's shaman created this hide armor from its skin.  How it came to leave the frozen north is not exactly known.
+@69    = ~White Hide of Umpluutu +2~
+@70    = ~Umpluutu was the name given to an unually large and strong polar bear that plagued the barbarian tribe of the Elk in the frozen tundras of the Spine of the World.  When the barbarians finally felled the great beast, the tribe's shaman created this hide armor from its skin.  How it came to leave the frozen north is not exactly known.
 
 Even though Thieves can wear this armor, it has a negative effect on their abilities.
   
@@ -461,8 +461,8 @@ Requires:
  6 Strength
 
 Weight: 25~
-@71   = ~Radiant Star +1~
-@72   = ~This radiant golden mace was created by a joined effort between the temples of Lathander and Selune, and is blessed by both deities.  Made from alchemically treated gold, it is heavier and slower to swing than a standard mace, but it deals extra damage to many things that go bump in the night.  It can also damage some enemies with unusual defenses, like the loup garou and certain demonic beings.
+@71    = ~Radiant Star +1~
+@72    = ~This radiant golden mace was created by a joined effort between the temples of Lathander and Selune, and is blessed by both deities.  Made from alchemically treated gold, it is heavier and slower to swing than a standard mace, but it deals extra damage to many things that go bump in the night.  It can also damage some enemies with unusual defenses, like the loup garou and certain demonic beings.
 
 STATISTICS:
 
@@ -478,8 +478,8 @@ Requires:
  13 Strength
 
 Weight: 15~
-@73   = ~Bracers of Winter's Chill~
-@74   = ~These magical bracers were originally created by the clergy of Auril, the Frost Maiden.  However, one of the priestesses had a crisis of faith and fled with the item.  Aurelite assassins hounded her steps every way and eventually cornered her in Waterdeep.  Fortunately for her, a group of adventurers intervened, saving her life.  She joined the group and they had several adventures together.  Eventually the group disappeared into the Underdark and was never seen again.
+@73    = ~Bracers of Winter's Chill~
+@74    = ~These magical bracers were originally created by the clergy of Auril, the Frost Maiden.  However, one of the priestesses had a crisis of faith and fled with the item.  Aurelite assassins hounded her steps every way and eventually cornered her in Waterdeep.  Fortunately for her, a group of adventurers intervened, saving her life.  She joined the group and they had several adventures together.  Eventually the group disappeared into the Underdark and was never seen again.
 
 STATISTICS:
 
@@ -492,8 +492,8 @@ Charged abilities:
 – Cone of Cold (1/day)
 
 Weight: 2~
-@75   = ~Bracers of the Wind~
-@76   = ~The highwayman Starkas boasted that his sword was fast as lightning, and his victims were often cut to pieces before they could even draw.  However, one day Starkas made a fatal mistake when he tried to rob a lone knight who turned out to be a paladin of Tyr.  Although he struck as quickly as ever, Storkas' blade failed to penetrate the paladin's armor, and he was eventually struck down himself.
+@75    = ~Bracers of the Wind~
+@76    = ~The highwayman Starkas boasted that his sword was fast as lightning, and his victims were often cut to pieces before they could even draw.  However, one day Starkas made a fatal mistake when he tried to rob a lone knight who turned out to be a paladin of Tyr.  Although he struck as quickly as ever, Storkas' blade failed to penetrate the paladin's armor, and he was eventually struck down himself.
 
 It turned out that Starkas' quickness with the blade came from an enchantment on his bracers, but it came at the price of a loss of accuracy.  The choice is obvious, strike quickly or strike true?
 
@@ -504,8 +504,8 @@ Equipped abilities:
 – THAC0: -2
 
 Weight: 2~
-@77   = ~Storm's Garter~
-@78   = ~This enchanted black silken sash was designed by Storm Silverhand, one of the Seven Sisters, but she has shared the secret of making then with other members of the Harpers.  As such, items bearing this title are common among their members and are worn by both genders.  
+@77    = ~Storm's Garter~
+@78    = ~This enchanted black silken sash was designed by Storm Silverhand, one of the Seven Sisters, but she has shared the secret of making then with other members of the Harpers.  As such, items bearing this title are common among their members and are worn by both genders.  
 
 Equipped abilities:
 – Infravision 60'
@@ -517,8 +517,8 @@ Charged abilities:
 – Neutralize Poison (1/day)
 
 Weight: 2~
-@79   = ~Cloak of Arachnida~
-@80   = ~Cloaks of this kind are a boon both to those who ally themselves with giant spiders like some druids or the fearsome drow, and those who would fight against them, like most adventurers.
+@79    = ~Cloak of Arachnida~
+@80    = ~Cloaks of this kind are a boon both to those who ally themselves with giant spiders like some druids or the fearsome drow, and those who would fight against them, like most adventurers.
 
 STATISTICS:
 
@@ -530,16 +530,16 @@ Charged abilities:
 – Web (2/day, 10th level caster)
 
 Weight: 3~
-@81   = ~Arandur Ore~
-@82   = ~These shards of volcanic glass seem like a worthless curiosity at first, but closer inspection reveals they contain veins of arandur, a rare metal that is very prized by dwarven weaponsmiths.
+@81    = ~Arandur Ore~
+@82    = ~These shards of volcanic glass seem like a worthless curiosity at first, but closer inspection reveals they contain veins of arandur, a rare metal that is very prized by dwarven weaponsmiths.
 
 Weight: 75~
-@83   = ~Lux Veritatis~
-@84   = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.
+@83    = ~Lux Veritatis~
+@84    = ~This arcane work describes the proper spells, materials, obscure rituals and other magical requirements needed to enchant a gem of great value into a magical device known as the Gem of Seeing.  Only a master wizard with access to an arcane laboratory can properly use the knowledge in this book.
 
 Weight: 2~
-@85   = ~Ring of Armory~
-@86   = ~This ring is a creation of an abjurer named Delgam of the Many Hands - so called for his extensive use of the expression "on the other hand..."  Delgam eschewed imbuing his items with offensive powers or other miscellaneous magic effects.  Instead, he focused on what abjurers tend to focus on: defense.  Unlike his popular Robes of Armory, this ring is somewhat obscure as most powerful mages consider the basic defensive spells in it beneath them.  To a neophyte it is an extremely useful item though, providing basic defense spells so that the fledgling wizard can concentrate on memorizing other incantations without having to worry about <PRO_HISHER> safety.
+@85    = ~Ring of Armory~
+@86    = ~This ring is a creation of an abjurer named Delgam of the Many Hands - so called for his extensive use of the expression "on the other hand..."  Delgam eschewed imbuing his items with offensive powers or other miscellaneous magic effects.  Instead, he focused on what abjurers tend to focus on: defense.  Unlike his popular Robes of Armory, this ring is somewhat obscure as most powerful mages consider the basic defensive spells in it beneath them.  To a neophyte it is an extremely useful item though, providing basic defense spells so that the fledgling wizard can concentrate on memorizing other incantations without having to worry about <PRO_HISHER> safety.
 
 STATISTICS:
 
@@ -551,8 +551,8 @@ Charged abilities:
 – Shield (1/day)
 
 Weight: 0~
-@87   = ~Celestial Chain +2~
-@88   = ~Forged by the dwarven smith Brokk for <CHARNAME>, this suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously woven from precisely crafted arandur rings by the old dwarf, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a small price to their abilities.
+@87    = ~Celestial Chain +2~
+@88    = ~Forged by the dwarven smith Brokk for <CHARNAME>, this suit of chain is as close to elven chain mail as a non-elf can possibly get to making.  Meticulously woven from precisely crafted arandur rings by the old dwarf, it looks so smooth it almost resembles cloth.  It is very light and comfortable to wear, and as such can be worn by thieves and multi-classed mages, although still at a small price to their abilities.
 
 STATISTICS:
 
@@ -568,8 +568,8 @@ Requires:
  6 Strength
 
 Weight: 7~
-@89   = ~Dwarven Plate +1~
-@90   = ~This stout plate was commissioned from the dwarven smith Brokk by <CHARNAME>.  Forged entirely from the rare metal arandur, it is the pinnacle of the craftsmanship of the old dwarf.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold, adding aditional protection.  Much lighter than most plate and yet extremely resistant to physical damage, this plate was made to last a dwarven lifetime.
+@89    = ~Dwarven Plate +1~
+@90    = ~This stout plate was commissioned from the dwarven smith Brokk by <CHARNAME>.  Forged entirely from the rare metal arandur, it is the pinnacle of the craftsmanship of the old dwarf.  Dwarven runes of protection have been meticulously engraved in the metal and filled with fine gold, adding aditional protection.  Much lighter than most plate and yet extremely resistant to physical damage, this plate was made to last a dwarven lifetime.
 
 Equipped abilities:
 – 10% resistance to all physical damage (slashing, crushing, piercing and missile)
@@ -579,9 +579,9 @@ Requires:
  10 Strength
 
 Weight: 15~
-@91   = ~Crystal Clear Ioun Stone~
-@92   = ~Ring of White Bone~
-@93   = ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
+@91    = ~Crystal Clear Ioun Stone~
+@92    = ~Ring of White Bone~
+@93    = ~Rings of this type are sometimes created by necromancers to provide them with protection from their own nefarious creations.  The more powerful intelligent undead resent being controlled by the living, and one breaking free from control can quickly end the aspiring necromancer's career, as well as <PRO_HISHER> life.
 
 As the name suggests, this ring is carved entirely from bone, preferably from an undead creature destroyed in combat.  When first created, it contains twelve charges of the priest spell "Negative Plane Protection", which can be cast by anyone wearing the ring as if they were a 12th level priest.  After all charges have been used, the ring crumbles into worthless powder.
 
@@ -591,8 +591,8 @@ Charged abilities:
 – Negative Plane Protection (12th level caster)
 
 Weight: 0~
-@94   = ~Ring of Mind Shielding~
-@95   = ~This ring protects the wearer's mind from all external influences such as psionic abilities and spells like Domination.  No prior history is known, this ring seems to have been crafted very recently.  It would be a great boon for any hero who has to explore the Underdark though, as it provides solid defenses against some of its more horrid denizens, especially the mind flayers.  Perhaps it can earn a name and history for itself in this way.
+@94    = ~Ring of Mind Shielding~
+@95    = ~This ring protects the wearer's mind from all external influences such as psionic abilities and spells like Domination.  No prior history is known, this ring seems to have been crafted very recently.  It would be a great boon for any hero who has to explore the Underdark though, as it provides solid defenses against some of its more horrid denizens, especially the mind flayers.  Perhaps it can earn a name and history for itself in this way.
 
 STATISTICS:
 
@@ -601,8 +601,8 @@ Equipped abilities:
 – Wearer's alignment cannot be magically detected.
 
 Weight: 0~
-@96   = ~Ring of Shooting Stars~
-@97   = ~This unusual elven-made ring throbs with power.  It dates back to the days of Myth Drannor, were it was possibly the cause of the destruction of the Rule Tower in the Year of Stern Judgment (666 DR).  Since then it has left a path of chaos and destruction throughout history, having been used in several wars.  Although the ring is not cursed in any way, it seems to be drawn to violent conflicts, and its appearance has become a bad omen to many.
+@96    = ~Ring of Shooting Stars~
+@97    = ~This unusual elven-made ring throbs with power.  It dates back to the days of Myth Drannor, were it was possibly the cause of the destruction of the Rule Tower in the Year of Stern Judgment (666 DR).  Since then it has left a path of chaos and destruction throughout history, having been used in several wars.  Although the ring is not cursed in any way, it seems to be drawn to violent conflicts, and its appearance has become a bad omen to many.
 
 STATISTICS:
 
@@ -615,8 +615,8 @@ Requires:
  14 Intelligence
  
 Weight: 0~
-@98   = ~Robe of the Elements~
-@99   = ~Unsatisfied with the basic mage robes, Zavoros the Moderately Insane experimented to find a more powerful enchantment for his personal wardrobe.  After two explosions, the village being overrun with a horde of accidentally summoned gibberlings, and his latest prototype coming apart at the seams in the town square, he finally came up with this design.  At this point however, he was asked in rather firm terms to perform his experiments in a more remote location, and to never wear untested prototype robes in public again.
+@98    = ~Robe of the Elements~
+@99    = ~Unsatisfied with the basic mage robes, Zavoros the Moderately Insane experimented to find a more powerful enchantment for his personal wardrobe.  After two explosions, the village being overrun with a horde of accidentally summoned gibberlings, and his latest prototype coming apart at the seams in the town square, he finally came up with this design.  At this point however, he was asked in rather firm terms to perform his experiments in a more remote location, and to never wear untested prototype robes in public again.
 
 STATISTICS:
 
@@ -627,8 +627,8 @@ Equipped abilities:
 – Electrical Resistance: +20%
 
 Weight: 3~
-@100  = ~Robe of the Necromancer~
-@101  = ~This robe was created by the Netherese arcanist Jeharis the Red after one too many instances of his own undead creations escaping his control.  Jeharis escaped the fall of Netheril because he was in his secret lair in the Stormhorn mountains at the time, where he eventually transformed himself into a lich.  For one of his gruesome experiments he needed the souls of thirteen virgins, and the subsequent kidnappings eventually led to adventurers finding his lair and destroying the Crimson Flame as he now called himself in an epic battle.  His robe survived the battle and was claimed as a prize by the victors, though what exactly happened to it afterwards and how it arrived in its current location is a riddle for the ages.
+@100   = ~Robe of the Necromancer~
+@101   = ~This robe was created by the Netherese arcanist Jeharis the Red after one too many instances of his own undead creations escaping his control.  Jeharis escaped the fall of Netheril because he was in his secret lair in the Stormhorn mountains at the time, where he eventually transformed himself into a lich.  For one of his gruesome experiments he needed the souls of thirteen virgins, and the subsequent kidnappings eventually led to adventurers finding his lair and destroying the Crimson Flame as he now called himself in an epic battle.  His robe survived the battle and was claimed as a prize by the victors, though what exactly happened to it afterwards and how it arrived in its current location is a riddle for the ages.
 
 STATISTICS:
 
@@ -639,12 +639,12 @@ Equipped abilities:
 – Immunity to Energy Drain
 
 Weight: 3~
-@102  = ~Monk's Robes~
-@103  = ~These are robes monks typically use when practicing their martial arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
+@102   = ~Monk's Robes~
+@103   = ~These are robes monks typically use when practicing their martial arts.  Altough sturdy and resistant to wear and tear, most of them provide no more protection than ordinary clothes.  A few enchanted robes are said to exist though.
 
 Weight: 3~
-@104  = ~Robe of the Pure Heart~
-@105  = ~A priestess of Sune created these robes for a monk lover.  Unfortunately the name turned out be a misnomer; her lover cheated her with another woman.  Heart broken she left, taking the robe with her.  An adventuring party found her corpse in the woods almost a year later, she had apparently fallen victim to bandits.  Having no use for it they eventually sold it to a visiting Calishite monk.
+@104   = ~Robe of the Pure Heart~
+@105   = ~A priestess of Sune created these robes for a monk lover.  Unfortunately the name turned out be a misnomer; her lover cheated her with another woman.  Heart broken she left, taking the robe with her.  An adventuring party found her corpse in the woods almost a year later, she had apparently fallen victim to bandits.  Having no use for it they eventually sold it to a visiting Calishite monk.
 
 These monk robes are made of very tough fibers that resist cutting and carry a minor enchantment that enhances the wearer's defenses somewhat.  
 
@@ -654,8 +654,8 @@ Equipped abilities:
 – Armor Class: +1 (+3 vs. slashing)
 
 Weight: 3~
-@106  = ~Shadow Dancer's Robe~
-@107  = ~Unknown to most surfacers, the drow have a small but succesful monk tradition.  They make great assassins, needing no weapons to be lethal in combat.  The Shadow Dancer was one such assassin, and was sent to murder	the king of a nearby dwarven hall.  The attempt succeeded, but the crown prince relentlessly pursued the killer and eventually avenged his father.  Later on the dwarven hall was abandoned in a hurry and fell in ruin, and adventurers eventually found this robe in a chest buried under the rubble.
+@106   = ~Shadow Dancer's Robe~
+@107   = ~Unknown to most surfacers, the drow have a small but succesful monk tradition.  They make great assassins, needing no weapons to be lethal in combat.  The Shadow Dancer was one such assassin, and was sent to murder the king of a nearby dwarven hall.  The attempt succeeded, but the crown prince relentlessly pursued the killer and eventually avenged his father.  Later on the dwarven hall was abandoned in a hurry and fell in ruin, and adventurers eventually found this robe in a chest buried under the rubble.
 
 This robe has been strengthened with adamantine fibers and is very resistant to cutting.  Unlike most drow items, this robe will not disintegrate in sunlight.
 
@@ -666,8 +666,8 @@ Equipped abilities:
 – Regeneration: 1 hp/round
 
 Weight: 3~
-@108  = ~Scimitar of the Seven +4~
-@109  = ~This powerful enchanted scimitar is a bit of an enigma.  Its construction suggests a desert culture, but it cannot be traced to any such culture on Abeir-Toril.  Divinations reveal it was crafted in honor of seven legendary heroes and wielded by a great queen and a chosen knight destined to slay a great evil, but names and details remain vague at best.
+@108   = ~Scimitar of the Seven +4~
+@109   = ~This powerful enchanted scimitar is a bit of an enigma.  Its construction suggests a desert culture, but it cannot be traced to any such culture on Abeir-Toril.  Divinations reveal it was crafted in honor of seven legendary heroes and wielded by a great queen and a chosen knight destined to slay a great evil, but names and details remain vague at best.
 
 STATISTICS:
 
@@ -680,8 +680,8 @@ Requires:
  10 Strength
 
 Weight: 1~
-@110  = ~Sword of the Planes +1~
-@111  = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  In the presence of certain creatures from other planes it grows in power.  And if actually taken into another plane, its power flares.
+@110   = ~Sword of the Planes +1~
+@111   = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  In the presence of certain creatures from other planes it grows in power.  And if actually taken into another plane, its power flares.
 
 STATISTICS:
 
@@ -697,8 +697,8 @@ Requires:
  6 Strength
 
 Weight: 4~
-@112  = ~Sword of the Planes +4~
-@113  = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  Within this Outer Plane it is at maximum power, but it will return to normal if taken back to the Prime.
+@112   = ~Sword of the Planes +4~
+@113   = ~This used to be a minor enchanted long sword with no remarkable history, but five centuries of exposal to planar energies within the Planar Shere have transformed it into something different.  Within this Outer Plane it is at maximum power, but it will return to normal if taken back to the Prime.
 
 STATISTICS:
 
@@ -711,8 +711,8 @@ Requires:
  6 Strength
 
 Weight: 4~
-@114  = ~Scarab versus Golems~
-@115  = ~Sometimes scathingly called the "Amulet of Tomb Robbers" by the clergy of Mulhorand, this enchanted jewel is a boon for those who expect to counter golems of any type.  Powerful wizards often employ these mindless but strong servants, making this necklace a favorite item among adventurers as well.
+@114   = ~Scarab versus Golems~
+@115   = ~Sometimes scathingly called the "Amulet of Tomb Robbers" by the clergy of Mulhorand, this enchanted jewel is a boon for those who expect to counter golems of any type.  Powerful wizards often employ these mindless but strong servants, making this necklace a favorite item among adventurers as well.
 
 STATISTICS:
 
@@ -721,9 +721,9 @@ Equipped abilities:
 – Damage: +3 vs. golems
 
 Weight: 3~
-@116  = ~Giant Snake~
-@117  = ~Helm of the Dwarven Lords~
-@118  = ~Although not nearly as powerful as the legendary Axe of the Dwarven Lords, this is none the less a rare and potent item that was worn by several dwarven kings of the past.  It was last seen in old Delzoun more than a thousand years ago, but what happened to it when the old dwarven kingdom fell is not known.  Perhaps orcs claimed it as a war trophy, or the drow pilfered it from the ruins.  Only those of dwarven- or gnomish descent can make full use of this item's powers, others find that the helm will simply not fit their head properly.
+@116   = ~Giant Snake~
+@117   = ~Helm of the Dwarven Lords~
+@118   = ~Although not nearly as powerful as the legendary Axe of the Dwarven Lords, this is none the less a rare and potent item that was worn by several dwarven kings of the past.  It was last seen in old Delzoun more than a thousand years ago, but what happened to it when the old dwarven kingdom fell is not known.  Perhaps orcs claimed it as a war trophy, or the drow pilfered it from the ruins.  Only those of dwarven- or gnomish descent can make full use of this item's powers, others find that the helm will simply not fit their head properly.
 
 STATISTICS:
 
@@ -733,8 +733,8 @@ Equipped abilities:
 – Minor Globe of Invulnerability
 
 Weight: 5~
-@119  = ~Blood of Lathander~
-@120  = ~Centuries ago Mystra selected the archmage Sammaster as one of her Chosen.  Overwhelmed by the power invested in him, he developed delusions of godhood and set himself up as a seer.  His teachings that "dead dragons shall rule the world entire" started the Cult of the Dragon.  Sammaster and the cultists then set out to fulfill this prophesy by creating dracoliches and serving them by bringing them treasure.
+@119   = ~Blood of Lathander~
+@120   = ~Centuries ago Mystra selected the archmage Sammaster as one of her Chosen.  Overwhelmed by the power invested in him, he developed delusions of godhood and set himself up as a seer.  His teachings that "dead dragons shall rule the world entire" started the Cult of the Dragon.  Sammaster and the cultists then set out to fulfill this prophesy by creating dracoliches and serving them by bringing them treasure.
 
 The Harpers tracked down the corrupted archmage and destroyed many of his followers.  Unable to defeat one of Mystra's Chosen, Harper priests of the Morninglord called upon their god.  An avatar of Lathander appeared and challenged Mystra's fallen Chosen to battle, outraged by the thought of the unchanging eternity of tyranny the archmage promised.  The Morninglord's avatar destroyed Sammaster, but not before the wizard delivered a severe wound.
 
@@ -751,8 +751,8 @@ Charged abilities:
 – Greater Restoration (1/day)
 
 Weight: 1~
-@121  = ~Gauntlets of Smiting~
-@122  = ~These iron gauntlets were created nearly twenty centuries ago when the human empire of Narfell practiced fiend summoning on a large scale.  Exactly whom created these is not known, but likely it was the clergy of a benevolent deity at the time.  Since then they have been worn by many a champion of good in an attempt to remove this fell taint from the Realms, a task that will never truly be complete as long as foolish mages are still willing to risk their life and soul for the promise of dark power.
+@121   = ~Gauntlets of Smiting~
+@122   = ~These iron gauntlets were created nearly twenty centuries ago when the human empire of Narfell practiced fiend summoning on a large scale.  Exactly whom created these is not known, but likely it was the clergy of a benevolent deity at the time.  Since then they have been worn by many a champion of good in an attempt to remove this fell taint from the Realms, a task that will never truly be complete as long as foolish mages are still willing to risk their life and soul for the promise of dark power.
 
 STATISTICS:
 
@@ -761,8 +761,8 @@ Equipped abilities:
 – Damage: +3 vs. evil creatures
 
 Weight: 2~
-@123  = ~Trollkiller +2~
-@124  = ~This double-bladed dwarven axe was the favorite of the hero Durlag "Trollkiller".  This was also the weapon he wielded during the terrifying tenday he spend fighting the dopplegangers that had infiltrated his tower.  Afterwards, he could no longer bear to look at the weapon, and it sat forgotten on a treasure pile for many years.
+@123   = ~Trollkiller +2~
+@124   = ~This double-bladed dwarven axe was the favorite of the hero Durlag "Trollkiller".  This was also the weapon he wielded during the terrifying tenday he spend fighting the dopplegangers that had infiltrated his tower.  Afterwards, he could no longer bear to look at the weapon, and it sat forgotten on a treasure pile for many years.
 
 STATISTICS:
 
@@ -778,14 +778,14 @@ Requires:
  10 Strength
 
 Weight: 5~
-@125  = ~Crown~
-@126  = ~A crown can be made of any precious metal and is usually decorated with gemstones.  Heavy crowns can be worn for ceremonial purposes, with lighter diadems or circlets crafted for everyday use.
+@125   = ~Crown~
+@126   = ~A crown can be made of any precious metal and is usually decorated with gemstones.  Heavy crowns can be worn for ceremonial purposes, with lighter diadems or circlets crafted for everyday use.
 
 STATISTICS:
 
 Weight: 1~
-@127  = ~Wyvern Crown of Cormyr~
-@128  = ~This is the fabled Wyvern Crown of Cormyr, part of the regalia once worn by the Witch-Lords of the Wyvernwater before it was seized by the ancestors of King Azoun IV.  It had lain in the vault of the royal palace for years until it was stolen by Zhentharim agent led by the infamous thief Nith while KIng Azoun IV was away fighting a Tuigan horde.  However, during their escape they wandered into a wild magic area which interacted oddly with the artifact, breaking it in pieces and teleporting it away.  It had been lost since, but here it stands now.
+@127   = ~Wyvern Crown of Cormyr~
+@128   = ~This is the fabled Wyvern Crown of Cormyr, part of the regalia once worn by the Witch-Lords of the Wyvernwater before it was seized by the ancestors of King Azoun IV.  It had lain in the vault of the royal palace for years until it was stolen by Zhentharim agents led by the infamous thief Nith while King Azoun IV was away fighting a Tuigan horde.  However, during their escape they wandered into a wild magic area which interacted oddly with the artifact, breaking it in pieces and teleporting it away.  It had been lost since, but here it stands now.
 
 The gold, silver and gemstones alone would already make this artifact worth a fortune that most can only dream of, but the artifact also bears powerful magic, mostly from the ten ioun stones adorning its spikes, all still fully functional.  It is also said that the Witch-Lords could summon and control wyverns through this crown.
 
@@ -808,8 +808,8 @@ Charge abilities:
 – Prismatic Spray (1/day)
 
 Weight: 1~
-@129  = ~Cloak of the Wastelands~
-@130  = ~For many years, this cloak was worn by a Bedine sorcerer known only as the Wanderer of the Wastes.  Cast out by his superstitious tribe for his powers, he survived the Anauroch desert alone, sometimes lending a hand to those who lost their way amidst the dunes.  It is not known how he obtained this item, but most sages agree he most likely found it in one of the many ruins hidden under the sand.
+@129   = ~Cloak of the Wastelands~
+@130   = ~For many years, this cloak was worn by a Bedine sorcerer known only as the Wanderer of the Wastes.  Cast out by his superstitious tribe for his powers, he survived the Anauroch desert alone, sometimes lending a hand to those who lost their way amidst the dunes.  It is not known how he obtained this item, but most sages agree he most likely found it in one of the many ruins hidden under the sand.
 
 Eventually he was killed by a Zhentarim raiding party who looted the cloak off of his body.  They in turn were killed by an adventuring party a few weeks later.  Since then the cloak has had many owners, most of them short lived.
 
@@ -825,8 +825,8 @@ Charge abilities:
 – Invisible Stalker (1/day)
 
 Weight: 3~
-@131  = ~Potion of Wizardry~
-@132  = ~This potion only affects wizards, letting them operate as if they were three levels higher than they actually are.  This affects all variables of a spell that depend on caster level such as damage done. duration etc.  It also grants a boost to casting speed.  However, it does not grant additional spell slots.
+@131   = ~Potion of Wizardry~
+@132   = ~This potion only affects wizards, letting them operate as if they were three levels higher than they actually are.  This affects all variables of a spell that depend on caster level such as damage done. duration etc.  It also grants a boost to casting speed.  However, it does not grant additional spell slots.
 
 STATISTICS:
 
@@ -835,8 +835,8 @@ Casting Speed: +2
 Casting Level: +3
 
 Weight: 1~
-@133  = ~Redethemar +4~
-@134  = ~This mighty axe was crafted by the elves of Myth Drannor and has since been wielded by several elven heroes all over Faerun.  Normally reserved only for the greatest conflicts with the most dire foes, its appearance in Suldanessenar is testament to how deeply Irenicus' attack struck, and how far the elves are willing to go to stop him.
+@133   = ~Redethemar +4~
+@134   = ~This mighty axe was crafted by the elves of Myth Drannor and has since been wielded by several elven heroes all over Faerun.  Normally reserved only for the greatest conflicts with the most dire foes, its appearance in Suldanessenar is testament to how deeply Irenicus' attack struck, and how far the elves are willing to go to stop him.
 
 STATISTICS:
 
@@ -856,8 +856,8 @@ Requires:
  10 Strength
 
 Weight: 4~
-@135  = ~Heal~
-@136  = ~Heal
+@135   = ~Heal~
+@136   = ~Heal
 (Necromancy)
 
 Level: 6
@@ -869,8 +869,8 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 The very potent Heal spell enables the priest to wipe away disease and injury in the creature who receives the benefits of the spell. It completely cures all disease and blindness in the recipient and heals all points of damage suffered due to wounds or injury. It also dispels a Feeblemind spell and cures those mental disorders caused by spells or injury to the brain. Naturally, the effects can be negated by later wounds, injuries, and diseases.~
-@137  = ~Resurrection~
-@138  = ~Resurrection
+@137   = ~Resurrection~
+@138   = ~Resurrection
 (Necromancy)
 
 Level: 7
@@ -882,8 +882,8 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 Like the 5th-level spell Raise Dead, Resurrection will return a character back to life. However, Resurrection also heals the character so that they are ready for the adventuring life right away.~
-@139  = ~Pearl of Power~
-@140  = ~This beautiful black pearl would fetch a nice price for its rarity alone, but its enchantment makes it even more valuable.  Many a less scrupulous sorcerer would kill to get hold of an item like this, and even those who do have morals will often go to great lengths to obtain one.
+@139   = ~Pearl of Power~
+@140   = ~This beautiful black pearl would fetch a nice price for its rarity alone, but its enchantment makes it even more valuable.  Many a less scrupulous sorcerer would kill to get hold of an item like this, and even those who do have morals will often go to great lengths to obtain one.
 
 STATISTICS:
 
@@ -891,12 +891,12 @@ Charged abilities:
 – Recall Spell (1/day, 4th level)
 
 Weight: 0~
-@141  = ~Potion of Clairvoyance~
-@142  = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.
+@141   = ~Potion of Clairvoyance~
+@142   = ~Upon drinking this potion, the user will see in <PRO_HISHER> mind a bird's eye view of the surrounding terrain, revealing structures and landmarks.  Living creatures are not revealed by the use of this potion.
 
 Weight: 1~
-@143  = ~Heaven's Wrath +4~
-@144  = ~This powerful mace was crafted by the clergy of the Netherese sun god Amaunator many centuries ago, but there are no records of it ever having been used against any foes of the empire.  It is known that a deep dragon found it in the buried rubble of a Netherese enclave and added it to its hoard.  The fact that Adalon has now given it to you hints that she dispatched the deep dragon at some point.
+@143   = ~Heaven's Wrath +4~
+@144   = ~This powerful mace was crafted by the clergy of the Netherese sun god Amaunator many centuries ago, but there are no records of it ever having been used against any foes of the empire.  It is known that a deep dragon found it in the buried rubble of a Netherese enclave and added it to its hoard.  The fact that Adalon has now given it to you hints that she dispatched the deep dragon at some point.
 
 STATISTICS:
 
@@ -918,8 +918,8 @@ Requires:
  10 Strength
 
 Weight: 6~
-@145  = ~Spellbattle Ring~
-@146  = ~The first ring of this type was crafted by an unknown archmage who was tired of having to memorize spells for wizard duels every day because lesser mages kept challenging them.  Several other archmages followed their example and there are now more than a dozen magical rings of this type known to be around.
+@145   = ~Spellbattle Ring~
+@146   = ~The first ring of this type was crafted by an unknown archmage who was tired of having to memorize spells for wizard duels every day because lesser mages kept challenging them.  Several other archmages followed their example and there are now more than a dozen magical rings of this type known to be around.
 
 This particular one bears no identifying marks but is whispered to have been created by Elminster himself.  When questioned on this though, the old archmage would most likely only produce a slow smile and remain silent.
 
@@ -935,8 +935,8 @@ Charged abilities:
 – Ruby Ray of Reversal (1/day)
 
 Weight: 0~
-@147  = ~Shield of the Three Kings +5~
-@148  = ~The name of this masterwork golden shield is derived from the three crowns engraved in its front, for it hasn't been associated with any known king.  It was forged by the shield dwarves of the North to be used in one of their many skirmishes with the orc hordes that regular plague that area of Faerun.  It is not known whom exactly placed the massive enchantment on it, although the style used is typical for the Netherese arcanists of the past.  If the dwarves truly traded for this shield with the Netherese, the price demanded must have been mind boggling.  This is possibly the most strongly enchanted shield in the Realms.
+@147   = ~Shield of the Three Kings +5~
+@148   = ~The name of this masterwork golden shield is derived from the three crowns engraved in its front, for it hasn't been associated with any known king.  It was forged by the shield dwarves of the North to be used in one of their many skirmishes with the orc hordes that regular plague that area of Faerun.  It is not known whom exactly placed the massive enchantment on it, although the style used is typical for the Netherese arcanists of the past.  If the dwarves truly traded for this shield with the Netherese, the price demanded must have been mind boggling.  This is possibly the most strongly enchanted shield in the Realms.
 
 STATISTICS:
 
@@ -948,8 +948,8 @@ Requires:
  12 Strength
 
 Weight: 3~
-@149  = ~Amulet of the Sacred Fist~
-@150  = ~
+@149   = ~Amulet of the Sacred Fist~
+@150   = ~This magical amulet has an eastern design and likely hails from far away Shou-Lung or Kara-Tur.  Nobody seems to know who enchanted it, when, or why.  But it is a great boon to any martial artist, providing them with a "third eye" to help avoid the worst of sneak attacks and critical hits.
 
 STATISTICS:
 
@@ -958,8 +958,8 @@ Equipped abilities:
 – Immunity to critical hits and backstabs
 
 Weight: 1~
-@151  = ~Circlet of the Wilderness~
-@152  = ~Magical circlets like this one are the creation of The Simbul, ruler of Aglarond, and given to rangers as a reward for exceptional service.  To see one of these so far from Aglarond is quite rare indeed.
+@151   = ~Circlet of the Wilderness~
+@152   = ~Magical circlets like this one are the creation of The Simbul, ruler of Aglarond, and given to rangers as a reward for exceptional service.  To see one of these so far from Aglarond is quite rare indeed.
 
 STATISTICS:
 
@@ -972,12 +972,12 @@ Charge abilities:
 – Cure Serious Wounds (1/day)
 
 Weight: 1~
-@153  = ~Improved Circlet of the Wilderness~
-@154  = ~Magical circlets like this one are the creation of The Simbul, ruler of Aglarond, and given to rangers as a reward for exceptional service.  To see one of these so far from Aglarond is quite rare indeed.
+@153   = ~Improved Circlet of the Wilderness~
+@154   = ~Magical circlets like this one are the creation of The Simbul, ruler of Aglarond, and given to rangers as a reward for exceptional service.  To see one of these so far from Aglarond is quite rare indeed.
+
+The expert smithing of the dwarf Cromwell, as well as the addition of a small fortune in gems, have significantly improved the capabilities of this item.
 
 STATISTICS:
-
-The expert smithing of the dwarf Cromwell, as well as the addition of a small fortune in gems have significantly improved the capabilities of this item.
 
 Equipped abilities:
 – Prevents critical hits.
@@ -989,8 +989,8 @@ Charge abilities:
 – Cure Critical Wounds (1/day)
 
 Weight: 1~
-@155  = ~Ultimate Circlet of the Wilderness~
-@156  = ~Magical circlets like this one are the creation of The Simbul, ruler of Aglarond, and given to rangers as a reward for exceptional service.  To see one of these so far from Aglarond is quite rare indeed.
+@155   = ~Ultimate Circlet of the Wilderness~
+@156   = ~Magical circlets like this one are the creation of The Simbul, ruler of Aglarond, and given to rangers as a reward for exceptional service.  To see one of these so far from Aglarond is quite rare indeed.
 
 Although it cost you a fortune in gold and gems, the imp Cespenar has given this item even greater powers than before.
 
@@ -1006,14 +1006,30 @@ Charge abilities:
 – Heal (1/day)
 
 Weight: 1~
-//@157  = ~~
-//@158  = ~~
-//@159  = ~~
-//@160  = ~~
-//@161  = ~~
-//@162  = ~~
-@163  = ~Book of Exalted Deeds~
-@164  = ~This holy book is sacred to clerics of good alignment.  It contains descriptions of the Upper Planes, the proper names of various angels and other powerful beings of good alignment, and sacred rituals to call upon the powers of good.  A good cleric who studies this work gains greater insight and wisdom.  Evil clerics of course find this book repulsive, while to neutral clerics and members of other classes it bestows no benefits.
+@157   = ~Force Buckler~
+@158   = ~Although it is only lightly enchanted, this buckler is remarkable in the sense that it projects a field of force similar to a Shield spell, making it effective against missiles and piercing attacks unlike most bucklers.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2 (+4 against Missiles)
+
+Weight: 2~
+@159   = ~Galdaeryn's Gage~
+@160   = ~Named for the fighting mage who first devised it, this single meshed gauntlet combines the powers of the Bracers of Archery, the Gloves of Missile Snaring and the Brooch of Shielding, granting the wearer complete mastery over missiles both mundane and magical.
+
+STATISTICS:
+
+Equipped abilities:
+– THAC0: +2 with missile weapons
+– Armor Class: +1, +3 vs. missile attacks
+– Immunity to Magic Missile spells
+
+Weight: 2~
+//@161   = ~~
+//@162   = ~~
+@163   = ~Book of Exalted Deeds~
+@164   = ~This holy book is sacred to clerics of good alignment.  It contains descriptions of the Upper Planes, the proper names of various angels and other powerful beings of good alignment, and sacred rituals to call upon the powers of good.  A good cleric who studies this work gains greater insight and wisdom.  Evil clerics of course find this book repulsive, while to neutral clerics and members of other classes it bestows no benefits.
 
 As other magical works similar to this, the book can benefit the owner only once, after which it mysteriously vanishes.  Even if another copy or a similar tome can be found it will not benefit the character again.
 
@@ -1024,8 +1040,8 @@ Charged abilities:
 – Experience: +50% of amount needed for next level
 
 Weight: 25~
-@165  = ~Book of Vile Darkness~
-@166  = ~This is a work of ineffable evil - meat and drink to priests of that alignment.  It contains the true names of many fiends, dark rituals designed to summon them forth in this world, and many other unspeakable things.  An evil cleric can risk their life and soul on this to gain greater insight and wisdom.  Good clerics of course find the book blasphemous, while to neutral clerics and members of other classes it bestows no benefits.
+@165   = ~Book of Vile Darkness~
+@166   = ~This is a work of ineffable evil - meat and drink to priests of that alignment.  It contains the true names of many fiends, dark rituals designed to summon them forth in this world, and many other unspeakable things.  An evil cleric can risk their life and soul on this to gain greater insight and wisdom.  Good clerics of course find the book blasphemous, while to neutral clerics and members of other classes it bestows no benefits.
 
 As other magical works similar to this, the book can benefit the owner only once, after which it mysteriously vanishes.  Even if another copy or a similar tome can be found it will not benefit the character again.
 
@@ -1036,8 +1052,8 @@ Charged abilities:
 – Experience: +50% of amount needed for next level
 
 Weight: 25~
-@167  = ~Libram of Silver Magic~
-@168  = ~This book contains an analysis of how magic can be used for the greater good, to bring benefit and prosperity to all.  Good wizards can use this to gain greater insight in the workings of the Art.  Of course evil wizards scoff at this use of magic, while to neutral wizards and members of other classes the book offers no benefits.
+@167   = ~Libram of Silver Magic~
+@168   = ~This book contains an analysis of how magic can be used for the greater good, to bring benefit and prosperity to all.  Good wizards can use this to gain greater insight in the workings of the Art.  Of course evil wizards scoff at this use of magic, while to neutral wizards and members of other classes the book offers no benefits.
 
 As other magical works similar to this, the book can benefit the owner only once, after which it mysteriously vanishes.  Even if another copy or a similar tome can be found it will not benefit the character again.
 
@@ -1048,8 +1064,8 @@ Charged abilities:
 – Experience: +50% of amount needed for next level
 
 Weight: 25~
-@169  = ~Libram of Gainful Conjuration~
-@170  = ~This work contains many arcane secrets, explained in a sober if dry tone.  For neutral wizards this can lead to a greater understanding of the Art, but the book is useless to wizards of a good- or evil alignment, and members of all other classes.
+@169   = ~Libram of Gainful Conjuration~
+@170   = ~This work contains many arcane secrets, explained in a sober if dry tone.  For neutral wizards this can lead to a greater understanding of the Art, but the book is useless to wizards of a good- or evil alignment, and members of all other classes.
 
 As other magical works similar to this, the book can benefit the owner only once, after which it mysteriously vanishes.  Even if another copy or a similar tome can be found it will not benefit the character again.
 
@@ -1060,8 +1076,8 @@ Charged abilities:
 – Experience: +50% of amount needed for next level
 
 Weight: 25~
-@171  = ~Libram of Ineffable Damnation~
-@172  = ~This book holds many dark and foul secrets of magic that are better left forgotten.  Of course evil wizards love such material, and can study it to gain a greater understanding of the Art.  Good wizards will have nothing to do with such vileness, while neutral wizards and members of other classes simply find no benefit in it.
+@171   = ~Libram of Ineffable Damnation~
+@172   = ~This book holds many dark and foul secrets of magic that are better left forgotten.  Of course evil wizards love such material, and can study it to gain a greater understanding of the Art.  Good wizards will have nothing to do with such vileness, while neutral wizards and members of other classes simply find no benefit in it.
 
 As other magical works similar to this, the book can benefit the owner only once, after which it mysteriously vanishes.  Even if another copy or a similar tome can be found it will not benefit the character again.
 
@@ -1072,8 +1088,8 @@ Charged abilities:
 – Experience: +50% of amount needed for next level
 
 Weight: 25~
-@173  = ~Mirror Amulet~
-@174  = ~This amulet consists of a single large sapphire on a silver chain.  As you gaze into the stone, you see your own face reflected multiple times in the stone's many facets.  This amulet defies exact identification, either it is so old that current day divination magic does not work on it, or the original creator is someone who values their privacy.  The subtle, elegant design hints on an elven origin though.
+@173   = ~Mirror Amulet~
+@174   = ~This amulet consists of a single large sapphire on a silver chain.  As you gaze into the stone, you see your own face reflected multiple times in the stone's many facets.  This amulet defies exact identification, either it is so old that current day divination magic does not work on it, or the original creator is someone who values their privacy.  The subtle, elegant design hints on an elven origin though.
 
 STATISTICS:
 
@@ -1082,8 +1098,8 @@ Charged abilities:
 – Detect Illusion (1/day)
 
 Weight: 1~
-@175  = ~Adriyana's Garter~
-@176  = ~The mundane appearance of this simple black leather thigh-band belies its great power.  Adriyana Voudsarr "Leaf in the Wind" was a humble mage who was granted the title of Magister by Azuth in 278.  She was not interested in mage duels, but challengers kept coming to her anyway, trying to prove themselves more worthy of the title.
+@175   = ~Adriyana's Garter~
+@176   = ~The mundane appearance of this simple black leather thigh-band belies its great power.  Adriyana Voudsarr "Leaf in the Wind" was a humble mage who was granted the title of Magister by Azuth in 278.  She was not interested in mage duels, but challengers kept coming to her anyway, trying to prove themselves more worthy of the title.
 
 One of them, Blaermar of Athkatla, destroyed much of the forest Adriyana loved before she was able to defeat him.  Disgusted at the destruction, Adriyana pleaded with Mystra to be removed from office, offering to exchange her life for restoration of the devastated woodlands.  Mystra offered the distraught mage several choices and restored the woodlands anyway.  Adriyana chose to be turned into a powerful artifact, Adriyana's Garter.
 
@@ -1099,8 +1115,8 @@ Charged abilities:
 – Globe of Invulnerability (3/day)
 
 Weight: 2~
-@177  = ~Periapt of Health~
-@178  = ~This peculiar pendant was forged by the clergy of Ilmater, most likely to protect any priests that are sent to combat plagues.  Wearing it renders the user immune to most diseases both normal and magical.  This includes the dreaded mummy rot, but does not cover lycanthropy which is more like a curse than a disease.
+@177   = ~Periapt of Health~
+@178   = ~This peculiar pendant was forged by the clergy of Ilmater, most likely to protect any priests that are sent to combat plagues.  Wearing it renders the user immune to most diseases both normal and magical.  This includes the dreaded mummy rot, but does not cover lycanthropy which is more like a curse than a disease.
 
 STATISTICS:
 
@@ -1108,8 +1124,8 @@ Equipped abilities:
 – Immunity to disease
 
 Weight: 3~
-@179  = ~Slimecrusher +1~
-@180  = ~The head of this flail has been corroded from frequent contact with caustic substances, but remains intact and solid somehow.  Created almost three hundred years ago to fight an infestation of gray ooze in the deepest reaches of the dwarven stronghold Heran's Quarry it served admirably, until it was stolen by marauding orcs more than half a century later.  Since then it has changed hands several times.
+@179   = ~Slimecrusher +1~
+@180   = ~The head of this flail has been corroded from frequent contact with caustic substances, but remains intact and solid somehow.  Created almost three hundred years ago to fight an infestation of gray ooze in the deepest reaches of the dwarven stronghold Heran's Quarry it served admirably, until it was stolen by marauding orcs more than half a century later.  Since then it has changed hands several times.
 
 STATISTICS:
 
@@ -1122,8 +1138,8 @@ Requires:
  13 Strength
 
 Weight: 13~
-@181  = ~Rusty Katana~
-@182  = ~This magical katana has dulled and rusted by years of neglect in a damp and harsh environment.  However, there is still a bit of a gleam to it through the layers of corrosion.  In its current state it would perform worse than an unenchanted blade and it might even break, but a skilled swordsmith could be able to restore some of its former glory.
+@181   = ~Rusty Katana~
+@182   = ~This magical katana has dulled and rusted by years of neglect in a damp and harsh environment.  However, there is still a bit of a gleam to it through the layers of corrosion.  In its current state it would perform worse than an unenchanted blade and it might even break, but a skilled swordsmith could be able to restore some of its former glory.
 
 STATISTICS:
 
@@ -1136,16 +1152,16 @@ Requires:
  6 Strength
 
 Weight: 6~
-@183  = ~Twisted Horn~
-@184  = ~Unicorn Horn~
-@185  = ~This beautiful twisted horn seems to come from some sort of woodland creature.  The ivory feels warm in your hand, almost still alive.
+@183   = ~Twisted Horn~
+@184   = ~Unicorn Horn~
+@185   = ~This beautiful twisted horn seems to come from some sort of woodland creature.  The ivory feels warm in your hand, almost still alive.
 
 Weight: 3~
-@186  = ~This is an alicorn, the severed horn of a unicorn.  A unicorn cannot live without its horn, so it is safe to assume that the unicorn this was taken from was either already dead or died soon after.  Killing such a magnificent and benevolent creature is a great crime, but now that the deed has already been done, perhaps something good can come from it by putting it to a noble use.
+@186   = ~This is an alicorn, the severed horn of a unicorn.  A unicorn cannot live without its horn, so it is safe to assume that the unicorn this was taken from was either already dead or died soon after.  Killing such a magnificent and benevolent creature is a great crime, but now that the deed has already been done, perhaps something good can come from it by putting it to a noble use.
 
 Weight: 3~
-@187  = ~Bright Orange Ioun Stone~
-@188  = ~This bright orange ioun stone glows and throbs with pure power.  Whom exacly made this item is not known and it resists divination, but historical records mention that this kind of ioun stone was popular with Netherese arcanists so it most likely belonged to one of them once.
+@187   = ~Bright Orange Ioun Stone~
+@188   = ~This bright orange ioun stone glows and throbs with pure power.  Whom exacly made this item is not known and it resists divination, but historical records mention that this kind of ioun stone was popular with Netherese arcanists so it most likely belonged to one of them once.
 
 STATISTICS:
 
@@ -1153,8 +1169,8 @@ Equipped abilities:
 – Caster Level: +1
 
 Weight: 2~
-@189  = ~Telkiira~
-@190  = ~This is an elven telkiira, or lore-stone in the common tongue.  Such gems contain a portion of the knowledge and experience of previous bearers and as such enhance the mental prowess  and arcane abilities of its current owner.  Only those of elven blood can safely use a telkiira, use by a non-elf is extremely dangerous and likely to result in permanent insanity.
+@189   = ~Telkiira~
+@190   = ~This is an elven telkiira, or lore-stone in the common tongue.  Such gems contain a portion of the knowledge and experience of previous bearers and as such enhance the mental prowess  and arcane abilities of its current owner.  Only those of elven blood can safely use a telkiira, use by a non-elf is extremely dangerous and likely to result in permanent insanity.
 
 STATISTICS:
 
@@ -1165,8 +1181,8 @@ Equipped abilities:
 – Arcane Spells: +1 sixth level spell
 
 Weight: 2~
-@192  = ~Bag of Tricks~
-@193  = ~At first glance this appears to be a common burlap sack, but this mundane appearance hides a powerful magic.  When the owner reaches inside the bag, <PRO_HESHE> feels a number of fuzzy objects inside.  When such an object is pulled out and tossed to the ground it instantly grows into a ferocious animal that will fight its summoner's enemies to the best of its ability until it is slain or one hour passes.
+@192   = ~Bag of Tricks~
+@193   = ~At first glance this appears to be a common burlap sack, but this mundane appearance hides a powerful magic.  When the owner reaches inside the bag, <PRO_HESHE> feels a number of fuzzy objects inside.  When such an object is pulled out and tossed to the ground it instantly grows into a ferocious animal that will fight its summoner's enemies to the best of its ability until it is slain or one hour passes.
 
 STATISTICS:
 
@@ -1175,9 +1191,9 @@ Charged abilities:
   Possible animals are: cave bear, phase spider, dire wolf, brown bear, jaguar, polar bear, giant snake, sword spider, lion and winter wolf.
 
 Weight: 3~
-@194  = ~Crystal Ball~
-@195  = ~This is a perfect sphere of clearest crystal.  Inside you see a swirling mist that sometimes seems to take vague shapes.  According to legends, mages or priests can use crystal balls like these to observe distant places magically, but you'll have to properly identify this item first.~
-@196  = ~This is a crystal ball, probably one of the most well-known magical items in existence and frequently used by wizards, priests, shamans, witch-doctors, gypsies and other people with a knack for magic to remotely view places of interest.  The ball only has a limited number of charges, and when they run out it shatters into useless shards.
+@194   = ~Crystal Ball~
+@195   = ~This is a perfect sphere of clearest crystal.  Inside you see a swirling mist that sometimes seems to take vague shapes.  According to legends, mages or priests can use crystal balls like these to observe distant places magically, but you'll have to properly identify this item first.~
+@196   = ~This is a crystal ball, probably one of the most well-known magical items in existence and frequently used by wizards, priests, shamans, witch-doctors, gypsies and other people with a knack for magic to remotely view places of interest.  The ball only has a limited number of charges, and when they run out it shatters into useless shards.
 
 STATISTICS:
 
@@ -1185,8 +1201,8 @@ Charged abilities:
 – Clairvoyance
 
 Weight: 2~
-@197  = ~Ring of Water Control~
-@198  = ~This silver ring has a single deep blue sapphire set into it.  This somewhat simple appearance belies its great power over the element of water.
+@197   = ~Ring of Water Control~
+@198   = ~This silver ring has a single deep blue sapphire set into it.  This somewhat simple appearance belies its great power over the element of water.
 
 STATISTICS:
 
@@ -1203,8 +1219,8 @@ Charged abilities:
 – Ice Storm once per day
 
 Weight: 0~
-@199  = ~Alicorn Spear +2~
-@200  = ~This masterwork spear has been tipped by an alicorn, the actual horn of a unicorn.  It was commissioned from the dwarven smith Brokk by <CHARNAME>, who found the horn in a bandit camp.  Most likely the slayer of the unicorn in question is now dead themselves, and perhaps the creation of this item can do some good in the Realms.
+@199   = ~Alicorn Spear +2~
+@200   = ~This masterwork spear has been tipped by an alicorn, the actual horn of a unicorn.  It was commissioned from the dwarven smith Brokk by <CHARNAME>, who found the horn in a bandit camp.  Most likely the slayer of the unicorn in question is now dead themselves, and perhaps the creation of this item can do some good in the Realms.
 
 STATISTICS:
 
@@ -1223,8 +1239,8 @@ Requires:
  5 Strength
 
 Weight: 3~
-@201  = ~Staff of the Legion +5~
-@202  = ~This staff radiates a pallable aura of darkness and evil.  It was created many centuries ago by a being known only as Ahksar the Lich King.  Details on this entity are vague and incomplete, but he was apparently a horrifyingly powerful lich.  He may in fact have been the very first of such beings ever created.  Many necromantic spells that are still in use today, including the spell Animate Dead, may have been first developed by him.
+@201   = ~Staff of the Legion +5~
+@202   = ~This staff radiates a pallable aura of darkness and evil.  It was created many centuries ago by a being known only as Ahksar the Lich King.  Details on this entity are vague and incomplete, but he was apparently a horrifyingly powerful lich.  He may in fact have been the very first of such beings ever created.  Many necromantic spells that are still in use today, including the spell Animate Dead, may have been first developed by him.
 
 Ahksar himself thankfully no longer exists, apparently his power and depravity knew no bounds and eventually the gods intervened, destroying him completely and irrevocably.  This nefarious artifact yet remains though, and is surrounded by hundreds of tales of depravity and death throughout the ages.
 
@@ -1251,8 +1267,8 @@ Requires:
  5 Strength
 
 Weight: 2~
-@204  = ~Staff of Water +2~
-@205  = ~This old, crooked staff has been fashioned in the style of the witches of Rasheman.  The runes inscribed on it indicate it has power over water, including summoning lesser Water Elementals to the user's aid, or quickly dispatching hostile Water Elementals.  Drawing upon the Plane of Water, it can also summon a cold aura similar to a Blue Fire Shield that damages attackers.  Some abilities are limited by charges however.
+@204   = ~Staff of Water +2~
+@205   = ~This old, crooked staff has been fashioned in the style of the witches of Rasheman.  The runes inscribed on it indicate it has power over water, including summoning lesser Water Elementals to the user's aid, or quickly dispatching hostile Water Elementals.  Drawing upon the Plane of Water, it can also summon a cold aura similar to a Blue Fire Shield that damages attackers.  Some abilities are limited by charges however.
 
 STATISTICS:
 
@@ -1279,8 +1295,8 @@ Requires:
  5 Strength
 
 Weight: 3~
-@206  = ~Staff of Swarming Insects +2~
-@207  = ~The length of this unusual staff is covered with fine carvings of winged biting and stinging insects like wasps, horseflies and so on.  A cleric or druid can use this staff to call down a swarm of such insects on an opponent, as per the third level spell Summon Insects.  This ability is limited by charges though.
+@206   = ~Staff of Swarming Insects +2~
+@207   = ~The length of this unusual staff is covered with fine carvings of winged biting and stinging insects like wasps, horseflies and so on.  A cleric or druid can use this staff to call down a swarm of such insects on an opponent, as per the third level spell Summon Insects.  This ability is limited by charges though.
 
 STATISTICS:
 
@@ -1296,8 +1312,8 @@ Requires:
  5 Strength
 
 Weight: 3~
-@208  = ~Mirthal +1~
-@209  = ~This graceful longsword is most certainly of elven make.  Golden runes in its silvered blade spell out its name, "Mirthal".  This blade does not have a long history yet, its first and only known owner was an elven adventurer called Iolrath Farran. He received it as a gift from his parents when he set out on his own, and used it for almost thirty years before trading it in for a better blade.
+@208   = ~Mirthal +1~
+@209   = ~This graceful longsword is most certainly of elven make.  Golden runes in its silvered blade spell out its name, "Mirthal".  This blade does not have a long history yet, its first and only known owner was an elven adventurer called Iolrath Farran. He received it as a gift from his parents when he set out on his own, and used it for almost thirty years before trading it in for a better blade.
 
 STATISTICS:
 
@@ -1310,8 +1326,8 @@ Requires:
  6 Strength
 
 Weight: 4~
-@210  = ~Golden Sky +2~
-@211  = ~This katana has a strange and sometimes conflicting history.  Its beginnings are common enough, a shogun in Kara-tur had it commissioned as a reward for a ronin whom had saved his daughter from an evil wu-jen.  But what exactly happened afterwards is the stuff of many legends.
+@210   = ~Golden Sky +2~
+@211   = ~This katana has a strange and sometimes conflicting history.  Its beginnings are common enough, a shogun in Kara-tur had it commissioned as a reward for a ronin whom had saved his daughter from an evil wu-jen.  But what exactly happened afterwards is the stuff of many legends.
 
 The most commonly accepted story goes as follows.  The ronin accepted the shogun as his new master and thus became a full-fledged samurai again.  After a while he came to love the daughter he helped save and wanted to marry her, but her father had already bethrothed her to another man.  The daughter loved the samurai too, but she could not go against the wishes of her father.  Eventually the samurai left in disgrace, leaving his katana as a memento to the woman he loved.
 
@@ -1337,8 +1353,8 @@ Requires:
  6 Strength
 
 Weight: 4~
-@212  = ~Cold Flame +3~
-@213  = ~The blade of this magnificent bastard sword was created from a magically treated icicle.  It will never melt even in the hottest flame and feels only mildly cold to the touch.  Originally created by the ice elementalist Khaldus the Frostmaster almost four centuries ago, Cold Flame has been used by several warriors throughout the years, gradually making its way south from its frozen origins.
+@212   = ~Cold Flame +3~
+@213   = ~The blade of this magnificent bastard sword was created from a magically treated icicle.  It will never melt even in the hottest flame and feels only mildly cold to the touch.  Originally created by the ice elementalist Khaldus the Frostmaster almost four centuries ago, Cold Flame has been used by several warriors throughout the years, gradually making its way south from its frozen origins.
 
 STATISTICS:
 
@@ -1358,8 +1374,8 @@ Requires:
  11 Strength
 
 Weight: 7~
-@214  = ~Elmira's Wand of Blasting~
-@215  = ~Elmira the Blue was a necromancer from Cormyr best known for being stark raving mad.  However, her faculties were in good enough order to create a number of useful magical items like this wand, which she frequently used whenever another torch-wielding mob attempted to drive her out. Due to her tendency to unleash all manner of undead horrors on the countryside, this happened every tenday or so.  Eventually she tried to embrace lichdom but botched the process, killing herself beyond any hope of revival.  This wand and several other treasures were recovered half a year later by adventurers brave enough to cleanse her stronghold of her marauding undead creations.
+@214   = ~Elmira's Wand of Blasting~
+@215   = ~Elmira the Blue was a necromancer from Cormyr best known for being stark raving mad.  However, her faculties were in good enough order to create a number of useful magical items like this wand, which she frequently used whenever another torch-wielding mob attempted to drive her out. Due to her tendency to unleash all manner of undead horrors on the countryside, this happened every tenday or so.  Eventually she tried to embrace lichdom but botched the process, killing herself beyond any hope of revival.  This wand and several other treasures were recovered half a year later by adventurers brave enough to cleanse her stronghold of her marauding undead creations.
 
 Elmira's original name for this item was "Elmira's Little Stick of Blasting Pesky Torch-Wielders", but later owners shorted this to its current name.
 
@@ -1377,9 +1393,9 @@ Requires:
  12 Intelligence
 
 Weight: 1~
-@216  = ~Lesser Water Elemental~
-@217  = ~Medallion of the Arctic~
-@218  = ~This strange medallion is decorated with an engraving of a beautiful woman with her arms outstretched at her sides, snow piled in each hand.  A bear stands in profile behind her.
+@216   = ~Lesser Water Elemental~
+@217   = ~Medallion of the Arctic~
+@218   = ~This strange medallion is decorated with an engraving of a beautiful woman with her arms outstretched at her sides, snow piled in each hand.  A bear stands in profile behind her.
 
 STATISTICS:
 
@@ -1389,9 +1405,9 @@ Equipped abilities:
 – Cold Resistance: +35% (wearer only)
 
 Weight: 1~
-//@219  = ~~
-@220  = ~Bolder's Cloak of the Rogue~
-@221  = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentarim.
+//@219   = ~~
+@220   = ~Bolder's Cloak of the Rogue~
+@221   = ~Centuries ago a brash noble of Waterdeep, who needed to be furtive in order to go adventuring, commissioned an unknown wizard to create the Cloak of the Rogue.  This young man, whose name was Bolder, needed a magical item that would allow him to quietly slip away from his father's estate so he could spend his evenings in the wilds of Waterdeep.  Bolder never returned from his first night out, and since then his cloak has been seen in the hands of the Zhentarim.
 
 Due to the nature of its protective enchantment, this cloak can not be worn together with other protection devices, like a Ring of Protection.
 
@@ -1408,8 +1424,8 @@ Equipped abilities:
 – Move Silently: +10%
 
 Weight: 3~
-@222  = ~Lein's Fiery Dart +2~
-@223  = ~These small but deadly projectiles were created by Lein, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and engulfs the target in flames.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
+@222   = ~Lein's Fiery Dart +2~
+@223   = ~These small but deadly projectiles were created by Lein, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and engulfs the target in flames.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
 
 STATISTICS:
 
@@ -1420,8 +1436,8 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0~
-@224  = ~Chandler's Icy Dart +2~
-@225  = ~These small but deadly projectiles were created by Chandler, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and releases a freezing cloud at the target.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
+@224   = ~Chandler's Icy Dart +2~
+@225   = ~These small but deadly projectiles were created by Chandler, an apprentice of the legendary enchanter Myrl who lived over two hundred years ago.  Upon any contact this small projectile explodes and releases a freezing cloud at the target.  Although dozens of these darts have been made, a lot of them have also been used since, so they are a somewhat rare find.
 
 STATISTICS:
 
@@ -1432,8 +1448,8 @@ Proficiency Type: Dart
 Type: One-handed
 
 Weight: 0~
-@226  = ~Mottled Green Ioun Stone~
-@227  = ~This ioun stone is a lush green with many yellow spots.  It is very pleasant to look at, and grants some protection against magical spells and effects.
+@226   = ~Mottled Green Ioun Stone~
+@227   = ~This ioun stone is a lush green with many yellow spots.  It is very pleasant to look at, and grants some protection against magical spells and effects.
 
 STATISTICS:
 
@@ -1441,8 +1457,8 @@ Equipped abilities:
 – Saving Throws: +1 (all)
 
 Weight: 2~
-@228  = ~Maroon Star Ioun Stone~
-@229  = ~This chestnut-colored ioun stone is quite old and bears an unusual enchantment.  Its exact history has been lost to the mists of time, but most likely it was made in old Netheril, perhaps even by Congenio Ioun himself.
+@228   = ~Maroon Star Ioun Stone~
+@229   = ~This chestnut-colored ioun stone is quite old and bears an unusual enchantment.  Its exact history has been lost to the mists of time, but most likely it was made in old Netheril, perhaps even by Congenio Ioun himself.
 
 STATISTICS:
 
@@ -1450,8 +1466,8 @@ Equipped abilities:
 – Immunity to normal weapons.
 
 Weight: 2~
-@230  = ~Giantbane +1~
-@231  = ~This beautifully crafted dagger was clearly made by elves.  Daggers like these are sometimes carried by elven commanders in the field of battle, especially if they expect to fight ogres, trolls or other giant humanoids.
+@230   = ~Giantbane +1~
+@231   = ~This beautifully crafted dagger was clearly made by elves.  Daggers like these are sometimes carried by elven commanders in the field of battle, especially if they expect to fight ogres, trolls or other giant humanoids.
 
 STATISTICS:
 
@@ -1464,16 +1480,16 @@ Requires:
  3 Strength
 
 Weight: 1~
-@232  = ~Oil of Disenchantment~
-@233  = ~This light, ethereal oil quickly evaporates when exposed to air.  As it evaporates, it will dispel all enchantments, making this oil ideal for removing unwanted enchantments from party members.
+@232   = ~Oil of Disenchantment~
+@233   = ~This light, ethereal oil quickly evaporates when exposed to air.  As it evaporates, it will dispel all enchantments, making this oil ideal for removing unwanted enchantments from party members.
 
 STATISTICS:
 
 Special: Dispels all spells and effects of the Enchantment school.
 
 Weight: 1~
-@234  = ~Helm of Darkness~
-@235  = ~This helm is made from black iron and set with dark blue sapphires and black opals.  The ambient light seems to darken slightly around this helm in a way that can only be magical.  The helm makes the wearer resistant to cold and fear and grants some spell abilities.  These include Horror, Ice Storm and Negative Plane Protection.
+@234   = ~Helm of Darkness~
+@235   = ~This helm is made from black iron and set with dark blue sapphires and black opals.  The ambient light seems to darken slightly around this helm in a way that can only be magical.  The helm makes the wearer resistant to cold and fear and grants some spell abilities.  These include Horror, Ice Storm and Negative Plane Protection.
 
 STATISTICS:
 
@@ -1489,12 +1505,12 @@ Charge abilities:
 – Negative Plane Protection (1/day, self only)
 
 Weight: 2~
-//@236  = ~~
-//@237  = ~~
-//@238  = ~~
-//@239  = ~~
-@240  = ~Girdle of Storm Giant Strength~
-@241  = ~This incredibly powerful belt grants the wearer the immense strength of a storm giant, the physically strongest mortal beings to walk Faerun except for dragons.  Exactly who made it and why is not known, but some suspect the touch of the divine in it.  This is further supported by its tendency to show up whenever there is an event of divine significance playing out, only to mysteriously disappear soon afterwards.
+//@236   = ~~
+//@237   = ~~
+//@238   = ~~
+//@239   = ~~
+@240   = ~Girdle of Storm Giant Strength~
+@241   = ~This incredibly powerful belt grants the wearer the immense strength of a storm giant, the physically strongest mortal beings to walk Faerun except for dragons.  Exactly who made it and why is not known, but some suspect the touch of the divine in it.  This is further supported by its tendency to show up whenever there is an event of divine significance playing out, only to mysteriously disappear soon afterwards.
 
 STATISTICS:
 
@@ -1502,8 +1518,8 @@ Equipped abilities:
 – Strength: 24
 
 Weight: 2~
-@242  = ~Battle Star +4~
-@243  = ~This heavily enchanted flail was created by dwarves and it is unlikely they parted with it willingly.  Its exact history is not known but the nature of the enchantment on it suggests an otherworldly origin, it may have come to Toril from Realmspace.
+@242   = ~Battle Star +4~
+@243   = ~This heavily enchanted flail was created by dwarves and it is unlikely they parted with it willingly.  Its exact history is not known but the nature of the enchantment on it suggests an otherworldly origin, it may have come to Toril from Realmspace.
 
 STATISTICS:
 
@@ -1523,8 +1539,8 @@ Requires:
  13 Strength
 
 Weight: 10~
-@244  = ~Gloves of Evasion~
-@245  = ~These soft, supple gloves of thin calfskin are enchanted to help a rogue evade capture.  Exactly who made them is not known which is unsurprising, rogues and those who aid them tend to value privacy over fame.
+@244   = ~Gloves of Evasion~
+@245   = ~These soft, supple gloves of thin calfskin are enchanted to help a rogue evade capture.  Exactly who made them is not known which is unsurprising, rogues and those who aid them tend to value privacy over fame.
 
 STATISTICS:
 
@@ -1534,13 +1550,13 @@ Equipped abilities:
 – Non-Detection
 
 Weight: 2~
-//@246  = ~~
-@247  = ~Potion of Longevity~
-@248  = ~This foul-tasting but very potent elixer permanently enhances the imbiber's health and hardiness.  Their maximum HP total is raised by 10.  However, repeated drinks carry a risk; there is a 5% change that another draught of this elixer will undo the effects of all previous drinks.
+//@246   = ~~
+@247   = ~Potion of Longevity~
+@248   = ~This foul-tasting but very potent elixer permanently enhances the imbiber's health and hardiness.  Their maximum HP total is raised by 10.  However, repeated drinks carry a risk; there is a 5% change that another draught of this elixer will undo the effects of all previous drinks.
 
 Weight: 1~
-@249  = ~Horn of Goodness/Evil~
-@250  = ~The effect of this magical horn depends on the alignment of the user.  if the user is good, it protects <PRO_HISHER> party against evil.  If the user is evil it protects <PRO_HISHER> party against good.  If the user is neither evil nor good the horn doesn't work at all.  The horn can be blown once per day.
+@249   = ~Horn of Goodness/Evil~
+@250   = ~The effect of this magical horn depends on the alignment of the user.  if the user is good, it protects <PRO_HISHER> party against evil.  If the user is evil it protects <PRO_HISHER> party against good.  If the user is neither evil nor good the horn doesn't work at all.  The horn can be blown once per day.
 
 STATISTICS:
 
@@ -1548,8 +1564,8 @@ Charged abilities:
 – Protection from Evil/Good, 10' Radius (1/day)
 
 Weight: 3~
-@251  = ~Girdle of Cloud Giant Strength~
-@252  = ~This mighty enchanted belt grants the wearer the equivalent strength of a cloud giant.  It was once the property of the paladin Hardan of Waterdeep, who brought it back from an expedition into the Undermountain.  Hardan himself disappeared during the second Dragonspear war, and is assumed to have been dragged into hell by the devils like so many others.
+@251   = ~Girdle of Cloud Giant Strength~
+@252   = ~This mighty enchanted belt grants the wearer the equivalent strength of a cloud giant.  It was once the property of the paladin Hardan of Waterdeep, who brought it back from an expedition into the Undermountain.  Hardan himself disappeared during the second Dragonspear war, and is assumed to have been dragged into hell by the devils like so many others.
 
 STATISTICS:
 
@@ -1557,12 +1573,12 @@ Equipped abilities:
 – Strength: 23
 
 Weight: 2~
-@253  = ~The Sword of the Planes flares with power!~
-@254  = ~The Sword of the Planes has returned to normal.~
-@255  = ~Druidic Robe~
-@256  = ~A non-descript grey druidic robe.~
-@257  = ~Nyalee's Robe of Stone~
-@258  = ~This garment looks rather plain at first glance, but it bears powerful protective enchantments.  Although it is as soft and supple as a normal robe to the wearer, attackers find the exterior as hard as stone due to an earth elemental being woven into the fabric.
+@253   = ~The Sword of the Planes flares with power!~
+@254   = ~The Sword of the Planes has returned to normal.~
+@255   = ~Druidic Robe~
+@256   = ~A non-descript grey druidic robe.~
+@257   = ~Nyalee's Robe of Stone~
+@258   = ~This garment looks rather plain at first glance, but it bears powerful protective enchantments.  Although it is as soft and supple as a normal robe to the wearer, attackers find the exterior as hard as stone due to an earth elemental being woven into the fabric.
 
 This robe can only be worn by clerics and druids.  There is no known history, most likely Nyalee created this robe herself at some point.
 
@@ -1578,8 +1594,8 @@ Charged abilities:
 – Conjure Earth Elemental (1/day)
 
 Weight: 6~
-@259  = ~Orb of Dragonkind~
-@260  = ~This fabled artifact has many myths and legends surrounding it, and seprating the facts from the fables has lead to many scholary debates among the sages.  It is generally accepted that the Orbs of Dragonkind were the result of some sort of truce between the ancient dragons and early humanoids, but the humans, elves, dwarves and dragons all have their own versions of how this came to be.
+@259   = ~Orb of Dragonkind~
+@260   = ~This fabled artifact has many myths and legends surrounding it, and seprating the facts from the fables has lead to many scholary debates among the sages.  It is generally accepted that the Orbs of Dragonkind were the result of some sort of truce between the ancient dragons and early humanoids, but the humans, elves, dwarves and dragons all have their own versions of how this came to be.
 
 The only thing that is certain is that possessing just one of these grants the bearer great power over dragonkind.  Most likely this is how Abazigal managed to gather his army of dragons, as normally chromatic dragons hate each other and are not inclined to cooperate.
 
@@ -1591,8 +1607,8 @@ Charged abilities:
 – Dragon's Breath (1/day)
 
 Weight: 5~
-@261  = ~Wand of Earth and Stone~
-@262  = ~This powerful wand is infused with the element of earth and can summon a lesser earth elemental to do the wielder's bidding.  Its secondary function is to cover the wielder in a protective layer of stone.
+@261   = ~Wand of Earth and Stone~
+@262   = ~This powerful wand is infused with the element of earth and can summon a lesser earth elemental to do the wielder's bidding.  Its secondary function is to cover the wielder in a protective layer of stone.
 
 STATISTICS:
 
@@ -1601,14 +1617,14 @@ Charge abilities:
 – Stone Skin
 
 Weight: 1~
-//@263  = ~~
-//@264  = ~~
-//@265  = ~~
-//@266  = ~~
-//@267  = ~~
-//@268  = ~~
-@269  = ~Gloves of Thievery~
-@270  = ~These enchanted gloves are popular with thieves, as they aid the wearer in obtaining items that aren't theirs.
+//@263   = ~~
+//@264   = ~~
+//@265   = ~~
+//@266   = ~~
+//@267   = ~~
+//@268   = ~~
+@269   = ~Gloves of Thievery~
+@270   = ~These enchanted gloves are popular with thieves, as they aid the wearer in obtaining items that aren't theirs.
 
 STATISTICS:
 
@@ -1617,8 +1633,8 @@ Equipped abilities:
 – Open Locks: +5%
 
 Weight: 2~
-@271  = ~Ghoulbane +1~
-@272  = ~This magical halberd was forged with the specific purpose of slaying ghouls and ghasts.  Its exact origins have not been recorded, but it had been in the possession of the clergy of Helm for a long time and was wielded by various Watchmen.
+@271   = ~Ghoulbane +1~
+@272   = ~This magical halberd was forged with the specific purpose of slaying ghouls and ghasts.  Its exact origins have not been recorded, but it had been in the possession of the clergy of Helm for a long time and was wielded by various Watchmen.
 
 STATISTICS:
 
@@ -1635,8 +1651,8 @@ Requires:
  13 Strength
 
 Weight: 14~
-@273  = ~Medallion of Faith~
-@274  = ~When worn by a devout priest or paladin of good alignment, this medallion shows the holy symbol of their chosen patron and enables them to cast several useful spells.  To anyone else it is merely a pretty bauble.
+@273   = ~Medallion of Faith~
+@274   = ~When worn by a devout priest or paladin of good alignment, this medallion shows the holy symbol of their chosen patron and enables them to cast several useful spells.  To anyone else it is merely a pretty bauble.
 
 STATISTICS:
 
@@ -1646,8 +1662,8 @@ Charged abilities:
 – Slow Poison (1/day)
 
 Weight: 1~
-@275  = ~Boots of Balance~
-@276  = ~The wearer of these soft, low-heeled supple leather boots is endowed with a magically enhanced sense of balance.  Although popular with rogues, they can be worn by any class.
+@275   = ~Boots of Balance~
+@276   = ~The wearer of these soft, low-heeled supple leather boots is endowed with a magically enhanced sense of balance.  Although popular with rogues, they can be worn by any class.
 
 STATISTICS:
 
@@ -1656,8 +1672,8 @@ Equipped abilities:
 – Move Silently: +10%
 
 Weight: 4~
-@277  = ~Lovely Pink Ioun Stone~
-@278  = ~This cheerfully colored ioun stones makes its owner a little more charming.
+@277   = ~Lovely Pink Ioun Stone~
+@278   = ~This cheerfully colored ioun stones makes its owner a little more charming.
 
 STATISTICS:
 
@@ -1665,8 +1681,8 @@ Equipped abilities:
 – Charisma: +1
 
 Weight: 0~
-@279  = ~Cloak of Flame~
-@280  = ~This strange cloak can only be worn by mages.  It functions as a basic cloak of protection but has additional powers over fire.  According to some tales it was once a normal cloak of protection until the wizard who wore it at the time died in the hellish blaze of a meteor swarm cast by a jealous rival.  Partially infused with both the spirit of the departed wizard and the arcane fire that ended his life it became what it is now, or so the story goes.
+@279   = ~Cloak of Flame~
+@280   = ~This strange cloak can only be worn by mages.  It functions as a basic cloak of protection but has additional powers over fire.  According to some tales it was once a normal cloak of protection until the wizard who wore it at the time died in the hellish blaze of a meteor swarm cast by a jealous rival.  Partially infused with both the spirit of the departed wizard and the arcane fire that ended his life it became what it is now, or so the story goes.
 
 STATISTICS:
 
@@ -1680,8 +1696,8 @@ Charged abilities:
 – Fire Shield (1/day, red only)
 
 Weight: 3~
-@281  = ~Cloak of Lathander~
-@282  = ~Cloaks of this type are sometimes made by the clergy of Lathander, and sold or given to good-hearted adventurers who seek to combat undead foes.  A bright orange-red, it resembles the color of the rising sun at dawn, the bane of vampires and many other walking dead that shun its cleansing light.
+@281   = ~Cloak of Lathander~
+@282   = ~Cloaks of this type are sometimes made by the clergy of Lathander, and sold or given to good-hearted adventurers who seek to combat undead foes.  A bright orange-red, it resembles the color of the rising sun at dawn, the bane of vampires and many other walking dead that shun its cleansing light.
 
 STATISTICS:
 
@@ -1693,8 +1709,8 @@ Charged abilities:
 – False Dawn (1/day as a 14th level priest)
 
 Weight: 3~
-@283  = ~Bottle of Pleasant Odors~
-@284  = ~The noblewoman Lady Devanna of Baldur's Gate commissioned this enchanted bottle from the temple of Gond after one too many pranks involving the Stinking Cloud spell was played on her.
+@283   = ~Bottle of Pleasant Odors~
+@284   = ~The noblewoman Lady Devanna of Baldur's Gate commissioned this enchanted bottle from the temple of Gond after one too many pranks involving the Stinking Cloud spell was played on her.
 
 STATISTICS:
 
@@ -1702,10 +1718,10 @@ Charged abilities:
 – Zone of Sweet Air (1/day)
 
 Weight: 2~
-@285  = ~Black Dragon Scales~
-@286  = ~These are the scales harvested from the black dragon that Irenicus rode into Suldanessenar.  Deep black yet glinting in the light, they feel strong and supple like tough leather.   They could probably be made into some great armor.~
-@287  = ~Black Dragon Scale~
-@288  = ~Although it looks like a fancy suit of studded leather at first glance, this armor has been crafted from the scales of a powerful black dragon.  Like the beast they came from, this armor naturally resists acid and spells.
+@285   = ~Black Dragon Scales~
+@286   = ~These are the scales harvested from the black dragon that Irenicus rode into Suldanessenar.  Deep black yet glinting in the light, they feel strong and supple like tough leather.   They could probably be made into some great armor.~
+@287   = ~Black Dragon Scale~
+@288   = ~Although it looks like a fancy suit of studded leather at first glance, this armor has been crafted from the scales of a powerful black dragon.  Like the beast they came from, this armor naturally resists acid and spells.
 
 STATISTICS:
 
@@ -1720,8 +1736,8 @@ Equipped Abilities:
 Armor Class: 0 (-1 vs. piercing and missile)
 
 Weight: 25~
-@289  = ~Varazdin's Cloak of Protection~
-@290  = ~Cloak of Protection +1/+3: 'Varazdin's Cloak'
+@289   = ~Varazdin's Cloak of Protection~
+@290   = ~Cloak of Protection +1/+3: 'Varazdin's Cloak'
 
 This cloak was created about two hundred years ago by the reclusive mage Varazdin, who often found himself in conflict with orcs that threatened his secluded home in the forest.  It served him well until his death in yet another massive orc raid.  The orc chieftain Groth Skullsmasher claimed it for himself, but he was in turn slain by a dwarven champion whose name has been lost to the ages.  Since then, it has been worn by several adventurers.  It was last seen in the possession of an adventuring party seeking to explore Durlag's Tower.
 
@@ -1732,8 +1748,8 @@ Equipped abilities:
 – Saving Throws: +3 (all)
 
 Weight: 3~
-@291  = ~Ring of the Elven Mage~
-@292  = ~Ring of Protection +3/+1: 'Ring of the Elven Mage'
+@291   = ~Ring of the Elven Mage~
+@292   = ~Ring of Protection +3/+1: 'Ring of the Elven Mage'
 
 This ring was created almost nine centuries ago by an elven mage as a gift for his human lover.  When the woman died of old age, the wizard gifted it to their eldest child, and then to his eldest child and so on.  When the elven wizard himself finally died to old age, the ring had been worn by his half-elven family for almost eighthundred years.
 
@@ -1742,8 +1758,8 @@ Equipped abilities:
 – Saving Throws: +1 (all)
 
 Weight: 0~
-@293  = ~Priest's Bullet~
-@294  = ~These hollow glass sling bullets are filled with holy water.  Upon impact they shatter, dousing the target in holy water. This deals additional damage to undead and fiends.  These bullets are larger and heavier than normal, resulting in reduced accuracy and range.
+@293   = ~Priest's Bullet~
+@294   = ~These hollow glass sling bullets are filled with holy water.  Upon impact they shatter, dousing the target in holy water. This deals additional damage to undead and fiends.  These bullets are larger and heavier than normal, resulting in reduced accuracy and range.
 
 STATISTICS:
 
@@ -1752,8 +1768,8 @@ Damage: 1d4+1 (missile), +2d4+2 vs. undead and fiends (magic)
 Launcher: Sling
 
 Weight: 0~
-@295  = ~Ring of the Hierophant~
-@296  = ~Created by a Cormanthian archdruid hundreds of years ago, this enchanted ring was traditionally worn by the oldest living druid in the great forest.  At some point the ring was stolen by an unknown thief, and until now hadn't been seen for at least a century.
+@295   = ~Ring of the Hierophant~
+@296   = ~Created by a Cormanthian archdruid hundreds of years ago, this enchanted ring was traditionally worn by the oldest living druid in the great forest.  At some point the ring was stolen by an unknown thief, and until now hadn't been seen for at least a century.
 
 STATISTICS:
 
@@ -1765,8 +1781,8 @@ Equipped abilities:
 – Casting Level: +4 (druid)
 
 Weight: 0~
-@297  = ~Holy Sword +2~
-@298  = ~This sacred blade was created by the dwarven smith Brokk in honor of all the good deeds of <CHARNAME> and <PRO_HISHER> friends.  As such it has no history, but perhaps this is the beginning of a legend?
+@297   = ~Holy Sword +2~
+@298   = ~This sacred blade was created by the dwarven smith Brokk in honor of all the good deeds of <CHARNAME> and <PRO_HISHER> friends.  As such it has no history, but perhaps this is the beginning of a legend?
 
 In addition to dealing extra damage to undead and fiends, this sword can heal the wielder's wounds once per day, and call down the wrath of <PRO_HISHER> deity on a foe.  Only the purest and holiest of warriors can wield this blade.
 
@@ -1785,8 +1801,8 @@ Requires:
  11 Strength
 
 Weight: 8~
-@299  = ~Browdow's Ring~
-@300  = ~The full name of this enchanted ring is actually "Browdow's Ring of Utmost Weapon Harm", but most people prefer the shortened version.  Browdow, a dwarven priest of Clangeddin Silverbeard, created eight of these rings some 200 years ago, and they have since been eagerly sought by warriors from all over Faerun, changing hands frequently and often violently.
+@299   = ~Browdow's Ring~
+@300   = ~The full name of this enchanted ring is actually "Browdow's Ring of Utmost Weapon Harm", but most people prefer the shortened version.  Browdow, a dwarven priest of Clangeddin Silverbeard, created eight of these rings some 200 years ago, and they have since been eagerly sought by warriors from all over Faerun, changing hands frequently and often violently.
 
 STATISTICS:
 
@@ -1799,24 +1815,24 @@ Charge abilities:
 – Cure Light Wounds (1/day, self only)
 
 Weight: 0~
-@301  = ~Alchemist's Fire~
-@302  = ~This is a bottle of alchemist's fire, a secret mixture of oils and volatile substances that ignites on contact with the air.  While it is not explosive like an Oil of Fiery burning, the substance still burns with a very hot flame, inclicting fire damage on whatever the bottle is thrown at.  It also has the advantage of being a completely non-magical effect, so it can damage even things that resist magic.
+@301   = ~Alchemist's Fire~
+@302   = ~This is a bottle of alchemist's fire, a secret mixture of oils and volatile substances that ignites on contact with the air.  While it is not explosive like an Oil of Fiery burning, the substance still burns with a very hot flame, inclicting fire damage on whatever the bottle is thrown at.  It also has the advantage of being a completely non-magical effect, so it can damage even things that resist magic.
 
 STATISTICS:
 
 Damage: 2d8 (Save vs. Breath for half)
 
 Weight: 1~
-@303  = ~Flask of Acid~
-@304  = ~This is a bottle of concentrated acid, refined and distilled through secret alchemical processes.  When thrown at a target, the acid will spread over it, inflicting damage.  If not neutralized or washed off somehow, the acid will do more damage after a round, then it becomes inert.  This is a completely non-magical effect, so it may damage even things that resist magic.
+@303   = ~Flask of Acid~
+@304   = ~This is a bottle of concentrated acid, refined and distilled through secret alchemical processes.  When thrown at a target, the acid will spread over it, inflicting damage.  If not neutralized or washed off somehow, the acid will do more damage after a round, then it becomes inert.  This is a completely non-magical effect, so it may damage even things that resist magic.
 
 STATISTICS:
 
 Damage: 2d6 initially, plus 1d6 after a round (Save vs. Breath halves the initial damage and negates the secondary damage)
 
 Weight: 1~
-@305  = ~Laeral's Storm Armor +2~
-@306  = ~Named after the wizard who devised it, Laeral Stormhand of the Seven Sisters, this is an unusual armor.  It is entirely constructed out of a peculiar non-metallic material that does not conduct electricity or heat.  As such it renders the wearer completely immune to Fireball, Lightning Bolt, Cone of Cold and similar spells.
+@305   = ~Laeral's Storm Armor +2~
+@306   = ~Named after the wizard who devised it, Laeral Stormhand of the Seven Sisters, this is an unusual armor.  It is entirely constructed out of a peculiar non-metallic material that does not conduct electricity or heat.  As such it renders the wearer completely immune to Fireball, Lightning Bolt, Cone of Cold and similar spells.
 
 STATISTICS:
 
@@ -1826,8 +1842,8 @@ Equipped abilities:
 Armor Class: 1 (-2 vs. slashing)
 
 Weight: 25~
-@307  = ~Field Plate~
-@308  = ~Field plate dispenses with the chain backing of plate mail and full plate to save weight.  Instead a light suit of padding, or aketon, is worn beneath field plate.  The considerable weight of this armor is distributed over the wearer's body, and a trained knight can lie down, stand up, or vault into the saddle while wearing this armor.
+@307   = ~Field Plate~
+@308   = ~Field plate dispenses with the chain backing of plate mail and full plate to save weight.  Instead a light suit of padding, or aketon, is worn beneath field plate.  The considerable weight of this armor is distributed over the wearer's body, and a trained knight can lie down, stand up, or vault into the saddle while wearing this armor.
 
 STATISTICS:
 
@@ -1836,8 +1852,8 @@ Requires:
  14 Strength
 
 Weight: 60~
-@309  = ~Plate of Solamnus +5~
-@310  = ~This beautiful suit of field plate has been decorated with the markings of all three Solamnic orders.  The sigil of the Order of the Rose is displayed most prominently.  Armor of this quality is not made anymore and therefor exeedingly rare.
+@309   = ~Plate of Solamnus +5~
+@310   = ~This beautiful suit of field plate has been decorated with the markings of all three Solamnic orders.  The sigil of the Order of the Rose is displayed most prominently.  Armor of this quality is not made anymore and therefor exeedingly rare.
 
 The enchantment on this armor only allows lawful good characters to equip it.
 
@@ -1848,10 +1864,21 @@ Requires:
  14 Strength
 
 Weight: 60~
-//@311  = ~~
-//@312  = ~~
-@313  = ~Golemblight +2~
-@314  = ~This mysterious dagger has been carved entirely from a strange red crystal that is harder than steel.  It is particularly effective against golems.
+@311   = ~Ring of Izmur~
+@312   = ~If liches excel in one thing, it's combining existing items and spells in new and unusual ways.  This ring, a combination of your old Ring of Free Action with the Time Stop spell, is such an item.  You do not know which lich Cespenar bribed to create this item for you, and it's likely better for all to simply not ask.
+
+STATISTIC:
+
+Equipped abilities:
+– Free Action
+– Armor Class: +3 bonus
+
+Charged abilities:
+– Time Stop (1/day)
+
+Weight: 0~
+@313   = ~Golemblight +2~
+@314   = ~This mysterious dagger has been carved entirely from a strange red crystal that is harder than steel.  It is particularly effective against golems.
 
 STATISTICS:
 
@@ -1867,10 +1894,17 @@ Requires:
  3 Strength
 
 Weight: 1~
-//@315  = ~~
-//@316  = ~~
-@317  = ~Scale Mail~
-@318  = ~This suit of armor has been crafted from the hide of some sort of scaled monster, like a dragon.  Depending on what monster it came from, it may have a superior armor class, and some special powers or resistances.
+@315   = ~Girdle of Many Pouches~
+@316   = ~This broad waistbelt seems to be nothing more than a well-made article of dress.  But on closer inspection it has many small hidden pouches that act like tiny bags of holding, making it ideal for storing and quickly accessing spell components.  This helps both mages and priests with casting their spells a little quicker.
+
+STATISTICS:
+
+Equipped abilities:
+– Casting Speed: +1
+
+Weight: 2~
+@317   = ~Scale Mail~
+@318   = ~This suit of armor has been crafted from the hide of some sort of scaled monster, like a dragon.  Depending on what monster it came from, it may have a superior armor class, and some special powers or resistances.
 
 STATISTICS:
 
@@ -1885,10 +1919,10 @@ Requires:
  5 Strength
 
 Weight: 25~
-@319  = ~Green Dragon Scales~
-@320  = ~Bright green dragon scales from the wyrm who challenged you in Watcher's Keep.  They may be used to create something new if you show them to the right person.~
-@321  = ~Green Dragon Scale~
-@322  = ~This scale mail was crafted from the scales of a great green wyrm.  In addition to a superior armor class, it also makes the wearer completely immune to poison and disease.
+@319   = ~Green Dragon Scales~
+@320   = ~Bright green dragon scales from the wyrm who challenged you in Watcher's Keep.  They may be used to create something new if you show them to the right person.~
+@321   = ~Green Dragon Scale~
+@322   = ~This scale mail was crafted from the scales of a great green wyrm.  In addition to a superior armor class, it also makes the wearer completely immune to poison and disease.
 
 STATISTICS:
 
@@ -1903,8 +1937,8 @@ Requires:
  5 Strength
 
 Weight: 25~
-@323  = ~Maul of the Titans~
-@324  = ~This is a massive, immensely heavy and utterly unwieldy hammer that can only be used by giants and other creatures of similar strength.  Should anyone be able to lift it though, a single blow would surely send an opponent flying.
+@323   = ~Maul of the Titans~
+@324   = ~This is a massive, immensely heavy and utterly unwieldy hammer that can only be used by giants and other creatures of similar strength.  Should anyone be able to lift it though, a single blow would surely send an opponent flying.
 
 Combat abilities:
 – Counts as a +5 weapon for purposes of what it can hit
@@ -1918,14 +1952,14 @@ Type: 1-handed
 Requires: 21 Strength
 
 Weight: 150~
-//@325  = ~~
-//@326  = ~~
-//@327  = ~~
-//@328  = ~~
-@329  = ~Katana~
-@330  = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.~
-@331  = ~Greenswathe +3~
-@332  = ~This strange, almost alien looking scimitar has rudimentary intelligence and is strictly neutral.  It allows only druids to use it, it simply will not function for anyone else.  Just grasping it gives the druid a sense there might be more powers to this blade than are currently known.
+//@325   = ~~
+//@326   = ~~
+//@327   = ~~
+//@328   = ~~
+//@329   = ~~
+//@330   = ~~
+@331   = ~Greenswathe +3~
+@332   = ~This strange, almost alien looking scimitar has rudimentary intelligence and is strictly neutral.  It allows only druids to use it, it simply will not function for anyone else.  Just grasping it gives the druid a sense there might be more powers to this blade than are currently known.
 
 STATISTICS:
 
@@ -1943,8 +1977,8 @@ Requires:
  8 Strength
 
 Weight: 3~
-@333  = ~Bullet of Pulverizing +1~
-@334  = ~After being thrown, these sling bullets magically enlarge in mid-air, impacting their target like a rock thrown by a catapult or giant.
+@333   = ~Bullet of Pulverizing +1~
+@334   = ~After being thrown, these sling bullets magically enlarge in mid-air, impacting their target like a rock thrown by a catapult or giant.
 
 STATISTICS:
 
@@ -1953,8 +1987,8 @@ Damage: 4d4+4 (missile)
 Launcher: Sling
 
 Weight: 0~
-@335  = ~Hadrion's Spear +3~
-@336  = ~Hadrion, a minor warlord, purchased this magical spear at great cost and then had wizards further enchant it with additional powers.  Hadrion used the spear in all his campains and it is said to have been buried with him in his familiy vaults.  How it came to its current location is not known.
+@335   = ~Hadrion's Spear +3~
+@336   = ~Hadrion, a minor warlord, purchased this magical spear at great cost and then had wizards further enchant it with additional powers.  Hadrion used the spear in all his campains and it is said to have been buried with him in his familiy vaults.  How it came to its current location is not known.
 
 STATISTICS:
 
@@ -1972,8 +2006,8 @@ Requires:
  5 Strength
 
 Weight: 3~
-@337  = ~Ring of Fearlessness~
-@338  = ~It is uncertain how many of these deadly rings exist.  The first one was crafted by a Waterdhavian wizard named Julius Silverheart in 762 DR.  Silverheart, who was known for his bravery, felt ashamed for his cowardly apprentice Jed.  Wanting him to lead an adventurous life, Silverheard attempted to craft a Ring of Courage for him, and was reported to make a few more for sale.  However, the results were not quite as expected.
+@337   = ~Ring of Fearlessness~
+@338   = ~It is uncertain how many of these deadly rings exist.  The first one was crafted by a Waterdhavian wizard named Julius Silverheart in 762 DR.  Silverheart, who was known for his bravery, felt ashamed for his cowardly apprentice Jed.  Wanting him to lead an adventurous life, Silverheard attempted to craft a Ring of Courage for him, and was reported to make a few more for sale.  However, the results were not quite as expected.
 
 Silverheart gifted Jed the ring on his birthday but did not tell him of its magical nature.  Jed tied only 19 days later when he charged into over a dozen thugs threatening a woman.  The thug's leader stole the ring but met his end several days later when he made the mistake of provoking a skilled adventurer, Bonecrusher Aulwait.  During the following decades, Bonecrusher slew seven dragons and many other monsters and grew a reputation for deadly calm in the most lethal of situations.  He then passed the ring to his son, whose actual skill did not match his confidence.  Since then, the ring and others like it have had several owners, some of whom are among the Realm's greatest heroes.  The number of owners who died anonimously because their actual skill could not match their sudden boost in confidence is unknown.
 
@@ -1986,8 +2020,8 @@ Equipped abilities:
 – Wisdom: -2 penalty
 
 Weight: 0~
-@339  = ~Skull Mace +2~
-@340  = ~This weapon is surrounded by a palpable aura of darkest evil, and no good creature should ever even think about using it.  Evil priests however would go to great lengths to obtain a weapon like this.
+@339   = ~Skull Mace +2~
+@340   = ~This weapon is surrounded by a palpable aura of darkest evil, and no good creature should ever even think about using it.  Evil priests however would go to great lengths to obtain a weapon like this.
 
 STATISTICS:
 
@@ -2006,8 +2040,8 @@ Requires:
  10 Strength
 
 Weight: 7~
-@341  = ~Kanalruil +4~
-@342  = ~This enchanted blade one belonged to the elven heroine Ytharra, who is said to have slain a great wolf who threatened to devour the sun.  Exactly what happned to Ytharra and how her sword came to be in its current location is not known.
+@341   = ~Kanalruil +4~
+@342   = ~This enchanted blade one belonged to the elven heroine Ytharra, who is said to have slain a great wolf who threatened to devour the sun.  Exactly what happned to Ytharra and how her sword came to be in its current location is not known.
 
 Mystical elven runes flow along the glowing blade, spelling out the names of all the elven gods.  The elves would no doubt go to great lengths to see this treasure returned to them, and would likely take a dim view of anyone using it for evil purposes.
 
@@ -2028,8 +2062,8 @@ Requires:
  11 Strength
 
 Weight: 6~
-@343  = ~Mail of Thalaera +5~
-@344  = ~Chain Mail +5: 'Mail of Thalaera'
+@343   = ~Mail of Thalaera +5~
+@344   = ~Chain Mail +5: 'Mail of Thalaera'
 Crafted of shining silver and matte black links, this suit of elven chain is one of the finest ever created.  It used to stored in queen Amlaruil's palace on distant Evermeet but was stolen during an incident known as the Elshadow affair and considered lost until now.  The elves will likely take a dim view of anyone using it for evil purposes.  As with all other elven chain, this suit can be worm by Thieves and Fighter/Mages with few restrictions.
 
 STATISTICS:
@@ -2050,8 +2084,8 @@ Requires:
  8 Strength
 
 Weight: 7~
-@345  = ~Ghastrobe~
-@346  = ~This literally ghastly robe was found on the body of the evil cleric Bassilus.  Donning this robe gives the wearer several of the abilities of a ghast.  It is also completely horrific to look at and only the most demented necromancer or vile priest would want to be seen wearing one.
+@345   = ~Ghastrobe~
+@346   = ~This literally ghastly robe was found on the body of the evil cleric Bassilus.  Donning this robe gives the wearer several of the abilities of a ghast.  It is also completely horrific to look at and only the most demented necromancer or vile priest would want to be seen wearing one.
 
 STATISTICS:
 
@@ -2065,8 +2099,8 @@ Equiped abilities:
 – Charisma: -3 penalty
 
 Weight: 3~
-@347  = ~Might of Heroes +3~
-@348  = ~This finely crafted enchanted war axe is obviously of dwarven make, but exactly where and when it was forged is not exactly known even to dwarven sages.  Most likely it belonged to a dwarven clan now lost to history, perhaps wiped out by one of the all too frequent orc raids in the north.  Likely discovered in some forgotten dwarven hall by adventurers, this axe has now seen many battles and has been wielded by several heroes of various races.  This latter fact gave it its current name.
+@347   = ~Might of Heroes +3~
+@348   = ~This finely crafted enchanted war axe is obviously of dwarven make, but exactly where and when it was forged is not exactly known even to dwarven sages.  Most likely it belonged to a dwarven clan now lost to history, perhaps wiped out by one of the all too frequent orc raids in the north.  Likely discovered in some forgotten dwarven hall by adventurers, this axe has now seen many battles and has been wielded by several heroes of various races.  This latter fact gave it its current name.
 
 STATISTICS:
 
@@ -2079,8 +2113,8 @@ Requires:
  10 Strength
 
 Weight: 4~
-@349  = ~Hand of Fury~
-@350  = ~This heavy gauntlet has been enchanted with some offensive and defensive dweomers.  It seems to be quite old, but is rather non-descript.  It may be the early work of a now long forgotten Netherese arcanist.
+@349   = ~Hand of Fury~
+@350   = ~This heavy gauntlet has been enchanted with some offensive and defensive dweomers.  It seems to be quite old, but is rather non-descript.  It may be the early work of a now long forgotten Netherese arcanist.
 
 STATISTICS:
 
@@ -2097,10 +2131,9 @@ Weight: 3~
 
 // Strings for Brokk's Forge
 
-
-@1000 = ~Eh, who be ye?  No matter, <RACE>.  I have nothing ta sell t' ye.~
-@1001 = ~What's the matter, sir?  Can I help you in some way?~
-@1002 = ~I'm sorry to interrupt.  I'll leave you be.~
+@1000  = ~Eh, who be ye?  No matter, <RACE>.  I have nothing ta sell t' ye.~
+@1001  = ~What's the matter, sir?  Can I help you in some way?~
+@1002  = ~I'm sorry to interrupt.  I'll leave you be.~
 @1003  = ~Eh, whatever.~
 @1004  = ~Mm, yer sum kind o' paladin or sumthin'?  Whatever.  Unless you can get that blasted mine down south started up again and deal with all the bandits, ya cannae help me.  Now be off with ye.~
 @1005  = ~Brokk's Forge
@@ -2110,235 +2143,245 @@ A dwarf I met at the Friendly Arm Inn seems to be in some sort of trouble due to
 @1007  = ~I already told ye, I got nuthin' t' sell!  Now be off with ye!~
 @1008  = ~Ah, ye be <GABBER>, be ye not?  Me name's Brokk, and I be runnin' this forge and weapon shop.  I recognize ye from the stories folks have been telling.  Cleansed them mines down south pretty good, aye?~
 @1009  = ~It warms me old dwarven heart ta hear the mine be running again.  Now maybe I can finally start me forge back up.  But, until them pesky bandits be dealt with, I can still nae get sum good ore in.~
-@1010 = ~Fear not, I will deal with those bandits.~
-@1011 = ~Yeah, looks like it's up to me again.  Oh well.~
-@1012 = ~Heh, rushing headlong into danger, aye?  I like yer attitude, m'<GIRLBOY>.  Ye be reminding me of meself when I were younger.~
-@1013 = ~Ye'd be helping a lot of good folk if ye take them out, m'<GIRLBOY>.~
-@1014 = ~Here, let old Brokk give ye a hand.  Take these with ye, they will keep ye safe.  Now, go give them bandits what they deserve!~
-@1015 = ~Come see me if ye be needing any weapons or armor, I'll give y'all a good deal!~
-@1016 = ~Brokk's Forge
+@1010  = ~Fear not, I will deal with those bandits.~
+@1011  = ~Yeah, looks like it's up to me again.  Oh well.~
+@1012  = ~Heh, rushing headlong into danger, aye?  I like yer attitude, m'<GIRLBOY>.  Ye be reminding me of meself when I were younger.~
+@1013  = ~Ye'd be helping a lot of good folk if ye take them out, m'<GIRLBOY>.~
+@1014  = ~Here, let old Brokk give ye a hand.  Take these with ye, they will keep ye safe.  Now, go give them bandits what they deserve!~
+@1015  = ~Come see me if ye be needing any weapons or armor, I'll give y'all a good deal!~
+@1016  = ~Brokk's Forge
 
 My cleansing of the Nashkel mines has given the old dwarven smith Brokk some hope.  He has reopened his store, but until the bandits are dealt with he still can't get any good ore.  He gave me a pair of bracers with strange runes on them, saying they would keep me safe.  I wonder what they'll do?~
-@1017 = ~<GABBER>!  Ye did it, m'<GIRLBOY>!  Them bandits be running like ye set their asses on fire!~
-@1018 = ~Ye be making quite the name fer yerself with all this hero's business.  This dwarf will ferever be in yer debt!~
-@1019 = ~Here, take this with ye, and wear it with pride, hero!~
-@1020 = ~Brokk's Forge
+@1017  = ~<GABBER>!  Ye did it, m'<GIRLBOY>!  Them bandits be running like ye set their asses on fire!~
+@1018  = ~Ye be making quite the name fer yerself with all this hero's business.  This dwarf will ferever be in yer debt!~
+@1019  = ~Here, take this with ye, and wear it with pride, hero!~
+@1020  = ~Brokk's Forge
 
 My actions at the bandit camp have not gone unnoticed, and some are starting to call me a hero.  The dwarven smith Brokk was very grateful for saving his business and gave me a strange belt, telling me to wear it with pride.~
-@1021 = ~Mm, ye got sumthin' very interesting there, <GIRLBOY>.  Meteoric iron, if I be nae mistaken?~
-@1022 = ~If ye be interested, I can forge ye a mighty fine shield from that.  I'll give ye a special price, only 3000 gold, but I'll be needin' a star sapphire as well.~
-@1023 = ~An excellent idea!  I got all of that right here, so let's do it!~
-@1024 = ~Sorry, I cannot afford that right now.  Maybe later.~
-@1025 = ~A pity, that.  Well, if ya do get the gem and the funds, ye know where t' find me.~
-@1026 = ~Brokk's Meteoric Shield
+@1021  = ~Mm, ye got sumthin' very interesting there, <GIRLBOY>.  Meteoric iron, if I be nae mistaken?~
+@1022  = ~If ye be interested, I can forge ye a mighty fine shield from that.  I'll give ye a special price, only 3000 gold, but I'll be needin' a star sapphire as well.~
+@1023  = ~An excellent idea!  I got all of that right here, so let's do it!~
+@1024  = ~Sorry, I cannot afford that right now.  Maybe later.~
+@1025  = ~A pity, that.  Well, if ya do get the gem and the funds, ye know where t' find me.~
+@1026  = ~Brokk's Meteoric Shield
 
 The smith Brokk offered to make a shield from the meteoric iron I found in Balduran's ship for 3000 gold and a star sapphire.  I should go see him when I have the funds and the gem.~
-@1027 = ~Ye won't regret this, m'<GIRLBOY>.  Well, I be havin' no other open jobs fer now, so I kin get t' it right away.  Come back tomorrow, yeah?~
-@1028 = ~Brokk's Meteoric Shield
+@1027  = ~Ye won't regret this, m'<GIRLBOY>.  Well, I be havin' no other open jobs fer now, so I kin get t' it right away.  Come back tomorrow, yeah?~
+@1028  = ~Brokk's Meteoric Shield
 
 The dwarf Brokk is forging a shield from the meteoric iron I found.  It should be ready within a day.~
-@1029 = ~Ah, <GABBER>!  Yer shield be done, m'<GIRLBOY>.  Ain't she a beauty?  Here ye go!~
-@1030 = ~Brokk's Meteoric Shield
+@1029  = ~Ah, <GABBER>!  Yer shield be done, m'<GIRLBOY>.  Ain't she a beauty?  Here ye go!~
+@1030  = ~Brokk's Meteoric Shield
 
 The dwarven smith Brokk crafted a fine new shield from the meteoric iron I found in the wreck of Balduran's ship.  I guess that whole journey was not so invain after all, at least for me.~
-@1031 = ~Mm?  That be sum armor y'got yerself there, m'<GIRLBOY>.  Ankheg, if I be nae mistaken?  Must be Taerom's work, yes?~
-@1032 = ~Y'know, this be givin' me an idea.  Y'think ye could fetch me another of them ankheg shells?  Then fer, let's say 2000 gold I could make ye a matchin' shield.~
-@1033 = ~Sure, I got another shell right here in fact, and the gold.  Let's do this!~
-@1034 = ~Not right now I'm afraid.  Maybe later.~
-@1035 = ~If ye get yerself another shell and the gold, come see me!  Good hunting, <GABBER>!~
-@1036 = ~Brokk's Ankheg Shield
+@1031  = ~Mm?  That be sum armor y'got yerself there, m'<GIRLBOY>.  Ankheg, if I be nae mistaken?  Must be Taerom's work, yes?~
+@1032  = ~Y'know, this be givin' me an idea.  Y'think ye could fetch me another of them ankheg shells?  Then fer, let's say 2000 gold I could make ye a matchin' shield.~
+@1033  = ~Sure, I got another shell right here in fact, and the gold.  Let's do this!~
+@1034  = ~Not right now I'm afraid.  Maybe later.~
+@1035  = ~If ye get yerself another shell and the gold, come see me!  Good hunting, <GABBER>!~
+@1036  = ~Brokk's Ankheg Shield
 
 Impressed by Taerom's ankheg armor, the dwarf Brokk has offered me to make a matching shield if I can get him another ankheg shell and 2000 gold.~
-@1037 = ~Making armor outta ankhegs, why dinnae I think of that meself.  Alright, <GABBER>, I be workin' on this right away.  Come see me tomorrow, aye?~
-@1038 = ~Brokk's Ankheg Shield
+@1037  = ~Making armor outta ankhegs, why dinnae I think of that meself.  Alright, <GABBER>, I be workin' on this right away.  Come see me tomorrow, aye?~
+@1038  = ~Brokk's Ankheg Shield
 
 Inspired by Taerom's ankheg plate, the dwarf Brokk is crafting a matching shield from another ankheg shell I obtained.  It should be ready in a day.~
-@1039 = ~Good timing, <GABBER>, I be just done with yer new shield!  Some fine work, if I do say so meself.~
-@1040 = ~Brokk's Ankheg Shield
+@1039  = ~Good timing, <GABBER>, I be just done with yer new shield!  Some fine work, if I do say so meself.~
+@1040  = ~Brokk's Ankheg Shield
 
 As promised, Brokk created a matching shield for my ankheg plate.  I cannot help but feel the dwarf was trying to prove himself no less than Taerom though...~
-@1041 = ~Ah, <GABBER>!  Welcome back t' me forge.  What can this old dwarf do fer ye today?~
-@1042 = ~Here's 3000 gold and a star sapphire, can you forge me that meteoric iron shield now?~
-@1043 = ~I have another ankheg shell and 2000 gold, can you make me a shield?~
-@1044 = ~Could you show me what you have for sale?~
-@1045 = ~Nothing right now.  Good day, Brokk.~
-@1046 = ~Do you do any custom work, Brokk?~
-@1047 = ~I have a question.  You seem to be neither a priest nor wizard, yet you craft weapons that are inherently magical.  How is that possible?~
-@1048 = ~Ye'll find no finer than these anywhere on the Sword Coast!~
-@1049 = ~Take care, m'<GIRLBOY>.~
-@1050 = ~Aye, sometimes I do, if the job be interesting enough.  Ye be an adventurer, aye?  Why don't ye stop by now and then and show this old dwarf any strange stuff ye found?  Who knows, I might be able ta make ye somethin' nice.~
-@1051 = ~Sure, I will do that.  See you later, Brokk!~
-@1052 = ~Prying int' me secrets, are ye?  Har har, d'nae be givin' me that look, it be fine.~
-@1053 = ~It be the blessing of Moradin, me lad.  Sum dwarves, like meself, be born with the gift t' craft items beyond the normal.  I cannae explain it more than that.~
-@1054 = ~Fair enough, I suppose magic is by its nature not always easily explained.  Be well, Brokk.~
-@1055 = ~Hey <GIRLBOY>, show me tha' sword fer a minute...~
-@1056 = ~Aye, it be in bad shape.  Found her a dark 'n damp dungeon somewhere, aye?  Mm, I can clear this rust fer ya, give her a good sharpening and do sum minor repairs.  I'll be needin' a diamond and 1,000 gold fer the job though.~
-@1057 = ~Sounds good, let's do it!~
-@1058 = ~Mm, maybe later.~
-@1059 = ~Suit yerself, m'<GIRLBOY>.  I'll be here.~
-@1060 = ~Treasure in the Rust
+@1041  = ~Ah, <GABBER>!  Welcome back t' me forge.  What can this old dwarf do fer ye today?~
+@1042  = ~Here's 3000 gold and a star sapphire, can you forge me that meteoric iron shield now?~
+@1043  = ~I have another ankheg shell and 2000 gold, can you make me a shield?~
+@1044  = ~Could you show me what you have for sale?~
+@1045  = ~Nothing right now.  Good day, Brokk.~
+@1046  = ~Do you do any custom work, Brokk?~
+@1047  = ~I have a question.  You seem to be neither a priest nor wizard, yet you craft weapons that are inherently magical.  How is that possible?~
+@1048  = ~Ye'll find no finer than these anywhere on the Sword Coast!~
+@1049  = ~Take care, m'<GIRLBOY>.~
+@1050  = ~Aye, sometimes I do, if the job be interesting enough.  Ye be an adventurer, aye?  Why don't ye stop by now and then and show this old dwarf any strange stuff ye found?  Who knows, I might be able ta make ye somethin' nice.~
+@1051  = ~Sure, I will do that.  See you later, Brokk!~
+@1052  = ~Prying int' me secrets, are ye?  Har har, d'nae be givin' me that look, it be fine.~
+@1053  = ~It be the blessing of Moradin, me lad.  Sum dwarves, like meself, be born with the gift t' craft items beyond the normal.  I cannae explain it more than that.~
+@1054  = ~Fair enough, I suppose magic is by its nature not always easily explained.  Be well, Brokk.~
+@1055  = ~Hey <GIRLBOY>, show me tha' sword fer a minute...~
+@1056  = ~Aye, it be in bad shape.  Found her a dark 'n damp dungeon somewhere, aye?  Mm, I can clear this rust fer ya, give her a good sharpening and do sum minor repairs.  I'll be needin' a diamond and 1,000 gold fer the job though.~
+@1057  = ~Sounds good, let's do it!~
+@1058  = ~Mm, maybe later.~
+@1059  = ~Suit yerself, m'<GIRLBOY>.  I'll be here.~
+@1060  = ~Treasure in the Rust
 
 The smith Brokk can fix the rusty katana I found in Durlag's tower.  He needs a diamond and 1,000 gold for the job, though.~
-@1061 = ~This will nae be takin' long, ye can wait around fer it...~
-@1062 = ~And here ye be, all cleaned up 'n repaired.  An interesting blade this be.  All the way from the far east, one wonders how it got ta be here, aye?  Use her well, m'<GIRLBOY>!~
-@1063 = ~Treasure in the Rust
+@1061  = ~This will nae be takin' long, ye can wait around fer it...~
+@1062  = ~And here ye be, all cleaned up 'n repaired.  An interesting blade this be.  All the way from the far east, one wonders how it got ta be here, aye?  Use her well, m'<GIRLBOY>!~
+@1063  = ~Treasure in the Rust
 
 Brokk has restored the katana I found in Durlag's Tower to its former glory.~
-@1064 = ~I have the diamond and gold, can you restore this katana for me?~
-@1065 = ~Mm, what's that horn there, m'<GIRLBOY>?~
-@1066 = ~Ah, this be da horn of a magnificent woodland creature.  A shame t'kill one really, but it seems ye be nae ta blame fer this.  If ye like, I kin be puttin' it on a spear head fer ya.  It'll cost ye, oh, 2,000 gold.~
-@1067 = ~A splendid idea, let's do it!~
-@1068 = ~Mm, not right now I'm afraid.~
-@1069 = ~As ye wish, m'<GIRLBOY>.  I'll be here when ye'r ready.~
-@1070 = ~Brokk's Alicorn Spear
+@1064  = ~I have the diamond and gold, can you restore this katana for me?~
+@1065  = ~Mm, what's that horn there, m'<GIRLBOY>?~
+@1066  = ~Ah, this be da horn of a magnificent woodland creature.  A shame t'kill one really, but it seems ye be nae ta blame fer this.  If ye like, I kin be puttin' it on a spear head fer ya.  It'll cost ye, oh, 2,000 gold.~
+@1067  = ~A splendid idea, let's do it!~
+@1068  = ~Mm, not right now I'm afraid.~
+@1069  = ~As ye wish, m'<GIRLBOY>.  I'll be here when ye'r ready.~
+@1070  = ~Brokk's Alicorn Spear
 
 The smith Brokk can use the unicorn horn I found in the bandit camp to make a magical spear.  If I want it, I should give him the horn and 2,000 gold.~
-@1071 = ~Alright, this will nae take long.  Come back tomorrow fer it, aye?~
-@1072 = ~Brokk's Alicorn Spear
+@1071  = ~Alright, this will nae take long.  Come back tomorrow fer it, aye?~
+@1072  = ~Brokk's Alicorn Spear
 
 The smith Brokk is making a spear out of the unicorn horn I found in the bandit camp.  He told me to come back for it the next day.~
-@1073 = ~Ah, <GABBER>.  Yer spear be ready fer ya.  Use it well, aye?~
-@1074 = ~Brokk's Alicorn Spear
+@1073  = ~Ah, <GABBER>.  Yer spear be ready fer ya.  Use it well, aye?~
+@1074  = ~Brokk's Alicorn Spear
 
 Brokk made a magical spear for me out of the unicorn horn I found in the bandit camp.~
-@1075 = ~I've got the horn and gold, let's make that spear.~
-@1076 = ~Oh-ho?  Ye got yerself a real prize there, m'<GIRLBOY>!  Arandur ore, aye?  I've nae seen this in a hundred years!  Oh, I be itching t'forge this into a magnificent suit of armor fer ye!  Still gonna cost ye though, I'll nae do it fer less than 20,000 gold.~
-@1077 = ~Forge me a suit of dwarven plate then!~
-@1078 = ~Can you make me some real quality chain mail?~
-@1079 = ~Not right now, I'm afraid.  Maybe later.~
-@1080 = ~Oh?  A shame that, it will be grand.  Well, I'll be here whenever ye be ready.~
-@1081 = ~The Arandur Ore
+@1075  = ~I've got the horn and gold, let's make that spear.~
+@1076  = ~Oh-ho?  Ye got yerself a real prize there, m'<GIRLBOY>!  Arandur ore, aye?  I've nae seen this in a hundred years!  Oh, I be itching t'forge this into a magnificent suit of armor fer ye!  Still gonna cost ye though, I'll nae do it fer less than 20,000 gold.~
+@1077  = ~Forge me a suit of dwarven plate then!~
+@1078  = ~Can you make me some real quality chain mail?~
+@1079  = ~Not right now, I'm afraid.  Maybe later.~
+@1080  = ~Oh?  A shame that, it will be grand.  Well, I'll be here whenever ye be ready.~
+@1081  = ~The Arandur Ore
 
 The smith Brokk can forge me some magnificent armor from the arandur ore I found in Durlag's Tower.  It will cost me a massive 20,000 gold pieces though.  When I am ready I should see him at his house near the Friendly Arm Inn.~
-@1082 = ~That's da words I wanted t'hear, m'<GIRLBOY>!  I cannae be doing this alone though, I will be needin' all yer help.~
-@1083 = ~And that be that, then.  Wear it in pride, m'<GIRLBOY>!~
-@1084 = ~The Arandur Ore
+@1082  = ~That's da words I wanted t'hear, m'<GIRLBOY>!  I cannae be doing this alone though, I will be needin' all yer help.~
+@1083  = ~And that be that, then.  Wear it in pride, m'<GIRLBOY>!~
+@1084  = ~The Arandur Ore
 
 It was a lot of work for everyone, but Brokk crafted me a magnificent suit of dwarven plate from the arandur ore I found in Durlag's Tower.  I'll be virtually invincible it it!~
-@1085 = ~Heh!  Well, I be nae a fey-elf, so if ye were hopin' fer some elf chain, yer outta luck!~
-@1086 = ~Eh, d'nae give me that look, m'<GIRLBOY>.  Old Brokk knows a few tricks even them pointy-ears don't.  I can set ye up with somethin' good, but I'll be needin' all yer help for it.~
-@1087 = ~The Arandur Ore
+@1085  = ~Heh!  Well, I be nae a fey-elf, so if ye were hopin' fer some elf chain, yer outta luck!~
+@1086  = ~Eh, d'nae give me that look, m'<GIRLBOY>.  Old Brokk knows a few tricks even them pointy-ears don't.  I can set ye up with somethin' good, but I'll be needin' all yer help for it.~
+@1087  = ~The Arandur Ore
 
 It took a lot of patience, but we helped Brokk forge a splendid suit of chain mail from the arandur ore I found in Durlag's Tower.  I bet even elves will envy me for this one!~
-@1088 = ~Can you make me something from this arandur ore?~
-@1089 = ~Brokk~
-@1090 = ~Brokk's Forge~
-@1091 = ~<CHARNAME>!  Sum of them Flamin' Fists were here lookin' fer ya.  Said ye'd committed murder!  I d'nae believe them, ye're a hero my <PRO_GIRLBOY>!~
-@1092 = ~Mark this old dwarf's words, young one, sumthin' very foul is goin' on in that city.  Ye should be on yer toes if y' plan ta investigate.~
-@1093 = ~I got sumthin' special fer ya.  Took many days t' make, so I hope it's sumthin' ya can use.  I nae made one like these before, and I may nae make one evah again.~
-@1094 = ~This be a holy blade, m'<PRO_GIRLBOY>, and only a holy warrior may wield.  And nay, ya don't haf ta pay fer it, this one's all on me.  Ya be a good one, y' earned it and much more!~
-@1095 = ~Brokk's Forge
+@1088  = ~Can you make me something from this arandur ore?~
+@1089  = ~Brokk~
+@1090  = ~Brokk's Forge~
+@1091  = ~<CHARNAME>!  Sum of them Flamin' Fists were here lookin' fer ya.  Said ye'd committed murder!  I d'nae believe them, ye're a hero my <PRO_GIRLBOY>!~
+@1092  = ~Mark this old dwarf's words, young one, sumthin' very foul is goin' on in that city.  Ye should be on yer toes if y' plan ta investigate.~
+@1093  = ~I got sumthin' special fer ya.  Took many days t' make, so I hope it's sumthin' ya can use.  I nae made one like these before, and I may nae make one evah again.~
+@1094  = ~This be a holy blade, m'<PRO_GIRLBOY>, and only a holy warrior may wield.  And nay, ya don't haf ta pay fer it, this one's all on me.  Ya be a good one, y' earned it and much more!~
+@1095  = ~Brokk's Forge
 
 Brokk was so impressed with me, he forged a holy sword for me!  I wonder if I will even be able to use it?~
-@1096 = ~I found this mace that is just radiating evil.  Can you help us see it destroyed?~
-@1097 = ~Hand it over, m'<PRO_GIRLBOY>...  Ugh, I d'nae wanna know where ye went and dregged this one up from!  Ye be right, this thing should nae even exist!~
-@1098 = ~Nae a problem though, we'll just crank up da forge and melt it to slag.   This thing will nae harm anyone no more.  May Moradin bless us fer it.~
+@1096  = ~I found this mace that is just radiating evil.  Can you help us see it destroyed?~
+@1097  = ~Hand it over, m'<PRO_GIRLBOY>...  Ugh, I d'nae wanna know where ye went and dregged this one up from!  Ye be right, this thing should nae even exist!~
+@1098  = ~Nae a problem though, we'll just crank up da forge and melt it to slag.   This thing will nae harm anyone no more.  May Moradin bless us fer it.~
 
 
 // BG1 Item Mini Quests: Ries Kensiddar and the Winter Wolf Hide
 
-@2000    = ~Mm, is that a winter wolf pelt you have there, young <LADYLORD>?  If you are interested, I could make you a strong hide armor from some of those.~
-@2001    = ~That sounds interesting.  What would that require?~
-@2002    = ~Maybe later.  What about some service?~
-@2003    = ~Winter Wolf Hide
+@2000  = ~Mm, is that a winter wolf pelt you have there, young <LADYLORD>?  If you are interested, I could make you a strong hide armor from some of those.~
+@2001  = ~That sounds interesting.  What would that require?~
+@2002  = ~Maybe later.  What about some service?~
+@2003  = ~Winter Wolf Hide
 
 Ries Kensiddar, the wizard proprietor of the Northern Light Inn in Nashkel, has offered to make a hide armor out of winter wolf pelts.  I should talk to him again when I have some of those if I want it.~
-@2004    = ~That is a good quality pelt.  How many do you have?  It will take at least three of them, and 700 gold to cover the spell components needed.~
-@2005    = ~Sure, I can afford that.  Let's do it!~
-@2006    = ~Not right now I'm afraid.  Perhaps later?~
-@2007    = ~Excellent!  Now this will take me some time.  Could you come back in a day or two?~
-@2008    = ~Winter Wolf Hide
+@2004  = ~That is a good quality pelt.  How many do you have?  It will take at least three of them, and 700 gold to cover the spell components needed.~
+@2005  = ~Sure, I can afford that.  Let's do it!~
+@2006  = ~Not right now I'm afraid.  Perhaps later?~
+@2007  = ~Excellent!  Now this will take me some time.  Could you come back in a day or two?~
+@2008  = ~Winter Wolf Hide
 
 Ries Kensiddar, the wizard proprietor of the Nothern Light Inn in Nashkel, is crafting a hide armor out of some winter wolf pelts I obtained.  I should check back on him in a day or two.~
-@2009    = ~Indeed it is!  Here you go!  Please don't ask for another, I will be cleaning my workshop of hair for the rest of the week.~
-@2010   = ~Winter Wolf Hide
+@2009  = ~Indeed it is!  Here you go!  Please don't ask for another, I will be cleaning my workshop of hair for the rest of the week.~
+@2010  = ~Winter Wolf Hide
 
 Ries Kensiddar has crafted the winter wolf hide as promised, but it seems he's not looking forward to creating another anytime soon.  Oh well, at least I should be nicely warm in these cold mountains now.~
-@2011   = ~I am back for my winter wolf hide.  Is it finished?~
-@2012   = ~Can you make a hide armor out of these winter wolf pelts?~
+@2011  = ~I am back for my winter wolf hide.  Is it finished?~
+@2012  = ~Can you make a hide armor out of these winter wolf pelts?~
 
 
 // BG1 Item Mini Quests: Furret and the Gem of Seeing
 
-@2100    = ~Hello, can I help y-  AAAIEE, it's YOU!~
-@2101    = ~That Gem of Seeing you sold me does not work.  I'm afraid I will have to ask a refund.~
-@2102    = ~You're the scum that sold me that fake Gem of Seeing!  Die!~
-@2103    = ~I...  I cannot.  Please, listen!~
-@2104    = ~Very well, but you'd better make this good!~
-@2105    = ~No!  My gold, or I will take it out of your hide!~
-@2106    = ~No wait, please!  I- I can compensate you, just listen!~
-@2107    = ~Alright, you've got one minute!  Make your words count!~
-@2108    = ~I'm through talking, now die!~
-@2109    = ~H-Help!~
-@2110   = ~The Gem of Seeing
+@2100  = ~Hello, can I help y-  AAAIEE, it's YOU!~
+@2101  = ~That Gem of Seeing you sold me does not work.  I'm afraid I will have to ask a refund.~
+@2102  = ~You're the scum that sold me that fake Gem of Seeing!  Die!~
+@2103  = ~I...  I cannot.  Please, listen!~
+@2104  = ~Very well, but you'd better make this good!~
+@2105  = ~No!  My gold, or I will take it out of your hide!~
+@2106  = ~No wait, please!  I- I can compensate you, just listen!~
+@2107  = ~Alright, you've got one minute!  Make your words count!~
+@2108  = ~I'm through talking, now die!~
+@2109  = ~H-Help!~
+@2110  = ~The Gem of Seeing
 
 I killed the scum halfling who sold me a fake Gem of Seeing.  He did however have an interesting book in his meagre possessions.  Perhaps there is after all a way to obtain a real one?~
-@2111   = ~I... I was trying to make a real Gem of Seeing, using this book I inherited from my late grandfather.  But I botched the process and ended up with a cursed gem that gave me bad luck!~
-@2112   = ~By the time I figured the curse out, my business was in shambles and I was deep in debt with the Merchant's league.  I had to get rid of the gem to break the curse, and I needed the gold to pay my debts!~
-@2113   = ~Y-you don't have to worry, it's just an ordinary bauble now.  Obviously, I'm not cut out for item crafting.  I will give you the book, if you take it to a competent wizard with a proper laboratory they can make the gem for you!~
-@2114   = ~Mm, fair enough.  I will take the book and we'll call it even.~
-@2115   = ~An interesting offer, but where will I find such a wizard?~
-@2116   = ~Bah, you're just trying to weasel out.  Now die!~
-@2117   = ~M-Master Thalantyr lives just west of Beregost.  And old Halbazzer runs the Sorcerous Sundries in Baldur's Gate.  Either one of those could help you, I think!~
-@2118   = ~H-here is the book.  I'm so very sorry!~
-@2119   = ~The Gem of Seeing
+@2111  = ~I... I was trying to make a real Gem of Seeing, using this book I inherited from my late grandfather.  But I botched the process and ended up with a cursed gem that gave me bad luck!~
+@2112  = ~By the time I figured the curse out, my business was in shambles and I was deep in debt with the Merchant's league.  I had to get rid of the gem to break the curse, and I needed the gold to pay my debts!~
+@2113  = ~Y-you don't have to worry, it's just an ordinary bauble now.  Obviously, I'm not cut out for item crafting.  I will give you the book, if you take it to a competent wizard with a proper laboratory they can make the gem for you!~
+@2114  = ~Mm, fair enough.  I will take the book and we'll call it even.~
+@2115  = ~An interesting offer, but where will I find such a wizard?~
+@2116  = ~Bah, you're just trying to weasel out.  Now die!~
+@2117  = ~M-Master Thalantyr lives just west of Beregost.  And old Halbazzer runs the Sorcerous Sundries in Baldur's Gate.  Either one of those could help you, I think!~
+@2118  = ~H-here is the book.  I'm so very sorry!~
+@2119  = ~The Gem of Seeing
 
 Furret, the halfling trader who tried to peddle a fake Gem of Seeing gave me a book describing the process to create a real one.  Apparently he attemped it himself and ended up with a cursed gem that brought him bad luck until he sold it to someone.  If I want a real one, I should ask either Thalantyr in Beregost or Halbazzer in Baldur's Gate to help me out, although likely they will not do it for free.~
-@2120   = ~Sorry to bother you again, but I have this book you might want to take a look at.~
-@2121   = ~Show me that...  Ah, "Lux Veritatis", most interesting.  Mm, this is an outdated technique...~
-@2122   = ~You did well to bring this here.  The procedure is outdated and lacks certain key elements.  Had you tried this yourself you'd probably have made nothing but a spectacular crater.  But I think I can fill in the gaps...~
-@2123   = ~If you have a diamond and, say, 5,000 gold, I can attempt to make you a Gem of Seeing.~
-@2124   = ~Fair enough, I have all that right here.~
-@2125   = ~I'm afraid I don't have that right now.~
-@2126   = ~If you don't have the goods, then don't bother me.  Take your book and go!~
-@2127   = ~The Gem of Seeing
+@2120  = ~Sorry to bother you again, but I have this book you might want to take a look at.~
+@2121  = ~Show me that...  Ah, "Lux Veritatis", most interesting.  Mm, this is an outdated technique...~
+@2122  = ~You did well to bring this here.  The procedure is outdated and lacks certain key elements.  Had you tried this yourself you'd probably have made nothing but a spectacular crater.  But I think I can fill in the gaps...~
+@2123  = ~If you have a diamond and, say, 5,000 gold, I can attempt to make you a Gem of Seeing.~
+@2124  = ~Fair enough, I have all that right here.~
+@2125  = ~I'm afraid I don't have that right now.~
+@2126  = ~If you don't have the goods, then don't bother me.  Take your book and go!~
+@2127  = ~The Gem of Seeing
 
 Thalantyr could make the Gem of Seeing for me, but I need to obtain 5,000 gold and find a diamond first.~
-@2128   = ~Very well, could you come back in...  Oh, forget it, let's just get this over with right now.  Don't need you walking in and out of my place any more than you already do, just to ask if it's done yet!~
-@2129   = ~The Gem of Seeing
+@2128  = ~Very well, could you come back in...  Oh, forget it, let's just get this over with right now.  Don't need you walking in and out of my place any more than you already do, just to ask if it's done yet!~
+@2129  = ~The Gem of Seeing
 
 Using the arcane book I obtained and a diamond I found, Thalantyr was able to create a real Gem of Seeing for me.~
-@2130   = ~Oh, you found some magic from the olden days?  Let me see that...  Mm-mm... aha...~
-@2131   = ~You did well to bring that here instead of experimenting with it yourself.  This was written in the olden days, and the rules of magic are no longer the same.  You could have turned yourself into a chicken or worse.~
-@2132   = ~I think I can help you, but you will need a diamond and 5,000 gold, no less.  Take it or leave it.~
-@2133   = ~I'll take it.~
-@2134   = ~I'll leave it.~
-@2135   = ~Well, if you're not going to pay I have nothing else to say.  Next!~
-@2136   = ~The Gem of Seeing
+@2130  = ~Oh, you found some magic from the olden days?  Let me see that...  Mm-mm... aha...~
+@2131  = ~You did well to bring that here instead of experimenting with it yourself.  This was written in the olden days, and the rules of magic are no longer the same.  You could have turned yourself into a chicken or worse.~
+@2132  = ~I think I can help you, but you will need a diamond and 5,000 gold, no less.  Take it or leave it.~
+@2133  = ~I'll take it.~
+@2134  = ~I'll leave it.~
+@2135  = ~Well, if you're not going to pay I have nothing else to say.  Next!~
+@2136  = ~The Gem of Seeing
 
 Halbazzer Drin of the Sorcerous Sundries can help me make a gem of seeing, but not for less than a diamond and 5,000 gold.~
-@2137   = ~Wonderful.  As it happens, I have a Gem of Seeing of my own here.  I'll give it to you now that I have the means to create another.  Good day.~
-@2138   = ~The Gem of Seeing
+@2137  = ~Wonderful.  As it happens, I have a Gem of Seeing of my own here.  I'll give it to you now that I have the means to create another.  Good day.~
+@2138  = ~The Gem of Seeing
 
 Halbazzer Drin of the Sorcerous Sundries gave me a Gem of Seeing in exchange for the means of creating another.  Fair enough, I guess.~
-@2139   = ~Aaaaiiieee!~
-@2140   = ~Please!  I'll give you the real thing!  Don't hurt me!~
-@2141   = ~H-help me!  Someone!  Anyone!~
-@2142   = ~You there, please!  Help me, I don't wanna die!~
-@2143   = ~Watch out, he'll kill us all!~
-@2144   = ~Eh, t-thanks, you saved my life!~
-@2145   = ~Aren't you that halfling I met near Ulcaster earlier?~
-@2146   = ~What was that all about?~
-@2147   = ~Any reward for saving your hide?~
-@2148   = ~Finally got ya, ye little runt!  Nobody scams Bobas the dwarf!~
-@2149   = ~Me axe will permanently cure ye of your scamming ways!~
-@2150   = ~Too late, ye little runt!  Say yer prayers!~
-@2151   = ~Eh?  Who be ye!?  Bah, no matter.  Ye're all dead!~
-@2152   = ~Bobas~
+@2139  = ~Aaaaiiieee!~
+@2140  = ~Please!  I'll give you the real thing!  Don't hurt me!~
+@2141  = ~H-help me!  Someone!  Anyone!~
+@2142  = ~You there, please!  Help me, I don't wanna die!~
+@2143  = ~Watch out, he'll kill us all!~
+@2144  = ~Eh, t-thanks, you saved my life!~
+@2145  = ~Aren't you that halfling I met near Ulcaster earlier?~
+@2146  = ~What was that all about?~
+@2147  = ~Any reward for saving your hide?~
+@2148  = ~Finally got ya, ye little runt!  Nobody scams Bobas the dwarf!~
+@2149  = ~Me axe will permanently cure ye of your scamming ways!~
+@2150  = ~Too late, ye little runt!  Say yer prayers!~
+@2151  = ~Eh?  Who be ye!?  Bah, no matter.  Ye're all dead!~
+@2152  = ~Bobas~
+
+
+// Elminster's Gifts (BG1)
+
+@2200  = ~Oh, I almost forgot.  A dear friend of mine bade me to entrust this trinket to thee. I would advice thee to not disappoint her, <CHARNAME>. She is far less forgiving than this old man, and it would not end well for thee.~
+@2201  = ~Oh, I almost forgot.  A dear friend of mine bade me to entrust this trinket to thee. Thou hast no doubt earned it, may it serve thee well.~
+@2202  = ~That is... I strongly advice thee to heed the old man's warning, <CHARNAME>.  Talking back to *her* is ill adviced.~
+@2203  = ~That is... It would seem thy fame is reaching far, <CHARNAME>. Do take good care of it, such gifts are not handed out lightly.~
+@2204  = ~Fare thee well.~
+
 
 
 // SoD Item Mini Quest: Thrix's Wager
 
-@3000    = ~This old belt, which makes you strong as a giant.  It once belonged to one so full of righteousness.  So delicious his screams and pleads for mercy were.~
-@3001    = ~Very well.  It should help you survive what comes next.  Maybe.~
-@3002    = ~Thrix has several items that might be of use to one who would storm the basalt tower. This blade, sharper than the loudest shriek. This helm that cradles the head more softly than a mother does her newborn babe.~
-@3003    = ~I'll take that belt.~
-@3004    = ~Mm, you have a point.  I'll take that belt.~
+@3000  = ~This old belt, which makes you strong as a giant.  It once belonged to one so full of righteousness.  So delicious his screams and pleads for mercy were.~
+@3001  = ~Very well.  It should help you survive what comes next.  Maybe.~
+@3002  = ~Thrix has several items that might be of use to one who would storm the basalt tower. This blade, sharper than the loudest shriek. This helm that cradles the head more softly than a mother does her newborn babe.~
+@3003  = ~I'll take that belt.~
+@3004  = ~Mm, you have a point.  I'll take that belt.~
 
 
 // BG2 Forging: Cromwell
 
-@4000    = ~Scales of a black dragon, aye?  It must have been a grand battle to take it down.  They will make an incredible armor, my friend.~
+@4000  = ~Scales of a black dragon, aye?  It must have been a grand battle to take it down.  They will make an incredible armor, my friend.~
 
 
 // BG2 Forging: Cespenar
@@ -2347,6 +2390,13 @@ Halbazzer Drin of the Sorcerous Sundries gave me a Gem of Seeing in exchange for
 @4501  = ~Okay, you loss.  Cespenar will just let black scales stink up your backpack some more.~
 @4502  = ~Mm, these are green dragon scales!  Very stinky, green dragons belch worse than they fart!  Heh.  Cespenar has recipe though.  Just 5000 gold and Cespenar can make shiny green armor for you!  Won't even stink as bad, probably.~
 @4503  = ~Okay then, if great one wants stinky scales fouling up <PRO_HISHER> backback, who is Cespernar to tell <PRO_HISHER> no?~
+@4504  = ~Mm, a ring?  Great one is looking to get married?  Oh, I see, is Ring of Free Action.~
+@4505  = ~Cespenar knows a nice lich who can make ring so much better.  Takes scrolls of Ghost Armor and Time Stop though, and 20,000 gold.  Even a dead guy has gotta make a living in this world, yeah?~
+@4506  = ~As great one commands, so Cespenar shall do.  I just puts ring back.  Next!~
+@4507  = ~Ooooh, so many floaty stones!  Sparkly!~
+@4508  = ~Cespenar has recipe for ioun stones, combine many of them into pretty crown!  But, Cespenar will need actual crown.  It really far from where Great One needs to be though.~
+@4509  = ~For 30,000 gold, Cespenar can hire someone to obtain crown.  Cespenar also needs scrolls of Wyvern Call and Prismatic Spray for recipe.~
+@4510  = ~Crown is not quite Great One's style, eh?  Maybe a helmet, or a circlet?~
 
 
 // BG2 Item Mini Quests: Adalon's Reward
