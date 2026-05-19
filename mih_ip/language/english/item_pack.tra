@@ -111,9 +111,7 @@ Equipped abilities:
 
 Weight: 3~
 @18    = ~Battlecloak of Vycaena~
-@19    = ~Cloak of Protection +4/+1: 'Battlecloak of Vycaena'
-
-This voluminous, emerald-green cloak is trimmed and richly decorated with fine gold thread, and an emerald has been set in each of its two golden clasps.  This alone would make it worth a fortune, but in addition to that the cloak carries an enchantment that protects its wearer almost as well as chain mail.
+@19    = ~This voluminous, emerald-green cloak is trimmed and richly decorated with fine gold thread, and an emerald has been set in each of its two golden clasps.  This alone would make it worth a fortune, but in addition to that the cloak carries an enchantment that protects its wearer almost as well as chain mail.
 
 Cloaks like these were often owned by rich Calishite families in centuries past, but the secret to making them was lost at some point and has not yet been rediscovered.  A rare and powerful item that puts the owner in a dilemma; while it grants excellent protection, it will also make the wearer even more of a target.
 
@@ -157,9 +155,7 @@ Weight: 2~
 
 Weight: 150~
 @26    = ~Ring of the Lich~
-@27    = ~Ring of Protection +6/+1: 'Ring of the Lich'
-
-This magical ring was created centuries ago by Antares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Antares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
+@27    = ~This magical ring was created centuries ago by Antares the Necromancer, a Netherese arcanist of considerable power, as a defense against the many assassins his rivals would send after him.  When Karsus cast his fateful spell and High Netheril fell from the sky, Antares was just completing the final stages of transformation into a lich.  He was presumed dead when his enclave plunged into the Sea of Swords, a few miles outward from Candlekeep.
 
 Many years later on a moonless night Antares, now calling himself the Ebon Hand, rose from the waves and stalked the land, attacking lone travelers and small settlements as he searched for a way to raise his fallen enclave.  This continued for a few years until his reign of terror was ended by a group of adventurers from the Dales.  This ring was pilfered off of his withered corpse.
 
@@ -1737,9 +1733,7 @@ Armor Class: 0 (-1 vs. piercing and missile)
 
 Weight: 25~
 @289   = ~Varazdin's Cloak of Protection~
-@290   = ~Cloak of Protection +1/+3: 'Varazdin's Cloak'
-
-This cloak was created about two hundred years ago by the reclusive mage Varazdin, who often found himself in conflict with orcs that threatened his secluded home in the forest.  It served him well until his death in yet another massive orc raid.  The orc chieftain Groth Skullsmasher claimed it for himself, but he was in turn slain by a dwarven champion whose name has been lost to the ages.  Since then, it has been worn by several adventurers.  It was last seen in the possession of an adventuring party seeking to explore Durlag's Tower.
+@290   = ~This cloak was created about two hundred years ago by the reclusive mage Varazdin, who often found himself in conflict with orcs that threatened his secluded home in the forest.  It served him well until his death in yet another massive orc raid.  The orc chieftain Groth Skullsmasher claimed it for himself, but he was in turn slain by a dwarven champion whose name has been lost to the ages.  Since then, it has been worn by several adventurers.  It was last seen in the possession of an adventuring party seeking to explore Durlag's Tower.
 
 STATISTICS:
 
@@ -2063,8 +2057,7 @@ Requires:
 
 Weight: 6~
 @343   = ~Mail of Thalaera +5~
-@344   = ~Chain Mail +5: 'Mail of Thalaera'
-Crafted of shining silver and matte black links, this suit of elven chain is one of the finest ever created.  It used to stored in queen Amlaruil's palace on distant Evermeet but was stolen during an incident known as the Elshadow affair and considered lost until now.  The elves will likely take a dim view of anyone using it for evil purposes.  As with all other elven chain, this suit can be worm by Thieves and Fighter/Mages with few restrictions.
+@344   = ~Crafted of shining silver and matte black links, this suit of elven chain is one of the finest ever created.  It used to stored in queen Amlaruil's palace on distant Evermeet but was stolen during an incident known as the Elshadow affair and considered lost until now.  The elves will likely take a dim view of anyone using it for evil purposes.  As with all other elven chain, this suit can be worm by Thieves and Fighter/Mages with few restrictions.
 
 STATISTICS:
 
