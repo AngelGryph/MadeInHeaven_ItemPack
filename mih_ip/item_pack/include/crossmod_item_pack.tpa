@@ -1,0 +1,18 @@
+DEFINE_ACTION_FUNCTION crossmod_item_pack
+BEGIN
+  // Pits of Despair
+  //
+  // PoD should be installed after MiH Item Pack, but just in case it
+  // is done the other way around...
+
+  ACTION_IF FILE_EXISTS_IN_GAME "zbbimim.sto"
+        AND FILE_EXISTS "zbpod/crossmod/mih_mods/mih_ip.tpa"
+  BEGIN
+    WITH_SCOPE
+    BEGIN
+      INCLUDE "zbpod/crossmod/mih_mods/mih_ip.tpa"
+    END
+  END
+END	// crossmod_item_pack
+
+
