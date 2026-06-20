@@ -4,6 +4,10 @@ BEGIN
 
   ACTION_IF NOT enhanced_edition
   BEGIN
+    // Copy in stuff for oBG2.
+
+    COPY_LARGE "%MOD_FOLDER%/%component_loc%/_copy/compat" "override"
+    
     // Headband animation (JB) does not work on oBG2.
     // (Might work with 1pp installed?)
 
