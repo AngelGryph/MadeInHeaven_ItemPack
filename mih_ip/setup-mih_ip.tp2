@@ -30,6 +30,8 @@ BEGIN @1
 
 LABEL MH#-MiH_IP-Item_Pack
 
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_item_pack"
@@ -42,6 +44,8 @@ END
 BEGIN @10
 
 LABEL MH#-MiH_IP-Gem_Pack
+
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -56,6 +60,8 @@ BEGIN @23
 
 LABEL MH#-MiH_IP-NPC_Items
 
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_npc_items"
@@ -69,12 +75,12 @@ BEGIN @8
 
 LABEL MH#-MiH_IP-BG2_Items
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
+REQUIRE_PREDICATE GAME_IS "bgt bgee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_bg2_items"
-  location	= "bg2_items"
+  location	= "tob_items"
 END
 
 
@@ -83,6 +89,8 @@ END
 BEGIN @20
 
 LABEL MH#-MiH_IP-IWD_Items
+
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -96,6 +104,8 @@ END
 BEGIN @21
 
 LABEL MH#-MiH_IP-PST_Items
+
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -111,7 +121,7 @@ GROUP @3
 
 LABEL MH#-MiH_IP-BG1_Style_Wands
 
-REQUIRE_PREDICATE NOT GAME_IS "bgee" @4 
+REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -128,6 +138,8 @@ GROUP @3
 
 LABEL MH#-MiH_IP-PandP_Healing_Potions
 
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "pnp_healing_potions"
@@ -142,7 +154,7 @@ GROUP @3
 
 LABEL MH#-MiH_IP-Holy_Symbol_Item_Type
 
-REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
+REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -159,6 +171,8 @@ GROUP @3
 
 LABEL MH#-MiH_IP-Field_Plate
 
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "full_to_field_plate"
@@ -173,6 +187,8 @@ BEGIN @6
 GROUP @3
 
 LABEL MH#-MiH_IP-3e_Bracers
+
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -189,7 +205,7 @@ GROUP @3
 
 LABEL MH#-MiH_IP-Improved_Tome_of_Golems
 
-REQUIRE_PREDICATE GAME_INCLUDES "tob" @4 
+REQUIRE_PREDICATE GAME_IS "tob bgt bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -206,6 +222,8 @@ GROUP @3
 
 LABEL MH#-MiH_IP-Item_Improvements
 
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
+
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "item_improvements"
@@ -221,7 +239,7 @@ GROUP @13
 
 LABEL MH#-MiH_IP-Extra_Healing_BG1
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
+REQUIRE_PREDICATE GAME_IS "bgt bgee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -238,7 +256,7 @@ GROUP @13
 
 LABEL MH#-MiH_IP-Nerf_Easter_Eggs
 
-REQUIRE_PREDICATE GAME_INCLUDES "bg1" @4 
+REQUIRE_PREDICATE GAME_IS "bgt bgee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
@@ -254,6 +272,8 @@ BEGIN @15
 GROUP @13 
 
 LABEL MH#-MiH_IP-Sensible_Shops
+
+REQUIRE_PREDICATE GAME_IS "tob bgt bgee bg2ee eet" @4 
 
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
