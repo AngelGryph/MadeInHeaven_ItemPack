@@ -80,7 +80,7 @@ REQUIRE_PREDICATE GAME_IS "bgt bgee eet" @4
 LAUNCH_ACTION_FUNCTION run
   STR_VAR
   file		= "setup_bg2_items"
-  location	= "tob_items"
+  location	= "bg2_items"
 END
 
 
