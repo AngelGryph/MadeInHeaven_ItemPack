@@ -42,6 +42,17 @@ END
 //////////////////////////////////////////////////////////////////////////
 
 ACTION_TIME sfo_setup_lua_libraries BEGIN
+	// t() changed to getUiString() in EE 2.7
+	// This provides backwards compatibility with 2.6 and older.
+
+	ACTION_IF FILE_EXISTS_IN_GAME "util.lua"
+	BEGIN
+		APPEND "util.lua" "
+if getUiString == nil then
+  getUiString = t
+end" UNLESS "getUiString"
+        END
+
 	ACTION_IF DIRECTORY_EXISTS "%MOD_FOLDER%/%lua_loc%" BEGIN
 		ACTION_BASH_FOR "%MOD_FOLDER%/%lua_loc%" ".*\.tph" BEGIN
 			ACTION_TRY

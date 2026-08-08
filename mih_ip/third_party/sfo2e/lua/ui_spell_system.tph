@@ -2021,7 +2021,7 @@ function dwSpecialistSpellMessage()
 	elseif kit==29 then
 		setStringTokenLua('<SCHOOLTOKEN>',t('TRANSMUTATION_SCHOOL_TOKEN'))
 	end
-	return t('SPECIALIST_SPELL_REQ')
+	return getUiString('SPECIALIST_SPELL_REQ')
 end
 
 function dwSpecialistMemoMessage()

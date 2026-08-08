@@ -1223,7 +1223,7 @@ function dwChargenClassKitTitle()
 	if newtitle then
 		return Infinity_FetchString(newtitle)
 	else
-		return t('CLASS_KIT_TITLE')
+		return getUiString('CLASS_KIT_TITLE')
 	end
 
 

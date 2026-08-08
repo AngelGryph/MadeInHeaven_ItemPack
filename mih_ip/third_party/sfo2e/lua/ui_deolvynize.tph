@@ -587,7 +587,7 @@ function mageBookDescription()
 			if characters[id].mageSpells[currentSpellLevel][currentBookSpell] then
 				return Infinity_FetchString(characters[id].mageSpells[currentSpellLevel][currentBookSpell].description)
 			else
-				return t('SPELL_MEMORIZATION_HELP')
+				return getUiString('SPELL_MEMORIZATION_HELP')
 			end
 		elseif bookMode == 1 then
 			if contingencyDescription == 0 and currentBookSpell ~= 0 then
