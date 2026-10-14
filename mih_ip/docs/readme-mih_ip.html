@@ -13,7 +13,7 @@
   <p><strong><a href="http://www.gibberlings3.net/">A Gibberlings Three Mod</a></strong> <br/>
     <strong>Author</strong>: <a href="http://gibberlings3.net/forums/index.php?showuser=6180">Angel</a> </p>
 <!--  <p><strong>On the web: </strong><a href="http://www.gibberlings3.net/npcstrongholds/"><strong>Home page</strong></a> and <a href="http://gibberlings3.net/forums/index.php?showforum=77"><strong>discussion forum</strong></a></p> -->
-  <p><strong>Version 7 - <a href="http://https://github.com/AngelGryph/MadeInHeaven_ItemPack/releases">Check for the most recent version</a></strong> <br/>
+  <p><strong>Version 8 - <a href="http://https://github.com/AngelGryph/MadeInHeaven_ItemPack/releases">Check for the most recent version</a></strong> <br/>
     <strong>Languages: </strong>English <br/>
     <strong>Platforms: </strong>Windows, Mac OS X, and Linux </p>
 </div>
@@ -54,22 +54,71 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
 </div>
 <h2>Component Descriptions</h2>
 <div class="section">
+  <h3>Core Components</h3>
   <p>This mod consists of several components, each of which can be installed or removed independently from the others.<p>
 
-  <h3>Core Components</h3>
-  <p><strong>MiH Item Pack</strong><br/>
-  The main component of this mod, the item pack will add over a hundred new items, divided all over BG1 and BG2, including Siege of Dragonspear (EE) and Throne of Bhaal.  These are all original creations, based on various D&amp;D source books and other media.</p>
+  <table style="width:60%">
+    <tr><th colspan=2><h1>Made in Heaven: Item Pack</h1></th></tr>
+    <tr><th>Component Label</th><td>MH#-MiH_IP-Item_Pack</td></tr>
+    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_item_pack.mrk</td></tr>
+    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
+    <tr><th>Mod Compatibility</th><td>Certain mods written by Morpheus refuse to install if this mod is present.  That's his choice, and I can do nothing about it.</td></th>
+    <tr><th>Design Notes</th><td>To make room for the new items, some existing items have been moved to new locations.</td></th>
+    <tr><th>Description</th>
+<td>
+  <p>The main component of this mod, the item pack will add more than 150 new items, divided all over BG1 and BG2, including Siege of Dragonspear (EE) and Throne of Bhaal.  These are all original creations, based on various D&amp;D source books and other media.</p>
   <p>In BG1 two merchants are available.  The first, the dwarven smith Brokk, will be found at the Friendly Arm Inn, he is in the normally unoccupied house just west of the main building.  He may not want to sell to you right away, but remember to visit him later!  Brokk may also offer to make a new item for you if you bring him something unusual, so check back with him now and then.</p>
-  <p>The second merchant is in Nashkel, where the inn is now run by a wizard named Ries Kensiddar (lore-friendly change).</p>
+  <p>The second merchant is in Nashkel, where the inn is now run by a wizard named Ries Kensiddar (lore-friendly change).  He has some new stuff for sale and may be able to create an item or two.</p>
+</td></tr></table>
 
-  <p><strong>MiH Gem Pack</strong><br/>
-  This small component just adds some new gems to the random treasure table.  It's mostly just there for variety.</p>
+  <table style="width:60%">
+    <tr><th colspan=2><h1>Made in Heaven: Gem Pack</h1></th></tr>
+    <tr><th>Component Label</th><td>MH#-MiH_IP-Gem_Pack</td></tr>
+    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_gem_pack.mrk</td></tr>
+    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
+    <tr><th>Mod Compatibility</th><td>Compatible with The Calling's mage quest, install this mod first.</td></th>
+    <tr><th>Design Notes</th><td></td></th>
+    <tr><th>Description</th>
+<td>
+  <p>This small component just adds some new gems to the random treasure table.  It's mostly just there for variety.  Currently included are rubies and sapphires.</p>
+</td></tr></table>
 
-  <p><strong>IWD Item Pack</strong><br/>
-  This component introduces ~20 items from Icewind Dale to BG1 and BG2.</p>
+  <table style="width:60%">
+    <tr><th colspan=2><h1>Made in Heaven: NPC Personal Items</h1></th></tr>
+    <tr><th>Component Label</th><td>MH#-MiH_IP-NPC_Items</td></tr>
+    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_npc_pack.mrk</td></tr>
+    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
+    <tr><th>Mod Compatibility</th><td>No known issues.</td></th>
+    <tr><th>Design Notes</th><td></td></th>
+    <tr><th>Description</th>
+<td>
+  <p>Isn't it unfair that some NPCs get nifty little items of their own like Alora's lucky rabbit foot or Rasaad's moon boots, but others don't?  This component gives other NPCs an item of their own.  These are not stuck, but they can be used only by that NPC.</p>
+  <p>Currently this component provides a personal item to Imoen, Khalid, Jaheira, Minsc, Dynaheir and Yeslick.  Others will follow later.  (Suggestions welcome!)</p>
+</td></tr></table>
 
-  <p><strong>PST Item Pack</strong><br/>
-  This component introduces ~5 items from Planescape Torment to BG1 and BG2.</p>
+  <table style="width:60%">
+    <tr><th colspan=2><h1>Made in Heaven: IWD Item Pack</h1></th></tr>
+    <tr><th>Component Label</th><td>MH#-MiH_IP-IWD_Items</td></tr>
+    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_iwd_items.mrk</td></tr>
+    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
+    <tr><th>Mod Compatibility</th><td>No known issues.</td></th>
+    <tr><th>Design Notes</th><td></td></th>
+    <tr><th>Description</th>
+<td>
+  <p>This component introduces over twenty items from Icewind Dale to BG1 and BG2.</p>
+</td></tr></table>
+
+  <table style="width:60%">
+    <tr><th colspan=2><h1>Made in Heaven: PST Item Pack</h1></th></tr>
+    <tr><th>Component Label</th><td>MH#-MiH_IP-PST_Items</td></tr>
+    <tr><th>Marker File</th><td>weidu_external/markers/mh#setup_pst_items.mrk</td></tr>
+    <tr><th>Target Games</th><td>BGEE+SoD, BG2EE, (EET), (BG2), (BGT)</td></tr>
+    <tr><th>Mod Compatibility</th><td>No known issues.</td></th>
+    <tr><th>Design Notes</th><td></td></th>
+    <tr><th>Description</th>
+<td>
+    <p>This component introduces a handful of items from Planescape Torment to BG1 and BG2.</p>
+</td></tr></table>
 
   <h3>Item Functionality Tweaks</h3>
   <p><strong>BG1-style Wands in BG2</strong><br/>
@@ -154,6 +203,7 @@ Made in Heaven: Item Pack is packaged and installed with WeiDU and is distribute
     Sleep of Bronze, who provided me with the correct stats and a P&amp;P source for the Potion of Superior Healing.<br/>
     Jastey, who gave me some help with compatibility testing and generic install issues.<br/>
     sarkocreme, who provided some useful feedback on the power level of items in the BG1 portion.<br/>
+    Parys, for letting me use their description bams for the imported IWD items<br/>
     All people brave enough to try and install my early beta versions...<br/>
     The people at Bioware and Beamdog, for creating respectively the original games and the Enhanced Editions in the first place.<br/>
     Anyone else I forgot?  (Please let me know!)</p>

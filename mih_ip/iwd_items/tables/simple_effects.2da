@@ -5,7 +5,6 @@ mh#slsh3	12	3		0x01000000	0		0		0	0	none		none
 mh#crsh1	12	1		0x00000000	0		0		0	0	none		none
 mh#iwd07	12	4		0x00000000	0		0		1	6	none		none
 mh#iwd19	12	3		0x00080000	0		0		2	4	none		none
-mh#iwd20	12	3		0x00080000	0		0		2	4	none		none
 ogresu		67	5		0		0		0		0	0	ogresu		spmonsum
 
 
